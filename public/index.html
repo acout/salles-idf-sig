@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prospection salles IDF</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/style.css?v=20260619-pipeline1">
+<link rel="stylesheet" href="css/style.css?v=20260619-quality1">
 </head>
 <body>
 <div class="app-shell">
@@ -70,6 +70,7 @@
           <label class="field-label">Tri</label>
           <select id="sort-by" class="input">
             <option value="fit">Meilleur fit</option>
+            <option value="quality">Qualité données</option>
             <option value="status">Statut</option>
             <option value="nextAction">Prochaine action</option>
             <option value="city">Ville</option>
@@ -77,6 +78,17 @@
           </select>
         </div>
       </div>
+
+      <label class="field-label">Qualité données</label>
+      <select id="quality-filter" class="input">
+        <option value="all">Toutes</option>
+        <option value="any">À vérifier</option>
+        <option value="contact_missing">Contact manquant</option>
+        <option value="price_missing">Prix manquant</option>
+        <option value="capacity_uncertain">Capacité à vérifier</option>
+        <option value="duplicate_suspect">Doublon probable</option>
+        <option value="geocode_suspect">Géocodage douteux</option>
+      </select>
     </section>
 
     <section class="quick-actions">
@@ -113,6 +125,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260619-pipeline1"></script>
+<script src="js/app.js?v=20260619-quality1"></script>
 </body>
 </html>

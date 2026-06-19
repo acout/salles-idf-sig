@@ -9,7 +9,7 @@ const STATUS = {
 };
 const STATUS_ORDER = Object.keys(STATUS);
 const IDF_BBOX = { minLat:48.1, maxLat:49.1, minLon:1.4, maxLon:3.6 };
-const state = { data:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dept:'all', status:'all', capMax:20, sort:'fit' }, crm:{} };
+const state = { data:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dept:'all', status:'all', quality:'all', capMax:20, sort:'fit' }, crm:{}, quality:{} };
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -27,6 +27,31 @@ function statusPill(status){ return `<span class="pill status-${status||'new'}">
 function venueId(p){ return p.id || p.name; }
 function capacity(p){ return +(p.capacity_max_detected||0) || 999; }
 function coordsOf(f){ const c=f.geometry?.coordinates; if(!c||c.length<2)return null; const [lon,lat]=c.map(Number); return Number.isFinite(lat)&&Number.isFinite(lon)&&insideIdf(lat,lon) ? [lat,lon] : null; }
+const QUALITY_LABELS = {
+  contact_missing:'Contact ?', price_missing:'Prix ?', capacity_uncertain:'Capacité ?', duplicate_suspect:'Doublon ?', geocode_suspect:'Géocode ?'
+};
+function isBlank(v){ const t=String(v??'').trim().toLowerCase(); return !t || ['—','-','n/a','na','non renseigné','non renseigne','à confirmer','a confirmer','inconnu','unknown'].includes(t) || t.includes('à confirmer') || t.includes('a confirmer'); }
+function normText(v){ return String(v??'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim(); }
+function normName(p){ return normText(p.name).replace(/\b(maison|salle|espace|centre|municipal|municipale|association|associations|paris|idf)\b/g,'').replace(/\s+/g,' ').trim(); }
+function normSite(v){ try{ const u=new URL(String(v||'')); return u.hostname.replace(/^www\./,'')+u.pathname.replace(/\/$/,''); }catch{return '';}}
+function qualityFor(id){ return state.quality[id] || {issues:[], score:0}; }
+function qualityBadgesHTML(id){ const q=qualityFor(id); if(!q.issues.length) return '<span class="qbadge ok">OK data</span>'; return q.issues.map(k=>`<span class="qbadge issue">${esc(QUALITY_LABELS[k]||k)}</span>`).join(''); }
+function buildQuality(){
+  state.quality = {};
+  const nameMap=new Map(), siteMap=new Map(), coordMap=new Map();
+  state.data.features.forEach(f=>{ const p=f.properties,id=venueId(p), c=f.geometry?.coordinates||[]; const n=normName(p), site=normSite(p.website||p.source_url), coord=c.length>=2?`${(+c[1]).toFixed(5)},${(+c[0]).toFixed(5)}`:''; if(n){ if(!nameMap.has(n))nameMap.set(n,[]); nameMap.get(n).push(id);} if(site){ if(!siteMap.has(site))siteMap.set(site,[]); siteMap.get(site).push(id);} if(coord){ if(!coordMap.has(coord))coordMap.set(coord,[]); coordMap.get(coord).push({id,n}); } });
+  state.data.features.forEach(f=>{ const p=f.properties,id=venueId(p), issues=[]; const c=f.geometry?.coordinates||[]; const lat=+c[1], lon=+c[0];
+    if(isBlank(p.contact)) issues.push('contact_missing');
+    if(isBlank(p.price_text)) issues.push('price_missing');
+    if(isBlank(p.capacity_text) || capacity(p)>=999) issues.push('capacity_uncertain');
+    const n=normName(p), site=normSite(p.website||p.source_url), coord=c.length>=2?`${lat.toFixed(5)},${lon.toFixed(5)}`:'';
+    const sameName=n && (nameMap.get(n)||[]).length>1, sameSite=site && (siteMap.get(site)||[]).length>1;
+    const sameCoordClose=coord && (coordMap.get(coord)||[]).some(o=>o.id!==id && (o.n===n || o.n.includes(n) || n.includes(o.n)));
+    if(sameName || sameSite || sameCoordClose) issues.push('duplicate_suspect');
+    const gs=Number(p.geocode_score); if(isBlank(p.address) || (Number.isFinite(gs) && gs<0.55) || !insideIdf(lat,lon)) issues.push('geocode_suspect');
+    state.quality[id] = { issues:[...new Set(issues)], score:issues.length };
+  });
+}
 function searchableText(f){ const p=f.properties, c=crmFor(venueId(p)); return [p.name,p.city,p.department,p.category,p.address,p.contact,p.price_text,p.pros,p.cons,c.status,c.nextAction,...(c.notes||[]).map(n=>n.text),...(c.events||[]).map(e=>`${e.date} ${e.label}`)].join(' ').toLowerCase(); }
 
 function nextStatus(status){ const i=STATUS_ORDER.indexOf(status||'new'); return STATUS_ORDER[Math.min(i+1, STATUS_ORDER.length-1)]; }
@@ -44,6 +69,7 @@ function applyFilters(){
     if(!ll) return false;
     if(state.filters.dept!=='all' && p.department!==state.filters.dept) return false;
     if(state.filters.status!=='all' && c.status!==state.filters.status) return false;
+    if(state.filters.quality!=='all'){ const q=qualityFor(id); if(state.filters.quality==='any' ? q.score===0 : !q.issues.includes(state.filters.quality)) return false; }
     if(capacity(p) > +state.filters.capMax) return false;
     if(q && !searchableText(f).includes(q)) return false;
     return true;
@@ -58,6 +84,7 @@ function sortFiltered(){
     if(sort==='capacity') return capacity(pa)-capacity(pb);
     if(sort==='status') return STATUS_ORDER.indexOf(ca.status||'new')-STATUS_ORDER.indexOf(cb.status||'new');
     if(sort==='nextAction') return String(ca.nextActionDate||'9999-99-99').localeCompare(String(cb.nextActionDate||'9999-99-99'));
+    if(sort==='quality') return qualityFor(venueId(pb)).score-qualityFor(venueId(pa)).score || (+pb.fit_score||0)-(+pa.fit_score||0);
     return (+pb.fit_score||0)-(+pa.fit_score||0);
   });
 }
@@ -83,6 +110,7 @@ function cardHTML(f, compact=false){
   return `<article class="venue-card ${state.selectedId===id?'active':''}" data-id="${esc(id)}">
     <div class="venue-title">${c.favorite?'⭐ ':''}${esc(p.name)}</div>
     <div class="venue-meta">${statusPill(c.status||'new')}<span class="pill">${esc(p.department)}</span><span class="pill">${esc(p.city||'—')}</span><span class="pill fit">fit ${esc(p.fit_score)}</span></div>
+    <div class="quality-badges">${qualityBadgesHTML(id)}</div>
     <div class="venue-small">${esc(p.category||'')} · cap. ${esc(p.capacity_text||'—')} · ${esc(p.price_text||'prix à confirmer')}</div>
     ${c.nextAction?`<div class="venue-note-preview">⏭️ ${esc(c.nextAction)} ${c.nextActionDate?`· ${esc(c.nextActionDate)}`:''}</div>`:''}
     ${note && !compact?`<div class="venue-note-preview">📝 ${esc(note).slice(0,130)}</div>`:''}
@@ -90,7 +118,7 @@ function cardHTML(f, compact=false){
 }
 function renderSidebarList(){ $('list-panel').innerHTML = state.filtered.slice(0,80).map(f=>cardHTML(f,true)).join('') || '<div class="empty">Aucune salle avec ces filtres.</div>'; document.querySelectorAll('.venue-card').forEach(el=>el.onclick=()=>selectVenue(el.dataset.id,true)); }
 function renderTable(){
-  const rows = state.filtered.map(f=>{ const p=f.properties,id=venueId(p),c=crmFor(id); const overdue=c.nextActionDate && c.nextActionDate<today(); return `<div class="table-row" data-id="${esc(id)}"><div><div class="table-name">${c.favorite?'⭐ ':''}${esc(p.name)}</div><div class="table-sub">${esc(p.city||'—')} · ${esc(p.category||'')}</div></div><div>${statusPill(c.status||'new')}</div><div>${esc(p.capacity_text||'—')}</div><div class="next-action-badge ${overdue?'overdue':''}">${esc(c.nextAction||'—')} ${c.nextActionDate?`<br>${esc(c.nextActionDate)}`:''}</div><div class="table-sub">fit ${esc(p.fit_score)} · prix ${esc(p.price_score)}</div></div>`; }).join('');
+  const rows = state.filtered.map(f=>{ const p=f.properties,id=venueId(p),c=crmFor(id); const overdue=c.nextActionDate && c.nextActionDate<today(); return `<div class="table-row" data-id="${esc(id)}"><div><div class="table-name">${c.favorite?'⭐ ':''}${esc(p.name)}</div><div class="table-sub">${esc(p.city||'—')} · ${esc(p.category||'')}</div></div><div>${statusPill(c.status||'new')}<div class="quality-badges">${qualityBadgesHTML(id)}</div></div><div>${esc(p.capacity_text||'—')}</div><div class="next-action-badge ${overdue?'overdue':''}">${esc(c.nextAction||'—')} ${c.nextActionDate?`<br>${esc(c.nextActionDate)}`:''}</div><div class="table-sub">fit ${esc(p.fit_score)} · prix ${esc(p.price_score)}</div></div>`; }).join('');
   $('venue-table').innerHTML = `<div class="table-row table-head"><div>Salle</div><div>Statut</div><div>Capacité</div><div>Prochaine action</div><div>Scores</div></div>${rows || '<div class="empty">Aucune salle.</div>'}`;
   document.querySelectorAll('#venue-table .table-row[data-id]').forEach(el=>el.onclick=()=>selectVenue(el.dataset.id,true));
 }
@@ -100,6 +128,7 @@ function pipelineCard(f){
   return `<div class="pipeline-card" data-id="${esc(id)}">
     <div class="pipeline-card-title" data-open="${esc(id)}">${c.favorite?'⭐ ':''}${esc(p.name)}</div>
     <div class="pipeline-card-meta">${esc(p.city||'—')} · ${esc(p.department)} · fit ${esc(p.fit_score)}</div>
+    <div class="quality-badges">${qualityBadgesHTML(id)}</div>
     ${c.nextAction?`<div class="venue-note-preview ${overdue?'overdue':''}">⏭️ ${esc(c.nextAction)} ${c.nextActionDate?`· ${esc(c.nextActionDate)}`:''}</div>`:''}
     <div class="pipeline-card-actions">
       <button class="mini-btn" data-status="${esc(prev)}" data-id="${esc(id)}">← ${esc(STATUS[prev])}</button>
@@ -118,7 +147,7 @@ function renderPipeline(){
   document.querySelectorAll('[data-copy-call]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(callScriptFor(findFeature(btn.dataset.copyCall)), 'Script d’appel copié'); });
   document.querySelectorAll('[data-copy-email]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(emailFor(findFeature(btn.dataset.copyEmail)), 'Email copié'); });
 }
-function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const overdue=Object.values(state.crm).filter(v=>v.nextActionDate && v.nextActionDate<today()).length; $('metrics').textContent=`${state.filtered.length} affichées · ${tracked} suivies · ${overdue} relances en retard`; }
+function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const overdue=Object.values(state.crm).filter(v=>v.nextActionDate && v.nextActionDate<today()).length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; $('metrics').textContent=`${state.filtered.length} affichées · ${quality} à vérifier · ${tracked} suivies · ${overdue} relances en retard`; }
 function renderAll(){ applyFilters(); renderMap(); renderSidebarList(); renderTable(); renderPipeline(); updateMetrics(); if(state.selectedId) renderDetail(state.selectedId); }
 
 function findFeature(id){ return state.data.features.find(f=>venueId(f.properties)===id); }
@@ -127,7 +156,7 @@ window.openDetailById = function(id){ state.selectedId=id; renderDetail(id); $('
 function renderDetail(id){
   const f=findFeature(id); if(!f) return; const p=f.properties,c=crmFor(id); const notes=(c.notes||[]).map((n,i)=>`<div class="note-item"><div class="note-date">${esc(n.date)}</div><div>${esc(n.text)}</div><button class="danger-btn" data-del-note="${i}">Supprimer</button></div>`).join('') || '<p class="muted">Pas encore de note.</p>';
   const events=(c.events||[]).map((e,i)=>`<div class="event-row"><div><b>${esc(e.date||'date ?')}</b><br>${esc(e.label||'event')}</div><button class="danger-btn" data-del-event="${i}">×</button></div>`).join('') || '<p class="muted">Aucun event lié.</p>';
-  $('detail-content').innerHTML = `<div class="detail-inner"><h2>${esc(p.name)}</h2><div class="venue-meta">${statusPill(c.status||'new')}<span class="pill">${esc(p.department)}</span><span class="pill">${esc(p.city||'—')}</span><span class="pill fit">fit ${esc(p.fit_score)}</span></div><p class="muted">${esc(p.address||'adresse à vérifier')}</p>
+  $('detail-content').innerHTML = `<div class="detail-inner"><h2>${esc(p.name)}</h2><div class="venue-meta">${statusPill(c.status||'new')}<span class="pill">${esc(p.department)}</span><span class="pill">${esc(p.city||'—')}</span><span class="pill fit">fit ${esc(p.fit_score)}</span></div><div class="quality-badges detail-quality">${qualityBadgesHTML(id)}</div><p class="muted">${esc(p.address||'adresse à vérifier')}</p>
     <div class="detail-actions">${p.website?`<a class="primary-btn" href="${esc(p.website)}" target="_blank">Ouvrir site</a>`:''}${p.source_url?`<a class="secondary-btn" href="${esc(p.source_url)}" target="_blank">Source</a>`:''}<button class="secondary-btn" id="copy-contact">Copier contact</button><button class="secondary-btn" id="copy-call-script">Script appel</button><button class="secondary-btn" id="copy-email-template">Email candidature</button><button class="secondary-btn" id="toggle-fav">${c.favorite?'Retirer ⭐':'Ajouter ⭐'}</button></div>
     <div class="section"><h3>Infos salle</h3><div class="detail-grid"><div><b>Capacité</b><br>${esc(p.capacity_text||'—')}</div><div><b>Prix</b><br>${esc(p.price_text||'à confirmer')}</div><div><b>Contact</b><br>${esc(p.contact||'—')}</div><div><b>Catégorie</b><br>${esc(p.category||'—')}</div></div>${p.pros?`<p><b>Pros</b> ${esc(p.pros)}</p>`:''}${p.cons?`<p><b>Cons</b> ${esc(p.cons)}</p>`:''}</div>
     <div class="section"><h3>Suivi prospection</h3><label class="field-label">Statut</label><select id="detail-status" class="input">${Object.entries(STATUS).map(([k,v])=>`<option value="${k}" ${c.status===k?'selected':''}>${v}</option>`).join('')}</select><div class="detail-grid"><div><label class="field-label">Prochaine action</label><input id="next-action" class="input" value="${esc(c.nextAction||'')}" placeholder="Appeler, relancer, envoyer dossier…"></div><div><label class="field-label">Date</label><input id="next-action-date" type="date" class="input" value="${esc(c.nextActionDate||'')}"></div></div><p class="help">Astuce : filtre ensuite par statut ou tri “prochaine action”.</p></div>
@@ -138,11 +167,11 @@ function renderDetail(id){
 function bindDetailEvents(id){ const c=crmFor(id); $('detail-status').onchange=e=>{c.status=e.target.value;touch(id);renderAll();}; $('next-action').onchange=e=>{c.nextAction=e.target.value;touch(id);renderAll();}; $('next-action-date').onchange=e=>{c.nextActionDate=e.target.value;touch(id);renderAll();}; $('add-note').onclick=()=>{const t=$('new-note').value.trim(); if(!t)return; c.notes.unshift({date:new Date().toLocaleString('fr-FR'),text:t}); touch(id); renderAll();}; $('add-event').onclick=()=>{const label=$('event-label').value.trim(); if(!label)return; c.events.unshift({date:$('event-date').value||today(),label}); c.status='used'; touch(id); renderAll();}; $('toggle-fav').onclick=()=>{c.favorite=!c.favorite;touch(id);renderAll();}; $('copy-contact').onclick=async()=>{const p=findFeature(id).properties; await copyText([p.name,p.contact,p.website].filter(Boolean).join('\n'),'Contact copié');}; $('copy-call-script').onclick=()=>copyText(callScriptFor(findFeature(id)),'Script d’appel copié'); $('copy-email-template').onclick=()=>copyText(emailFor(findFeature(id)),'Email copié'); document.querySelectorAll('[data-del-note]').forEach(b=>b.onclick=()=>{c.notes.splice(+b.dataset.delNote,1);touch(id);renderAll();}); document.querySelectorAll('[data-del-event]').forEach(b=>b.onclick=()=>{c.events.splice(+b.dataset.delEvent,1);touch(id);renderAll();}); }
 
 function bindControls(){
-  $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
+  $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
   document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));$('map').classList.toggle('hidden',state.view!=='map');$('table-view').classList.toggle('hidden',state.view!=='list');$('pipeline-view').classList.toggle('hidden',state.view!=='pipeline');setTimeout(()=>map.invalidateSize(),80);});
   $('close-detail').onclick=()=>$('detail-panel').classList.add('hidden'); $('open-sidebar').onclick=()=>$('sidebar').classList.add('open'); $('toggle-sidebar').onclick=()=>$('sidebar').classList.remove('open');
   $('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
   $('import-json').onchange=e=>{const file=e.target.files[0]; if(!file)return; const r=new FileReader(); r.onload=()=>{try{const obj=JSON.parse(r.result); state.crm=obj.crm||obj; saveCrm(); toast('Suivi importé'); renderAll();}catch{toast('Import impossible');}}; r.readAsText(file);};
 }
 
-fetch('salles_all_idf.geojson').then(r=>r.json()).then(j=>{ state.data=j; loadCrm(); bindControls(); renderAll(); if(state.filtered.length){ const bounds=L.latLngBounds(state.filtered.map(coordsOf).filter(Boolean)); map.fitBounds(bounds.pad(.08)); } });
+fetch('salles_all_idf.geojson').then(r=>r.json()).then(j=>{ state.data=j; loadCrm(); buildQuality(); bindControls(); renderAll(); if(state.filtered.length){ const bounds=L.latLngBounds(state.filtered.map(coordsOf).filter(Boolean)); map.fitBounds(bounds.pad(.08)); } });
