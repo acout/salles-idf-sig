@@ -42,6 +42,8 @@ Implemented:
 - [x] Quick status progression buttons in pipeline
 - [x] Copyable call script and candidature email templates per venue
 - [x] Data quality filter and badges: contact, price, capacity, duplicate, geocode
+- [x] Local enrichment overrides for contact, price, capacity, address and source reliability
+- [x] Corrected local values displayed across detail, cards, list, pipeline, scripts and export/import
 - [x] Status tracking per venue: à qualifier, shortlist, contactée, candidature envoyée, OK, refus, utilisée
 - [x] Per-venue notes/comments stored in `localStorage`
 - [x] Next action + date for relance workflow
