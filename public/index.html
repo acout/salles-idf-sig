@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prospection salles IDF</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/style.css?v=20260619-crm1">
+<link rel="stylesheet" href="css/style.css?v=20260619-pipeline1">
 </head>
 <body>
 <div class="app-shell">
@@ -22,6 +22,7 @@
       <div class="view-tabs" role="tablist">
         <button class="active" id="map-tab" data-view="map">Carte</button>
         <button id="list-tab" data-view="list">Liste</button>
+        <button id="pipeline-tab" data-view="pipeline">Pipeline</button>
       </div>
       <div class="metrics" id="metrics">—</div>
     </section>
@@ -96,6 +97,13 @@
       </div>
       <div id="venue-table" class="venue-table"></div>
     </section>
+    <section id="pipeline-view" class="pipeline-view hidden">
+      <div class="table-header">
+        <h2>Pipeline de prospection</h2>
+        <p>Avance les salles par statut, puis ouvre la fiche pour notes, relances, appels et events.</p>
+      </div>
+      <div id="pipeline-board" class="pipeline-board"></div>
+    </section>
   </main>
 
   <aside class="detail-panel hidden" id="detail-panel">
@@ -105,6 +113,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260619-crm1"></script>
+<script src="js/app.js?v=20260619-pipeline1"></script>
 </body>
 </html>

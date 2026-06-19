@@ -38,6 +38,9 @@ Implemented:
 
 - [x] Map view with jitter for overlapping markers
 - [x] List/table view for operational prospecting
+- [x] Pipeline/Kanban view by prospecting status
+- [x] Quick status progression buttons in pipeline
+- [x] Copyable call script and candidature email templates per venue
 - [x] Status tracking per venue: à qualifier, shortlist, contactée, candidature envoyée, OK, refus, utilisée
 - [x] Per-venue notes/comments stored in `localStorage`
 - [x] Next action + date for relance workflow
