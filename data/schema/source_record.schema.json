@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SourceRecord",
+  "type": "object",
+  "description": "Raw traceable record collected from one source before normalization.",
+  "required": [
+    "source_record_id",
+    "source_type",
+    "source_name",
+    "source_url",
+    "collected_at"
+  ],
+  "properties": {
+    "source_record_id": {
+      "type": "string",
+      "description": "Stable id from source URL + raw name/address."
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "source_name": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "raw_name": {
+      "type": "string"
+    },
+    "raw_address": {
+      "type": "string"
+    },
+    "raw_city": {
+      "type": "string"
+    },
+    "raw_contact": {
+      "type": "string"
+    },
+    "raw_price": {
+      "type": "string"
+    },
+    "raw_capacity": {
+      "type": "string"
+    },
+    "raw_description": {
+      "type": "string"
+    },
+    "raw_html_excerpt": {
+      "type": "string"
+    },
+    "raw_json": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "collector_version": {
+      "type": "string"
+    }
+  }
+}

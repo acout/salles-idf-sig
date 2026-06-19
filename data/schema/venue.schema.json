@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CanonicalVenue",
+  "type": "object",
+  "description": "Canonical venue visible in the app. User overlays are separate and protected.",
+  "required": [
+    "venue_id",
+    "canonical_name",
+    "active"
+  ],
+  "properties": {
+    "venue_id": {
+      "type": "string"
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "canonical_address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "lat": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lon": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "canonical_website": {
+      "type": "string"
+    },
+    "canonical_contact": {
+      "type": "string"
+    },
+    "canonical_capacity_text": {
+      "type": "string"
+    },
+    "canonical_price_text": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "activity_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "space_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "beyond_fit_score": {
+      "type": [
+        "number",
+        "integer"
+      ]
+    },
+    "confidence_score": {
+      "type": [
+        "number",
+        "integer"
+      ]
+    },
+    "actionability_score": {
+      "type": [
+        "number",
+        "integer"
+      ]
+    },
+    "first_seen_at": {
+      "type": "string"
+    },
+    "last_seen_at": {
+      "type": "string"
+    },
+    "source_count": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "merged_venue_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

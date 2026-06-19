@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserOverlay",
+  "type": "object",
+  "description": "Protected per-venue user CRM layer. Sourcing must never overwrite this object.",
+  "required": [
+    "venue_id"
+  ],
+  "properties": {
+    "venue_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "array"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "next_action_date": {
+      "type": "string"
+    },
+    "events": {
+      "type": "array"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "overrides": {
+      "type": "object",
+      "properties": {
+        "contactOverride": {
+          "type": "string"
+        },
+        "priceOverride": {
+          "type": "string"
+        },
+        "capacityOverride": {
+          "type": "string"
+        },
+        "addressOverride": {
+          "type": "string"
+        },
+        "sourceReliability": {
+          "type": "string",
+          "enum": [
+            "",
+            "reliable",
+            "uncertain",
+            "bad"
+          ]
+        },
+        "enrichmentNote": {
+          "type": "string"
+        }
+      }
+    },
+    "hidden_duplicate": {
+      "type": "boolean"
+    },
+    "canonical_choice": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

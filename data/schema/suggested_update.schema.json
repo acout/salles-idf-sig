@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SuggestedUpdate",
+  "type": "object",
+  "description": "Non-destructive update proposal created when sourcing finds better data for an existing venue.",
+  "required": [
+    "suggested_update_id",
+    "venue_id",
+    "field",
+    "suggested_value",
+    "status"
+  ],
+  "properties": {
+    "suggested_update_id": {
+      "type": "string"
+    },
+    "venue_id": {
+      "type": "string"
+    },
+    "candidate_id": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "current_canonical_value": {
+      "type": "string"
+    },
+    "current_user_override_value": {
+      "type": "string"
+    },
+    "suggested_value": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "evidence_text": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unknown"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted_to_canonical",
+        "accepted_to_user_override",
+        "rejected",
+        "ignored"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "candidate_id": "cand_studio-danse-republique_3cd0cff8a3",
+        "source_record_id": "src_https-studio-danse-demo-example-loca_428e059fde",
+        "name": "Studio Danse République",
+        "normalized_name": "studio danse republique",
+        "address": "10 rue fictive, Paris",
+        "city": "Paris",
+        "department": "",
+        "lat": null,
+        "lon": null,
+        "website": "https://studio-danse-demo.example/location",
+        "contact": "contact@studio.example",
+        "capacity_text": "18 personnes",
+        "price_text": "35€/h",
+        "description": "Location studio danse avec parquet, miroirs, salle vide pour atelier mouvement et cercle. Musique autorisée.    Studio Danse République",
+        "activity_tags": [
+          "dance"
+        ],
+        "space_tags": [
+          "empty_room",
+          "mirrors",
+          "wood_floor"
+        ],
+        "constraints_tags": [],
+        "category": "studio_danse",
+        "source_url": "https://studio-danse-demo.example/location",
+        "source_type": "studio_website",
+        "source_confidence": "high",
+        "evidence_text": "Location studio danse avec parquet, miroirs, salle vide pour atelier mouvement et cercle. Musique autorisée.    Studio Danse République ",
+        "dedupe_key": "studio-danse-demo.example/location",
+        "candidate_status": "new",
+        "last_seen_at": "2026-06-19",
+        "fit_beyond_score": 100,
+        "confidence_score": 90,
+        "actionability_score": 100,
+        "score_reasons": [
+          "activité dance +18",
+          "espace empty_room +20",
+          "espace mirrors +7",
+          "espace wood_floor +12",
+          "catégorie studio_danse +22",
+          "preuve + danse",
+          "preuve + mouvement",
+          "preuve + parquet",
+          "preuve + cercle",
+          "preuve + salle vide",
+          "contact direct",
+          "prix connu",
+          "capacité connue",
+          "adresse",
+          "site web",
+          "source officielle/directe"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "candidate_id": "cand_dojo-associatif-montreuil_96930ac201",
+        "source_record_id": "src_https-dojo-demo-example_c3e0040e13",
+        "name": "Dojo Associatif Montreuil",
+        "normalized_name": "dojo associatif montreuil",
+        "address": "5 avenue exemple, Montreuil",
+        "city": "Montreuil",
+        "department": "",
+        "lat": null,
+        "lon": null,
+        "website": "https://dojo-demo.example",
+        "contact": "",
+        "capacity_text": "20 personnes",
+        "price_text": "à confirmer",
+        "description": "Dojo avec tatami, pratique corporelle, location ponctuelle possible, assurance requise.    Dojo Associatif Montreuil",
+        "activity_tags": [
+          "dojo"
+        ],
+        "space_tags": [
+          "tatami"
+        ],
+        "constraints_tags": [],
+        "category": "dojo",
+        "source_url": "https://dojo-demo.example",
+        "source_type": "studio_website",
+        "source_confidence": "high",
+        "evidence_text": "Dojo avec tatami, pratique corporelle, location ponctuelle possible, assurance requise.    Dojo Associatif Montreuil ",
+        "dedupe_key": "dojo-demo.example",
+        "candidate_status": "new",
+        "last_seen_at": "2026-06-19",
+        "fit_beyond_score": 90,
+        "confidence_score": 90,
+        "actionability_score": 60,
+        "score_reasons": [
+          "activité dojo +18",
+          "espace tatami +12",
+          "catégorie dojo +22",
+          "preuve + dojo",
+          "preuve + tatami",
+          "capacité connue",
+          "adresse",
+          "site web",
+          "source officielle/directe"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "candidate_id": "cand_cowork-premium-opera_6084ac297c",
+        "source_record_id": "src_https-cowork-premium-example_434f0cee87",
+        "name": "Cowork Premium Opéra",
+        "normalized_name": "cowork premium opera",
+        "address": "1 place exemple, Paris",
+        "city": "Paris",
+        "department": "",
+        "lat": null,
+        "lon": null,
+        "website": "https://cowork-premium.example",
+        "contact": "sales@example.com",
+        "capacity_text": "12 places assises",
+        "price_text": "250€/demi-journée",
+        "description": "Salle de réunion corporate avec tables fixes, écran, séminaire premium.    Cowork Premium Opéra",
+        "activity_tags": [],
+        "space_tags": [],
+        "constraints_tags": [
+          "premium_price",
+          "tables_fixed"
+        ],
+        "category": "coworking",
+        "source_url": "https://cowork-premium.example",
+        "source_type": "aggregator",
+        "source_confidence": "medium",
+        "evidence_text": "Salle de réunion corporate avec tables fixes, écran, séminaire premium.    Cowork Premium Opéra ",
+        "dedupe_key": "cowork-premium.example",
+        "candidate_status": "new",
+        "last_seen_at": "2026-06-19",
+        "fit_beyond_score": 0,
+        "confidence_score": 60,
+        "actionability_score": 85,
+        "score_reasons": [
+          "contrainte premium_price -20",
+          "contrainte tables_fixed -22",
+          "catégorie coworking -24",
+          "preuve - salle de réunion",
+          "preuve - coworking",
+          "preuve - séminaire premium",
+          "contact direct",
+          "prix connu",
+          "capacité connue",
+          "adresse",
+          "site web"
+        ]
+      }
+    }
+  ]
+}

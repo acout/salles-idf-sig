@@ -50,6 +50,10 @@ Implemented:
 - [x] Event history per venue to remember which rooms have served before
 - [x] Favorites ⭐
 - [x] Export/import JSON backup of the local follow-up database
+- [x] Sourcing foundation: source/candidate/venue/user-overlay/suggested-update schemas
+- [x] Beyond-compatible venue taxonomy and scoring config
+- [x] Non-destructive merge policy to protect user CRM/enrichment data
+- [x] Demo import queue pipeline (`scripts/sourcing/build_import_queue.py --demo`)
 
 ## Recommended Next Steps
 
