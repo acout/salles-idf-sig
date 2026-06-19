@@ -57,8 +57,12 @@ function render() {
     const cm = +(p.capacity_max_detected||0) || 999;
     if (cm < capMin || cm > capMax) return;
     if (searchQ && !(p.name||'').toLowerCase().includes(searchQ) && !(p.city||'').toLowerCase().includes(searchQ) && !(p.category||'').toLowerCase().includes(searchQ)) return;
+    const coords = f.geometry && f.geometry.coordinates;
+    if (!coords || coords.length < 2) return;
+    const [lon, lat] = coords;
+    if (!Number.isFinite(+lat) || !Number.isFinite(+lon)) return;
     n++;
-    L.circleMarker([p.lat, p.lon], {
+    L.circleMarker([lat, lon], {
       radius: 7, color: '#222', weight: 1,
       fillColor: fitColor(+p.fit_score), fillOpacity: .85
     }).addTo(group).bindPopup(popupHTML(p));
