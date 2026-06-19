@@ -1,0 +1,855 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347447,
+          48.859137
+        ]
+      },
+      "properties": {
+        "id": "idf-001-forum-des-images",
+        "name": "Forum des images",
+        "category": "centre culturel / cinéma",
+        "address": "2 rue du Cinéma, Forum des Halles, 75001 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.859137,
+        "lon": 2.347447,
+        "geocode_score": 0.5671229809725158,
+        "geocode_label": "2 Rue des Halles 75001 Paris",
+        "capacity_text": "100, 274, 444 places ; espaces réception 120 à 440 personnes",
+        "capacity_min": 100,
+        "capacity_max": 444,
+        "website": "https://www.forumdesimages.fr",
+        "contact": "privatisations@forumdesimages.fr ; 01 44 76 62 16",
+        "pros": "central | auditoriums + foyers | contact direct",
+        "cons": "plutôt semaine | certaines jauges >300",
+        "source_url": "https://www.forumdesimages.fr/privatisation-despaces",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 90,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317121,
+          48.859961
+        ]
+      },
+      "properties": {
+        "id": "idf-002-maison-de-la-chimie",
+        "name": "Maison de la Chimie",
+        "category": "centre de conférences",
+        "address": "28 rue Saint-Dominique, 75007 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.859961,
+        "lon": 2.317121,
+        "geocode_score": 0.9759890909090908,
+        "geocode_label": "28 Rue Saint-Dominique 75007 Paris",
+        "capacity_text": "salles 15 à 300 personnes ; amphithéâtre 216 places",
+        "capacity_min": 15,
+        "capacity_max": 300,
+        "website": "https://maisondelachimie.com",
+        "contact": "+33 1 40 62 27 00 ; formulaire devis",
+        "pros": "institutionnel | nombreuses salles | conférences/séminaires",
+        "cons": "tarifs sur devis | choix salle à cadrer",
+        "source_url": "https://maisondelachimie.com/evenementiel-paris/nos-espaces",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 85,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287343,
+          48.862207
+        ]
+      },
+      "properties": {
+        "id": "idf-003-mus-e-national-de-la-marine-l-astrolab",
+        "name": "Musée national de la Marine - L’Astrolab",
+        "category": "musée / auditorium",
+        "address": "17 place du Trocadéro et du 11 Novembre, 75116 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.862207,
+        "lon": 2.287343,
+        "geocode_score": 0.7103711961722488,
+        "geocode_label": "17 Place du Trocadéro et du Onze Novembre 75016 Paris",
+        "capacity_text": "auditorium 200 places + foyer + salles réunion",
+        "capacity_min": 200,
+        "capacity_max": 200,
+        "website": "https://www.musee-marine.fr",
+        "contact": "formulaire sur site",
+        "pros": "auditorium cible | cadre rénové | Trocadéro",
+        "cons": "contact direct à confirmer | contraintes musée",
+        "source_url": "https://www.musee-marine.fr/professionnels/entreprise/location-despace.html",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 100,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315993,
+          48.855866
+        ]
+      },
+      "properties": {
+        "id": "idf-004-mus-e-rodin",
+        "name": "Musée Rodin",
+        "category": "musée / jardin",
+        "address": "77 rue de Varenne, 75007 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.855866,
+        "lon": 2.315993,
+        "geocode_score": 0.9737454545454546,
+        "geocode_label": "77 Rue de Varenne 75007 Paris",
+        "capacity_text": "2 à 1500 invités selon espaces",
+        "capacity_min": 1500,
+        "capacity_max": 1500,
+        "website": "https://www.musee-rodin.fr",
+        "contact": "formulaire page privatisation",
+        "pros": "patrimonial | jardin | prestige",
+        "cons": "créneaux contraints | premium",
+        "source_url": "https://www.musee-rodin.fr/professionnels/location-despaces",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 60,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353591,
+          48.866831
+        ]
+      },
+      "properties": {
+        "id": "idf-005-la-ga-t-lyrique",
+        "name": "La Gaîté Lyrique",
+        "category": "centre culturel / auditorium",
+        "address": "3 bis rue Papin, 75003 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.866831,
+        "lon": 2.353591,
+        "geocode_score": 0.6803997202797203,
+        "geocode_label": "3b Rue Papin 75003 Paris",
+        "capacity_text": "Audito 126 places ; grande salle 304 places conférence",
+        "capacity_min": 126,
+        "capacity_max": 304,
+        "website": "https://www.gaite-lyrique.net",
+        "contact": "privatisations@gaite-lyrique.net",
+        "pros": "créatif | central | AV avancé",
+        "cons": "programmation culturelle | grande salle limite >300",
+        "source_url": "https://www.gaite-lyrique.net/infos-pratiques/le-lieu/grande-salle",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 100,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294571,
+          48.864615
+        ]
+      },
+      "properties": {
+        "id": "idf-006-palais-de-tokyo",
+        "name": "Palais de Tokyo",
+        "category": "centre art contemporain",
+        "address": "13 avenue du Président Wilson, 75116 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.864615,
+        "lon": 2.294571,
+        "geocode_score": 0.7485781818181818,
+        "geocode_label": "Avenue du Président Wilson 75016 Paris",
+        "capacity_text": "espaces 180 à 1300 m²",
+        "capacity_min": 180,
+        "capacity_max": 1300,
+        "website": "https://palaisdetokyo.com",
+        "contact": "evenementiel@palaisdetokyo.com",
+        "pros": "très identifiable | espaces atypiques | contact direct",
+        "cons": "certains espaces très grands | contraintes exposition",
+        "source_url": "https://palaisdetokyo.com/privatisations",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 75,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30376,
+          48.877212
+        ]
+      },
+      "properties": {
+        "id": "idf-007-les-salons-hoche",
+        "name": "Les Salons Hoche",
+        "category": "salons réception",
+        "address": "9 avenue Hoche, 75008 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.877212,
+        "lon": 2.30376,
+        "geocode_score": 0.9711372727272727,
+        "geocode_label": "9 Avenue Hoche 75008 Paris",
+        "capacity_text": "Salon Élysée jusqu’à 300 cocktail / 250 dîner / 200 théâtre",
+        "capacity_min": 200,
+        "capacity_max": 300,
+        "website": "https://www.salons-hoche.fr",
+        "contact": "contact@salons-hoche.fr ; 01 53 53 93 93",
+        "pros": "clé en main | prestige | accès Étoile",
+        "cons": "premium | capacités à confirmer",
+        "source_url": "https://www.salons-hoche.fr",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 85,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352444,
+          48.863373
+        ]
+      },
+      "properties": {
+        "id": "idf-008-espace-saint-martin",
+        "name": "Espace Saint-Martin",
+        "category": "centre congrès / salles",
+        "address": "199 bis rue Saint-Martin, 75003 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.863373,
+        "lon": 2.352444,
+        "geocode_score": 0.7278379361179361,
+        "geocode_label": "199b Rue Saint-Martin 75003 Paris",
+        "capacity_text": "9 salles ; 8 à 350 places",
+        "capacity_min": 350,
+        "capacity_max": 350,
+        "website": "https://www.espacesaintmartin.com",
+        "contact": "",
+        "pros": "central | modulable | PMR",
+        "cons": "contact à compléter | auditorium >300",
+        "source_url": "https://www.espacesaintmartin.com",
+        "confidence": "high",
+        "quality_score": 70,
+        "fit_score": 40,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338909,
+          48.867022
+        ]
+      },
+      "properties": {
+        "id": "idf-009-bnf-richelieu-fran-ois-mitterrand",
+        "name": "BnF Richelieu / François-Mitterrand",
+        "category": "institution culturelle",
+        "address": "5 rue Vivienne, 75002 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.867022,
+        "lon": 2.338909,
+        "geocode_score": 0.9676127272727272,
+        "geocode_label": "5 Rue Vivienne 75002 Paris",
+        "capacity_text": "Salle Ovale 300 cocktail ; auditoriums 200/350 places",
+        "capacity_min": 200,
+        "capacity_max": 350,
+        "website": "https://www.bnf.fr",
+        "contact": "federica.serputi@bnf.fr ; pauline.denis@bnf.fr ; gilles.monfray@bnf.fr",
+        "pros": "patrimonial + contemporain | auditoriums cible | contacts nominatifs",
+        "cons": "multi-sites | contraintes horaires",
+        "source_url": "https://www.bnf.fr/fr/location-despaces",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 100,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345883,
+          48.867935
+        ]
+      },
+      "properties": {
+        "id": "idf-010-espace-cl-ry",
+        "name": "Espace Cléry",
+        "category": "salles réunion / verrière",
+        "address": "17 rue de Cléry, 75002 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.867935,
+        "lon": 2.345883,
+        "geocode_score": 0.9698254545454544,
+        "geocode_label": "17 Rue de Cléry 75002 Paris",
+        "capacity_text": "20 salles ; Verrière jusqu’à 150 assis / 200 personnes",
+        "capacity_min": 20,
+        "capacity_max": 200,
+        "website": "https://www.formeret.fr",
+        "contact": "contact@formeret.fr ; 01 42 46 79 77",
+        "pros": "central | sous-commissions | verrière",
+        "cons": "numéros à confirmer | sur devis",
+        "source_url": "https://www.formeret.fr/en/our-spaces/clery",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 85,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.297463,
+          48.877511
+        ]
+      },
+      "properties": {
+        "id": "idf-011-pavillon-wagram",
+        "name": "Pavillon Wagram",
+        "category": "hôtel particulier / réception",
+        "address": "47 avenue de Wagram, 75017 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.877511,
+        "lon": 2.297463,
+        "geocode_score": 0.9801890909090909,
+        "geocode_label": "47 Avenue de Wagram 75017 Paris",
+        "capacity_text": "270 théâtre ; 290 repas ; 600 cocktail",
+        "capacity_min": 270,
+        "capacity_max": 600,
+        "website": "https://pavillonwagram.com",
+        "contact": "pavillonwagram@lieuxdemotions.fr ; 01 49 29 50 50",
+        "pros": "près Étoile | art déco | 270 théâtre",
+        "cons": "premium | cocktail >300",
+        "source_url": "https://pavillonwagram.com",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 75,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362021,
+          48.881648
+        ]
+      },
+      "properties": {
+        "id": "idf-012-la-caserne",
+        "name": "La Caserne",
+        "category": "tiers-lieu / événement responsable",
+        "address": "12 rue Philippe de Girard, 75010 Paris",
+        "city": "Paris",
+        "department": "75",
+        "lat": 48.881648,
+        "lon": 2.362021,
+        "geocode_score": 0.9721636363636362,
+        "geocode_label": "12 Rue Philippe de Girard 75010 Paris",
+        "capacity_text": "espaces 80 à 880 m² ; talkroom 176 m², rooftop 280 m²",
+        "capacity_min": 80,
+        "capacity_max": 880,
+        "website": "https://www.lacaserneparis.com",
+        "contact": "formulaire de devis",
+        "pros": "hybride/engagé | rooftop | nombreux espaces",
+        "cons": "capacités personnes à confirmer | formulaire",
+        "source_url": "https://www.lacaserneparis.com/privatisation-espaces-la-caserne",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 90,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.233179,
+          48.798874
+        ]
+      },
+      "properties": {
+        "id": "idf-013-hangar-y",
+        "name": "Hangar Y",
+        "category": "patrimoine / atypique",
+        "address": "9 avenue de Trivaux, 92190 Meudon",
+        "city": "Meudon",
+        "department": "92",
+        "lat": 48.798874,
+        "lon": 2.233179,
+        "geocode_score": 0.9642272727272727,
+        "geocode_label": "9 Avenue de Trivaux 92190 Meudon",
+        "capacity_text": "espaces notamment 25 à 140 personnes ; jauge globale plus large",
+        "capacity_min": 25,
+        "capacity_max": 140,
+        "website": "https://hangar-y.com/privatisation",
+        "contact": "privatisations@hangar-y.com",
+        "pros": "lieu patrimonial | proche Paris | formats 25-140",
+        "cons": "certaines jauges >300 | premium",
+        "source_url": "https://hangar-y.com/privatisation",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 85,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.229123,
+          48.894924
+        ]
+      },
+      "properties": {
+        "id": "idf-014-paris-la-d-fense-arena-salons",
+        "name": "Paris La Défense Arena - salons",
+        "category": "arena / salons corporate",
+        "address": "99 jardins de l’Arche, 92000 Nanterre",
+        "city": "Nanterre",
+        "department": "92",
+        "lat": 48.894924,
+        "lon": 2.229123,
+        "geocode_score": 0.8098390909090908,
+        "geocode_label": "99 Jardin de l'Arche 92000 Nanterre",
+        "capacity_text": "10 espaces 90 à 910 m² ; 90 à 500 personnes",
+        "capacity_min": 10,
+        "capacity_max": 910,
+        "website": "https://www.parisladefense-arena.com/convention-et-seminaires",
+        "contact": "contact via site officiel",
+        "pros": "salons modulables | technique | La Défense",
+        "cons": "certains espaces >300 | corporate",
+        "source_url": "https://www.parisladefense-arena.com/convention-et-seminaires",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 75,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.211503,
+          48.828697
+        ]
+      },
+      "properties": {
+        "id": "idf-015-domaine-national-de-saint-cloud-espace-de-l-institut",
+        "name": "Domaine national de Saint-Cloud - espace de l’Institut",
+        "category": "domaine / patrimoine",
+        "address": "Domaine national de Saint-Cloud, 92210 Saint-Cloud",
+        "city": "Saint-Cloud",
+        "department": "92",
+        "lat": 48.828697,
+        "lon": 2.211503,
+        "geocode_score": 0.46772181818181824,
+        "geocode_label": "Dom Nat du Parc de St Clou 92210 Saint-Cloud",
+        "capacity_text": "30 assis / 50 debout + jardin privatif",
+        "capacity_min": 30,
+        "capacity_max": 50,
+        "website": "https://www.domaine-saint-cloud.fr",
+        "contact": "01 44 61 20 30 ; location@monuments-nationaux.fr",
+        "pros": "cadre fort | jardin privatif | petit format",
+        "cons": "capacité limitée | contraintes patrimoniales",
+        "source_url": "https://www.domaine-saint-cloud.fr/privatisation/evenements-professionnels-cocktails-seminaires",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 100,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387072,
+          48.792821
+        ]
+      },
+      "properties": {
+        "id": "idf-016-mac-val",
+        "name": "MAC VAL",
+        "category": "musée / auditorium",
+        "address": "Place de la Libération, 94400 Vitry-sur-Seine",
+        "city": "Vitry-sur-Seine",
+        "department": "94",
+        "lat": 48.792821,
+        "lon": 2.387072,
+        "geocode_score": 0.9592963636363635,
+        "geocode_label": "Place de la Libération 94400 Vitry-sur-Seine",
+        "capacity_text": "auditorium 146 places + hall/salon/jardin",
+        "capacity_min": 146,
+        "capacity_max": 146,
+        "website": "https://www.macval.fr/Privatiser",
+        "contact": "01 43 91 64 20 ; contact@macval.fr",
+        "pros": "lieu culturel atypique | auditorium cible | espaces complémentaires",
+        "cons": "programmation | détails par espace à confirmer",
+        "source_url": "https://www.macval.fr/Privatiser",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 100,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429128,
+          48.845501
+        ]
+      },
+      "properties": {
+        "id": "idf-017-ch-teau-de-vincennes",
+        "name": "Château de Vincennes",
+        "category": "monument national",
+        "address": "Avenue de Paris, 94300 Vincennes",
+        "city": "Vincennes",
+        "department": "94",
+        "lat": 48.845501,
+        "lon": 2.429128,
+        "geocode_score": 0.9751299999999999,
+        "geocode_label": "Avenue de Paris 94300 Vincennes",
+        "capacity_text": "Sainte-Chapelle 200 assis / 250 debout ; casemates 25-80",
+        "capacity_min": 25,
+        "capacity_max": 250,
+        "website": "https://www.chateau-de-vincennes.fr",
+        "contact": "contact via page officielle",
+        "pros": "historique | portes de Paris | 25-250 personnes",
+        "cons": "contraintes monument | contact direct à compléter",
+        "source_url": "https://www.chateau-de-vincennes.fr/privatisation/evenements-professionnels-cocktails-seminaires",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 85,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.397498,
+          48.899309
+        ]
+      },
+      "properties": {
+        "id": "idf-018-la-cit-fertile",
+        "name": "La Cité Fertile",
+        "category": "tiers-lieu",
+        "address": "14 avenue Édouard Vaillant, 93500 Pantin",
+        "city": "Pantin",
+        "department": "93",
+        "lat": 48.899309,
+        "lon": 2.397498,
+        "geocode_score": 0.974280909090909,
+        "geocode_label": "14 Avenue Édouard Vaillant 93500 Pantin",
+        "capacity_text": "espaces privatisables ; certains formats <200 ; global jusqu’à 2000",
+        "capacity_min": 200,
+        "capacity_max": 2000,
+        "website": "https://citefertile.com/privatisations",
+        "contact": "01 48 43 04 60 ; contact@citefertile.com",
+        "pros": "tiers-lieu emblématique | nombreux formats | contact clair",
+        "cons": "capacités à confirmer | forte demande",
+        "source_url": "https://citefertile.com/privatisations",
+        "confidence": "medium",
+        "quality_score": 82,
+        "fit_score": 75,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.440417,
+          48.864321
+        ]
+      },
+      "properties": {
+        "id": "idf-019-la-marbrerie",
+        "name": "La Marbrerie",
+        "category": "lieu culturel / industriel",
+        "address": "21 rue Alexis Lepère, 93100 Montreuil",
+        "city": "Montreuil",
+        "department": "93",
+        "lat": 48.864321,
+        "lon": 2.440417,
+        "geocode_score": 0.9777354545454545,
+        "geocode_label": "21 Rue Alexis Lepere 93100 Montreuil",
+        "capacity_text": "650 debout ; 330 assises",
+        "capacity_min": 330,
+        "capacity_max": 650,
+        "website": "https://lamarbrerie.fr/privatisation",
+        "contact": "01 43 62 71 19 ; privatisation@lamarbrerie.fr",
+        "pros": "industriel atypique | proche métro | grande salle",
+        "cons": "330 assis limite >300 | programmation",
+        "source_url": "https://lamarbrerie.fr/privatisation",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 60,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416079,
+          48.894653
+        ]
+      },
+      "properties": {
+        "id": "idf-020-magasins-g-n-raux",
+        "name": "Magasins Généraux",
+        "category": "centre création / lieu culturel",
+        "address": "1 rue de l’Ancien Canal, 93500 Pantin",
+        "city": "Pantin",
+        "department": "93",
+        "lat": 48.894653,
+        "lon": 2.416079,
+        "geocode_score": 0.9693972727272727,
+        "geocode_label": "1 Rue de l’Ancien Canal 93500 Pantin",
+        "capacity_text": "capacité à confirmer ; privatisation événements pro",
+        "capacity_min": null,
+        "capacity_max": null,
+        "website": "https://magasinsgeneraux.com/partenaires",
+        "contact": "hello@magasinsgeneraux.com",
+        "pros": "bord canal | créatif | contact officiel",
+        "cons": "capacité à confirmer | sélection/devis",
+        "source_url": "https://magasinsgeneraux.com/partenaires",
+        "confidence": "medium",
+        "quality_score": 72,
+        "fit_score": 45,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415431,
+          48.894744
+        ]
+      },
+      "properties": {
+        "id": "idf-021-dock-b",
+        "name": "Dock B",
+        "category": "lieu hybride / restaurant",
+        "address": "1 place de la Pointe, 93500 Pantin",
+        "city": "Pantin",
+        "department": "93",
+        "lat": 48.894744,
+        "lon": 2.415431,
+        "geocode_score": 0.9592445454545454,
+        "geocode_label": "1 Place de la Pointe 93500 Pantin",
+        "capacity_text": "750 m² intérieur ; convention env. 150 personnes selon sources",
+        "capacity_min": 150,
+        "capacity_max": 750,
+        "website": "https://dockbpantin.com/privatisation",
+        "contact": "eliott@dockbpantin.com ; 01 41 71 49 69",
+        "pros": "hybride | format 150 | Pantin canal",
+        "cons": "capacités officielles à confirmer | cocktail >300",
+        "source_url": "https://dockbpantin.com/privatisation",
+        "confidence": "medium",
+        "quality_score": 82,
+        "fit_score": 60,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.154366,
+          48.649524
+        ]
+      },
+      "properties": {
+        "id": "idf-022-ch-teau-de-janvry",
+        "name": "Château de Janvry",
+        "category": "château / domaine nature",
+        "address": "Rue du Château, 91640 Janvry",
+        "city": "Janvry",
+        "department": "91",
+        "lat": 48.649524,
+        "lon": 2.154366,
+        "geocode_score": 0.535173223140496,
+        "geocode_label": "Rue du Marchais 91640 Janvry",
+        "capacity_text": "séminaires et journées d’étude ; salons, ancienne cuisine, jardins ; domaine 200 ha",
+        "capacity_min": 200,
+        "capacity_max": 200,
+        "website": "https://www.chateaudejanvry.com",
+        "contact": "+33 6 35 45 58 96 ; contact@chateaudejanvry.com",
+        "pros": "35 min sud Paris | nature | privatisation château",
+        "cons": "capacité précise à confirmer | transport collectif à vérifier",
+        "source_url": "https://www.chateaudejanvry.com",
+        "confidence": "medium",
+        "quality_score": 82,
+        "fit_score": 70,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.624777,
+          48.534401
+        ]
+      },
+      "properties": {
+        "id": "idf-023-r-sidence-ch-teau-du-m-e",
+        "name": "Résidence Château du Mée",
+        "category": "hôtel / château séminaire",
+        "address": "571 avenue Jean Monnet, 77350 Le Mée-sur-Seine",
+        "city": "Le Mée-sur-Seine",
+        "department": "77",
+        "lat": 48.534401,
+        "lon": 2.624777,
+        "geocode_score": 0.9563209090909089,
+        "geocode_label": "571 Avenue Jean Monnet 77350 Le Mée-sur-Seine",
+        "capacity_text": "salles de séminaires jusqu’à 80 personnes assises",
+        "capacity_min": 80,
+        "capacity_max": 80,
+        "website": "https://www.rcdm.fr",
+        "contact": "contact via site officiel",
+        "pros": "accessible Paris | hébergement/restauration | 80 assis",
+        "cons": "capacité limitée | contact direct à compléter",
+        "source_url": "https://www.rcdm.fr/fr/seminaires.html",
+        "confidence": "high",
+        "quality_score": 90,
+        "fit_score": 85,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.148729,
+          48.948134
+        ]
+      },
+      "properties": {
+        "id": "idf-024-ch-teau-des-bondons",
+        "name": "Château des Bondons",
+        "category": "château hôtel / séminaire",
+        "address": "47-49 rue des Bondons, 77260 La Ferté-sous-Jouarre",
+        "city": "La Ferté-sous-Jouarre",
+        "department": "77",
+        "lat": 48.948134,
+        "lon": 3.148729,
+        "geocode_score": 0.8191790909090909,
+        "geocode_label": "49 Rue des Bondons 77260 La Ferté-sous-Jouarre",
+        "capacity_text": "salles pour séminaires entreprise ; capacité à confirmer",
+        "capacity_min": null,
+        "capacity_max": null,
+        "website": "https://www.chateaudesbondons.com",
+        "contact": "contact via site officiel",
+        "pros": "site officiel séminaire | cadre château | équipe dédiée",
+        "cons": "jauge précise à vérifier | plus éloigné de Paris",
+        "source_url": "https://www.chateaudesbondons.com/fr/seminaire-seine-et-marne.html",
+        "confidence": "medium",
+        "quality_score": 72,
+        "fit_score": 30,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.640734,
+          48.683912
+        ]
+      },
+      "properties": {
+        "id": "idf-025-domaine-des-hirondelles",
+        "name": "Domaine des Hirondelles",
+        "category": "domaine / réception",
+        "address": "25 rue de la Libération, 78125 La Boissière-École",
+        "city": "Hameau de Craches / Rambouillet Territoires",
+        "department": "78",
+        "lat": 48.683912,
+        "lon": 1.640734,
+        "geocode_score": 0.570538128342246,
+        "geocode_label": "25 Grande Rue 78125 La Boissière-École",
+        "capacity_text": "200 assises / 300 cocktail selon Office de Tourisme Rambouillet",
+        "capacity_min": 200,
+        "capacity_max": 300,
+        "website": "https://www.rambouillet-tourisme.fr",
+        "contact": "+33 1 34 83 05 51 ; +33 6 45 96 02 22",
+        "pros": "200-300 dans cible | source OT | nature Yvelines",
+        "cons": "site direct à retrouver | accès depuis Paris à vérifier",
+        "source_url": "https://www.rambouillet-tourisme.fr/nos-sejours/sorties-en-groupes/les-lieux-de-receptions-et-seminaires-de-rambouillet-territoires",
+        "confidence": "medium",
+        "quality_score": 82,
+        "fit_score": 70,
+        "last_checked": "2026-06-19"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Data / cache
+__pycache__/
+*.pyc
+*.pyo
+raw/
+*.err
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Node (not used but just in case)
+node_modules/

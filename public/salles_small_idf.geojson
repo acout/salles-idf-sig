@@ -1,0 +1,855 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351453,
+          48.858957
+        ]
+      },
+      "properties": {
+        "name": "myCowork Beaubourg - Georges",
+        "city": "Paris",
+        "department": "75",
+        "address": "5 rue du cloître Saint-Merri, 75004 Paris",
+        "capacity_text": "1 à 2 personnes",
+        "price_text": "12 € TTC / heure ; 60 € TTC / journée",
+        "website": "https://mycowork.fr/meeting-rooms",
+        "contact": "info@mycowork.fr ; 01 84 25 60 82",
+        "category": "coworking / petite salle",
+        "source_url": "https://mycowork.fr/meeting-rooms",
+        "pros": "ultra petit prix | central Beaubourg | écran HDMI",
+        "cons": "trop petit pour 20 | sous-sol",
+        "confidence": "high",
+        "id": "small-001",
+        "lat": 48.858957,
+        "lon": 2.351453,
+        "geocode_score": 0.96415,
+        "geocode_label": "5 Rue du Cloître Saint-Merri 75004 Paris",
+        "capacity_max_detected": 2,
+        "price_score": 90,
+        "fit_score": 96,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347996,
+          48.865537
+        ]
+      },
+      "properties": {
+        "name": "myCowork Montorgueil - Federici",
+        "city": "Paris",
+        "department": "75",
+        "address": "54 rue Greneta, 75002 Paris",
+        "capacity_text": "8 personnes",
+        "price_text": "30 € HT / heure ; 180 € HT / journée",
+        "website": "https://mycowork.fr/meeting-rooms",
+        "contact": "info@mycowork.fr ; 01 85 09 08 29",
+        "category": "coworking / salle réunion",
+        "source_url": "https://mycowork.fr/meeting-rooms",
+        "pros": "central | 8 personnes | écran + paperboard",
+        "cons": "HT | annulation 1 semaine",
+        "confidence": "high",
+        "id": "small-002",
+        "lat": 48.865537,
+        "lon": 2.347996,
+        "geocode_score": 0.9674563636363637,
+        "geocode_label": "54 Rue Greneta 75002 Paris",
+        "capacity_max_detected": 8,
+        "price_score": 75,
+        "fit_score": 91,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347996,
+          48.865537
+        ]
+      },
+      "properties": {
+        "name": "myCowork Montorgueil - Banksi",
+        "city": "Paris",
+        "department": "75",
+        "address": "54 rue Greneta, 75002 Paris",
+        "capacity_text": "jusque 10 personnes",
+        "price_text": "50 € HT / heure ; 300 € HT / journée",
+        "website": "https://mycowork.fr/meeting-rooms",
+        "contact": "info@mycowork.fr ; 01 85 09 08 29",
+        "category": "coworking / salle réunion",
+        "source_url": "https://mycowork.fr/meeting-rooms",
+        "pros": "10 personnes | central | RDC",
+        "cons": "moins cheap que Federici | annulation 2 semaines",
+        "confidence": "high",
+        "id": "small-003",
+        "lat": 48.865537,
+        "lon": 2.347996,
+        "geocode_score": 0.9674563636363637,
+        "geocode_label": "54 Rue Greneta 75002 Paris",
+        "capacity_max_detected": 10,
+        "price_score": 75,
+        "fit_score": 91,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351453,
+          48.858957
+        ]
+      },
+      "properties": {
+        "name": "myCowork Beaubourg - Niki",
+        "city": "Paris",
+        "department": "75",
+        "address": "5 rue du cloître Saint-Merri, 75004 Paris",
+        "capacity_text": "jusque 12 personnes",
+        "price_text": "50 € HT / heure ; 300 € HT / journée ; tarifs association week-end -50% indiqués",
+        "website": "https://mycowork.fr/meeting-rooms",
+        "contact": "info@mycowork.fr ; 01 84 25 60 82",
+        "category": "coworking / salle réunion",
+        "source_url": "https://mycowork.fr/meeting-rooms",
+        "pros": "12 personnes | tarif asso possible | central",
+        "cons": "sous-sol | HT",
+        "confidence": "high",
+        "id": "small-004",
+        "lat": 48.858957,
+        "lon": 2.351453,
+        "geocode_score": 0.96415,
+        "geocode_label": "5 Rue du Cloître Saint-Merri 75004 Paris",
+        "capacity_max_detected": 12,
+        "price_score": 75,
+        "fit_score": 91,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351453,
+          48.858957
+        ]
+      },
+      "properties": {
+        "name": "myCowork Beaubourg - Stravinski",
+        "city": "Paris",
+        "department": "75",
+        "address": "5 rue du cloître Saint-Merri, 75004 Paris",
+        "capacity_text": "14 en U / 20 en théâtre",
+        "price_text": "75 € HT / heure ; 450 € HT / journée ; tarifs association week-end -50% indiqués",
+        "website": "https://mycowork.fr/meeting-rooms",
+        "contact": "info@mycowork.fr ; 01 84 25 60 82",
+        "category": "coworking / salle réunion",
+        "source_url": "https://mycowork.fr/meeting-rooms",
+        "pros": "20 max pile | central | tarif asso possible",
+        "cons": "plus cher | sous-sol",
+        "confidence": "high",
+        "id": "small-005",
+        "lat": 48.858957,
+        "lon": 2.351453,
+        "geocode_score": 0.96415,
+        "geocode_label": "5 Rue du Cloître Saint-Merri 75004 Paris",
+        "capacity_max_detected": 20,
+        "price_score": 75,
+        "fit_score": 91,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341072,
+          48.832967
+        ]
+      },
+      "properties": {
+        "name": "Foyer Saint Jean Eudes - Salle Marie des Vallées",
+        "city": "Paris",
+        "department": "75",
+        "address": "44 rue de la Santé, 75014 Paris",
+        "capacity_text": "5 à 20 personnes",
+        "price_text": "",
+        "website": "https://fsje.fr/nos-salles",
+        "contact": "contact@fsje.fr ; 01 44 08 70 00",
+        "category": "foyer / salle associative",
+        "source_url": "https://fsje.fr/nos-salles",
+        "pros": "20 max | wifi écran vidéoprojecteur | calme/jardin",
+        "cons": "plutôt associations chrétiennes | prix non publié",
+        "confidence": "high",
+        "id": "small-006",
+        "lat": 48.832967,
+        "lon": 2.341072,
+        "geocode_score": 0.9762981818181817,
+        "geocode_label": "44 Rue de la Santé 75014 Paris",
+        "capacity_max_detected": 20,
+        "price_score": 45,
+        "fit_score": 81,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341072,
+          48.832967
+        ]
+      },
+      "properties": {
+        "name": "Foyer Saint Jean Eudes - Salle Jeanne Jugan",
+        "city": "Paris",
+        "department": "75",
+        "address": "44 rue de la Santé, 75014 Paris",
+        "capacity_text": "5 à 8 personnes",
+        "price_text": "",
+        "website": "https://fsje.fr/nos-salles",
+        "contact": "contact@fsje.fr ; 01 44 08 70 00",
+        "category": "foyer / salle associative",
+        "source_url": "https://fsje.fr/nos-salles",
+        "pros": "petit format | wifi écran | accès terrasse/jardin",
+        "cons": "prix non publié | petite jauge",
+        "confidence": "high",
+        "id": "small-007",
+        "lat": 48.832967,
+        "lon": 2.341072,
+        "geocode_score": 0.9762981818181817,
+        "geocode_label": "44 Rue de la Santé 75014 Paris",
+        "capacity_max_detected": 8,
+        "price_score": 45,
+        "fit_score": 81,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377392,
+          48.848216
+        ]
+      },
+      "properties": {
+        "name": "Maison des Ensembles - petite salle associative",
+        "city": "Paris",
+        "department": "75",
+        "address": "3-5 rue d’Aligre, 75012 Paris",
+        "capacity_text": "petite salle ≤25 m² ; viser ≤20 personnes selon disposition",
+        "price_text": "associations: 10 €/h ou 70 €/jour semaine 9h-18h ; 15 €/h ou 100 €/jour soir/week-end ; exonération possible si activité gratuite",
+        "website": "https://ligueo.ligueparis.org/maison-des-ensembles/-/mise-a-disposition-de-locaux",
+        "contact": "01 53 46 75 10",
+        "category": "centre Paris Anim / association",
+        "source_url": "https://ligueo.ligueparis.org/maison-des-ensembles/-/mise-a-disposition-de-locaux",
+        "pros": "très économique | barème public | exonération possible",
+        "cons": "conditions associatives | capacité exacte à confirmer",
+        "confidence": "high",
+        "id": "small-008",
+        "lat": 48.848216,
+        "lon": 2.377392,
+        "geocode_score": 0.8225393939393939,
+        "geocode_label": "5 Rue d'Aligre 75012 Paris",
+        "capacity_max_detected": 20,
+        "price_score": 100,
+        "fit_score": 100,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340451,
+          48.866835
+        ]
+      },
+      "properties": {
+        "name": "Fabrique de la Solidarité",
+        "city": "Paris",
+        "department": "75",
+        "address": "8 rue de la Banque, 75002 Paris",
+        "capacity_text": "espaces de réunion pour associations solidarité ; petite jauge à demander",
+        "price_text": "mise à disposition associations solidarité ; coût non indiqué, dispositif Ville de Paris",
+        "website": "https://www.paris.fr/pages/locaux-a-usage-ponctuel-5406",
+        "contact": "fabrique-solidarite@paris.fr (adresse obfusquée sur Paris.fr)",
+        "category": "lieu municipal solidarité",
+        "source_url": "https://www.paris.fr/pages/locaux-a-usage-ponctuel-5406",
+        "pros": "municipal | central | orienté associations",
+        "cons": "réservé solidarité | capacité/prix à confirmer",
+        "confidence": "medium",
+        "id": "small-009",
+        "lat": 48.866835,
+        "lon": 2.340451,
+        "geocode_score": 0.96371,
+        "geocode_label": "8 Rue de la Banque 75002 Paris",
+        "capacity_max_detected": "",
+        "price_score": 50,
+        "fit_score": 46,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310024,
+          48.905661
+        ]
+      },
+      "properties": {
+        "name": "Maison des Associations Aimé Césaire - Salle 3",
+        "city": "Clichy",
+        "department": "92",
+        "address": "80 boulevard du Général Leclerc, 92110 Clichy",
+        "capacity_text": "20 assises",
+        "price_text": "34 € / heure ; caution 1000 € indiquée",
+        "website": "https://associations.ville-clichy.fr",
+        "contact": "Direction vie associative via site Ville de Clichy",
+        "category": "maison associations / municipal",
+        "source_url": "https://associations.ville-clichy.fr/actualites/salles-municipales-pour-les-particuliers-et-acteurs-economiques",
+        "pros": "20 pile | tarif horaire raisonnable | ouvert aussi acteurs économiques locaux sous conditions",
+        "cons": "caution élevée | conditions locales",
+        "confidence": "high",
+        "id": "small-010",
+        "lat": 48.905661,
+        "lon": 2.310024,
+        "geocode_score": 0.9749827272727272,
+        "geocode_label": "80 Boulevard du Général Leclerc 92110 Clichy",
+        "capacity_max_detected": 20,
+        "price_score": 75,
+        "fit_score": 96,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476204,
+          48.846577
+        ]
+      },
+      "properties": {
+        "name": "Maison du Citoyen et de la Vie Associative",
+        "city": "Fontenay-sous-Bois",
+        "department": "94",
+        "address": "16 rue du Révérend Père Lucien Aubry, 94120 Fontenay-sous-Bois",
+        "capacity_text": "petites salles dès 2 personnes ; demander une salle ≤20 (site indique gamme globale 2-120)",
+        "price_text": "mise à disposition associative ; tarif non publié",
+        "website": "https://www.fontenay.fr",
+        "contact": "mdcva@fontenay-sous-bois.fr ; 01 49 74 76 90",
+        "category": "maison du citoyen / associations",
+        "source_url": "https://www.fontenay.fr/citoyennete-vie-associative/maison-du-citoyen-1020.html",
+        "pros": "beaucoup de petites salles | contact clair | tables/chaises",
+        "cons": "priorité associations locales | prix non publié",
+        "confidence": "high",
+        "id": "small-011",
+        "lat": 48.846577,
+        "lon": 2.476204,
+        "geocode_score": 0.78239,
+        "geocode_label": "16 Rue du Reverend Pere Aubry 94120 Fontenay-sous-Bois",
+        "capacity_max_detected": 20,
+        "price_score": 50,
+        "fit_score": 88,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.409457,
+          48.900267
+        ]
+      },
+      "properties": {
+        "name": "Maison des Associations de Pantin - espace réunion",
+        "city": "Pantin",
+        "department": "93",
+        "address": "Pantin, 93500",
+        "capacity_text": "table de réunion 8 personnes",
+        "price_text": "tarif non publié ; mise à disposition associative à vérifier",
+        "website": "https://citoyen.pantin.fr/je-mengage/la-maison-des-associations",
+        "contact": "portail associatif Pantin",
+        "category": "maison associations",
+        "source_url": "https://citoyen.pantin.fr/je-mengage/la-maison-des-associations",
+        "pros": "8 personnes | équipement associatif | Pantin proche Paris",
+        "cons": "adresse exacte à confirmer | probablement assos locales",
+        "confidence": "medium",
+        "id": "small-012",
+        "lat": 48.900267,
+        "lon": 2.409457,
+        "geocode_score": 0.954250909090909,
+        "geocode_label": "Pantin",
+        "capacity_max_detected": 8,
+        "price_score": 50,
+        "fit_score": 81,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473903,
+          48.789668
+        ]
+      },
+      "properties": {
+        "name": "ID COWORK - salle de réunion",
+        "city": "Saint-Maur-des-Fossés",
+        "department": "94",
+        "address": "37 quai de la Pie, 94100 Saint-Maur-des-Fossés",
+        "capacity_text": "jusqu’à 16 personnes",
+        "price_text": "à partir de 40 € / 2h pour 1-2 personnes ; autres jauges selon barème",
+        "website": "https://id-cowork.fr",
+        "contact": "via site ID COWORK",
+        "category": "coworking abordable",
+        "source_url": "https://id-cowork.fr",
+        "pros": "16 personnes | équipé visio | tarifs d’entrée publiés",
+        "cons": "tarif 16 personnes à confirmer | plus éloigné",
+        "confidence": "high",
+        "id": "small-013",
+        "lat": 48.789668,
+        "lon": 2.473903,
+        "geocode_score": 0.9753554545454545,
+        "geocode_label": "37 Quai de la Pie 94100 Saint-Maur-des-Fossés",
+        "capacity_max_detected": 16,
+        "price_score": 90,
+        "fit_score": 96,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471927,
+          48.820327
+        ]
+      },
+      "properties": {
+        "name": "CO’LOC Coworking",
+        "city": "Joinville-le-Pont",
+        "department": "94",
+        "address": "Joinville-le-Pont, 94340",
+        "capacity_text": "petits rendez-vous / cabine / open space ; capacité salle dédiée non publiée",
+        "price_text": "8 € HT / heure ; 20 € HT demi-journée ; 29 € HT journée",
+        "website": "https://www.coworkingcoloc.fr/coworking",
+        "contact": "Laurianne@coworkingcoloc.fr ; 07 68 60 49 29",
+        "category": "coworking très abordable",
+        "source_url": "https://www.coworkingcoloc.fr/coworking",
+        "pros": "très bas prix | face RER A selon source | réservation simple",
+        "cons": "pas forcément salle fermée 20 pers | HT",
+        "confidence": "medium",
+        "id": "small-014",
+        "lat": 48.820327,
+        "lon": 2.471927,
+        "geocode_score": 0.949231818181818,
+        "geocode_label": "Joinville-le-Pont",
+        "capacity_max_detected": "",
+        "price_score": 90,
+        "fit_score": 54,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.449477,
+          48.858967
+        ]
+      },
+      "properties": {
+        "name": "Facility Center Montreuil - Salle DUBLIN",
+        "city": "Montreuil",
+        "department": "93",
+        "address": "17-21 avenue Jean Moulin, 93100 Montreuil",
+        "capacity_text": "10 personnes",
+        "price_text": "tarif non affiché ; réservation via Neo-nomade",
+        "website": "https://www.neo-nomade.com",
+        "contact": "via fiche Neo-nomade",
+        "category": "centre affaires / coworking",
+        "source_url": "https://www.neo-nomade.com/s/montreuil/salle-reunion-formation-location",
+        "pros": "10 personnes | réunion/formation | proche Paris",
+        "cons": "prix à demander | plateforme intermédiaire",
+        "confidence": "medium",
+        "id": "small-015",
+        "lat": 48.858967,
+        "lon": 2.449477,
+        "geocode_score": 0.8188483916083916,
+        "geocode_label": "21 Avenue Jean Moulin 93100 Montreuil",
+        "capacity_max_detected": 10,
+        "price_score": 50,
+        "fit_score": 76,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.449477,
+          48.858967
+        ]
+      },
+      "properties": {
+        "name": "Facility Center Montreuil - Salle ATHENES",
+        "city": "Montreuil",
+        "department": "93",
+        "address": "17-21 avenue Jean Moulin, 93100 Montreuil",
+        "capacity_text": "14 personnes",
+        "price_text": "tarif non affiché ; réservation via Neo-nomade",
+        "website": "https://www.neo-nomade.com",
+        "contact": "via fiche Neo-nomade",
+        "category": "centre affaires / coworking",
+        "source_url": "https://www.neo-nomade.com/s/montreuil/salle-reunion-formation-location",
+        "pros": "14 personnes | formation possible | alternative privée",
+        "cons": "prix à demander | probablement moins cheap que municipal",
+        "confidence": "medium",
+        "id": "small-016",
+        "lat": 48.858967,
+        "lon": 2.449477,
+        "geocode_score": 0.8188483916083916,
+        "geocode_label": "21 Avenue Jean Moulin 93100 Montreuil",
+        "capacity_max_detected": 14,
+        "price_score": 50,
+        "fit_score": 76,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.91407,
+          49.010636
+        ]
+      },
+      "properties": {
+        "name": "Maison des Associations - MDA 1/2/4",
+        "city": "Meulan-en-Yvelines",
+        "department": "78",
+        "address": "Allée des Cottages, 78250 Meulan-en-Yvelines",
+        "capacity_text": "MDA 1: 14 ; MDA 2: 14 ; MDA 4: 20 personnes",
+        "price_text": "45 € demi-journée ou 77 € journée Meulanais ; 67 €/113 € extra-muros ; caution 400 €",
+        "website": "https://ville-meulan.fr",
+        "contact": "01 30 90 41 46",
+        "category": "maison associations / municipal",
+        "source_url": "https://ville-meulan.fr/votre-mairie/vos-demarches/location-de-salles/salles-destination-des-associations",
+        "pros": "14-20 pile | tarifs publics bas | journée peu chère",
+        "cons": "pas particuliers | loin Paris selon besoin",
+        "confidence": "high",
+        "id": "small-017",
+        "lat": 49.010636,
+        "lon": 1.91407,
+        "geocode_score": 0.9612127272727272,
+        "geocode_label": "Allee des Cottages 78250 Meulan-en-Yvelines",
+        "capacity_max_detected": 20,
+        "price_score": 80,
+        "fit_score": 91,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277576,
+          48.9916
+        ]
+      },
+      "properties": {
+        "name": "Maison des Associations d’Eaubonne - petites salles",
+        "city": "Eaubonne",
+        "department": "95",
+        "address": "Eaubonne, 95600",
+        "capacity_text": "salles de 2 à 20 personnes selon salle",
+        "price_text": "gratuit pour associations eaubonnaises en demande ponctuelle",
+        "website": "https://www.eaubonne.fr",
+        "contact": "reservation-salles@eaubonne.fr ; 01 34 27 33 47",
+        "category": "maison associations / municipal",
+        "source_url": "https://www.eaubonne.fr/que-faire-a-eaubonne/se-divertir/le-monde-associatif/la-mda",
+        "pros": "plusieurs salles ≤20 | gratuit assos locales | contact réservation",
+        "cons": "associations locales | adresse précise à confirmer",
+        "confidence": "high",
+        "id": "small-018",
+        "lat": 48.9916,
+        "lon": 2.277576,
+        "geocode_score": 0.9503427272727272,
+        "geocode_label": "Eaubonne",
+        "capacity_max_detected": 20,
+        "price_score": 100,
+        "fit_score": 98,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.162081,
+          48.804154
+        ]
+      },
+      "properties": {
+        "name": "Maison des Associations et de l’Emploi",
+        "city": "Versailles",
+        "department": "78",
+        "address": "2 bis place de Touraine, 78000 Versailles",
+        "capacity_text": "7 salles de 8 à 22 personnes ; choisir ≤20",
+        "price_text": "adhésion 44,60 €/an ; location par créneau, détail à demander",
+        "website": "https://www.versailles.fr",
+        "contact": "associations@versailles.fr",
+        "category": "maison associations / municipal",
+        "source_url": "https://www.versailles.fr/318/associations-et-quartiers/accompagnement-des-associations/maison-des-associations-et-de-l-emploi.htm",
+        "pros": "petites salles | wifi | Versailles accessible train",
+        "cons": "adhésion/réservation adhérents | tarifs créneau à demander",
+        "confidence": "high",
+        "id": "small-019",
+        "lat": 48.804154,
+        "lon": 2.162081,
+        "geocode_score": 0.8106845454545454,
+        "geocode_label": "2bis Place de Touraine 78000 Versailles",
+        "capacity_max_detected": 20,
+        "price_score": 75,
+        "fit_score": 89,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.092649,
+          48.898064
+        ]
+      },
+      "properties": {
+        "name": "Maison des Associations Saint-Germanoises",
+        "city": "Saint-Germain-en-Laye",
+        "department": "78",
+        "address": "3 rue de la République, 78100 Saint-Germain-en-Laye",
+        "capacity_text": "salles 4-6, 8, 10, 20 personnes",
+        "price_text": "frais de gestion selon salle/durée ; dépôt garantie 500 € ; tarifs sur demande",
+        "website": "https://mas.asso.fr/mise-disposition-salles",
+        "contact": "contact@mas-association.fr ; 01 39 73 73 73",
+        "category": "maison associations",
+        "source_url": "https://mas.asso.fr/mise-disposition-salles",
+        "pros": "plusieurs petites jauges | centre-ville/RER | wifi/vidéo selon salle",
+        "cons": "tarifs non publiés | garantie 500 €",
+        "confidence": "high",
+        "id": "small-020",
+        "lat": 48.898064,
+        "lon": 2.092649,
+        "geocode_score": 0.9708527272727272,
+        "geocode_label": "3 Rue de la République 78100 Saint-Germain-en-Laye",
+        "capacity_max_detected": 20,
+        "price_score": 50,
+        "fit_score": 81,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.43059,
+          48.624153
+        ]
+      },
+      "properties": {
+        "name": "CCI Essonne - Salle La Bruyère",
+        "city": "Évry-Courcouronnes",
+        "department": "91",
+        "address": "2 cours Monseigneur Romero, 91000 Évry-Courcouronnes",
+        "capacity_text": "12 personnes",
+        "price_text": "80 à 100 € HT / jour",
+        "website": "https://www.essonne.cci.fr/location-de-salles-evry-courcouronnes",
+        "contact": "formulaire disponibilité CCI Essonne",
+        "category": "CCI / salle professionnelle",
+        "source_url": "https://www.essonne.cci.fr/location-de-salles-evry-courcouronnes",
+        "pros": "tarif jour bas | 12 personnes | équipé pro",
+        "cons": "usage pro uniquement | HT",
+        "confidence": "high",
+        "id": "small-021",
+        "lat": 48.624153,
+        "lon": 2.43059,
+        "geocode_score": 0.9684418181818181,
+        "geocode_label": "2 Cours Monseigneur Roméro 91000 Évry-Courcouronnes",
+        "capacity_max_detected": 12,
+        "price_score": 80,
+        "fit_score": 86,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.43059,
+          48.624153
+        ]
+      },
+      "properties": {
+        "name": "CCI Essonne - Salle George Sand",
+        "city": "Évry-Courcouronnes",
+        "department": "91",
+        "address": "2 cours Monseigneur Romero, 91000 Évry-Courcouronnes",
+        "capacity_text": "20 personnes",
+        "price_text": "150 à 210 € HT / jour",
+        "website": "https://www.essonne.cci.fr/location-de-salles-evry-courcouronnes",
+        "contact": "formulaire disponibilité CCI Essonne",
+        "category": "CCI / salle professionnelle",
+        "source_url": "https://www.essonne.cci.fr/location-de-salles-evry-courcouronnes",
+        "pros": "20 max | tarif journée clair | vidéoprojecteur/wifi",
+        "cons": "usage professionnel | HT",
+        "confidence": "high",
+        "id": "small-022",
+        "lat": 48.624153,
+        "lon": 2.43059,
+        "geocode_score": 0.9684418181818181,
+        "geocode_label": "2 Cours Monseigneur Roméro 91000 Évry-Courcouronnes",
+        "capacity_max_detected": 20,
+        "price_score": 65,
+        "fit_score": 81,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.138577,
+          48.795923
+        ]
+      },
+      "properties": {
+        "name": "Inter Centres d’Affaires - salle 20 personnes",
+        "city": "Versailles",
+        "department": "78",
+        "address": "35 rue des Chantiers, 78000 Versailles",
+        "capacity_text": "salles 3, 5, 12 et 20 personnes",
+        "price_text": "à partir de 21 € HT/h (3 pers), 45 € HT/h (12), 60 € HT/h (20)",
+        "website": "https://www.inter-ca.com/salles-de-reunion/location-salles-de-reunion-versailles-78-yvelines",
+        "contact": "via page contacts Inter Centres d’Affaires",
+        "category": "centre affaires",
+        "source_url": "https://www.inter-ca.com/salles-de-reunion/location-salles-de-reunion-versailles-78-yvelines",
+        "pros": "tarif horaire clair | 3-20 personnes | gare Chantiers",
+        "cons": "HT | privé plus cher que municipal",
+        "confidence": "high",
+        "id": "small-023",
+        "lat": 48.795923,
+        "lon": 2.138577,
+        "geocode_score": 0.9761954545454544,
+        "geocode_label": "35 Rue des Chantiers 78000 Versailles",
+        "capacity_max_detected": 20,
+        "price_score": 90,
+        "fit_score": 89,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.247663,
+          48.591575
+        ]
+      },
+      "properties": {
+        "name": "Chez Mémé - espace réunion",
+        "city": "Arpajon",
+        "department": "91",
+        "address": "27 Grande Rue, 91290 Arpajon",
+        "capacity_text": "jusqu’à 12 personnes",
+        "price_text": "salle incluse selon planning pour coworkers ; open space 12,50 € HT demi-journée / 22,50 € HT journée",
+        "website": "http://xn--chezmm-fvab.fr/location-bureau-coworking",
+        "contact": "contact@chezmémé.fr ; 09 51 22 83 00",
+        "category": "coworking / salle réunion",
+        "source_url": "http://xn--chezmm-fvab.fr/location-bureau-coworking",
+        "pros": "économique | 12 personnes | formules flexibles",
+        "cons": "privatisation salle seule non claire | Arpajon",
+        "confidence": "high",
+        "id": "small-024",
+        "lat": 48.591575,
+        "lon": 2.247663,
+        "geocode_score": 0.969170909090909,
+        "geocode_label": "27 Grande Rue 91290 Arpajon",
+        "capacity_max_detected": 12,
+        "price_score": 90,
+        "fit_score": 89,
+        "last_checked": "2026-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493008,
+          48.720895
+        ]
+      },
+      "properties": {
+        "name": "L’Arche Coworking - salle de réunion",
+        "city": "Yerres",
+        "department": "91",
+        "address": "30 rue Mont du Griffon, 91330 Yerres",
+        "capacity_text": "jusqu’à 20 personnes",
+        "price_text": "100 € HT / 2h ; 166 € HT demi-journée ; 250 € HT journée",
+        "website": "https://www.arche-coworking.fr/tarif-salle-de-reunion",
+        "contact": "arche.coworking@gmail.com ; 01 60 47 21 82",
+        "category": "coworking / salle réunion",
+        "source_url": "https://www.arche-coworking.fr/tarif-salle-de-reunion",
+        "pros": "20 max | tarifs publiés | PMR/équipée",
+        "cons": "HT | plus cher que municipal",
+        "confidence": "high",
+        "id": "small-025",
+        "lat": 48.720895,
+        "lon": 2.493008,
+        "geocode_score": 0.8733354545454545,
+        "geocode_label": "30 Rue du Mont-griffon 91330 Yerres",
+        "capacity_max_detected": 20,
+        "price_score": 80,
+        "fit_score": 86,
+        "last_checked": "2026-06-19"
+      }
+    }
+  ]
+}

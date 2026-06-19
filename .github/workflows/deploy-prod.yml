@@ -1,0 +1,46 @@
+name: Deploy Production
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Scaleway Object Storage (production)
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCALEWAY_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCALEWAY_SECRET_KEY }}
+          AWS_DEFAULT_REGION: ${{ vars.SCALEWAY_REGION || 'fr-par' }}
+          BUCKET: ${{ vars.SCALEWAY_BUCKET_PROD || 'salles-idf-prod' }}
+        run: |
+          # Install AWS CLI
+          pip3 install awscli
+
+          # Sync public/ to Scaleway Object Storage
+          aws s3 sync public/ s3://${BUCKET}/ \
+            --endpoint-url https://s3.${AWS_DEFAULT_REGION}.scw.cloud \
+            --delete \
+            --cache-control "public,max-age=3600"
+
+          # Set website configuration
+          aws s3 website s3://${BUCKET}/ \
+            --endpoint-url https://s3.${AWS_DEFAULT_REGION}.scw.cloud \
+            --index-document index.html
+
+          echo "✅ Deployed to production: https://${BUCKET}.s3-website.${AWS_DEFAULT_REGION}.scw.cloud"
+
+      - name: Invalidate CDN cache (if configured)
+        if: ${{ vars.SCALEWAY_CDN_PROD_ID != '' }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCALEWAY_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCALEWAY_SECRET_KEY }}
+          AWS_DEFAULT_REGION: ${{ vars.SCALEWAY_REGION || 'fr-par' }}
+        run: |
+          echo "CDN invalidation would go here using Scaleway API"
+          echo "CDN ID: ${{ vars.SCALEWAY_CDN_PROD_ID }}"
