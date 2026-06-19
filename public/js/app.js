@@ -1,189 +1,125 @@
-/* ===== App: Leaflet map + filters ===== */
-(function () {
-  'use strict';
+// Petites salles IDF — interactive map
+const map = L.map('map').setView([48.86, 2.35], 10);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors', maxZoom: 19
+}).addTo(map);
 
-  /* --- Map init --- */
-  const map = L.map('map').setView([48.8566, 2.3522], 10);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom: 18
-  }).addTo(map);
+let group = L.layerGroup().addTo(map);
+let data, dept = 'all', cat = 'all', priceMin = 0, priceMax = 100, capMin = 1, capMax = 20, searchQ = '';
 
-  let markers = L.layerGroup().addTo(map);
-  let geojson = null;
-  let currentDept = 'all';
-  let currentCat = 'all';
-  let priceMin = 0;
-  let priceMax = 100;
-  let capMin = 1;
-  let capMax = 20;
+function fitColor(s) {
+  if (s >= 85) return '#0a7';
+  if (s >= 70) return '#8bc34a';
+  if (s >= 55) return '#ffc107';
+  return '#ff7043';
+}
 
-  /* --- Color mapping for fit_score --- */
-  function fitColor(score) {
-    if (score >= 90) return '#0a7';
-    if (score >= 80) return '#2ecc71';
-    if (score >= 70) return '#8bc34a';
-    if (score >= 60) return '#ffc107';
-    if (score >= 50) return '#ff9800';
-    return '#ff7043';
-  }
+function priceLabel(s) {
+  if (s >= 85) return 'Gratuit / très cheap';
+  if (s >= 70) return 'Bon prix';
+  if (s >= 55) return 'Prix moyen';
+  return 'Plus cher';
+}
 
-  /* --- Price score color --- */
-  function priceColor(score) {
-    if (score >= 90) return '#d4edda';
-    if (score >= 75) return '#c3e6cb';
-    if (score >= 60) return '#fff3cd';
-    return '#ffeeba';
-  }
+function esc(s) { return (s||'').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-  /* --- Build category filter buttons from data --- */
-  function buildCatFilters(features) {
-    const cats = new Set();
-    features.forEach(f => {
-      const cat = f.properties.category;
-      if (cat) cats.add(cat.split('/')[0].trim().toLowerCase());
-    });
-    const catNames = new Set();
-    features.forEach(f => {
-      const cat = f.properties.category;
-      if (cat) catNames.add(cat);
-    });
-    const container = document.getElementById('cat-filters');
-    // Keep "Tous" button
-    catNames.forEach(cat => {
-      const btn = document.createElement('button');
-      btn.dataset.cat = cat;
-      btn.textContent = cat;
-      container.appendChild(btn);
-    });
-  }
+function popupHTML(p) {
+  const score = +p.fit_score || 0;
+  const pScore = +p.price_score || 0;
+  let html = `<div class="popup">
+    <h3>${esc(p.name)}</h3>
+    <span class="tag">${esc(p.department)}</span>
+    <span class="tag">${esc(p.category)}</span>
+    <span class="tag">fit ${score}</span>
+    <span class="tag">${priceLabel(pScore)}</span>
+    <div class="info-row"><b>Capacité</b> ${esc(p.capacity_text||'—')}</div>
+    <div class="info-row"><b>Prix</b> ${esc(p.price_text||'à confirmer')}</div>
+    <div class="info-row"><b>Adresse</b> ${esc(p.address||'—')}</div>`;
+  if (p.contact) html += `<div class="info-row"><b>Contact</b> ${esc(p.contact)}</div>`;
+  if (p.pros) html += `<div class="info-row pro"><b>Pros</b> ${esc(p.pros)}</div>`;
+  if (p.cons) html += `<div class="info-row con"><b>Cons</b> ${esc(p.cons)}</div>`;
+  html += `<div class="score-bar"><div class="score-fill" style="width:${score}%;background:${fitColor(score)}"></div></div>`;
+  if (p.website) html += `<div style="margin-top:4px"><a href="${esc(p.website)}" target="_blank" rel="noopener">Site</a>`;
+  if (p.source_url) html += ` · <a href="${esc(p.source_url)}" target="_blank" rel="noopener">Source</a>`;
+  html += `</div></div>`;
+  return html;
+}
 
-  /* --- Popup HTML --- */
-  function popupContent(p) {
-    const priceText = p.price_text ? p.price_text : 'Non publié';
-    const contactText = p.contact ? p.contact : 'À compléter';
-    const websiteLink = p.website ? `<a href="${p.website}" target="_blank" rel="noopener">Site web</a>` : '';
-    const sourceLink = p.source_url ? `<a href="${p.source_url}" target="_blank" rel="noopener">Source</a>` : '';
-    const capMax = p.capacity_max_detected || '?';
+function render() {
+  group.clearLayers();
+  let n = 0;
+  data.features.forEach(f => {
+    const p = f.properties;
+    if (dept !== 'all' && p.department !== dept) return;
+    if (cat !== 'all' && (p.category||'').toLowerCase() !== cat) return;
+    const ps = +(p.price_score||0);
+    if (ps < priceMin || ps > priceMax) return;
+    const cm = +(p.capacity_max_detected||0) || 999;
+    if (cm < capMin || cm > capMax) return;
+    if (searchQ && !(p.name||'').toLowerCase().includes(searchQ) && !(p.city||'').toLowerCase().includes(searchQ) && !(p.category||'').toLowerCase().includes(searchQ)) return;
+    n++;
+    L.circleMarker([p.lat, p.lon], {
+      radius: 7, color: '#222', weight: 1,
+      fillColor: fitColor(+p.fit_score), fillOpacity: .85
+    }).addTo(group).bindPopup(popupHTML(p));
+  });
+  document.getElementById('count').textContent = n;
+  if (n === 0) document.getElementById('count').textContent = '0';
+}
 
-    return `<div class="popup">
-      <h3>${p.name}</h3>
-      <div class="popup-meta">
-        <span class="tag dept">${p.department} — ${p.city}</span>
-        <span class="tag cat">${p.category}</span>
-        <span class="tag fit">fit ${p.fit_score}/100</span>
-        ${p.price_score ? `<span class="tag price">prix ${p.price_score}/100</span>` : ''}
-        <span class="tag cap">${capMax} pers max</span>
-      </div>
-      <p><b>Adresse</b> : ${p.address}</p>
-      <p><b>Capacité</b> : ${p.capacity_text}</p>
-      <p><b>Tarif</b> : ${priceText}</p>
-      <p><b>Contact</b> : ${contactText}</p>
-      <p class="pros">👍 ${p.pros}</p>
-      <p class="cons">⚠️ ${p.cons}</p>
-      <div class="links">${websiteLink} ${sourceLink}</div>
-    </div>`;
-  }
-
-  /* --- Render markers based on current filters --- */
-  function render() {
-    markers.clearLayers();
-    let shown = 0;
-
-    geojson.features.forEach(f => {
-      const p = f.properties;
-      // Department filter
-      if (currentDept !== 'all' && p.department !== currentDept) return;
-      // Category filter
-      if (currentCat !== 'all' && p.category !== currentCat) return;
-      // Price score filter
-      if (p.price_score < priceMin || p.price_score > priceMax) return;
-      // Capacity filter
-      const cap = p.capacity_max_detected || 0;
-      if (cap < capMin || cap > capMax) return;
-
-      shown++;
-      const marker = L.circleMarker([p.lat, p.lon], {
-        radius: 9,
-        color: '#222',
-        weight: 1.5,
-        fillColor: fitColor(+p.fit_score),
-        fillOpacity: 0.88
-      }).addTo(markers);
-      marker.bindPopup(popupContent(p), { maxWidth: 340 });
-    });
-
-    document.getElementById('count').textContent =
-      `${shown} lieu${shown !== 1 ? 'x' : ''} affiché${shown !== 1 ? 's' : ''} / ${geojson.features.length} géocodés`;
-  }
-
-  /* --- Event: Dept filter --- */
-  document.querySelectorAll('#dept-filters button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#dept-filters button').forEach(b => b.classList.remove('active'));
+// Build category filters dynamically
+function buildCatFilters() {
+  const cats = new Set();
+  data.features.forEach(f => { if (f.properties.category) cats.add(f.properties.category.toLowerCase()); });
+  const cont = document.getElementById('cat-filters');
+  const sorted = [...cats].sort();
+  sorted.forEach(c => {
+    const btn = document.createElement('button');
+    btn.dataset.cat = c;
+    btn.textContent = c.charAt(0).toUpperCase() + c.slice(1);
+    btn.onclick = () => {
+      cont.querySelectorAll('button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      currentDept = btn.dataset.dept;
+      cat = c;
       render();
-    });
+    };
+    cont.appendChild(btn);
   });
+}
 
-  /* --- Event: Cat filter (delegated, buttons added dynamically) --- */
-  document.getElementById('cat-filters').addEventListener('click', e => {
-    if (e.target.tagName !== 'BUTTON') return;
-    document.querySelectorAll('#cat-filters button').forEach(b => b.classList.remove('active'));
-    e.target.classList.add('active');
-    currentCat = e.target.dataset.cat;
+// Dept filters
+document.querySelectorAll('#dept-filters button').forEach(b => {
+  b.onclick = () => {
+    document.querySelectorAll('#dept-filters button').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    dept = b.dataset.d;
     render();
-  });
+  };
+});
 
-  /* --- Event: Price sliders --- */
-  const priceMinEl = document.getElementById('price-min');
-  const priceMaxEl = document.getElementById('price-max');
-  const priceLabel = document.getElementById('price-label');
+// Sliders
+document.getElementById('price-min').oninput = e => { priceMin = +e.target.value; document.getElementById('price-val').textContent = `${priceMin}–${priceMax}`; render(); };
+document.getElementById('price-max').oninput = e => { priceMax = +e.target.value; document.getElementById('price-val').textContent = `${priceMin}–${priceMax}`; render(); };
+document.getElementById('cap-min').oninput = e => { capMin = +e.target.value; document.getElementById('cap-val').textContent = `${capMin}–${capMax}`; render(); };
+document.getElementById('cap-max').oninput = e => { capMax = +e.target.value; document.getElementById('cap-val').textContent = `${capMin}–${capMax}`; render(); };
 
-  function updatePrice() {
-    priceMin = parseInt(priceMinEl.value);
-    priceMax = parseInt(priceMaxEl.value);
-    if (priceMin > priceMax) { [priceMin, priceMax] = [priceMax, priceMin]; }
-    priceLabel.textContent = `prix ${priceMin}–${priceMax}`;
-    render();
-  }
+// Search
+document.getElementById('search').oninput = e => { searchQ = e.target.value.toLowerCase(); render(); };
 
-  priceMinEl.addEventListener('input', updatePrice);
-  priceMaxEl.addEventListener('input', updatePrice);
+// Mobile panel toggle
+document.getElementById('close-panel').onclick = () => {
+  document.getElementById('panel').classList.toggle('collapsed');
+};
+// Reopen on map click
+map.on('click', () => {
+  const panel = document.getElementById('panel');
+  if (panel.classList.contains('collapsed')) panel.classList.remove('collapsed');
+});
 
-  /* --- Event: Capacity sliders --- */
-  const capMinEl = document.getElementById('cap-min');
-  const capMaxEl = document.getElementById('cap-max');
-  const capLabel = document.getElementById('cap-label');
-
-  function updateCap() {
-    capMin = parseInt(capMinEl.value);
-    capMax = parseInt(capMaxEl.value);
-    if (capMin > capMax) { [capMin, capMax] = [capMax, capMin]; }
-    capLabel.textContent = `${capMin}–${capMax} pers`;
-    render();
-  }
-
-  capMinEl.addEventListener('input', updateCap);
-  capMaxEl.addEventListener('input', updateCap);
-
-  /* --- Load GeoJSON data --- */
-  fetch('salles_small_idf.geojson')
-    .then(r => r.json())
-    .then(data => {
-      geojson = data;
-      buildCatFilters(data.features);
-      render();
-
-      // Fit map bounds to data
-      if (data.features.length) {
-        const bounds = L.geoJSON(data).getBounds().pad(0.1);
-        map.fitBounds(bounds);
-      }
-    })
-    .catch(err => {
-      document.getElementById('count').textContent = 'Erreur de chargement des données';
-      console.error('GeoJSON load error:', err);
-    });
-})();
+// Load data
+fetch('salles_all_idf.geojson').then(r => r.json()).then(j => {
+  data = j;
+  buildCatFilters();
+  render();
+  map.fitBounds(group.getBounds().pad(0.05));
+});

@@ -2,64 +2,71 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Petites salles IDF — Carte des salles ≤20 pers, budget abordable</title>
-<meta name="description" content="Carte interactive des petites salles privatisables en Île-de-France (≤20 personnes, budget abordable). Filtres par département, catégorie, prix.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Petites salles IDF — carte interactive</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="map"></div>
+<div class="panel" id="panel">
+  <button class="close-btn" id="close-panel" aria-label="Fermer">&times;</button>
+  <div class="panel-header">
+    <h1>🏫 Petites salles Île-de-France</h1>
+    <div class="subtitle">≤ 20 personnes · budget-friendly · <span id="count">—</span> salles affichées</div>
+  </div>
 
-<aside class="panel" id="panel">
-  <header class="panel-header">
-    <h1>🟥 Petites salles IDF</h1>
-    <p class="subtitle">≤20 pers · budget abordable · Île-de-France</p>
-    <div id="count" class="count"></div>
-  </header>
-
-  <section class="filters">
-    <h2>Département</h2>
-    <div class="filter-row" id="dept-filters">
-      <button class="active" data-dept="all">Tous</button>
-      <button data-dept="75">75</button>
-      <button data-dept="92">92</button>
-      <button data-dept="93">93</button>
-      <button data-dept="94">94</button>
-      <button data-dept="77">77</button>
-      <button data-dept="78">78</button>
-      <button data-dept="91">91</button>
-      <button data-dept="95">95</button>
+  <div class="filters">
+    <div class="filter-group">
+      <label>Département</label>
+      <div class="filter-row" id="dept-filters">
+        <button class="active" data-d="all">Tous</button>
+        <button data-d="75">75</button>
+        <button data-d="92">92</button>
+        <button data-d="93">93</button>
+        <button data-d="94">94</button>
+        <button data-d="77">77</button>
+        <button data-d="78">78</button>
+        <button data-d="91">91</button>
+        <button data-d="95">95</button>
+      </div>
     </div>
-  </section>
 
-  <section class="filters">
-    <h2>Catégorie</h2>
-    <div class="filter-row" id="cat-filters">
-      <button class="active" data-cat="all">Tous</button>
+    <div class="filter-group">
+      <label>Catégorie</label>
+      <div class="filter-row" id="cat-filters">
+        <button class="active" data-cat="all">Tous</button>
+      </div>
     </div>
-  </section>
 
-  <section class="filters">
-    <h2>Prix <span id="price-label" class="price-label">min → max</span></h2>
-    <div class="slider-row">
-      <input type="range" id="price-min" min="0" max="100" value="0" class="slider" aria-label="Score prix minimum">
-      <input type="range" id="price-max" min="0" max="100" value="100" class="slider" aria-label="Score prix maximum">
+    <div class="filter-group">
+      <label>Score prix : <span id="price-val">0–100</span></label>
+      <div class="slider-row">
+        <input type="range" id="price-min" min="0" max="100" value="0" class="slider">
+        <input type="range" id="price-max" min="0" max="100" value="100" class="slider">
+      </div>
     </div>
-  </section>
 
-  <section class="filters">
-    <h2>Taille <span id="cap-label" class="price-label">1–20 pers</span></h2>
-    <div class="slider-row">
-      <input type="range" id="cap-min" min="1" max="20" value="1" class="slider" aria-label="Capacité minimum">
-      <input type="range" id="cap-max" min="1" max="20" value="20" class="slider" aria-label="Capacité maximum">
+    <div class="filter-group">
+      <label>Capacité max : <span id="cap-val">1–20</span></label>
+      <div class="slider-row">
+        <input type="range" id="cap-min" min="1" max="100" value="1" class="slider">
+        <input type="range" id="cap-max" min="1" max="100" value="20" class="slider">
+      </div>
     </div>
-  </section>
 
-  <footer class="panel-footer">
-    <small>Couleur = fit score (vert = meilleur). Données web + géocodage BAN. À qualifier avant réservation.</small>
-  </footer>
-</aside>
+    <div class="filter-group">
+      <label>Recherche <input type="text" id="search" placeholder="nom, ville, catégorie…" class="search-input"></label>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="dot" style="background:#0a7"></span> Top fit &nbsp;
+    <span class="dot" style="background:#8bc34a"></span> Bon &nbsp;
+    <span class="dot" style="background:#ffc107"></span> Moyen &nbsp;
+    <span class="dot" style="background:#ff7043"></span> Limité
+  </div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/app.js"></script>
