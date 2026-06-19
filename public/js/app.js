@@ -45,32 +45,66 @@ function popupHTML(p) {
   return html;
 }
 
-function render() {
-  group.clearLayers();
-  let n = 0;
-  data.features.forEach(f => {
-    const p = f.properties;
-    if (dept !== 'all' && p.department !== dept) return;
-    if (cat !== 'all' && (p.category||'').toLowerCase() !== cat) return;
-    const ps = +(p.price_score||0);
-    if (ps < priceMin || ps > priceMax) return;
-    const cm = +(p.capacity_max_detected||0) || 999;
-    if (cm < capMin || cm > capMax) return;
-    if (searchQ && !(p.name||'').toLowerCase().includes(searchQ) && !(p.city||'').toLowerCase().includes(searchQ) && !(p.category||'').toLowerCase().includes(searchQ)) return;
-    const coords = f.geometry && f.geometry.coordinates;
-    if (!coords || coords.length < 2) return;
-    const [lon, lat] = coords;
-    if (!Number.isFinite(+lat) || !Number.isFinite(+lon)) return;
-    n++;
-    L.circleMarker([lat, lon], {
-      radius: 7, color: '#222', weight: 1,
-      fillColor: fitColor(+p.fit_score), fillOpacity: .85
-    }).addTo(group).bindPopup(popupHTML(p));
-  });
-  document.getElementById('count').textContent = n;
-  if (n === 0) document.getElementById('count').textContent = '0';
+function jitteredLatLon(lat, lon, index, total) {
+  if (total <= 1) return [lat, lon];
+  // Spread same-coordinate venues in a small deterministic spiral.
+  // 0.00008° ≈ 9m latitude in IDF; rings stay close enough to preserve location semantics.
+  const angle = (index * 137.508) * Math.PI / 180; // golden angle
+  const ring = Math.floor(index / 12) + 1;
+  const radius = 0.00008 * ring;
+  const dLat = Math.sin(angle) * radius;
+  const dLon = Math.cos(angle) * radius / Math.cos(lat * Math.PI / 180);
+  return [lat + dLat, lon + dLon];
 }
 
+function filteredFeatures() {
+  return data.features.filter(f => {
+    const p = f.properties;
+    if (dept !== 'all' && p.department !== dept) return false;
+    if (cat !== 'all' && (p.category||'').toLowerCase() !== cat) return false;
+    const ps = +(p.price_score||0);
+    if (ps < priceMin || ps > priceMax) return false;
+    const cm = +(p.capacity_max_detected||0) || 999;
+    if (cm < capMin || cm > capMax) return false;
+    if (searchQ && !(p.name||'').toLowerCase().includes(searchQ) && !(p.city||'').toLowerCase().includes(searchQ) && !(p.category||'').toLowerCase().includes(searchQ)) return false;
+    const coords = f.geometry && f.geometry.coordinates;
+    if (!coords || coords.length < 2) return false;
+    const [lon, lat] = coords;
+    return Number.isFinite(+lat) && Number.isFinite(+lon);
+  });
+}
+
+function render() {
+  group.clearLayers();
+  const features = filteredFeatures();
+  const buckets = new Map();
+  features.forEach(f => {
+    const [lon, lat] = f.geometry.coordinates;
+    const key = `${(+lat).toFixed(6)},${(+lon).toFixed(6)}`;
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(f);
+  });
+
+  let n = 0;
+  let uniquePoints = 0;
+  for (const bucket of buckets.values()) {
+    uniquePoints++;
+    bucket.forEach((f, idx) => {
+      const p = f.properties;
+      const [lon, lat] = f.geometry.coordinates;
+      const [jLat, jLon] = jitteredLatLon(+lat, +lon, idx, bucket.length);
+      n++;
+      L.circleMarker([jLat, jLon], {
+        radius: bucket.length > 1 ? 6 : 7,
+        color: bucket.length > 1 ? '#111' : '#222',
+        weight: 1,
+        fillColor: fitColor(+p.fit_score),
+        fillOpacity: .85
+      }).addTo(group).bindPopup(popupHTML(p) + (bucket.length > 1 ? `<div class="overlap-note">Point décalé : ${bucket.length} salles avaient la même coordonnée.</div>` : ''));
+    });
+  }
+  document.getElementById('count').textContent = `${n} (${uniquePoints} points)`;
+}
 // Build category filters dynamically
 function buildCatFilters() {
   const cats = new Set();
