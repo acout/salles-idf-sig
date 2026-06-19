@@ -7,6 +7,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let group = L.layerGroup().addTo(map);
 let data, dept = 'all', cat = 'all', priceMin = 0, priceMax = 100, capMin = 1, capMax = 20, searchQ = '';
 
+// Keep the map focused on Île-de-France. Some scraped/geocoded rows resolve to
+// homonymous towns outside IDF (Saint-Denis, Vincennes, etc.), which otherwise
+// makes fitBounds zoom out to France and visually collapses the Paris cluster.
+const IDF_BBOX = { minLat: 48.1, maxLat: 49.1, minLon: 1.4, maxLon: 3.6 };
+function isInsideIdf(lat, lon) {
+  return lat >= IDF_BBOX.minLat && lat <= IDF_BBOX.maxLat && lon >= IDF_BBOX.minLon && lon <= IDF_BBOX.maxLon;
+}
+
 function fitColor(s) {
   if (s >= 85) return '#0a7';
   if (s >= 70) return '#8bc34a';
@@ -70,7 +78,7 @@ function filteredFeatures() {
     const coords = f.geometry && f.geometry.coordinates;
     if (!coords || coords.length < 2) return false;
     const [lon, lat] = coords;
-    return Number.isFinite(+lat) && Number.isFinite(+lon);
+    return Number.isFinite(+lat) && Number.isFinite(+lon) && isInsideIdf(+lat, +lon);
   });
 }
 
