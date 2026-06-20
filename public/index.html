@@ -23,7 +23,7 @@
         <button class="active" id="map-tab" data-view="map">Carte</button>
         <button id="list-tab" data-view="list">Liste</button>
         <button id="pipeline-tab" data-view="pipeline">Pipeline</button>
-        <button id="funnel-tab" data-view="funnel">Funnel</button>
+        <button id="funnel-tab" data-view="funnel">Vérif Import</button>
       </div>
       <div class="metrics" id="metrics">—</div>
     </section>
@@ -149,12 +149,12 @@
     </section>
     <section id="funnel-view" class="funnel-view hidden">
       <div class="table-header">
-        <h2>🔍 Funnel de sourcing</h2>
-        <p>Où chaque item s'est arrêté dans le pipeline. Cliquez sur un item pour voir la fiche.</p>
+        <h2>🔍 Vérif Import</h2>
+        <p>Parcourir le pipeline : où chaque item s'est arrêté. Cliquez sur une étape ci-dessous pour filtrer.</p>
         <div id="funnel-summary" class="funnel-summary"></div>
         <div class="grid-2" style="margin-top:12px">
-          <div><label class="field-label">Filtre étape</label><select id="funnel-stage-filter" class="input"><option value="all">Toutes les étapes</option><option value="observation">L0 — Observation</option><option value="classified">L1 — Classifiée</option><option value="entity">L2 — Entité</option><option value="curated">L3 — Curated</option><option value="import_queue">L4 — Import queue</option><option value="filtered_geo">Filtré : géo</option><option value="filtered_reliability">Filtré : fiabilité</option><option value="filtered_not_venue">Filtré : pas une salle</option></select></div>
-          <div><label class="field-label">Filtre source</label><select id="funnel-source-filter" class="input"><option value="all">Toutes sources</option><option value="S4">S4 — Page location officielle</option><option value="S3">S3 — Site officiel</option><option value="S2">S2 — Co-working / PDF</option><option value="S1">S1 — Agrégateur / annuaire</option></select></div>
+          <div><label class="field-label">Filtre étape</label><select id="funnel-stage-filter" class="input"><option value="all">Toutes les étapes</option><option value="L0_aggregator">📥 Agrégateur / annuaire (609)</option><option value="L2_filtered_geo">🌍 Filtré géo (39)</option><option value="L2_filtered_reliability">⚠️ Filtré fiabilité S0-S2 (74)</option><option value="L3_not_venue">❌ IA : pas une salle (186)</option><option value="L3_curated_not_imported">⚠️ Vraie salle mais pas importée (34)</option><option value="L4_import_queue">✅ Importé dans la carte (133)</option></select></div>
+          <div><label class="field-label">Filtre fiabilité</label><select id="funnel-source-filter" class="input"><option value="all">Toutes</option><option value="S4">S4 — Page location officielle</option><option value="S3">S3 — Site officiel</option><option value="S2">S2 — Co-working / PDF</option><option value="S1">S1 — Agrégateur / annuaire</option><option value="S0">S0 — Inconnu</option></select></div>
         </div>
       </div>
       <div id="funnel-items" class="funnel-items"></div>
@@ -168,6 +168,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260620-funnel-l4"></script>
+<script src="js/app.js?v=20260620-verif-import"></script>
 </body>
 </html>

@@ -189,61 +189,55 @@ function renderPipeline(){
 }
 function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; const cand=state.filtered.filter(f=>isCandidate(f.properties)).length; const aggs=state.filtered.filter(f=>isAggregator(f.properties)).length; const rentOk=state.filtered.filter(f=>rentalStatus(f.properties)==='possible').length; const rentNo=state.filtered.filter(f=>rentalStatus(f.properties)==='unlikely').length; const mapped=state.filtered.filter(coordsOf).length; const tags=activeTagLabels(); $('metrics').textContent=`${state.filtered.length} affichées · ${cand} candidats · ${aggs} agrégateurs · ${rentOk} location OK · ${rentNo} non louables prob. · ${mapped} cartographiées · ${quality} à vérifier${tags.length?' · tags: '+tags.join(' + '):''}`; }
 
-/* ── Funnel view ────────────────────────────────── */
-const FUNNEL_STATS={
-  L0_observation:1082, L1_classified:1082, L1_in_scope:1021, L1_out_of_zone:38, L1_homonym:10, L1_geo_unknown:13,
-  L2_entities:1075, L2_venue:466, L2_aggregator:609,
-  L3_curated:379, L3_high_quality:379,
-  L4_import_queue:165, L4_rental_possible:94, L4_rental_unclear:61, L4_rental_unlikely:10
-};
+/* ── Vérif Import view ─────────────────────────── */
+state.funnelItems=[];
 const FUNNEL_STAGES=[
-  {key:'L0_observation',label:'L0 — Observations brutes',icon:'📥',color:'#94a3b8'},
-  {key:'L1_classified',label:'L1 — Classifiées (geo + source)',icon:'🔍',color:'#60a5fa'},
-  {key:'L1_in_scope',label:'   ↳ In scope IDF',icon:'',color:'#34d399'},
-  {key:'L1_out_of_zone',label:'   ↳ Filtré : hors zone',icon:'',color:'#f87171'},
-  {key:'L1_homonym',label:'   ↳ Filtré : homonyme',icon:'',color:'#fbbf24'},
-  {key:'L2_entities',label:'L2 — Entités résolues',icon:'🔗',color:'#a78bfa'},
-  {key:'L2_venue',label:'   ↳ Salles candidates',icon:'',color:'#34d399'},
-  {key:'L2_aggregator',label:'   ↳ Observations agrégateur',icon:'',color:'#fb923c'},
-  {key:'L3_curated',label:'L3 — Curated in-scope S3+',icon:'✅',color:'#22d3ee'},
-  {key:'L4_import_queue',label:'L4 — Import queue (app)',icon:'📋',color:'#4ade80'},
-  {key:'L4_rental_possible',label:'   ↳ Location possible',icon:'',color:'#166534'},
-  {key:'L4_rental_unclear',label:'   ↳ Location à vérifier',icon:'',color:'#92400e'},
-  {key:'L4_rental_unlikely',label:'   ↳ Pas louable',icon:'',color:'#991b1b'},
+  {key:'L0_aggregator',label:'Agrégateur / annuaire',icon:'📥',color:'#fb923c'},
+  {key:'L2_filtered_geo',label:'Filtré géo (hors IDF / homonyme)',icon:'🌍',color:'#f87171'},
+  {key:'L2_filtered_reliability',label:'Filtré fiabilité (S1/S2/S0)',icon:'⚠️',color:'#fbbf24'},
+  {key:'L3_not_venue',label:'IA : pas une salle',icon:'❌',color:'#ef4444'},
+  {key:'L3_curated_not_imported',label:'Vraie salle mais pas importée',icon:'⚠️',color:'#f59e0b'},
+  {key:'L4_import_queue',label:'✅ Importé dans la carte',icon:'✅',color:'#22c55e'},
 ];
 function renderFunnel(){
-  const summaryHTML=FUNNEL_STAGES.map(s=>`<div class="funnel-row" style="border-left:4px solid ${s.color};padding:4px 10px;margin:4px 0;border-radius:8px;background:#fff">
+  if(!state.funnelItems.length){renderFunnelEmpty();return;}
+  const sc=state.funnelStageCounts||{};
+  const summaryHTML=FUNNEL_STAGES.map(s=>`<div class="funnel-row" style="border-left:4px solid ${s.color};padding:6px 12px;margin:6px 0;border-radius:8px;background:#fff;cursor:pointer" data-funnel-stage="${s.key}">
     <span style="font-weight:700">${s.icon} ${s.label}</span>
-    <span style="float:right;font-weight:800;font-size:16px">${FUNNEL_STATS[s.key]||0}</span>
-  </div>`).join('');
+    <span style="float:right;font-weight:800;font-size:16px">${sc[s.key]||0}</span>
+  </div>`).join('') + `<div class="funnel-row" style="border-left:4px solid #94a3b8;padding:6px 12px;margin:6px 0;border-radius:8px;background:#fff"><span style="font-weight:700">Total</span><span style="float:right;font-weight:800;font-size:16px">${state.funnelItems.length}</span></div>`;
   $('funnel-summary').innerHTML=summaryHTML;
+  document.querySelectorAll('[data-funnel-stage]').forEach(el=>el.onclick=()=>{
+    $('funnel-stage-filter').value=el.dataset.funnelStage==='L4_import_queue'?'L4_import_queue':el.dataset.funnelStage;
+    renderFunnel();
+  });
 
-  // Render individual items from current filtered data
   const stageFilter=$('funnel-stage-filter')?.value||'all';
   const sourceFilter=$('funnel-source-filter')?.value||'all';
-  const items=state.filtered.filter(f=>{
-    const p=f.properties;
-    if(stageFilter==='filtered_geo'&&p.geo_status==='in_scope') return false;
-    if(stageFilter==='filtered_reliability'&&['S3','S4'].includes(p.source_reliability)) return false;
-    if(stageFilter==='filtered_not_venue'&&p._dataset!=='aggregator') return false;
-    if(sourceFilter!=='all'&&p.source_reliability!==sourceFilter) return false;
-    return true;
-  }).slice(0,120);
+  const q=(state.filters.q||'').toLowerCase();
+  let items=state.funnelItems;
+  if(stageFilter!=='all') items=items.filter(i=>i.stage===stageFilter);
+  if(sourceFilter!=='all') items=items.filter(i=>i.source_reliability===sourceFilter);
+  if(q) items=items.filter(i=>(i.name+' '+i.city+' '+i.stop_reason).toLowerCase().includes(q));
 
-  $('funnel-items').innerHTML=items.map(f=>{
-    const p=f.properties, id=venueId(p);
-    const stage=p._dataset==='candidate'?'L4':p.formal_extraction_status==='ai_extracted'?'L4':p.source_reliability?'L2':'L0';
-    const stageLabel=stage==='L4'?'✅ App':stage==='L2'?'🔍 Classifié':'📥 Observation';
-    return `<div class="funnel-item" data-id="${esc(id)}" style="border-left:4px solid ${p.rental_possible_status==='possible'?'#166534':p.rental_possible_status==='unlikely'?'#991b1b':'#92400e'};padding:8px 12px;margin:4px 0;background:#fff;border-radius:10px;cursor:pointer">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <div><strong>${esc(p.name||'Sans nom')}</strong> <span style="color:#667085">${esc(p.city||'')}</span></div>
-        <div><span class="pill" style="font-size:10px">${stageLabel}</span> ${p.page_type?`<span class="pill" style="font-size:10px">${esc(p.page_type.replace(/_/g,' '))}</span>`:''} ${p.source_reliability?`<span class="pill" style="font-size:10px">${esc(p.source_reliability)}</span>`:''} <span class="pill rental-${esc(rentalStatus(p))}">${rentalLabel(p)}</span></div>
+  $('funnel-items').innerHTML=items.slice(0,150).map(i=>{
+    const stage=FUNNEL_STAGES.find(s=>s.key===i.stage);
+    const sc2=stage?stage.color:'#94a3b8';
+    const sl=stage?stage.label:i.stage;
+    const si=stage?stage.icon:'❓';
+    return `<div class="funnel-item" style="border-left:4px solid ${sc2};padding:8px 12px;margin:4px 0;background:#fff;border-radius:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px">
+        <div style="font-weight:700;max-width:55%">${esc(i.name||'Sans nom')}</div>
+        <div><span class="pill" style="font-size:10px;background:${sc2};color:#fff">${si} ${esc(sl)}</span> ${i.source_reliability?`<span class="pill rel-${esc(i.source_reliability)}" style="font-size:10px">${esc(i.source_reliability)}</span>`:''} ${i.rental_possible?`<span class="pill rental-${esc(i.rental_possible)}" style="font-size:10px">${esc(i.rental_possible)}</span>`:''}</div>
       </div>
-      <div style="font-size:12px;color:#667085;margin-top:4px">${esc(p.category||'')} · ${esc(p.source_domain||'')} · obs: ${p.observation_count||1} ${p.specific_rental_page_url?'· <a href="'+esc(p.specific_rental_page_url)+'" target="_blank" style="color:#0a7">page location</a>':''}</div>
-      ${p.evidence_text?`<div style="font-size:11px;color:#475467;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(p.evidence_text.slice(0,150))}</div>`:''}
+      <div style="font-size:12px;color:#344054;margin-top:3px">${esc(i.stop_reason)}</div>
+      <div style="font-size:11px;color:#667085;margin-top:2px">${esc(i.city||'')} ${i.page_type?`· <span class="pill" style="font-size:9px">${esc(i.page_type.replace(/_/g,' '))}</span>`:''} ${i.source_url?`· <a href="${esc(i.source_url)}" target="_blank" style="color:#0a7;font-size:11px">site</a>`:''}</div>
     </div>`;
   }).join('')||'<div class="empty">Aucun item avec ces filtres.</div>';
-  document.querySelectorAll('.funnel-item[data-id]').forEach(el=>el.onclick=()=>openDetailById(el.dataset.id));
+}
+function renderFunnelEmpty(){
+  $('funnel-summary').innerHTML='<div class="empty" style="padding:40px">Chargement des données de vérif…</div>';
+  $('funnel-items').innerHTML='';
 }
 function renderAll(){ buildQuality(); applyFilters(); renderMap(); renderSidebarList(); renderTable(); renderPipeline(); renderFunnel(); updateMetrics(); if(state.selectedId) renderDetail(state.selectedId); }
 
@@ -280,11 +274,14 @@ $('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:ne
 
 Promise.all([
   fetch('salles_all_idf.geojson').then(r=>r.json()),
-  fetch('import_queue.geojson').then(r=>r.ok?r.json():{type:'FeatureCollection',features:[]}).catch(()=>({type:'FeatureCollection',features:[]}))
-]).then(([venues,candidates])=>{
+  fetch('import_queue.geojson').then(r=>r.ok?r.json():{type:'FeatureCollection',features:[]}).catch(()=>({type:'FeatureCollection',features:[]})),
+  fetch('funnel_debug.json').then(r=>r.ok?r.json():{items:[],stage_counts:{}}).catch(()=>({items:[],stage_counts:{}}))
+]).then(([venues,candidates,funnelData])=>{
   venues.features=(venues.features||[]).map(f=>{ f.properties={...(f.properties||{}), _dataset:'venue'}; return f; });
   candidates.features=(candidates.features||[]).map(f=>{ const p=f.properties||{}; f.properties={...p, _dataset:'candidate', name:p.name||p.raw_name||'Candidat sans nom', fit_score:p.fit_beyond_score||p.fit_score||0, price_score:p.actionability_score||p.price_score||0}; return f; });
   state.venues=venues; state.candidates=candidates; state.data={type:'FeatureCollection', features:[...venues.features, ...candidates.features]};
+  state.funnelItems=funnelData.items||[];
+  state.funnelStageCounts=funnelData.stage_counts||{};
   loadCrm(); buildQuality(); bindControls(); renderAll();
   const mapped=state.filtered.map(coordsOf).filter(Boolean); if(mapped.length){ const bounds=L.latLngBounds(mapped); map.fitBounds(bounds.pad(.08)); }
 });
