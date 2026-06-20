@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-06-20T11:03:23.193801",
+  "total_features": 165,
+  "with_coords": 73,
+  "without_coords": 92,
+  "rental_possible": 94,
+  "rental_unclear": 61,
+  "rental_unlikely": 10,
+  "page_type_distribution": {
+    "official_venue_page": 86,
+    "official_rental_page": 59,
+    "municipal_facility_page": 20
+  },
+  "reliability_distribution": {
+    "S3": 106,
+    "S4": 59
+  },
+  "dataset_distribution": {
+    "candidate": 165
+  },
+  "has_price": 13,
+  "has_capacity": 33,
+  "has_address": 156,
+  "has_contact": 24,
+  "has_rental_page": 9
+}
