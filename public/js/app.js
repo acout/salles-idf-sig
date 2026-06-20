@@ -196,7 +196,7 @@ const FUNNEL_STAGES=[
   {key:'L2_filtered_geo',label:'Filtré géo (hors IDF / homonyme)',icon:'🌍',color:'#f87171'},
   {key:'L2_filtered_reliability',label:'Filtré fiabilité (S1/S2/S0)',icon:'⚠️',color:'#fbbf24'},
   {key:'L3_not_venue',label:'IA : pas une salle',icon:'❌',color:'#ef4444'},
-  {key:'L3_curated_not_imported',label:'Vraie salle mais pas importée',icon:'⚠️',color:'#f59e0b'},
+  {key:'L3_missing_from_import',label:'Salle valide manquante de l\'import',icon:'🔧',color:'#f59e0b'},
   {key:'L4_import_queue',label:'✅ Importé dans la carte',icon:'✅',color:'#22c55e'},
 ];
 function renderFunnel(){
