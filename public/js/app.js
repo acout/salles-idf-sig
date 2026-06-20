@@ -9,7 +9,7 @@ const STATUS = {
 };
 const STATUS_ORDER = Object.keys(STATUS);
 const IDF_BBOX = { minLat:48.1, maxLat:49.1, minLon:1.4, maxLon:3.6 };
-const state = { data:null, venues:null, candidates:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dataset:'all', dept:'all', status:'all', quality:'all', capMax:100, sort:'fit' }, crm:{}, quality:{} };
+const state = { data:null, venues:null, candidates:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dataset:'all', dept:'all', status:'all', quality:'all', tagFilters:new Set(), capMax:100, sort:'fit' }, crm:{}, quality:{} };
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -55,6 +55,16 @@ function normText(v){ return String(v??'').toLowerCase().normalize('NFD').replac
 function normName(p){ return normText(p.name).replace(/\b(maison|salle|espace|centre|municipal|municipale|association|associations|paris|idf)\b/g,'').replace(/\s+/g,' ').trim(); }
 function normSite(v){ try{ const u=new URL(String(v||'')); return u.hostname.replace(/^www\./,'')+u.pathname.replace(/\/$/,''); }catch{return '';}}
 function qualityFor(id){ return state.quality[id] || {issues:[], score:0}; }
+function tagMatches(tag, f, p, id){
+  const q=qualityFor(id);
+  if(tag==='candidate') return isCandidate(p);
+  if(tag==='venue') return !isCandidate(p) && !isAggregator(p);
+  if(tag==='rental_possible') return rentalStatus(p)==='possible';
+  if(tag==='rental_unclear') return rentalStatus(p)==='unclear';
+  if(tag==='rental_unlikely') return rentalStatus(p)==='unlikely';
+  return q.issues.includes(tag);
+}
+function activeTagLabels(){ return [...state.filters.tagFilters].map(t=>QUALITY_LABELS[t]||({candidate:'Candidat Beyond',venue:'Salle qualifiée'}[t])||t); }
 function qualityBadgesHTML(id){ const f=findFeature(id), dp=f?displayProps(f):null, extra=dp?overrideBadgeHTML(dp):''; const q=qualityFor(id); const base=!q.issues.length ? '<span class="qbadge ok">OK data</span>' : q.issues.map(k=>`<span class="qbadge issue">${esc(QUALITY_LABELS[k]||k)}</span>`).join(''); return base+extra; }
 function buildQuality(){
   state.quality = {};
@@ -99,6 +109,7 @@ function applyFilters(){
       const want=state.filters.quality.replace('rental_','');
       if(rentalStatus(p)!==want) return false;
     } else if(state.filters.quality!=='all'){ const q=qualityFor(id); if(state.filters.quality==='any' ? q.score===0 : !q.issues.includes(state.filters.quality)) return false; }
+    if(state.filters.tagFilters.size && ![...state.filters.tagFilters].every(tag=>tagMatches(tag, f, p, id))) return false;
     if(capacity(p) && capacity(p) > +state.filters.capMax) return false;
     if(q && !searchableText(f).includes(q)) return false;
     return true;
@@ -138,7 +149,7 @@ function cardHTML(f, compact=false){
   const raw=f.properties, p=displayProps(f), id=venueId(raw), c=crmFor(id), note=c.notes?.[0]?.text;
   return `<article class="venue-card ${state.selectedId===id?'active':''}" data-id="${esc(id)}">
     <div class="venue-title">${c.favorite?'⭐ ':''}${esc(p.name)}</div>
-    <div class="venue-meta">${statusPill(c.status||'new')}<span class="pill">${esc(p.department)}</span><span class="pill">${esc(p.city||'—')}</span><span class="pill fit">fit ${esc(p.fit_score)}</span></div>
+    <div class="venue-meta">${statusPill(c.status||'new')}<span class="pill dataset-${isAggregator(p)?'aggregator':esc(p._dataset||'venue')}">${datasetLabel(p)}</span><span class="pill rental-${esc(rentalStatus(p))}">${rentalLabel(p)}</span><span class="pill">${esc(p.department)}</span><span class="pill">${esc(p.city||'—')}</span><span class="pill fit">fit ${esc(p.fit_score)}</span></div>
     <div class="quality-badges">${qualityBadgesHTML(id)}</div>
     <div class="venue-small">${esc(p.category||'')} · cap. ${esc(p.capacity_text||'—')} · ${esc(p.price_text||'prix à confirmer')}${formalMissing(p)?` · à demander: ${esc(formalMissing(p))}`:''}</div>
     ${c.nextAction?`<div class="venue-note-preview">⏭️ ${esc(c.nextAction)} ${c.nextActionDate?`· ${esc(c.nextActionDate)}`:''}</div>`:''}
@@ -156,7 +167,7 @@ function pipelineCard(f){
   const next=nextStatus(c.status||'new'), prev=previousStatus(c.status||'new');
   return `<div class="pipeline-card" data-id="${esc(id)}">
     <div class="pipeline-card-title" data-open="${esc(id)}">${c.favorite?'⭐ ':''}${esc(p.name)}</div>
-    <div class="pipeline-card-meta">${esc(p.city||'—')} · ${esc(p.department)} · ${datasetLabel(p)} · fit ${esc(p.fit_score||p.fit_beyond_score||'—')}</div>
+    <div class="pipeline-card-meta">${esc(p.city||'—')} · ${esc(p.department)} · ${datasetLabel(p)} · ${rentalLabel(p)} · fit ${esc(p.fit_score||p.fit_beyond_score||'—')}</div>
     <div class="quality-badges">${qualityBadgesHTML(id)}</div>
     ${c.nextAction?`<div class="venue-note-preview ${overdue?'overdue':''}">⏭️ ${esc(c.nextAction)} ${c.nextActionDate?`· ${esc(c.nextActionDate)}`:''}</div>`:''}
     <div class="pipeline-card-actions">
@@ -176,7 +187,7 @@ function renderPipeline(){
   document.querySelectorAll('[data-copy-call]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(callScriptFor(findFeature(btn.dataset.copyCall)), 'Script d’appel copié'); });
   document.querySelectorAll('[data-copy-email]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(emailFor(findFeature(btn.dataset.copyEmail)), 'Email copié'); });
 }
-function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; const cand=state.filtered.filter(f=>isCandidate(f.properties)).length; const aggs=state.filtered.filter(f=>isAggregator(f.properties)).length; const rentOk=state.filtered.filter(f=>rentalStatus(f.properties)==='possible').length; const rentNo=state.filtered.filter(f=>rentalStatus(f.properties)==='unlikely').length; const mapped=state.filtered.filter(coordsOf).length; $('metrics').textContent=`${state.filtered.length} affichées · ${cand} candidats · ${aggs} agrégateurs · ${rentOk} location OK · ${rentNo} non louables prob. · ${mapped} cartographiées · ${quality} à vérifier`; }
+function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; const cand=state.filtered.filter(f=>isCandidate(f.properties)).length; const aggs=state.filtered.filter(f=>isAggregator(f.properties)).length; const rentOk=state.filtered.filter(f=>rentalStatus(f.properties)==='possible').length; const rentNo=state.filtered.filter(f=>rentalStatus(f.properties)==='unlikely').length; const mapped=state.filtered.filter(coordsOf).length; const tags=activeTagLabels(); $('metrics').textContent=`${state.filtered.length} affichées · ${cand} candidats · ${aggs} agrégateurs · ${rentOk} location OK · ${rentNo} non louables prob. · ${mapped} cartographiées · ${quality} à vérifier${tags.length?' · tags: '+tags.join(' + '):''}`; }
 function renderAll(){ buildQuality(); applyFilters(); renderMap(); renderSidebarList(); renderTable(); renderPipeline(); updateMetrics(); if(state.selectedId) renderDetail(state.selectedId); }
 
 function findFeature(id){ return state.data.features.find(f=>venueId(f.properties)===id); }
@@ -199,6 +210,8 @@ function bindDetailEvents(id){ const c=crmFor(id); if(!c.overrides)c.overrides={
 
 function bindControls(){
   $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dataset-filter').onchange=e=>{state.filters.dataset=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
+  document.querySelectorAll('[data-tag-filter]').forEach(btn=>btn.onclick=()=>{ const tag=btn.dataset.tagFilter; if(state.filters.tagFilters.has(tag)){ state.filters.tagFilters.delete(tag); btn.classList.remove('active'); } else { state.filters.tagFilters.add(tag); btn.classList.add('active'); } renderAll(); });
+  $('clear-tag-filters').onclick=()=>{ state.filters.tagFilters.clear(); document.querySelectorAll('[data-tag-filter]').forEach(btn=>btn.classList.remove('active')); renderAll(); };
   document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));$('map').classList.toggle('hidden',state.view!=='map');$('table-view').classList.toggle('hidden',state.view!=='list');$('pipeline-view').classList.toggle('hidden',state.view!=='pipeline');setTimeout(()=>map.invalidateSize(),80);});
   $('close-detail').onclick=()=>$('detail-panel').classList.add('hidden'); $('open-sidebar').onclick=()=>$('sidebar').classList.add('open'); $('toggle-sidebar').onclick=()=>$('sidebar').classList.remove('open');
   $('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
