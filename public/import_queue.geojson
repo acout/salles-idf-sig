@@ -111,7 +111,7 @@
         "constraints_tags": "",
         "description": "Étude de réalisation sur un studio de yoga précis à Villejuif, sans informations de location ni coordonnées du lieu.",
         "evidence_text": "Étude de réalisation sur un studio de yoga précis à Villejuif, sans informations de location ni coordonnées du lieu.",
-        "missing_formal_fields": "address, capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -300,7 +300,7 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -321,8 +321,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.350668,
+          48.812545
         ]
       },
       "properties": {
@@ -331,8 +331,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.812545,
+        "lon": 2.350668,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -376,7 +376,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "ban",
+        "geocode_label": "2 Rue Jules Ferry 94250 Gentilly",
+        "geocode_score": 0.9522563636363636
       }
     },
     {
@@ -384,8 +387,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.33852,
+          48.815933
         ]
       },
       "properties": {
@@ -394,8 +397,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.815933,
+        "lon": 2.33852,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -439,7 +442,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "ban",
+        "geocode_label": "7 Rue Henri Kleynhoff 94250 Gentilly",
+        "geocode_score": 0.9665081818181817
       }
     },
     {
@@ -447,8 +453,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.348437,
+          48.815313
         ]
       },
       "properties": {
@@ -457,8 +463,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.815313,
+        "lon": 2.348437,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -502,7 +508,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "ban",
+        "geocode_label": "14 Place Henri Barbusse 94250 Gentilly",
+        "geocode_score": 0.9572499999999999
       }
     },
     {
@@ -510,8 +519,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.352684,
+          48.816424
         ]
       },
       "properties": {
@@ -520,8 +529,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.816424,
+        "lon": 2.352684,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -565,7 +574,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "ban",
+        "geocode_label": "8 Rue Charles Frérot 94250 Gentilly",
+        "geocode_score": 0.9655181818181818
       }
     },
     {
@@ -573,8 +585,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3448858,
+          48.8143527
         ]
       },
       "properties": {
@@ -583,8 +595,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8143527,
+        "lon": 2.3448858,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -628,7 +640,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle Marcel Paul, Rue Raymond Lefèbvre, Gentilly, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94250, France"
       }
     },
     {
@@ -678,7 +692,7 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Salle de quartier Saint Éloi | 7, rue Saint-Éloi",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -699,8 +713,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3450919,
+          48.8058501
         ]
       },
       "properties": {
@@ -709,8 +723,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8058501,
+        "lon": 2.3450919,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -754,7 +768,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle de quartier Gabriel Péri, Rue du Parc, Gentilly, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94250, France"
       }
     },
     {
@@ -762,8 +778,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.353693,
+          48.815619
         ]
       },
       "properties": {
@@ -772,8 +788,8 @@
         "city": "Gentilly",
         "department": "94",
         "address": "Gentilly",
-        "lat": null,
-        "lon": null,
+        "lat": 48.815619,
+        "lon": 2.353693,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -817,7 +833,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "ban",
+        "geocode_label": "1 Allée des Tanneurs 94250 Gentilly",
+        "geocode_score": 0.959571818181818
       }
     },
     {
@@ -867,7 +886,7 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Gymnase Pierre Curie | 25, rue Jean-Louis; Service municipal des Sports ... sports@ville-gentilly.fr",
-        "missing_formal_fields": "capacity, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -2442,7 +2461,7 @@
         "constraints_tags": "",
         "description": "Page de présentation d'un studio de danse avec liens internes vers la location de salles, mais sans coordonnées détaillées dans l'extrait.",
         "evidence_text": "Page de présentation d'un studio de danse avec liens internes vers la location de salles, mais sans coordonnées détaillées dans l'extrait.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price",
         "page_type": "venue_rental_mentioned",
         "source_reliability": "S3",
@@ -2757,7 +2776,7 @@
         "constraints_tags": "",
         "description": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
         "evidence_text": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
-        "missing_formal_fields": "adresse complète du studio de Montigny, capacity, capacité maximale, city, email, email/téléphone direct, phone, postal_code, price, tarifs détaillés",
+        "missing_formal_fields": "adresse complète du studio de Montigny, capacity, capacité maximale, city, email, email/téléphone direct, phone, postal_code, price, tarifs détaillés,geocode_failed",
         "email_questions": "adresse complète du studio de Montigny, capacity, capacité maximale, city, email, email/téléphone direct, phone, postal_code, price, tarifs détaillés",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
@@ -2820,7 +2839,7 @@
         "constraints_tags": "",
         "description": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
         "evidence_text": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
-        "missing_formal_fields": "email, phone",
+        "missing_formal_fields": "email, phone,geocode_failed",
         "email_questions": "email, phone",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
@@ -2883,7 +2902,7 @@
         "constraints_tags": "",
         "description": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
         "evidence_text": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
-        "missing_formal_fields": "capacity, email, phone, price",
+        "missing_formal_fields": "capacity, email, phone, price,geocode_failed",
         "email_questions": "capacity, email, phone, price",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
@@ -2946,7 +2965,7 @@
         "constraints_tags": "",
         "description": "Page officielle du planning de cours à Boulogne avec adresse et tarifs de cours, mais aucune offre de location de salle n'est décrite.",
         "evidence_text": "Page officielle du planning de cours à Boulogne avec adresse et tarifs de cours, mais aucune offre de location de salle n'est décrite.",
-        "missing_formal_fields": "capacity, capacité, city, conditions de location de salle, contact location, email, phone, postal_code, price, rental_page_url, surface",
+        "missing_formal_fields": "capacity, capacité, city, conditions de location de salle, contact location, email, phone, postal_code, price, rental_page_url, surface,geocode_failed",
         "email_questions": "capacity, capacité, city, conditions de location de salle, contact location, email, phone, postal_code, price, rental_page_url, surface",
         "page_type": "official_schedule_page",
         "source_reliability": "S3",
@@ -3387,7 +3406,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location multi-studios avec adresses, surfaces, capacités, équipements et tarifs détaillés.",
         "evidence_text": "Page officielle de location multi-studios avec adresses, surfaces, capacités, équipements et tarifs détaillés.",
-        "missing_formal_fields": "capacity, conditions contractuelles, disponibilités exactes, email, email/téléphone direct, phone, postal_code, price",
+        "missing_formal_fields": "capacity, conditions contractuelles, disponibilités exactes, email, email/téléphone direct, phone, postal_code, price,geocode_failed",
         "email_questions": "capacity, conditions contractuelles, disponibilités exactes, email, email/téléphone direct, phone, postal_code, price",
         "page_type": "official_multi_venue_rental_page",
         "source_reliability": "S3",
@@ -3408,8 +3427,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2883046,
+          48.8344837
         ]
       },
       "properties": {
@@ -3418,8 +3437,8 @@
         "city": "Paris",
         "department": "75",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8344837,
+        "lon": 2.2883046,
         "category": "official multi venue rental page",
         "capacity_text": "up to 50 people",
         "capacity_max_detected": 0,
@@ -3463,7 +3482,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_rock4you.dance_studios rental_sceaux",
         "ai_source_file": "ai_classify_retry_chunk_1_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Danse Cadix, 2, Rue de Cadix, Quartier Saint-Lambert, Paris 15e Arrondissement, Paris, Île-de-France, France métropolitaine, 75015, France"
       }
     },
     {
@@ -3513,7 +3534,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location multi-studios avec adresses, surfaces, capacités, équipements et tarifs détaillés.",
         "evidence_text": "Page officielle de location multi-studios avec adresses, surfaces, capacités, équipements et tarifs détaillés.",
-        "missing_formal_fields": "email, phone",
+        "missing_formal_fields": "email, phone,geocode_failed",
         "email_questions": "email, phone",
         "page_type": "official_multi_venue_rental_page",
         "source_reliability": "S3",
@@ -3765,7 +3786,7 @@
         "constraints_tags": "",
         "description": "Fiche individuelle YogMee marquée Lieu à louer avec coordonnées, site et adresse.",
         "evidence_text": "Fiche individuelle YogMee marquée Lieu à louer avec coordonnées, site et adresse.",
-        "missing_formal_fields": "address, capacity, capacité, city, description détaillée, email, phone, postal_code, price, surface, tarifs",
+        "missing_formal_fields": "address, capacity, capacité, city, description détaillée, email, phone, postal_code, price, surface, tarifs,geocode_failed",
         "email_questions": "address, capacity, capacité, city, description détaillée, email, phone, postal_code, price, surface, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -3828,7 +3849,7 @@
         "constraints_tags": "",
         "description": "Fiche individuelle YogMee marquée Lieu à louer avec coordonnées, site et adresse.",
         "evidence_text": "Fiche individuelle YogMee marquée Lieu à louer avec coordonnées, site et adresse.",
-        "missing_formal_fields": "capacity, postal_code, price",
+        "missing_formal_fields": "capacity, postal_code, price,geocode_failed",
         "email_questions": "capacity, postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -3891,7 +3912,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer très détaillée avec salle, hébergement, tarif, adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer très détaillée avec salle, hébergement, tarif, adresse et contact.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, site internet complet tronqué",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, site internet complet tronqué,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, site internet complet tronqué",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -3954,7 +3975,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer très détaillée avec salle, hébergement, tarif, adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer très détaillée avec salle, hébergement, tarif, adresse et contact.",
-        "missing_formal_fields": "postal_code",
+        "missing_formal_fields": "postal_code,geocode_failed",
         "email_questions": "postal_code",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4017,7 +4038,7 @@
         "constraints_tags": "",
         "description": "Fiche individuelle YogMee 'Lieu à louer' avec adresse, taille et coordonnées du gestionnaire.",
         "evidence_text": "Fiche individuelle YogMee 'Lieu à louer' avec adresse, taille et coordonnées du gestionnaire.",
-        "missing_formal_fields": "capacity, capacité, city, description détaillée, email, phone, postal_code, price, tarifs",
+        "missing_formal_fields": "capacity, capacité, city, description détaillée, email, phone, postal_code, price, tarifs,geocode_failed",
         "email_questions": "capacity, capacité, city, description détaillée, email, phone, postal_code, price, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4080,7 +4101,7 @@
         "constraints_tags": "",
         "description": "Fiche individuelle YogMee 'Lieu à louer' avec adresse, taille et coordonnées du gestionnaire.",
         "evidence_text": "Fiche individuelle YogMee 'Lieu à louer' avec adresse, taille et coordonnées du gestionnaire.",
-        "missing_formal_fields": "postal_code, price",
+        "missing_formal_fields": "postal_code, price,geocode_failed",
         "email_questions": "postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4143,7 +4164,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer décrivant la privatisation d'un resort pour retraites avec adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer décrivant la privatisation d'un resort pour retraites avec adresse et contact.",
-        "missing_formal_fields": "address, capacity, capacité participants exacte, city, email, phone, postal_code, price, surface salle intérieure, tarifs",
+        "missing_formal_fields": "address, capacity, capacité participants exacte, city, email, phone, postal_code, price, surface salle intérieure, tarifs,geocode_failed",
         "email_questions": "address, capacity, capacité participants exacte, city, email, phone, postal_code, price, surface salle intérieure, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4206,7 +4227,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer décrivant la privatisation d'un resort pour retraites avec adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer décrivant la privatisation d'un resort pour retraites avec adresse et contact.",
-        "missing_formal_fields": "postal_code, price",
+        "missing_formal_fields": "postal_code, price,geocode_failed",
         "email_questions": "postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4269,7 +4290,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer avec description de privatisation, capacité, surface, adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer avec description de privatisation, capacité, surface, adresse et contact.",
-        "missing_formal_fields": "address, adresse communale précise, capacity, city, email, phone, postal_code, price, tarifs",
+        "missing_formal_fields": "address, adresse communale précise, capacity, city, email, phone, postal_code, price, tarifs,geocode_failed",
         "email_questions": "address, adresse communale précise, capacity, city, email, phone, postal_code, price, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4332,7 +4353,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer avec description de privatisation, capacité, surface, adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer avec description de privatisation, capacité, surface, adresse et contact.",
-        "missing_formal_fields": "postal_code, price",
+        "missing_formal_fields": "postal_code, price,geocode_failed",
         "email_questions": "postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4395,7 +4416,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer avec salle, capacité, hébergement, adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer avec salle, capacité, hébergement, adresse et contact.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, site complet tronqué, tarifs",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, site complet tronqué, tarifs,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, site complet tronqué, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4458,7 +4479,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer avec salle, capacité, hébergement, adresse et contact.",
         "evidence_text": "Fiche YogMee Lieu à louer avec salle, capacité, hébergement, adresse et contact.",
-        "missing_formal_fields": "postal_code, price",
+        "missing_formal_fields": "postal_code, price,geocode_failed",
         "email_questions": "postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4521,7 +4542,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer avec adresse et coordonnées, positionnée pour stages/retraites bien-être.",
         "evidence_text": "Fiche YogMee Lieu à louer avec adresse et coordonnées, positionnée pour stages/retraites bien-être.",
-        "missing_formal_fields": "capacity, capacité, city, email, phone, postal_code, price, surface salle intérieure, tarifs",
+        "missing_formal_fields": "capacity, capacité, city, email, phone, postal_code, price, surface salle intérieure, tarifs,geocode_failed",
         "email_questions": "capacity, capacité, city, email, phone, postal_code, price, surface salle intérieure, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4584,7 +4605,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer avec adresse et coordonnées, positionnée pour stages/retraites bien-être.",
         "evidence_text": "Fiche YogMee Lieu à louer avec adresse et coordonnées, positionnée pour stages/retraites bien-être.",
-        "missing_formal_fields": "postal_code, price",
+        "missing_formal_fields": "postal_code, price,geocode_failed",
         "email_questions": "postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4647,7 +4668,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer décrivant une villa/retraite avec capacité, surface listée, coordonnées et lien de location.",
         "evidence_text": "Fiche YogMee Lieu à louer décrivant une villa/retraite avec capacité, surface listée, coordonnées et lien de location.",
-        "missing_formal_fields": "address, adresse postale complète, capacity, city, conditions de privatisation, email, phone, postal_code, price, tarifs",
+        "missing_formal_fields": "address, adresse postale complète, capacity, city, conditions de privatisation, email, phone, postal_code, price, tarifs,geocode_failed",
         "email_questions": "address, adresse postale complète, capacity, city, conditions de privatisation, email, phone, postal_code, price, tarifs",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4710,7 +4731,7 @@
         "constraints_tags": "",
         "description": "Fiche YogMee Lieu à louer décrivant une villa/retraite avec capacité, surface listée, coordonnées et lien de location.",
         "evidence_text": "Fiche YogMee Lieu à louer décrivant une villa/retraite avec capacité, surface listée, coordonnées et lien de location.",
-        "missing_formal_fields": "address, postal_code, price",
+        "missing_formal_fields": "address, postal_code, price,geocode_failed",
         "email_questions": "address, postal_code, price",
         "page_type": "directory_rental_venue_page",
         "source_reliability": "S3",
@@ -4773,7 +4794,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles à Malakoff pour répétitions, théâtre, tournage et formations; elle détaille notamment la salle Le Plato, tarifs indicatifs et contact/devis.",
         "evidence_text": "Page officielle de location de salles à Malakoff pour répétitions, théâtre, tournage et formations; elle détaille notamment la salle Le Plato, tarifs indicatifs et contact/devis.",
-        "missing_formal_fields": "city, email, postal_code",
+        "missing_formal_fields": "city, email, postal_code,geocode_failed",
         "email_questions": "city, email, postal_code",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -4962,7 +4983,7 @@
         "constraints_tags": "",
         "description": "Fiche annuaire d'un lieu unique qui mentionne explicitement des studios de répétition en location horaire et une salle de concert, mais sans adresse complète ni tarifs dans l'extrait.",
         "evidence_text": "Fiche annuaire d'un lieu unique qui mentionne explicitement des studios de répétition en location horaire et une salle de concert, mais sans adresse complète ni tarifs dans l'extrait.",
-        "missing_formal_fields": "city, email, phone, postal_code",
+        "missing_formal_fields": "city, email, phone, postal_code,geocode_failed",
         "email_questions": "city, email, phone, postal_code",
         "page_type": "third_party_directory_profile",
         "source_reliability": "S3",
@@ -5088,7 +5109,7 @@
         "constraints_tags": "",
         "description": "Fiche annuaire avec adresse et téléphone pour un studio d'enregistrement; pas d'offre explicite de location de salle dans l'extrait.",
         "evidence_text": "Fiche annuaire avec adresse et téléphone pour un studio d'enregistrement; pas d'offre explicite de location de salle dans l'extrait.",
-        "missing_formal_fields": "city, email, rental_page_url",
+        "missing_formal_fields": "city, email, rental_page_url,geocode_failed",
         "email_questions": "city, email, rental_page_url",
         "page_type": "third_party_directory_profile",
         "source_reliability": "S3",
@@ -5151,7 +5172,7 @@
         "constraints_tags": "",
         "description": "Fiche annuaire pour un studio d'enregistrement proposant une prestation d'enregistrement; pas une page de location de salle.",
         "evidence_text": "Fiche annuaire pour un studio d'enregistrement proposant une prestation d'enregistrement; pas une page de location de salle.",
-        "missing_formal_fields": "city, email, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "city, email, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "city, email, phone, postal_code, rental_page_url",
         "page_type": "third_party_directory_profile",
         "source_reliability": "S3",
@@ -5340,7 +5361,7 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "capacity, city, phone, postal_code",
+        "missing_formal_fields": "capacity, city, phone, postal_code,geocode_failed",
         "email_questions": "capacity, city, phone, postal_code",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
@@ -5403,7 +5424,7 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price",
+        "missing_formal_fields": "city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
@@ -5466,7 +5487,7 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price",
+        "missing_formal_fields": "city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
@@ -5529,7 +5550,7 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price",
+        "missing_formal_fields": "city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
@@ -5592,7 +5613,7 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price",
+        "missing_formal_fields": "city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
@@ -5655,7 +5676,7 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price",
+        "missing_formal_fields": "city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
@@ -5718,7 +5739,7 @@
         "constraints_tags": "",
         "description": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
         "evidence_text": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -5781,7 +5802,7 @@
         "constraints_tags": "",
         "description": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
         "evidence_text": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -5844,7 +5865,7 @@
         "constraints_tags": "",
         "description": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
         "evidence_text": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -5907,7 +5928,7 @@
         "constraints_tags": "",
         "description": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
         "evidence_text": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -5970,7 +5991,7 @@
         "constraints_tags": "",
         "description": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
         "evidence_text": "Page listant les centres/cours Yogamania, pas des salles proposées à la location.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -6033,7 +6054,7 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -6096,7 +6117,7 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -6159,7 +6180,7 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -6222,7 +6243,7 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -6285,7 +6306,7 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -6348,7 +6369,7 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url",
+        "missing_formal_fields": "capacity, phone, postal_code, rental_page_url,geocode_failed",
         "email_questions": "capacity, phone, postal_code, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
@@ -6369,8 +6390,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.7948324,
+          48.8369301
         ]
       },
       "properties": {
@@ -6379,8 +6400,8 @@
         "city": "",
         "department": "77",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8369301,
+        "lon": 2.7948324,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -6424,7 +6445,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_seineetmarne.cci.fr_telecharger notre brochure_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "single"
+        "ai_source_kind": "single",
+        "geocode_source": "nominatim",
+        "geocode_label": "Chambre de commerce et d'industrie de Seine-et-Marne, 1, Avenue Johannes Gutenberg, Serris, Torcy, Seine-et-Marne, Île-de-France, France métropolitaine, 77700, France"
       }
     },
     {
@@ -6474,7 +6497,7 @@
         "constraints_tags": "",
         "description": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
         "evidence_text": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
-        "missing_formal_fields": "postal_code",
+        "missing_formal_fields": "postal_code,geocode_failed",
         "email_questions": "postal_code",
         "page_type": "multi_venue_listing",
         "source_reliability": "S4",
@@ -6537,7 +6560,7 @@
         "constraints_tags": "",
         "description": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
         "evidence_text": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
-        "missing_formal_fields": "postal_code",
+        "missing_formal_fields": "postal_code,geocode_failed",
         "email_questions": "postal_code",
         "page_type": "multi_venue_listing",
         "source_reliability": "S4",
@@ -6600,7 +6623,7 @@
         "constraints_tags": "",
         "description": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
         "evidence_text": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
-        "missing_formal_fields": "postal_code",
+        "missing_formal_fields": "postal_code,geocode_failed",
         "email_questions": "postal_code",
         "page_type": "multi_venue_listing",
         "source_reliability": "S4",
@@ -6663,7 +6686,7 @@
         "constraints_tags": "",
         "description": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
         "evidence_text": "Brochure PDF officielle de location de salles CCI à Serris avec espaces, contacts, capacités et tarifs.",
-        "missing_formal_fields": "postal_code",
+        "missing_formal_fields": "postal_code,geocode_failed",
         "email_questions": "postal_code",
         "page_type": "multi_venue_listing",
         "source_reliability": "S4",
@@ -6852,7 +6875,7 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -6873,8 +6896,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3681264,
+          48.8508544
         ]
       },
       "properties": {
@@ -6883,8 +6906,8 @@
         "city": "Paris",
         "department": "75",
         "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8508544,
+        "lon": 2.3681264,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -6928,7 +6951,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_restaurant 28_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Canauxrama, Boulevard Bourdon, Quartier de l'Arsenal, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
       }
     },
     {
@@ -6936,8 +6961,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.4958119,
+          48.8067777
         ]
       },
       "properties": {
@@ -6946,8 +6971,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8067777,
+        "lon": 2.4958119,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -6991,7 +7016,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_restaurant 28_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Anatole France - Pierre Brossolette, Avenue de Lattre de Tassigny, Le Parc Saint-Maur, Saint-Maur-des-Fossés, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94100, France"
       }
     },
     {
@@ -6999,8 +7026,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.5243397,
+          48.796276
         ]
       },
       "properties": {
@@ -7009,8 +7036,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.796276,
+        "lon": 2.5243397,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -7054,7 +7081,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_restaurant 28_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "L'Ecu de France, Chemin de halage, Bords de Marne - Coteaux Nord, Chennevières-sur-Marne, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94430, France"
       }
     },
     {
@@ -7104,7 +7133,7 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7125,8 +7154,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3767186,
+          48.8354259
         ]
       },
       "properties": {
@@ -7135,8 +7164,8 @@
         "city": "Paris",
         "department": "75",
         "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8354259,
+        "lon": 2.3767186,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -7180,7 +7209,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_restaurant 28_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Petit Bain, 7, Port de la Gare, Quartier de la Gare, Paris 13e Arrondissement, Paris, Île-de-France, France métropolitaine, 75013, France"
       }
     },
     {
@@ -7230,7 +7261,7 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7293,7 +7324,7 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7356,7 +7387,7 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7419,7 +7450,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7482,7 +7513,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7503,8 +7534,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.4142163,
+          48.7886159
         ]
       },
       "properties": {
@@ -7513,8 +7544,8 @@
         "city": "Vitry-sur-Seine",
         "department": "94",
         "address": "Vitry-sur-Seine",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7886159,
+        "lon": 2.4142163,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -7558,7 +7589,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_animations musicales 21_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Le Kilowatt, Rue des Fusillés, Paul Froment - Huit Mai 1945, Vitry-sur-Seine, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94400, France"
       }
     },
     {
@@ -7608,7 +7641,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7629,8 +7662,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3924501,
+          48.8905908
         ]
       },
       "properties": {
@@ -7639,8 +7672,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8905908,
+        "lon": 2.3924501,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -7684,7 +7717,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_animations musicales 21_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Pavillon Janvier, Place de la Fontaine aux Lions, Quartier du Pont-de-Flandre, Paris 19e Arrondissement, Paris, Île-de-France, France métropolitaine, 75019, France"
       }
     },
     {
@@ -7692,8 +7727,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.4374137,
+          48.7458605
         ]
       },
       "properties": {
@@ -7702,8 +7737,8 @@
         "city": "Villeneuve-Saint-Georges",
         "department": "94",
         "address": "Villeneuve-Saint-Georges",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7458605,
+        "lon": 2.4374137,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -7747,7 +7782,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_animations musicales 21_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La Guinguette Auvergnate, 19, Avenue de Choisy, Villeneuve-Saint-Georges, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94190, France"
       }
     },
     {
@@ -7755,8 +7792,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3775952,
+          48.8346664
         ]
       },
       "properties": {
@@ -7765,8 +7802,8 @@
         "city": "Paris",
         "department": "75",
         "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8346664,
+        "lon": 2.3775952,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -7810,7 +7847,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_animations musicales 21_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La Dame De Canton, Passerelle Simone de Beauvoir, Quartier de la Gare, Paris 13e Arrondissement, Paris, Île-de-France, France métropolitaine, 75013, France"
       }
     },
     {
@@ -7860,7 +7899,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7923,7 +7962,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -7986,7 +8025,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8049,7 +8088,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8112,7 +8151,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8175,7 +8214,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8238,7 +8277,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8301,7 +8340,7 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8322,8 +8361,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.5728265,
+          48.727326
         ]
       },
       "properties": {
@@ -8332,8 +8371,8 @@
         "city": "Santeny",
         "department": "94",
         "address": "Santeny",
-        "lat": null,
-        "lon": null,
+        "lat": 48.727326,
+        "lon": 2.5728265,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -8377,7 +8416,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_partager ma recherche_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Château de Santeny, Rue du Rocher, Santeny, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94440, France"
       }
     },
     {
@@ -8427,7 +8468,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8448,8 +8489,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.5335954,
+          48.7381606
         ]
       },
       "properties": {
@@ -8458,8 +8499,8 @@
         "city": "Boissy-Saint-Léger",
         "department": "94",
         "address": "Boissy-Saint-Léger",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7381606,
+        "lon": 2.5335954,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -8503,7 +8544,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_traiteur 12_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Domaine de Grosbois, Allée de la Princesse, Boissy-Saint-Léger, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94470, France"
       }
     },
     {
@@ -8511,8 +8554,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.463975,
+          48.7668059
         ]
       },
       "properties": {
@@ -8521,8 +8564,8 @@
         "city": "Créteil",
         "department": "94",
         "address": "Créteil",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7668059,
+        "lon": 2.463975,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -8566,7 +8609,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_traiteur 12_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Maison du Handball, Entrée Maison du handball, La Source - Pointe du Lac, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94000, France"
       }
     },
     {
@@ -8616,7 +8661,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8679,7 +8724,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8700,8 +8745,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.452534,
+          48.8321509
         ]
       },
       "properties": {
@@ -8710,8 +8755,8 @@
         "city": "Paris",
         "department": "75",
         "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8321509,
+        "lon": 2.452534,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -8755,7 +8800,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_traiteur 12_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Institut National du Sport, de l'Expertise et de la Performance, 11, Avenue du Tremblay, Quartier de Picpus, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France"
       }
     },
     {
@@ -8805,7 +8852,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
         "evidence_text": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8826,8 +8873,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.55286,
+          48.7602552
         ]
       },
       "properties": {
@@ -8836,8 +8883,8 @@
         "city": "Sucy-en-Brie",
         "department": "94",
         "address": "Sucy-en-Brie",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7602552,
+        "lon": 2.55286,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -8881,7 +8928,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_tennis 5_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La Terrasse Fleurie, Route de Lésigny, Sucy-en-Brie, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94370, France"
       }
     },
     {
@@ -8931,7 +8980,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
         "evidence_text": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -8952,8 +9001,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.5167864,
+          48.8342933
         ]
       },
       "properties": {
@@ -8962,8 +9011,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8342933,
+        "lon": 2.5167864,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -9007,7 +9056,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_tennis 5_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Quai Est, Avenue Pierre Brossolette, Parc du Perreux, Le Perreux-sur-Marne, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94170, France"
       }
     },
     {
@@ -9057,7 +9108,7 @@
         "constraints_tags": "",
         "description": "Catalogue filtré piscine listant quatre lieux de réception, sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré piscine listant quatre lieux de réception, sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -9078,8 +9129,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3505455,
+          48.7547708
         ]
       },
       "properties": {
@@ -9088,8 +9139,8 @@
         "city": "Rungis",
         "department": "94",
         "address": "Rungis",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7547708,
+        "lon": 2.3505455,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -9133,7 +9184,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_piscine 4_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Novotel Paris Orly Rungis, 1, Rue du Pont des Halles, Quartier Robert Schuman, Rungis, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94656, France"
       }
     },
     {
@@ -9183,7 +9236,7 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -9246,7 +9299,7 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -9267,8 +9320,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3529779,
+          48.7425683
         ]
       },
       "properties": {
@@ -9277,8 +9330,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7425683,
+        "lon": 2.3529779,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -9322,7 +9375,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_suivant_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "École des arts culinaires - Lenôtre, Rue des Solets, Parc ICADE Paris Orly-Rungis, Quartier de l'Estérel, Rungis, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94150, France"
       }
     },
     {
@@ -9372,7 +9427,7 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -9393,8 +9448,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.4357601,
+          48.8482653
         ]
       },
       "properties": {
@@ -9403,8 +9458,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8482653,
+        "lon": 2.4357601,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -9448,7 +9503,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_suivant_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Borda, Rue de Fontenay, Centre Ville, Vincennes, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94300, France"
       }
     },
     {
@@ -9456,8 +9513,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3460787,
+          48.8156809
         ]
       },
       "properties": {
@@ -9466,8 +9523,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8156809,
+        "lon": 2.3460787,
         "category": "multi venue listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -9511,7 +9568,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_tourisme-valdemarne.com_suivant_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Le Lavoir Numérique, 10, Rue Victor Marquigny, Quartier de la Maison-Blanche, Paris 13e Arrondissement, Paris, Gentilly, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94250, Fra"
       }
     },
     {
@@ -9561,7 +9620,7 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_page_url",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -9582,8 +9641,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3817511,
+          48.8586013
         ]
       },
       "properties": {
@@ -9592,8 +9651,8 @@
         "city": "",
         "department": "75",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8586013,
+        "lon": 2.3817511,
         "category": "venue with rental page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -9637,7 +9696,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_le8petion.com_activites de bienetre_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "single"
+        "ai_source_kind": "single",
+        "geocode_source": "nominatim",
+        "geocode_label": "Le 8 Pétion, 8, Rue Pétion, Quartier de la Roquette, Paris 11e Arrondissement, Paris, Île-de-France, France métropolitaine, 75011, France"
       }
     },
     {
@@ -9645,8 +9706,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3817511,
+          48.8586013
         ]
       },
       "properties": {
@@ -9655,8 +9716,8 @@
         "city": "Paris",
         "department": "75",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8586013,
+        "lon": 2.3817511,
         "category": "venue with rental page",
         "capacity_text": "28 m²; environ 8 à 15 personnes",
         "capacity_max_detected": 0,
@@ -9700,7 +9761,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_le8petion.com_activites de bienetre_",
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Le 8 Pétion, 8, Rue Pétion, Quartier de la Roquette, Paris 11e Arrondissement, Paris, Île-de-France, France métropolitaine, 75011, France"
       }
     },
     {
@@ -9876,7 +9939,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, capacity, city, current_reopening_status, email, exact_prices, phone, postal_code, price, street_address",
+        "missing_formal_fields": "address, capacity, city, current_reopening_status, email, exact_prices, phone, postal_code, price, street_address,geocode_failed",
         "email_questions": "address, capacity, city, current_reopening_status, email, exact_prices, phone, postal_code, price, street_address",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -9939,7 +10002,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10002,7 +10065,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10065,7 +10128,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10128,7 +10191,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10191,7 +10254,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10254,7 +10317,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10317,7 +10380,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
         "evidence_text": "Page officielle de location de salles UCJG Paris avec détails des espaces et conditions; elle signale toutefois une fermeture pour travaux depuis le 31/01/2023 et tarifs sur contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code, price",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
@@ -10506,7 +10569,7 @@
         "constraints_tags": "",
         "description": "Page municipale officielle listant les salles communales à louer, documents de tarifs/règlements et contact de réservation.",
         "evidence_text": "Page municipale officielle listant les salles communales à louer, documents de tarifs/règlements et contact de réservation.",
-        "missing_formal_fields": "Paradou_address, address, capacities, capacity, city, email, phone, postal_code, price, prices_inline",
+        "missing_formal_fields": "Paradou_address, address, capacities, capacity, city, email, phone, postal_code, price, prices_inline,geocode_failed",
         "email_questions": "Paradou_address, address, capacities, capacity, city, email, phone, postal_code, price, prices_inline",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S4",
@@ -10527,8 +10590,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.073445,
+          48.6716989
         ]
       },
       "properties": {
@@ -10537,8 +10600,8 @@
         "city": "",
         "department": "91",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.6716989,
+        "lon": 2.073445,
         "category": "rental regulation pdf fetch failed",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -10582,7 +10645,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_reglement_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "single"
+        "ai_source_kind": "single",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle du Paradou, Rue de Gometz, Les Molières, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91470, France"
       }
     },
     {
@@ -10632,7 +10697,7 @@
         "constraints_tags": "",
         "description": "Page municipale officielle listant les salles communales à louer, documents de tarifs/règlements et contact de réservation.",
         "evidence_text": "Page municipale officielle listant les salles communales à louer, documents de tarifs/règlements et contact de réservation.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S4",
@@ -10695,7 +10760,7 @@
         "constraints_tags": "",
         "description": "Page municipale officielle listant les salles communales à louer, documents de tarifs/règlements et contact de réservation.",
         "evidence_text": "Page municipale officielle listant les salles communales à louer, documents de tarifs/règlements et contact de réservation.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, postal_code, price",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S4",
@@ -10716,8 +10781,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.073445,
+          48.6716989
         ]
       },
       "properties": {
@@ -10726,8 +10791,8 @@
         "city": "Les Molières",
         "department": "91",
         "address": "Les Molières",
-        "lat": null,
-        "lon": null,
+        "lat": 48.6716989,
+        "lon": 2.073445,
         "category": "rental regulation pdf fetch failed",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -10771,7 +10836,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_reglement_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle du Paradou, Rue de Gometz, Les Molières, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91470, France"
       }
     },
     {
@@ -10779,8 +10846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.0695803,
+          48.6738508
         ]
       },
       "properties": {
@@ -10789,8 +10856,8 @@
         "city": "",
         "department": "91",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.6738508,
+        "lon": 2.0695803,
         "category": "official venue page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -10834,7 +10901,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_lespace culturel associatif_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "single"
+        "ai_source_kind": "single",
+        "geocode_source": "nominatim",
+        "geocode_label": "Espace culturel & associatif Guy Jean-Baptiste Target, 4, Rue de la Porte de Paris, Les Molières, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91470, France"
       }
     },
     {
@@ -10842,8 +10911,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3823461,
+          48.8822194
         ]
       },
       "properties": {
@@ -10852,8 +10921,8 @@
         "city": "",
         "department": "91",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8822194,
+        "lon": 2.3823461,
         "category": "official venue page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -10897,7 +10966,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_lespace culturel associatif_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle d'exposition, Avenue Michal, Quartier du Combat, Paris 19e Arrondissement, Paris, Île-de-France, France métropolitaine, 75019, France"
       }
     },
     {
@@ -10905,8 +10976,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.0699032,
+          48.673736
         ]
       },
       "properties": {
@@ -10915,8 +10986,8 @@
         "city": "",
         "department": "91",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.673736,
+        "lon": 2.0699032,
         "category": "official venue page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -10960,7 +11031,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_lespace culturel associatif_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La maison du citoyen, Rue de la Janvrerie, Les Molières, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91470, France"
       }
     },
     {
@@ -10968,8 +11041,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.4727182,
+          48.6064147
         ]
       },
       "properties": {
@@ -10978,8 +11051,8 @@
         "city": "",
         "department": "91",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.6064147,
+        "lon": 2.4727182,
         "category": "official venue page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -11023,7 +11096,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_lespace culturel associatif_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Médiathèque, Rue Féray, Corbeil-Essonnes, Évry, Essonne, Île-de-France, France métropolitaine, 91100, France"
       }
     },
     {
@@ -11031,8 +11106,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          1.7335834,
+          48.9964493
         ]
       },
       "properties": {
@@ -11041,8 +11116,8 @@
         "city": "",
         "department": "91",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.9964493,
+        "lon": 1.7335834,
         "category": "official rental page multi space",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -11086,7 +11161,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_lesmolieres.fr_page load link_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle d'expositions des Réservoirs, Rue des Célestins, Limay, Mantes-la-Jolie, Yvelines, Île-de-France, France métropolitaine, 78520, France"
       }
     },
     {
@@ -11094,8 +11171,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2254306,
+          49.0005439
         ]
       },
       "properties": {
@@ -11104,8 +11181,8 @@
         "city": "",
         "department": "95",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 49.0005439,
+        "lon": 2.2254306,
         "category": "access guide pdf",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -11149,7 +11226,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_espace-jules-cesar.fr_guide dacces_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Espace Roger Maillard, Chaussée Jules César, ZAE du Parc des Colonnes, Le Plessis-Bouchard, Argenteuil, Val-d'Oise, Île-de-France, France métropolitaine, 95130, France"
       }
     },
     {
@@ -11199,7 +11278,7 @@
         "constraints_tags": "",
         "description": "Page officielle détaillant les services/options associés à la location de salle à Osny; complète l'offre de réservation.",
         "evidence_text": "Page officielle détaillant les services/options associés à la location de salle à Osny; complète l'offre de réservation.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price",
         "page_type": "rental_services_page",
         "source_reliability": "S3",
@@ -11262,7 +11341,7 @@
         "constraints_tags": "",
         "description": "Page officielle de réservation de l'Espace Jules César avec adresse, téléphone, tarifs et plusieurs espaces louables.",
         "evidence_text": "Page officielle de réservation de l'Espace Jules César avec adresse, téléphone, tarifs et plusieurs espaces louables.",
-        "missing_formal_fields": "address, city, email, phone, postal_code",
+        "missing_formal_fields": "address, city, email, phone, postal_code,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S4",
@@ -11325,7 +11404,7 @@
         "constraints_tags": "",
         "description": "Page officielle de réservation de l'Espace Jules César avec adresse, téléphone, tarifs et plusieurs espaces louables.",
         "evidence_text": "Page officielle de réservation de l'Espace Jules César avec adresse, téléphone, tarifs et plusieurs espaces louables.",
-        "missing_formal_fields": "address, city, email, phone, postal_code",
+        "missing_formal_fields": "address, city, email, phone, postal_code,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S4",
@@ -11388,7 +11467,7 @@
         "constraints_tags": "",
         "description": "Page officielle de réservation de l'Espace Jules César avec adresse, téléphone, tarifs et plusieurs espaces louables.",
         "evidence_text": "Page officielle de réservation de l'Espace Jules César avec adresse, téléphone, tarifs et plusieurs espaces louables.",
-        "missing_formal_fields": "address, city, email, phone, postal_code",
+        "missing_formal_fields": "address, city, email, phone, postal_code,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S4",
@@ -11451,7 +11530,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
         "evidence_text": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
-        "missing_formal_fields": "address, capacity, city, email, exact_address_in_summary, phone, postal_code, price",
+        "missing_formal_fields": "address, capacity, city, email, exact_address_in_summary, phone, postal_code, price,geocode_failed",
         "email_questions": "address, capacity, city, email, exact_address_in_summary, phone, postal_code, price",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
@@ -11514,7 +11593,7 @@
         "constraints_tags": "",
         "description": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
         "evidence_text": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
-        "missing_formal_fields": "address, city, email, phone, postal_code",
+        "missing_formal_fields": "address, city, email, phone, postal_code,geocode_failed",
         "email_questions": "address, city, email, phone, postal_code",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
@@ -11577,7 +11656,7 @@
         "constraints_tags": "",
         "description": "Fiche officielle très précise pour une petite salle de réunion louable à Osny, avec capacité, adresse, tarifs et contact.",
         "evidence_text": "Fiche officielle très précise pour une petite salle de réunion louable à Osny, avec capacité, adresse, tarifs et contact.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
@@ -11640,7 +11719,7 @@
         "constraints_tags": "",
         "description": "Fiche officielle très précise pour une petite salle de réunion louable à Osny, avec capacité, adresse, tarifs et contact.",
         "evidence_text": "Fiche officielle très précise pour une petite salle de réunion louable à Osny, avec capacité, adresse, tarifs et contact.",
-        "missing_formal_fields": "city, email",
+        "missing_formal_fields": "city, email,geocode_failed",
         "email_questions": "city, email",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
@@ -12270,7 +12349,7 @@
         "constraints_tags": "",
         "description": "Accueil du lieu ; la location de salles est seulement mentionnée sans détails ni lien extrait.",
         "evidence_text": "L'espace R'Danses propose des locations de salles à tarifs attractifs. Plus d'infos dans l'onglet LOCATIONS.",
-        "missing_formal_fields": "address, capacity, email, phone, rental_page_url",
+        "missing_formal_fields": "address, capacity, email, phone, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, email, phone, rental_page_url",
         "page_type": "venue_rental_mentioned",
         "source_reliability": "S4",
@@ -12333,7 +12412,7 @@
         "constraints_tags": "",
         "description": "Page de cours de danse orientale avec contacts et tarifs de cours, sans location de salle.",
         "evidence_text": "Tél. : 06 09 20 63 87 - Mail : ciyadanse@live.fr ... enfant : 370 € l'année ... adulte : 465 € l'année",
-        "missing_formal_fields": "address, capacity, rental_page_url",
+        "missing_formal_fields": "address, capacity, rental_page_url,geocode_failed",
         "email_questions": "address, capacity, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S4",
@@ -12459,7 +12538,7 @@
         "constraints_tags": "",
         "description": "Page dédiée à la location de la salle Le Mas avec capacités, usages événementiels et contact.",
         "evidence_text": "Le Mas peut accueillir de 100 à 200 personnes en dîner assis, jusqu’à 220 personnes en cocktail ... Contact : 01 39 32 70 99",
-        "missing_formal_fields": "address, city, email, price",
+        "missing_formal_fields": "address, city, email, price,geocode_failed",
         "email_questions": "address, city, email, price",
         "page_type": "venue_with_rental_page",
         "source_reliability": "S3",
@@ -12522,7 +12601,7 @@
         "constraints_tags": "",
         "description": "Page dédiée à la location de la salle La Villa avec capacités et lien de réservation.",
         "evidence_text": "La Villa peut accueillir de 50 à 100 personnes ... Contact : 01 39 32 70 99 ... Réserver cette salle / Contact",
-        "missing_formal_fields": "address, city, email, price",
+        "missing_formal_fields": "address, city, email, price,geocode_failed",
         "email_questions": "address, city, email, price",
         "page_type": "venue_with_rental_page",
         "source_reliability": "S3",
@@ -12585,7 +12664,7 @@
         "constraints_tags": "",
         "description": "Page commerciale mariage listant les deux salles louables du domaine avec capacités et liens.",
         "evidence_text": "Page commerciale mariage listant les deux salles louables du domaine avec capacités et liens.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price,geocode_failed",
         "email_questions": "address, capacity, city, email, phone, postal_code, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -12648,7 +12727,7 @@
         "constraints_tags": "",
         "description": "Page commerciale mariage listant les deux salles louables du domaine avec capacités et liens.",
         "evidence_text": "Le Mas ... 80 à 200 personnes en dîner assis, jusqu’à 300 personnes en cocktail.",
-        "missing_formal_fields": "address, city, email, price",
+        "missing_formal_fields": "address, city, email, price,geocode_failed",
         "email_questions": "address, city, email, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -12711,7 +12790,7 @@
         "constraints_tags": "",
         "description": "Page commerciale mariage listant les deux salles louables du domaine avec capacités et liens.",
         "evidence_text": "La Villa ... 50 à 120 personnes en repas assis.",
-        "missing_formal_fields": "address, city, email, price",
+        "missing_formal_fields": "address, city, email, price,geocode_failed",
         "email_questions": "address, city, email, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
@@ -12732,8 +12811,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3302622,
+          48.802797
         ]
       },
       "properties": {
@@ -12742,8 +12821,8 @@
         "city": "Arcueil",
         "department": "94",
         "address": "94110 Arcueil",
-        "lat": null,
-        "lon": null,
+        "lat": 48.802797,
+        "lon": 2.3302622,
         "category": "generic location page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -12787,7 +12866,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_arcueil.fr_centre mai politzer_arcueil",
         "ai_source_file": "ai_classify_retry_chunk_4.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Centre Maï Politzer, Rue du 8 Mai 1945, Arcueil, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94110, France"
       }
     },
     {
@@ -13110,8 +13191,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3059339,
+          48.82246
         ]
       },
       "properties": {
@@ -13120,8 +13201,8 @@
         "city": "Malakoff",
         "department": "92",
         "address": "92240 Malakoff",
-        "lat": null,
-        "lon": null,
+        "lat": 48.82246,
+        "lon": 2.3059339,
         "category": "generic location page",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -13165,7 +13246,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_malakoff.fr_association_malakoff",
         "ai_source_file": "ai_classify_retry_chunk_5.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Maison de la Vie Associative de Malakoff, Rue Victor Hugo, Malakoff, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92240, France"
       }
     },
     {
@@ -13215,7 +13298,7 @@
         "constraints_tags": "",
         "description": "Page de discipline au DOJO 5; le lieu est une salle sportive et la navigation mentionne la privatisation/location.",
         "evidence_text": "Page de discipline au DOJO 5; le lieu est une salle sportive et la navigation mentionne la privatisation/location.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price",
         "page_type": "venue_rental_mentioned",
         "source_reliability": "S4",
@@ -13236,8 +13319,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3508351,
+          48.8491433
         ]
       },
       "properties": {
@@ -13246,8 +13329,8 @@
         "city": "Paris",
         "department": "75",
         "address": "75005 Paris",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8491433,
+        "lon": 2.3508351,
         "category": "venue rental mentioned",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -13291,7 +13374,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_dojo5.fr_tarifs_montrouge",
         "ai_source_file": "ai_classify_retry_chunk_5.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "DOJO 5, 26, Rue de Pontoise, Quartier Saint-Victor, Paris 5e Arrondissement, Paris, Île-de-France, France métropolitaine, 75005, France"
       }
     },
     {
@@ -13341,7 +13426,7 @@
         "constraints_tags": "",
         "description": "Page d'un local associatif municipal avec programme d'ateliers, mais sans modalités de location externe.",
         "evidence_text": "Page d'un local associatif municipal avec programme d'ateliers, mais sans modalités de location externe.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_conditions, rental_page_url",
+        "missing_formal_fields": "capacity, email, phone, postal_code, price, rental_conditions, rental_page_url,geocode_failed",
         "email_questions": "capacity, email, phone, postal_code, price, rental_conditions, rental_page_url",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
