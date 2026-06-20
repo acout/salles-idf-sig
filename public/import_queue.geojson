@@ -15,7 +15,7 @@
         "name": "DOJO 5 - SALLE 2",
         "city": "Gentilly",
         "department": "94",
-        "address": "Gentilly",
+        "address": "",
         "lat": 48.815243,
         "lon": 2.35044,
         "category": "venue with rental page",
@@ -78,7 +78,7 @@
         "name": "Yog'n'Move",
         "city": "Villejuif",
         "department": "94",
-        "address": "Villejuif",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "venue no rental info",
@@ -267,7 +267,7 @@
         "name": "[PDF] PRATIQUE",
         "city": "Gentilly",
         "department": "94",
-        "address": "Gentilly",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "multi venue listing",
@@ -979,7 +979,7 @@
         "name": "Location de salles à Villejuif 94800, France",
         "city": "Villejuif",
         "department": "94",
-        "address": "Villejuif",
+        "address": "",
         "lat": 48.782135,
         "lon": 2.365218,
         "category": "multi venue listing",
@@ -1168,7 +1168,7 @@
         "name": "Location salle Malakoff",
         "city": "Malakoff",
         "department": "92",
-        "address": "Malakoff",
+        "address": "",
         "lat": 48.813571,
         "lon": 2.294355,
         "category": "venue with rental page",
@@ -1231,7 +1231,7 @@
         "name": "Centre communautaire Rina et Chammaï WENIGER",
         "city": "Le Kremlin-Bicêtre",
         "department": "94",
-        "address": "Le Kremlin-Bicêtre",
+        "address": "",
         "lat": 48.816169,
         "lon": 2.364421,
         "category": "venue with rental page",
@@ -1294,7 +1294,7 @@
         "name": "StudioDiabolo",
         "city": "Le Kremlin-Bicêtre",
         "department": "94",
-        "address": "Le Kremlin-Bicêtre",
+        "address": "",
         "lat": 48.812177,
         "lon": 2.357722,
         "category": "venue rental mentioned",
@@ -1672,7 +1672,7 @@
         "name": "L'accompagnement par la ville",
         "city": "Le Kremlin-Bicêtre",
         "department": "94",
-        "address": "Le Kremlin-Bicêtre",
+        "address": "",
         "lat": 48.814679,
         "lon": 2.364049,
         "category": "multi venue listing",
@@ -1798,7 +1798,7 @@
         "name": "Espace André-Maigné",
         "city": "Le Kremlin-Bicêtre",
         "department": "94",
-        "address": "Le Kremlin-Bicêtre",
+        "address": "",
         "lat": 48.814679,
         "lon": 2.364049,
         "category": "multi venue listing",
@@ -1861,7 +1861,7 @@
         "name": "MJCS La Châtre - salles à louer",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.80735,
         "lon": 2.257953,
         "category": "venue with rental page",
@@ -1924,7 +1924,7 @@
         "name": "Dojo du Centre - Complexe sportif de Trivaux-Garenne",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.789723,
         "lon": 2.255055,
         "category": "generic location page",
@@ -1987,7 +1987,7 @@
         "name": "Cours de yoga à Bourg",
         "city": "Bourg-la-Reine",
         "department": "92",
-        "address": "Bourg-la-Reine",
+        "address": "",
         "lat": 48.781649,
         "lon": 2.310609,
         "category": "multi venue listing",
@@ -2176,7 +2176,7 @@
         "name": "Satya Santosha",
         "city": "Bourg-la-Reine",
         "department": "92",
-        "address": "Bourg-la-Reine",
+        "address": "",
         "lat": 48.779888,
         "lon": 2.316407,
         "category": "venue no rental info",
@@ -2239,7 +2239,7 @@
         "name": "Centre de Yoga Iyengar de Clamart / La Ruche Atelier",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.810995,
         "lon": 2.265357,
         "category": "venue no rental info",
@@ -2302,7 +2302,7 @@
         "name": "YOGA Place",
         "city": "Bourg-la-Reine",
         "department": "92",
-        "address": "Bourg-la-Reine",
+        "address": "",
         "lat": 48.780531,
         "lon": 2.31292,
         "category": "venue no rental info",
@@ -2365,7 +2365,7 @@
         "name": "Studio MRG",
         "city": "Sceaux",
         "department": "92",
-        "address": "Sceaux",
+        "address": "",
         "lat": 48.781085,
         "lon": 2.29056,
         "category": "venue with rental page",
@@ -2491,7 +2491,7 @@
         "name": "Exprime'Danse Clamart",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.796102,
         "lon": 2.25475,
         "category": "multi venue listing",
@@ -2741,9 +2741,9 @@
       "properties": {
         "candidate_id": "venue_venue_themuselab.fr_informations_",
         "name": "The Muse Lab Montigny-le-Bretonneux",
-        "city": "Montigny-le-Bretonneux",
+        "city": "",
         "department": "92",
-        "address": "Montigny-le-Bretonneux",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -2806,7 +2806,7 @@
         "name": "The Muse Lab Montigny-le-Bretonneux",
         "city": "Montigny-le-Bretonneux",
         "department": "78",
-        "address": "Montigny-le-Bretonneux",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -2869,7 +2869,7 @@
         "name": "The Muse Lab Boulogne-Billancourt",
         "city": "Boulogne-Billancourt",
         "department": "92",
-        "address": "Boulogne-Billancourt",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -2995,7 +2995,7 @@
         "name": "mYô / séances de yoga à Clamart",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.796102,
         "lon": 2.25475,
         "category": "official activity page",
@@ -3058,7 +3058,7 @@
         "name": "mYô - lieu atelier 44 route du Pavé Blanc",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.796102,
         "lon": 2.25475,
         "category": "official activity page",
@@ -3121,7 +3121,7 @@
         "name": "Salle bleue, Maison des Sports",
         "city": "Clamart",
         "department": "92",
-        "address": "Clamart",
+        "address": "",
         "lat": 48.796102,
         "lon": 2.25475,
         "category": "official activity page",
@@ -3247,7 +3247,7 @@
         "name": "Centre Momboye - studios Projet Danse",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": 48.778984,
         "lon": 2.301794,
         "category": "official venue info page",
@@ -3310,7 +3310,7 @@
         "name": "Espace Michel Voisin - Studio 2",
         "city": "Sceaux",
         "department": "92",
-        "address": "Sceaux",
+        "address": "",
         "lat": 48.778984,
         "lon": 2.301794,
         "category": "official venue info page",
@@ -3436,7 +3436,7 @@
         "name": "Danse Cadix",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": 48.8344837,
         "lon": 2.2883046,
         "category": "official multi venue rental page",
@@ -3501,7 +3501,7 @@
         "name": "Danse Volontaires",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official multi venue rental page",
@@ -3627,7 +3627,7 @@
         "name": "Centre NamastéOm - salle de yoga",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": 48.843487,
         "lon": 2.408235,
         "category": "official rental page",
@@ -3690,7 +3690,7 @@
         "name": "Centre NamastéOm",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": 48.843487,
         "lon": 2.408235,
         "category": "official contact rental inquiry page",
@@ -3816,7 +3816,7 @@
         "name": "METTA VILLA",
         "city": "Salies de Béarn",
         "department": "94",
-        "address": "Salies de Béarn",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "directory rental venue page",
@@ -3942,7 +3942,7 @@
         "name": "La Grange de la Montagne Vihan",
         "city": "Landeleau",
         "department": "94",
-        "address": "Landeleau",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "directory rental venue page",
@@ -4068,7 +4068,7 @@
         "name": "Eka Yoga - Centre de Yoga de 85 m2",
         "city": "Toulouse",
         "department": "94",
-        "address": "Toulouse",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "directory rental venue page",
@@ -4194,7 +4194,7 @@
         "name": "A’mare Corsica Seaside Small Resort",
         "city": "Propriano",
         "department": "94",
-        "address": "Propriano",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "directory rental venue page",
@@ -4320,7 +4320,7 @@
         "name": "Domaine du Pas de l'Ane",
         "city": "Gironde",
         "department": "94",
-        "address": "Gironde",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "directory rental venue page",
@@ -4572,7 +4572,7 @@
         "name": "Domaine Mas Del Lum",
         "city": "Boussac",
         "department": "94",
-        "address": "Boussac",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "directory rental venue page",
@@ -4759,9 +4759,9 @@
       "properties": {
         "candidate_id": "venue_venue_lemagasin.org_location de salles_",
         "name": "Le Magasin / Vagabond",
-        "city": "Malakoff",
+        "city": "",
         "department": "75",
-        "address": "Malakoff",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -5769,7 +5769,7 @@
         "name": "Yogamania Paris",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "multi venue listing",
@@ -6019,9 +6019,9 @@
       "properties": {
         "candidate_id": "venue_venue_yogamania.fr_paris_",
         "name": "Yogamania Paris",
-        "city": "Paris",
+        "city": "",
         "department": "78",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "venue no rental info",
@@ -9648,9 +9648,9 @@
       "properties": {
         "candidate_id": "venue_venue_le8petion.com_activites de bienetre_",
         "name": "Le 8 Pétion",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": 48.8586013,
         "lon": 2.3817511,
         "category": "venue with rental page",
@@ -9715,7 +9715,7 @@
         "name": "Le 8 Pétion",
         "city": "Paris",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": 48.8586013,
         "lon": 2.3817511,
         "category": "venue with rental page",
@@ -9843,7 +9843,7 @@
         "name": "Pavillon Napoléon",
         "city": "Saint-Leu-la-Forêt",
         "department": "95",
-        "address": "Saint-Leu-la-Forêt",
+        "address": "",
         "lat": 49.005489,
         "lon": 2.251049,
         "category": "venue with rental page",
@@ -9904,9 +9904,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs_",
         "name": "UCJG Paris",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -9967,9 +9967,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x0_52446b8683",
         "name": "UCJG Paris - Gymnase",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -10030,9 +10030,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x1_7669c75c35",
         "name": "UCJG Paris - Salon André",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -10093,9 +10093,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x2_9523f6ec39",
         "name": "UCJG Paris - Salle bleue",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -10156,9 +10156,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x3_ed8aa9d19d",
         "name": "UCJG Paris - Salle 2",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -10219,9 +10219,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x4_a2f34b84cc",
         "name": "UCJG Paris - Salle 3",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -10282,9 +10282,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x5_41f2870e35",
         "name": "UCJG Paris - Grande Salle",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -10345,9 +10345,9 @@
       "properties": {
         "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x6_db7e84126b",
         "name": "UCJG Paris - Salle 4",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "official rental page",
@@ -11749,7 +11749,7 @@
         "name": "Espace seniors du CCAS de Bagneux",
         "city": "Bagneux",
         "department": "92",
-        "address": "Bagneux",
+        "address": "",
         "lat": 48.798591,
         "lon": 2.304322,
         "category": "public service venue page",
@@ -11875,7 +11875,7 @@
         "name": "Résidence du Clos Lapaume",
         "city": "Bagneux",
         "department": "92",
-        "address": "Bagneux",
+        "address": "",
         "lat": 48.798591,
         "lon": 2.304322,
         "category": "public service venue page",
@@ -12316,7 +12316,7 @@
         "name": "Espace R'Danses",
         "city": "Montrouge",
         "department": "92",
-        "address": "92120, Montrouge",
+        "address": "92120",
         "lat": null,
         "lon": null,
         "category": "venue rental mentioned",
@@ -12379,7 +12379,7 @@
         "name": "Espace R'Danses / Ciya Danse",
         "city": "Montrouge",
         "department": "92",
-        "address": "92120, Montrouge",
+        "address": "92120",
         "lat": null,
         "lon": null,
         "category": "venue no rental info",
@@ -12442,7 +12442,7 @@
         "name": "Espace 10/13",
         "city": "Arcueil",
         "department": "94",
-        "address": "Arcueil",
+        "address": "",
         "lat": 48.800125,
         "lon": 2.338152,
         "category": "generic location page",
@@ -12948,7 +12948,7 @@
         "name": "Maisons de quartier et Espace de vie sociale",
         "city": "Malakoff",
         "department": "92",
-        "address": "Malakoff",
+        "address": "",
         "lat": 48.820987,
         "lon": 2.30169,
         "category": "multi venue listing",
@@ -13011,7 +13011,7 @@
         "name": "Maison de quartier Jacques-Prévert",
         "city": "Malakoff",
         "department": "92",
-        "address": "Malakoff",
+        "address": "",
         "lat": 48.820987,
         "lon": 2.30169,
         "category": "multi venue listing",
@@ -13074,7 +13074,7 @@
         "name": "Maison de quartier Henri-Barbusse",
         "city": "Malakoff",
         "department": "92",
-        "address": "Malakoff",
+        "address": "",
         "lat": 48.820987,
         "lon": 2.30169,
         "category": "multi venue listing",
@@ -13137,7 +13137,7 @@
         "name": "Espace de vie sociale Pierre-Valette",
         "city": "Malakoff",
         "department": "92",
-        "address": "Malakoff",
+        "address": "",
         "lat": 48.820987,
         "lon": 2.30169,
         "category": "multi venue listing",
@@ -13265,7 +13265,7 @@
         "name": "DOJO 5",
         "city": "Montrouge",
         "department": "92",
-        "address": "Montrouge",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "venue rental mentioned",
@@ -13393,7 +13393,7 @@
         "name": "Maison des associations de la transition (MAT)",
         "city": "Bourg-la-Reine",
         "department": "92",
-        "address": "Bourg-la-Reine",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "venue no rental info",
@@ -13454,9 +13454,9 @@
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x0_bac544360b",
         "name": "Espace Culturel Bertin Poirée",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "catalog pdf",
@@ -13489,7 +13489,7 @@
         "constraints_tags": "",
         "description": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
         "evidence_text": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "catalog_pdf",
         "source_reliability": "S4",
@@ -13517,9 +13517,9 @@
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x1_a50de9c24c",
         "name": "Studio Magenia",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "catalog pdf",
@@ -13552,7 +13552,7 @@
         "constraints_tags": "",
         "description": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
         "evidence_text": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "catalog_pdf",
         "source_reliability": "S4",
@@ -13573,18 +13573,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3587277,
+          48.835295
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x2_50bedd36f3",
         "name": "Elephant Paname",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.835295,
+        "lon": 2.3587277,
         "category": "catalog pdf",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -13628,7 +13628,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Elephant, Boulevard de l'Hôpital, Quartier de la Salpêtrière, Paris 13e Arrondissement, Paris, Île-de-France, France métropolitaine, 75013, France"
       }
     },
     {
@@ -13643,9 +13645,9 @@
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x3_ee410ea61c",
         "name": "Salsabor Studio",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "catalog pdf",
@@ -13678,7 +13680,7 @@
         "constraints_tags": "",
         "description": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
         "evidence_text": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "catalog_pdf",
         "source_reliability": "S4",
@@ -13699,18 +13701,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3535253,
+          48.859832
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x4_347c544da2",
         "name": "Centre de Danse du Marais",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.859832,
+        "lon": 2.3535253,
         "category": "catalog pdf",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -13754,7 +13756,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Centre de Danse du Marais, Impasse du Bœuf, Quartier Saint-Merri, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
       }
     },
     {
@@ -13769,9 +13773,9 @@
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x5_709cde5475",
         "name": "Espace Sport et Danse",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "catalog pdf",
@@ -13804,7 +13808,7 @@
         "constraints_tags": "",
         "description": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
         "evidence_text": "PDF catalog listing dozens of dance studios for rental in Paris and nearby banlieue. Contains individual studio names, addresses, capacities, and some pricing. Multiple venues with addresses identifiable. Marked as catalog_pdf with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "catalog_pdf",
         "source_reliability": "S4",
@@ -13825,18 +13829,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3562308,
+          48.8545284
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x6_c9d8d4bd28",
         "name": "Micadanses",
-        "city": "Paris",
+        "city": "",
         "department": "75",
-        "address": "Paris",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.8545284,
+        "lon": 2.3562308,
         "category": "catalog pdf",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -13880,7 +13884,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Micadanses, Rue Geoffroy l'Asnier, Quartier Saint-Gervais, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
       }
     },
     {
@@ -13888,8 +13894,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2364767,
+          48.8461153
         ]
       },
       "properties": {
@@ -13898,8 +13904,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8461153,
+        "lon": 2.2364767,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -13943,7 +13949,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_fontenay-aux-roses.fr_louer une salle municipale fontenayauxroses_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle du Parchamp, Rue de l'Église, Parchamp - Albert Kahn, Boulogne-Billancourt, Hauts-de-Seine, Île-de-France, France métropolitaine, 92100, France"
       }
     },
     {
@@ -13951,8 +13959,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.196256,
+          48.8913835
         ]
       },
       "properties": {
@@ -13961,8 +13969,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8913835,
+        "lon": 2.196256,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14006,7 +14014,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_fontenay-aux-roses.fr_louer une salle municipale fontenayauxroses_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle du Parc, Rue de l'Église, Centre, Quartier du Centre, Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92000, France"
       }
     },
     {
@@ -14056,7 +14066,7 @@
         "constraints_tags": "",
         "description": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -14119,7 +14129,7 @@
         "constraints_tags": "",
         "description": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -14140,8 +14150,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2907245,
+          48.7904707
         ]
       },
       "properties": {
@@ -14150,8 +14160,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7904707,
+        "lon": 2.2907245,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14195,7 +14205,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_fontenay-aux-roses.fr_louer une salle municipale fontenayauxroses_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle Sainte-Barbe, 10, Place du Château Sainte-Barbe, Fontenay-aux-Roses, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92260, France"
       }
     },
     {
@@ -14245,7 +14257,7 @@
         "constraints_tags": "",
         "description": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -14308,7 +14320,7 @@
         "constraints_tags": "",
         "description": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -14371,7 +14383,7 @@
         "constraints_tags": "",
         "description": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal page listing 8 rental halls in Fontenay-aux-Roses with 'louer une salle' rental signal. Individual hall names identified but missing capacity, pricing, and specific addresses. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -14392,18 +14404,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2366403,
+          48.8933902
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x0_1449b1b957",
         "name": "La Nef",
-        "city": "Meudon",
+        "city": "",
         "department": "92",
-        "address": "Meudon",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.8933902,
+        "lon": 2.2366403,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14447,7 +14459,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_hangar-y.com_privatisations hangar y_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La Nef des Collines de l'Arche, Arche Nord, Puteaux, Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92800, France"
       }
     },
     {
@@ -14455,18 +14469,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2360111,
+          48.8390206
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x1_3fe6fe0216",
         "name": "L'Atelier",
-        "city": "Meudon",
+        "city": "",
         "department": "92",
-        "address": "Meudon",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.8390206,
+        "lon": 2.2360111,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14510,7 +14524,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_hangar-y.com_privatisations hangar y_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "L'Atelier, Rue de Billancourt, Jardin de la Mairie, Silly-Galliéni, Boulogne-Billancourt, Hauts-de-Seine, Île-de-France, France métropolitaine, 92100, France"
       }
     },
     {
@@ -14525,9 +14541,9 @@
       "properties": {
         "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x2_77225311d4",
         "name": "Restaurant Les Roseaux",
-        "city": "Meudon",
+        "city": "",
         "department": "92",
-        "address": "Meudon",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "single venue",
@@ -14560,7 +14576,7 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Hangar Y, a historic monument in Meudon. Clear 'privatisation' rental signal with 4 distinct event spaces (La Nef, L'Atelier, Restaurant Les Roseaux, La Guinguette). Detailed capacity and surface info per space. Missing pricing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Hangar Y, a historic monument in Meudon. Clear 'privatisation' rental signal with 4 distinct event spaces (La Nef, L'Atelier, Restaurant Les Roseaux, La Guinguette). Detailed capacity and surface info per space. Missing pricing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "single_venue",
         "source_reliability": "S4",
@@ -14581,18 +14597,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2731931,
+          48.7792645
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x3_d3e64248ab",
         "name": "La Guinguette",
-        "city": "Meudon",
+        "city": "",
         "department": "92",
-        "address": "Meudon",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.7792645,
+        "lon": 2.2731931,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14636,7 +14652,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_hangar-y.com_privatisations hangar y_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La Guinguette, Rue de Malabry, Cité Basse, Résidence de la Pépinière, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France"
       }
     },
     {
@@ -14644,8 +14662,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2535504,
+          48.7781332
         ]
       },
       "properties": {
@@ -14654,8 +14672,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7781332,
+        "lon": 2.2535504,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14699,7 +14717,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Théâtre de l’Allegria, 1, Place Jane Rhodes, Nouvelle Cité-Jardin, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France"
       }
     },
     {
@@ -14707,8 +14727,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2542605,
+          48.7775441
         ]
       },
       "properties": {
@@ -14717,8 +14737,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7775441,
+        "lon": 2.2542605,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14762,7 +14782,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Cinéma Gérard-Philipe, 1, Place Jane Rhodes, Nouvelle Cité-Jardin, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France"
       }
     },
     {
@@ -14812,7 +14834,7 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
@@ -14875,7 +14897,7 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
@@ -14896,8 +14918,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2746811,
+          48.7779292
         ]
       },
       "properties": {
@@ -14906,8 +14928,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7779292,
+        "lon": 2.2746811,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -14951,7 +14973,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Les Terrasses, 48-50, Robinson, Résidence de la Pépinière, Châtenay-Malabry, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92290, France"
       }
     },
     {
@@ -14959,8 +14983,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2392128,
+          48.8414447
         ]
       },
       "properties": {
@@ -14969,8 +14993,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8414447,
+        "lon": 2.2392128,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15014,7 +15038,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "La Placette, Rue de Paris, Les Princes - Marmottan, Les Princes-Marmottan, Boulogne-Billancourt, Hauts-de-Seine, Île-de-France, France métropolitaine, 92100, France"
       }
     },
     {
@@ -15022,8 +15048,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.2531097,
+          48.731973
         ]
       },
       "properties": {
@@ -15032,8 +15058,8 @@
         "city": "",
         "department": "92",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.731973,
+        "lon": 2.2531097,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15077,7 +15103,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle de conférence, Rue de Versailles, Les Graviers, Massy, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91300, France"
       }
     },
     {
@@ -15127,7 +15155,7 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
@@ -15190,7 +15218,7 @@
         "constraints_tags": "",
         "description": "Single venue rental page for Le Rooftop in Champigny-sur-Marne. Clear 'location événementielle' rental signal. Lists 3 main event spaces (EastSide, WestView, Salle de Réunion) with detailed capacities and extensive AV equipment specs. Direct booking venue, not an aggregator. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue rental page for Le Rooftop in Champigny-sur-Marne. Clear 'location événementielle' rental signal. Lists 3 main event spaces (EastSide, WestView, Salle de Réunion) with detailed capacities and extensive AV equipment specs. Direct booking venue, not an aggregator. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "single_venue",
         "source_reliability": "S4",
@@ -15253,7 +15281,7 @@
         "constraints_tags": "",
         "description": "Single venue rental page for Le Rooftop in Champigny-sur-Marne. Clear 'location événementielle' rental signal. Lists 3 main event spaces (EastSide, WestView, Salle de Réunion) with detailed capacities and extensive AV equipment specs. Direct booking venue, not an aggregator. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue rental page for Le Rooftop in Champigny-sur-Marne. Clear 'location événementielle' rental signal. Lists 3 main event spaces (EastSide, WestView, Salle de Réunion) with detailed capacities and extensive AV equipment specs. Direct booking venue, not an aggregator. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "single_venue",
         "source_reliability": "S4",
@@ -15274,8 +15302,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3736251,
+          48.8469978
         ]
       },
       "properties": {
@@ -15284,8 +15312,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.8469978,
+        "lon": 2.3736251,
         "category": "single venue",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15329,7 +15357,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle de réunion, 9, Rue Parrot, Quartier des Quinze-Vingts, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France"
       }
     },
     {
@@ -15337,8 +15367,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3387349,
+          48.7637977
         ]
       },
       "properties": {
@@ -15347,8 +15377,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7637977,
+        "lon": 2.3387349,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15392,7 +15422,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-chevilly-larue.fr_louer une salle municipale chevillylarue_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle Joséphine Baker, Rue du Stade, Chevilly-Larue, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94550, France"
       }
     },
     {
@@ -15400,8 +15432,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3513585,
+          48.7698215
         ]
       },
       "properties": {
@@ -15410,8 +15442,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7698215,
+        "lon": 2.3513585,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15455,7 +15487,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-chevilly-larue.fr_louer une salle municipale chevillylarue_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Salle Simone de Beauvoir, Avenue du 8 Mai 1945, Chevilly-Larue, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94550, France"
       }
     },
     {
@@ -15463,8 +15497,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3368986,
+          48.7667619
         ]
       },
       "properties": {
@@ -15473,8 +15507,8 @@
         "city": "",
         "department": "94",
         "address": "",
-        "lat": null,
-        "lon": null,
+        "lat": 48.7667619,
+        "lon": 2.3368986,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15518,7 +15552,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_ville-chevilly-larue.fr_louer une salle municipale chevillylarue_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Espace Jacqueline Auriol, Avenue Georges Guynemer, Larue, Chevilly-Larue, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94550, France"
       }
     },
     {
@@ -15526,18 +15562,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0,
-          0
+          2.3368524,
+          48.8415535
         ]
       },
       "properties": {
         "candidate_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly__x0_9a05d362d5",
         "name": "Salle Marco Polo",
-        "city": "Orly",
+        "city": "",
         "department": "94",
-        "address": "Orly",
-        "lat": null,
-        "lon": null,
+        "address": "",
+        "lat": 48.8415535,
+        "lon": 2.3368524,
         "category": "municipal hall listing",
         "capacity_text": "",
         "capacity_max_detected": 0,
@@ -15581,7 +15617,9 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "geocode_source": "nominatim",
+        "geocode_label": "Jardin des Grands-Explorateurs Marco Polo et Robert Cavelier-de-la-Salle, Paris 6e Arrondissement, Paris, Île-de-France, France métropolitaine, 75006, France"
       }
     },
     {
@@ -15596,9 +15634,9 @@
       "properties": {
         "candidate_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly__x1_5233128aa7",
         "name": "Espace Gilbert Bécaud - Salle Emily",
-        "city": "Orly",
+        "city": "",
         "department": "94",
-        "address": "Orly",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "municipal hall listing",
@@ -15631,7 +15669,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Orly. Clear 'réserver une salle' rental signal. Lists Salle Marco Polo and Espace Gilbert Bécaud (3 sub-rooms) with detailed capacities and tariffs (e.g., Emily/Désirée 400€, Nathalie 800€). Reservation via email. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Orly. Clear 'réserver une salle' rental signal. Lists Salle Marco Polo and Espace Gilbert Bécaud (3 sub-rooms) with detailed capacities and tariffs (e.g., Emily/Désirée 400€, Nathalie 800€). Reservation via email. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -15659,9 +15697,9 @@
       "properties": {
         "candidate_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly__x2_ea8aa9e358",
         "name": "Espace Gilbert Bécaud - Salle Désirée",
-        "city": "Orly",
+        "city": "",
         "department": "94",
-        "address": "Orly",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "municipal hall listing",
@@ -15694,7 +15732,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Orly. Clear 'réserver une salle' rental signal. Lists Salle Marco Polo and Espace Gilbert Bécaud (3 sub-rooms) with detailed capacities and tariffs (e.g., Emily/Désirée 400€, Nathalie 800€). Reservation via email. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Orly. Clear 'réserver une salle' rental signal. Lists Salle Marco Polo and Espace Gilbert Bécaud (3 sub-rooms) with detailed capacities and tariffs (e.g., Emily/Désirée 400€, Nathalie 800€). Reservation via email. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -15722,9 +15760,9 @@
       "properties": {
         "candidate_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly__x3_cbbb3d1b35",
         "name": "Espace Gilbert Bécaud - Salle Nathalie",
-        "city": "Orly",
+        "city": "",
         "department": "94",
-        "address": "Orly",
+        "address": "",
         "lat": null,
         "lon": null,
         "category": "municipal hall listing",
@@ -15757,7 +15795,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Orly. Clear 'réserver une salle' rental signal. Lists Salle Marco Polo and Espace Gilbert Bécaud (3 sub-rooms) with detailed capacities and tariffs (e.g., Emily/Désirée 400€, Nathalie 800€). Reservation via email. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Orly. Clear 'réserver une salle' rental signal. Lists Salle Marco Polo and Espace Gilbert Bécaud (3 sub-rooms) with detailed capacities and tariffs (e.g., Emily/Désirée 400€, Nathalie 800€). Reservation via email. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -15820,7 +15858,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -15883,7 +15921,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -15946,7 +15984,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
@@ -16009,7 +16047,7 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
         "email_questions": "capacity, city, email, phone, price",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
