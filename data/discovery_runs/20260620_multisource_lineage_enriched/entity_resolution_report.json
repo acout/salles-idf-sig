@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-20T08:47:23+00:00",
+  "input_observations": 1082,
+  "total_entities": 1075,
+  "venue_entities": 466,
+  "aggregator_observations": 609,
+  "multi_obs_entities": 7,
+  "curated_in_scope_high_quality": 379,
+  "curated_by_page_type": {
+    "official_venue_page": 195,
+    "official_rental_page": 144,
+    "municipal_facility_page": 40
+  },
+  "curated_by_reliability": {
+    "S3": 235,
+    "S4": 144
+  },
+  "entities_with_rental_page": 524,
+  "entities_with_website": 983,
+  "entities_with_both_distinct": 3,
+  "geo_status_distribution": {
+    "in_scope": 1014,
+    "out_of_zone": 38,
+    "geo_unknown": 13,
+    "homonym": 10
+  },
+  "entity_status_distribution": {
+    "aggregator_observation": 609,
+    "candidate": 466
+  },
+  "outputs": {
+    "all_entities": "data/discovery_runs/20260620_multisource_lineage_enriched/venue_entities.json",
+    "curated_entities": "data/discovery_runs/20260620_multisource_lineage_enriched/venue_entities_curated.json"
+  }
+}
