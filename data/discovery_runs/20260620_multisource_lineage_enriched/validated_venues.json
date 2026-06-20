@@ -1,41 +1,19 @@
 {
  "total_curated": 379,
- "validated_venues": 115,
- "rejected": 264,
+ "validated_venues": 113,
+ "rejected": 266,
  "validation_stats": {
   "pdf_document": 7,
-  "looks_like_venue": 115,
-  "planning_schedule": 3,
-  "directory_listing": 219,
+  "non_venue_url_path": 9,
+  "directory_listing": 215,
+  "looks_like_venue": 113,
   "generic_page": 28,
   "event_page": 2,
   "procedure_form": 2,
-  "unclear_name": 3
+  "unclear_name": 1,
+  "planning_schedule": 2
  },
  "validated_entities": [
-  {
-   "venue_entity_id": "venue_venue_betulalenta.fr_agenda cie betula lenta maxence rey_",
-   "schema_version": "2026-06-20.v1",
-   "entity_status": "candidate",
-   "canonical_name": "Agenda | Cie Betula Lenta - Maxence Rey",
-   "canonical_city": "",
-   "canonical_department": "",
-   "canonical_lat": "",
-   "canonical_lon": "",
-   "official_website_url": "https://betulalenta.fr/agenda",
-   "specific_rental_page_url": "",
-   "source_observations": [
-    "obs_tavily_63a38b4f1c"
-   ],
-   "observation_count": 1,
-   "primary_observation_id": "obs_tavily_63a38b4f1c",
-   "primary_source_reliability": "S3",
-   "primary_page_type": "official_venue_page",
-   "geo_status": "in_scope",
-   "validation_is_valid_venue": true,
-   "validation_reason": "looks_like_venue",
-   "validation_page_type": "probable_venue"
-  },
   {
    "venue_entity_id": "venue_venue_chatillon-sur-chalaronne.fr_locations des salles mairie de chatillonsurchalaronne_",
    "schema_version": "2026-06-20.v1",
@@ -2477,29 +2455,6 @@
    "validation_page_type": "probable_venue"
   },
   {
-   "venue_entity_id": "venue_venue_yoga-clamart.com_contact_clamart",
-   "schema_version": "2026-06-20.v1",
-   "entity_status": "candidate",
-   "canonical_name": "Contact",
-   "canonical_city": "Clamart",
-   "canonical_department": "92",
-   "canonical_lat": 48.810995,
-   "canonical_lon": 2.265357,
-   "official_website_url": "https://www.yoga-clamart.com/contact",
-   "specific_rental_page_url": "",
-   "source_observations": [
-    "obs_legacy-source-records_9c56e6f209"
-   ],
-   "observation_count": 1,
-   "primary_observation_id": "obs_legacy-source-records_9c56e6f209",
-   "primary_source_reliability": "S3",
-   "primary_page_type": "official_venue_page",
-   "geo_status": "in_scope",
-   "validation_is_valid_venue": true,
-   "validation_reason": "looks_like_venue",
-   "validation_page_type": "probable_venue"
-  },
-  {
    "venue_entity_id": "venue_venue_bourg-la-reine.fr_yoga place_bourg-la-reine",
    "schema_version": "2026-06-20.v1",
    "entity_status": "candidate",
@@ -2686,6 +2641,29 @@
    "validation_page_type": "pdf_deliberation"
   },
   {
+   "venue_entity_id": "venue_venue_betulalenta.fr_agenda cie betula lenta maxence rey_",
+   "schema_version": "2026-06-20.v1",
+   "entity_status": "candidate",
+   "canonical_name": "Agenda | Cie Betula Lenta - Maxence Rey",
+   "canonical_city": "",
+   "canonical_department": "",
+   "canonical_lat": "",
+   "canonical_lon": "",
+   "official_website_url": "https://betulalenta.fr/agenda",
+   "specific_rental_page_url": "",
+   "source_observations": [
+    "obs_tavily_63a38b4f1c"
+   ],
+   "observation_count": 1,
+   "primary_observation_id": "obs_tavily_63a38b4f1c",
+   "primary_source_reliability": "S3",
+   "primary_page_type": "official_venue_page",
+   "geo_status": "in_scope",
+   "validation_is_valid_venue": false,
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_agenda"
+  },
+  {
    "venue_entity_id": "venue_venue_sport-upsaclay.fr_planning 20252026 sports arts universite parissaclay_",
    "schema_version": "2026-06-20.v1",
    "entity_status": "candidate",
@@ -2705,8 +2683,8 @@
    "primary_page_type": "official_venue_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "planning_schedule",
-   "validation_page_type": "planning_document"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_planning"
   },
   {
    "venue_entity_id": "venue_venue_assoce.fr_grand paris associations pour la promotion du sport medailles merite sportif assocefr_",
@@ -3929,6 +3907,29 @@
    "validation_page_type": "generic_location_title"
   },
   {
+   "venue_entity_id": "venue_venue_yoga-clamart.com_contact_clamart",
+   "schema_version": "2026-06-20.v1",
+   "entity_status": "candidate",
+   "canonical_name": "Contact",
+   "canonical_city": "Clamart",
+   "canonical_department": "92",
+   "canonical_lat": 48.810995,
+   "canonical_lon": 2.265357,
+   "official_website_url": "https://www.yoga-clamart.com/contact",
+   "specific_rental_page_url": "",
+   "source_observations": [
+    "obs_legacy-source-records_9c56e6f209"
+   ],
+   "observation_count": 1,
+   "primary_observation_id": "obs_legacy-source-records_9c56e6f209",
+   "primary_source_reliability": "S3",
+   "primary_page_type": "official_venue_page",
+   "geo_status": "in_scope",
+   "validation_is_valid_venue": false,
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_contact"
+  },
+  {
    "venue_entity_id": "venue_venue_flores-amo.fr_pdf kesako maison de quartier centre social mjc maison des habitants_malakoff",
    "schema_version": "2026-06-20.v1",
    "entity_status": "candidate",
@@ -4179,8 +4180,8 @@
    "primary_page_type": "official_venue_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "directory_listing",
-   "validation_page_type": "aggregator_listing"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_contact"
   },
   {
    "venue_entity_id": "obs_legacy-source-records_0ed3152acc",
@@ -5076,8 +5077,8 @@
    "primary_page_type": "official_venue_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "unclear_name",
-   "validation_page_type": "name_too_short"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_blog"
   },
   {
    "venue_entity_id": "venue_venue_yogamania.fr_tarifs_",
@@ -5099,8 +5100,8 @@
    "primary_page_type": "official_rental_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "directory_listing",
-   "validation_page_type": "aggregator_listing"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_tarifs"
   },
   {
    "venue_entity_id": "venue_venue_yogamania.fr_les centres yogamania_",
@@ -5858,8 +5859,8 @@
    "primary_page_type": "official_rental_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "directory_listing",
-   "validation_page_type": "aggregator_listing"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_tarifs"
   },
   {
    "venue_entity_id": "venue_venue_ymcafrance.fr_les ymca de france_",
@@ -6296,8 +6297,8 @@
    "primary_page_type": "official_venue_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "unclear_name",
-   "validation_page_type": "name_too_short"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_blog"
   },
   {
    "venue_entity_id": "venue_venue_espace-jules-cesar.fr_options et services complementaires_",
@@ -8136,8 +8137,8 @@
    "primary_page_type": "official_rental_page",
    "geo_status": "in_scope",
    "validation_is_valid_venue": false,
-   "validation_reason": "directory_listing",
-   "validation_page_type": "aggregator_listing"
+   "validation_reason": "non_venue_url_path",
+   "validation_page_type": "url_path_tarifs"
   },
   {
    "venue_entity_id": "venue_venue_dojo5.fr_reserver son cours dessai_montrouge",

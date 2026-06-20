@@ -41,6 +41,19 @@ LISTING_PATTERNS = [
     r'\bannuaire\b', r'\brépertoire\b', r'\btrouver\b',
     r'\bou louer\b', r'\bcomment louer\b', r'\boù louer\b',
 ]
+
+# URL paths that are NEVER venue pages (agenda, events, blog, etc.)
+NON_VENUE_URL_PATHS = [
+    '/agenda', '/planning', '/programme', '/programation',
+    '/evenement', '/evenements', '/events', '/event',
+    '/calendrier', '/schedule', '/spectacle', '/spectacles',
+    '/representation', '/representations', '/billeterie', '/ticket',
+    '/blog', '/article', '/articles', '/news',
+    '/actualite', '/actualites', '/a-propos', '/about',
+    '/contact', '/equipe', '/team', '/tarif', '/tarifs',
+    '/prix', '/prices',
+]
+
 GENERIC_LOCATION_STARTS = [
     'location de ', 'locations de ', 'location de salle',
     'location de studio', 'location de salle de', 'location salles',
@@ -71,6 +84,14 @@ def validate_venue_page(item: dict, extraction: dict | None = None) -> tuple[boo
         if 'studio' in name_lower and ('location' in name_lower or 'louer' in name_lower):
             return False, 'pdf_document', 'pdf_listing'
         return False, 'pdf_document', 'pdf_other'
+
+    # R1b. URL paths that are NOT venue pages (agenda, events, blog, contact, etc.)
+    from urllib.parse import urlparse as _urlparse
+    if url:
+        path = _urlparse(url).path.lower().rstrip('/')
+        for nvp in NON_VENUE_URL_PATHS:
+            if path == nvp or path.endswith(nvp):
+                return False, 'non_venue_url_path', f'url_path_{nvp.strip("/")}'
 
     # R2. Planning/schedule pages
     if name_lower.startswith('planning') or name_lower.startswith('programme') or 'emploi du temps' in name_lower:

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-20T11:44:33.432461",
-  "total_features": 115,
-  "with_coords": 57,
-  "without_coords": 58,
+  "generated_at": "2026-06-20T11:46:52.962047",
+  "total_features": 113,
+  "with_coords": 56,
+  "without_coords": 57,
   "rental_possible": 62,
-  "rental_unclear": 44,
+  "rental_unclear": 42,
   "rental_unlikely": 9,
   "page_type_distribution": {
-    "official_venue_page": 67,
+    "official_venue_page": 65,
     "official_rental_page": 30,
     "municipal_facility_page": 18
   },
   "reliability_distribution": {
-    "S3": 85,
+    "S3": 83,
     "S4": 30
   },
   "dataset_distribution": {
-    "candidate": 115
+    "candidate": 113
   },
   "has_price": 9,
   "has_capacity": 21,
-  "has_address": 111,
-  "has_contact": 14,
+  "has_address": 110,
+  "has_contact": 13,
   "has_rental_page": 4
 }
