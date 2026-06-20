@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+from collections import Counter
 from pathlib import Path
 
 from common import ROOT, read_records, write_csv, norm_text, now_iso
@@ -123,6 +124,7 @@ def main():
     write_json(queue_geo, to_geojson(queue))
     write_json(duplicates_json, {'intra_duplicates': intra_duplicates, 'existing_matches': existing_matches})
 
+    mapped_queue = [c for c in queue if c.get('lat') not in (None, '') and c.get('lon') not in (None, '')]
     report={
       'generated_at': now_iso(),
       'input_records': len(records),
@@ -131,6 +133,10 @@ def main():
       'intra_duplicates': len(intra_duplicates),
       'existing_matches': len(existing_matches),
       'import_queue': len(queue),
+      'mapped_import_queue': len(mapped_queue),
+      'unmapped_import_queue': len(queue) - len(mapped_queue),
+      'by_department_mapped': dict(sorted(Counter(c.get('department') or '?' for c in mapped_queue).items())),
+      'by_city_mapped_top20': dict(Counter(c.get('city') or '?' for c in mapped_queue).most_common(20)),
       'high_fit_80_plus': sum(1 for c in queue if int(float(c.get('fit_beyond_score') or 0)) >= 80),
       'medium_fit_60_plus': sum(1 for c in queue if int(float(c.get('fit_beyond_score') or 0)) >= 60),
       'with_contact': sum(1 for c in queue if c.get('contact')),

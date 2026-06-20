@@ -1,0 +1,24 @@
+{
+  "queries": 45,
+  "records": 149,
+  "geocoded": 84,
+  "by_city": {
+    "Cachan": 12,
+    "Châtillon": 14,
+    "Bagneux": 14,
+    "Montrouge": 15,
+    "Arcueil": 10,
+    "Gentilly": 13,
+    "Villejuif": 14,
+    "Le Kremlin-Bicêtre": 12,
+    "Malakoff": 14,
+    "Clamart": 16,
+    "Bourg-la-Reine": 12,
+    "Sceaux": 3,
+    "L'Haÿ-les-Roses": 0,
+    "Fontenay-aux-Roses": 0,
+    "Vanves": 0,
+    "Issy-les-Moulineaux": 0,
+    "Antony": 0
+  }
+}
