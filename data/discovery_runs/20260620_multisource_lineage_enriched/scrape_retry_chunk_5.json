@@ -1,0 +1,371 @@
+[
+ {
+  "id": "venue_venue_villejuif.fr_2026demandedesubventionfonctionnementpdf pdf 760 ko_villejuif",
+  "name": "2026_Demande_de_subvention_-_Fonctionnement.pdf (PDF, 760 ko)",
+  "url": "https://www.villejuif.fr/fileadmin/mediatheque/villejuif/Surheader/Associations/2026_Demande_de_subvention_-_Fonctionnement.pdf",
+  "city": "Villejuif",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_blog.mappy.com_presse_villejuif",
+  "name": "Presse",
+  "url": "https://blog.mappy.com/categorie/espace-presse/",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_centres de vacances_malakoff",
+  "name": "Centres de vacances",
+  "url": "https://www.malakoff.fr/31/grandir/centres-de-vacances.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_maisons de quartier_malakoff",
+  "name": "Maisons de quartier",
+  "url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_association_malakoff",
+  "name": "Association",
+  "url": "https://www.malakoff.fr/333/association.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_espace public voirie_malakoff",
+  "name": "Espace public, voirie",
+  "url": "https://www.malakoff.fr/417/cadre-de-vie/espace-public-voirie.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_dans les maisons de quartier_malakoff",
+  "name": "Dans les maisons de quartier",
+  "url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_voir le site internet_malakoff",
+  "name": "Voir le site internet",
+  "url": "https://www.malakoff.fr/fr/vie-pratique/location-de-salles.html",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_espaces verts_malakoff",
+  "name": "Espaces verts",
+  "url": "https://www.malakoff.fr/43/cadre-de-vie/espaces-verts-a-malakoff.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_associations_malakoff",
+  "name": "Associations",
+  "url": "https://www.malakoff.fr/358/vie-pratique/handicap/associations-liees-au-handicap.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_centres municipaux de sante_malakoff",
+  "name": "Centres municipaux de santé",
+  "url": "https://www.malakoff.fr/216/vie-pratique/sante/centres-municipaux-de-sante.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_malakoff.fr_consulter la fiche detaillee_malakoff",
+  "name": "Consulter la fiche détaillée",
+  "url": "https://www.malakoff.fr/114-2238/vie-pratique/annuaire-des-equipements-publics/ficheAnnu/location-de-salles.htm",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_selfdefense_montrouge",
+  "name": "Self-défense",
+  "url": "https://www.dojo5.fr/self-defense/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_penchak silat_montrouge",
+  "name": "Penchak Silat",
+  "url": "https://www.dojo5.fr/penchak-silat/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_tarifs_montrouge",
+  "name": "Tarifs",
+  "url": "https://www.dojo5.fr/tarifs/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_reserver son cours dessai_montrouge",
+  "name": "Réserver son cours d’essai",
+  "url": "https://www.dojo5.fr/reserver-un-cours-dessai/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_associations presentes_montrouge",
+  "name": "Associations présentes",
+  "url": "https://www.dojo5.fr/associations/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_boxe anglaise_montrouge",
+  "name": "Boxe Anglaise",
+  "url": "https://www.dojo5.fr/boxe-anglaise/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_histoire de la salle_montrouge",
+  "name": "Histoire de la salle",
+  "url": "https://www.dojo5.fr/histoire/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_mecenat_clamart",
+  "name": "Mécénat",
+  "url": "https://mjcslachatre.jimdofree.com/mécénat/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_logo dojo 5_montrouge",
+  "name": "Logo DOJO 5",
+  "url": "https://www.dojo5.fr/logo-dojo-5/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_reglement de fonctionnement_clamart",
+  "name": "Réglement de Fonctionnement",
+  "url": "https://mjcslachatre.jimdofree.com/vie-associative/réglement-de-fonctionnement/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_jiujitsu bresilien_montrouge",
+  "name": "Jiu-Jitsu Brésilien",
+  "url": "https://www.dojo5.fr/ju-jitsu-bresilien/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_boxe thai_montrouge",
+  "name": "Boxe Thaï",
+  "url": "https://www.dojo5.fr/boxe-thai/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_activites_clamart",
+  "name": "Activités",
+  "url": "https://mjcslachatre.jimdofree.com/activités/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_dojo5.fr_karate_montrouge",
+  "name": "Karaté",
+  "url": "https://www.dojo5.fr/karate/",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_dessin peinture_clamart",
+  "name": "Dessin Peinture",
+  "url": "https://mjcslachatre.jimdofree.com/activités/pratiques-créatives/dessin-peinture/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_pratiques creatives_clamart",
+  "name": "Pratiques créatives",
+  "url": "https://mjcslachatre.jimdofree.com/activités/pratiques-créatives/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_photo_clamart",
+  "name": "Photo",
+  "url": "https://mjcslachatre.jimdofree.com/activités/pratiques-créatives/photo/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_macrame_clamart",
+  "name": "Macramé",
+  "url": "https://mjcslachatre.jimdofree.com/activités/pratiques-créatives/macramé/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_modelage_clamart",
+  "name": "Modelage",
+  "url": "https://mjcslachatre.jimdofree.com/activités/pratiques-créatives/modelage/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_tricot_clamart",
+  "name": "Tricot",
+  "url": "https://mjcslachatre.jimdofree.com/activités/pratiques-créatives/tricot/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_statuts de lassociation_clamart",
+  "name": "Statuts de l'association",
+  "url": "https://mjcslachatre.jimdofree.com/vie-associative/statuts-de-l-association/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_vie associative_clamart",
+  "name": "Vie associative",
+  "url": "https://mjcslachatre.jimdofree.com/vie-associative/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_des ilots de fraicheur et des espaces vegetalises_bourg-la-reine",
+  "name": "Des îlots de fraîcheur et des espaces végétalisés",
+  "url": "https://www.bourg-la-reine.fr/24865-profitez-de-nos-espaces-verts.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_organigramme_clamart",
+  "name": "Organigramme",
+  "url": "https://mjcslachatre.jimdofree.com/vie-associative/organigramme/",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_maison des associations de la transition mat_bourg-la-reine",
+  "name": "Maison des associations de la transition (MAT)",
+  "url": "https://www.bourg-la-reine.fr/21465-maison-des-associations-de-la-transition.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_developpement durable_bourg-la-reine",
+  "name": "Développement durable",
+  "url": "https://www.bourg-la-reine.fr/10598-espaces-verts.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_compte association_bourg-la-reine",
+  "name": "Compte association",
+  "url": "https://www.bourg-la-reine.fr/24062-compte-association.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_plus de reseaux sociaux_bourg-la-reine",
+  "name": "Plus de réseaux sociaux",
+  "url": "https://www.bourg-la-reine.fr/annuaire/548709/10648-yoga-place.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_app-eu.readspeaker.com_ecouter_bourg-la-reine",
+  "name": "Ecouter",
+  "url": "https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=9289&lang=fr_fr&readid=contenu&url=https://www.bourg-la-reine.fr/annuaire/548709/10648-yoga-place.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ }
+]

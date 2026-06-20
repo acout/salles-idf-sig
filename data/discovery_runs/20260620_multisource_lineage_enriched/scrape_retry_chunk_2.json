@@ -1,0 +1,380 @@
+[
+ {
+  "id": "venue_venue_letangpresent.fr_gerer les services_",
+  "name": "Gérer les services",
+  "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_letangpresent.fr_gerer les options_",
+  "name": "Gérer les options",
+  "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_letangpresent.fr_gerer vendorcount fournisseurs_",
+  "name": "Gérer {vendor_count} fournisseurs",
+  "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_letangpresent.fr_voir les preferences_",
+  "name": "Voir les préférences",
+  "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_letangpresent.fr_title_",
+  "name": "{title}",
+  "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_en entreprise_",
+  "name": "En entreprise",
+  "url": "https://www.yogamania.fr/en-entreprise/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_conditions generales dabonnement_",
+  "name": "Conditions générales d’abonnement",
+  "url": "https://www.yogamania.fr/infos-pratiques/conditions-generales-dabonnement/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_blog_",
+  "name": "Blog",
+  "url": "https://www.yogamania.fr/blog/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_tarifs_",
+  "name": "Tarifs",
+  "url": "https://www.yogamania.fr/tarifs/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_les centres yogamania_",
+  "name": "Les centres Yogamania",
+  "url": "https://www.yogamania.fr/les-centres-yogamania/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_conseils avant de venir_",
+  "name": "Conseils avant de venir",
+  "url": "https://www.yogamania.fr/conseils-avant-de-venir/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_paris_",
+  "name": "Paris",
+  "url": "https://www.yogamania.fr/paris/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_ateliers formations_",
+  "name": "Ateliers & Formations",
+  "url": "https://www.yogamania.fr/stages-ateliers/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_cours en ligne en direct ou en replay_",
+  "name": "Cours en ligne (en direct ou en replay)",
+  "url": "https://www.yogamania.fr/cours/cours-en-ligne-zoom-et-replay-2/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yogamania.fr_qui sommesnous_",
+  "name": "Qui sommes-nous",
+  "url": "https://www.yogamania.fr/qui-sommes-nous/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_seineetmarne.cci.fr_telecharger notre brochure_",
+  "name": "Télécharger notre brochure",
+  "url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_seineetmarne.cci.fr_contacteznous pour reserver_",
+  "name": "Contactez-nous pour réserver",
+  "url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_seineetmarne.cci.fr_retour en haut de la page_",
+  "name": "Retour en haut de la page",
+  "url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_espace groupe_",
+  "name": "Espace groupe",
+  "url": "https://www.tourisme-valdemarne.com/espace-groupes",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_partie propresse_",
+  "name": "partie Pro/Presse",
+  "url": "https://www.tourisme-valdemarne.com/espace-pro/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_entreprise desireuse dorganiser un seminaire_",
+  "name": "entreprise désireuse d’organiser un séminaire",
+  "url": "https://www.tourisme-valdemarne.com/espace-pro/seminaires-et-receptions-pro/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_restaurant 28_",
+  "name": "Restaurant 28",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/irisit/activites/restaurant/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_ma recherche en pdf_",
+  "name": "Ma recherche en PDF",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/?sitpdf=1",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_animations musicales 21_",
+  "name": "Animations musicales 21",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/irisit/activites/animations-musicales/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_partager ma recherche_",
+  "name": "Partager ma recherche",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_traiteur 12_",
+  "name": "Traiteur 12",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/irisit/activites/traiteur/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_tennis 5_",
+  "name": "Tennis 5",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/irisit/activites/tennis/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_piscine 4_",
+  "name": "Piscine 4",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/irisit/activites/piscine/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_copier le lien_",
+  "name": "Copier le lien",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_tourisme-valdemarne.com_suivant_",
+  "name": "Suivant »",
+  "url": "https://www.tourisme-valdemarne.com/cote-pratique/restaurants-et-lieux-de-receptions/location-de-salles-et-reception/page/2/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_activites de bienetre_",
+  "name": "Activités de bien-être",
+  "url": "https://le8petion.com/location-salle-loisir-paris/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_location professionnels particuliers_",
+  "name": "Location Professionnels / Particuliers",
+  "url": "https://le8petion.com/location-salle-loisir-paris",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_programmation_",
+  "name": "Programmation",
+  "url": "https://le8petion.com/location-salle-loisir-paris",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_louer la salle_",
+  "name": "Louer la salle",
+  "url": "https://le8petion.com/location-salle-loisir-paris",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_pavillon-napoleon.fr_photos_",
+  "name": "Photos",
+  "url": "https://www.pavillon-napoleon.fr/photos-salle-a-louer-a-saint-leu-la-foret.html",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_pavillon-napoleon.fr_tarifs_",
+  "name": "Tarifs",
+  "url": "https://www.pavillon-napoleon.fr/tarifs-location-a-salle-saint-leu-la-foret.html",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_pavillon-napoleon.fr_contact_",
+  "name": "Contact",
+  "url": "https://www.pavillon-napoleon.fr/devis-location-salle-a-saint-leu-la-foret.html",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_pavillon-napoleon.fr_email_",
+  "name": "Email",
+  "url": "https://www.pavillon-napoleon.fr/location-salle-de-formation-val-d-oise.html",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_reunions formations seminaires_",
+  "name": "Réunions, formations, séminaires",
+  "url": "https://le8petion.com/espace-a-louer-evenement-professionnel-paris11/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_location de salle en semaine_",
+  "name": "Location de salle en semaine",
+  "url": "https://le8petion.com/location-salle-professionnelle-semaine-paris-11/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_evenementiel_",
+  "name": "Évènementiel",
+  "url": "https://le8petion.com/espace-ephemere/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_le8petion.com_nos tarifs pour la location de salle professionnelle_",
+  "name": "Nos tarifs pour la location de salle professionnelle",
+  "url": "https://le8petion.com/tarifs/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ }
+]

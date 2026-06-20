@@ -1,0 +1,380 @@
+[
+ {
+  "id": "venue_venue_spacebase.com_rent dojo 5 salle 2 paris_gentilly",
+  "name": "Rent DOJO 5 SALLE 2 Paris",
+  "url": "https://www.spacebase.com/en/venue/salle-2-1056508",
+  "city": "Gentilly",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_isospace.fr_amenagement du studio de yoga yoganmove_villejuif",
+  "name": "Aménagement du studio de yoga Yoga'n'Move",
+  "url": "https://www.isospace.fr/realisations/studio-de-yoga-yognmove",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_annuaire-entreprises.data.gouv.fr_siege social_montrouge",
+  "name": "Siège social",
+  "url": "https://annuaire-entreprises.data.gouv.fr/etablissement/52857543400055",
+  "city": "Montrouge",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_kiwiiz.fr_location salle a 94800 villejuif_villejuif",
+  "name": "Location salle à 94800 Villejuif",
+  "url": "https://www.kiwiiz.fr/location-particuliers/salle/salle-reception/94800-villejuif",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_i-flow.fr_i_arcueil",
+  "name": "I",
+  "url": "https://www.i-flow.fr",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_6b0aa28ab0",
+  "name": "Location magnifique salle neuve pour stage et formation",
+  "url": "https://www.yogmee.fr/salles/location-magnifique-salle-neuve-pour-stage-et-formation",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_ville-gentilly.fr_pdf pratique_gentilly",
+  "name": "[PDF] PRATIQUE",
+  "url": "https://www.ville-gentilly.fr/sites/default/files/guidevieassociative.pdf",
+  "city": "Gentilly",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_villejuif.fr_ville de villejuif associations_villejuif",
+  "name": "Ville de Villejuif: Associations",
+  "url": "https://www.villejuif.fr/associations",
+  "city": "Villejuif",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_dojodeparis.com_dojo de paris_gentilly",
+  "name": "Dojo de Paris",
+  "url": "https://www.dojodeparis.com",
+  "city": "Gentilly",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_villejuif.fr_vie associative_villejuif",
+  "name": "Vie associative",
+  "url": "https://www.villejuif.fr/decouvrir-villejuif/vie-associative",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_fr.mappy.com_location de salles a villejuif 94800 france_villejuif",
+  "name": "Location de salles à Villejuif 94800, France",
+  "url": "https://fr.mappy.com/activite/location-de-salles/94800-villejuif",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_immobilier.lefigaro.fr_9 studios en location a le kremlin_le kremlin-bicêtre",
+  "name": "9 Studios en Location à Le kremlin",
+  "url": "https://immobilier.lefigaro.fr/annonces/immobilier-location-appartement+studio-le+kremlin+bicetre+94270.html",
+  "city": "Le Kremlin-Bicêtre",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_ville-data.com_arts martiaux boxe mma au kremlin_le kremlin-bicêtre",
+  "name": "Arts Martiaux, Boxe, MMA au Kremlin",
+  "url": "https://ville-data.com/salle-de-combat-dojo/Le-Kremlin-Bicetre-94-94043",
+  "city": "Le Kremlin-Bicêtre",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_location salle de reunion valdoise95 guide checklist_val-d'oise",
+  "name": "Location salle de réunion Val-d’Oise(95) : guide + checklist",
+  "url": "https://espace-jules-cesar.fr/location-salle-reunion-val-doise-95-guide-checklist",
+  "city": "Val-d'Oise",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_annuaire-entreprises.data.gouv.fr_maison des jeunes et de la culture mjc_gentilly",
+  "name": "maison des jeunes et de la culture (mjc)",
+  "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/maison-des-jeunes-et-de-la-culture-mjc-780331450",
+  "city": "Gentilly",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_ville-chatillon.fr_reservation dune salle municipale_châtillon",
+  "name": "Réservation d'une salle municipale",
+  "url": "https://www.ville-chatillon.fr/vos-services/vie-associative/reservation-dune-salle-municipale-par-une-association-chatillonnaise",
+  "city": "Châtillon",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_leboncoin.fr_location salle malakoff_malakoff",
+  "name": "Location salle Malakoff",
+  "url": "https://www.leboncoin.fr/ad/locations/3010019425",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_consistoire.org_location de salles_le kremlin-bicêtre",
+  "name": "Location de Salles",
+  "url": "https://www.consistoire.org/kremlinbicetre/salle",
+  "city": "Le Kremlin-Bicêtre",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_usmmalakoff.fr_section yoga de lusm malakoff_malakoff",
+  "name": "Section Yoga de l'USM Malakoff",
+  "url": "https://www.usmmalakoff.fr/section-yoga",
+  "city": "Malakoff",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_commune-saint-joseph.fr_la maison des associations_malakoff",
+  "name": "LA MAISON DES ASSOCIATIONS",
+  "url": "https://commune-saint-joseph.fr/fr/rr/837917/19164/la-maison-des-associations",
+  "city": "Malakoff",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_clamart.fr_dojo du centre sportif maria brignole de galliera_clamart",
+  "name": "Dojo du Centre sportif Maria Brignole de Galliera",
+  "url": "https://www.clamart.fr/fr/annuaire-des-lieux-de-l%E2%80%99agenda/dojo-du-centre-sportif-maria-brignole-de-galliera",
+  "city": "Clamart",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_clamart.fr_location de salles municipales_clamart",
+  "name": "LOCATION DE SALLES MUNICIPALES",
+  "url": "https://www.clamart.fr/fr/infos-demarches/location-de-salles-municipales",
+  "city": "Clamart",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_studiodiabolo.fr_studiodiabolo cours de danse location de salle le kremlin_le kremlin-bicêtre",
+  "name": "Studiodiabolo cours de danse, location de salle, le Kremlin",
+  "url": "https://www.studiodiabolo.fr",
+  "city": "Le Kremlin-Bicêtre",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_neo-nomade.com_salles de reunion formation en location a malakoff_malakoff",
+  "name": "Salles de réunion / formation en location à Malakoff",
+  "url": "https://www.neo-nomade.com/s/malakoff/salle-reunion-formation-location",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_clamartaccueil.org_pdf maison des associations 13 bis rue de bievres 92140 clamart tel_clamart",
+  "name": "[PDF] Maison des Associations 13 bis rue de Bièvres 92140 Clamart Tél",
+  "url": "http://www.clamartaccueil.org/3s8ym6z59d/wp-content/uploads/Journal-n%C2%B034-Web.pdf",
+  "city": "Clamart",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_kremlinbicetre.fr_laccompagnement par la ville_le kremlin-bicêtre",
+  "name": "L'accompagnement par la ville",
+  "url": "https://www.kremlinbicetre.fr/loisirs-sorties/associations/laccompagnement-par-la-ville",
+  "city": "Le Kremlin-Bicêtre",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_mjcslachatre.jimdofree.com_locations salles_clamart",
+  "name": "Locations salles",
+  "url": "https://mjcslachatre.jimdofree.com/locations/location-salles",
+  "city": "Clamart",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_kremlinbicetre.fr_location de la salle andre_le kremlin-bicêtre",
+  "name": "Location de la salle André",
+  "url": "https://www.kremlinbicetre.fr/a-votre-service/vos-demarches/location-de-la-salle-andre-maigne",
+  "city": "Le Kremlin-Bicêtre",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_pap.fr_location studio bourg_bourg-la-reine",
+  "name": "Location studio Bourg",
+  "url": "https://www.pap.fr/annonce/locations-bourg-la-reine-92340-g43284-studio",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_sportenfrance.fr_complexe sportif de trivaux_clamart",
+  "name": "complexe sportif de trivaux",
+  "url": "https://www.sportenfrance.fr/ile-de-france/hauts-de-seine/clamart/920230009-complexe-sportif-de-trivaux-garenne",
+  "city": "Clamart",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_leslieefird.com_gap fitness studios_malakoff",
+  "name": "GAP Fitness Studios",
+  "url": "https://www.leslieefird.com",
+  "city": "Malakoff",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_fr.mappy.com_cours de yoga a bourg_bourg-la-reine",
+  "name": "Cours de yoga à Bourg",
+  "url": "https://fr.mappy.com/activite/yoga-cours/92340-bourg-la-reine",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_ville-chatillon-en-bazois.fr_location de salles_châtillon",
+  "name": "Location de salles",
+  "url": "https://www.ville-chatillon-en-bazois.fr/vos-demarches/location-de-salles",
+  "city": "Châtillon",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_satya santosha_bourg-la-reine",
+  "name": "Satya Santosha",
+  "url": "https://www.bourg-la-reine.fr/annuaire/26119/10313-satya-santosha.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_yoga-clamart.com_contact_clamart",
+  "name": "Contact",
+  "url": "https://www.yoga-clamart.com/contact",
+  "city": "Clamart",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_yoga place_bourg-la-reine",
+  "name": "YOGA Place",
+  "url": "https://www.bourg-la-reine.fr/annuaire/548709/10648-yoga-place.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_flores-amo.fr_pdf kesako maison de quartier centre social mjc maison des habitants_malakoff",
+  "name": "[PDF] késako ? Maison de quartier, centre social, MJC, maison des habitants",
+  "url": "https://flores-amo.fr/maison-des-habitants-kesako/viewpdf",
+  "city": "Malakoff",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_studiomrg.fr_location_sceaux",
+  "name": "Location",
+  "url": "https://www.studiomrg.fr/location",
+  "city": "Sceaux",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_bourg-la-reine.fr_reserver une salle_bourg-la-reine",
+  "name": "Réserver une salle",
+  "url": "https://www.bourg-la-reine.fr/10613-reserver-une-salle.htm",
+  "city": "Bourg-la-Reine",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_clamart-yoga.fr_les ateliers du csmc yoga_clamart",
+  "name": "Les ateliers du CSMC Yoga",
+  "url": "https://www.clamart-yoga.fr/ateliers-mensuels",
+  "city": "Clamart",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_themuselab.fr_le studio_",
+  "name": "LE STUDIO",
+  "url": "https://themuselab.fr/le-studio/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_sites.google.com_exprimedanse clamart_clamart",
+  "name": "Exprime'Danse Clamart",
+  "url": "https://sites.google.com/essec.edu/exprime-danse-clamart/nos-salles",
+  "city": "Clamart",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ }
+]

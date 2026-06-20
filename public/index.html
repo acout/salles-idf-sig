@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prospection salles IDF</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/style.css?v=20260620-funnel-l4">
+<link rel="stylesheet" href="css/style.css?v=20260620-ui-actions">
 </head>
 <body>
 <div class="app-shell">
@@ -102,6 +102,7 @@
         <option value="rental_possible">Location possible</option>
         <option value="rental_unclear">Location à vérifier</option>
         <option value="rental_unlikely">Probablement non louable</option>
+        <option value="favorites">⭐ Favoris uniquement</option>
       </select>
 
       <label class="field-label">Tags cumulables</label>
@@ -114,6 +115,7 @@
         <button type="button" class="tag-filter" data-tag-filter="rental_possible">Location OK</button>
         <button type="button" class="tag-filter" data-tag-filter="rental_unclear">Location ?</button>
         <button type="button" class="tag-filter" data-tag-filter="rental_unlikely">Pas louable ?</button>
+        <button type="button" class="tag-filter" data-tag-filter="favorite">⭐ Favori</button>
         <button type="button" class="tag-filter" data-tag-filter="contact_missing">Contact ?</button>
         <button type="button" class="tag-filter" data-tag-filter="price_missing">Prix ?</button>
         <button type="button" class="tag-filter" data-tag-filter="capacity_uncertain">Capacité ?</button>
@@ -168,6 +170,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260620-verif-import"></script>
+<script src="js/app.js?v=20260620-ui-actions"></script>
 </body>
 </html>

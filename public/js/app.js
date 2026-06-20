@@ -56,15 +56,16 @@ function normName(p){ return normText(p.name).replace(/\b(maison|salle|espace|ce
 function normSite(v){ try{ const u=new URL(String(v||'')); return u.hostname.replace(/^www\./,'')+u.pathname.replace(/\/$/,''); }catch{return '';}}
 function qualityFor(id){ return state.quality[id] || {issues:[], score:0}; }
 function tagMatches(tag, f, p, id){
-  const q=qualityFor(id);
+  const q=qualityFor(id), c=crmFor(id);
   if(tag==='candidate') return isCandidate(p);
   if(tag==='venue') return !isCandidate(p) && !isAggregator(p);
+  if(tag==='favorite') return !!c.favorite;
   if(tag==='rental_possible') return rentalStatus(p)==='possible';
   if(tag==='rental_unclear') return rentalStatus(p)==='unclear';
   if(tag==='rental_unlikely') return rentalStatus(p)==='unlikely';
   return q.issues.includes(tag);
 }
-function activeTagLabels(){ return [...state.filters.tagFilters].map(t=>QUALITY_LABELS[t]||({candidate:'Candidat Beyond',venue:'Salle qualifiée'}[t])||t); }
+function activeTagLabels(){ return [...state.filters.tagFilters].map(t=>QUALITY_LABELS[t]||({candidate:'Candidat Beyond',venue:'Salle qualifiée',favorite:'⭐ Favori'}[t])||t); }
 function qualityBadgesHTML(id){ const f=findFeature(id), dp=f?displayProps(f):null, extra=dp?overrideBadgeHTML(dp):''; const q=qualityFor(id); const base=!q.issues.length ? '<span class="qbadge ok">OK data</span>' : q.issues.map(k=>`<span class="qbadge issue">${esc(QUALITY_LABELS[k]||k)}</span>`).join(''); return base+extra; }
 function buildQuality(){
   state.quality = {};
@@ -95,6 +96,11 @@ function setVenueStatus(id,status){ const c=crmFor(id); c.status=status; touch(i
 function venueKind(p){ const txt=[p.category,p.name,p.source_url,p.website].join(' ').toLowerCase(); if(txt.includes('mairie')||txt.includes('municip')||txt.includes('mvac')||txt.includes('association')||txt.includes('anim')) return 'public'; if(txt.includes('cowork')) return 'cowork'; return 'generic'; }
 function callScriptFor(f){ const p=displayProps(f); const kind=venueKind(p); const intro = kind==='public' ? 'Bonjour, je vous appelle pour une demande de mise à disposition / location d’une petite salle.' : 'Bonjour, je cherche une petite salle de réunion à louer pour un atelier.'; return `${intro}\n\nJe cherche une salle pour environ 10 à 20 personnes en Île-de-France.\nSalle repérée : ${p.name}\nAdresse : ${p.address || p.city || ''}\n\nQuestions rapides :\n1. Est-ce que vous accueillez ce type de réunion / atelier ?\n2. Quelle est la capacité exacte et la disposition possible ?\n3. Quels sont les tarifs (heure / demi-journée / journée) ?\n4. Quelles disponibilités en soirée ou week-end ?\n5. Quels documents faut-il fournir (association, assurance RC, descriptif) ?\n6. À quelle adresse mail envoyer une demande formelle ?\n\nMerci beaucoup.`; }
 function emailFor(f){ const p=displayProps(f); const qs=formalQuestions(p); return `Bonjour,\n\nJe vous contacte au sujet de la salle ${p.name}.\n\nJe cherche une petite salle pour organiser un atelier / temps collectif d’environ 10 à 20 personnes.\n\nPouvez-vous me confirmer :\n- la capacité exacte de la salle ;\n- les tarifs heure / demi-journée / journée ;\n- les disponibilités possibles en soirée ou week-end ;\n- les conditions de réservation et documents nécessaires ;\n- la personne à contacter pour déposer une demande.${qs?`\n\nPoints restant à confirmer d’après le scraping : ${qs}`:''}\n\nLieu repéré : ${p.address || p.city || ''}\n${p.website ? `Site : ${p.website}\n` : ''}\nMerci beaucoup,\nAnthony`; }
+function extractEmail(p){ const txt=[p.contact,p.email,p.source_url,p.website].filter(Boolean).join(' '); const m=txt.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i); return m?m[0]:''; }
+function emailSubjectFor(f){ const p=displayProps(f); return `Demande de location / mise à disposition — ${p.name}`; }
+function gmailComposeUrl(f){ const p=displayProps(f), to=extractEmail(p), su=emailSubjectFor(f), body=emailFor(f); return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(su)}&body=${encodeURIComponent(body)}`; }
+function directionsUrl(f){ const p=displayProps(f), c=coordsOf(f); const dest=c?`${c[0]},${c[1]}`:(p.address||p.city||p.name||''); return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}`; }
+function openGmailFor(f){ window.open(gmailComposeUrl(f),'_blank','noopener'); }
 async function copyText(text,label='Copié'){ try{ await navigator.clipboard.writeText(text); toast(label); } catch { const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); toast(label); } }
 
 function applyFilters(){
@@ -105,6 +111,7 @@ function applyFilters(){
     if(state.filters.dataset==='candidates' && !isCandidate(p)) return false;
     if(state.filters.dept!=='all' && p.department!==state.filters.dept) return false;
     if(state.filters.status!=='all' && c.status!==state.filters.status) return false;
+    if(state.filters.quality==='favorites' && !c.favorite) return false;
     if(['rental_possible','rental_unclear','rental_unlikely'].includes(state.filters.quality)){
       const want=state.filters.quality.replace('rental_','');
       if(rentalStatus(p)!==want) return false;
@@ -137,7 +144,7 @@ function popupHTML(f){
   <div class="info-row"><b>Capacité</b> ${esc(p.capacity_text||'—')}</div>
   <div class="info-row"><b>Prix</b> ${esc(p.price_text||'à confirmer')}</div>
   ${c.nextAction?`<div class="info-row"><b>Next</b> ${esc(c.nextAction)} ${c.nextActionDate?`(${esc(c.nextActionDate)})`:''}</div>`:''}
-  <div class="detail-actions"><button class="primary-btn" onclick="openDetailById('${esc(id)}')">Ouvrir la fiche</button>${p.website?`<a class="secondary-btn" href="${esc(p.website)}" target="_blank">Site</a>`:''}</div></div>`;
+  <div class="detail-actions"><button class="primary-btn" onclick="openDetailById('${esc(id)}')">Ouvrir la fiche</button>${p.website?`<a class="secondary-btn" href="${esc(p.website)}" target="_blank">Site</a>`:''}<a class="secondary-btn" href="${esc(directionsUrl(f))}" target="_blank">Itinéraire</a></div></div>`;
 }
 function renderMap(){
   state.markers.clearLayers(); const buckets=new Map();
@@ -174,7 +181,9 @@ function pipelineCard(f){
       <button class="mini-btn" data-status="${esc(prev)}" data-id="${esc(id)}">← ${esc(STATUS[prev])}</button>
       <button class="mini-btn primary" data-status="${esc(next)}" data-id="${esc(id)}">${esc(STATUS[next])} →</button>
       <button class="mini-btn" data-copy-call="${esc(id)}">Script appel</button>
-      <button class="mini-btn" data-copy-email="${esc(id)}">Email</button>
+      <button class="mini-btn" data-copy-email="${esc(id)}">Copier email</button>
+      <button class="mini-btn" data-open-gmail="${esc(id)}">Gmail</button>
+      <a class="mini-btn" href="${esc(directionsUrl(f))}" target="_blank" onclick="event.stopPropagation()">Itinéraire</a>
     </div>
   </div>`;
 }
@@ -186,6 +195,7 @@ function renderPipeline(){
   document.querySelectorAll('[data-status]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); setVenueStatus(btn.dataset.id, btn.dataset.status); });
   document.querySelectorAll('[data-copy-call]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(callScriptFor(findFeature(btn.dataset.copyCall)), 'Script d’appel copié'); });
   document.querySelectorAll('[data-copy-email]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(emailFor(findFeature(btn.dataset.copyEmail)), 'Email copié'); });
+  document.querySelectorAll('[data-open-gmail]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); openGmailFor(findFeature(btn.dataset.openGmail)); });
 }
 function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; const cand=state.filtered.filter(f=>isCandidate(f.properties)).length; const aggs=state.filtered.filter(f=>isAggregator(f.properties)).length; const rentOk=state.filtered.filter(f=>rentalStatus(f.properties)==='possible').length; const rentNo=state.filtered.filter(f=>rentalStatus(f.properties)==='unlikely').length; const mapped=state.filtered.filter(coordsOf).length; const tags=activeTagLabels(); $('metrics').textContent=`${state.filtered.length} affichées · ${cand} candidats · ${aggs} agrégateurs · ${rentOk} location OK · ${rentNo} non louables prob. · ${mapped} cartographiées · ${quality} à vérifier${tags.length?' · tags: '+tags.join(' + '):''}`; }
 
@@ -248,7 +258,7 @@ function renderDetail(id){
   const f=findFeature(id); if(!f) return; const raw=f.properties, p=displayProps(f), c=crmFor(id), o=c.overrides||{}; const notes=(c.notes||[]).map((n,i)=>`<div class="note-item"><div class="note-date">${esc(n.date)}</div><div>${esc(n.text)}</div><button class="danger-btn" data-del-note="${i}">Supprimer</button></div>`).join('') || '<p class="muted">Pas encore de note.</p>';
   const events=(c.events||[]).map((e,i)=>`<div class="event-row"><div><b>${esc(e.date||'date ?')}</b><br>${esc(e.label||'event')}</div><button class="danger-btn" data-del-event="${i}">×</button></div>`).join('') || '<p class="muted">Aucun event lié.</p>';
   $('detail-content').innerHTML = `<div class="detail-inner"><h2>${esc(p.name)}</h2><div class="venue-meta">${statusPill(c.status||'new')}<span class="pill">${esc(p.department)}</span><span class="pill">${esc(p.city||'—')}</span><span class="pill fit">fit ${esc(p.fit_score)}</span></div><div class="quality-badges detail-quality">${qualityBadgesHTML(id)}</div><p class="muted">${esc(p.address||'adresse à vérifier')}</p>
-    <div class="detail-actions">${p.website?`<a class="primary-btn" href="${esc(p.website)}" target="_blank">Ouvrir site</a>`:''}${p.source_url?`<a class="secondary-btn" href="${esc(p.source_url)}" target="_blank">Source</a>`:''}<button class="secondary-btn" id="copy-contact">Copier contact</button><button class="secondary-btn" id="copy-call-script">Script appel</button><button class="secondary-btn" id="copy-email-template">Email candidature</button><button class="secondary-btn" id="toggle-fav">${c.favorite?'Retirer ⭐':'Ajouter ⭐'}</button></div>
+    <div class="detail-actions">${p.website?`<a class="primary-btn" href="${esc(p.website)}" target="_blank">Ouvrir site</a>`:''}${p.source_url?`<a class="secondary-btn" href="${esc(p.source_url)}" target="_blank">Source</a>`:''}<a class="secondary-btn" href="${esc(directionsUrl(f))}" target="_blank">Itinéraire</a><button class="secondary-btn" id="copy-contact">Copier contact</button><button class="secondary-btn" id="copy-call-script">Script appel</button><button class="secondary-btn" id="copy-email-template">Copier email</button><button class="secondary-btn" id="open-gmail-compose">Ouvrir Gmail</button><button class="secondary-btn" id="toggle-fav">${c.favorite?'Retirer ⭐':'Ajouter ⭐'}</button></div>
     <div class="section"><h3>Infos salle</h3><div class="detail-grid"><div><b>Capacité</b><br>${esc(p.capacity_text||'—')}${originalHint(raw,p,'capacity','capacité')}</div><div><b>Prix</b><br>${esc(p.price_text||'à confirmer')}${originalHint(raw,p,'price','prix')}</div><div><b>Contact</b><br>${esc(p.contact||'—')}${originalHint(raw,p,'contact','contact')}</div><div><b>Catégorie</b><br>${esc(p.category||'—')}</div></div>${p.pros?`<p><b>Pros</b> ${esc(p.pros)}</p>`:''}${p.cons?`<p><b>Cons</b> ${esc(p.cons)}</p>`:''}</div>
     <div class="section formal-section"><h3>Source &amp; lineage</h3><div class="detail-grid"><div><b>Type source</b><br>${p.page_type?`<span class="pill src-${esc(p.page_type)}">${esc(p.page_type.replace(/_/g,' '))}</span>`:datasetLabel(p)}${p.source_reliability?` <span class="pill rel-${esc(p.source_reliability)}">${esc(p.source_reliability)}</span>`:''} ${p.aggregator_domain?` · ${esc(p.aggregator_domain)}`:''}</div><div><b>Zone</b><br>${p.geo_status?`<span class="pill geo-${esc(p.geo_status)}">${esc(p.geo_status.replace(/_/g,' '))}</span>`:'—'}</div><div><b>Observations</b><br>${esc(p.observation_count||1)} source(s)</div><div><b>Extraction IA</b><br>${p.formal_extraction_status==='ai_extracted'?'<span class="qbadge ok">IA structurée</span>':esc(p.formal_extraction_status||'non testé')}</div></div>
         ${p.specific_rental_page_url?`<p class="help"><b>Page location :</b> <a href="${esc(p.specific_rental_page_url)}" target="_blank">${esc(p.specific_rental_page_url.length>70?p.specific_rental_page_url.slice(0,67)+'...':p.specific_rental_page_url)}</a></p>`:''} 
@@ -259,16 +269,55 @@ function renderDetail(id){
     <div class="section"><h3>Events réalisés ici</h3><div class="detail-grid"><input id="event-date" type="date" class="input"><input id="event-label" class="input" placeholder="Nom / type d’event"></div><div class="detail-actions"><button class="primary-btn" id="add-event">Ajouter event</button></div>${events}</div></div>`;
   bindDetailEvents(id);
 }
-function bindDetailEvents(id){ const c=crmFor(id); if(!c.overrides)c.overrides={}; const saveOv=(key,val)=>{c.overrides[key]=val; touch(id); renderAll();}; $('detail-status').onchange=e=>{c.status=e.target.value;touch(id);renderAll();}; $('next-action').onchange=e=>{c.nextAction=e.target.value;touch(id);renderAll();}; $('next-action-date').onchange=e=>{c.nextActionDate=e.target.value;touch(id);renderAll();}; $('ov-contact').onchange=e=>saveOv('contactOverride',e.target.value.trim()); $('ov-price').onchange=e=>saveOv('priceOverride',e.target.value.trim()); $('ov-capacity').onchange=e=>saveOv('capacityOverride',e.target.value.trim()); $('ov-address').onchange=e=>saveOv('addressOverride',e.target.value.trim()); $('ov-source').onchange=e=>saveOv('sourceReliability',e.target.value); $('ov-note').onchange=e=>saveOv('enrichmentNote',e.target.value.trim()); $('add-note').onclick=()=>{const t=$('new-note').value.trim(); if(!t)return; c.notes.unshift({date:new Date().toLocaleString('fr-FR'),text:t}); touch(id); renderAll();}; $('add-event').onclick=()=>{const label=$('event-label').value.trim(); if(!label)return; c.events.unshift({date:$('event-date').value||today(),label}); c.status='used'; touch(id); renderAll();}; $('toggle-fav').onclick=()=>{c.favorite=!c.favorite;touch(id);renderAll();}; $('copy-contact').onclick=async()=>{const f=findFeature(id), p=displayProps(f); await copyText([p.name,p.contact,p.website].filter(Boolean).join('\n'),'Contact copié');}; $('copy-call-script').onclick=()=>copyText(callScriptFor(findFeature(id)),'Script d’appel copié'); $('copy-email-template').onclick=()=>copyText(emailFor(findFeature(id)),'Email copié'); document.querySelectorAll('[data-del-note]').forEach(b=>b.onclick=()=>{c.notes.splice(+b.dataset.delNote,1);touch(id);renderAll();}); document.querySelectorAll('[data-del-event]').forEach(b=>b.onclick=()=>{c.events.splice(+b.dataset.delEvent,1);touch(id);renderAll();}); }
+function bindDetailEvents(id){
+  const c=crmFor(id);
+  if(!c.overrides)c.overrides={};
+  const saveOv=(key,val)=>{c.overrides[key]=val; touch(id); renderAll();};
+  $('detail-status').onchange=e=>{c.status=e.target.value;touch(id);renderAll();};
+  $('next-action').onchange=e=>{c.nextAction=e.target.value;touch(id);renderAll();};
+  $('next-action-date').onchange=e=>{c.nextActionDate=e.target.value;touch(id);renderAll();};
+  $('ov-contact').onchange=e=>saveOv('contactOverride',e.target.value.trim());
+  $('ov-price').onchange=e=>saveOv('priceOverride',e.target.value.trim());
+  $('ov-capacity').onchange=e=>saveOv('capacityOverride',e.target.value.trim());
+  $('ov-address').onchange=e=>saveOv('addressOverride',e.target.value.trim());
+  $('ov-source').onchange=e=>saveOv('sourceReliability',e.target.value);
+  $('ov-note').onchange=e=>saveOv('enrichmentNote',e.target.value.trim());
+  $('add-note').onclick=()=>{const t=$('new-note').value.trim(); if(!t)return; c.notes.unshift({date:new Date().toLocaleString('fr-FR'),text:t}); touch(id); renderAll();};
+  $('add-event').onclick=()=>{const label=$('event-label').value.trim(); if(!label)return; c.events.unshift({date:$('event-date').value||today(),label}); c.status='used'; touch(id); renderAll();};
+  $('toggle-fav').onclick=()=>{c.favorite=!c.favorite;touch(id);renderAll();};
+  $('copy-contact').onclick=async()=>{const f=findFeature(id), p=displayProps(f); await copyText([p.name,p.contact,p.website].filter(Boolean).join('\n'),'Contact copié');};
+  $('copy-call-script').onclick=()=>copyText(callScriptFor(findFeature(id)),'Script d’appel copié');
+  $('copy-email-template').onclick=()=>copyText(emailFor(findFeature(id)),'Email copié');
+  $('open-gmail-compose').onclick=()=>openGmailFor(findFeature(id));
+  document.querySelectorAll('[data-del-note]').forEach(b=>b.onclick=()=>{c.notes.splice(+b.dataset.delNote,1);touch(id);renderAll();});
+  document.querySelectorAll('[data-del-event]').forEach(b=>b.onclick=()=>{c.events.splice(+b.dataset.delEvent,1);touch(id);renderAll();});
+}
 
 function bindControls(){
-  $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dataset-filter').onchange=e=>{state.filters.dataset=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
+  $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();};
+  $('dataset-filter').onchange=e=>{state.filters.dataset=e.target.value;renderAll();};
+  $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();};
+  $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();};
+  $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();};
+  $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();};
+  $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
   document.querySelectorAll('[data-tag-filter]').forEach(btn=>btn.onclick=()=>{ const tag=btn.dataset.tagFilter; if(state.filters.tagFilters.has(tag)){ state.filters.tagFilters.delete(tag); btn.classList.remove('active'); } else { state.filters.tagFilters.add(tag); btn.classList.add('active'); } renderAll(); });
   $('clear-tag-filters').onclick=()=>{ state.filters.tagFilters.clear(); document.querySelectorAll('[data-tag-filter]').forEach(btn=>btn.classList.remove('active')); renderAll(); };
-  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));$('map').classList.toggle('hidden',state.view!=='map');$('table-view').classList.toggle('hidden',state.view!=='list');$('funnel-view').classList.toggle('hidden',state.view!=='funnel');setTimeout(()=>map.invalidateSize(),80);});
-  $('close-detail').onclick=()=>$('detail-panel').classList.add('hidden'); $('open-sidebar').onclick=()=>$('sidebar').classList.add('open'); $('toggle-sidebar').onclick=()=>$('sidebar').classList.remove('open');
-  $('funnel-stage-filter').onchange=e=>renderFunnel(); $('funnel-source-filter').onchange=e=>renderFunnel();
-$('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
+  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{
+    state.view=b.dataset.view;
+    document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));
+    $('map').classList.toggle('hidden',state.view!=='map');
+    $('table-view').classList.toggle('hidden',state.view!=='list');
+    $('pipeline-view').classList.toggle('hidden',state.view!=='pipeline');
+    $('funnel-view').classList.toggle('hidden',state.view!=='funnel');
+    setTimeout(()=>map.invalidateSize(),80);
+  });
+  $('close-detail').onclick=()=>$('detail-panel').classList.add('hidden');
+  $('open-sidebar').onclick=()=>$('sidebar').classList.add('open');
+  $('toggle-sidebar').onclick=()=>$('sidebar').classList.remove('open');
+  $('funnel-stage-filter').onchange=()=>renderFunnel();
+  $('funnel-source-filter').onchange=()=>renderFunnel();
+  $('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
   $('import-json').onchange=e=>{const file=e.target.files[0]; if(!file)return; const r=new FileReader(); r.onload=()=>{try{const obj=JSON.parse(r.result); state.crm=obj.crm||obj; saveCrm(); toast('Suivi importé'); renderAll();}catch{toast('Import impossible');}}; r.readAsText(file);};
 }
 
@@ -279,9 +328,15 @@ Promise.all([
 ]).then(([venues,candidates,funnelData])=>{
   venues.features=(venues.features||[]).map(f=>{ f.properties={...(f.properties||{}), _dataset:'venue'}; return f; });
   candidates.features=(candidates.features||[]).map(f=>{ const p=f.properties||{}; f.properties={...p, _dataset:'candidate', name:p.name||p.raw_name||'Candidat sans nom', fit_score:p.fit_beyond_score||p.fit_score||0, price_score:p.actionability_score||p.price_score||0}; return f; });
-  state.venues=venues; state.candidates=candidates; state.data={type:'FeatureCollection', features:[...venues.features, ...candidates.features]};
+  state.venues=venues;
+  state.candidates=candidates;
+  state.data={type:'FeatureCollection', features:[...venues.features, ...candidates.features]};
   state.funnelItems=funnelData.items||[];
   state.funnelStageCounts=funnelData.stage_counts||{};
   loadCrm(); buildQuality(); bindControls(); renderAll();
-  const mapped=state.filtered.map(coordsOf).filter(Boolean); if(mapped.length){ const bounds=L.latLngBounds(mapped); map.fitBounds(bounds.pad(.08)); }
+  const mapped=state.filtered.map(coordsOf).filter(Boolean);
+  if(mapped.length){ const bounds=L.latLngBounds(mapped); map.fitBounds(bounds.pad(.08)); }
+}).catch(err=>{
+  console.error('Erreur chargement données', err);
+  toast('Erreur chargement données — voir console');
 });
