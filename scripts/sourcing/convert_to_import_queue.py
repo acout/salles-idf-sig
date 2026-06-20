@@ -221,8 +221,19 @@ def build_import_queue(run_dir: Path, output_geojson: Path, output_csv_dir: Path
         # Build feature
         # Skip entities that are clearly not venues
         is_venue_val = ext_val('is_actual_venue', '')
-        if str(is_venue_val).lower() in ('false', 'no') and str(is_agg).lower() in ('true', 'yes'):
-            continue  # Skip aggregator listings that aren't actual venues
+        is_agg_val = str(is_agg).lower() in ('true', 'yes')
+
+        # ── Systemic venue page validation ──
+        # The AI marks aggregator listings, PDFs, planning docs, etc. as "is_actual_venue=true".
+        # We apply deterministic rules that override the AI when the page is NOT a venue.
+        from validate_venue_page import validate_venue_page
+        is_valid_venue, validation_reason, validation_page_type = validate_venue_page(entity, ext)
+        if not is_valid_venue:
+            continue  # Skip PDFs, listings, planning docs, procedures, etc.
+        
+        # Also skip if AI says not a venue AND it's an aggregator
+        if str(is_venue_val).lower() in ('false', 'no') and is_agg_val:
+            continue
 
         # Confidence score
         conf_fields = ['rental_possible', 'price', 'capacity', 'address', 'phone', 'email']
