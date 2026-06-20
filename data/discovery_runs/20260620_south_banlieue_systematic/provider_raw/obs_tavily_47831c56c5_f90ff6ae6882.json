@@ -1,0 +1,19 @@
+{
+  "name": "Location de salles de réunion équipées | Mitwit",
+  "title": "Location de salles de réunion équipées | Mitwit",
+  "website": "https://mitwitoffice.com/location-salle-de-reunion",
+  "source_url": "https://mitwitoffice.com/location-salle-de-reunion",
+  "source_domain": "mitwitoffice.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.21450251,
+  "provider_rank": 6,
+  "discovery_prompt_id": "fr_meudon_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Meudon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "N’hésitez plus et optez pour la location d’une salle de réunion qui s’adaptent à vos projets et vos envies. Plusieurs configurations possibles pour vos formations, ateliers, conférence, workshop avec des services sur mesure : petits-déjeuners, buffets, plateaux-repas, assistance, aide à la préparation, matériel et équipement. Louer une salle de réunion chez Mitwit, c’est la garantie de réunions réussies. La réservation de salle de réunion en ligne possible !\n\nFrance\n\nFrance +33 (0)1 72 92 06 601 72 92 06 60)  Belgique\n\nBelgique +32 (0)2 403 11 092 403 11 09)  Suisse\n\nSuisse +41 (0) 22 561 84 00 22 561 84 00)\n\nNous contacter\n\nRéserver une salle de réunion\n\nEspace membre [...] Logo Mitwit \n\nFR   EN   NL\n\n# Votre recherche de salles de réunion\n\nLocation de salles de réunion pour vos rendez-vous, formations et séminaires\n\nOrganisez vos réunions en quelques clics en choisissant une salle de réunion pour votre événement professionnel parmi nos 150 espaces de réunions en France, en Belgique et en Suisse. Hyper accessibles, entièrement équipées, à la lumière du jour, avec plusieurs configurations possibles, nos salles de réunion sont idéales pour vous réunir avec vos collaborateurs, clients ou partenaires. Découvrez nos salles de réunion, formation, conférence et séminaire à louer et profitez de tous les services sur place.\n\nLocation salle de réunion à Paris 9\n\n## Réservez une salle de réunion : rendez-vous, formation et séminaire",
+  "evidence_text": "N’hésitez plus et optez pour la location d’une salle de réunion qui s’adaptent à vos projets et vos envies. Plusieurs configurations possibles pour vos formations, ateliers, conférence, workshop avec des services sur mesure : petits-déjeuners, buffets, plateaux-repas, assistance, aide à la préparation, matériel et équipement. Louer une salle de réunion chez Mitwit, c’est la garantie de réunions réussies. La réservation de salle de réunion en ligne possible !\n\nFrance\n\nFrance +33 (0)1 72 92 06 601 72 92 06 60)  Belgique\n\nBelgique +32 (0)2 403 11 092 403 11 09)  Suisse\n\nSuisse +41 (0) 22 561 84 00 22 561 84 00)\n\nNous contacter\n\nRéserver une salle de réunion\n\nEspace membre [...] Logo Mitwit \n\nFR   EN   NL\n\n# Votre recherche de salles de réunion\n\nLocation de salles de réunion pour vos rendez-vous, formations et séminaires\n\nOrganisez vos réunions en quelques clics en choisissant une salle de réunion pour votre événement professionnel parmi nos 150 espaces de réunions en France, en Belgique et en Suisse. Hyper accessibles, entièrement équipées, à la lumière du jour, avec plusieurs configurations possibles, nos salles de réunion sont idéales pour vous réunir avec vos collaborateurs, clients ou partenaires. Découvrez nos salles de réunion, formation, conférence et séminaire à louer et profitez de tous les services sur place.\n\nLocation salle de réunion à Paris 9\n\n## Réservez une salle de réunion : rendez-vous, formation et séminaire",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:12+00:00"
+}

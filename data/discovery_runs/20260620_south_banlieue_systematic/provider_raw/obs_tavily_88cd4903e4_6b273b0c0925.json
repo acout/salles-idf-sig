@@ -1,0 +1,19 @@
+{
+  "name": "Salle de mariage Chevilly-Larue (94550)",
+  "title": "Salle de mariage Chevilly-Larue (94550)",
+  "website": "https://www.abcsalles.com/salle-de-mariage-2_chevilly+larue_v94.html",
+  "source_url": "https://www.abcsalles.com/salle-de-mariage-2_chevilly+larue_v94.html",
+  "source_domain": "abcsalles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.6450534,
+  "provider_rank": 2,
+  "discovery_prompt_id": "fr_chevilly larue_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Chevilly-Larue (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "ABC Salles référence 1 salles disponibles à Chevilly-Larue pour tous vos événements : mariage, séminaire, anniversaire, conférence, soirée d'entreprise ou",
+  "evidence_text": "ABC Salles référence 1 salles disponibles à Chevilly-Larue pour tous vos événements : mariage, séminaire, anniversaire, conférence, soirée d'entreprise ou",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:50+00:00"
+}

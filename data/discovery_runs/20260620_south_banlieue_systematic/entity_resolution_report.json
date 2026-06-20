@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-20T15:19:26+00:00",
+  "input_observations": 208,
+  "total_entities": 190,
+  "venue_entities": 58,
+  "aggregator_observations": 132,
+  "multi_obs_entities": 12,
+  "curated_in_scope_high_quality": 19,
+  "curated_by_page_type": {
+    "official_rental_page": 14,
+    "official_venue_page": 4,
+    "municipal_facility_page": 1
+  },
+  "curated_by_reliability": {
+    "S4": 12,
+    "S3": 7
+  },
+  "entities_with_rental_page": 128,
+  "entities_with_website": 190,
+  "entities_with_both_distinct": 1,
+  "geo_status_distribution": {
+    "in_scope": 102,
+    "geo_unknown": 57,
+    "out_of_zone": 31
+  },
+  "entity_status_distribution": {
+    "aggregator_observation": 132,
+    "candidate": 58
+  },
+  "outputs": {
+    "all_entities": "data/discovery_runs/20260620_south_banlieue_systematic/venue_entities.json",
+    "curated_entities": "data/discovery_runs/20260620_south_banlieue_systematic/venue_entities_curated.json"
+  }
+}

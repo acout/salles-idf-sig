@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-20T15:19:14+00:00",
+  "run_id": "20260620_south_banlieue_systematic",
+  "input_files": [
+    "data/discovery_runs/systematic_idf_south_20260620.json"
+  ],
+  "observations": 208,
+  "field_evidence": 376,
+  "malformed": 0,
+  "malformed_examples": [],
+  "observations_by_provider": {
+    "tavily": 208
+  },
+  "observations_with_url": 208,
+  "observations_with_query": 208,
+  "observations_with_content_hash": 208,
+  "field_evidence_by_field": {
+    "website": 208,
+    "specific_rental_page": 168
+  },
+  "duplicate_url_groups_preserved": 32,
+  "duplicate_observations_preserved": 130,
+  "outputs": {
+    "run_dir": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_south_banlieue_systematic",
+    "observations": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_south_banlieue_systematic/observations.json",
+    "field_evidence": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_south_banlieue_systematic/field_evidence.json",
+    "report": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_south_banlieue_systematic/report.json"
+  }
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "venue_entity_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] LOCATION DE STUDIOS À PARIS ET PROCHE BANLIEUE",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/1401",
+    "source_observations": [
+      "obs_tavily_17790fb9e5",
+      "obs_tavily_92986b37a6"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_17790fb9e5",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_fontenay-aux-roses.fr_louer une salle municipale fontenayauxroses_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Louer une salle municipale - Fontenay-aux-Roses",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_3214e2309f",
+      "obs_tavily_1b7022b128"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_3214e2309f",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_grand paris associations pour la promotion du sport medailles merite sportif assocefr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Grand Paris - associations pour la promotion du sport, médailles, mérite sportif - Assoce.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/epci/200054781/Grand%20Paris/activite/11192",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_04d477fda5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_04d477fda5",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_grand paris associations pour la promotion du sport medailles_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Grand Paris - associations pour la promotion du sport, médailles ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/epci/200054781/Grand%20Paris/activite/11192",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_9aa6e03351",
+      "obs_tavily_1fc0e9b2dc",
+      "obs_tavily_b6994e9c3d",
+      "obs_tavily_5e11bddb43"
+    ],
+    "observation_count": 4,
+    "primary_observation_id": "obs_tavily_9aa6e03351",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_hangar-y.com_privatisations hangar y_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Privatisations - Hangar Y",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://hangar-y.com/privatisation",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_56e51279b7"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_56e51279b7",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_mitwitoffice.com_location de salles de reunion equipees mitwit_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location de salles de réunion équipées | Mitwit",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://mitwitoffice.com/location-salle-de-reunion",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_47831c56c5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_47831c56c5",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_retreatcenterguide.com_salles a louer pour stage et formations retreatcenterguidecom_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Salles à louer pour stage et formations - RetreatCenterGuide.com",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.retreatcenterguide.com/salles-a-louer",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_fce39a7270",
+      "obs_tavily_815829b7e4",
+      "obs_tavily_97fbcaa3f5"
+    ],
+    "observation_count": 3,
+    "primary_observation_id": "obs_tavily_fce39a7270",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Privatisation | Maison des arts de Plessis Robinson Privatisation | Maison des arts de Plessis Robinson",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_532d921d44"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_532d921d44",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_calameo.com_calameo avril 2014_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Calaméo - Avril 2014",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.calameo.com/books/000773210073b3ecd48fc",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_01af39a7a1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_01af39a7a1",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "municipal_facility_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_valdemarne 94 jumelages echanges culturels organisation dechanges linguistiques echanges culturels au plan international assocefr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "VAL-DE-MARNE (94) - jumelages, échanges culturels, organisation d'échanges linguistiques, échanges culturels au plan international - Assoce.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/departement/94/VAL-DE-MARNE/categorie/9050",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_089055005d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_089055005d",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_my-event.com_myevent latelier seminaire lhay les roses_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "MYevent - L'Atelier - séminaire - L'HAY LES ROSES",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.my-event.com/l-atelier",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_09a2b8d947"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_09a2b8d947",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Le Rooftop, espaces de location événementielle, situé à Champigny-Sur-Marne (94) | location de salle | 309 Avenue du Général de Gaulle, Champigny-sur-Marne, France",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.le-rooftop.com",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_d3acb3b867"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d3acb3b867",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_ville-chevilly-larue.fr_louer une salle municipale chevillylarue_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Louer une salle municipale - Chevilly-Larue",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.ville-chevilly-larue.fr/demarches-administratives/salle-municipale",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_12739103e3",
+      "obs_tavily_1134499e5f"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_12739103e3",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_valdemarne 94 jumelages echanges culturels assoce_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "VAL-DE-MARNE (94) - jumelages, échanges culturels ... - Assoce",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/departement/94/VAL-DE-MARNE/categorie/9050",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_bb5650e497"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_bb5650e497",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Réserver une salle - Mairie Orly",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.mairie-orly.fr/reserver-une-salle",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_3fd417c7d9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_3fd417c7d9",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_wojo.com_location salle de reunion pour 10 personnes salle de reunion disruptif wojo paris novotel coeur dorly airport_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location salle de réunion pour 10 personnes - Salle de réunion - Disruptif | Wojo Paris - Novotel Coeur d'Orly Airport",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.wojo.com/fr-FR/service/salles-de-reunion/europe/france/ile-de-france/orly/orly-aeroport/paris-novotel-coeur-d-orly-airport/wojo-paris-novotel-coeur-d-orly-airport/salle-de-reunion-disruptif",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_c403b93091"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c403b93091",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_charenton.fr_charentonfr locations de salles_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Charenton.fr | Locations de salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_dd927364e1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_dd927364e1",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_charenton.fr_locations de salles charentonfr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Locations de salles - Charenton.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_35c43753f0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_35c43753f0",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_bureauxlocaux.com_location bureaux charentonlepont bureauxlocauxcom_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location Bureaux Charenton-le-Pont - BureauxLocaux.com",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.bureauxlocaux.com/immobilier-d-entreprise/annonces/charenton-le-pont-94220/location-bureaux",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_e5ac639a5e"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_e5ac639a5e",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  }
+]

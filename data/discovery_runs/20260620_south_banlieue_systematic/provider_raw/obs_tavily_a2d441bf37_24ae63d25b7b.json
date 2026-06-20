@@ -1,0 +1,19 @@
+{
+  "name": "En cette période rentrée voici les nouveaux ateliers en présence et ...",
+  "title": "En cette période rentrée voici les nouveaux ateliers en présence et ...",
+  "website": "https://www.facebook.com/groups/565593936921379/posts/3316113785202700",
+  "source_url": "https://www.facebook.com/groups/565593936921379/posts/3316113785202700",
+  "source_domain": "facebook.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.052819017,
+  "provider_rank": 7,
+  "discovery_prompt_id": "fr_meudon_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Meudon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Lors de ce cercle, je vous guide, vous accompagne à l'intérieur de vous même pour vous reconnecter à votre coeur à travers le chant, la danse,",
+  "evidence_text": "Lors de ce cercle, je vous guide, vous accompagne à l'intérieur de vous même pour vous reconnecter à votre coeur à travers le chant, la danse,",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:12+00:00"
+}

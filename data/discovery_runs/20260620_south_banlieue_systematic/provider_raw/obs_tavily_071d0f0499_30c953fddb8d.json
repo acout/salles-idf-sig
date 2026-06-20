@@ -1,0 +1,19 @@
+{
+  "name": "Profs de Pilates, Yoga... Remplacements / Annonces / Echanges d ...",
+  "title": "Profs de Pilates, Yoga... Remplacements / Annonces / Echanges d ...",
+  "website": "https://www.facebook.com/groups/2631965077110125",
+  "source_url": "https://www.facebook.com/groups/2631965077110125",
+  "source_domain": "facebook.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.062749125,
+  "provider_rank": 7,
+  "discovery_prompt_id": "fr_vanves_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Vanves (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Tarif : • Prix par cours : 15 € • Ou sur Abonnement (Avantageux ! Consultez les forfaits, à partir de 40 € par mois - 1 cours /semaine + réduction sur les",
+  "evidence_text": "Tarif : • Prix par cours : 15 € • Ou sur Abonnement (Avantageux ! Consultez les forfaits, à partir de 40 € par mois - 1 cours /semaine + réduction sur les",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:58+00:00"
+}

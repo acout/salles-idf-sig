@@ -147,7 +147,7 @@ def load_json(path: Path, default: Any) -> Any:
 
 
 def load_ai_records(run_dir: Path) -> list[dict[str, Any]]:
-    files = sorted(run_dir.glob("ai_classify_retry_chunk_*.jsonl"))
+    files = sorted(run_dir.glob("ai_classify_*.jsonl"))
     records: list[dict[str, Any]] = []
     for file in files:
         for line_no, line in enumerate(file.read_text(encoding="utf-8", errors="replace").splitlines(), 1):

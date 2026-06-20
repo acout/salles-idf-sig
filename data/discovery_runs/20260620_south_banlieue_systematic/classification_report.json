@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-20T15:19:17+00:00",
+  "input_observations": 208,
+  "output_observations": 208,
+  "page_type_distribution": {
+    "aggregator_listing": 135,
+    "official_rental_page": 30,
+    "official_venue_page": 24,
+    "social": 11,
+    "unknown_website": 3,
+    "municipal_facility_page": 2,
+    "pdf_document": 2,
+    "unknown": 1
+  },
+  "source_reliability_distribution": {
+    "S1": 146,
+    "S3": 28,
+    "S4": 28,
+    "S2": 5,
+    "S0": 1
+  },
+  "geo_status_distribution": {
+    "in_scope": 112,
+    "geo_unknown": 64,
+    "out_of_zone": 32
+  },
+  "page_type_by_provider_top20": {
+    "tavily:aggregator_listing": 135,
+    "tavily:official_rental_page": 30,
+    "tavily:official_venue_page": 24,
+    "tavily:social": 11,
+    "tavily:unknown_website": 3,
+    "tavily:municipal_facility_page": 2,
+    "tavily:pdf_document": 2,
+    "tavily:unknown": 1
+  },
+  "in_scope_count": 112,
+  "in_scope_high_quality_count": 29,
+  "geo_detail_examples": {
+    "homonym": [],
+    "out_of_zone": [
+      "aggregator_listing | peerspace.com | 16 meilleur Salles Pour Cours De Yoga à louer à proximité | ",
+      "aggregator_listing | peerspace.com | 20 meilleur Studios De Danse à louer à proximité | Peerspace",
+      "aggregator_listing | lesite.izyshow.com | IZYSHOW — La plateforme de location de salles de répétition",
+      "official_venue_page | assoce.fr | SEINE-MARITIME (76) - Sports, activités de plein air - Assoc",
+      "aggregator_listing | peerspace.com | Trouver salles pour cours de yoga près de chez moi - Peerspa",
+      "aggregator_listing | peerspace.com | 20 meilleur Salles Pour Evenement Professionnel à louer à pr",
+      "aggregator_listing | peerspace.com | 17 meilleur Salles Pour Cours De Pilates à louer à proximité",
+      "aggregator_listing | peerspace.com | Trouver salles pour cours de yoga près de chez moi - Peerspa",
+      "aggregator_listing | peerspace.com | 20 meilleur Salles Pour Evenement Professionnel à louer à pr",
+      "aggregator_listing | peerspace.com | Trouver salles pour cours de yoga près de chez moi - Peerspa"
+    ],
+    "geo_unknown": [
+      "official_venue_page | grandsgites.com | Gite pour stages et activités, séminaire, yoga, developpemen",
+      "official_rental_page | igesa.fr | [PDF] Votre été 2025 - Igesa",
+      "aggregator_listing | peerspace.com | 20 meilleur Salles Pour Cours De Danse à louer à proximité |",
+      "official_venue_page | limberyoga.com | Studio Rental",
+      "official_venue_page | grandsgites.com | Gites avec salle pour stages et activités - Grands Gites",
+      "official_rental_page | grandsgites.com | Gites avec salle pour stages et activités - Grands Gites",
+      "aggregator_listing | peerspace.com | Spacious Centrally Located Yoga & Dance Studio - Peerspace",
+      "social | facebook.com | Profs de Pilates, Yoga... Remplacements / Annonces / Echange",
+      "unknown_website | standardeventrentals.com | Bay Area Event Rentals | Standard Event Rentals",
+      "official_rental_page | lokio.fr | Location Salle entre Particuliers | Lokio"
+    ]
+  }
+}

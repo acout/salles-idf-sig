@@ -1,0 +1,19 @@
+{
+  "name": "Salle de réception Meudon (92190) - ABC Salles",
+  "title": "Salle de réception Meudon (92190) - ABC Salles",
+  "website": "https://www.abcsalles.com/salle-de-reception-2_meudon_v92.html",
+  "source_url": "https://www.abcsalles.com/salle-de-reception-2_meudon_v92.html",
+  "source_domain": "abcsalles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.63316137,
+  "provider_rank": 2,
+  "discovery_prompt_id": "fr_meudon_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Meudon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Salles à louer à proximité de Meudon · 1 salle. 150-2000 pers. Le Pavillon de Boulogne est un véritable lieu de partage. · 2 salles. 10-500 pers. Le Café de l'",
+  "evidence_text": "Salles à louer à proximité de Meudon · 1 salle. 150-2000 pers. Le Pavillon de Boulogne est un véritable lieu de partage. · 2 salles. 10-500 pers. Le Café de l'",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:12+00:00"
+}

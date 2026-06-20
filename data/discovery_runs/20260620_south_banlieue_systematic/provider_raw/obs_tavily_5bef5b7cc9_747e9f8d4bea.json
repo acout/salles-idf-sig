@@ -1,0 +1,19 @@
+{
+  "name": "[PDF] Les nouvelles de - Châtenay-Malabry",
+  "title": "[PDF] Les nouvelles de - Châtenay-Malabry",
+  "website": "https://www.chatenay-malabry.fr/PDF/magazine-agenda/Chatenay-Mag-295.pdf",
+  "source_url": "https://www.chatenay-malabry.fr/PDF/magazine-agenda/Chatenay-Mag-295.pdf",
+  "source_domain": "chatenay-malabry.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.08059611,
+  "provider_rank": 7,
+  "discovery_prompt_id": "fr_plessis robinson_prive",
+  "discovery_prompt": "Salles privées à louer à Le Plessis-Robinson (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise.",
+  "description": "d’environ 29 km et sur lequel pourront se connecter aussi bien les immeubles publics que privés, s’étendra sur la ville et sur une partie du Plessis-Robinson. Il alimentera en chauffage et eau chaude sanitaire près de 15 000 logements, avec plus de 88 % d’énergies renouvelables. [...] Renseignements : 01 43 50 07 92 (service des Sports).\nCréer des œuvres Stage écriture gratuit entre le 21 et le 25 octobre organisé à la Maison de Chetaubriand (87 rue de Chateaubriand), e partenariat avec le Cap Jeunes. [...] les interactions et encourager la collaboration entre les équipes et les services avec notamment des zones de travail collaboratif. Les équipements hightech, les multiples salles de réunion sans oublier les espaces lumineux qui s’ouvrent sur des jardins extérieurs permettent de varier les environnements de travail selon les besoins sans oublier le restaurant d’entreprise, la cafétéria, les espaces café, la salle de jeux et trois salles de sport.",
+  "evidence_text": "d’environ 29 km et sur lequel pourront se connecter aussi bien les immeubles publics que privés, s’étendra sur la ville et sur une partie du Plessis-Robinson. Il alimentera en chauffage et eau chaude sanitaire près de 15 000 logements, avec plus de 88 % d’énergies renouvelables. [...] Renseignements : 01 43 50 07 92 (service des Sports).\nCréer des œuvres Stage écriture gratuit entre le 21 et le 25 octobre organisé à la Maison de Chetaubriand (87 rue de Chateaubriand), e partenariat avec le Cap Jeunes. [...] les interactions et encourager la collaboration entre les équipes et les services avec notamment des zones de travail collaboratif. Les équipements hightech, les multiples salles de réunion sans oublier les espaces lumineux qui s’ouvrent sur des jardins extérieurs permettent de varier les environnements de travail selon les besoins sans oublier le restaurant d’entreprise, la cafétéria, les espaces café, la salle de jeux et trois salles de sport.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:48+00:00"
+}

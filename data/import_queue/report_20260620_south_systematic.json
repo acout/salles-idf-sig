@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-20T17:22:18.494574",
+  "ai_records": 19,
+  "features": 41,
+  "with_coords": 0,
+  "without_coords": 41,
+  "rental_possible": 41,
+  "rental_unclear": 0,
+  "has_contact": 0,
+  "has_price": 0,
+  "has_capacity": 0,
+  "has_rental_page": 41,
+  "source_kind_distribution": {
+    "extracted_from_listing": 41
+  },
+  "page_type_distribution": {
+    "municipal_hall_listing": 19,
+    "single_venue": 15,
+    "catalog_pdf": 7
+  },
+  "stage_counts": {
+    "L0_aggregator": 139,
+    "L3_valid_but_missing": 20,
+    "L4_import_queue": 8,
+    "L3_not_venue": 6,
+    "L2_filtered_geo": 2,
+    "L2_filtered_reliability": 15
+  },
+  "invalid_categories_skipped": {
+    "association_directory": 4,
+    "aggregator_listing": 4,
+    "irrelevant": 1,
+    "commercial_real_estate": 1
+  },
+  "csv_path": "data/import_queue/import_queue_20260620_south_systematic.csv",
+  "geojson_path": "public/import_queue_south.geojson",
+  "funnel_path": "public/funnel_debug_south.json"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Salle d'anniversaire Châtenay-Malabry (92290)",
+  "title": "Salle d'anniversaire Châtenay-Malabry (92290)",
+  "website": "https://www.abcsalles.com/salle-d-anniversaire-2_chatenay+malabry_v92.html",
+  "source_url": "https://www.abcsalles.com/salle-d-anniversaire-2_chatenay+malabry_v92.html",
+  "source_domain": "abcsalles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.7018975,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_chatenay malabry_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Châtenay-Malabry (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "15-50 pers. Location Idéal pour les petits évènements et les petits budgets. Salle de restaurant de 90 m² avec possibilités de louer avec ou sans cuisine (",
+  "evidence_text": "15-50 pers. Location Idéal pour les petits évènements et les petits budgets. Salle de restaurant de 90 m² avec possibilités de louer avec ou sans cuisine (",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:56+00:00"
+}

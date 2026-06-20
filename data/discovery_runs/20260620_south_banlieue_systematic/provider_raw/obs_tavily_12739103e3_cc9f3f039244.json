@@ -1,0 +1,19 @@
+{
+  "name": "Louer une salle municipale - Chevilly-Larue",
+  "title": "Louer une salle municipale - Chevilly-Larue",
+  "website": "https://www.ville-chevilly-larue.fr/demarches-administratives/salle-municipale",
+  "source_url": "https://www.ville-chevilly-larue.fr/demarches-administratives/salle-municipale",
+  "source_domain": "ville-chevilly-larue.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.6490677,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_chevilly larue_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Chevilly-Larue (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Chaque salle dispose de matériel ainsi que d'un espace cuisine. La location est payante avec un tarif pour les Chevillais et un tarif pour les",
+  "evidence_text": "Chaque salle dispose de matériel ainsi que d'un espace cuisine. La location est payante avec un tarif pour les Chevillais et un tarif pour les",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:50+00:00"
+}

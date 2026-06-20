@@ -1,0 +1,19 @@
+{
+  "name": "Louer une salle municipale - Fontenay-aux-Roses",
+  "title": "Louer une salle municipale - Fontenay-aux-Roses",
+  "website": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale",
+  "source_url": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale",
+  "source_domain": "fontenay-aux-roses.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.61196244,
+  "provider_rank": 3,
+  "discovery_prompt_id": "fr_fontenay aux roses_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Fontenay-aux-Roses (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Logo Fontenay-aux-Roses\n\n# Louer une salle municipale\n\n## Accès rapides :\n\n## Louer une salle municipale\n\n## Les salles municipales\n\n### Salle de l’Église\n\nCaractéristiques :\n\n### Salle du Parc\n\nCaractéristiques :\n\n### Salle Laboissière\n\nCaractéristiques :\n\n### Petites salles du Château Sainte-Barbe\n\nCaractéristiques :\n\n### Salle Sainte-Barbe\n\nCaractéristiques :\n\n### Salle Pierre Bonnard\n\nCaractéristiques :\n\nCaractéristiques\n\n### Espace Rosa Bonheur - salle polyvalente\n\n### Espace Rosa Bonheur - salle de réunion\n\n## Document annexe\n\nFontenay-aux-Roses\n\n© Fontenay-aux-Roses 2023 - Réalisé par Altelis",
+  "evidence_text": "Logo Fontenay-aux-Roses\n\n# Louer une salle municipale\n\n## Accès rapides :\n\n## Louer une salle municipale\n\n## Les salles municipales\n\n### Salle de l’Église\n\nCaractéristiques :\n\n### Salle du Parc\n\nCaractéristiques :\n\n### Salle Laboissière\n\nCaractéristiques :\n\n### Petites salles du Château Sainte-Barbe\n\nCaractéristiques :\n\n### Salle Sainte-Barbe\n\nCaractéristiques :\n\n### Salle Pierre Bonnard\n\nCaractéristiques :\n\nCaractéristiques\n\n### Espace Rosa Bonheur - salle polyvalente\n\n### Espace Rosa Bonheur - salle de réunion\n\n## Document annexe\n\nFontenay-aux-Roses\n\n© Fontenay-aux-Roses 2023 - Réalisé par Altelis",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:45+00:00"
+}

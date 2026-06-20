@@ -1,0 +1,19 @@
+{
+  "name": "Réserver une salle - Mairie Orly",
+  "title": "Réserver une salle - Mairie Orly",
+  "website": "https://www.mairie-orly.fr/reserver-une-salle",
+  "source_url": "https://www.mairie-orly.fr/reserver-une-salle",
+  "source_domain": "mairie-orly.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.47212428,
+  "provider_rank": 3,
+  "discovery_prompt_id": "fr_orly_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Orly (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Située 1 rue Marco Polo, la salle peut accueillir 120 personnes. Matériel à disposition. Office avec un plan de travail, évier deux bacs, armoire chauffante",
+  "evidence_text": "Située 1 rue Marco Polo, la salle peut accueillir 120 personnes. Matériel à disposition. Office avec un plan de travail, évier deux bacs, armoire chauffante",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:16:03+00:00"
+}

@@ -1,0 +1,3820 @@
+[
+  {
+    "venue_entity_id": "obs_tavily_e6608f24a2",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Châtillon (92320) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_chatillon_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_chatillon_v92.html",
+    "source_observations": [
+      "obs_tavily_e6608f24a2"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_e6608f24a2",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_65414b6350",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Châtillon (92320) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-chatillon,92-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-chatillon,92-v.html",
+    "source_observations": [
+      "obs_tavily_65414b6350"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_65414b6350",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_8e5d873d6f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de Salle dans les Hauts de Seine (92) - SnapEvent",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.snapevent.fr/location-de-salle/paris/departement-92",
+    "specific_rental_page_url": "https://www.snapevent.fr/location-de-salle/paris/departement-92",
+    "source_observations": [
+      "obs_tavily_8e5d873d6f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_8e5d873d6f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_27d9202e5a",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_27d9202e5a"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_27d9202e5a",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_24769b78ea",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_24769b78ea"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_24769b78ea",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c52c398611",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_c52c398611"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c52c398611",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_132e3c1550",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_132e3c1550"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_132e3c1550",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_1d2fb83cc8",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_1d2fb83cc8"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_1d2fb83cc8",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_88a564adb1",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_88a564adb1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_88a564adb1",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_60dfb740cf",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à proximité de chez vous sur PagesJaunes.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/activites/location-de-salles.html",
+    "source_observations": [
+      "obs_tavily_60dfb740cf"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_60dfb740cf",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_8d9b477043",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Les meilleures salles à louer - Boulogne-Billancourt | Privateaser",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.privateaser.com/location-salle/top-salles-boulogne-billancourt-92100",
+    "specific_rental_page_url": "https://www.privateaser.com/location-salle/top-salles-boulogne-billancourt-92100",
+    "source_observations": [
+      "obs_tavily_8d9b477043"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_8d9b477043",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_cb0f8335d9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_cb0f8335d9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_cb0f8335d9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_63bd6b75b5",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_63bd6b75b5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_63bd6b75b5",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_ca6fdbe304",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_ca6fdbe304"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ca6fdbe304",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_244974dae0",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_244974dae0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_244974dae0",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_7b4c17e52f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_7b4c17e52f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7b4c17e52f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c7e4b168bb",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_c7e4b168bb"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c7e4b168bb",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b0b41b27e9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_b0b41b27e9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b0b41b27e9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_ff9cd14b79",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_ff9cd14b79"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ff9cd14b79",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_66470af0f3",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Fete à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/party",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/party",
+    "source_observations": [
+      "obs_tavily_66470af0f3"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_66470af0f3",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_grandsgites.com_gite pour stages et activites seminaire yoga developpement personnel entreprise_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Gite pour stages et activités, séminaire, yoga, developpement personnel, entreprise",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.grandsgites.com/gites-stage.htm",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_fa95d882b2"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_fa95d882b2",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_igesa.fr_pdf votre ete 2025 igesa_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] Votre été 2025 - Igesa",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.igesa.fr/fileadmin/user_upload/CATALOGUE_IGESA_VACANCES_ADULTES_ETE_2025.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_428054d130"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_428054d130",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_3d0de7a753",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "16 meilleur Salles Pour Cours De Yoga à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_3d0de7a753"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_3d0de7a753",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_183ba27beb",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_183ba27beb"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_183ba27beb",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_5cb43c1a16",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_5cb43c1a16"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5cb43c1a16",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_aff7069998",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_aff7069998"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_aff7069998",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_f991afb49a",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_f991afb49a"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_f991afb49a",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_7f13f30ddc",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_7f13f30ddc"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7f13f30ddc",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_27c9169d1b",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_27c9169d1b"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_27c9169d1b",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_7c7afea706",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_7c7afea706"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7c7afea706",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_2c3396d4e7",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_2c3396d4e7"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_2c3396d4e7",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_4f9fbc12e1",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_4f9fbc12e1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_4f9fbc12e1",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a56744e84b",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_a56744e84b"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a56744e84b",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_cd188623b0",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_cd188623b0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_cd188623b0",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_d157fa6de5",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_d157fa6de5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d157fa6de5",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_2c3eb42e7d",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_2c3eb42e7d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_2c3eb42e7d",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a2cd68420f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_a2cd68420f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a2cd68420f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_4a40ff1c11",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_4a40ff1c11"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_4a40ff1c11",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_f2386d464d",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_f2386d464d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_f2386d464d",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_2736857b30",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_2736857b30"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_2736857b30",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_df768f5099",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de yoga près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/yoga-class",
+    "source_observations": [
+      "obs_tavily_df768f5099"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_df768f5099",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] LOCATION DE STUDIOS À PARIS ET PROCHE BANLIEUE",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/1401",
+    "source_observations": [
+      "obs_tavily_17790fb9e5",
+      "obs_tavily_92986b37a6"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_17790fb9e5",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_5dbc170d71",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Cours De Danse à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "source_observations": [
+      "obs_tavily_5dbc170d71"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5dbc170d71",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_d1af22bcbb",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de danse près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "source_observations": [
+      "obs_tavily_d1af22bcbb"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d1af22bcbb",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_15753bcb29",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de danse près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "source_observations": [
+      "obs_tavily_15753bcb29"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_15753bcb29",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_6790d40cda",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de danse près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "source_observations": [
+      "obs_tavily_6790d40cda"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_6790d40cda",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_1a81c970ef",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de danse près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "source_observations": [
+      "obs_tavily_1a81c970ef"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_1a81c970ef",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_afe2b826c6",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouver salles pour cours de danse près de chez moi - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-class",
+    "source_observations": [
+      "obs_tavily_afe2b826c6"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_afe2b826c6",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_441da96f1f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "17 meilleur Salles Pour Cours De Pilates à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "source_observations": [
+      "obs_tavily_441da96f1f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_441da96f1f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_47a6253ff9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "17 meilleur Salles Pour Cours De Pilates à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "source_observations": [
+      "obs_tavily_47a6253ff9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_47a6253ff9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c51c255649",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "17 meilleur Salles Pour Cours De Pilates à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "source_observations": [
+      "obs_tavily_c51c255649"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c51c255649",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_caa92df359",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "17 meilleur Salles Pour Cours De Pilates à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/pilates-class",
+    "source_observations": [
+      "obs_tavily_caa92df359"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_caa92df359",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_ec3c50b301",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Studios De Danse à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "source_observations": [
+      "obs_tavily_ec3c50b301"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ec3c50b301",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_69c4cc4cf9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Studios De Danse à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "source_observations": [
+      "obs_tavily_69c4cc4cf9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_69c4cc4cf9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_956a5996f1",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Studios De Danse à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "source_observations": [
+      "obs_tavily_956a5996f1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_956a5996f1",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c5f9535c1e",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Studios De Danse à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "source_observations": [
+      "obs_tavily_c5f9535c1e"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c5f9535c1e",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_7dcfae3008",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Studios De Danse à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/dance-studio",
+    "source_observations": [
+      "obs_tavily_7dcfae3008"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7dcfae3008",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_fb8acdd2a8",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "IZYSHOW — La plateforme de location de salles de répétition",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://lesite.izyshow.com?transaction_type=location-a-la-journee",
+    "specific_rental_page_url": "https://lesite.izyshow.com?transaction_type=location-a-la-journee",
+    "source_observations": [
+      "obs_tavily_fb8acdd2a8"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_fb8acdd2a8",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_63aa59d228",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à Fontenay aux Roses (92)",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/annuaire/fontenay-aux-roses-92/location-de-salles",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/annuaire/fontenay-aux-roses-92/location-de-salles",
+    "source_observations": [
+      "obs_tavily_63aa59d228"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_63aa59d228",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a0f4a4dca4",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle de réception Fontenay-aux-Roses (92260) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-de-reception-2_fontenay+aux+roses_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-de-reception-2_fontenay+aux+roses_v92.html",
+    "source_observations": [
+      "obs_tavily_a0f4a4dca4"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a0f4a4dca4",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_fontenay-aux-roses.fr_louer une salle municipale fontenayauxroses_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Louer une salle municipale - Fontenay-aux-Roses",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_3214e2309f",
+      "obs_tavily_1b7022b128"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_3214e2309f",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_fontenay.fr_reservation de salle fontenaysousboisfr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "RÉSERVATION DE SALLE  - fontenay-sous-bois.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.fontenay.fr/je-participe-a-fontenay/location-de-salle.html",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_55c2f84125"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_55c2f84125",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_limberyoga.com_studio rental_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Studio Rental",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.limberyoga.com/studio-rental.html",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_b67a6293a9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b67a6293a9",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_grandsgites.com_gites avec salle pour stages et activites grands gites_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Gites avec salle pour stages et activités - Grands Gites",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.grandsgites.com/gites-stage.htm",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_6e7004329e",
+      "obs_tavily_57a493a94c",
+      "obs_tavily_facb4def18",
+      "obs_tavily_d40a048fea",
+      "obs_tavily_b2e2fd0ba6"
+    ],
+    "observation_count": 5,
+    "primary_observation_id": "obs_tavily_57a493a94c",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_grand paris associations pour la promotion du sport medailles merite sportif assocefr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Grand Paris - associations pour la promotion du sport, médailles, mérite sportif - Assoce.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/epci/200054781/Grand%20Paris/activite/11192",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_04d477fda5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_04d477fda5",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_seinemaritime 76 sports activites de plein air assocefr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "SEINE-MARITIME (76) - Sports, activités de plein air - Assoce.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/departement/76/SEINE-MARITIME/categorie/11000",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_942c7f4aba",
+      "obs_tavily_184329c3f9"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_942c7f4aba",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_765f6a6796",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_765f6a6796"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_765f6a6796",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b89d53838d",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_b89d53838d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b89d53838d",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_000dbb1521",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_000dbb1521"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_000dbb1521",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_d373935af0",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_d373935af0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d373935af0",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_94f3809be6",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_94f3809be6"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_94f3809be6",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_6bf2bd6ac8",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_6bf2bd6ac8"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_6bf2bd6ac8",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_199413f718",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_199413f718"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_199413f718",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_423d877308",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_423d877308"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_423d877308",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_e7c1fe2f4f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_e7c1fe2f4f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_e7c1fe2f4f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b306873ba4",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Lieux De Reception à louer à proximité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/event",
+    "source_observations": [
+      "obs_tavily_b306873ba4"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b306873ba4",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_3bb6c43a73",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_3bb6c43a73"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_3bb6c43a73",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_bbc504f9fe",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_bbc504f9fe"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_bbc504f9fe",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_40d652221d",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_40d652221d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_40d652221d",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_7646879bc5",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_7646879bc5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7646879bc5",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_2eb748237c",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_2eb748237c"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_2eb748237c",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_ed30a8ed48",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_ed30a8ed48"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ed30a8ed48",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c86826f19d",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_c86826f19d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c86826f19d",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_034882ad27",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_034882ad27"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_034882ad27",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_df9eae6fd6",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Evenement Professionnel à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/corporate-event",
+    "source_observations": [
+      "obs_tavily_df9eae6fd6"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_df9eae6fd6",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_4a6a6552be",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Vanves (92170) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-vanves-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-vanves-v.html",
+    "source_observations": [
+      "obs_tavily_4a6a6552be"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_4a6a6552be",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_cbf4499f47",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Les meilleures salles à louer pas chères - Vanves | Privateaser",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.privateaser.com/location-salle/top-salles-location-pas-cheres-vanves",
+    "specific_rental_page_url": "https://www.privateaser.com/location-salle/top-salles-location-pas-cheres-vanves",
+    "source_observations": [
+      "obs_tavily_cbf4499f47"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_cbf4499f47",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b3e30780e9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Vanves (92170) - ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_vanves_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_vanves_v92.html",
+    "source_observations": [
+      "obs_tavily_b3e30780e9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b3e30780e9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b399c8a312",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Vanves (92170) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_vanves_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_vanves_v92.html",
+    "source_observations": [
+      "obs_tavily_b399c8a312"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b399c8a312",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_64b3f6c9c0",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Spacious Centrally Located Yoga & Dance Studio - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/pages/listings/5d49d4892d4fcb000e469bdc",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_64b3f6c9c0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_64b3f6c9c0",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_grand paris associations pour la promotion du sport medailles_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Grand Paris - associations pour la promotion du sport, médailles ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/epci/200054781/Grand%20Paris/activite/11192",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_9aa6e03351",
+      "obs_tavily_1fc0e9b2dc",
+      "obs_tavily_b6994e9c3d",
+      "obs_tavily_5e11bddb43"
+    ],
+    "observation_count": 4,
+    "primary_observation_id": "obs_tavily_9aa6e03351",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_facebook.com_profs de pilates yoga remplacements annonces echanges d_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Profs de Pilates, Yoga... Remplacements / Annonces / Echanges d ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.facebook.com/groups/2631965077110125",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_071d0f0499"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_071d0f0499",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_standardeventrentals.com_bay area event rentals standard event rentals_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Bay Area Event Rentals | Standard Event Rentals",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.standardeventrentals.com",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_ae9df53da7"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ae9df53da7",
+    "primary_source_reliability": "S2",
+    "primary_page_type": "unknown_website",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b1b2f0eb51",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles De Cours à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/class",
+    "source_observations": [
+      "obs_tavily_b1b2f0eb51"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b1b2f0eb51",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_d4dd10fea3",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles De Cours à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/class",
+    "source_observations": [
+      "obs_tavily_d4dd10fea3"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d4dd10fea3",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_f237edcf0f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles De Cours à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/class",
+    "source_observations": [
+      "obs_tavily_f237edcf0f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_f237edcf0f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c63a542c56",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles De Cours à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/class",
+    "source_observations": [
+      "obs_tavily_c63a542c56"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c63a542c56",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_cd83100975",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles De Cours à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/class",
+    "source_observations": [
+      "obs_tavily_cd83100975"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_cd83100975",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_3e763a7ecd",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles De Cours à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/class",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/class",
+    "source_observations": [
+      "obs_tavily_3e763a7ecd"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_3e763a7ecd",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_12a32a9c6a",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "36 meilleur Salles Pour Evenement Professionnel à louer à Paris, Île-de-France | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/venues/fr/paris--%C3%AEle-de-france/corporate-event-venue",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/venues/fr/paris--%C3%AEle-de-france/corporate-event-venue",
+    "source_observations": [
+      "obs_tavily_12a32a9c6a"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_12a32a9c6a",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_0368bcdd7b",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Meudon (92190) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-meudon-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-meudon-v.html",
+    "source_observations": [
+      "obs_tavily_0368bcdd7b"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_0368bcdd7b",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_4c3a67a8f9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle de réception Meudon (92190) - ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-de-reception-2_meudon_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-de-reception-2_meudon_v92.html",
+    "source_observations": [
+      "obs_tavily_4c3a67a8f9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_4c3a67a8f9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a1902cccb0",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle de réception Meudon (92190) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-de-reception-2_meudon_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-de-reception-2_meudon_v92.html",
+    "source_observations": [
+      "obs_tavily_a1902cccb0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a1902cccb0",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_hangar-y.com_privatisations hangar y_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Privatisations - Hangar Y",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://hangar-y.com/privatisation",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_56e51279b7"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_56e51279b7",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_lokio.fr_location salle entre particuliers lokio_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location Salle entre Particuliers | Lokio",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.lokio.fr/location-salle",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_abe0674956",
+      "obs_tavily_f771020eff"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_abe0674956",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_mitwitoffice.com_location de salles de reunion equipees mitwit_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location de salles de réunion équipées | Mitwit",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://mitwitoffice.com/location-salle-de-reunion",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_47831c56c5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_47831c56c5",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_facebook.com_en cette periode rentree voici les nouveaux ateliers en presence et_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "En cette période rentrée voici les nouveaux ateliers en présence et ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.facebook.com/groups/565593936921379/posts/3316113785202700",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_a2d441bf37"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a2d441bf37",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_73e36756f2",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Meudon (92190) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_meudon_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_meudon_v92.html",
+    "source_observations": [
+      "obs_tavily_73e36756f2"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_73e36756f2",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_aleou.fr_lieux de seminaire a meudon 7 salles disponibles aleou_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Lieux de séminaire à Meudon : 7 salles disponibles | ALEOU",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.aleou.fr/ville/lieux-congres-seminaires/meudon",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_cf7b2880ae"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_cf7b2880ae",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_impulsion-de-vie.fr_location de cabinets de consultation et salles de yoga_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location de cabinets de consultation et salles de Yoga",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.impulsion-de-vie.fr/location-cabinet-consultation-salle-formation-78",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_02ff02951e"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_02ff02951e",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_71d27959c3",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Bougival (78380) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-bougival-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-bougival-v.html",
+    "source_observations": [
+      "obs_tavily_71d27959c3"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_71d27959c3",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_4celebrations.com_salle a louer bienetre avec ou sans hebergement_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Salle à louer bien-être avec ou sans hébergement",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://4celebrations.com/produit/espace-a-louer-inspirant-avec-ou-sans-hebergement",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_ed465efb86"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ed465efb86",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_retreatcenterguide.com_salles a louer pour stage et formations retreatcenterguidecom_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Salles à louer pour stage et formations - RetreatCenterGuide.com",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.retreatcenterguide.com/salles-a-louer",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_fce39a7270",
+      "obs_tavily_815829b7e4",
+      "obs_tavily_97fbcaa3f5"
+    ],
+    "observation_count": 3,
+    "primary_observation_id": "obs_tavily_fce39a7270",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_youtube.com_vivre du yoga trouver et louer son propre studio_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Vivre du Yoga : Trouver et Louer son propre Studio 🗝️🕯️",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.youtube.com/watch?v=4W8jwBs9gc8",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_f937edcd67"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_f937edcd67",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_ac8b11f940",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Louer un studio de danse et de yoga",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.eventlocations.com/fr/studio-de-danse-studio-de-yoga",
+    "specific_rental_page_url": "https://www.eventlocations.com/fr/studio-de-danse-studio-de-yoga",
+    "source_observations": [
+      "obs_tavily_ac8b11f940"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ac8b11f940",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_5e0eb9fcc3",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Louer un studio de danse et de yoga - eventlocations.com",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.eventlocations.com/fr/studio-de-danse-studio-de-yoga",
+    "specific_rental_page_url": "https://www.eventlocations.com/fr/studio-de-danse-studio-de-yoga",
+    "source_observations": [
+      "obs_tavily_5e0eb9fcc3"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5e0eb9fcc3",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_9e7feabd7b",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Louer un studio de danse et de yoga - eventlocations.com",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.eventlocations.com/fr/studio-de-danse-studio-de-yoga",
+    "specific_rental_page_url": "https://www.eventlocations.com/fr/studio-de-danse-studio-de-yoga",
+    "source_observations": [
+      "obs_tavily_9e7feabd7b"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9e7feabd7b",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a3bbe46434",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "17 meilleur Salles De Mariage à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/wedding",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/wedding",
+    "source_observations": [
+      "obs_tavily_a3bbe46434"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a3bbe46434",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_0b75b155a2",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "17 meilleur Salles De Mariage à louer à proximité",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/wedding",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/wedding",
+    "source_observations": [
+      "obs_tavily_0b75b155a2"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_0b75b155a2",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_0c472fb45c",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Les meilleures salles à louer - Le Plessis-Robinson | Privateaser",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.privateaser.com/location-salle/top-salles-le-plessis-robinson-92350",
+    "specific_rental_page_url": "https://www.privateaser.com/location-salle/top-salles-le-plessis-robinson-92350",
+    "source_observations": [
+      "obs_tavily_0c472fb45c"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_0c472fb45c",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_4d884e38db",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Les meilleures salles à louer - Le Plessis-Robinson | Privateaser",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.privateaser.com/location-salle/top-salles-le-plessis-robinson-92350",
+    "specific_rental_page_url": "https://www.privateaser.com/location-salle/top-salles-le-plessis-robinson-92350",
+    "source_observations": [
+      "obs_tavily_4d884e38db"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_4d884e38db",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_bc8b167cf9",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Le Plessis-Robinson (92350) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-le-plessis-robinson-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-le-plessis-robinson-v.html",
+    "source_observations": [
+      "obs_tavily_bc8b167cf9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_bc8b167cf9",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "venue_venue_facebook.com_il reste 2 places pour latelier yoga parentenfant de ce dimanche_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Il reste 2 places pour l'atelier Yoga Parent-Enfant de ce dimanche ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.facebook.com/groups/1514664349034127/posts/2403897726777447",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_5621e9c414"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5621e9c414",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Privatisation | Maison des arts de Plessis Robinson Privatisation | Maison des arts de Plessis Robinson",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_532d921d44"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_532d921d44",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_hautsdeseine 92 sports activites de plein air assocefr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "HAUTS-DE-SEINE (92) - Sports, activités de plein air - Assoce.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/departement/92/HAUTS-DE-SEINE/categorie/11000",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_e1e4bc98ca",
+      "obs_tavily_d994f7bec2"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_e1e4bc98ca",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_corepoweryoga.com_yoga studios in new york city corepower yoga_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Yoga Studios in New York City - CorePower Yoga",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.corepoweryoga.com/yoga-studio/all-locations/new-york-city",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_9cf91989dc"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9cf91989dc",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_yogaspace.nyc_yoga space nyc authentic studio in greenpoint williamsburg long island city and our newest location in greenwich village rated among the best yoga studios in new york city 4_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Yoga Space NYC - Authentic Studio in Greenpoint, Williamsburg, Long Island City, and our newest location in Greenwich Village. Rated among the best yoga studios in New York City (4",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.yogaspace.nyc",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_506eb5b0fd"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_506eb5b0fd",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_seiless.com_special events private dining in midtown manhattan sei less nyc_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Special Events & Private Dining in Midtown Manhattan | Sei Less NYC",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.seiless.com/special-events",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_7ee4d120fa"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7ee4d120fa",
+    "primary_source_reliability": "S2",
+    "primary_page_type": "unknown_website",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_1ec335e92f",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Le Plessis-Robinson (92350) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_le+plessis+robinson_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_le+plessis+robinson_v92.html",
+    "source_observations": [
+      "obs_tavily_1ec335e92f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_1ec335e92f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_chatenay-malabry.fr_pdf les nouvelles de chatenaymalabry_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] Les nouvelles de - Châtenay-Malabry",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.chatenay-malabry.fr/PDF/magazine-agenda/Chatenay-Mag-295.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_5bef5b7cc9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5bef5b7cc9",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_magic-form.fr_magic form salles de sport et fitness avec coachs_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Magic Form - Salles de sport et fitness avec coachs",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://magic-form.fr",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_eadd82b4c1",
+      "obs_tavily_c44bc136ca"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_eadd82b4c1",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_2094218c78",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle d'anniversaire Châtenay-Malabry (92290)",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-d-anniversaire-2_chatenay+malabry_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-d-anniversaire-2_chatenay+malabry_v92.html",
+    "source_observations": [
+      "obs_tavily_2094218c78"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_2094218c78",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_5f10b2b361",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Châtenay-Malabry (92290) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-chatenay-malabry-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-chatenay-malabry-v.html",
+    "source_observations": [
+      "obs_tavily_5f10b2b361"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5f10b2b361",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_379ecd108a",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Châtenay-Malabry (92290) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-chatenay-malabry-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-chatenay-malabry-v.html",
+    "source_observations": [
+      "obs_tavily_379ecd108a"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_379ecd108a",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_9aebf33bb2",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "La Villa Châtenay : dispo et tarif pour événement pro",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.snapevent.fr/location-de-salle/paris/villa-chatenay-435",
+    "specific_rental_page_url": "https://www.snapevent.fr/location-de-salle/paris/villa-chatenay-435",
+    "source_observations": [
+      "obs_tavily_9aebf33bb2"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9aebf33bb2",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_facebook.com_bonsoir voici le planning a jour des cours de hatha yoga que je_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Bonsoir, Voici le planning à jour des cours de Hatha Yoga que je ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.facebook.com/groups/320970333126394/posts/1101428881747198",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_1e966dae11"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_1e966dae11",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_joineryhotel.com_meetings and events spaces in pittsburgh joinery hotel_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Meetings and Events Spaces in Pittsburgh | Joinery Hotel",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.joineryhotel.com/meetings-events",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_edb6551b2e"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_edb6551b2e",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "municipal_facility_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_calameo.com_calameo avril 2014_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Calaméo - Avril 2014",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.calameo.com/books/000773210073b3ecd48fc",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_01af39a7a1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_01af39a7a1",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "municipal_facility_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_5e4686041d",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Châtenay-Malabry (92290) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_chatenay+malabry_v92.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_chatenay+malabry_v92.html",
+    "source_observations": [
+      "obs_tavily_5e4686041d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_5e4686041d",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_chatenay-malabry.fr_pdf semaine femme chatenaymalabry_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] SEMAINE FEMME - Châtenay-Malabry",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.chatenay-malabry.fr/PDF/magazine-agenda/Agenda-311.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_0754b99ac7"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_0754b99ac7",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_l-azimut.fr_pdf theatrefirmingemierlapiscinefr lazimut antony_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] theatrefirmingemier-lapiscine.fr - L'Azimut | Antony",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://l-azimut.fr/wp-content/uploads/2020/08/progsaison-20-21-webr2.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_a13356b018"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a13356b018",
+    "primary_source_reliability": "S2",
+    "primary_page_type": "pdf_document",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a123d0ab2b",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Cachan (94230) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_cachan_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_cachan_v94.html",
+    "source_observations": [
+      "obs_tavily_a123d0ab2b"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a123d0ab2b",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_ville-cachan.fr_location de salle ville de cachan_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location de salle - Ville de Cachan",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://ville-cachan.fr/location-de-salle",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_94ab545d0f"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_94ab545d0f",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_01b3210739",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salles à Cachan",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.pagesjaunes.fr/annuaire/cachan-94/location-de-salles",
+    "specific_rental_page_url": "https://www.pagesjaunes.fr/annuaire/cachan-94/location-de-salles",
+    "source_observations": [
+      "obs_tavily_01b3210739"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_01b3210739",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_6a6d87b1af",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Cachan (94230) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-cachan-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-cachan-v.html",
+    "source_observations": [
+      "obs_tavily_6a6d87b1af"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_6a6d87b1af",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_55c05c7ba6",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Saint-Maur-des-Fossés (94100) : Annonces et offres d'emploi",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.jemepropose.com/annonces/location-de-salle/st-maur-des-fosses-94",
+    "specific_rental_page_url": "https://www.jemepropose.com/annonces/location-de-salle/st-maur-des-fosses-94",
+    "source_observations": [
+      "obs_tavily_55c05c7ba6"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_55c05c7ba6",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_0403376568",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Le Loft Privé | Privateaser",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.privateaser.com/lieu/2490-le-loft-prive",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_0403376568"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_0403376568",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_valdemarne 94 jumelages echanges culturels organisation dechanges linguistiques echanges culturels au plan international assocefr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "VAL-DE-MARNE (94) - jumelages, échanges culturels, organisation d'échanges linguistiques, échanges culturels au plan international - Assoce.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/departement/94/VAL-DE-MARNE/categorie/9050",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_089055005d"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_089055005d",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_fed705038b",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "33 Best Yoga Studios for Rent Near Me | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/plan/yoga-studio",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_fed705038b"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_fed705038b",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_instagram.com_loue salle de sport salle de danse vous instagram_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "LOUE SALLE DE SPORT /SALLE DE DANSE Vous ... - Instagram",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.instagram.com/p/DX65eHRDUPN",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_0613c70b33"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_0613c70b33",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_11a3275d65",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouvez un lieu pour votre activité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/activities",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_11a3275d65"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_11a3275d65",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_01ca864576",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Trouvez un lieu pour votre activité - Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/activities",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_01ca864576"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_01ca864576",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_32c6865459",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Fresnes (94260) - ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_fresnes_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_fresnes_v94.html",
+    "source_observations": [
+      "obs_tavily_32c6865459"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_32c6865459",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_73a61ac49a",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Fresnes (94260) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_fresnes_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_fresnes_v94.html",
+    "source_observations": [
+      "obs_tavily_73a61ac49a"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_73a61ac49a",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_a60bb2d941",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle à Fresnes (94260) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/location-de-salle-2-fresnes,94-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/location-de-salle-2-fresnes,94-v.html",
+    "source_observations": [
+      "obs_tavily_a60bb2d941"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a60bb2d941",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_4celebrations.com_salle a louer atelier bienetre en studio 4 celebrations_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Salle à louer / atelier bien-être en studio - 4 Celebrations",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://4celebrations.com/produit/espace-a-louer-inspirant-avec-ou-sans-hebergement",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_f05e7186cf"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_f05e7186cf",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_facebook.com_bonjour a toutes et tous je loue ma salle de yoga de 50m dans le_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Bonjour à toutes et tous, Je loue ma salle de yoga de 50m² dans le ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.facebook.com/groups/1091338634760335/posts/1965716447322545",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_99170f6f44",
+      "obs_tavily_0105c0b226"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_99170f6f44",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_instagram.com_la salle de meditation du parc la belle idee on instagram_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "La Salle de méditation du Parc La Belle Idée on Instagram",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.instagram.com/reel/DY9RveYiAnc",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_18ba1df556"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_18ba1df556",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_lanouvellerepublique.fr_xml httpswwwlanouvellerepubliquefrsitemapxmlpart_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[XML] https://www.lanouvellerepublique.fr/sitemap.xml?part ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.lanouvellerepublique.fr/sitemap.xml?part=contentweek&year=2020&week=06",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_c64a0c5c71",
+      "obs_tavily_d5851c7d1b"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_c64a0c5c71",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c1d32894fd",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle des fêtes à L'Haÿ-les-Roses (94240)",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/salle-des-fetes-2-l-hay-les-roses-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/salle-des-fetes-2-l-hay-les-roses-v.html",
+    "source_observations": [
+      "obs_tavily_c1d32894fd"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c1d32894fd",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_lhaylesroses.fr_location de salles_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location de salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.lhaylesroses.fr/ma-ville/location-de-salles",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_7a56f8908c"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7a56f8908c",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_iledefrance.fr_pdf rapport pour la commission permanente du conseil regional_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] Rapport pour la commission permanente du conseil régional ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.iledefrance.fr/actes/deliberations/CP2024-326RAP.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_d7bb3396f4"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d7bb3396f4",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_fr.linkedin.com_anthony le cigne zenika_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Anthony Le Cigne - Zenika",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://fr.linkedin.com/in/anthonylecigne",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_7c601e8402"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7c601e8402",
+    "primary_source_reliability": "S2",
+    "primary_page_type": "unknown_website",
+    "geo_status": "out_of_zone"
+  },
+  {
+    "venue_entity_id": "obs_tavily_8006602f2a",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle des fêtes L'Haÿ-les-Roses (94240) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-des-fetes-2_l+hay+les+roses_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-des-fetes-2_l+hay+les+roses_v94.html",
+    "source_observations": [
+      "obs_tavily_8006602f2a"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_8006602f2a",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_my-event.com_myevent latelier seminaire lhay les roses_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "MYevent - L'Atelier - séminaire - L'HAY LES ROSES",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.my-event.com/l-atelier",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_09a2b8d947"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_09a2b8d947",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_ea76534869",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "20 meilleur Salles Pour Rencontre Networking à louer à proximité | Peerspace",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.peerspace.com/fr/plan/networking",
+    "specific_rental_page_url": "https://www.peerspace.com/fr/plan/networking",
+    "source_observations": [
+      "obs_tavily_ea76534869"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_ea76534869",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Le Rooftop, espaces de location événementielle, situé à Champigny-Sur-Marne (94) | location de salle | 309 Avenue du Général de Gaulle, Champigny-sur-Marne, France",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.le-rooftop.com",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_d3acb3b867"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_d3acb3b867",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_ville-chevilly-larue.fr_louer une salle municipale chevillylarue_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Louer une salle municipale - Chevilly-Larue",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.ville-chevilly-larue.fr/demarches-administratives/salle-municipale",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_12739103e3",
+      "obs_tavily_1134499e5f"
+    ],
+    "observation_count": 2,
+    "primary_observation_id": "obs_tavily_12739103e3",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_88cd4903e4",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle de mariage Chevilly-Larue (94550)",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-de-mariage-2_chevilly+larue_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-de-mariage-2_chevilly+larue_v94.html",
+    "source_observations": [
+      "obs_tavily_88cd4903e4"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_88cd4903e4",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_9a89b3a191",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle de mariage Chevilly-Larue (94550) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/salle-de-mariage-2_chevilly+larue_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/salle-de-mariage-2_chevilly+larue_v94.html",
+    "source_observations": [
+      "obs_tavily_9a89b3a191"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9a89b3a191",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_7cd04e1578",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location salle de formation à Chevilly-Larue (94550) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/salle-de-formation-3-chevilly-larue-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/salle-de-formation-3-chevilly-larue-v.html",
+    "source_observations": [
+      "obs_tavily_7cd04e1578"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_7cd04e1578",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_assoce.fr_valdemarne 94 jumelages echanges culturels assoce_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "VAL-DE-MARNE (94) - jumelages, échanges culturels ... - Assoce",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://assoce.fr/departement/94/VAL-DE-MARNE/categorie/9050",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_bb5650e497"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_bb5650e497",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_venue_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_cityoflaurel.org_facility pavilion rentals laurel md_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Facility & Pavilion Rentals | Laurel, MD",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.cityoflaurel.org/335/Facility-Pavilion-Rentals",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_f1ffa3e903"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_f1ffa3e903",
+    "primary_source_reliability": "S0",
+    "primary_page_type": "unknown",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_instagram.com_fete de fin dannee au cpa marc sangnier samedi 20_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "FÊTE DE FIN D'ANNÉE AU CPA MARC SANGNIER Samedi 20 ...",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.instagram.com/p/DZPU4lNjgFg",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_26951e3717"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_26951e3717",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "obs_tavily_1a1a172577",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Salle des fêtes à Orly (94310)",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/salle-des-fetes-2-orly-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/salle-des-fetes-2-orly-v.html",
+    "source_observations": [
+      "obs_tavily_1a1a172577"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_1a1a172577",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_mairie-orly.fr_reserver une salle mairie orly_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Réserver une salle - Mairie Orly",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.mairie-orly.fr/reserver-une-salle",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_3fd417c7d9"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_3fd417c7d9",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_wojo.com_location salle de reunion pour 10 personnes salle de reunion disruptif wojo paris novotel coeur dorly airport_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location salle de réunion pour 10 personnes - Salle de réunion - Disruptif | Wojo Paris - Novotel Coeur d'Orly Airport",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.wojo.com/fr-FR/service/salles-de-reunion/europe/france/ile-de-france/orly/orly-aeroport/paris-novotel-coeur-d-orly-airport/wojo-paris-novotel-coeur-d-orly-airport/salle-de-reunion-disruptif",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_c403b93091"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c403b93091",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_instagram.com_instagram_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Instagram",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.instagram.com/p/DUi3WI5mExg",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_4c75d14569"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_4c75d14569",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "social",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_lhaylesroses.fr_pdf des activites lhalesroses_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] des activités - L'Haÿ-les-Roses",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.lhaylesroses.fr/images/5-Culture-sports-loisirs/Guide_activites_2022_2023.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_1f0d30d3c5"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_1f0d30d3c5",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "geo_unknown"
+  },
+  {
+    "venue_entity_id": "venue_venue_iledefrance.fr_pdf deliberation ncp 2024139 region iledefrance_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "[PDF] DÉLIBÉRATION N°CP 2024-139 - Région Ile-de-France",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.iledefrance.fr/actes/deliberations/CP2024-139DEL.pdf",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_a89e1577b3"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_a89e1577b3",
+    "primary_source_reliability": "S2",
+    "primary_page_type": "pdf_document",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_9f7259b4ad",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Agence à Charenton-le-Pont (94220) - 1001 Salles PRO",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/agence-3-charenton-le-pont-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/agence-3-charenton-le-pont-v.html",
+    "source_observations": [
+      "obs_tavily_9f7259b4ad"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9f7259b4ad",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_9d4967f796",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Incentive à Charenton-le-Pont (94220) - 1001 Salles PRO",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/incentive-3-charenton-le-pont-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/incentive-3-charenton-le-pont-v.html",
+    "source_observations": [
+      "obs_tavily_9d4967f796"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9d4967f796",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_9f5b353885",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Le Kanoun à Charenton-le-Pont (94220) - Location de salle pour mariage",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/mariage/le-kanoun.aspx",
+    "specific_rental_page_url": "https://www.1001salles.com/mariage/le-kanoun.aspx",
+    "source_observations": [
+      "obs_tavily_9f5b353885"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_9f5b353885",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_charenton.fr_charentonfr locations de salles_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Charenton.fr | Locations de salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_dd927364e1"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_dd927364e1",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_6fe7ab7f1c",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Domaine Mariage à Charenton-le-Pont (94220) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/1-domaine-salle-de-mariage-2-charenton-le-pont-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/1-domaine-salle-de-mariage-2-charenton-le-pont-v.html",
+    "source_observations": [
+      "obs_tavily_6fe7ab7f1c"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_6fe7ab7f1c",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_b68d4238f3",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Décoration à Charenton-le-Pont (94220) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/decoration-2-charenton-le-pont-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/decoration-2-charenton-le-pont-v.html",
+    "source_observations": [
+      "obs_tavily_b68d4238f3"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_b68d4238f3",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_40753a90c4",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Transports à Charenton-le-Pont (94220) - 1001 Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.1001salles.com/transports-2-charenton-le-pont-v.html",
+    "specific_rental_page_url": "https://www.1001salles.com/transports-2-charenton-le-pont-v.html",
+    "source_observations": [
+      "obs_tavily_40753a90c4"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_40753a90c4",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "obs_tavily_c1d70cb609",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "aggregator_observation",
+    "canonical_name": "Location de salle Charenton-le-Pont (94220) — ABC Salles",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.abcsalles.com/location-de-salle-2_charenton+le+pont_v94.html",
+    "specific_rental_page_url": "https://www.abcsalles.com/location-de-salle-2_charenton+le+pont_v94.html",
+    "source_observations": [
+      "obs_tavily_c1d70cb609"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_c1d70cb609",
+    "primary_source_reliability": "S1",
+    "primary_page_type": "aggregator_listing",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_charenton.fr_locations de salles charentonfr_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Locations de salles - Charenton.fr",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_35c43753f0"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_35c43753f0",
+    "primary_source_reliability": "S4",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  },
+  {
+    "venue_entity_id": "venue_venue_bureauxlocaux.com_location bureaux charentonlepont bureauxlocauxcom_",
+    "schema_version": "2026-06-20.v1",
+    "entity_status": "candidate",
+    "canonical_name": "Location Bureaux Charenton-le-Pont - BureauxLocaux.com",
+    "canonical_city": "",
+    "canonical_department": "",
+    "canonical_lat": "",
+    "canonical_lon": "",
+    "official_website_url": "https://www.bureauxlocaux.com/immobilier-d-entreprise/annonces/charenton-le-pont-94220/location-bureaux",
+    "specific_rental_page_url": "",
+    "source_observations": [
+      "obs_tavily_e5ac639a5e"
+    ],
+    "observation_count": 1,
+    "primary_observation_id": "obs_tavily_e5ac639a5e",
+    "primary_source_reliability": "S3",
+    "primary_page_type": "official_rental_page",
+    "geo_status": "in_scope"
+  }
+]

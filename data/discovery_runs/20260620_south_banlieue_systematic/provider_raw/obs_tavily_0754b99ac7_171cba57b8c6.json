@@ -1,0 +1,19 @@
+{
+  "name": "[PDF] SEMAINE FEMME - Châtenay-Malabry",
+  "title": "[PDF] SEMAINE FEMME - Châtenay-Malabry",
+  "website": "https://www.chatenay-malabry.fr/PDF/magazine-agenda/Agenda-311.pdf",
+  "source_url": "https://www.chatenay-malabry.fr/PDF/magazine-agenda/Agenda-311.pdf",
+  "source_domain": "chatenay-malabry.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.43828082,
+  "provider_rank": 4,
+  "discovery_prompt_id": "fr_chatenay malabry_prive",
+  "discovery_prompt": "Salles privées à louer à Châtenay-Malabry (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise.",
+  "description": "Renseignements : 06 62 84 72 83 (secrétaire) \u0007 \u0007 \u0007 PARCOURS AUTONOMIE MÉMOIRE Lundis 9, 16, 23 et 30 mars Entraînements cérébraux menés par des séniors bénévoles. À l’Espace Séniors (291-293 avenue de la Division Leclerc), à partir de 10h. Proposé gratuitement par la Ville.\nRenseignements : 01 46 32 46 69 (Animation Séniors) \u0007 \u0007 SUMI-E Lundi 9 mars Atelier d’art japonais de peinture à l’encre. À 14h à l’Espace Séniors (291-293 avenue de la Division Leclerc). Proposé par la Ville. Tarif : 10 € (14 € avec le déjeuner).\nRenseignements et réservations : 01 46 32 46 69 (Animation Séniors) \u0007 \u0007 SEMAINE DE LA FEMME : MANUCURE ET RACLETTE PARTY ! [...] Renseignements : 01 46 32 87 77 (Espace Famille Lamartine) \u0007 \u0007 SEMAINE DE LA FEMME : SOPHROLOGIE Samedi 14 mars Séance gratuite ouverte à toutes, proposée par l’ASVCM Judo. De 14h30 à 15h30 au complexe sportif Léonard de Vinci (salle de dojo) (avenue Léonard de Vinci). Renseignements : 06 33 82 98 97 (ASVCM Judo) \u0007 \u0007 SEMAINE DE LA FEMME : « RÉVÈLE TON POTENTIEL » Jeudi 12 mars Après-midi d’accueil et d’écoute des mamans accompagnées par la Réussite Éducative. À partir de 13h30 dans les locaux de Réussite Éducative (2/ 4 place Léon Blum). [...] exposent et vendent leurs créations. Paiement en espèces uniquement. De 10h à 16h à l’Espace Famille Lamartine (1 rue Lamartine). Entrée libre. Restauration sur place.",
+  "evidence_text": "Renseignements : 06 62 84 72 83 (secrétaire) \u0007 \u0007 \u0007 PARCOURS AUTONOMIE MÉMOIRE Lundis 9, 16, 23 et 30 mars Entraînements cérébraux menés par des séniors bénévoles. À l’Espace Séniors (291-293 avenue de la Division Leclerc), à partir de 10h. Proposé gratuitement par la Ville.\nRenseignements : 01 46 32 46 69 (Animation Séniors) \u0007 \u0007 SUMI-E Lundi 9 mars Atelier d’art japonais de peinture à l’encre. À 14h à l’Espace Séniors (291-293 avenue de la Division Leclerc). Proposé par la Ville. Tarif : 10 € (14 € avec le déjeuner).\nRenseignements et réservations : 01 46 32 46 69 (Animation Séniors) \u0007 \u0007 SEMAINE DE LA FEMME : MANUCURE ET RACLETTE PARTY ! [...] Renseignements : 01 46 32 87 77 (Espace Famille Lamartine) \u0007 \u0007 SEMAINE DE LA FEMME : SOPHROLOGIE Samedi 14 mars Séance gratuite ouverte à toutes, proposée par l’ASVCM Judo. De 14h30 à 15h30 au complexe sportif Léonard de Vinci (salle de dojo) (avenue Léonard de Vinci). Renseignements : 06 33 82 98 97 (ASVCM Judo) \u0007 \u0007 SEMAINE DE LA FEMME : « RÉVÈLE TON POTENTIEL » Jeudi 12 mars Après-midi d’accueil et d’écoute des mamans accompagnées par la Réussite Éducative. À partir de 13h30 dans les locaux de Réussite Éducative (2/ 4 place Léon Blum). [...] exposent et vendent leurs créations. Paiement en espèces uniquement. De 10h à 16h à l’Espace Famille Lamartine (1 rue Lamartine). Entrée libre. Restauration sur place.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:02+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Salle de méditation du Parc La Belle Idée on Instagram",
+  "title": "La Salle de méditation du Parc La Belle Idée on Instagram",
+  "website": "https://www.instagram.com/reel/DY9RveYiAnc",
+  "source_url": "https://www.instagram.com/reel/DY9RveYiAnc",
+  "source_domain": "instagram.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.12496949,
+  "provider_rank": 7,
+  "discovery_prompt_id": "fr_fresnes_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Fresnes (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Au programme : séance de yoga, un atelier chant et danse, des ... personnes qu'on ne connaît pas et qu'on découvre donc beaucoup de",
+  "evidence_text": "Au programme : séance de yoga, un atelier chant et danse, des ... personnes qu'on ne connaît pas et qu'on découvre donc beaucoup de",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:22+00:00"
+}
