@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prospection salles IDF</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/style.css?v=20260619-enrich1">
+<link rel="stylesheet" href="css/style.css?v=20260620-import1">
 </head>
 <body>
 <div class="app-shell">
@@ -30,6 +30,13 @@
     <section class="filters">
       <label class="field-label">Recherche</label>
       <input type="search" id="search" placeholder="Nom, ville, contact, notes…" class="input">
+
+      <label class="field-label">Source de données</label>
+      <select id="dataset-filter" class="input">
+        <option value="all">Tout : salles + candidats Beyond</option>
+        <option value="venues">Salles qualifiées uniquement</option>
+        <option value="candidates">Candidats sourcing Beyond uniquement</option>
+      </select>
 
       <div class="grid-2">
         <div>
@@ -63,8 +70,8 @@
 
       <div class="grid-2">
         <div>
-          <label class="field-label">Capacité max <span id="cap-val">≤20</span></label>
-          <input type="range" id="cap-max" min="5" max="100" value="20" class="slider">
+          <label class="field-label">Capacité max <span id="cap-val">≤100</span></label>
+          <input type="range" id="cap-max" min="5" max="200" value="100" class="slider">
         </div>
         <div>
           <label class="field-label">Tri</label>
@@ -125,6 +132,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260619-enrich1"></script>
+<script src="js/app.js?v=20260620-import1"></script>
 </body>
 </html>

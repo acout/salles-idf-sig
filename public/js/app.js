@@ -9,7 +9,7 @@ const STATUS = {
 };
 const STATUS_ORDER = Object.keys(STATUS);
 const IDF_BBOX = { minLat:48.1, maxLat:49.1, minLon:1.4, maxLon:3.6 };
-const state = { data:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dept:'all', status:'all', quality:'all', capMax:20, sort:'fit' }, crm:{}, quality:{} };
+const state = { data:null, venues:null, candidates:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dataset:'all', dept:'all', status:'all', quality:'all', capMax:100, sort:'fit' }, crm:{}, quality:{} };
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -24,8 +24,10 @@ function toast(msg){ const el=document.createElement('div'); el.className='toast
 
 function fitColor(s){ s=+s||0; if(s>=85)return'#0a7'; if(s>=70)return'#8bc34a'; if(s>=55)return'#ffc107'; return'#ff7043'; }
 function statusPill(status){ return `<span class="pill status-${status||'new'}">${esc(STATUS[status]||STATUS.new)}</span>`; }
-function venueId(p){ return p.id || p.name; }
-function capacity(p){ return +(p.capacity_max_detected||0) || 999; }
+function venueId(p){ return p.id || p.candidate_id || p.name; }
+function isCandidate(p){ return p._dataset === 'candidate'; }
+function datasetLabel(p){ return isCandidate(p) ? 'Candidat Beyond' : 'Salle qualifiée'; }
+function capacity(p){ return +(p.capacity_max_detected||p.capacity_max||0) || (isCandidate(p) ? 0 : 999); }
 function displayProps(f){
   const raw=f.properties, c=crmFor(venueId(raw)), o=c.overrides||{};
   const dp={...raw};
@@ -39,7 +41,7 @@ function displayProps(f){
 }
 function originalHint(raw,dp,key,label){ return dp._ov?.[key] ? `<div class="src-orig">Source ${label} : ${esc(raw[key==='price'?'price_text':key==='capacity'?'capacity_text':key]||'—')}</div>` : ''; }
 function overrideBadgeHTML(dp){ const badges=[]; if(dp._hasOverride) badges.push('<span class="qbadge edited">corrigé local</span>'); if(dp._sourceReliability==='reliable') badges.push('<span class="qbadge ok">Source OK</span>'); if(dp._sourceReliability==='uncertain') badges.push('<span class="qbadge issue">Source ?</span>'); if(dp._sourceReliability==='bad') badges.push('<span class="qbadge bad">Source mauvaise</span>'); return badges.join(''); }
-function coordsOf(f){ const c=f.geometry?.coordinates; if(!c||c.length<2)return null; const [lon,lat]=c.map(Number); return Number.isFinite(lat)&&Number.isFinite(lon)&&insideIdf(lat,lon) ? [lat,lon] : null; }
+function coordsOf(f){ const c=f.geometry?.coordinates; if(!c||c.length<2||c[0]===null||c[1]===null)return null; const [lon,lat]=c.map(Number); return Number.isFinite(lat)&&Number.isFinite(lon)&&insideIdf(lat,lon) ? [lat,lon] : null; }
 const QUALITY_LABELS = {
   contact_missing:'Contact ?', price_missing:'Prix ?', capacity_uncertain:'Capacité ?', duplicate_suspect:'Doublon ?', geocode_suspect:'Géocode ?'
 };
@@ -52,20 +54,20 @@ function qualityBadgesHTML(id){ const f=findFeature(id), dp=f?displayProps(f):nu
 function buildQuality(){
   state.quality = {};
   const nameMap=new Map(), siteMap=new Map(), coordMap=new Map();
-  state.data.features.forEach(f=>{ const p=f.properties,id=venueId(p), c=f.geometry?.coordinates||[]; const n=normName(p), site=normSite(p.website||p.source_url), coord=c.length>=2?`${(+c[1]).toFixed(5)},${(+c[0]).toFixed(5)}`:''; if(n){ if(!nameMap.has(n))nameMap.set(n,[]); nameMap.get(n).push(id);} if(site){ if(!siteMap.has(site))siteMap.set(site,[]); siteMap.get(site).push(id);} if(coord){ if(!coordMap.has(coord))coordMap.set(coord,[]); coordMap.get(coord).push({id,n}); } });
+  state.data.features.forEach(f=>{ const p=f.properties,id=venueId(p), c=f.geometry?.coordinates||[]; const n=normName(p), site=normSite(p.website||p.source_url), hasCoord=c.length>=2 && c[0]!==null && c[1]!==null && Number.isFinite(+c[0]) && Number.isFinite(+c[1]), coord=hasCoord?`${(+c[1]).toFixed(5)},${(+c[0]).toFixed(5)}`:''; if(n){ if(!nameMap.has(n))nameMap.set(n,[]); nameMap.get(n).push(id);} if(site){ if(!siteMap.has(site))siteMap.set(site,[]); siteMap.get(site).push(id);} if(coord){ if(!coordMap.has(coord))coordMap.set(coord,[]); coordMap.get(coord).push({id,n}); } });
   state.data.features.forEach(f=>{ const raw=f.properties,id=venueId(raw),p=displayProps(f), issues=[]; const c=f.geometry?.coordinates||[]; const lat=+c[1], lon=+c[0];
     if(isBlank(p.contact)) issues.push('contact_missing');
     if(isBlank(p.price_text)) issues.push('price_missing');
     if(!p._ov.capacity && (isBlank(p.capacity_text) || capacity(p)>=999)) issues.push('capacity_uncertain');
-    const n=normName(p), site=normSite(p.website||p.source_url), coord=c.length>=2?`${lat.toFixed(5)},${lon.toFixed(5)}`:'';
+    const n=normName(p), site=normSite(p.website||p.source_url), hasCoord=c.length>=2 && c[0]!==null && c[1]!==null && Number.isFinite(lat) && Number.isFinite(lon), coord=hasCoord?`${lat.toFixed(5)},${lon.toFixed(5)}`:'';
     const sameName=n && (nameMap.get(n)||[]).length>1, sameSite=site && (siteMap.get(site)||[]).length>1;
     const sameCoordClose=coord && (coordMap.get(coord)||[]).some(o=>o.id!==id && (o.n===n || o.n.includes(n) || n.includes(o.n)));
     if(sameName || sameSite || sameCoordClose) issues.push('duplicate_suspect');
-    const gs=Number(p.geocode_score); if(isBlank(p.address) || (Number.isFinite(gs) && gs<0.55) || !insideIdf(lat,lon)) issues.push('geocode_suspect');
+    const gs=Number(p.geocode_score); if(isBlank(p.address) || (Number.isFinite(gs) && gs<0.55) || !hasCoord || !insideIdf(lat,lon)) issues.push('geocode_suspect');
     state.quality[id] = { issues:[...new Set(issues)], score:issues.length };
   });
 }
-function searchableText(f){ const raw=f.properties, p=displayProps(f), c=crmFor(venueId(raw)); return [p.name,p.city,p.department,p.category,p.address,p.contact,p.price_text,p.capacity_text,p._enrichmentNote,p.pros,p.cons,c.status,c.nextAction,...(c.notes||[]).map(n=>n.text),...(c.events||[]).map(e=>`${e.date} ${e.label}`)].join(' ').toLowerCase(); }
+function searchableText(f){ const raw=f.properties, p=displayProps(f), c=crmFor(venueId(raw)); return [p.name,p.city,p.department,p.category,p.address,p.contact,p.price_text,p.capacity_text,p.evidence_text,p.score_reasons,p._enrichmentNote,p.pros,p.cons,c.status,c.nextAction,...(c.notes||[]).map(n=>n.text),...(c.events||[]).map(e=>`${e.date} ${e.label}`)].join(' ').toLowerCase(); }
 
 function nextStatus(status){ const i=STATUS_ORDER.indexOf(status||'new'); return STATUS_ORDER[Math.min(i+1, STATUS_ORDER.length-1)]; }
 function previousStatus(status){ const i=STATUS_ORDER.indexOf(status||'new'); return STATUS_ORDER[Math.max(i-1, 0)]; }
@@ -78,12 +80,13 @@ async function copyText(text,label='Copié'){ try{ await navigator.clipboard.wri
 function applyFilters(){
   const q = state.filters.q.trim().toLowerCase();
   state.filtered = state.data.features.filter(f => {
-    const p=f.properties, id=venueId(p), c=crmFor(id), ll=coordsOf(f);
-    if(!ll) return false;
+    const p=f.properties, id=venueId(p), c=crmFor(id);
+    if(state.filters.dataset==='venues' && isCandidate(p)) return false;
+    if(state.filters.dataset==='candidates' && !isCandidate(p)) return false;
     if(state.filters.dept!=='all' && p.department!==state.filters.dept) return false;
     if(state.filters.status!=='all' && c.status!==state.filters.status) return false;
     if(state.filters.quality!=='all'){ const q=qualityFor(id); if(state.filters.quality==='any' ? q.score===0 : !q.issues.includes(state.filters.quality)) return false; }
-    if(capacity(p) > +state.filters.capMax) return false;
+    if(capacity(p) && capacity(p) > +state.filters.capMax) return false;
     if(q && !searchableText(f).includes(q)) return false;
     return true;
   });
@@ -105,7 +108,7 @@ function sortFiltered(){
 function jitter(lat,lon,i,total){ if(total<=1)return[lat,lon]; const angle=(i*137.508)*Math.PI/180; const ring=Math.floor(i/12)+1; const radius=0.00008*ring; return [lat+Math.sin(angle)*radius, lon+Math.cos(angle)*radius/Math.cos(lat*Math.PI/180)]; }
 function popupHTML(f){
   const raw=f.properties, p=displayProps(f), id=venueId(raw), c=crmFor(id);
-  return `<div class="popup"><h3>${esc(p.name)}</h3>${statusPill(c.status||'new')} <span class="pill fit">fit ${esc(p.fit_score)}</span>
+  return `<div class="popup"><h3>${esc(p.name)}</h3><span class="pill dataset-${esc(p._dataset||'venue')}">${datasetLabel(p)}</span> ${statusPill(c.status||'new')} <span class="pill fit">fit ${esc(p.fit_score||p.fit_beyond_score)}</span>
   <div class="info-row"><b>Ville</b> ${esc(p.city||'—')} · ${esc(p.department||'')}</div>
   <div class="info-row"><b>Capacité</b> ${esc(p.capacity_text||'—')}</div>
   <div class="info-row"><b>Prix</b> ${esc(p.price_text||'à confirmer')}</div>
@@ -114,8 +117,8 @@ function popupHTML(f){
 }
 function renderMap(){
   state.markers.clearLayers(); const buckets=new Map();
-  state.filtered.forEach(f=>{ const [lat,lon]=coordsOf(f); const key=`${lat.toFixed(6)},${lon.toFixed(6)}`; if(!buckets.has(key))buckets.set(key,[]); buckets.get(key).push(f); });
-  for(const bucket of buckets.values()) bucket.forEach((f,i)=>{ const p=f.properties,[lat,lon]=coordsOf(f),[jLat,jLon]=jitter(lat,lon,i,bucket.length); const marker=L.circleMarker([jLat,jLon],{radius:crmFor(venueId(p)).favorite?9:7,color:'#111',weight:crmFor(venueId(p)).favorite?2:1,fillColor:fitColor(+p.fit_score),fillOpacity:.85}).addTo(state.markers).bindPopup(popupHTML(f)+(bucket.length>1?`<div class="overlap-note">Point décalé : ${bucket.length} salles à la même coordonnée.</div>`:'')); marker.on('click',()=>selectVenue(venueId(p),false)); });
+  state.filtered.filter(coordsOf).forEach(f=>{ const [lat,lon]=coordsOf(f); const key=`${lat.toFixed(6)},${lon.toFixed(6)}`; if(!buckets.has(key))buckets.set(key,[]); buckets.get(key).push(f); });
+  for(const bucket of buckets.values()) bucket.forEach((f,i)=>{ const p=f.properties,[lat,lon]=coordsOf(f),[jLat,jLon]=jitter(lat,lon,i,bucket.length); const marker=L.circleMarker([jLat,jLon],{radius:crmFor(venueId(p)).favorite?9:7,color:'#111',weight:crmFor(venueId(p)).favorite?2:1,fillColor:isCandidate(p)?'#7c3aed':fitColor(+p.fit_score),fillOpacity:.85}).addTo(state.markers).bindPopup(popupHTML(f)+(bucket.length>1?`<div class="overlap-note">Point décalé : ${bucket.length} salles à la même coordonnée.</div>`:'')); marker.on('click',()=>selectVenue(venueId(p),false)); });
 }
 
 function cardHTML(f, compact=false){
@@ -131,7 +134,7 @@ function cardHTML(f, compact=false){
 }
 function renderSidebarList(){ $('list-panel').innerHTML = state.filtered.slice(0,80).map(f=>cardHTML(f,true)).join('') || '<div class="empty">Aucune salle avec ces filtres.</div>'; document.querySelectorAll('.venue-card').forEach(el=>el.onclick=()=>selectVenue(el.dataset.id,true)); }
 function renderTable(){
-  const rows = state.filtered.map(f=>{ const raw=f.properties,p=displayProps(f),id=venueId(raw),c=crmFor(id); const overdue=c.nextActionDate && c.nextActionDate<today(); return `<div class="table-row" data-id="${esc(id)}"><div><div class="table-name">${c.favorite?'⭐ ':''}${esc(p.name)}</div><div class="table-sub">${esc(p.city||'—')} · ${esc(p.category||'')}</div></div><div>${statusPill(c.status||'new')}<div class="quality-badges">${qualityBadgesHTML(id)}</div></div><div>${esc(p.capacity_text||'—')}</div><div class="next-action-badge ${overdue?'overdue':''}">${esc(c.nextAction||'—')} ${c.nextActionDate?`<br>${esc(c.nextActionDate)}`:''}</div><div class="table-sub">fit ${esc(p.fit_score)} · prix ${esc(p.price_score)}</div></div>`; }).join('');
+  const rows = state.filtered.map(f=>{ const raw=f.properties,p=displayProps(f),id=venueId(raw),c=crmFor(id); const overdue=c.nextActionDate && c.nextActionDate<today(); return `<div class="table-row" data-id="${esc(id)}"><div><div class="table-name">${c.favorite?'⭐ ':''}${esc(p.name)}</div><div class="table-sub">${esc(p.city||'—')} · ${esc(p.category||'')} · ${datasetLabel(p)}</div></div><div>${statusPill(c.status||'new')}<div class="quality-badges">${qualityBadgesHTML(id)}</div></div><div>${esc(p.capacity_text||'—')}</div><div class="next-action-badge ${overdue?'overdue':''}">${esc(c.nextAction||'—')} ${c.nextActionDate?`<br>${esc(c.nextActionDate)}`:''}</div><div class="table-sub">fit ${esc(p.fit_score||p.fit_beyond_score||'—')} · act. ${esc(p.actionability_score||p.price_score||'—')}</div></div>`; }).join('');
   $('venue-table').innerHTML = `<div class="table-row table-head"><div>Salle</div><div>Statut</div><div>Capacité</div><div>Prochaine action</div><div>Scores</div></div>${rows || '<div class="empty">Aucune salle.</div>'}`;
   document.querySelectorAll('#venue-table .table-row[data-id]').forEach(el=>el.onclick=()=>selectVenue(el.dataset.id,true));
 }
@@ -140,7 +143,7 @@ function pipelineCard(f){
   const next=nextStatus(c.status||'new'), prev=previousStatus(c.status||'new');
   return `<div class="pipeline-card" data-id="${esc(id)}">
     <div class="pipeline-card-title" data-open="${esc(id)}">${c.favorite?'⭐ ':''}${esc(p.name)}</div>
-    <div class="pipeline-card-meta">${esc(p.city||'—')} · ${esc(p.department)} · fit ${esc(p.fit_score)}</div>
+    <div class="pipeline-card-meta">${esc(p.city||'—')} · ${esc(p.department)} · ${datasetLabel(p)} · fit ${esc(p.fit_score||p.fit_beyond_score||'—')}</div>
     <div class="quality-badges">${qualityBadgesHTML(id)}</div>
     ${c.nextAction?`<div class="venue-note-preview ${overdue?'overdue':''}">⏭️ ${esc(c.nextAction)} ${c.nextActionDate?`· ${esc(c.nextActionDate)}`:''}</div>`:''}
     <div class="pipeline-card-actions">
@@ -160,7 +163,7 @@ function renderPipeline(){
   document.querySelectorAll('[data-copy-call]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(callScriptFor(findFeature(btn.dataset.copyCall)), 'Script d’appel copié'); });
   document.querySelectorAll('[data-copy-email]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(emailFor(findFeature(btn.dataset.copyEmail)), 'Email copié'); });
 }
-function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const overdue=Object.values(state.crm).filter(v=>v.nextActionDate && v.nextActionDate<today()).length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; $('metrics').textContent=`${state.filtered.length} affichées · ${quality} à vérifier · ${tracked} suivies · ${overdue} relances en retard`; }
+function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const overdue=Object.values(state.crm).filter(v=>v.nextActionDate && v.nextActionDate<today()).length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; const cand=state.filtered.filter(f=>isCandidate(f.properties)).length; const mapped=state.filtered.filter(coordsOf).length; $('metrics').textContent=`${state.filtered.length} affichées · ${cand} candidats · ${mapped} cartographiées · ${quality} à vérifier · ${tracked} suivies`; }
 function renderAll(){ buildQuality(); applyFilters(); renderMap(); renderSidebarList(); renderTable(); renderPipeline(); updateMetrics(); if(state.selectedId) renderDetail(state.selectedId); }
 
 function findFeature(id){ return state.data.features.find(f=>venueId(f.properties)===id); }
@@ -181,11 +184,20 @@ function renderDetail(id){
 function bindDetailEvents(id){ const c=crmFor(id); if(!c.overrides)c.overrides={}; const saveOv=(key,val)=>{c.overrides[key]=val; touch(id); renderAll();}; $('detail-status').onchange=e=>{c.status=e.target.value;touch(id);renderAll();}; $('next-action').onchange=e=>{c.nextAction=e.target.value;touch(id);renderAll();}; $('next-action-date').onchange=e=>{c.nextActionDate=e.target.value;touch(id);renderAll();}; $('ov-contact').onchange=e=>saveOv('contactOverride',e.target.value.trim()); $('ov-price').onchange=e=>saveOv('priceOverride',e.target.value.trim()); $('ov-capacity').onchange=e=>saveOv('capacityOverride',e.target.value.trim()); $('ov-address').onchange=e=>saveOv('addressOverride',e.target.value.trim()); $('ov-source').onchange=e=>saveOv('sourceReliability',e.target.value); $('ov-note').onchange=e=>saveOv('enrichmentNote',e.target.value.trim()); $('add-note').onclick=()=>{const t=$('new-note').value.trim(); if(!t)return; c.notes.unshift({date:new Date().toLocaleString('fr-FR'),text:t}); touch(id); renderAll();}; $('add-event').onclick=()=>{const label=$('event-label').value.trim(); if(!label)return; c.events.unshift({date:$('event-date').value||today(),label}); c.status='used'; touch(id); renderAll();}; $('toggle-fav').onclick=()=>{c.favorite=!c.favorite;touch(id);renderAll();}; $('copy-contact').onclick=async()=>{const f=findFeature(id), p=displayProps(f); await copyText([p.name,p.contact,p.website].filter(Boolean).join('\n'),'Contact copié');}; $('copy-call-script').onclick=()=>copyText(callScriptFor(findFeature(id)),'Script d’appel copié'); $('copy-email-template').onclick=()=>copyText(emailFor(findFeature(id)),'Email copié'); document.querySelectorAll('[data-del-note]').forEach(b=>b.onclick=()=>{c.notes.splice(+b.dataset.delNote,1);touch(id);renderAll();}); document.querySelectorAll('[data-del-event]').forEach(b=>b.onclick=()=>{c.events.splice(+b.dataset.delEvent,1);touch(id);renderAll();}); }
 
 function bindControls(){
-  $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
+  $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dataset-filter').onchange=e=>{state.filters.dataset=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
   document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));$('map').classList.toggle('hidden',state.view!=='map');$('table-view').classList.toggle('hidden',state.view!=='list');$('pipeline-view').classList.toggle('hidden',state.view!=='pipeline');setTimeout(()=>map.invalidateSize(),80);});
   $('close-detail').onclick=()=>$('detail-panel').classList.add('hidden'); $('open-sidebar').onclick=()=>$('sidebar').classList.add('open'); $('toggle-sidebar').onclick=()=>$('sidebar').classList.remove('open');
   $('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
   $('import-json').onchange=e=>{const file=e.target.files[0]; if(!file)return; const r=new FileReader(); r.onload=()=>{try{const obj=JSON.parse(r.result); state.crm=obj.crm||obj; saveCrm(); toast('Suivi importé'); renderAll();}catch{toast('Import impossible');}}; r.readAsText(file);};
 }
 
-fetch('salles_all_idf.geojson').then(r=>r.json()).then(j=>{ state.data=j; loadCrm(); buildQuality(); bindControls(); renderAll(); if(state.filtered.length){ const bounds=L.latLngBounds(state.filtered.map(coordsOf).filter(Boolean)); map.fitBounds(bounds.pad(.08)); } });
+Promise.all([
+  fetch('salles_all_idf.geojson').then(r=>r.json()),
+  fetch('import_queue.geojson').then(r=>r.ok?r.json():{type:'FeatureCollection',features:[]}).catch(()=>({type:'FeatureCollection',features:[]}))
+]).then(([venues,candidates])=>{
+  venues.features=(venues.features||[]).map(f=>{ f.properties={...(f.properties||{}), _dataset:'venue'}; return f; });
+  candidates.features=(candidates.features||[]).map(f=>{ const p=f.properties||{}; f.properties={...p, _dataset:'candidate', name:p.name||p.raw_name||'Candidat sans nom', fit_score:p.fit_beyond_score||p.fit_score||0, price_score:p.actionability_score||p.price_score||0}; return f; });
+  state.venues=venues; state.candidates=candidates; state.data={type:'FeatureCollection', features:[...venues.features, ...candidates.features]};
+  loadCrm(); buildQuality(); bindControls(); renderAll();
+  const mapped=state.filtered.map(coordsOf).filter(Boolean); if(mapped.length){ const bounds=L.latLngBounds(mapped); map.fitBounds(bounds.pad(.08)); }
+});
