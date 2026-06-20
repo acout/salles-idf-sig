@@ -62,6 +62,7 @@ Implemented:
 - [x] Repeatable additive source-record merge script (`scripts/sourcing/merge_source_records.py`)
 - [x] Full re-executable Beyond import pipeline runner (`scripts/sourcing/run_beyond_pipeline.py`)
 - [x] Smart sourcing funnel Lot 1 2026-06-20: common `source_observations` + `field_evidence` lineage, Tavily prompt-search provider, run-scoped `data/discovery_runs/`, 1082 observations / 5022 field evidences validated without touching canonical data
+- [x] Smart sourcing funnel Lot 2 2026-06-20: source/page classifier + strict geo guard — `classify_observations.py` classifies 1082 observations into page_type (aggregator 629, official_rental 155, official_venue 219, municipal 45, social 25, course_only 3, pdf 2, unknown 4) + source_reliability (S1 657, S3 264, S4 155, S2 5, S0 1) + geo_status (in_scope 1021, out_of_zone 38, geo_unknown 13, homonym 10). In-scope high-quality: 383
 
 ## Recommended Next Steps
 
