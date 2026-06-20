@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-20T07:17:21+00:00",
+  "input_records": 1042,
+  "output_records": 1042,
+  "rental_possible_status": {
+    "unclear": 574,
+    "unlikely": 28,
+    "possible": 440
+  },
+  "rental_possible_confidence": {
+    "low": 574,
+    "medium": 373,
+    "high": 95
+  },
+  "top_positive_signals": {
+    "location de salle": 332,
+    "location de salles": 93,
+    "salle à louer": 78,
+    "louer une salle": 25,
+    "privatisation": 12,
+    "location studio": 10,
+    "privatiser": 6,
+    "réserver salle": 5,
+    "louer un studio": 3,
+    "mise à disposition": 3,
+    "espace à louer/privatiser": 3,
+    "demande de location": 3,
+    "tarifs de location": 2,
+    "accueil stages/ateliers/événements": 1,
+    "réservation de salle": 1
+  },
+  "top_negative_signals": {
+    "cours de yoga": 19,
+    "cours de danse": 17,
+    "salle de sport": 5,
+    "cours collectifs": 3,
+    "abonnement": 2,
+    "Fitness Park": 1,
+    "planning des cours": 1
+  },
+  "output": "data/source_records/rental_qualified_beyond_idf_20260620.json"
+}

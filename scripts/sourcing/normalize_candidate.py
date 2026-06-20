@@ -38,7 +38,9 @@ def normalize_record(r):
         'formal_scrape_checked_at', 'formal_scrape_http_status', 'formal_scrape_content_type', 'formal_extraction_status',
         'formal_address_source', 'geocode_status', 'geocode_candidate_label', 'geocode_candidate_score',
         'formal_page_title', 'formal_evidence_text', 'formal_contact_source', 'formal_price_source', 'formal_capacity_source',
-        'missing_formal_fields', 'email_questions', 'formal_completeness_score', 'target_run'
+        'missing_formal_fields', 'email_questions', 'formal_completeness_score', 'target_run',
+        'rental_possible_status', 'rental_possible_confidence', 'rental_positive_signals', 'rental_negative_signals',
+        'rental_email_question', 'rental_decision_needed'
     ):
         if r.get(key) not in (None, ''):
             c[key] = r.get(key)

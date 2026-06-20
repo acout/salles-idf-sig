@@ -13,7 +13,7 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
-from common import ROOT, now_iso
+from common import ROOT, now_iso, norm_text
 
 for _k in ('HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy', 'ALL_PROXY', 'all_proxy'):
     os.environ.pop(_k, None)
@@ -31,6 +31,26 @@ AGGREGATOR_PATH_HINTS = (
 )
 VENUE_WORDS = ('studio', 'danse', 'dojo', 'yoga', 'mjc', 'association', 'centre', 'theatre', 'théâtre', 'repetition', 'répétition', 'salle', 'espace')
 BAD_CHILD_WORDS = ('login', 'signin', 'facebook', 'instagram', 'twitter', 'linkedin', 'mailto:', 'tel:', 'cookie', 'privacy', 'mentions')
+POSITIVE_RENTAL_PATTERNS = [
+    (r'location\s+de\s+salle', 'location de salle'), (r'location\s+de\s+salles', 'location de salles'),
+    (r'salle[s]?\s+à\s+louer', 'salle à louer'), (r'louer\s+(?:une|la|nos|notre)?\s*salle', 'louer une salle'),
+    (r'louer\s+(?:un|le|nos|notre)?\s*studio', 'louer un studio'), (r'location\s+studio', 'location studio'),
+    (r'privatisation', 'privatisation'), (r'privatiser', 'privatiser'), (r'mise\s+à\s+disposition', 'mise à disposition'),
+    (r'réservation\s+de\s+salle', 'réservation de salle'), (r'reserver\s+(?:une|la)?\s*salle', 'réserver salle'),
+    (r'réserver\s+(?:une|la)?\s*salle', 'réserver salle'), (r'tarif[s]?\s+de\s+location', 'tarifs de location'),
+    (r'demande\s+de\s+location', 'demande de location'),
+    (r'accueil(?:lir)?\s+(?:vos|des)?\s*(?:évènements|evenements|stages|ateliers|séminaires)', 'accueil stages/ateliers/événements'),
+    (r'espaces?\s+(?:à\s+)?(?:louer|privatiser|réserver)', 'espace à louer/privatiser'),
+]
+NEGATIVE_RENTAL_PATTERNS = [
+    (r'fitness\s*park', 'Fitness Park'), (r'salle\s+de\s+sport', 'salle de sport'), (r'club\s+de\s+sport', 'club de sport'),
+    (r'abonnement[s]?', 'abonnement'), (r'adhérent[s]?\s+uniquement', 'adhérents uniquement'),
+    (r'cours\s+collectifs?', 'cours collectifs'), (r'planning\s+des\s+cours', 'planning des cours'),
+    (r'cours\s+de\s+yoga', 'cours de yoga'), (r'cours\s+de\s+danse', 'cours de danse'),
+    (r'inscription\s+aux\s+cours', 'inscription aux cours'), (r'coach(?:ing)?\s+personnel', 'coaching personnel'),
+    (r'acheter\s+un\s+pass', 'achat pass'), (r'réserver\s+un\s+cours', 'réserver un cours'),
+]
+LIKELY_UNRENTABLE_HINTS = ('fitnesspark', 'basic-fit', 'neoness', 'keepcool', 'cercles de la forme', 'club med gym')
 
 EMAIL_RE = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
 PHONE_RE = re.compile(r'(?:(?:\+33|0)\s?[1-9](?:[\s.\-]?\d{2}){4})')
@@ -162,6 +182,55 @@ def extract_child_links(html_text: str, base_url: str, city: str, max_links=12) 
     return out
 
 
+def collect_pattern_matches(patterns: list[tuple[str, str]], text: str) -> list[str]:
+    out = []
+    for pattern, label in patterns:
+        if re.search(pattern, text, flags=re.I):
+            out.append(label)
+    return sorted(set(out))
+
+
+def classify_rental_possible(record: dict, page_text: str = '') -> dict:
+    rec = dict(record)
+    text = ' '.join(str(rec.get(k, '')) for k in (
+        'name', 'category', 'description', 'evidence_text', 'formal_evidence_text', 'formal_page_title',
+        'source_url', 'website', 'price_text', 'capacity_text', 'email_questions'
+    )) + ' ' + (page_text or '')
+    positives = collect_pattern_matches(POSITIVE_RENTAL_PATTERNS, text)
+    negatives = collect_pattern_matches(NEGATIVE_RENTAL_PATTERNS, text)
+    domainish = norm_text(str(rec.get('source_url') or '') + ' ' + str(rec.get('website') or '') + ' ' + str(rec.get('name') or ''))
+    if any(h in domainish for h in LIKELY_UNRENTABLE_HINTS):
+        negatives.append('enseigne fitness probablement non louable')
+    negatives = sorted(set(negatives))
+    if positives:
+        status = 'possible'
+        confidence = 'high' if len(positives) >= 2 or any(p in positives for p in ('location de salle', 'location de salles', 'salle à louer', 'privatisation')) else 'medium'
+    elif negatives:
+        status = 'unlikely'
+        confidence = 'high' if any(x in negatives for x in ('Fitness Park', 'enseigne fitness probablement non louable', 'abonnement')) else 'medium'
+    else:
+        status = 'unclear'
+        confidence = 'low'
+    if str(rec.get('is_aggregator') or '').lower() == 'yes' and status == 'possible':
+        confidence = 'medium'
+    rec['rental_possible_status'] = status
+    rec['rental_possible_confidence'] = confidence
+    rec['rental_positive_signals'] = '; '.join(positives)
+    rec['rental_negative_signals'] = '; '.join(negatives)
+    if status == 'possible':
+        q = 'Confirmer modalités exactes de location, disponibilités, prix, capacité et conditions.'
+    elif status == 'unlikely':
+        q = 'Vérifier s’ils louent réellement une salle à des tiers ; le site ressemble à des cours/abonnements plutôt qu’à une location.'
+    else:
+        q = 'Demander explicitement si une location/privatisation de salle est possible.'
+    rec['rental_email_question'] = q
+    rec['rental_decision_needed'] = 'no' if status == 'possible' else 'yes'
+    existing_q = str(rec.get('email_questions') or '').strip()
+    if q and q not in existing_q:
+        rec['email_questions'] = (existing_q + '; ' + q).strip('; ') if existing_q else q
+    return rec
+
+
 def enrich_record(record: dict, expand_aggregators=True) -> dict:
     rec = dict(record)
     url = rec.get('source_url') or rec.get('website') or ''
@@ -211,6 +280,7 @@ def enrich_record(record: dict, expand_aggregators=True) -> dict:
     rec['missing_formal_fields'] = ', '.join(missing)
     rec['email_questions'] = '; '.join(f'Confirmer {x}' for x in missing) if missing else 'Aucun champ formel manquant détecté'
     rec['formal_completeness_score'] = str(4 - len(missing))
+    rec = classify_rental_possible(rec, rec.get('formal_evidence_text') or '')
     return {'record': rec, 'children': children}
 
 
