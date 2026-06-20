@@ -188,7 +188,64 @@ function renderPipeline(){
   document.querySelectorAll('[data-copy-email]').forEach(btn=>btn.onclick=e=>{ e.stopPropagation(); copyText(emailFor(findFeature(btn.dataset.copyEmail)), 'Email copié'); });
 }
 function updateMetrics(){ const tracked=Object.values(state.crm).filter(v=>v.status&&v.status!=='new').length; const quality=state.filtered.filter(f=>qualityFor(venueId(f.properties)).score>0).length; const cand=state.filtered.filter(f=>isCandidate(f.properties)).length; const aggs=state.filtered.filter(f=>isAggregator(f.properties)).length; const rentOk=state.filtered.filter(f=>rentalStatus(f.properties)==='possible').length; const rentNo=state.filtered.filter(f=>rentalStatus(f.properties)==='unlikely').length; const mapped=state.filtered.filter(coordsOf).length; const tags=activeTagLabels(); $('metrics').textContent=`${state.filtered.length} affichées · ${cand} candidats · ${aggs} agrégateurs · ${rentOk} location OK · ${rentNo} non louables prob. · ${mapped} cartographiées · ${quality} à vérifier${tags.length?' · tags: '+tags.join(' + '):''}`; }
-function renderAll(){ buildQuality(); applyFilters(); renderMap(); renderSidebarList(); renderTable(); renderPipeline(); updateMetrics(); if(state.selectedId) renderDetail(state.selectedId); }
+
+/* ── Funnel view ────────────────────────────────── */
+const FUNNEL_STATS={
+  L0_observation:1082, L1_classified:1082, L1_in_scope:1021, L1_out_of_zone:38, L1_homonym:10, L1_geo_unknown:13,
+  L2_entities:1075, L2_venue:466, L2_aggregator:609,
+  L3_curated:379, L3_high_quality:379,
+  L4_import_queue:165, L4_rental_possible:94, L4_rental_unclear:61, L4_rental_unlikely:10
+};
+const FUNNEL_STAGES=[
+  {key:'L0_observation',label:'L0 — Observations brutes',icon:'📥',color:'#94a3b8'},
+  {key:'L1_classified',label:'L1 — Classifiées (geo + source)',icon:'🔍',color:'#60a5fa'},
+  {key:'L1_in_scope',label:'   ↳ In scope IDF',icon:'',color:'#34d399'},
+  {key:'L1_out_of_zone',label:'   ↳ Filtré : hors zone',icon:'',color:'#f87171'},
+  {key:'L1_homonym',label:'   ↳ Filtré : homonyme',icon:'',color:'#fbbf24'},
+  {key:'L2_entities',label:'L2 — Entités résolues',icon:'🔗',color:'#a78bfa'},
+  {key:'L2_venue',label:'   ↳ Salles candidates',icon:'',color:'#34d399'},
+  {key:'L2_aggregator',label:'   ↳ Observations agrégateur',icon:'',color:'#fb923c'},
+  {key:'L3_curated',label:'L3 — Curated in-scope S3+',icon:'✅',color:'#22d3ee'},
+  {key:'L4_import_queue',label:'L4 — Import queue (app)',icon:'📋',color:'#4ade80'},
+  {key:'L4_rental_possible',label:'   ↳ Location possible',icon:'',color:'#166534'},
+  {key:'L4_rental_unclear',label:'   ↳ Location à vérifier',icon:'',color:'#92400e'},
+  {key:'L4_rental_unlikely',label:'   ↳ Pas louable',icon:'',color:'#991b1b'},
+];
+function renderFunnel(){
+  const summaryHTML=FUNNEL_STAGES.map(s=>`<div class="funnel-row" style="border-left:4px solid ${s.color};padding:4px 10px;margin:4px 0;border-radius:8px;background:#fff">
+    <span style="font-weight:700">${s.icon} ${s.label}</span>
+    <span style="float:right;font-weight:800;font-size:16px">${FUNNEL_STATS[s.key]||0}</span>
+  </div>`).join('');
+  $('funnel-summary').innerHTML=summaryHTML;
+
+  // Render individual items from current filtered data
+  const stageFilter=$('funnel-stage-filter')?.value||'all';
+  const sourceFilter=$('funnel-source-filter')?.value||'all';
+  const items=state.filtered.filter(f=>{
+    const p=f.properties;
+    if(stageFilter==='filtered_geo'&&p.geo_status==='in_scope') return false;
+    if(stageFilter==='filtered_reliability'&&['S3','S4'].includes(p.source_reliability)) return false;
+    if(stageFilter==='filtered_not_venue'&&p._dataset!=='aggregator') return false;
+    if(sourceFilter!=='all'&&p.source_reliability!==sourceFilter) return false;
+    return true;
+  }).slice(0,120);
+
+  $('funnel-items').innerHTML=items.map(f=>{
+    const p=f.properties, id=venueId(p);
+    const stage=p._dataset==='candidate'?'L4':p.formal_extraction_status==='ai_extracted'?'L4':p.source_reliability?'L2':'L0';
+    const stageLabel=stage==='L4'?'✅ App':stage==='L2'?'🔍 Classifié':'📥 Observation';
+    return `<div class="funnel-item" data-id="${esc(id)}" style="border-left:4px solid ${p.rental_possible_status==='possible'?'#166534':p.rental_possible_status==='unlikely'?'#991b1b':'#92400e'};padding:8px 12px;margin:4px 0;background:#fff;border-radius:10px;cursor:pointer">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div><strong>${esc(p.name||'Sans nom')}</strong> <span style="color:#667085">${esc(p.city||'')}</span></div>
+        <div><span class="pill" style="font-size:10px">${stageLabel}</span> ${p.page_type?`<span class="pill" style="font-size:10px">${esc(p.page_type.replace(/_/g,' '))}</span>`:''} ${p.source_reliability?`<span class="pill" style="font-size:10px">${esc(p.source_reliability)}</span>`:''} <span class="pill rental-${esc(rentalStatus(p))}">${rentalLabel(p)}</span></div>
+      </div>
+      <div style="font-size:12px;color:#667085;margin-top:4px">${esc(p.category||'')} · ${esc(p.source_domain||'')} · obs: ${p.observation_count||1} ${p.specific_rental_page_url?'· <a href="'+esc(p.specific_rental_page_url)+'" target="_blank" style="color:#0a7">page location</a>':''}</div>
+      ${p.evidence_text?`<div style="font-size:11px;color:#475467;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(p.evidence_text.slice(0,150))}</div>`:''}
+    </div>`;
+  }).join('')||'<div class="empty">Aucun item avec ces filtres.</div>';
+  document.querySelectorAll('.funnel-item[data-id]').forEach(el=>el.onclick=()=>openDetailById(el.dataset.id));
+}
+function renderAll(){ buildQuality(); applyFilters(); renderMap(); renderSidebarList(); renderTable(); renderPipeline(); renderFunnel(); updateMetrics(); if(state.selectedId) renderDetail(state.selectedId); }
 
 function findFeature(id){ return state.data.features.find(f=>venueId(f.properties)===id); }
 function selectVenue(id, open=true){ state.selectedId=id; renderSidebarList(); if(open) openDetailById(id); }
@@ -214,9 +271,10 @@ function bindControls(){
   $('search').oninput=e=>{state.filters.q=e.target.value;renderAll();}; $('dataset-filter').onchange=e=>{state.filters.dataset=e.target.value;renderAll();}; $('dept-filter').onchange=e=>{state.filters.dept=e.target.value;renderAll();}; $('status-filter').onchange=e=>{state.filters.status=e.target.value;renderAll();}; $('quality-filter').onchange=e=>{state.filters.quality=e.target.value;renderAll();}; $('cap-max').oninput=e=>{state.filters.capMax=e.target.value;$('cap-val').textContent=`≤${e.target.value}`;renderAll();}; $('sort-by').onchange=e=>{state.filters.sort=e.target.value;renderAll();};
   document.querySelectorAll('[data-tag-filter]').forEach(btn=>btn.onclick=()=>{ const tag=btn.dataset.tagFilter; if(state.filters.tagFilters.has(tag)){ state.filters.tagFilters.delete(tag); btn.classList.remove('active'); } else { state.filters.tagFilters.add(tag); btn.classList.add('active'); } renderAll(); });
   $('clear-tag-filters').onclick=()=>{ state.filters.tagFilters.clear(); document.querySelectorAll('[data-tag-filter]').forEach(btn=>btn.classList.remove('active')); renderAll(); };
-  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));$('map').classList.toggle('hidden',state.view!=='map');$('table-view').classList.toggle('hidden',state.view!=='list');$('pipeline-view').classList.toggle('hidden',state.view!=='pipeline');setTimeout(()=>map.invalidateSize(),80);});
+  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));$('map').classList.toggle('hidden',state.view!=='map');$('table-view').classList.toggle('hidden',state.view!=='list');$('funnel-view').classList.toggle('hidden',state.view!=='funnel');setTimeout(()=>map.invalidateSize(),80);});
   $('close-detail').onclick=()=>$('detail-panel').classList.add('hidden'); $('open-sidebar').onclick=()=>$('sidebar').classList.add('open'); $('toggle-sidebar').onclick=()=>$('sidebar').classList.remove('open');
-  $('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
+  $('funnel-stage-filter').onchange=e=>renderFunnel(); $('funnel-source-filter').onchange=e=>renderFunnel();
+$('export-json').onclick=()=>{const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),crm:state.crm},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`salles-idf-suivi-${today()}.json`; a.click(); URL.revokeObjectURL(a.href);};
   $('import-json').onchange=e=>{const file=e.target.files[0]; if(!file)return; const r=new FileReader(); r.onload=()=>{try{const obj=JSON.parse(r.result); state.crm=obj.crm||obj; saveCrm(); toast('Suivi importé'); renderAll();}catch{toast('Import impossible');}}; r.readAsText(file);};
 }
 
