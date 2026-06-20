@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:94",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/salles-de-reunion",
+  "collected_at": "2026-06-19T22:46:45+00:00",
+  "raw_name": "Location de salles de réunion en Val-de-Marne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Restaurant Arculin' se situe à Fresnes dans le département du Val-de-Marne et vous propose la location de salle pour tous vos événements. Réservez pour un",
+  "raw_html_excerpt": "Location de salles de réunion en Val-de-Marne - Pages Jaunes. Le Restaurant Arculin' se situe à Fresnes dans le département du Val-de-Marne et vous propose la location de salle pour tous vos événements. Réservez pour un",
+  "raw_json": {
+    "title": "Location de salles de réunion en Val-de-Marne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/salles-de-reunion",
+    "description": "Le Restaurant Arculin' se situe à Fresnes dans le département du Val-de-Marne et vous propose la location de salle pour tous vos événements. Réservez pour un",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location de salles de réunion en Val-de-Marne - Pages Jaunes. Le Restaurant Arculin' se situe à Fresnes dans le département du Val-de-Marne et vous propose la location de salle pour tous vos événements. Réservez pour un",
+  "source_confidence": "medium"
+}

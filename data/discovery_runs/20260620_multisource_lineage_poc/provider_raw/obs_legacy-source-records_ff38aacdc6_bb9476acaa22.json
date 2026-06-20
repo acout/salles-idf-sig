@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:94",
+  "source_url": "https://www.spectable.com/val-de-marne/petites-annonces/local-de-repetition/n_2648-l_136.php",
+  "collected_at": "2026-06-19T22:46:35+00:00",
+  "raw_name": "Local de répétition / Location, recherche dans le Val de Marne",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "5 studios / 1500 m2, pour Danse, Tournage, Events, Stages... Factory ClubThiais (94320). Idéalement situé, ce club de 1500 m² se compose de 5 salles",
+  "raw_html_excerpt": "Local de répétition / Location, recherche dans le Val de Marne. 5 studios / 1500 m2, pour Danse, Tournage, Events, Stages... Factory ClubThiais (94320). Idéalement situé, ce club de 1500 m² se compose de 5 salles",
+  "raw_json": {
+    "title": "Local de répétition / Location, recherche dans le Val de Marne",
+    "url": "https://www.spectable.com/val-de-marne/petites-annonces/local-de-repetition/n_2648-l_136.php",
+    "description": "5 studios / 1500 m2, pour Danse, Tournage, Events, Stages... Factory ClubThiais (94320). Idéalement situé, ce club de 1500 m² se compose de 5 salles",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Local de répétition / Location, recherche dans le Val de Marne. 5 studios / 1500 m2, pour Danse, Tournage, Events, Stages... Factory ClubThiais (94320). Idéalement situé, ce club de 1500 m² se compose de 5 salles",
+  "source_confidence": "low"
+}

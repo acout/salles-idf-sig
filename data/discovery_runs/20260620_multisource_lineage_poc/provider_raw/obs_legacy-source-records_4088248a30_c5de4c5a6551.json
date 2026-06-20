@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:77",
+  "source_url": "https://dojo77.fr/boxe-thai",
+  "collected_at": "2026-06-19T22:46:58+00:00",
+  "raw_name": "Boxe thaï - DOJO 77 : Self-Défense, Boxes, Arts Martiaux",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Bienvenue au Dojo 77, votre club de boxe thaïlandaise en Seine-et-Marne ! À l'est de Paris, au coeur du Val d'Europe, nous un art martial dynamique et complet.",
+  "raw_html_excerpt": "Boxe thaï - DOJO 77 : Self-Défense, Boxes, Arts Martiaux. Bienvenue au Dojo 77, votre club de boxe thaïlandaise en Seine-et-Marne ! À l'est de Paris, au coeur du Val d'Europe, nous un art martial dynamique et complet.",
+  "raw_json": {
+    "title": "Boxe thaï - DOJO 77 : Self-Défense, Boxes, Arts Martiaux",
+    "url": "https://dojo77.fr/boxe-thai",
+    "description": "Bienvenue au Dojo 77, votre club de boxe thaïlandaise en Seine-et-Marne ! À l'est de Paris, au coeur du Val d'Europe, nous un art martial dynamique et complet.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Boxe thaï - DOJO 77 : Self-Défense, Boxes, Arts Martiaux. Bienvenue au Dojo 77, votre club de boxe thaïlandaise en Seine-et-Marne ! À l'est de Paris, au coeur du Val d'Europe, nous un art martial dynamique et complet.",
+  "source_confidence": "medium"
+}

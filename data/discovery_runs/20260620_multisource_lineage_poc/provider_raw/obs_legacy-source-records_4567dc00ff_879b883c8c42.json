@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:78",
+  "source_url": "https://www.facebook.com/groups/partagedecabinet/posts/7797463943607261",
+  "collected_at": "2026-06-19T22:46:48+00:00",
+  "raw_name": "Secteur Versailles /le chesnay (78) Bonjour, Je propose des salles ...",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Bonjour, je cherche à louer 1 ou 2 créneaux par semaine idéalement de 19h à 20h30 ou de 19h30 à 21h pour enseigner un cours de yoga. La salle",
+  "raw_html_excerpt": "Secteur Versailles /le chesnay (78) Bonjour, Je propose des salles .... Bonjour, je cherche à louer 1 ou 2 créneaux par semaine idéalement de 19h à 20h30 ou de 19h30 à 21h pour enseigner un cours de yoga. La salle",
+  "raw_json": {
+    "title": "Secteur Versailles /le chesnay (78) Bonjour, Je propose des salles ...",
+    "url": "https://www.facebook.com/groups/partagedecabinet/posts/7797463943607261",
+    "description": "Bonjour, je cherche à louer 1 ou 2 créneaux par semaine idéalement de 19h à 20h30 ou de 19h30 à 21h pour enseigner un cours de yoga. La salle",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Secteur Versailles /le chesnay (78) Bonjour, Je propose des salles .... Bonjour, je cherche à louer 1 ou 2 créneaux par semaine idéalement de 19h à 20h30 ou de 19h30 à 21h pour enseigner un cours de yoga. La salle",
+  "source_confidence": "low"
+}

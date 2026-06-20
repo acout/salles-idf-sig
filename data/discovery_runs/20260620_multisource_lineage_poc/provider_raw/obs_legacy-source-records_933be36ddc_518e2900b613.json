@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:75",
+  "source_url": "https://briostudios.io/blog/comment-louer-une-salle-de-sport-a-paris-le-guide-complet-pour-trouver-le-meilleur-espace-sportif",
+  "collected_at": "2026-06-19T22:47:22+00:00",
+  "raw_name": "Comment louer une salle de sport à Paris ? Le guide complet pour ...",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Studios fitness : 20 à 100€ / heure · Salles de danse : 15 à 70 € / heure · Espaces premium / événementiels : 60 à 200 € / heure",
+  "raw_html_excerpt": "Comment louer une salle de sport à Paris ? Le guide complet pour .... Studios fitness : 20 à 100€ / heure · Salles de danse : 15 à 70 € / heure · Espaces premium / événementiels : 60 à 200 € / heure",
+  "raw_json": {
+    "title": "Comment louer une salle de sport à Paris ? Le guide complet pour ...",
+    "url": "https://briostudios.io/blog/comment-louer-une-salle-de-sport-a-paris-le-guide-complet-pour-trouver-le-meilleur-espace-sportif",
+    "description": "Studios fitness : 20 à 100€ / heure · Salles de danse : 15 à 70 € / heure · Espaces premium / événementiels : 60 à 200 € / heure",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Comment louer une salle de sport à Paris ? Le guide complet pour .... Studios fitness : 20 à 100€ / heure · Salles de danse : 15 à 70 € / heure · Espaces premium / événementiels : 60 à 200 € / heure",
+  "source_confidence": "low"
+}

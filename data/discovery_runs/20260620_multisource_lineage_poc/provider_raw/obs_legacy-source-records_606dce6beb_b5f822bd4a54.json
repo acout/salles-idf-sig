@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:93",
+  "source_url": "https://www.spectable.com/seine-saint-denis/petites-annonces/local-de-repetition/n_2648-l_40876.php",
+  "collected_at": "2026-06-19T22:47:05+00:00",
+  "raw_name": "Local de répétition / Location, recherche en Seine Saint ...",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Je propose un local de 50m2 avec mezzanine équipé coin cuisine, avec wc, douche, pour répétitions musique, théatre, cours, photos, castings, stages et tournages",
+  "raw_html_excerpt": "Local de répétition / Location, recherche en Seine Saint .... Je propose un local de 50m2 avec mezzanine équipé coin cuisine, avec wc, douche, pour répétitions musique, théatre, cours, photos, castings, stages et tournages",
+  "raw_json": {
+    "title": "Local de répétition / Location, recherche en Seine Saint ...",
+    "url": "https://www.spectable.com/seine-saint-denis/petites-annonces/local-de-repetition/n_2648-l_40876.php",
+    "description": "Je propose un local de 50m2 avec mezzanine équipé coin cuisine, avec wc, douche, pour répétitions musique, théatre, cours, photos, castings, stages et tournages",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Local de répétition / Location, recherche en Seine Saint .... Je propose un local de 50m2 avec mezzanine équipé coin cuisine, avec wc, douche, pour répétitions musique, théatre, cours, photos, castings, stages et tournages",
+  "source_confidence": "low"
+}

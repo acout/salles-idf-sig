@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:95",
+  "source_url": "https://www.covent-garden-eragny.fr",
+  "collected_at": "2026-06-19T22:47:11+00:00",
+  "raw_name": "Covent garden Eragny | Studio pour les projets musicaux Cergy",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Salle de concert · Contact · 01 85 53 02 85. Besoin de renseignements ! Contactez-nous. Studio de répétition et salle de concert à Eragny (Val d'Oise). Qu'il s",
+  "raw_html_excerpt": "Covent garden Eragny | Studio pour les projets musicaux Cergy. Salle de concert · Contact · 01 85 53 02 85. Besoin de renseignements ! Contactez-nous. Studio de répétition et salle de concert à Eragny (Val d'Oise). Qu'il s",
+  "raw_json": {
+    "title": "Covent garden Eragny | Studio pour les projets musicaux Cergy",
+    "url": "https://www.covent-garden-eragny.fr",
+    "description": "Salle de concert · Contact · 01 85 53 02 85. Besoin de renseignements ! Contactez-nous. Studio de répétition et salle de concert à Eragny (Val d'Oise). Qu'il s",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Covent garden Eragny | Studio pour les projets musicaux Cergy. Salle de concert · Contact · 01 85 53 02 85. Besoin de renseignements ! Contactez-nous. Studio de répétition et salle de concert à Eragny (Val d'Oise). Qu'il s",
+  "source_confidence": "medium"
+}

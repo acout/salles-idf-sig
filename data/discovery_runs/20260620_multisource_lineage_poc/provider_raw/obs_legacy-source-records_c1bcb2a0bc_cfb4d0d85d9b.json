@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:92",
+  "source_url": "https://www.snapevent.fr/location-de-salle/paris/departement-92",
+  "collected_at": "2026-06-19T22:47:23+00:00",
+  "raw_name": "Location de Salle dans les Hauts de Seine (92) - SnapEvent",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Avec SnapEvent, trouvez la location atypique idéale pour votre événement dans les Hauts de Seine (92) ‎✓ Choisissez le lieu à louer pour votre soirée !",
+  "raw_html_excerpt": "Location de Salle dans les Hauts de Seine (92) - SnapEvent. Avec SnapEvent, trouvez la location atypique idéale pour votre événement dans les Hauts de Seine (92) ‎✓ Choisissez le lieu à louer pour votre soirée !",
+  "raw_json": {
+    "title": "Location de Salle dans les Hauts de Seine (92) - SnapEvent",
+    "url": "https://www.snapevent.fr/location-de-salle/paris/departement-92",
+    "description": "Avec SnapEvent, trouvez la location atypique idéale pour votre événement dans les Hauts de Seine (92) ‎✓ Choisissez le lieu à louer pour votre soirée !",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Location de Salle dans les Hauts de Seine (92) - SnapEvent. Avec SnapEvent, trouvez la location atypique idéale pour votre événement dans les Hauts de Seine (92) ‎✓ Choisissez le lieu à louer pour votre soirée !",
+  "source_confidence": "medium"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:77",
+  "source_url": "https://m.yelp.com/search?cflt=dancestudio&find_loc=Faremoutiers%2C+Seine-et-Marne",
+  "collected_at": "2026-06-19T22:46:36+00:00",
+  "raw_name": "THE BEST 10 Dance Studios near FAREMOUTIERS, SEINE ... - Yelp",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Best Dance Studios in Faremoutiers, Seine-et-Marne - Last Updated May 2026 - Institut International de Danse Janine Stanlowa, Centre de Danse du Marais,",
+  "raw_html_excerpt": "THE BEST 10 Dance Studios near FAREMOUTIERS, SEINE ... - Yelp. Best Dance Studios in Faremoutiers, Seine-et-Marne - Last Updated May 2026 - Institut International de Danse Janine Stanlowa, Centre de Danse du Marais,",
+  "raw_json": {
+    "title": "THE BEST 10 Dance Studios near FAREMOUTIERS, SEINE ... - Yelp",
+    "url": "https://m.yelp.com/search?cflt=dancestudio&find_loc=Faremoutiers%2C+Seine-et-Marne",
+    "description": "Best Dance Studios in Faremoutiers, Seine-et-Marne - Last Updated May 2026 - Institut International de Danse Janine Stanlowa, Centre de Danse du Marais,",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "THE BEST 10 Dance Studios near FAREMOUTIERS, SEINE ... - Yelp. Best Dance Studios in Faremoutiers, Seine-et-Marne - Last Updated May 2026 - Institut International de Danse Janine Stanlowa, Centre de Danse du Marais,",
+  "source_confidence": "low"
+}

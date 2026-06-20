@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:93",
+  "source_url": "https://www.billetreduc.com/8536/salle.htm",
+  "collected_at": "2026-06-19T22:47:05+00:00",
+  "raw_name": "Seine-Saint-Denis (93) : Mc93 - Salle De Répétition",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Située à Bobigny , cette salle de spectacle est l'endroit où la magie opère ! Avec ses 100 places, elle offre un espace idéal pour des performances variées. Des",
+  "raw_html_excerpt": "Seine-Saint-Denis (93) : Mc93 - Salle De Répétition. Située à Bobigny , cette salle de spectacle est l'endroit où la magie opère ! Avec ses 100 places, elle offre un espace idéal pour des performances variées. Des",
+  "raw_json": {
+    "title": "Seine-Saint-Denis (93) : Mc93 - Salle De Répétition",
+    "url": "https://www.billetreduc.com/8536/salle.htm",
+    "description": "Située à Bobigny , cette salle de spectacle est l'endroit où la magie opère ! Avec ses 100 places, elle offre un espace idéal pour des performances variées. Des",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Seine-Saint-Denis (93) : Mc93 - Salle De Répétition. Située à Bobigny , cette salle de spectacle est l'endroit où la magie opère ! Avec ses 100 places, elle offre un espace idéal pour des performances variées. Des",
+  "source_confidence": "low"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:93",
+  "source_url": "https://www.mc93.com/espaces",
+  "collected_at": "2026-06-19T22:47:05+00:00",
+  "raw_name": "Les espaces du théâtre | MC93 · Maison de la Culture de ...",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "et répétition, Un studio, Seine-Saint-Denis à Bobigny 9 boulevard Lénine 93000 Bobigny reservation@mc93.com 01 41 60 72 72 La",
+  "raw_html_excerpt": "Les espaces du théâtre | MC93 · Maison de la Culture de .... et répétition, Un studio, Seine-Saint-Denis à Bobigny 9 boulevard Lénine 93000 Bobigny reservation@mc93.com 01 41 60 72 72 La",
+  "raw_json": {
+    "title": "Les espaces du théâtre | MC93 · Maison de la Culture de ...",
+    "url": "https://www.mc93.com/espaces",
+    "description": "et répétition, Un studio, Seine-Saint-Denis à Bobigny 9 boulevard Lénine 93000 Bobigny reservation@mc93.com 01 41 60 72 72 La",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Les espaces du théâtre | MC93 · Maison de la Culture de .... et répétition, Un studio, Seine-Saint-Denis à Bobigny 9 boulevard Lénine 93000 Bobigny reservation@mc93.com 01 41 60 72 72 La",
+  "source_confidence": "low"
+}

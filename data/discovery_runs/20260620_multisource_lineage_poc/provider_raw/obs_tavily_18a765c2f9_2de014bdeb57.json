@@ -1,0 +1,19 @@
+{
+  "name": "Vous souhaitez installer votre activité à Paris ? Bonne nouvelle ! Le ...",
+  "title": "Vous souhaitez installer votre activité à Paris ? Bonne nouvelle ! Le ...",
+  "website": "https://www.instagram.com/p/DV8l9G3gsz0",
+  "source_url": "https://www.instagram.com/p/DV8l9G3gsz0",
+  "source_domain": "instagram.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.15164265,
+  "provider_rank": 3,
+  "discovery_prompt_id": "fr_sud_paris_salles_officielles",
+  "discovery_prompt": "Trouver des pages officielles en France pour louer une petite salle près de Cachan, Châtillon, Montrouge, Bagneux, Arcueil, Malakoff. Salle 10-20 personnes, atelier, yoga, danse, dojo, association. Exclure hôtels, USA, annuaires, mariage, coworking.",
+  "description": "Plusieurs adresses sont disponibles à Paris dans le 8e, 11e, 12e, 13e, 15e, 19e et 20e arrondissements : 32 rue du Général Foy, Paris 8",
+  "evidence_text": "Plusieurs adresses sont disponibles à Paris dans le 8e, 11e, 12e, 13e, 15e, 19e et 20e arrondissements : 32 rue du Général Foy, Paris 8",
+  "raw_content": "",
+  "target_run": "20260620_tavily_prompt_south_fr",
+  "discovered_at": "2026-06-20T07:47:05+00:00"
+}

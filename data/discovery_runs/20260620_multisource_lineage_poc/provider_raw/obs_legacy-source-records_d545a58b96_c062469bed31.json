@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:92",
+  "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+  "collected_at": "2026-06-19T22:47:13+00:00",
+  "raw_name": "Location salle bien-être Hauts-de-France | Gîte et yourte",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "D'une superficie de 35 m², notre grande salle est idéale pour les stages bien-être, formations, cercles ou pratiques collectives. Son atmosphère chaleureuse et",
+  "raw_html_excerpt": "Location salle bien-être Hauts-de-France | Gîte et yourte. D'une superficie de 35 m², notre grande salle est idéale pour les stages bien-être, formations, cercles ou pratiques collectives. Son atmosphère chaleureuse et",
+  "raw_json": {
+    "title": "Location salle bien-être Hauts-de-France | Gîte et yourte",
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france",
+    "description": "D'une superficie de 35 m², notre grande salle est idéale pour les stages bien-être, formations, cercles ou pratiques collectives. Son atmosphère chaleureuse et",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Location salle bien-être Hauts-de-France | Gîte et yourte. D'une superficie de 35 m², notre grande salle est idéale pour les stages bien-être, formations, cercles ou pratiques collectives. Son atmosphère chaleureuse et",
+  "source_confidence": "medium"
+}

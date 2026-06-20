@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:95",
+  "source_url": "https://www.evenementielpourtous.com/location-de-salle/location-lieu-atypique/ile-de-france/val-d-oise",
+  "collected_at": "2026-06-19T22:47:30+00:00",
+  "raw_name": "Demandez un devis Location lieu atypique dans le Val-d'Oise",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Covent Garden Studios met à votre disposition sa salle polyvalente de 100m2 pour tous vos évènements, professionnels ou particuliers. Equipée d'une scène de",
+  "raw_html_excerpt": "Demandez un devis Location lieu atypique dans le Val-d'Oise. Covent Garden Studios met à votre disposition sa salle polyvalente de 100m2 pour tous vos évènements, professionnels ou particuliers. Equipée d'une scène de",
+  "raw_json": {
+    "title": "Demandez un devis Location lieu atypique dans le Val-d'Oise",
+    "url": "https://www.evenementielpourtous.com/location-de-salle/location-lieu-atypique/ile-de-france/val-d-oise",
+    "description": "Covent Garden Studios met à votre disposition sa salle polyvalente de 100m2 pour tous vos évènements, professionnels ou particuliers. Equipée d'une scène de",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Demandez un devis Location lieu atypique dans le Val-d'Oise. Covent Garden Studios met à votre disposition sa salle polyvalente de 100m2 pour tous vos évènements, professionnels ou particuliers. Equipée d'une scène de",
+  "source_confidence": "low"
+}

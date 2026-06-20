@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:94",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/danse-salles-et-lecons",
+  "collected_at": "2026-06-19T22:46:35+00:00",
+  "raw_name": "Danse salles et leçons en Val-de-marne",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Liste des professionnels ; Goudal Anne/Studio Cadence · 2 rue Paul Doumer 94130 Nogent sur Marne · Photo de Goudal Anne/Studio Cadence ; All Fit Alfortville · 52 rue",
+  "raw_html_excerpt": "Danse salles et leçons en Val-de-marne. Liste des professionnels ; Goudal Anne/Studio Cadence · 2 rue Paul Doumer 94130 Nogent sur Marne · Photo de Goudal Anne/Studio Cadence ; All Fit Alfortville · 52 rue",
+  "raw_json": {
+    "title": "Danse salles et leçons en Val-de-marne",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/danse-salles-et-lecons",
+    "description": "Liste des professionnels ; Goudal Anne/Studio Cadence · 2 rue Paul Doumer 94130 Nogent sur Marne · Photo de Goudal Anne/Studio Cadence ; All Fit Alfortville · 52 rue",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Danse salles et leçons en Val-de-marne. Liste des professionnels ; Goudal Anne/Studio Cadence · 2 rue Paul Doumer 94130 Nogent sur Marne · Photo de Goudal Anne/Studio Cadence ; All Fit Alfortville · 52 rue",
+  "source_confidence": "medium"
+}

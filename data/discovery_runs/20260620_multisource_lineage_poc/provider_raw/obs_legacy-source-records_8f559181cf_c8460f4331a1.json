@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:75",
+  "source_url": "https://maps.apple.com/place?place-id=IEF88A0A421A5B6DF",
+  "collected_at": "2026-06-19T22:46:52+00:00",
+  "raw_name": "Dojo de Paris in Paris France - Apple Maps",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "# Apple Maps. Have a Business on Maps? # Dojo de Paris. ## Ratings. ## Overall. ## Details. ### Website. ### Phone. ### Address. 21/25 Avenue de la Porte de Chtillon.",
+  "raw_html_excerpt": "Dojo de Paris in Paris France - Apple Maps. # Apple Maps. Have a Business on Maps? # Dojo de Paris. ## Ratings. ## Overall. ## Details. ### Website. ### Phone. ### Address. 21/25 Avenue de la Porte de Chtillon.",
+  "raw_json": {
+    "title": "Dojo de Paris in Paris France - Apple Maps",
+    "url": "https://maps.apple.com/place?place-id=IEF88A0A421A5B6DF",
+    "description": "# Apple Maps. Have a Business on Maps? # Dojo de Paris. ## Ratings. ## Overall. ## Details. ### Website. ### Phone. ### Address. 21/25 Avenue de la Porte de Chtillon.",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo de Paris in Paris France - Apple Maps. # Apple Maps. Have a Business on Maps? # Dojo de Paris. ## Ratings. ## Overall. ## Details. ### Website. ### Phone. ### Address. 21/25 Avenue de la Porte de Chtillon.",
+  "source_confidence": "low"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:95",
+  "source_url": "https://www.bastide95.com/location-de-salle-val-d-oise",
+  "collected_at": "2026-06-19T22:47:30+00:00",
+  "raw_name": "Louez une salle pour vos événements dans le val d'Oise",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Domaine La Bastide propose la location de salles dans lE VAL D'Oise, à seulement 20km de Paris, pour vos événements privés ou professionnels. Mery-sur-Oise,",
+  "raw_html_excerpt": "Louez une salle pour vos événements dans le val d'Oise. Le Domaine La Bastide propose la location de salles dans lE VAL D'Oise, à seulement 20km de Paris, pour vos événements privés ou professionnels. Mery-sur-Oise,",
+  "raw_json": {
+    "title": "Louez une salle pour vos événements dans le val d'Oise",
+    "url": "https://www.bastide95.com/location-de-salle-val-d-oise",
+    "description": "Le Domaine La Bastide propose la location de salles dans lE VAL D'Oise, à seulement 20km de Paris, pour vos événements privés ou professionnels. Mery-sur-Oise,",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Louez une salle pour vos événements dans le val d'Oise. Le Domaine La Bastide propose la location de salles dans lE VAL D'Oise, à seulement 20km de Paris, pour vos événements privés ou professionnels. Mery-sur-Oise,",
+  "source_confidence": "low"
+}

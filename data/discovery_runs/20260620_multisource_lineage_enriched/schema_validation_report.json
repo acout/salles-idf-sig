@@ -1,0 +1,23 @@
+{
+  "run_dir": "data/discovery_runs/20260620_multisource_lineage_enriched",
+  "valid": true,
+  "errors_count": 0,
+  "errors": [],
+  "observations": 1082,
+  "field_evidence": 5022,
+  "observations_by_provider": {
+    "tavily": 40,
+    "legacy_source_records": 1042
+  },
+  "field_evidence_by_field": {
+    "website": 872,
+    "specific_rental_page": 766,
+    "rental_possible": 1042,
+    "address": 615,
+    "contact": 733,
+    "price": 449,
+    "capacity": 545
+  },
+  "with_specific_rental_page": 766,
+  "with_content_hash": 1082
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:77",
+  "source_url": "https://www.snapevent.fr/location-de-salle/paris/departement-77",
+  "collected_at": "2026-06-19T22:47:27+00:00",
+  "raw_name": "Location de salle 77 - Lieux Atypiques - SnapEvent",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Avec SnapEvent, trouvez la location atypique idéale pour votre événement en Seine et Marne (77) ‎✓ Découvrez un lieu original à louer pour votre soirée.",
+  "raw_html_excerpt": "Location de salle 77 - Lieux Atypiques - SnapEvent. Avec SnapEvent, trouvez la location atypique idéale pour votre événement en Seine et Marne (77) ‎✓ Découvrez un lieu original à louer pour votre soirée.",
+  "raw_json": {
+    "title": "Location de salle 77 - Lieux Atypiques - SnapEvent",
+    "url": "https://www.snapevent.fr/location-de-salle/paris/departement-77",
+    "description": "Avec SnapEvent, trouvez la location atypique idéale pour votre événement en Seine et Marne (77) ‎✓ Découvrez un lieu original à louer pour votre soirée.",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Location de salle 77 - Lieux Atypiques - SnapEvent. Avec SnapEvent, trouvez la location atypique idéale pour votre événement en Seine et Marne (77) ‎✓ Découvrez un lieu original à louer pour votre soirée.",
+  "source_confidence": "medium"
+}

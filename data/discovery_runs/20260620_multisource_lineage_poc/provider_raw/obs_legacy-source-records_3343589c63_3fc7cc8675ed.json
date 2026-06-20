@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:95",
+  "source_url": "https://www.instagram.com/p/DN8eEbC0C2P",
+  "collected_at": "2026-06-19T22:46:51+00:00",
+  "raw_name": "Location du studio 🌿 Besoin d'un espace pour vos activités ...",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Mon studio de yoga est disponible à la location, : tapis, blocs de yoga, coussins de yoga, plaids, chaises, table pliante. : 15 euros Tout.",
+  "raw_html_excerpt": "Location du studio 🌿 Besoin d'un espace pour vos activités .... Mon studio de yoga est disponible à la location, : tapis, blocs de yoga, coussins de yoga, plaids, chaises, table pliante. : 15 euros Tout.",
+  "raw_json": {
+    "title": "Location du studio 🌿 Besoin d'un espace pour vos activités ...",
+    "url": "https://www.instagram.com/p/DN8eEbC0C2P",
+    "description": "Mon studio de yoga est disponible à la location, : tapis, blocs de yoga, coussins de yoga, plaids, chaises, table pliante. : 15 euros Tout.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location du studio 🌿 Besoin d'un espace pour vos activités .... Mon studio de yoga est disponible à la location, : tapis, blocs de yoga, coussins de yoga, plaids, chaises, table pliante. : 15 euros Tout.",
+  "source_confidence": "low"
+}

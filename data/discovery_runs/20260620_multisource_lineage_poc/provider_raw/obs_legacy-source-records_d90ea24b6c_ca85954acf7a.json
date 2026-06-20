@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:93",
+  "source_url": "https://www.stdenislesbourg.fr/657-saint-denis-dojo.htm",
+  "collected_at": "2026-06-19T22:46:54+00:00",
+  "raw_name": "Saint-Denis Dojo",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "120 Rue des Ecoles. CONTACT: 120 Rue des Ecoles à SAINT DENIS LES BOURG 06 15 62 49 92 saintdenisdojo@gmail.com. Du lundi au vendredi : 8h30-12h",
+  "raw_html_excerpt": "Saint-Denis Dojo. 120 Rue des Ecoles. CONTACT: 120 Rue des Ecoles à SAINT DENIS LES BOURG 06 15 62 49 92 saintdenisdojo@gmail.com. Du lundi au vendredi : 8h30-12h",
+  "raw_json": {
+    "title": "Saint-Denis Dojo",
+    "url": "https://www.stdenislesbourg.fr/657-saint-denis-dojo.htm",
+    "description": "120 Rue des Ecoles. CONTACT: 120 Rue des Ecoles à SAINT DENIS LES BOURG 06 15 62 49 92 saintdenisdojo@gmail.com. Du lundi au vendredi : 8h30-12h",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Saint-Denis Dojo. 120 Rue des Ecoles. CONTACT: 120 Rue des Ecoles à SAINT DENIS LES BOURG 06 15 62 49 92 saintdenisdojo@gmail.com. Du lundi au vendredi : 8h30-12h",
+  "source_confidence": "medium"
+}

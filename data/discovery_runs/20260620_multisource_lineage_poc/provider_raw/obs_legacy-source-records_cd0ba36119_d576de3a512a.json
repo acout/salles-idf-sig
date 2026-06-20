@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:95",
+  "source_url": "https://lamaisongioia.fr/stages",
+  "collected_at": "2026-06-19T22:46:51+00:00",
+  "raw_name": "Location gite stage - La Maison Gioia - Val d'Oise (95) l'Isle ...",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Location gite pour stage de yoga, retraites spirituelles en Val d'Oise à Nerville à seulement 30 min de Paris, Accès aux deux salles de pratique compris. Du",
+  "raw_html_excerpt": "Location gite stage - La Maison Gioia - Val d'Oise (95) l'Isle .... Location gite pour stage de yoga, retraites spirituelles en Val d'Oise à Nerville à seulement 30 min de Paris, Accès aux deux salles de pratique compris. Du",
+  "raw_json": {
+    "title": "Location gite stage - La Maison Gioia - Val d'Oise (95) l'Isle ...",
+    "url": "https://lamaisongioia.fr/stages",
+    "description": "Location gite pour stage de yoga, retraites spirituelles en Val d'Oise à Nerville à seulement 30 min de Paris, Accès aux deux salles de pratique compris. Du",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location gite stage - La Maison Gioia - Val d'Oise (95) l'Isle .... Location gite pour stage de yoga, retraites spirituelles en Val d'Oise à Nerville à seulement 30 min de Paris, Accès aux deux salles de pratique compris. Du",
+  "source_confidence": "medium"
+}

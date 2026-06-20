@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:77",
+  "source_url": "https://www.leboncoin.fr/cl/evenements/dp_seine-et-marne",
+  "collected_at": "2026-06-19T22:47:27+00:00",
+  "raw_name": "Événements, location de salle, mariages et fêtes Seine-et-Marne (77)",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Toutes nos annonces gratuites Événements, location de salle, mariages et fêtes Seine-et-Marne (77). Consultez nos annonces de particuliers et professionnels",
+  "raw_html_excerpt": "Événements, location de salle, mariages et fêtes Seine-et-Marne (77). Toutes nos annonces gratuites Événements, location de salle, mariages et fêtes Seine-et-Marne (77). Consultez nos annonces de particuliers et professionnels",
+  "raw_json": {
+    "title": "Événements, location de salle, mariages et fêtes Seine-et-Marne (77)",
+    "url": "https://www.leboncoin.fr/cl/evenements/dp_seine-et-marne",
+    "description": "Toutes nos annonces gratuites Événements, location de salle, mariages et fêtes Seine-et-Marne (77). Consultez nos annonces de particuliers et professionnels",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Événements, location de salle, mariages et fêtes Seine-et-Marne (77). Toutes nos annonces gratuites Événements, location de salle, mariages et fêtes Seine-et-Marne (77). Consultez nos annonces de particuliers et professionnels",
+  "source_confidence": "medium"
+}

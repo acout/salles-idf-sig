@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:91",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/essonne-91/location-salle-des-fetes",
+  "collected_at": "2026-06-19T22:47:20+00:00",
+  "raw_name": "Location salle des fêtes en Essonne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Diadème est une entreprise de location de salles située à l'adresse 22 rue Bel Air à Lisses (91090). Elle propose plusieurs salles pour organiser divers",
+  "raw_html_excerpt": "Location salle des fêtes en Essonne - Pages Jaunes. Le Diadème est une entreprise de location de salles située à l'adresse 22 rue Bel Air à Lisses (91090). Elle propose plusieurs salles pour organiser divers",
+  "raw_json": {
+    "title": "Location salle des fêtes en Essonne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/essonne-91/location-salle-des-fetes",
+    "description": "Le Diadème est une entreprise de location de salles située à l'adresse 22 rue Bel Air à Lisses (91090). Elle propose plusieurs salles pour organiser divers",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Location salle des fêtes en Essonne - Pages Jaunes. Le Diadème est une entreprise de location de salles située à l'adresse 22 rue Bel Air à Lisses (91090). Elle propose plusieurs salles pour organiser divers",
+  "source_confidence": "medium"
+}

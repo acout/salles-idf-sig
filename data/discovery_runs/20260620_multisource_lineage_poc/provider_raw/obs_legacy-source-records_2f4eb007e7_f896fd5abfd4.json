@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:75",
+  "source_url": "https://www.circle-movement.com",
+  "collected_at": "2026-06-19T22:47:22+00:00",
+  "raw_name": "Circle Movement - Un nouveau genre de salle de sport - Paris 11",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Circle Movement est une <b>salle</b> ・ au coeur du 11ème arrondissement à <b>Paris</b>. SALLE À PARIS ・ contact@circle-movement.com",
+  "raw_html_excerpt": "Circle Movement - Un nouveau genre de salle de sport - Paris 11. Circle Movement est une <b>salle</b> ・ au coeur du 11ème arrondissement à <b>Paris</b>. SALLE À PARIS ・ contact@circle-movement.com",
+  "raw_json": {
+    "title": "Circle Movement - Un nouveau genre de salle de sport - Paris 11",
+    "url": "https://www.circle-movement.com",
+    "description": "Circle Movement est une <b>salle</b> ・ au coeur du 11ème arrondissement à <b>Paris</b>. SALLE À PARIS ・ contact@circle-movement.com",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Circle Movement - Un nouveau genre de salle de sport - Paris 11. Circle Movement est une <b>salle</b> ・ au coeur du 11ème arrondissement à <b>Paris</b>. SALLE À PARIS ・ contact@circle-movement.com",
+  "source_confidence": "low"
+}

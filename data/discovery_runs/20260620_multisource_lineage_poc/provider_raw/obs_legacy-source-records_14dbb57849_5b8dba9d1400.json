@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:91",
+  "source_url": "https://m.yelp.com/search?cflt=martialarts&find_loc=Massy%2C+Essonne%2C+France",
+  "collected_at": "2026-06-19T22:47:00+00:00",
+  "raw_name": "THE BEST 10 Martial Arts near MASSY, ESSONNE, FRANCE - Yelp",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "1. Battling Club · 11.1 mi. 13 rue Grange Aux Belles, 75010 Paris France. 01 42 01 24 12 ; 2. Dojo 5 · 9.3 mi. 26 Rue Pontoise, 75005 Paris France. 01 46 34 59 26.",
+  "raw_html_excerpt": "THE BEST 10 Martial Arts near MASSY, ESSONNE, FRANCE - Yelp. 1. Battling Club · 11.1 mi. 13 rue Grange Aux Belles, 75010 Paris France. 01 42 01 24 12 ; 2. Dojo 5 · 9.3 mi. 26 Rue Pontoise, 75005 Paris France. 01 46 34 59 26.",
+  "raw_json": {
+    "title": "THE BEST 10 Martial Arts near MASSY, ESSONNE, FRANCE - Yelp",
+    "url": "https://m.yelp.com/search?cflt=martialarts&find_loc=Massy%2C+Essonne%2C+France",
+    "description": "1. Battling Club · 11.1 mi. 13 rue Grange Aux Belles, 75010 Paris France. 01 42 01 24 12 ; 2. Dojo 5 · 9.3 mi. 26 Rue Pontoise, 75005 Paris France. 01 46 34 59 26.",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "THE BEST 10 Martial Arts near MASSY, ESSONNE, FRANCE - Yelp. 1. Battling Club · 11.1 mi. 13 rue Grange Aux Belles, 75010 Paris France. 01 42 01 24 12 ; 2. Dojo 5 · 9.3 mi. 26 Rue Pontoise, 75005 Paris France. 01 46 34 59 26.",
+  "source_confidence": "low"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:78",
+  "source_url": "https://m.yelp.com/biz/association-aikido-shingitai-dojo-le-chesnay-le-chesnay",
+  "collected_at": "2026-06-19T22:46:59+00:00",
+  "raw_name": "ASSOCIATION AIKIDO SHINGITAI DOJO LE CHESNAY - Yelp",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "7 Rue Pottier. 78150 Le Chesnay. France. Directions ; 01 39 43 93 45. Call Now ; Visit Website. http://www.shingitaidojo.fr.",
+  "raw_html_excerpt": "ASSOCIATION AIKIDO SHINGITAI DOJO LE CHESNAY - Yelp. 7 Rue Pottier. 78150 Le Chesnay. France. Directions ; 01 39 43 93 45. Call Now ; Visit Website. http://www.shingitaidojo.fr.",
+  "raw_json": {
+    "title": "ASSOCIATION AIKIDO SHINGITAI DOJO LE CHESNAY - Yelp",
+    "url": "https://m.yelp.com/biz/association-aikido-shingitai-dojo-le-chesnay-le-chesnay",
+    "description": "7 Rue Pottier. 78150 Le Chesnay. France. Directions ; 01 39 43 93 45. Call Now ; Visit Website. http://www.shingitaidojo.fr.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "ASSOCIATION AIKIDO SHINGITAI DOJO LE CHESNAY - Yelp. 7 Rue Pottier. 78150 Le Chesnay. France. Directions ; 01 39 43 93 45. Call Now ; Visit Website. http://www.shingitaidojo.fr.",
+  "source_confidence": "medium"
+}

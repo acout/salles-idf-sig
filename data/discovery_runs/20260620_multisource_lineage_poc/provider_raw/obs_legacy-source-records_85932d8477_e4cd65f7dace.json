@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:91",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/essonne-91/dojo",
+  "collected_at": "2026-06-19T22:47:00+00:00",
+  "raw_name": "Dojo en Essonne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo en Essonne 37 route Leuville 91180 Saint Germain lès Arpajon SEISHIN'TANREN DOJO. Marivaux rue Rouget 91640. Location de terrain, abonnement, championnat,",
+  "raw_html_excerpt": "Dojo en Essonne - Pages Jaunes. Dojo en Essonne 37 route Leuville 91180 Saint Germain lès Arpajon SEISHIN'TANREN DOJO. Marivaux rue Rouget 91640. Location de terrain, abonnement, championnat,",
+  "raw_json": {
+    "title": "Dojo en Essonne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/essonne-91/dojo",
+    "description": "Dojo en Essonne 37 route Leuville 91180 Saint Germain lès Arpajon SEISHIN'TANREN DOJO. Marivaux rue Rouget 91640. Location de terrain, abonnement, championnat,",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo en Essonne - Pages Jaunes. Dojo en Essonne 37 route Leuville 91180 Saint Germain lès Arpajon SEISHIN'TANREN DOJO. Marivaux rue Rouget 91640. Location de terrain, abonnement, championnat,",
+  "source_confidence": "medium"
+}

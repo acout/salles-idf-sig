@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:92",
+  "source_url": "https://m.yelp.com/search?find_desc=Dance+Studios&find_loc=Boulogne-Billancourt",
+  "collected_at": "2026-06-19T22:46:33+00:00",
+  "raw_name": "Best Dance Studios near Boulogne-Billancourt, Hauts-de-Seine ...",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "1. De Neuville Catherine · 2. BBDC - Boulogne Billancourt Danse Club · 3. Cirque Nomade - Cours Cirque Enfants · 4. Centre Exelmans · 5. Paris Capoeira avec Bamba.",
+  "raw_html_excerpt": "Best Dance Studios near Boulogne-Billancourt, Hauts-de-Seine .... 1. De Neuville Catherine · 2. BBDC - Boulogne Billancourt Danse Club · 3. Cirque Nomade - Cours Cirque Enfants · 4. Centre Exelmans · 5. Paris Capoeira avec Bamba.",
+  "raw_json": {
+    "title": "Best Dance Studios near Boulogne-Billancourt, Hauts-de-Seine ...",
+    "url": "https://m.yelp.com/search?find_desc=Dance+Studios&find_loc=Boulogne-Billancourt",
+    "description": "1. De Neuville Catherine · 2. BBDC - Boulogne Billancourt Danse Club · 3. Cirque Nomade - Cours Cirque Enfants · 4. Centre Exelmans · 5. Paris Capoeira avec Bamba.",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Best Dance Studios near Boulogne-Billancourt, Hauts-de-Seine .... 1. De Neuville Catherine · 2. BBDC - Boulogne Billancourt Danse Club · 3. Cirque Nomade - Cours Cirque Enfants · 4. Centre Exelmans · 5. Paris Capoeira avec Bamba.",
+  "source_confidence": "low"
+}

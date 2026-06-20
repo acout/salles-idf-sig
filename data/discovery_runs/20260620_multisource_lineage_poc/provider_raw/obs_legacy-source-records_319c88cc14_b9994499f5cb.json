@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:75",
+  "source_url": "https://www.yogmee.fr/salles/espace-bien-etre-paris-14",
+  "collected_at": "2026-06-19T22:47:12+00:00",
+  "raw_name": "ESPACE BIEN ETRE PARIS 14 - YogMee",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Coordonnées. Gestionnaire Mme GRADEL. Téléphone 0681434891. Courriel confiance-detente@live.fr. Site internet https://www.votre-bien-etre.fr. Adresse.",
+  "raw_html_excerpt": "ESPACE BIEN ETRE PARIS 14 - YogMee. Coordonnées. Gestionnaire Mme GRADEL. Téléphone 0681434891. Courriel confiance-detente@live.fr. Site internet https://www.votre-bien-etre.fr. Adresse.",
+  "raw_json": {
+    "title": "ESPACE BIEN ETRE PARIS 14 - YogMee",
+    "url": "https://www.yogmee.fr/salles/espace-bien-etre-paris-14",
+    "description": "Coordonnées. Gestionnaire Mme GRADEL. Téléphone 0681434891. Courriel confiance-detente@live.fr. Site internet https://www.votre-bien-etre.fr. Adresse.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "ESPACE BIEN ETRE PARIS 14 - YogMee. Coordonnées. Gestionnaire Mme GRADEL. Téléphone 0681434891. Courriel confiance-detente@live.fr. Site internet https://www.votre-bien-etre.fr. Adresse.",
+  "source_confidence": "medium"
+}

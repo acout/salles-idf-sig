@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-06-20T08:17:54+00:00",
+  "provider": "tavily",
+  "run_id": "20260620_tavily_prompt_south_fr",
+  "prompts": 5,
+  "raw_results": 40,
+  "output_records": 40,
+  "duplicate_urls_detected": 3,
+  "duplicate_urls_removed": 0,
+  "dedupe_urls": false,
+  "errors": [],
+  "output": "data/source_records/tavily_south_banlieue_prompt_discovery_fr_20260620.json"
+}

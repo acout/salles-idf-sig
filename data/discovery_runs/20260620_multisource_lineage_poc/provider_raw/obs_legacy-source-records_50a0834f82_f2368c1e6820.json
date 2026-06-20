@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:77",
+  "source_url": "https://kyaoso.com/listings/salle-egypte-a-louer-37-m-lagny-sur-marne_7a5ab19f-9f19-47ab-a3e1-a55175a82c93",
+  "collected_at": "2026-06-19T22:46:47+00:00",
+  "raw_name": "Location Yoga Lagny-sur-Marne – - Salle \"EGYPTE\" à louer (37 m²)",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "En SEINE-ET-MARNE - Lagny-sur-Marne (77) Situé en hyper centre-ville à 5 mn à pied de la gare, proche du secteur Disneyland et à 25 mn de Paris en train.",
+  "raw_html_excerpt": "Location Yoga Lagny-sur-Marne – - Salle \"EGYPTE\" à louer (37 m²). En SEINE-ET-MARNE - Lagny-sur-Marne (77) Situé en hyper centre-ville à 5 mn à pied de la gare, proche du secteur Disneyland et à 25 mn de Paris en train.",
+  "raw_json": {
+    "title": "Location Yoga Lagny-sur-Marne – - Salle \"EGYPTE\" à louer (37 m²)",
+    "url": "https://kyaoso.com/listings/salle-egypte-a-louer-37-m-lagny-sur-marne_7a5ab19f-9f19-47ab-a3e1-a55175a82c93",
+    "description": "En SEINE-ET-MARNE - Lagny-sur-Marne (77) Situé en hyper centre-ville à 5 mn à pied de la gare, proche du secteur Disneyland et à 25 mn de Paris en train.",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location Yoga Lagny-sur-Marne – - Salle \"EGYPTE\" à louer (37 m²). En SEINE-ET-MARNE - Lagny-sur-Marne (77) Situé en hyper centre-ville à 5 mn à pied de la gare, proche du secteur Disneyland et à 25 mn de Paris en train.",
+  "source_confidence": "low"
+}

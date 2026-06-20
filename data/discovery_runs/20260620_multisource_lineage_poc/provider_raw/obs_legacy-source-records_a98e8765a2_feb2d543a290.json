@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:94",
+  "source_url": "https://www.facebook.com/groups/3730163793874619",
+  "collected_at": "2026-06-19T22:46:35+00:00",
+  "raw_name": "Salles de danse, à louer sur le 75, 92, 94, pas cher ou en troc",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Studio La Casa - Paris 19e vous propose : □ □ LOCATION DE SALLE □ □ PARIS 19e Toutes disciplines - Artistiques/Sportives/Bien être/Relaxation Toutes Danses",
+  "raw_html_excerpt": "Salles de danse, à louer sur le 75, 92, 94, pas cher ou en troc. Studio La Casa - Paris 19e vous propose : □ □ LOCATION DE SALLE □ □ PARIS 19e Toutes disciplines - Artistiques/Sportives/Bien être/Relaxation Toutes Danses",
+  "raw_json": {
+    "title": "Salles de danse, à louer sur le 75, 92, 94, pas cher ou en troc",
+    "url": "https://www.facebook.com/groups/3730163793874619",
+    "description": "Studio La Casa - Paris 19e vous propose : □ □ LOCATION DE SALLE □ □ PARIS 19e Toutes disciplines - Artistiques/Sportives/Bien être/Relaxation Toutes Danses",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Salles de danse, à louer sur le 75, 92, 94, pas cher ou en troc. Studio La Casa - Paris 19e vous propose : □ □ LOCATION DE SALLE □ □ PARIS 19e Toutes disciplines - Artistiques/Sportives/Bien être/Relaxation Toutes Danses",
+  "source_confidence": "low"
+}

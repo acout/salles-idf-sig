@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:94",
+  "source_url": "https://www.yogmee.fr/salles",
+  "collected_at": "2026-06-19T22:46:45+00:00",
+  "raw_name": "Salles et lieux à louer pour yoga, stages et retraites - YogMee",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Trouvez des salles et lieux à louer pour organiser cours, stages, retraites ou événements de yoga partout en France grâce à l'annuaire YogMee.",
+  "raw_html_excerpt": "Salles et lieux à louer pour yoga, stages et retraites - YogMee. Trouvez des salles et lieux à louer pour organiser cours, stages, retraites ou événements de yoga partout en France grâce à l'annuaire YogMee.",
+  "raw_json": {
+    "title": "Salles et lieux à louer pour yoga, stages et retraites - YogMee",
+    "url": "https://www.yogmee.fr/salles",
+    "description": "Trouvez des salles et lieux à louer pour organiser cours, stages, retraites ou événements de yoga partout en France grâce à l'annuaire YogMee.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Salles et lieux à louer pour yoga, stages et retraites - YogMee. Trouvez des salles et lieux à louer pour organiser cours, stages, retraites ou événements de yoga partout en France grâce à l'annuaire YogMee.",
+  "source_confidence": "medium"
+}

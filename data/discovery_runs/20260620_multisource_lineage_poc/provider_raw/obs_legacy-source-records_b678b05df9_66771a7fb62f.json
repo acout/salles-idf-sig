@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:78",
+  "source_url": "https://studio-danse-l-aire-yvelines.fr/studio-de-danse",
+  "collected_at": "2026-06-19T22:46:37+00:00",
+  "raw_name": "Studio de danse l'Aire - STUDIO DE DANSE",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "STUDIO DE DANSE ・ de 13m de diamètre (135 m2 au sol) Accueil danse, musique, chant, théâtre, séance. Possibilité locations ponctuelles ・ répétitions, stages,",
+  "raw_html_excerpt": "Studio de danse l'Aire - STUDIO DE DANSE. STUDIO DE DANSE ・ de 13m de diamètre (135 m2 au sol) Accueil danse, musique, chant, théâtre, séance. Possibilité locations ponctuelles ・ répétitions, stages,",
+  "raw_json": {
+    "title": "Studio de danse l'Aire - STUDIO DE DANSE",
+    "url": "https://studio-danse-l-aire-yvelines.fr/studio-de-danse",
+    "description": "STUDIO DE DANSE ・ de 13m de diamètre (135 m2 au sol) Accueil danse, musique, chant, théâtre, séance. Possibilité locations ponctuelles ・ répétitions, stages,",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Studio de danse l'Aire - STUDIO DE DANSE. STUDIO DE DANSE ・ de 13m de diamètre (135 m2 au sol) Accueil danse, musique, chant, théâtre, séance. Possibilité locations ponctuelles ・ répétitions, stages,",
+  "source_confidence": "medium"
+}

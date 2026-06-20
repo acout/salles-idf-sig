@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:93",
+  "source_url": "https://www.facebook.com/groups/coloc974/posts/2664064500445719",
+  "collected_at": "2026-06-19T22:47:14+00:00",
+  "raw_name": "Espace Bien-Être à Sous-Louer – Saint-Denis (Réunion) OM ...",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le lieu Cabinet d'environ 15 m² entièrement équipé, avec table de soin, fauteuils, mobilier et ambiance propice aux pratiques énergétiques et",
+  "raw_html_excerpt": "Espace Bien-Être à Sous-Louer – Saint-Denis (Réunion) OM .... Le lieu Cabinet d'environ 15 m² entièrement équipé, avec table de soin, fauteuils, mobilier et ambiance propice aux pratiques énergétiques et",
+  "raw_json": {
+    "title": "Espace Bien-Être à Sous-Louer – Saint-Denis (Réunion) OM ...",
+    "url": "https://www.facebook.com/groups/coloc974/posts/2664064500445719",
+    "description": "Le lieu Cabinet d'environ 15 m² entièrement équipé, avec table de soin, fauteuils, mobilier et ambiance propice aux pratiques énergétiques et",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Espace Bien-Être à Sous-Louer – Saint-Denis (Réunion) OM .... Le lieu Cabinet d'environ 15 m² entièrement équipé, avec table de soin, fauteuils, mobilier et ambiance propice aux pratiques énergétiques et",
+  "source_confidence": "low"
+}

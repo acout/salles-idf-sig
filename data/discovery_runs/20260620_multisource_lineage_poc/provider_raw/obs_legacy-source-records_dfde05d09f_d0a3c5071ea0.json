@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:95",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-d-oise-95/location-salle-mariage",
+  "collected_at": "2026-06-19T22:47:30+00:00",
+  "raw_name": "Location salle mariage en Val-d'oise - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Loca'Salle est une entreprise spécialisée dans la location de salles située à Eragny Sur Oise, dans le 95. Elle propose plusieurs salles adaptées à tous types d",
+  "raw_html_excerpt": "Location salle mariage en Val-d'oise - Pages Jaunes. Loca'Salle est une entreprise spécialisée dans la location de salles située à Eragny Sur Oise, dans le 95. Elle propose plusieurs salles adaptées à tous types d",
+  "raw_json": {
+    "title": "Location salle mariage en Val-d'oise - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-d-oise-95/location-salle-mariage",
+    "description": "Loca'Salle est une entreprise spécialisée dans la location de salles située à Eragny Sur Oise, dans le 95. Elle propose plusieurs salles adaptées à tous types d",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Location salle mariage en Val-d'oise - Pages Jaunes. Loca'Salle est une entreprise spécialisée dans la location de salles située à Eragny Sur Oise, dans le 95. Elle propose plusieurs salles adaptées à tous types d",
+  "source_confidence": "medium"
+}

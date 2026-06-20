@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:93",
+  "source_url": "https://www.evenementielpourtous.com/location-de-salle/location-de-salle-de-seminaire/ile-de-france/seine-saint-denis",
+  "collected_at": "2026-06-19T22:47:25+00:00",
+  "raw_name": "Salle séminaire en Seine-Saint-Denis (93) | - EvenementielPourTous",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Profitez de 605 m² d'espace, qui contient du coworking, deux salles de réunion de 13 m² chacune et un grand espace de restauration, au sein du parc d'activités",
+  "raw_html_excerpt": "Salle séminaire en Seine-Saint-Denis (93) | - EvenementielPourTous. Profitez de 605 m² d'espace, qui contient du coworking, deux salles de réunion de 13 m² chacune et un grand espace de restauration, au sein du parc d'activités",
+  "raw_json": {
+    "title": "Salle séminaire en Seine-Saint-Denis (93) | - EvenementielPourTous",
+    "url": "https://www.evenementielpourtous.com/location-de-salle/location-de-salle-de-seminaire/ile-de-france/seine-saint-denis",
+    "description": "Profitez de 605 m² d'espace, qui contient du coworking, deux salles de réunion de 13 m² chacune et un grand espace de restauration, au sein du parc d'activités",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Salle séminaire en Seine-Saint-Denis (93) | - EvenementielPourTous. Profitez de 605 m² d'espace, qui contient du coworking, deux salles de réunion de 13 m² chacune et un grand espace de restauration, au sein du parc d'activités",
+  "source_confidence": "low"
+}

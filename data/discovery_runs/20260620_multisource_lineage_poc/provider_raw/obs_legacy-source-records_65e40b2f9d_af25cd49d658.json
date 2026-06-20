@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:94",
+  "source_url": "https://www.funbooker.com/fr/category/spa/val-de-marne",
+  "collected_at": "2026-06-19T22:47:16+00:00",
+  "raw_name": "Les meilleurs spas dans le Val-de-Marne dès 49 - Funbooker",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Loft Body Concept à Nogent-sur-Marne · Tarif : 169 € · Horaires : lun-sam 10h–19h, dim 9h–20h · Équipements : jacuzzi, sauna infrarouge, douche sensorielle,",
+  "raw_html_excerpt": "Les meilleurs spas dans le Val-de-Marne dès 49 - Funbooker. Loft Body Concept à Nogent-sur-Marne · Tarif : 169 € · Horaires : lun-sam 10h–19h, dim 9h–20h · Équipements : jacuzzi, sauna infrarouge, douche sensorielle,",
+  "raw_json": {
+    "title": "Les meilleurs spas dans le Val-de-Marne dès 49 - Funbooker",
+    "url": "https://www.funbooker.com/fr/category/spa/val-de-marne",
+    "description": "Loft Body Concept à Nogent-sur-Marne · Tarif : 169 € · Horaires : lun-sam 10h–19h, dim 9h–20h · Équipements : jacuzzi, sauna infrarouge, douche sensorielle,",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Les meilleurs spas dans le Val-de-Marne dès 49 - Funbooker. Loft Body Concept à Nogent-sur-Marne · Tarif : 169 € · Horaires : lun-sam 10h–19h, dim 9h–20h · Équipements : jacuzzi, sauna infrarouge, douche sensorielle,",
+  "source_confidence": "low"
+}

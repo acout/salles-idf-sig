@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:94",
+  "source_url": "https://aikido-charenton.cravan.fr",
+  "collected_at": "2026-06-19T22:46:56+00:00",
+  "raw_name": "Aikido Club Charenton Val-de-Marne – 9 rue du Nouveau Bercy ...",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Cours d'essai gratuit toute l'année ! Téléchargez la fiche d'inscription. Dojo Gymnase Maurice Herzog · 9 rue du Nouveau Bercy · 94220 Charenton. Articles",
+  "raw_html_excerpt": "Aikido Club Charenton Val-de-Marne – 9 rue du Nouveau Bercy .... Cours d'essai gratuit toute l'année ! Téléchargez la fiche d'inscription. Dojo Gymnase Maurice Herzog · 9 rue du Nouveau Bercy · 94220 Charenton. Articles",
+  "raw_json": {
+    "title": "Aikido Club Charenton Val-de-Marne – 9 rue du Nouveau Bercy ...",
+    "url": "https://aikido-charenton.cravan.fr",
+    "description": "Cours d'essai gratuit toute l'année ! Téléchargez la fiche d'inscription. Dojo Gymnase Maurice Herzog · 9 rue du Nouveau Bercy · 94220 Charenton. Articles",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Aikido Club Charenton Val-de-Marne – 9 rue du Nouveau Bercy .... Cours d'essai gratuit toute l'année ! Téléchargez la fiche d'inscription. Dojo Gymnase Maurice Herzog · 9 rue du Nouveau Bercy · 94220 Charenton. Articles",
+  "source_confidence": "medium"
+}

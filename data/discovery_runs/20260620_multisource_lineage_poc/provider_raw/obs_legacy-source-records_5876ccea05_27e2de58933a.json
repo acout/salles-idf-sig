@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:78",
+  "source_url": "https://vitaeartsmartiaux.fr",
+  "collected_at": "2026-06-19T22:46:59+00:00",
+  "raw_name": "VITÆ Centre d'Arts Martiaux & Fitness dans les Yvelines 78",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Un environnement sportif adapté à vos besoins. Le centre dispose de deux dojos de 250 m² avec espaces tatamis, musculation et cardio-training. ... L'espace est",
+  "raw_html_excerpt": "VITÆ Centre d'Arts Martiaux & Fitness dans les Yvelines 78. Un environnement sportif adapté à vos besoins. Le centre dispose de deux dojos de 250 m² avec espaces tatamis, musculation et cardio-training. ... L'espace est",
+  "raw_json": {
+    "title": "VITÆ Centre d'Arts Martiaux & Fitness dans les Yvelines 78",
+    "url": "https://vitaeartsmartiaux.fr",
+    "description": "Un environnement sportif adapté à vos besoins. Le centre dispose de deux dojos de 250 m² avec espaces tatamis, musculation et cardio-training. ... L'espace est",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "VITÆ Centre d'Arts Martiaux & Fitness dans les Yvelines 78. Un environnement sportif adapté à vos besoins. Le centre dispose de deux dojos de 250 m² avec espaces tatamis, musculation et cardio-training. ... L'espace est",
+  "source_confidence": "medium"
+}

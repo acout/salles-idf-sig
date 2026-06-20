@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:92",
+  "source_url": "https://www.chateauform.com/fr/lp/location-salle/france/ile-de-france/hauts-de-seine",
+  "collected_at": "2026-06-19T22:47:23+00:00",
+  "raw_name": "Location de salle dans les Hauts-de-Seine (92) avec Chateauform'",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Nos salles de réunion dans les Hauts-de-Seine et à proximité ; La Manufacture. 150 · Métro Corentin Celton ; La Grande Verrière du CNIT. 400 · Métro La Défense",
+  "raw_html_excerpt": "Location de salle dans les Hauts-de-Seine (92) avec Chateauform'. Nos salles de réunion dans les Hauts-de-Seine et à proximité ; La Manufacture. 150 · Métro Corentin Celton ; La Grande Verrière du CNIT. 400 · Métro La Défense",
+  "raw_json": {
+    "title": "Location de salle dans les Hauts-de-Seine (92) avec Chateauform'",
+    "url": "https://www.chateauform.com/fr/lp/location-salle/france/ile-de-france/hauts-de-seine",
+    "description": "Nos salles de réunion dans les Hauts-de-Seine et à proximité ; La Manufacture. 150 · Métro Corentin Celton ; La Grande Verrière du CNIT. 400 · Métro La Défense",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Location de salle dans les Hauts-de-Seine (92) avec Chateauform'. Nos salles de réunion dans les Hauts-de-Seine et à proximité ; La Manufacture. 150 · Métro Corentin Celton ; La Grande Verrière du CNIT. 400 · Métro La Défense",
+  "source_confidence": "low"
+}

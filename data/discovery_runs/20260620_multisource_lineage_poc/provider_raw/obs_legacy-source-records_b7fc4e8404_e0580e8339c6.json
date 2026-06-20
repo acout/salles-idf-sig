@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:75",
+  "source_url": "https://yogavillage.fr/location-studio-de-yoga-paris",
+  "collected_at": "2026-06-19T22:46:41+00:00",
+  "raw_name": "Location studio de yoga Paris - Yoga Village Paris",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Nos 2 studios sont disponibles à la location. Nous avons aussi un créneau hebdomadaire à louer le jeudi 20h, 39 boulevard des Capucines 75002 PARIS. La capacité",
+  "raw_html_excerpt": "Location studio de yoga Paris - Yoga Village Paris. Nos 2 studios sont disponibles à la location. Nous avons aussi un créneau hebdomadaire à louer le jeudi 20h, 39 boulevard des Capucines 75002 PARIS. La capacité",
+  "raw_json": {
+    "title": "Location studio de yoga Paris - Yoga Village Paris",
+    "url": "https://yogavillage.fr/location-studio-de-yoga-paris",
+    "description": "Nos 2 studios sont disponibles à la location. Nous avons aussi un créneau hebdomadaire à louer le jeudi 20h, 39 boulevard des Capucines 75002 PARIS. La capacité",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location studio de yoga Paris - Yoga Village Paris. Nos 2 studios sont disponibles à la location. Nous avons aussi un créneau hebdomadaire à louer le jeudi 20h, 39 boulevard des Capucines 75002 PARIS. La capacité",
+  "source_confidence": "medium"
+}

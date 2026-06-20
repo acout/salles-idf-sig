@@ -1,0 +1,22 @@
+[
+  {
+    "id": "south_official_rental_rooms",
+    "prompt": "Find official pages for rentable small rooms, studios, dojos or dance/yoga rooms near Cachan, Châtillon, Montrouge, Bagneux, Arcueil, Malakoff. External workshops 10-20 people. Prefer price, capacity, contact. Avoid directories, gyms, courses-only pages."
+  },
+  {
+    "id": "yoga_dance_rental_signal",
+    "prompt": "Find yoga or dance studios near Cachan and Châtillon that explicitly mention room rental, studio rental, privatisation, mise à disposition, location de salle, or hosting workshops. Exclude pages only selling classes or memberships."
+  },
+  {
+    "id": "municipal_association_rooms",
+    "prompt": "Find mairie, maison des associations, MJC, centre social or centre culturel pages around Cachan, Châtillon, Montrouge, Bagneux, Arcueil with small rooms available for associations or workshops. Need booking conditions, contact, price or capacity."
+  },
+  {
+    "id": "movement_empty_rooms",
+    "prompt": "Find small empty or modular rooms in south Paris suburbs suitable for movement, dance, yoga, voice or group workshops. Prefer official pages mentioning parquet, tatami, mirrors, dojo, salle de danse, salle polyvalente or atelier."
+  },
+  {
+    "id": "formal_info_rental_pages",
+    "prompt": "Find rentable room pages near Cachan or Châtillon with practical information: hourly price, day rate, capacity, exact address, email, phone, booking form, rental conditions, insurance, evening or weekend availability. Prefer official sites."
+  }
+]

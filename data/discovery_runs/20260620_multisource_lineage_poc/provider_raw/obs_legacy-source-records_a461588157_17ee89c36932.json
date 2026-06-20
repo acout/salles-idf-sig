@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:93",
+  "source_url": "https://m.yelp.com/search?cflt=martialarts&find_loc=Pierrefitte-sur-Seine%2C+Seine-Saint-Denis",
+  "collected_at": "2026-06-19T22:46:54+00:00",
+  "raw_name": "THE BEST 10 Martial Arts near SAINT-DENIS, FRANCE - Yelp",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo 5 Saint-Denis, Seine-Saint. Tissier 8.3 mi 10 Avenue Gén Galliéni, 93250 Villemomble France 01 48 94 32 12 Nihon Dojo. Locker rooms are sufficient and",
+  "raw_html_excerpt": "THE BEST 10 Martial Arts near SAINT-DENIS, FRANCE - Yelp. Dojo 5 Saint-Denis, Seine-Saint. Tissier 8.3 mi 10 Avenue Gén Galliéni, 93250 Villemomble France 01 48 94 32 12 Nihon Dojo. Locker rooms are sufficient and",
+  "raw_json": {
+    "title": "THE BEST 10 Martial Arts near SAINT-DENIS, FRANCE - Yelp",
+    "url": "https://m.yelp.com/search?cflt=martialarts&find_loc=Pierrefitte-sur-Seine%2C+Seine-Saint-Denis",
+    "description": "Dojo 5 Saint-Denis, Seine-Saint. Tissier 8.3 mi 10 Avenue Gén Galliéni, 93250 Villemomble France 01 48 94 32 12 Nihon Dojo. Locker rooms are sufficient and",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "THE BEST 10 Martial Arts near SAINT-DENIS, FRANCE - Yelp. Dojo 5 Saint-Denis, Seine-Saint. Tissier 8.3 mi 10 Avenue Gén Galliéni, 93250 Villemomble France 01 48 94 32 12 Nihon Dojo. Locker rooms are sufficient and",
+  "source_confidence": "low"
+}

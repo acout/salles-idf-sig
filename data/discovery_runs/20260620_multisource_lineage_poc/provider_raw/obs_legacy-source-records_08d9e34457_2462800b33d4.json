@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:75",
+  "source_url": "https://www.izyshow.com/salle-de-repetition-paris",
+  "collected_at": "2026-06-19T22:47:02+00:00",
+  "raw_name": "Location Salle de Répétition Paris | IZYSHOW",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Trouvez et louez une salle de répétition à Paris pour la musique, la danse, le théâtre ou le cirque. Comparez les studios disponibles par arrondissement.",
+  "raw_html_excerpt": "Location Salle de Répétition Paris | IZYSHOW. Trouvez et louez une salle de répétition à Paris pour la musique, la danse, le théâtre ou le cirque. Comparez les studios disponibles par arrondissement.",
+  "raw_json": {
+    "title": "Location Salle de Répétition Paris | IZYSHOW",
+    "url": "https://www.izyshow.com/salle-de-repetition-paris",
+    "description": "Trouvez et louez une salle de répétition à Paris pour la musique, la danse, le théâtre ou le cirque. Comparez les studios disponibles par arrondissement.",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Location Salle de Répétition Paris | IZYSHOW. Trouvez et louez une salle de répétition à Paris pour la musique, la danse, le théâtre ou le cirque. Comparez les studios disponibles par arrondissement.",
+  "source_confidence": "low"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:94",
+  "source_url": "https://lesite.izyshow.com?transaction_type=location-a-la-journee",
+  "collected_at": "2026-06-19T22:47:06+00:00",
+  "raw_name": "IZYSHOW — La plateforme de location de salles de répétition",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Location salle de répétitions théâtre au Pré-Saint-Gervais. 96 € / jour · La Prairie · Location à la journée: Location Salle de répétition à la Croix-Rousse",
+  "raw_html_excerpt": "IZYSHOW — La plateforme de location de salles de répétition. Location salle de répétitions théâtre au Pré-Saint-Gervais. 96 € / jour · La Prairie · Location à la journée: Location Salle de répétition à la Croix-Rousse",
+  "raw_json": {
+    "title": "IZYSHOW — La plateforme de location de salles de répétition",
+    "url": "https://lesite.izyshow.com?transaction_type=location-a-la-journee",
+    "description": "Location salle de répétitions théâtre au Pré-Saint-Gervais. 96 € / jour · La Prairie · Location à la journée: Location Salle de répétition à la Croix-Rousse",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "IZYSHOW — La plateforme de location de salles de répétition. Location salle de répétitions théâtre au Pré-Saint-Gervais. 96 € / jour · La Prairie · Location à la journée: Location Salle de répétition à la Croix-Rousse",
+  "source_confidence": "low"
+}

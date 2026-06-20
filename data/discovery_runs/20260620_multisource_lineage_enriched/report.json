@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-06-20T08:17:55+00:00",
+  "run_id": "20260620_multisource_lineage_enriched",
+  "input_files": [
+    "data/source_records/tavily_south_banlieue_prompt_discovery_fr_20260620.json",
+    "data/source_records/rental_qualified_beyond_idf_20260620.json"
+  ],
+  "observations": 1082,
+  "field_evidence": 5022,
+  "malformed": 0,
+  "malformed_examples": [],
+  "observations_by_provider": {
+    "tavily": 40,
+    "legacy_source_records": 1042
+  },
+  "observations_with_url": 1082,
+  "observations_with_query": 250,
+  "observations_with_content_hash": 1082,
+  "field_evidence_by_field": {
+    "website": 872,
+    "specific_rental_page": 766,
+    "rental_possible": 1042,
+    "address": 615,
+    "contact": 733,
+    "price": 449,
+    "capacity": 545
+  },
+  "duplicate_url_groups_preserved": 116,
+  "duplicate_observations_preserved": 319,
+  "outputs": {
+    "run_dir": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_enriched",
+    "observations": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_enriched/observations.json",
+    "field_evidence": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_enriched/field_evidence.json",
+    "report": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_enriched/report.json"
+  }
+}

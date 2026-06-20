@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:93",
+  "source_url": "https://www.spectable.com/seine-saint-denis/petites-annonces/local-de-repetition/n_2648-l_40876.php",
+  "collected_at": "2026-06-19T22:46:34+00:00",
+  "raw_name": "Local de répétition / Location, recherche en Seine Saint Denis",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Découvrez le studio de 150 m² de La Fabrique de la Danse à Pantin, un espace lumineux bénéficiant de la lumière naturelle, avec plancher de danse et équipé",
+  "raw_html_excerpt": "Local de répétition / Location, recherche en Seine Saint Denis. Découvrez le studio de 150 m² de La Fabrique de la Danse à Pantin, un espace lumineux bénéficiant de la lumière naturelle, avec plancher de danse et équipé",
+  "raw_json": {
+    "title": "Local de répétition / Location, recherche en Seine Saint Denis",
+    "url": "https://www.spectable.com/seine-saint-denis/petites-annonces/local-de-repetition/n_2648-l_40876.php",
+    "description": "Découvrez le studio de 150 m² de La Fabrique de la Danse à Pantin, un espace lumineux bénéficiant de la lumière naturelle, avec plancher de danse et équipé",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Local de répétition / Location, recherche en Seine Saint Denis. Découvrez le studio de 150 m² de La Fabrique de la Danse à Pantin, un espace lumineux bénéficiant de la lumière naturelle, avec plancher de danse et équipé",
+  "source_confidence": "low"
+}

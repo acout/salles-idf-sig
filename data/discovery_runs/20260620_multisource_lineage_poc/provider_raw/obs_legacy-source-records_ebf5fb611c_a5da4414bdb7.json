@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:75",
+  "source_url": "https://le8petion.com/location-salle-loisir-paris",
+  "collected_at": "2026-06-19T22:47:12+00:00",
+  "raw_name": "Louer une salle pour activités de loisirs à Paris - Le 8 Petion",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le 8 Petion – Espace sur mesure à Paris 11 : formations, ateliers, séminaires · Bien-être et zénitude pour vos activités de détente",
+  "raw_html_excerpt": "Louer une salle pour activités de loisirs à Paris - Le 8 Petion. Le 8 Petion – Espace sur mesure à Paris 11 : formations, ateliers, séminaires · Bien-être et zénitude pour vos activités de détente",
+  "raw_json": {
+    "title": "Louer une salle pour activités de loisirs à Paris - Le 8 Petion",
+    "url": "https://le8petion.com/location-salle-loisir-paris",
+    "description": "Le 8 Petion – Espace sur mesure à Paris 11 : formations, ateliers, séminaires · Bien-être et zénitude pour vos activités de détente",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Louer une salle pour activités de loisirs à Paris - Le 8 Petion. Le 8 Petion – Espace sur mesure à Paris 11 : formations, ateliers, séminaires · Bien-être et zénitude pour vos activités de détente",
+  "source_confidence": "low"
+}

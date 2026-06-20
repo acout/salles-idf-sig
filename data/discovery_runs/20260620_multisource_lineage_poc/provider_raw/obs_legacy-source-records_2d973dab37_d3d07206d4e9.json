@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:92",
+  "source_url": "https://www.yoze.fr/salles/boulogne-billancourt-pont-de-sevres",
+  "collected_at": "2026-06-19T22:46:42+00:00",
+  "raw_name": "Salle Boulogne-Billancourt Pont de Sèvres - Yoze",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Cours de Yoga et Pilates au centre Arkose Boulogne-Billancourt. Métro Pont de Sèvres. Matériel fourni. Offre d'essai à 12€. Réservez votre séance !",
+  "raw_html_excerpt": "Salle Boulogne-Billancourt Pont de Sèvres - Yoze. Cours de Yoga et Pilates au centre Arkose Boulogne-Billancourt. Métro Pont de Sèvres. Matériel fourni. Offre d'essai à 12€. Réservez votre séance !",
+  "raw_json": {
+    "title": "Salle Boulogne-Billancourt Pont de Sèvres - Yoze",
+    "url": "https://www.yoze.fr/salles/boulogne-billancourt-pont-de-sevres",
+    "description": "Cours de Yoga et Pilates au centre Arkose Boulogne-Billancourt. Métro Pont de Sèvres. Matériel fourni. Offre d'essai à 12€. Réservez votre séance !",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Salle Boulogne-Billancourt Pont de Sèvres - Yoze. Cours de Yoga et Pilates au centre Arkose Boulogne-Billancourt. Métro Pont de Sèvres. Matériel fourni. Offre d'essai à 12€. Réservez votre séance !",
+  "source_confidence": "medium"
+}

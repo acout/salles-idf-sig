@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:93",
+  "source_url": "https://www.facebook.com/417793978315567",
+  "collected_at": "2026-06-19T22:46:54+00:00",
+  "raw_name": "Dojo Regional Saint Denis - Home | Facebook",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo Regional Saint Denis, Sainte-Clotilde, Réunion. 2 talking about this · 2 were here. Stadium, Arena & Sports Venue.",
+  "raw_html_excerpt": "Dojo Regional Saint Denis - Home | Facebook. Dojo Regional Saint Denis, Sainte-Clotilde, Réunion. 2 talking about this · 2 were here. Stadium, Arena & Sports Venue.",
+  "raw_json": {
+    "title": "Dojo Regional Saint Denis - Home | Facebook",
+    "url": "https://www.facebook.com/417793978315567",
+    "description": "Dojo Regional Saint Denis, Sainte-Clotilde, Réunion. 2 talking about this · 2 were here. Stadium, Arena & Sports Venue.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo Regional Saint Denis - Home | Facebook. Dojo Regional Saint Denis, Sainte-Clotilde, Réunion. 2 talking about this · 2 were here. Stadium, Arena & Sports Venue.",
+  "source_confidence": "low"
+}

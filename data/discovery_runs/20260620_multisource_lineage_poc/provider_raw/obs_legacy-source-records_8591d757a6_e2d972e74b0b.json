@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:77",
+  "source_url": "https://www.facebook.com/groups/257289725206307/posts/1557302315205035",
+  "collected_at": "2026-06-19T22:46:36+00:00",
+  "raw_name": "Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse ...",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse, fitness, pilates,yoga .. Une salle 30m2 avec parquet et miroir Une salle 40m2",
+  "raw_html_excerpt": "Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse .... Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse, fitness, pilates,yoga .. Une salle 30m2 avec parquet et miroir Une salle 40m2",
+  "raw_json": {
+    "title": "Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse ...",
+    "url": "https://www.facebook.com/groups/257289725206307/posts/1557302315205035",
+    "description": "Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse, fitness, pilates,yoga .. Une salle 30m2 avec parquet et miroir Une salle 40m2",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse .... Bonjour Salle a louer Lagny sur Marne 77 Pour activités danse, fitness, pilates,yoga .. Une salle 30m2 avec parquet et miroir Une salle 40m2",
+  "source_confidence": "low"
+}

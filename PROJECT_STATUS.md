@@ -7,7 +7,7 @@
 | Project | salles-idf-sig |
 | Type | Static prospecting CRM + map (Leaflet + GeoJSON + localStorage) |
 | Repo | `acout/salles-idf-sig` on GitHub |
-| Last updated | 2026-06-19 |
+| Last updated | 2026-06-20 |
 
 ## Deployments
 
@@ -61,9 +61,13 @@ Implemented:
 - [x] Rental qualification run 2026-06-20: `possible/unclear/unlikely` classification, Fitness/gym/class-only detection, 337 possible / 469 unclear / 28 unlikely in final queue
 - [x] Repeatable additive source-record merge script (`scripts/sourcing/merge_source_records.py`)
 - [x] Full re-executable Beyond import pipeline runner (`scripts/sourcing/run_beyond_pipeline.py`)
+- [x] Smart sourcing funnel Lot 1 2026-06-20: common `source_observations` + `field_evidence` lineage, Tavily prompt-search provider, run-scoped `data/discovery_runs/`, 1082 observations / 5022 field evidences validated without touching canonical data
 
 ## Recommended Next Steps
 
+- [ ] Smart funnel Lot 2: source/page classifier + strict geo guard before promotion (`official_rental_page`, `municipal`, `aggregator`, `irrelevant`, reliability S0-S5)
+- [ ] Smart funnel Lot 3: minimal venue entity resolver preserving all observation IDs and separating website vs specific rental page
+- [ ] Smart funnel Lot 4: LLM structured extraction with citations for price/capacity/contact/rental/address
 - [ ] Add a real backend/sync layer if multiple devices/users need the same follow-up state
 - [ ] Add “last contacted at” and “contact channel” fields
 - [ ] Add canned call/email script templates per venue type

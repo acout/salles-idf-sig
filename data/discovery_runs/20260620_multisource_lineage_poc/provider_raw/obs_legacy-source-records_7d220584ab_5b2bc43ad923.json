@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:92",
+  "source_url": "https://www.abcsalles.com/salle-des-fetes-2_hauts-de-seine_d.html",
+  "collected_at": "2026-06-19T22:47:23+00:00",
+  "raw_name": "Salle des fêtes Hauts-de-Seine",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "27 salles à louer dans les Hauts-de-Seine ; Le Manoir Loft 92. Manoir à Nanterre (Hauts-de-Seine) · 2-110 pers. ; La Maison des Arts · La Maison des Arts. Lieu",
+  "raw_html_excerpt": "Salle des fêtes Hauts-de-Seine. 27 salles à louer dans les Hauts-de-Seine ; Le Manoir Loft 92. Manoir à Nanterre (Hauts-de-Seine) · 2-110 pers. ; La Maison des Arts · La Maison des Arts. Lieu",
+  "raw_json": {
+    "title": "Salle des fêtes Hauts-de-Seine",
+    "url": "https://www.abcsalles.com/salle-des-fetes-2_hauts-de-seine_d.html",
+    "description": "27 salles à louer dans les Hauts-de-Seine ; Le Manoir Loft 92. Manoir à Nanterre (Hauts-de-Seine) · 2-110 pers. ; La Maison des Arts · La Maison des Arts. Lieu",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Salle des fêtes Hauts-de-Seine. 27 salles à louer dans les Hauts-de-Seine ; Le Manoir Loft 92. Manoir à Nanterre (Hauts-de-Seine) · 2-110 pers. ; La Maison des Arts · La Maison des Arts. Lieu",
+  "source_confidence": "low"
+}

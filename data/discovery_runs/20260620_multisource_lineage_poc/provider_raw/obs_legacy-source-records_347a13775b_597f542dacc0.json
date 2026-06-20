@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:77",
+  "source_url": "https://www.seibukan77.fr",
+  "collected_at": "2026-06-19T22:46:58+00:00",
+  "raw_name": "Seibukan Dojo - Arts du Sabre Japonais",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Prendre contact. Téléphone: 0631078979. Courriel: seibukan.dojo.croissy77@gmail.com. Adresse: 25 JEAN MONNET, Lagny-Sur-Marne, 77400, Seine-et-Marne, France.",
+  "raw_html_excerpt": "Seibukan Dojo - Arts du Sabre Japonais. Prendre contact. Téléphone: 0631078979. Courriel: seibukan.dojo.croissy77@gmail.com. Adresse: 25 JEAN MONNET, Lagny-Sur-Marne, 77400, Seine-et-Marne, France.",
+  "raw_json": {
+    "title": "Seibukan Dojo - Arts du Sabre Japonais",
+    "url": "https://www.seibukan77.fr",
+    "description": "Prendre contact. Téléphone: 0631078979. Courriel: seibukan.dojo.croissy77@gmail.com. Adresse: 25 JEAN MONNET, Lagny-Sur-Marne, 77400, Seine-et-Marne, France.",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Seibukan Dojo - Arts du Sabre Japonais. Prendre contact. Téléphone: 0631078979. Courriel: seibukan.dojo.croissy77@gmail.com. Adresse: 25 JEAN MONNET, Lagny-Sur-Marne, 77400, Seine-et-Marne, France.",
+  "source_confidence": "medium"
+}

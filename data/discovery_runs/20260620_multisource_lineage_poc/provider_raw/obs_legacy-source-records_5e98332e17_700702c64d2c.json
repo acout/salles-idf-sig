@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:91",
+  "source_url": "https://ressourceenvous.fr/location-espaces-professionnels",
+  "collected_at": "2026-06-19T22:46:50+00:00",
+  "raw_name": "Location Espaces Professionnels - Ressource En Vous",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Salle de Yoga · 170 € / journée – 9h00 à 17h30 · 40 € / cours – 1h00 · Supplément de 20€ si utilisation du matériel de yoga.",
+  "raw_html_excerpt": "Location Espaces Professionnels - Ressource En Vous. Salle de Yoga · 170 € / journée – 9h00 à 17h30 · 40 € / cours – 1h00 · Supplément de 20€ si utilisation du matériel de yoga.",
+  "raw_json": {
+    "title": "Location Espaces Professionnels - Ressource En Vous",
+    "url": "https://ressourceenvous.fr/location-espaces-professionnels",
+    "description": "Salle de Yoga · 170 € / journée – 9h00 à 17h30 · 40 € / cours – 1h00 · Supplément de 20€ si utilisation du matériel de yoga.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location Espaces Professionnels - Ressource En Vous. Salle de Yoga · 170 € / journée – 9h00 à 17h30 · 40 € / cours – 1h00 · Supplément de 20€ si utilisation du matériel de yoga.",
+  "source_confidence": "medium"
+}

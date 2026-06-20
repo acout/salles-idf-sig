@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:78",
+  "source_url": "https://lakab.org/studios-de-repetitions-yvelines",
+  "collected_at": "2026-06-19T22:47:09+00:00",
+  "raw_name": "Studios de répétitions - - Accueil La KAB' -",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Les studios de répétition peuvent être loués à l'heure dans la limite des créneaux disponibles. Groupe adhérent, 12€/heure. Groupe non adhérent, 18€/heure.",
+  "raw_html_excerpt": "Studios de répétitions - - Accueil La KAB' -. Les studios de répétition peuvent être loués à l'heure dans la limite des créneaux disponibles. Groupe adhérent, 12€/heure. Groupe non adhérent, 18€/heure.",
+  "raw_json": {
+    "title": "Studios de répétitions - - Accueil La KAB' -",
+    "url": "https://lakab.org/studios-de-repetitions-yvelines",
+    "description": "Les studios de répétition peuvent être loués à l'heure dans la limite des créneaux disponibles. Groupe adhérent, 12€/heure. Groupe non adhérent, 18€/heure.",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Studios de répétitions - - Accueil La KAB' -. Les studios de répétition peuvent être loués à l'heure dans la limite des créneaux disponibles. Groupe adhérent, 12€/heure. Groupe non adhérent, 18€/heure.",
+  "source_confidence": "low"
+}

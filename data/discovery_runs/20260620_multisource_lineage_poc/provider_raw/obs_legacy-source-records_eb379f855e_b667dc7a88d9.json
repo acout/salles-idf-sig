@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:91",
+  "source_url": "https://www.abcsalles.com/lieu/le-centre-ahimsa",
+  "collected_at": "2026-06-19T22:46:50+00:00",
+  "raw_name": "Centre Ahimsa - ABC Salles",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Salle de réception à Verrières-le-Buisson (Essonne) à louer pour des événements professionnels et privés rassemblant entre 2 et 60 personnes.",
+  "raw_html_excerpt": "Centre Ahimsa - ABC Salles. Salle de réception à Verrières-le-Buisson (Essonne) à louer pour des événements professionnels et privés rassemblant entre 2 et 60 personnes.",
+  "raw_json": {
+    "title": "Centre Ahimsa - ABC Salles",
+    "url": "https://www.abcsalles.com/lieu/le-centre-ahimsa",
+    "description": "Salle de réception à Verrières-le-Buisson (Essonne) à louer pour des événements professionnels et privés rassemblant entre 2 et 60 personnes.",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Centre Ahimsa - ABC Salles. Salle de réception à Verrières-le-Buisson (Essonne) à louer pour des événements professionnels et privés rassemblant entre 2 et 60 personnes.",
+  "source_confidence": "low"
+}
