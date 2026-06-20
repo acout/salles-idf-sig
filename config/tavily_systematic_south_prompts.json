@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fr_chatillon_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Châtillon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_chatillon_prive",
+    "prompt": "Salles privées à louer à Châtillon (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_fontenay aux roses_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Fontenay-aux-Roses (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_fontenay aux roses_prive",
+    "prompt": "Salles privées à louer à Fontenay-aux-Roses (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_vanves_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Vanves (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_vanves_prive",
+    "prompt": "Salles privées à louer à Vanves (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_meudon_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Meudon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_meudon_prive",
+    "prompt": "Salles privées à louer à Meudon (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_bougival_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Bougival (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_bougival_prive",
+    "prompt": "Salles privées à louer à Bougival (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_plessis robinson_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Le Plessis-Robinson (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_plessis robinson_prive",
+    "prompt": "Salles privées à louer à Le Plessis-Robinson (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_chatenay malabry_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Châtenay-Malabry (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_chatenay malabry_prive",
+    "prompt": "Salles privées à louer à Châtenay-Malabry (92). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_cachan_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Cachan (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_cachan_prive",
+    "prompt": "Salles privées à louer à Cachan (94). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_fresnes_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Fresnes (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_fresnes_prive",
+    "prompt": "Salles privées à louer à Fresnes (94). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_haÿ les roses_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à L'Haÿ-les-Roses (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_haÿ les roses_prive",
+    "prompt": "Salles privées à louer à L'Haÿ-les-Roses (94). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_chevilly larue_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Chevilly-Larue (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_chevilly larue_prive",
+    "prompt": "Salles privées à louer à Chevilly-Larue (94). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_orly_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Orly (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_orly_prive",
+    "prompt": "Salles privées à louer à Orly (94). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  },
+  {
+    "id": "fr_charenton le pont_officiel",
+    "prompt": "Pages officielles pour louer une petite salle à Charenton-le-Pont (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires."
+  },
+  {
+    "id": "fr_charenton le pont_prive",
+    "prompt": "Salles privées à louer à Charenton-le-Pont (94). Studio yoga, salle danse, atelier artistique, dojo. Exclure Airbnb, Peerspace, mariage, séminaire entreprise."
+  }
+]
