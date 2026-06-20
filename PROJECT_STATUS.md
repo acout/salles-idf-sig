@@ -64,6 +64,7 @@ Implemented:
 - [x] Smart sourcing funnel Lot 1 2026-06-20: common `source_observations` + `field_evidence` lineage, Tavily prompt-search provider, run-scoped `data/discovery_runs/`, 1082 observations / 5022 field evidences validated without touching canonical data
 - [x] Smart sourcing funnel Lot 2 2026-06-20: source/page classifier + strict geo guard — `classify_observations.py` classifies 1082 observations into page_type (aggregator 629, official_rental 155, official_venue 219, municipal 45, social 25, course_only 3, pdf 2, unknown 4) + source_reliability (S1 657, S3 264, S4 155, S2 5, S0 1) + geo_status (in_scope 1021, out_of_zone 38, geo_unknown 13, homonym 10). In-scope high-quality: 383
 - [x] Smart sourcing funnel Lot 3 2026-06-20: entity resolution — `resolve_entities.py` groups 1082 observations into 1075 entities (466 venue entities + 609 aggregator observations), 7 multi-observation merges, 379 curated in-scope high-quality venues; official_website_url and specific_rental_page_url separated
+- [x] Smart sourcing funnel Lot 4 2026-06-20: AI structured extraction on 379 curated entities — 165 identified as actual venues, 110 rental_yes, 35 rental_no, 234 rental_unclear; 49 with address, 25 with phone, 14 with email, 79 with rental page; price/capacity evidence lower due to aggregator content; extraction with evidence quotes and confidence scores
 
 ## Recommended Next Steps
 
