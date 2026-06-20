@@ -57,6 +57,7 @@ Implemented:
 - [x] Autonomous Beyond sourcing run 2026-06-19: 210 raw source records, 193 deduped import candidates
 - [x] Import queue generated without modifying canonical venue data or user overlay
 - [x] Banlieue sud targeted run 2026-06-20: +149 raw records around Cachan/Châtillon corridor, 334 total import candidates, 83 mapped candidates in 92/94
+- [x] Formal enrichment run 2026-06-20: aggregator detection/expansion, scrape status for every final item, 834 import candidates, 344 mapped, 604 with contact, 363 with price, 433 with capacity
 - [x] Repeatable additive source-record merge script (`scripts/sourcing/merge_source_records.py`)
 
 ## Recommended Next Steps

@@ -32,6 +32,16 @@ def normalize_record(r):
       'category': r.get('category') or r.get('category_guess') or cat, 'source_url': source_url, 'source_type': r.get('source_type') or 'manual', 'source_confidence': r.get('source_confidence') or 'unknown',
       'evidence_text': r.get('evidence_text') or description[:500], 'dedupe_key': dedupe_key(name,city,address,source_url), 'candidate_status': 'new', 'last_seen_at': now_iso()[:10]
     }
+    # Formal enrichment / aggregator metadata is additive and non-destructive.
+    for key in (
+        'is_aggregator', 'aggregator_domain', 'aggregator_child_links_count', 'parent_aggregator_url', 'parent_aggregator_name',
+        'formal_scrape_checked_at', 'formal_scrape_http_status', 'formal_scrape_content_type', 'formal_extraction_status',
+        'formal_address_source', 'geocode_status', 'geocode_candidate_label', 'geocode_candidate_score',
+        'formal_page_title', 'formal_evidence_text', 'formal_contact_source', 'formal_price_source', 'formal_capacity_source',
+        'missing_formal_fields', 'email_questions', 'formal_completeness_score', 'target_run'
+    ):
+        if r.get(key) not in (None, ''):
+            c[key] = r.get(key)
     c.update(score_candidate(c)); return c
 def normalize_records(records): return [normalize_record(r) for r in records if (r.get('name') or r.get('raw_name') or r.get('Nom') or r.get('title'))]
 if __name__=='__main__':

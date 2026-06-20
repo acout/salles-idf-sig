@@ -27,11 +27,18 @@ def read_records(path):
         data=json.loads(p.read_text(encoding='utf-8'))
         return data if isinstance(data, list) else data.get('records') or data.get('candidates') or [data]
     with p.open(newline='', encoding='utf-8') as f: return list(csv.DictReader(f))
+def clean_cell(v):
+    if v is None:
+        return ''
+    s = str(v).replace('\x00', '')
+    # Keep tabs/newlines CSV-safe via csv module, but remove other control chars from scraped HTML noise.
+    return ''.join(ch for ch in s if ch in '\n\r\t' or ord(ch) >= 32)
+
 def write_csv(path, rows, fields=None):
     path=Path(path); path.parent.mkdir(parents=True, exist_ok=True)
     fields=fields or sorted({k for r in rows for k in r})
     with path.open('w', newline='', encoding='utf-8') as f:
-        w=csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
+        w=csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows([{k: clean_cell(r.get(k,'')) for k in fields} for r in rows])
 def load_taxonomy(path=None):
     # Minimal parser for config/sourcing_taxonomy.yaml. Supports top-level sections with scalar maps/lists.
     path=Path(path or ROOT/'config/sourcing_taxonomy.yaml')
