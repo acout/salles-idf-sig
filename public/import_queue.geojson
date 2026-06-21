@@ -90,7 +90,7 @@
         "lon": null,
         "category": "venue no rental info",
         "capacity_text": "200 m²; 200m²",
-        "capacity_max_detected": 200,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://www.isospace.fr/realisations/studio-de-yoga-yognmove",
@@ -118,8 +118,8 @@
         "constraints_tags": "",
         "description": "Étude de réalisation sur un studio de yoga précis à Villejuif, sans informations de location ni coordonnées du lieu.",
         "evidence_text": "Étude de réalisation sur un studio de yoga précis à Villejuif, sans informations de location ni coordonnées du lieu.",
-        "missing_formal_fields": "address, postal_code, price, geocode_failed",
-        "email_questions": "address, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, price, geocode_failed",
+        "email_questions": "address, price, geocode_failed",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -137,7 +137,8 @@
         "ai_interpreted_contact_evidence": "+33148252121",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "92100"
       }
     },
     {
@@ -318,8 +319,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -333,7 +334,8 @@
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -383,8 +385,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Centre Municipal d’Action Culturelle — CMAC | 2, rue Jules-Ferry",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -401,7 +403,8 @@
         "geocode_label": "2 Rue Jules Ferry 94250 Gentilly",
         "geocode_score": 0.9522563636363636,
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -451,8 +454,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Espace Roger Ossart et salle d’activités Kleynhoff | 7, rue Henri-Kleynhoff",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -469,7 +472,8 @@
         "geocode_label": "7 Rue Henri Kleynhoff 94250 Gentilly",
         "geocode_score": 0.9665081818181817,
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -519,8 +523,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Préau de l’école Henri Barbusse | 14, place Henri-Barbusse",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -537,7 +541,8 @@
         "geocode_label": "14 Place Henri Barbusse 94250 Gentilly",
         "geocode_score": 0.9572499999999999,
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -587,8 +592,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Salle du foyer Frérot | 8, rue Charles-Frérot",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -605,7 +610,8 @@
         "geocode_label": "8 Rue Charles Frérot 94250 Gentilly",
         "geocode_score": 0.9655181818181818,
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -655,8 +661,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Salle Marcel Paul | 17, rue Raymond-Lefebvre",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -672,7 +678,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Salle Marcel Paul, Rue Raymond Lefèbvre, Gentilly, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94250, France",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -722,8 +729,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Salle de quartier Saint Éloi | 7, rue Saint-Éloi",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -737,7 +744,8 @@
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -787,8 +795,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Salle de quartier Gabriel Péri | 162, rue Gabriel-Péri",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -804,7 +812,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Salle de quartier Gabriel Péri, Rue du Parc, Gentilly, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94250, France",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -854,8 +863,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Salle de quartier des Tanneurs | 1, allée des Tanneurs",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -872,7 +881,8 @@
         "geocode_label": "1 Allée des Tanneurs 94250 Gentilly",
         "geocode_score": 0.959571818181818,
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -922,8 +932,8 @@
         "constraints_tags": "",
         "description": "Guide PDF municipal listant plusieurs locaux associatifs avec noms et adresses partielles.",
         "evidence_text": "Gymnase Pierre Curie | 25, rue Jean-Louis; Service municipal des Sports ... sports@ville-gentilly.fr",
-        "missing_formal_fields": "capacity, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, phone, price, geocode_failed",
+        "email_questions": "capacity, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -937,7 +947,8 @@
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94250"
       }
     },
     {
@@ -1303,15 +1314,15 @@
         "price_text": "",
         "price_score": 0,
         "website": "https://www.consistoire.org/kremlinbicetre/salle",
-        "contact": "",
+        "contact": "06 62 88 09 86 — 06 95 92 20 85 — acikb@wanadoo.fr",
         "source_url": "https://www.consistoire.org/kremlinbicetre/salle",
         "source_domain": "consistoire.org",
         "source_confidence": 0.75,
         "fit_beyond_score": 75,
         "confidence_score": 0.75,
         "actionability_score": 75,
-        "formal_completeness_score": "4/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "venue_with_rental_page",
         "is_aggregator": "no",
@@ -1327,8 +1338,8 @@
         "constraints_tags": "",
         "description": "Page officielle de location de plusieurs espaces d'un même centre avec adresse, téléphone et email.",
         "evidence_text": "Page officielle de location de plusieurs espaces d'un même centre avec adresse, téléphone et email.",
-        "missing_formal_fields": "capacity, email, phone, price",
-        "email_questions": "capacity, email, phone, price",
+        "missing_formal_fields": "capacity, price",
+        "email_questions": "capacity, price",
         "page_type": "venue_with_rental_page",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -1340,7 +1351,12 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_consistoire.org_location de salles_le kremlin-bicêtre",
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
-        "ai_source_kind": "single"
+        "ai_source_kind": "single",
+        "ai_interpreted_contact_evidence": "06 62 88 09 86 — 06 95 92 20 85 — acikb@wanadoo.fr",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "94270",
+        "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -1407,7 +1423,8 @@
         "ai_interpreted_contact_evidence": "0660520984 — studio.diabolo@gmail.com",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_03.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94270"
       }
     },
     {
@@ -1799,7 +1816,8 @@
         "ai_interpreted_contact_evidence": "associations@ville-kremlin-bicetre.fr",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94270"
       }
     },
     {
@@ -1864,7 +1882,8 @@
         "ai_source_file": "ai_classify_retry_chunk_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_09.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94270"
       }
     },
     {
@@ -2019,7 +2038,7 @@
         "lon": 2.255055,
         "category": "generic location page",
         "capacity_text": "264.00 m²",
-        "capacity_max_detected": 264,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://www.sportenfrance.fr/ile-de-france/hauts-de-seine/clamart/920230009-complexe-sportif-de-trivaux-garenne",
@@ -2490,7 +2509,7 @@
         "lon": 2.29056,
         "category": "venue with rental page",
         "capacity_text": "126 m2",
-        "capacity_max_detected": 126,
+        "capacity_max_detected": 0,
         "price_text": "20€/h; 25€/h; 50€/h; 60€/h",
         "price_score": 0,
         "website": "https://www.studiomrg.fr/location",
@@ -2560,7 +2579,7 @@
         "category": "venue rental mentioned",
         "capacity_text": "70m²",
         "capacity_max_detected": 0,
-        "price_text": "",
+        "price_text": "5€",
         "price_score": 0,
         "website": "https://themuselab.fr/le-studio/",
         "contact": "",
@@ -2587,8 +2606,8 @@
         "constraints_tags": "",
         "description": "Page de présentation d'un studio de danse avec liens internes vers la location de salles, mais sans coordonnées détaillées dans l'extrait.",
         "evidence_text": "Page de présentation d'un studio de danse avec liens internes vers la location de salles, mais sans coordonnées détaillées dans l'extrait.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, city, email, phone, postal_code, geocode_failed",
+        "email_questions": "address, city, email, phone, postal_code, geocode_failed",
         "page_type": "venue_rental_mentioned",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -2604,7 +2623,9 @@
         "ai_interpreted_capacity_evidence": "70m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_price_evidence": "5€",
+        "ai_interpreted_price_confidence": 0.85
       }
     },
     {
@@ -2891,7 +2912,7 @@
         "category": "official rental page",
         "capacity_text": "70m²",
         "capacity_max_detected": 0,
-        "price_text": "",
+        "price_text": "5€",
         "price_score": 0,
         "website": "https://themuselab.fr/location-de-salles",
         "contact": "",
@@ -2918,8 +2939,8 @@
         "constraints_tags": "",
         "description": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
         "evidence_text": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
-        "missing_formal_fields": "adresse complète du studio de Montigny, city, email, email/téléphone direct, phone, postal_code, price, tarifs détaillés, geocode_failed",
-        "email_questions": "adresse complète du studio de Montigny, city, email, email/téléphone direct, phone, postal_code, price, tarifs détaillés, geocode_failed",
+        "missing_formal_fields": "adresse complète du studio de Montigny, city, email, email/téléphone direct, phone, postal_code, geocode_failed",
+        "email_questions": "adresse complète du studio de Montigny, city, email, email/téléphone direct, phone, postal_code, geocode_failed",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -2935,7 +2956,9 @@
         "ai_interpreted_capacity_evidence": "70m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_price_evidence": "5€",
+        "ai_interpreted_price_confidence": 0.85
       }
     },
     {
@@ -2956,7 +2979,7 @@
         "lat": null,
         "lon": null,
         "category": "official rental page",
-        "capacity_text": "70 m²",
+        "capacity_text": "70m²",
         "capacity_max_detected": 0,
         "price_text": "Tarifs variables selon durée et utilisation, indiqués dans le planning.",
         "price_score": 0,
@@ -2968,8 +2991,8 @@
         "fit_beyond_score": 80,
         "confidence_score": 0.65,
         "actionability_score": 80,
-        "formal_completeness_score": "6/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "official_rental_page",
         "is_aggregator": "no",
@@ -2985,8 +3008,8 @@
         "constraints_tags": "",
         "description": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
         "evidence_text": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
-        "missing_formal_fields": "email, phone,geocode_failed",
-        "email_questions": "email, phone",
+        "missing_formal_fields": "email, phone, geocode_failed",
+        "email_questions": "email, phone, geocode_failed",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -2998,7 +3021,11 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_themuselab.fr_informations_",
         "ai_source_file": "ai_classify_retry_chunk_1_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "ai_interpreted_capacity_evidence": "70m²",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -3021,7 +3048,7 @@
         "category": "official rental page",
         "capacity_text": "70m²",
         "capacity_max_detected": 0,
-        "price_text": "",
+        "price_text": "5€",
         "price_score": 0,
         "website": "https://themuselab.fr/location-de-salles",
         "contact": "",
@@ -3048,8 +3075,8 @@
         "constraints_tags": "",
         "description": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
         "evidence_text": "Page officielle The Muse Lab dédiée à la location d'un studio de danse; elle décrit l'offre de location de Montigny et mentionne aussi le lieu de Boulogne.",
-        "missing_formal_fields": "email, phone, price, geocode_failed",
-        "email_questions": "email, phone, price, geocode_failed",
+        "missing_formal_fields": "email, phone, geocode_failed",
+        "email_questions": "email, phone, geocode_failed",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -3065,7 +3092,9 @@
         "ai_interpreted_capacity_evidence": "70m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_price_evidence": "5€",
+        "ai_interpreted_price_confidence": 0.85
       }
     },
     {
@@ -3765,7 +3794,7 @@
         "price_text": "semaine 25 €/h heures creuses, 30 €/h heures pleines; week-end 125 € demi-journée, 250 € journée, 450 € week-end 2 jours, 170 € soirée; promotions ponctuelles 200 €/jour, 400 €/2 jours, 500 €/3 jours",
         "price_score": 0,
         "website": "https://www.namasteom.com/location-salle",
-        "contact": "",
+        "contact": "0793009470 — 0314259615",
         "source_url": "https://www.namasteom.com/location-salle",
         "source_domain": "namasteom.com",
         "source_confidence": 0.75,
@@ -3789,8 +3818,8 @@
         "constraints_tags": "",
         "description": "La page décrit explicitement la location de la salle de yoga du Centre NamastéOm avec adresse, surface, capacité, équipements et tarifs. Le nom d'entrée 'Accepter' est un artefact de bannière cookies et non le nom du lieu.",
         "evidence_text": "La page décrit explicitement la location de la salle de yoga du Centre NamastéOm avec adresse, surface, capacité, équipements et tarifs. Le nom d'entrée 'Accepter' est un artefact de bannière cookies et non le nom du lieu.",
-        "missing_formal_fields": "city, email, phone",
-        "email_questions": "city, email, phone",
+        "missing_formal_fields": "city",
+        "email_questions": "city",
         "page_type": "official_rental_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -3807,7 +3836,9 @@
         "ai_interpreted_capacity_confidence": 0.85,
         "postal_code": "75012",
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "0793009470 — 0314259615",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -3833,7 +3864,7 @@
         "price_text": "Tarifs indiqués plus bas sur la page; vidéo-projecteur 40€/jour ou 25€/demi-journée avec caution 300€.",
         "price_score": 0,
         "website": "https://www.namasteom.com/location-salle",
-        "contact": "",
+        "contact": "0793009470 — 0314259615",
         "source_url": "https://www.namasteom.com/location-salle",
         "source_domain": "namasteom.com",
         "source_confidence": 0.65,
@@ -3857,8 +3888,8 @@
         "constraints_tags": "",
         "description": "Page officielle explicitement consacrée à la location de la salle de yoga NamastéOm avec adresse, surface, capacité et équipements.",
         "evidence_text": "Page officielle explicitement consacrée à la location de la salle de yoga NamastéOm avec adresse, surface, capacité et équipements.",
-        "missing_formal_fields": "email, phone",
-        "email_questions": "email, phone",
+        "missing_formal_fields": "",
+        "email_questions": "",
         "page_type": "official_rental_page",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -3875,7 +3906,9 @@
         "ai_interpreted_capacity_confidence": 0.85,
         "postal_code": "75012",
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "0793009470 — 0314259615",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -3898,7 +3931,7 @@
         "category": "official contact rental inquiry page",
         "capacity_text": "12 personnes; 25 personnes; 50 m2",
         "capacity_max_detected": 25,
-        "price_text": "",
+        "price_text": "40€; 25€; 300€; 200€; 400€",
         "price_score": 0,
         "website": "https://www.namasteom.com/contact",
         "contact": "+33 7 56 90 20 16 — contact@namasteom.com",
@@ -3925,8 +3958,8 @@
         "constraints_tags": "",
         "description": "Page officielle de contact du centre; elle mentionne explicitement les demandes de location de la salle et fournit adresse/téléphone/email.",
         "evidence_text": "Page officielle de contact du centre; elle mentionne explicitement les demandes de location de la salle et fournit adresse/téléphone/email.",
-        "missing_formal_fields": "price",
-        "email_questions": "price",
+        "missing_formal_fields": "",
+        "email_questions": "",
         "page_type": "official_contact_rental_inquiry_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -3943,7 +3976,9 @@
         "ai_interpreted_capacity_confidence": 0.85,
         "postal_code": "75012",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_price_evidence": "40€; 25€; 300€; 200€",
+        "ai_interpreted_price_confidence": 0.85
       }
     },
     {
@@ -4233,7 +4268,7 @@
         "lon": null,
         "category": "directory rental venue page",
         "capacity_text": "85 m2; 85.00m2",
-        "capacity_max_detected": 85,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement",
@@ -4302,7 +4337,7 @@
         "lon": null,
         "category": "directory rental venue page",
         "capacity_text": "85 m2; 85.00m2",
-        "capacity_max_detected": 85,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement",
@@ -5043,7 +5078,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "197 m²; 73 m²",
-        "capacity_max_detected": 197,
+        "capacity_max_detected": 0,
         "price_text": "à partir de 25 €/heure, tarifs dégressifs et devis personnalisé",
         "price_score": 0,
         "website": "https://www.lemagasin.org/location-salle-repetition-theatre-paris",
@@ -5628,8 +5663,8 @@
         "lat": null,
         "lon": null,
         "category": "official rental page multi space",
-        "capacity_text": "70m²",
-        "capacity_max_detected": 0,
+        "capacity_text": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²; 27 m²",
+        "capacity_max_detected": 12,
         "price_text": "tarifs/disponibilités via SimplyBook.me; devis personnalisé par mail",
         "price_score": 0,
         "website": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
@@ -5671,7 +5706,7 @@
         "ai_source_record_id": "venue_venue_letangpresent.fr_location pour ateliers et stages_",
         "ai_source_file": "ai_classify_retry_chunk_1_1.jsonl",
         "ai_source_kind": "single",
-        "ai_interpreted_capacity_evidence": "70m²",
+        "ai_interpreted_capacity_evidence": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
         "ai_field_interpretation_checked_at": "2026-06-21"
@@ -5700,7 +5735,7 @@
         "price_text": "",
         "price_score": 0,
         "website": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
-        "contact": "",
+        "contact": "contact@letangpresent.fr",
         "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
         "source_domain": "letangpresent.fr",
         "source_confidence": 0.65,
@@ -5724,8 +5759,8 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "city, postal_code, price, geocode_failed",
+        "email_questions": "city, postal_code, price, geocode_failed",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -5741,7 +5776,9 @@
         "ai_interpreted_capacity_evidence": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "contact@letangpresent.fr",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -5767,7 +5804,7 @@
         "price_text": "",
         "price_score": 0,
         "website": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
-        "contact": "",
+        "contact": "contact@letangpresent.fr",
         "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
         "source_domain": "letangpresent.fr",
         "source_confidence": 0.65,
@@ -5791,8 +5828,8 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "city, postal_code, price, geocode_failed",
+        "email_questions": "city, postal_code, price, geocode_failed",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -5808,7 +5845,9 @@
         "ai_interpreted_capacity_evidence": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "contact@letangpresent.fr",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -5834,7 +5873,7 @@
         "price_text": "",
         "price_score": 0,
         "website": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
-        "contact": "",
+        "contact": "contact@letangpresent.fr",
         "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
         "source_domain": "letangpresent.fr",
         "source_confidence": 0.65,
@@ -5858,8 +5897,8 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "city, postal_code, price, geocode_failed",
+        "email_questions": "city, postal_code, price, geocode_failed",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -5875,7 +5914,9 @@
         "ai_interpreted_capacity_evidence": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "contact@letangpresent.fr",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -5901,7 +5942,7 @@
         "price_text": "",
         "price_score": 0,
         "website": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
-        "contact": "",
+        "contact": "contact@letangpresent.fr",
         "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
         "source_domain": "letangpresent.fr",
         "source_confidence": 0.65,
@@ -5925,8 +5966,8 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "city, postal_code, price, geocode_failed",
+        "email_questions": "city, postal_code, price, geocode_failed",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -5942,7 +5983,9 @@
         "ai_interpreted_capacity_evidence": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "contact@letangpresent.fr",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -5968,7 +6011,7 @@
         "price_text": "",
         "price_score": 0,
         "website": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
-        "contact": "",
+        "contact": "contact@letangpresent.fr",
         "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
         "source_domain": "letangpresent.fr",
         "source_confidence": 0.65,
@@ -5992,8 +6035,8 @@
         "constraints_tags": "",
         "description": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
         "evidence_text": "Page officielle de L’Étang Présent dédiée à la location d'espaces bien-être; elle décrit plusieurs espaces louables avec capacités, usages, réservation et contact.",
-        "missing_formal_fields": "city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "city, postal_code, price, geocode_failed",
+        "email_questions": "city, postal_code, price, geocode_failed",
         "page_type": "official_rental_page_multi_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -6009,7 +6052,9 @@
         "ai_interpreted_capacity_evidence": "Capacité : jusqu’à 9 personnes; jusqu’à 12 personnes; Capacité : jusqu’à 10 personnes; 35 m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "contact@letangpresent.fr",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -6362,7 +6407,7 @@
         "price_text": "15€; 36€; 25 euros; 115€; 210€",
         "price_score": 0,
         "website": "https://www.yogamania.fr/paris/",
-        "contact": "",
+        "contact": "06 87 53 03 09 — contact@yogamania.fr",
         "source_url": "https://www.yogamania.fr/paris/",
         "source_domain": "yogamania.fr",
         "source_confidence": 0.75,
@@ -6386,8 +6431,8 @@
         "constraints_tags": "",
         "description": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
         "evidence_text": "Page de cours dans plusieurs salles parisiennes; adresses présentes mais aucune offre de location privative.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, geocode_failed",
-        "email_questions": "capacity, city, email, phone, postal_code, geocode_failed",
+        "missing_formal_fields": "capacity, city, postal_code, geocode_failed",
+        "email_questions": "capacity, city, postal_code, geocode_failed",
         "page_type": "venue_no_rental_info",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -6403,7 +6448,9 @@
         "ai_interpreted_price_evidence": "15€; 36€; 25 euros; 115€",
         "ai_interpreted_price_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "06 87 53 03 09 — contact@yogamania.fr",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -7088,7 +7135,7 @@
         "price_text": "710 € HT journée; 475 € HT demi-journée",
         "price_score": 0,
         "website": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
-        "contact": "",
+        "contact": "06 59 87 52 30 — 0659875230 — 06 59 85 82 45 — pdp.contact@seineetmarne.cci.fr — djemila.gare@seineetmarne.cci.fr — fsabiaux@seineetmarne.cci.fr",
         "source_url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
         "source_domain": "seineetmarne.cci.fr",
         "source_confidence": 0.65,
@@ -7112,8 +7159,8 @@
         "constraints_tags": "",
         "description": "Page officielle CCI dédiée à la location de salles à Serris avec tarifs et capacités.",
         "evidence_text": "Page officielle CCI dédiée à la location de salles à Serris avec tarifs et capacités.",
-        "missing_formal_fields": "email, phone, postal_code",
-        "email_questions": "email, phone, postal_code",
+        "missing_formal_fields": "",
+        "email_questions": "",
         "page_type": "venue_with_rental_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7129,7 +7176,10 @@
         "ai_interpreted_capacity_evidence": "Jusqu'à 218; Jusqu'à 50; 218 personnes",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "06 59 87 52 30 — 0659875230 — 06 59 85 82 45 — pdp.contact@seineetmarne.cci.fr — djemila.gare@seineetmarne.cci.fr — fsabiaux@seineetmarne.cci.fr",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "77700"
       }
     },
     {
@@ -7155,7 +7205,7 @@
         "price_text": "Hall 1 150 € HT journée; extérieurs 2 € HT/m²/jour",
         "price_score": 0,
         "website": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
-        "contact": "",
+        "contact": "06 59 87 52 30 — 0659875230 — 06 59 85 82 45 — pdp.contact@seineetmarne.cci.fr — djemila.gare@seineetmarne.cci.fr — fsabiaux@seineetmarne.cci.fr",
         "source_url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
         "source_domain": "seineetmarne.cci.fr",
         "source_confidence": 0.65,
@@ -7179,8 +7229,8 @@
         "constraints_tags": "",
         "description": "Page officielle CCI dédiée à la location de salles à Serris avec tarifs et capacités.",
         "evidence_text": "Page officielle CCI dédiée à la location de salles à Serris avec tarifs et capacités.",
-        "missing_formal_fields": "email, phone, postal_code",
-        "email_questions": "email, phone, postal_code",
+        "missing_formal_fields": "",
+        "email_questions": "",
         "page_type": "venue_with_rental_page",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7196,7 +7246,10 @@
         "ai_interpreted_capacity_evidence": "Jusqu'à 218; Jusqu'à 50; 218 personnes",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "06 59 87 52 30 — 0659875230 — 06 59 85 82 45 — pdp.contact@seineetmarne.cci.fr — djemila.gare@seineetmarne.cci.fr — fsabiaux@seineetmarne.cci.fr",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "77700"
       }
     },
     {
@@ -7246,8 +7299,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7261,7 +7314,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7311,8 +7365,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7328,7 +7382,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Canauxrama, Boulevard Bourdon, Quartier de l'Arsenal, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7378,8 +7433,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7395,7 +7450,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Anatole France - Pierre Brossolette, Avenue de Lattre de Tassigny, Le Parc Saint-Maur, Saint-Maur-des-Fossés, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94100, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7445,8 +7501,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7462,7 +7518,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "L'Ecu de France, Chemin de halage, Bords de Marne - Coteaux Nord, Chennevières-sur-Marne, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94430, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7512,8 +7569,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7527,7 +7584,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7577,8 +7635,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7594,7 +7652,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Petit Bain, 7, Port de la Gare, Quartier de la Gare, Paris 13e Arrondissement, Paris, Île-de-France, France métropolitaine, 75013, France",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7644,8 +7703,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7659,7 +7718,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7709,8 +7769,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7724,7 +7784,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7774,8 +7835,8 @@
         "constraints_tags": "",
         "description": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
         "evidence_text": "Catalogue touristique filtré restaurants avec plusieurs lieux de réception mais sans détails complets dans l’extrait.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7789,7 +7850,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7839,8 +7901,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7854,7 +7916,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7904,8 +7967,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7919,7 +7982,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -7969,8 +8033,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -7986,7 +8050,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Le Kilowatt, Rue des Fusillés, Paul Froment - Huit Mai 1945, Vitry-sur-Seine, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94400, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8036,8 +8101,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8051,7 +8116,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8101,8 +8167,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8118,7 +8184,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Pavillon Janvier, Place de la Fontaine aux Lions, Quartier du Pont-de-Flandre, Paris 19e Arrondissement, Paris, Île-de-France, France métropolitaine, 75019, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8168,8 +8235,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8185,7 +8252,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "La Guinguette Auvergnate, 19, Avenue de Choisy, Villeneuve-Saint-Georges, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94190, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8235,8 +8303,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8252,7 +8320,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "La Dame De Canton, Passerelle Simone de Beauvoir, Quartier de la Gare, Paris 13e Arrondissement, Paris, Île-de-France, France métropolitaine, 75013, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8302,8 +8371,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré de lieux de réception avec animations musicales; liste d’offres sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8317,7 +8386,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8367,8 +8437,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8382,7 +8452,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8432,8 +8503,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8447,7 +8518,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8497,8 +8569,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8512,7 +8584,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8562,8 +8635,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8577,7 +8650,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8627,8 +8701,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8642,7 +8716,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8692,8 +8767,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8707,7 +8782,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8757,8 +8833,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8772,7 +8848,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8822,8 +8899,8 @@
         "constraints_tags": "",
         "description": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
         "evidence_text": "Catalogue Val-de-Marne de 70 lieux de réception; page de listing, pas une fiche officielle unique.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8839,7 +8916,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Château de Santeny, Rue du Rocher, Santeny, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94440, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8889,8 +8967,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8904,7 +8982,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -8954,8 +9033,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -8971,7 +9050,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Domaine de Grosbois, Allée de la Princesse, Boissy-Saint-Léger, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94470, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9021,8 +9101,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9038,7 +9118,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Maison du Handball, Entrée Maison du handball, La Source - Pointe du Lac, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94000, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9088,8 +9169,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9103,7 +9184,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9153,8 +9235,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9168,7 +9250,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9218,8 +9301,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
         "evidence_text": "Catalogue filtré traiteur listant plusieurs lieux de réception; détails incomplets dans la page de résultats.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9235,7 +9318,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Institut National du Sport, de l'Expertise et de la Performance, 11, Avenue du Tremblay, Quartier de Picpus, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9285,8 +9369,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
         "evidence_text": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9300,7 +9384,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9350,8 +9435,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
         "evidence_text": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9367,7 +9452,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "La Terrasse Fleurie, Route de Lésigny, Sucy-en-Brie, Créteil, Val-de-Marne, Île-de-France, France métropolitaine, 94370, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9417,8 +9503,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
         "evidence_text": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9432,7 +9518,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9482,8 +9569,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
         "evidence_text": "Catalogue filtré tennis listant cinq lieux de réception, sans détails complets.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9499,7 +9586,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Quai Est, Avenue Pierre Brossolette, Parc du Perreux, Le Perreux-sur-Marne, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94170, France",
         "ai_field_interpretation_source": "field_interpret_results_07.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9549,8 +9637,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré piscine listant quatre lieux de réception, sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré piscine listant quatre lieux de réception, sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9564,7 +9652,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9614,8 +9703,8 @@
         "constraints_tags": "",
         "description": "Catalogue filtré piscine listant quatre lieux de réception, sans coordonnées ni tarifs détaillés.",
         "evidence_text": "Catalogue filtré piscine listant quatre lieux de réception, sans coordonnées ni tarifs détaillés.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price",
-        "email_questions": "capacity, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, email, phone, price",
+        "email_questions": "capacity, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9631,7 +9720,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Novotel Paris Orly Rungis, 1, Rue du Pont des Halles, Quartier Robert Schuman, Rungis, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94656, France",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9681,8 +9771,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "address, capacity, city, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "address, capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "address, capacity, city, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9696,7 +9786,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "single",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9746,8 +9837,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9761,7 +9852,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9811,8 +9903,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9828,7 +9920,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "École des arts culinaires - Lenôtre, Rue des Solets, Parc ICADE Paris Orly-Rungis, Quartier de l'Estérel, Rungis, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94150, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9878,8 +9971,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9893,7 +9986,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -9943,8 +10037,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -9960,7 +10054,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Borda, Rue de Fontenay, Centre Ville, Vincennes, Nogent-sur-Marne, Val-de-Marne, Île-de-France, France métropolitaine, 94300, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -10010,8 +10105,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, city, email, phone, postal_code, price",
-        "email_questions": "capacity, city, email, phone, postal_code, price",
+        "missing_formal_fields": "capacity, city, email, phone, price",
+        "email_questions": "capacity, city, email, phone, price",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -10027,7 +10122,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Le Lavoir Numérique, 10, Rue Victor Marquigny, Quartier de la Maison-Blanche, Paris 13e Arrondissement, Paris, Gentilly, L'Haÿ-les-Roses, Val-de-Marne, Île-de-France, France métropolitaine, 94250, Fra",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -10077,8 +10173,8 @@
         "constraints_tags": "",
         "description": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
         "evidence_text": "Deuxième page du catalogue de 70 lieux de réception du Val-de-Marne; extraction limitée aux offres visibles.",
-        "missing_formal_fields": "capacity, email, phone, postal_code, price, geocode_failed",
-        "email_questions": "capacity, email, phone, postal_code, price, geocode_failed",
+        "missing_formal_fields": "capacity, email, phone, price, geocode_failed",
+        "email_questions": "capacity, email, phone, price, geocode_failed",
         "page_type": "multi_venue_listing",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -10092,7 +10188,8 @@
         "ai_source_file": "ai_classify_retry_chunk_2.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "ai_field_interpretation_source": "field_interpret_results_06.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94000"
       }
     },
     {
@@ -10382,7 +10479,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10449,7 +10546,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10516,7 +10613,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10583,7 +10680,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10650,7 +10747,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10717,7 +10814,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10784,7 +10881,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -10851,7 +10948,7 @@
         "lon": null,
         "category": "official rental page",
         "capacity_text": "222 m²; 96 m²",
-        "capacity_max_detected": 222,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "http://ymca-paris.fr/le-centre/location-de-salles/",
@@ -12099,12 +12196,12 @@
         "lat": null,
         "lon": null,
         "category": "official rental page single space",
-        "capacity_text": "25m²",
-        "capacity_max_detected": 0,
-        "price_text": "140€; 860€; journée – 860€",
+        "capacity_text": "10 – 20 personnes; 20 – 30 personnes; 25m²",
+        "capacity_max_detected": 30,
+        "price_text": "140€; 860€; 245€; 145€; 345€",
         "price_score": 0,
         "website": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
-        "contact": "",
+        "contact": "01 84 24 42 18 — +33184244218",
         "source_url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
         "source_domain": "espace-jules-cesar.fr",
         "source_confidence": 0.75,
@@ -12128,8 +12225,8 @@
         "constraints_tags": "",
         "description": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
         "evidence_text": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
-        "missing_formal_fields": "address, city, email, exact_address_in_summary, phone, postal_code, geocode_failed",
-        "email_questions": "address, city, email, exact_address_in_summary, phone, postal_code, geocode_failed",
+        "missing_formal_fields": "address, city, exact_address_in_summary, postal_code, geocode_failed",
+        "email_questions": "address, city, exact_address_in_summary, postal_code, geocode_failed",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -12142,12 +12239,14 @@
         "ai_source_record_id": "venue_venue_espace-jules-cesar.fr_bureau individuel_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
         "ai_source_kind": "single",
-        "ai_interpreted_capacity_evidence": "25m²",
+        "ai_interpreted_capacity_evidence": "10 – 20 personnes; 20 – 30 personnes; Jusqu’à 3; 25m²",
         "ai_interpreted_capacity_confidence": 0.85,
-        "ai_interpreted_price_evidence": "140€; 860€; journée – 860€",
+        "ai_interpreted_price_evidence": "140€; 860€; 245€; 145€",
         "ai_interpreted_price_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "01 84 24 42 18 — +33184244218",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -12168,12 +12267,12 @@
         "lat": null,
         "lon": null,
         "category": "official rental page single space",
-        "capacity_text": "25m²",
-        "capacity_max_detected": 0,
+        "capacity_text": "10 – 20 personnes; 20 – 30 personnes; 25m²",
+        "capacity_max_detected": 30,
         "price_text": "140€ HT/jour ou 860€ HT/mois",
         "price_score": 0,
         "website": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
-        "contact": "",
+        "contact": "01 84 24 42 18 — +33184244218",
         "source_url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
         "source_domain": "espace-jules-cesar.fr",
         "source_confidence": 0.65,
@@ -12197,8 +12296,8 @@
         "constraints_tags": "",
         "description": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
         "evidence_text": "Page officielle de location du bureau privatif de l'Espace Jules César avec tarifs et équipements.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, geocode_failed",
-        "email_questions": "address, city, email, phone, postal_code, geocode_failed",
+        "missing_formal_fields": "address, city, postal_code, geocode_failed",
+        "email_questions": "address, city, postal_code, geocode_failed",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -12211,10 +12310,12 @@
         "ai_source_record_id": "venue_venue_espace-jules-cesar.fr_bureau individuel_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
         "ai_source_kind": "extracted_from_listing",
-        "ai_interpreted_capacity_evidence": "25m²",
+        "ai_interpreted_capacity_evidence": "10 – 20 personnes; 20 – 30 personnes; Jusqu’à 3; 25m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "01 84 24 42 18 — +33184244218",
+        "ai_interpreted_contact_confidence": 0.8
       }
     },
     {
@@ -12235,12 +12336,12 @@
         "lat": null,
         "lon": null,
         "category": "official rental page single space",
-        "capacity_text": "8 personnes",
-        "capacity_max_detected": 8,
-        "price_text": "80€; 140€; journée – 140€",
+        "capacity_text": "2-8 personnes; 10-20 personnes; 20-30 personnes; 25m²",
+        "capacity_max_detected": 30,
+        "price_text": "80€; 140€; 80 €; 140 €; 245€",
         "price_score": 0,
         "website": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
-        "contact": "",
+        "contact": "01 84 24 42 18 — +33184244218",
         "source_url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
         "source_domain": "espace-jules-cesar.fr",
         "source_confidence": 0.75,
@@ -12264,8 +12365,8 @@
         "constraints_tags": "",
         "description": "Fiche officielle très précise pour une petite salle de réunion louable à Osny, avec capacité, adresse, tarifs et contact.",
         "evidence_text": "Fiche officielle très précise pour une petite salle de réunion louable à Osny, avec capacité, adresse, tarifs et contact.",
-        "missing_formal_fields": "address, city, email, phone, postal_code, geocode_failed",
-        "email_questions": "address, city, email, phone, postal_code, geocode_failed",
+        "missing_formal_fields": "address, city, geocode_failed",
+        "email_questions": "address, city, geocode_failed",
         "page_type": "official_rental_page_single_space",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -12278,12 +12379,15 @@
         "ai_source_record_id": "venue_venue_espace-jules-cesar.fr_salle 28 personnes_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
         "ai_source_kind": "single",
-        "ai_interpreted_capacity_evidence": "8 personnes",
+        "ai_interpreted_capacity_evidence": "2-8 personnes; 10-20 personnes; 20-30 personnes; 25m²",
         "ai_interpreted_capacity_confidence": 0.85,
-        "ai_interpreted_price_evidence": "80€; 140€; journée – 140€",
+        "ai_interpreted_price_evidence": "80€; 140€; 80 €; 140 €",
         "ai_interpreted_price_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "ai_interpreted_contact_evidence": "01 84 24 42 18 — +33184244218",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "95520"
       }
     },
     {
@@ -12304,8 +12408,8 @@
         "lat": null,
         "lon": null,
         "category": "official rental page single space",
-        "capacity_text": "8 personnes",
-        "capacity_max_detected": 8,
+        "capacity_text": "2-8 personnes; 10-20 personnes; 20-30 personnes; 25m²",
+        "capacity_max_detected": 30,
         "price_text": "80€ HT demi-journée / 140€ HT journée",
         "price_score": 0,
         "website": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
@@ -12347,10 +12451,11 @@
         "ai_source_record_id": "venue_venue_espace-jules-cesar.fr_salle 28 personnes_",
         "ai_source_file": "ai_classify_retry_chunk_3.jsonl",
         "ai_source_kind": "extracted_from_listing",
-        "ai_interpreted_capacity_evidence": "8 personnes",
+        "ai_interpreted_capacity_evidence": "2-8 personnes; 10-20 personnes; 20-30 personnes; 25m²",
         "ai_interpreted_capacity_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_08.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "95520"
       }
     },
     {
@@ -12419,7 +12524,8 @@
         "ai_interpreted_contact_evidence": "01 45 47 62 00 — 0145476200 — 01 42 31 62 12",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_04.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "92220"
       }
     },
     {
@@ -12469,8 +12575,8 @@
         "constraints_tags": "",
         "description": "Page de service public pour seniors à Bagneux; lieu/service identifié mais pas une page de location de salle.",
         "evidence_text": "Page de service public pour seniors à Bagneux; lieu/service identifié mais pas une page de location de salle.",
-        "missing_formal_fields": "capacity, email, postal_code",
-        "email_questions": "capacity, email, postal_code",
+        "missing_formal_fields": "capacity, email",
+        "email_questions": "capacity, email",
         "page_type": "public_service_venue_page",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -12486,7 +12592,8 @@
         "ai_interpreted_price_evidence": "25 €; 2 €; 4 €; 2,50 €",
         "ai_interpreted_price_confidence": 0.85,
         "ai_field_interpretation_source": "field_interpret_results_04.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "92220"
       }
     },
     {
@@ -12555,7 +12662,8 @@
         "ai_interpreted_contact_evidence": "01 45 47 62 00 — 0145476200 — 01 42 31 62 12",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_04.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "92220"
       }
     },
     {
@@ -13959,7 +14067,8 @@
         "geocode_source": "nominatim",
         "geocode_label": "Maison de la Vie Associative de Malakoff, Rue Victor Hugo, Malakoff, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92240, France",
         "ai_field_interpretation_source": "field_interpret_results_05.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "92240"
       }
     },
     {
@@ -13981,7 +14090,7 @@
         "lon": null,
         "category": "venue rental mentioned",
         "capacity_text": "100 m²; 50 m²",
-        "capacity_max_detected": 100,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://www.dojo5.fr/self-defense/",
@@ -14050,7 +14159,7 @@
         "lon": 2.3508351,
         "category": "venue rental mentioned",
         "capacity_text": "100 m²; 50 m²",
-        "capacity_max_detected": 100,
+        "capacity_max_detected": 0,
         "price_text": "Abonnements adultes à partir de 490 € à 590 € / an; carnet 10 séances 200 €",
         "price_score": 0,
         "website": "https://www.dojo5.fr/tarifs/",
@@ -15166,7 +15275,7 @@
         "lon": 2.2366403,
         "category": "single venue",
         "capacity_text": "Capacité d’accueil** Jauge maximale : 2090 personnes; jusqu’à 1300; jusqu’à 1152; 000 m²; 1400 m2",
-        "capacity_max_detected": 2090,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://hangar-y.com/privatisation",
@@ -15235,7 +15344,7 @@
         "lon": 2.2360111,
         "category": "single venue",
         "capacity_text": "Capacité d’accueil** Jauge maximale : 2090 personnes; jusqu’à 1300; jusqu’à 1152; 000 m²; 1400 m2",
-        "capacity_max_detected": 2090,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://hangar-y.com/privatisation",
@@ -15304,7 +15413,7 @@
         "lon": null,
         "category": "single venue",
         "capacity_text": "Capacité d’accueil** Jauge maximale : 2090 personnes; jusqu’à 1300; jusqu’à 1152; 000 m²; 1400 m2",
-        "capacity_max_detected": 2090,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://hangar-y.com/privatisation",
@@ -15371,7 +15480,7 @@
         "lon": 2.2731931,
         "category": "single venue",
         "capacity_text": "Capacité d’accueil** Jauge maximale : 2090 personnes; jusqu’à 1300; jusqu’à 1152; 000 m²; 1400 m2",
-        "capacity_max_detected": 2090,
+        "capacity_max_detected": 0,
         "price_text": "",
         "price_score": 0,
         "website": "https://hangar-y.com/privatisation",
@@ -15439,20 +15548,20 @@
         "lat": 48.7781332,
         "lon": 2.2535504,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15468,8 +15577,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price",
+        "email_questions": "city, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15483,7 +15592,14 @@
         "ai_source_file": "ai_classify_batch_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "geocode_source": "nominatim",
-        "geocode_label": "Théâtre de l’Allegria, 1, Place Jane Rhodes, Nouvelle Cité-Jardin, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France"
+        "geocode_label": "Théâtre de l’Allegria, 1, Place Jane Rhodes, Nouvelle Cité-Jardin, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15504,20 +15620,20 @@
         "lat": 48.7775441,
         "lon": 2.2542605,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15533,8 +15649,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price",
+        "email_questions": "city, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15548,7 +15664,14 @@
         "ai_source_file": "ai_classify_batch_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "geocode_source": "nominatim",
-        "geocode_label": "Cinéma Gérard-Philipe, 1, Place Jane Rhodes, Nouvelle Cité-Jardin, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France"
+        "geocode_label": "Cinéma Gérard-Philipe, 1, Place Jane Rhodes, Nouvelle Cité-Jardin, Le Plessis-Robinson, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92350, France",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15569,20 +15692,20 @@
         "lat": null,
         "lon": null,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15598,8 +15721,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price, geocode_failed",
+        "email_questions": "city, price, geocode_failed",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15611,7 +15734,14 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15632,20 +15762,20 @@
         "lat": null,
         "lon": null,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15661,8 +15791,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price, geocode_failed",
+        "email_questions": "city, price, geocode_failed",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15674,7 +15804,14 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15695,20 +15832,20 @@
         "lat": 48.7779292,
         "lon": 2.2746811,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15724,8 +15861,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price",
+        "email_questions": "city, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15739,7 +15876,14 @@
         "ai_source_file": "ai_classify_batch_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "geocode_source": "nominatim",
-        "geocode_label": "Les Terrasses, 48-50, Robinson, Résidence de la Pépinière, Châtenay-Malabry, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92290, France"
+        "geocode_label": "Les Terrasses, 48-50, Robinson, Résidence de la Pépinière, Châtenay-Malabry, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92290, France",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15760,20 +15904,20 @@
         "lat": 48.8414447,
         "lon": 2.2392128,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15789,8 +15933,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price",
+        "email_questions": "city, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15804,7 +15948,14 @@
         "ai_source_file": "ai_classify_batch_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "geocode_source": "nominatim",
-        "geocode_label": "La Placette, Rue de Paris, Les Princes - Marmottan, Les Princes-Marmottan, Boulogne-Billancourt, Hauts-de-Seine, Île-de-France, France métropolitaine, 92100, France"
+        "geocode_label": "La Placette, Rue de Paris, Les Princes - Marmottan, Les Princes-Marmottan, Boulogne-Billancourt, Hauts-de-Seine, Île-de-France, France métropolitaine, 92100, France",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15825,20 +15976,20 @@
         "lat": 48.731973,
         "lon": 2.2531097,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15854,8 +16005,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price",
+        "email_questions": "city, price",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15869,7 +16020,14 @@
         "ai_source_file": "ai_classify_batch_0.jsonl",
         "ai_source_kind": "extracted_from_listing",
         "geocode_source": "nominatim",
-        "geocode_label": "Salle de conférence, Rue de Versailles, Les Graviers, Massy, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91300, France"
+        "geocode_label": "Salle de conférence, Rue de Versailles, Les Graviers, Massy, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91300, France",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -15890,20 +16048,20 @@
         "lat": null,
         "lon": null,
         "category": "single venue",
-        "capacity_text": "",
-        "capacity_max_detected": 0,
+        "capacity_text": "400 pers; 150 personnes; 97 personnes",
+        "capacity_max_detected": 400,
         "price_text": "",
         "price_score": 0,
         "website": "https://maisondesarts.plessis-robinson.com/privatisations",
-        "contact": "",
+        "contact": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
         "source_url": "https://maisondesarts.plessis-robinson.com/privatisations",
         "source_domain": "maisondesarts.plessis-robinson.com",
         "source_confidence": 0.65,
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "single_venue",
         "is_aggregator": "no",
@@ -15919,8 +16077,8 @@
         "constraints_tags": "",
         "description": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
         "evidence_text": "Single venue privatization page for Maison des Arts du Plessis-Robinson. Clear 'privatisation' rental signal. Lists 8 distinct event spaces with capacities. Contact information present but pricing is missing. Marked as single_venue with extracted_venues for sub-spaces.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "city, price, geocode_failed",
+        "email_questions": "city, price, geocode_failed",
         "page_type": "single_venue",
         "source_reliability": "S3",
         "geo_status": "in_scope",
@@ -15932,7 +16090,14 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "ai_interpreted_capacity_evidence": "400 pers; 150 personnes; 97 personnes",
+        "ai_interpreted_capacity_confidence": 0.85,
+        "ai_interpreted_contact_evidence": "01 81 89 33 66 — 0978924963 — fabienne.juin@plessis-robinson.com",
+        "ai_interpreted_contact_confidence": 0.8,
+        "postal_code": "92350",
+        "ai_field_interpretation_source": "field_interpret_results_00.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -16001,7 +16166,8 @@
         "ai_interpreted_contact_evidence": "01 55 09 15 30",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_02.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94500"
       }
     },
     {
@@ -16070,7 +16236,8 @@
         "ai_interpreted_contact_evidence": "01 55 09 15 30",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_02.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94500"
       }
     },
     {
@@ -16141,7 +16308,8 @@
         "ai_interpreted_contact_evidence": "01 55 09 15 30",
         "ai_interpreted_contact_confidence": 0.8,
         "ai_field_interpretation_source": "field_interpret_results_02.jsonl",
-        "ai_field_interpretation_checked_at": "2026-06-21"
+        "ai_field_interpretation_checked_at": "2026-06-21",
+        "postal_code": "94500"
       }
     },
     {
@@ -16623,8 +16791,8 @@
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "municipal_hall_listing",
         "is_aggregator": "no",
@@ -16640,8 +16808,8 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "capacity, city, email, phone, price, geocode_failed",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -16653,7 +16821,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_charenton.fr_charentonfr locations de salles_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "postal_code": "94220",
+        "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -16686,8 +16857,8 @@
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "municipal_hall_listing",
         "is_aggregator": "no",
@@ -16703,8 +16874,8 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "capacity, city, email, phone, price, geocode_failed",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -16716,7 +16887,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_charenton.fr_charentonfr locations de salles_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "postal_code": "94220",
+        "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -16749,8 +16923,8 @@
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "municipal_hall_listing",
         "is_aggregator": "no",
@@ -16766,8 +16940,8 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "capacity, city, email, phone, price, geocode_failed",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -16779,7 +16953,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_charenton.fr_charentonfr locations de salles_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "postal_code": "94220",
+        "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     },
     {
@@ -16812,8 +16989,8 @@
         "fit_beyond_score": 70,
         "confidence_score": 0.65,
         "actionability_score": 70,
-        "formal_completeness_score": "3/8",
-        "formal_extraction_status": "ai_adaptive_extracted",
+        "formal_completeness_score": "interpreted",
+        "formal_extraction_status": "ai_interpreted_enriched",
         "formal_scrape_checked_at": "2026-06-20",
         "formal_scrape_content_type": "municipal_hall_listing",
         "is_aggregator": "no",
@@ -16829,8 +17006,8 @@
         "constraints_tags": "",
         "description": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
         "evidence_text": "Municipal hall rental page for Espace Toffoli in Charenton-le-Pont. Clear 'locations de salles' rental signal. Detailed tariffs for 3 modular rooms (Salle 1: 455m²/200 seated, Salle 2: 315m²/120 seated, Salle 3: 140m²/50 seated) plus Salle du tribunal. Full 2026 pricing available. Marked as municipal_hall_listing with extracted_venues.",
-        "missing_formal_fields": "capacity, city, email, phone, price,geocode_failed",
-        "email_questions": "capacity, city, email, phone, price",
+        "missing_formal_fields": "capacity, city, email, phone, price, geocode_failed",
+        "email_questions": "capacity, city, email, phone, price, geocode_failed",
         "page_type": "municipal_hall_listing",
         "source_reliability": "S4",
         "geo_status": "in_scope",
@@ -16842,7 +17019,10 @@
         "last_seen_at": "2026-06-20",
         "ai_source_record_id": "venue_venue_charenton.fr_charentonfr locations de salles_",
         "ai_source_file": "ai_classify_batch_0.jsonl",
-        "ai_source_kind": "extracted_from_listing"
+        "ai_source_kind": "extracted_from_listing",
+        "postal_code": "94220",
+        "ai_field_interpretation_source": "field_interpret_results_01.jsonl",
+        "ai_field_interpretation_checked_at": "2026-06-21"
       }
     }
   ]

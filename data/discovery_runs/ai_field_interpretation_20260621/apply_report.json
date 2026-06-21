@@ -1,13 +1,13 @@
 {
   "results": 253,
-  "updated_features": 80,
+  "updated_features": 152,
   "updates": {
-    "capacity_text": 74,
-    "price_text": 19
+    "capacity_text": 83,
+    "price_text": 23,
+    "contact": 22,
+    "postal_code": 82
   },
-  "skipped": {
-    "missing_feature_or_failed": 1
-  },
+  "skipped": {},
   "audit_samples": [
     {
       "candidate_id": "venue_venue_espace-jules-cesar.fr_guide dacces__x0_0e3114967a",
@@ -23,7 +23,8 @@
       "name": "Espace Jules César - bureau privatif 25m²",
       "updated": [
         "capacity_text",
-        "price_text"
+        "price_text",
+        "contact"
       ],
       "url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/"
     },
@@ -32,7 +33,9 @@
       "name": "Espace Jules César - salle de réunion 2 à 8 personnes",
       "updated": [
         "capacity_text",
-        "price_text"
+        "price_text",
+        "contact",
+        "postal_code"
       ],
       "url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/"
     },
@@ -89,7 +92,8 @@
       "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x2_40688e6499",
       "name": "L’Étang Présent - Cuisine commune",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "contact"
       ],
       "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
     },
@@ -97,7 +101,8 @@
       "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x0_060c31c215",
       "name": "L’Étang Présent - Grande Salle",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "contact"
       ],
       "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
     },
@@ -105,7 +110,8 @@
       "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x3_13e031869b",
       "name": "L’Étang Présent - Salle Zen",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "contact"
       ],
       "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
     },
@@ -113,7 +119,8 @@
       "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x1_2e4d20ff03",
       "name": "L’Étang Présent - Yourte traditionnelle",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "contact"
       ],
       "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
     },
@@ -121,15 +128,97 @@
       "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x4_a90b0db933",
       "name": "L’Étang Présent - Éco-gîte",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "contact"
       ],
       "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x1_14e678cf4f",
+      "name": "Cinéma Gérard Philipe",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x5_92716aead0",
+      "name": "La Placette",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x4_5829534729",
+      "name": "Les Terrasses",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x7_08c11ee399",
+      "name": "Musiques Actuelles (studios)",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x6_d529a4c41b",
+      "name": "Salle de Conférence",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x2_86417da821",
+      "name": "Salon Andrea Palladio",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x3_96bfb0ec23",
+      "name": "Salon Canaletto",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x0_bd380709a4",
+      "name": "Théâtre de l'Allegria",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
     },
     {
       "candidate_id": "venue_venue_themuselab.fr_le studio_",
       "name": "The Muse Lab",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "price_text"
       ],
       "url": "https://themuselab.fr/location-de-salles/"
     },
@@ -137,7 +226,8 @@
       "candidate_id": "venue_venue_themuselab.fr_informations__x1_153fa68f41",
       "name": "The Muse Lab Boulogne-Billancourt",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "price_text"
       ],
       "url": "https://themuselab.fr/location-de-salles"
     },
@@ -145,7 +235,8 @@
       "candidate_id": "venue_venue_themuselab.fr_informations_",
       "name": "The Muse Lab Montigny-le-Bretonneux",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "price_text"
       ],
       "url": "https://themuselab.fr/location-de-salles"
     },
@@ -164,6 +255,47 @@
         "capacity_text"
       ],
       "url": "https://www.bastide95.com/location-salle-le-mas/"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x0_79311b6edf",
+      "name": "Espace Toffoli - Salle n°1",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x1_359d5ebf23",
+      "name": "Espace Toffoli - Salle n°2",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x2_9b2d4b38f4",
+      "name": "Espace Toffoli - Salle n°3",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x3_0853d708e8",
+      "name": "Salle du tribunal de proximité",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_consistoire.org_location de salles_le kremlin-bicêtre",
+      "name": "Centre communautaire Rina et Chammaï WENIGER",
+      "updated": [
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://www.consistoire.org/kremlinbicetre/salle"
     },
     {
       "candidate_id": "venue_venue_dojo5.fr_selfdefense_montrouge",
@@ -201,7 +333,8 @@
       "candidate_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france__x2_b24a9fed61",
       "name": "Salle de Réunion",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "postal_code"
       ],
       "url": "https://www.le-rooftop.com"
     },
@@ -209,7 +342,8 @@
       "candidate_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france__x0_8e65bbed75",
       "name": "Salon EastSide",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "postal_code"
       ],
       "url": "https://www.le-rooftop.com"
     },
@@ -217,7 +351,8 @@
       "candidate_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france__x1_2bd3ee1566",
       "name": "Salon WestView",
       "updated": [
-        "capacity_text"
+        "capacity_text",
+        "postal_code"
       ],
       "url": "https://www.le-rooftop.com"
     },
@@ -247,6 +382,14 @@
         "price_text"
       ],
       "url": "https://www.spacebase.com/en/venue/salle-2-1056508"
+    },
+    {
+      "candidate_id": "venue_venue_studiodiabolo.fr_studiodiabolo cours de danse location de salle le kremlin_le kremlin-bicêtre",
+      "name": "StudioDiabolo",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.studiodiabolo.fr"
     },
     {
       "candidate_id": "venue_venue_studiolenvol.com_location_montrouge",
@@ -307,120 +450,6 @@
         "capacity_text"
       ],
       "url": "https://www.yogmee.fr/salles/ecolodge-la-belle-verte-lieu-de-retraite-yoga-et-bien-etre"
-    },
-    {
-      "candidate_id": "obs_legacy-source-records_56823f985b",
-      "name": "Eka Yoga - Centre de Yoga de 85 m2",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement"
-    },
-    {
-      "candidate_id": "obs_legacy-source-records_392a9a4bd4",
-      "name": "Havre de paix / villa au bord d'une rivière privée",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "https://www.yogmee.fr/salles/havre-de-paix-pour-un-bien-etre-inoubliable-au-bord-dune-riviere-privee"
-    },
-    {
-      "candidate_id": "obs_legacy-source-records_6c420dd07c",
-      "name": "La Grange de la Montagne Vihan",
-      "updated": [
-        "capacity_text",
-        "price_text"
-      ],
-      "url": "https://www.yogmee.fr/salles/salle-pour-stage-en-pleine-nature-au-centre-finistere"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs_",
-      "name": "UCJG Paris",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x5_41f2870e35",
-      "name": "UCJG Paris - Grande Salle",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x0_52446b8683",
-      "name": "UCJG Paris - Gymnase",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x3_ed8aa9d19d",
-      "name": "UCJG Paris - Salle 2",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x4_a2f34b84cc",
-      "name": "UCJG Paris - Salle 3",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x6_db7e84126b",
-      "name": "UCJG Paris - Salle 4",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x2_9523f6ec39",
-      "name": "UCJG Paris - Salle bleue",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_ymca-paris.fr_consulter les tarifs__x1_7669c75c35",
-      "name": "UCJG Paris - Salon André",
-      "updated": [
-        "capacity_text"
-      ],
-      "url": "http://ymca-paris.fr/le-centre/location-de-salles/"
-    },
-    {
-      "candidate_id": "venue_venue_themuselab.fr_salle boulogne 92_",
-      "name": "The Muse Lab Boulogne-Billancourt",
-      "updated": [
-        "capacity_text",
-        "price_text"
-      ],
-      "url": "https://themuselab.fr/le-planning-92/"
-    },
-    {
-      "candidate_id": "venue_venue_bagneux92.fr_espace seniors_bagneux",
-      "name": "Espace seniors du CCAS de Bagneux",
-      "updated": [
-        "price_text"
-      ],
-      "url": "https://www.bagneux92.fr/140/a-tout-age/senior/espace-seniors.htm"
-    },
-    {
-      "candidate_id": "venue_venue_bagneux92.fr_espace seniors_bagneux_x1_a00cb662e5",
-      "name": "Mairie annexe",
-      "updated": [
-        "price_text"
-      ],
-      "url": "https://www.bagneux92.fr/140/a-tout-age/senior/espace-seniors.htm"
     }
   ]
 }
