@@ -9,7 +9,7 @@ const STATUS = {
 };
 const STATUS_ORDER = Object.keys(STATUS);
 const IDF_BBOX = { minLat:48.1, maxLat:49.1, minLon:1.4, maxLon:3.6 };
-const DATA_VERSION = '20260621-verif-import-features';
+const DATA_VERSION = '20260621-ai-field-interpretation';
 const state = { data:null, venues:null, candidates:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dataset:'all', dept:'all', status:'all', quality:'all', tagFilters:new Set(), capMax:100, sort:'fit' }, crm:{}, quality:{} };
 
 const $ = id => document.getElementById(id);

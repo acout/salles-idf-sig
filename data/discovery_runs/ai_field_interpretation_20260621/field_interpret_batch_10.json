@@ -1,0 +1,86 @@
+[
+  {
+    "candidate_id": "venue_venue_seineetmarne.cci.fr_telecharger notre brochure__x1_46b89bcb83",
+    "name": "CCI Seine-et-Marne - Salles de réunion",
+    "city": "Serris",
+    "department": "77",
+    "current": {
+      "capacity_text": "12-50 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "475 € HT demi-journée; 710 € HT journée; 525 € HT soirée",
+      "contact": "06 59 87 52 30; 06 59 85 82 45 — djemila.gare@seineetmarne.cci.fr; fsabiaux@seineetmarne.cci.fr",
+      "address": "Serris",
+      "city": "Serris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+      "source_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf"
+    },
+    "url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+    "url_domain": "www.seineetmarne.cci.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 9
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_6c420dd07c_x0_3ce0a67172",
+    "name": "La Grange de la Montagne Vihan",
+    "city": "Landeleau",
+    "department": "94",
+    "current": {
+      "capacity_text": "gîte jusqu'à 8 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "Salle: 100€/jour; chambre: forfait 20€ + 10€/personne.",
+      "contact": "06.06.45.63.45 — ronan.guillou@neuf.fr",
+      "address": "Landeleau",
+      "city": "Landeleau",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.yogmee.fr/salles/salle-pour-stage-en-pleine-nature-au-centre-finistere",
+      "source_url": "https://www.yogmee.fr/salles/salle-pour-stage-en-pleine-nature-au-centre-finistere"
+    },
+    "url": "https://www.yogmee.fr/salles/salle-pour-stage-en-pleine-nature-au-centre-finistere",
+    "url_domain": "www.yogmee.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code"
+    ],
+    "page_type": "directory_rental_venue_page",
+    "source_reliability": "S3",
+    "priority": 9
+  },
+  {
+    "candidate_id": "venue_venue_association-rds.com_danse orientale_montrouge_x0_c4849d5b7e",
+    "name": "Espace R'Danses / Ciya Danse",
+    "city": "Montrouge",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Enfant 370 €/an ; adulte 465 €/an ; séance d'essai adulte 15 €, enfant 5 €",
+      "contact": "06 09 20 63 87 — ciyadanse@live.fr",
+      "address": "92120, Montrouge",
+      "city": "Montrouge",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.association-rds.com/danse-orientale.php"
+    },
+    "url": "https://www.association-rds.com/danse-orientale.php",
+    "url_domain": "www.association-rds.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "rental_page_url"
+    ],
+    "page_type": "venue_no_rental_info",
+    "source_reliability": "S4",
+    "priority": 7
+  }
+]

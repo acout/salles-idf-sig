@@ -1,0 +1,730 @@
+[
+  {
+    "candidate_id": "obs_legacy-source-records_56823f985b_x0_e1ee97a4a2",
+    "name": "Eka Yoga - Centre de Yoga de 85 m2",
+    "city": "Toulouse",
+    "department": "94",
+    "current": {
+      "capacity_text": "85 m²",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "0645995562 — contact@ekayoga.fr",
+      "address": "Toulouse",
+      "city": "Toulouse",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement",
+      "source_url": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement"
+    },
+    "url": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement",
+    "url_domain": "www.yogmee.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "directory_rental_venue_page",
+    "source_reliability": "S3",
+    "priority": 13
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_392a9a4bd4_x0_e6160af4ae",
+    "name": "Havre de paix / villa au bord d'une rivière privée",
+    "city": "Prémian / Olargues area",
+    "department": "94",
+    "current": {
+      "capacity_text": "5 chambres, jusqu'à 13 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "0652949386 — laurent.thomasonline@gmail.com",
+      "address": "Prémian / Olargues area",
+      "city": "Prémian / Olargues area",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.yogmee.fr/salles/havre-de-paix-pour-un-bien-etre-inoubliable-au-bord-dune-riviere-privee",
+      "source_url": "https://www.yogmee.fr/salles/havre-de-paix-pour-un-bien-etre-inoubliable-au-bord-dune-riviere-privee"
+    },
+    "url": "https://www.yogmee.fr/salles/havre-de-paix-pour-un-bien-etre-inoubliable-au-bord-dune-riviere-privee",
+    "url_domain": "www.yogmee.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "directory_rental_venue_page",
+    "source_reliability": "S3",
+    "priority": 13
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_6795e718fe_x0_1af09de0c7",
+    "name": "METTA VILLA",
+    "city": "Salies de Béarn",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "0685122381 — contact@mettavilla.fr",
+      "address": "Salies de Béarn",
+      "city": "Salies de Béarn",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.yogmee.fr/salles/metta-villa",
+      "source_url": "https://www.yogmee.fr/salles/metta-villa"
+    },
+    "url": "https://www.yogmee.fr/salles/metta-villa",
+    "url_domain": "www.yogmee.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "directory_rental_venue_page",
+    "source_reliability": "S3",
+    "priority": 13
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_reservation__x2_cc38b9c1c1",
+    "name": "Bureau individuel 25m²",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "25 m²",
+      "capacity_max_detected": 0,
+      "price_text": "60€ journée / 860€ mois",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/reservation/",
+      "source_url": "https://espace-jules-cesar.fr/reservation/"
+    },
+    "url": "https://espace-jules-cesar.fr/reservation/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_bureau individuel__x0_2a161cae23",
+    "name": "Bureau privatif 25m²",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "2 à 4 postes",
+      "capacity_max_detected": 0,
+      "price_text": "140€ HT/jour ou 860€ HT/mois",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
+      "source_url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/"
+    },
+    "url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "official_rental_page_single_space",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_reservation__x0_48d0948f7f",
+    "name": "Salle de réunion 10-20 personnes",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "10 à 20 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "145€ demi-journée / 245€ journée",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/reservation/",
+      "source_url": "https://espace-jules-cesar.fr/reservation/"
+    },
+    "url": "https://espace-jules-cesar.fr/reservation/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_salle 28 personnes__x0_bf18ccbc8b",
+    "name": "Salle de réunion 2 à 8 personnes",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "2 à 8 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "80€ HT demi-journée / 140€ HT journée",
+      "contact": "01 84 24 42 18",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
+      "source_url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/"
+    },
+    "url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed"
+    ],
+    "page_type": "official_rental_page_single_space",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_reservation__x1_f80665bb19",
+    "name": "Salle de réunion 20-30 personnes",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "20 à 30 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "195€ demi-journée / 345€ journée",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/reservation/",
+      "source_url": "https://espace-jules-cesar.fr/reservation/"
+    },
+    "url": "https://espace-jules-cesar.fr/reservation/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages_",
+    "name": "L’Étang Présent",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "tarifs/disponibilités via SimplyBook.me; devis personnalisé par mail",
+      "contact": "contact@letangpresent.fr",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+      "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+    "url_domain": "letangpresent.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "geocode_failed",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_themuselab.fr_informations__x0_36291ef195",
+    "name": "The Muse Lab Montigny-le-Bretonneux",
+    "city": "Montigny-le-Bretonneux",
+    "department": "78",
+    "current": {
+      "capacity_text": "70 m²",
+      "capacity_max_detected": 0,
+      "price_text": "Tarifs variables selon durée et utilisation, indiqués dans le planning.",
+      "contact": "",
+      "address": "Montigny-le-Bretonneux",
+      "city": "Montigny-le-Bretonneux",
+      "postal_code": null,
+      "specific_rental_page_url": "https://themuselab.fr/location-de-salles",
+      "source_url": "https://themuselab.fr/location-de-salles"
+    },
+    "url": "https://themuselab.fr/location-de-salles",
+    "url_domain": "themuselab.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "geocode_failed",
+      "phone"
+    ],
+    "page_type": "official_rental_page",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_association-rds.com_accueil_montrouge_x0_b2a0c2aeda",
+    "name": "Espace R'Danses",
+    "city": "Montrouge",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "tarifs attractifs mentionnés sans montant",
+      "contact": "",
+      "address": "92120, Montrouge",
+      "city": "Montrouge",
+      "postal_code": null,
+      "specific_rental_page_url": "onglet LOCATIONS non extrait",
+      "source_url": "https://www.association-rds.com/index.php"
+    },
+    "url": "https://www.association-rds.com/index.php",
+    "url_domain": "www.association-rds.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "geocode_failed",
+      "phone",
+      "rental_page_url"
+    ],
+    "page_type": "venue_rental_mentioned",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_dojo5.fr_tarifs_montrouge_x0_f515f34711",
+    "name": "DOJO 5",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Abonnements adultes à partir de 490 € à 590 € / an; carnet 10 séances 200 €",
+      "contact": "01 46 34 59 26",
+      "address": "75005 Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.dojo5.fr/location-de-salle/",
+      "source_url": "https://www.dojo5.fr/tarifs/"
+    },
+    "url": "https://www.dojo5.fr/location-de-salle/",
+    "url_domain": "www.dojo5.fr",
+    "missing_fields": [
+      "capacity",
+      "email",
+      "rental_price"
+    ],
+    "page_type": "venue_rental_mentioned",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_bfff00c83a",
+    "name": "Eightball-studios",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.easyzic.com/annuaire/etablissements/eightball-studios,354697.html",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/eightball-studios,354697.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/eightball-studios,354697.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_dff8259faf",
+    "name": "STUDIO d'ENREGISTREMENT AGE OF SOUND",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "journée 300 €, 2 jours 500 €, 3 jours 700 €, 4 jours 900 €, 5 jours 1000 €, forfait week-end 500 €, mixage 75 €/titre ou 200 €/journée; devis sur demande",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.easyzic.com/annuaire/etablissements/studio-d-enregistrement-age-of-sound,205133.html",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/studio-d-enregistrement-age-of-sound,205133.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/studio-d-enregistrement-age-of-sound,205133.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_kremlinbicetre.fr_laccompagnement par la ville_le kremlin-bicêtre_x1_1615e79dfe",
+    "name": "Espace André-Maigné",
+    "city": "Le Kremlin-Bicêtre",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "gratuit pour associations locales sous conditions",
+      "contact": "associations@ville-kremlin-bicetre.fr",
+      "address": "Le Kremlin-Bicêtre",
+      "city": "Le Kremlin-Bicêtre",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.kremlinbicetre.fr/a-votre-service/vos-demarches/location-de-la-salle-andre-maigne",
+      "source_url": "https://www.kremlinbicetre.fr/loisirs-sorties/associations/laccompagnement-par-la-ville"
+    },
+    "url": "https://www.kremlinbicetre.fr/a-votre-service/vos-demarches/location-de-la-salle-andre-maigne",
+    "url_domain": "www.kremlinbicetre.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "phone"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_lemagasin.org_location de salles_",
+    "name": "Le Magasin / Vagabond",
+    "city": "Malakoff",
+    "department": "75",
+    "current": {
+      "capacity_text": "Le Plato: jauge 68 places",
+      "capacity_max_detected": 0,
+      "price_text": "à partir de 25 €/heure, tarifs dégressifs et devis personnalisé",
+      "contact": "01 49 65 49 52",
+      "address": "Malakoff",
+      "city": "Malakoff",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.lemagasin.org/location-salle-repetition-theatre-paris",
+      "source_url": "https://www.lemagasin.org/location-salle-repetition-theatre-paris"
+    },
+    "url": "https://www.lemagasin.org/location-salle-repetition-theatre-paris",
+    "url_domain": "www.lemagasin.org",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "postal_code"
+    ],
+    "page_type": "official_rental_page",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_namasteom.com_accepter_",
+    "name": "Centre NamastéOm",
+    "city": "",
+    "department": "75",
+    "current": {
+      "capacity_text": "10-12 personnes allongées sur tapis; 25 personnes assises",
+      "capacity_max_detected": 0,
+      "price_text": "semaine 25 €/h heures creuses, 30 €/h heures pleines; week-end 125 € demi-journée, 250 € journée, 450 € week-end 2 jours, 170 € soirée; promotions ponctuelles 200 €/jour, 400 €/2 jours, 500 €/3 jours",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.namasteom.com/location-salle",
+      "source_url": "https://www.namasteom.com/location-salle"
+    },
+    "url": "https://www.namasteom.com/location-salle",
+    "url_domain": "www.namasteom.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone"
+    ],
+    "page_type": "official_rental_page",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_namasteom.com_location salle yoga__x0_d71c893b64",
+    "name": "Centre NamastéOm - salle de yoga",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "10-12 personnes allongées sur tapis; 25 personnes assises",
+      "capacity_max_detected": 0,
+      "price_text": "Tarifs indiqués plus bas sur la page; vidéo-projecteur 40€/jour ou 25€/demi-journée avec caution 300€.",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.namasteom.com/location-salle",
+      "source_url": "https://www.namasteom.com/location-salle"
+    },
+    "url": "https://www.namasteom.com/location-salle",
+    "url_domain": "www.namasteom.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone"
+    ],
+    "page_type": "official_rental_page",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_pavillon-napoleon.fr_tarifs__x0_5dc849ed70",
+    "name": "Pavillon Napoléon",
+    "city": "Saint-Leu-la-Forêt",
+    "department": "95",
+    "current": {
+      "capacity_text": "deux salles de 100 m²; 70 à 130 assises, jusqu’à 150 debout",
+      "capacity_max_detected": 0,
+      "price_text": "formules sur mesure; forfait ménage 100 €; devis personnalisé",
+      "contact": "06 29 67 78 23",
+      "address": "Saint-Leu-la-Forêt",
+      "city": "Saint-Leu-la-Forêt",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.pavillon-napoleon.fr/devis-location-salle-a-saint-leu-la-foret.html",
+      "source_url": "https://www.pavillon-napoleon.fr/tarifs-location-a-salle-saint-leu-la-foret.html"
+    },
+    "url": "https://www.pavillon-napoleon.fr/devis-location-salle-a-saint-leu-la-foret.html",
+    "url_domain": "www.pavillon-napoleon.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_rock4you.dance_studios rental_sceaux_x0_5e23341a87",
+    "name": "Danse Cadix",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "up to 50 people",
+      "capacity_max_detected": 0,
+      "price_text": "25€/h répétition jusqu'à 6 personnes; 40€/h plus de 6; fêtes 200€ à 500€ selon créneau.",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.rock4you.dance/en/salles",
+      "source_url": "https://www.rock4you.dance/en/salles"
+    },
+    "url": "https://www.rock4you.dance/en/salles",
+    "url_domain": "www.rock4you.dance",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone"
+    ],
+    "page_type": "official_multi_venue_rental_page",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_rock4you.dance_studios rental_sceaux_x1_67e3220e60",
+    "name": "Danse Volontaires",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "up to 100 people",
+      "capacity_max_detected": 0,
+      "price_text": "15€/h cours particulier jusqu'à 6; 25€/h répétition jusqu'à 6; 50€/h location plus de 6 (main room only).",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.rock4you.dance/en/salles",
+      "source_url": "https://www.rock4you.dance/en/salles"
+    },
+    "url": "https://www.rock4you.dance/en/salles",
+    "url_domain": "www.rock4you.dance",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "geocode_failed",
+      "phone"
+    ],
+    "page_type": "official_multi_venue_rental_page",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_seineetmarne.cci.fr_contacteznous pour reserver__x3_4525b36c61",
+    "name": "CCI Seine-et-Marne - Hall d’accueil & extérieurs",
+    "city": "Serris",
+    "department": "77",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Hall 1 150 € HT journée; extérieurs 2 € HT/m²/jour",
+      "contact": "",
+      "address": "Serris",
+      "city": "Serris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
+      "source_url": "https://www.seineetmarne.cci.fr/location-de-salles-serris"
+    },
+    "url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
+    "url_domain": "www.seineetmarne.cci.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_seineetmarne.cci.fr_contacteznous pour reserver__x1_fdf5bf8387",
+    "name": "CCI Seine-et-Marne - Salles partenaires A & B",
+    "city": "Serris",
+    "department": "77",
+    "current": {
+      "capacity_text": "jusqu’à 50 places",
+      "capacity_max_detected": 0,
+      "price_text": "710 € HT journée; 475 € HT demi-journée",
+      "contact": "",
+      "address": "Serris",
+      "city": "Serris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
+      "source_url": "https://www.seineetmarne.cci.fr/location-de-salles-serris"
+    },
+    "url": "https://www.seineetmarne.cci.fr/location-de-salles-serris",
+    "url_domain": "www.seineetmarne.cci.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "postal_code"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_studiolenvol.com_evjfh danse_montrouge_x0_835bff07b4",
+    "name": "Studio l'Envol - EVJF/EVJH dansé",
+    "city": "Montrouge",
+    "department": "75",
+    "current": {
+      "capacity_text": "groupe de 15 personnes maximum",
+      "capacity_max_detected": 0,
+      "price_text": "250 € TTC",
+      "contact": "contact@studiolenvol.com",
+      "address": "Montrouge",
+      "city": "Montrouge",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.studiolenvol.com/evjf-danse-paris.html",
+      "source_url": "https://www.studiolenvol.com/evjf-danse-paris.html"
+    },
+    "url": "https://www.studiolenvol.com/evjf-danse-paris.html",
+    "url_domain": "www.studiolenvol.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "phone"
+    ],
+    "page_type": "event_package_rental_page",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_studiolenvol.com_location_montrouge_x0_744752fe8c",
+    "name": "Studio l'Envol - Grand studio",
+    "city": "Montrouge",
+    "department": "75",
+    "current": {
+      "capacity_text": "jusqu'à 20 selon activité",
+      "capacity_max_detected": 0,
+      "price_text": "16.50€ à 55€ TTC/h selon usage et horaire",
+      "contact": "",
+      "address": "Montrouge",
+      "city": "Montrouge",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.studiolenvol.com/location-salle-paris.html",
+      "source_url": "https://www.studiolenvol.com/location-salle-paris.html"
+    },
+    "url": "https://www.studiolenvol.com/location-salle-paris.html",
+    "url_domain": "www.studiolenvol.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S4",
+    "priority": 12
+  }
+]
