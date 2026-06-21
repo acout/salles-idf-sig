@@ -155,7 +155,7 @@
         <p>Parcourir le pipeline : où chaque item s'est arrêté. Cliquez sur une étape ci-dessous pour filtrer.</p>
         <div id="funnel-summary" class="funnel-summary"></div>
         <div class="grid-2" style="margin-top:12px">
-          <div><label class="field-label">Filtre étape</label><select id="funnel-stage-filter" class="input"><option value="all">Toutes les étapes</option><option value="L0_aggregator">📥 Agrégateur / annuaire (609)</option><option value="L2_filtered_geo">🌍 Filtré géo (40)</option><option value="L2_filtered_reliability">⚠️ Filtré fiabilité S0-S2 (74)</option><option value="L3_not_venue">❌ Non-venue : PDF, listing, planning… (241)</option><option value="L3_valid_but_missing">⚠️ Salle valide non importée (16)</option><option value="L4_import_queue">✅ Importé dans la carte (95)</option></select></div>
+          <div><label class="field-label">Filtre étape</label><select id="funnel-stage-filter" class="input"><option value="all">Toutes les étapes</option><option value="L0_aggregator">📥 Agrégateur / annuaire</option><option value="L2_filtered_geo">🌍 Filtré géo</option><option value="L2_filtered_reliability">⚠️ Filtré fiabilité S0-S2</option><option value="L3_not_venue">❌ Non-venue : PDF, listing, planning…</option><option value="L3_valid_but_missing">⚠️ Salle valide non importée</option><option value="L4_import_queue">✅ Importé dans la carte/liste</option></select></div>
           <div><label class="field-label">Filtre fiabilité</label><select id="funnel-source-filter" class="input"><option value="all">Toutes</option><option value="S4">S4 — Page location officielle</option><option value="S3">S3 — Site officiel</option><option value="S2">S2 — Co-working / PDF</option><option value="S1">S1 — Agrégateur / annuaire</option><option value="S0">S0 — Inconnu</option></select></div>
         </div>
       </div>
@@ -170,6 +170,6 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260620-ui-actions"></script>
+<script src="js/app.js?v=20260621-verif-import-features"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ const STATUS = {
 };
 const STATUS_ORDER = Object.keys(STATUS);
 const IDF_BBOX = { minLat:48.1, maxLat:49.1, minLon:1.4, maxLon:3.6 };
+const DATA_VERSION = '20260621-verif-import-features';
 const state = { data:null, venues:null, candidates:null, filtered:[], selectedId:null, markers:L.layerGroup().addTo(map), view:'map', filters:{ q:'', dataset:'all', dept:'all', status:'all', quality:'all', tagFilters:new Set(), capMax:100, sort:'fit' }, crm:{}, quality:{} };
 
 const $ = id => document.getElementById(id);
@@ -209,9 +210,18 @@ const FUNNEL_STAGES=[
   {key:'L3_valid_but_missing',label:'Salle valide non importée',icon:'🔧',color:'#f59e0b'},
   {key:'L4_import_queue',label:'✅ Importé dans la carte',icon:'✅',color:'#22c55e'},
 ];
+function updateFunnelStageSelectCounts(sc){
+  const sel=$('funnel-stage-filter'); if(!sel) return;
+  Array.from(sel.options).forEach(opt=>{
+    if(opt.value==='all') { opt.textContent=`Toutes les étapes (${state.funnelItems.length})`; return; }
+    const stage=FUNNEL_STAGES.find(s=>s.key===opt.value);
+    if(stage) opt.textContent=`${stage.icon} ${stage.label} (${sc[stage.key]||0})`;
+  });
+}
 function renderFunnel(){
   if(!state.funnelItems.length){renderFunnelEmpty();return;}
   const sc=state.funnelStageCounts||{};
+  updateFunnelStageSelectCounts(sc);
   const summaryHTML=FUNNEL_STAGES.map(s=>`<div class="funnel-row" style="border-left:4px solid ${s.color};padding:6px 12px;margin:6px 0;border-radius:8px;background:#fff;cursor:pointer" data-funnel-stage="${s.key}">
     <span style="font-weight:700">${s.icon} ${s.label}</span>
     <span style="float:right;font-weight:800;font-size:16px">${sc[s.key]||0}</span>
@@ -228,9 +238,11 @@ function renderFunnel(){
   let items=state.funnelItems;
   if(stageFilter!=='all') items=items.filter(i=>i.stage===stageFilter);
   if(sourceFilter!=='all') items=items.filter(i=>i.source_reliability===sourceFilter);
-  if(q) items=items.filter(i=>(i.name+' '+i.city+' '+i.stop_reason).toLowerCase().includes(q));
+  if(q) items=items.filter(i=>((i.name||'')+' '+(i.city||'')+' '+(i.department||'')+' '+(i.address||'')+' '+(i.stop_reason||'')+' '+(i.source_url||'')).toLowerCase().includes(q));
 
-  $('funnel-items').innerHTML=items.slice(0,150).map(i=>{
+  const visibleItems=items.slice(0,500);
+  const limitNote=items.length>visibleItems.length ? `<div class="empty" style="padding:10px;margin-bottom:8px">${visibleItems.length} affichés sur ${items.length}. Utilise la recherche pour affiner.</div>` : '';
+  $('funnel-items').innerHTML=limitNote + (visibleItems.map(i=>{
     const stage=FUNNEL_STAGES.find(s=>s.key===i.stage);
     const sc2=stage?stage.color:'#94a3b8';
     const sl=stage?stage.label:i.stage;
@@ -243,7 +255,7 @@ function renderFunnel(){
       <div style="font-size:12px;color:#344054;margin-top:3px">${esc(i.stop_reason)}</div>
       <div style="font-size:11px;color:#667085;margin-top:2px">${esc(i.city||'')} ${i.page_type?`· <span class="pill" style="font-size:9px">${esc(i.page_type.replace(/_/g,' '))}</span>`:''} ${i.source_url?`· <a href="${esc(i.source_url)}" target="_blank" style="color:#0a7;font-size:11px">site</a>`:''}</div>
     </div>`;
-  }).join('')||'<div class="empty">Aucun item avec ces filtres.</div>';
+  }).join('') || '<div class="empty">Aucun item avec ces filtres.</div>');
 }
 function renderFunnelEmpty(){
   $('funnel-summary').innerHTML='<div class="empty" style="padding:40px">Chargement des données de vérif…</div>';
@@ -322,9 +334,9 @@ function bindControls(){
 }
 
 Promise.all([
-  fetch('salles_all_idf.geojson').then(r=>r.json()),
-  fetch('import_queue.geojson').then(r=>r.ok?r.json():{type:'FeatureCollection',features:[]}).catch(()=>({type:'FeatureCollection',features:[]})),
-  fetch('funnel_debug.json').then(r=>r.ok?r.json():{items:[],stage_counts:{}}).catch(()=>({items:[],stage_counts:{}}))
+  fetch(`salles_all_idf.geojson?v=${DATA_VERSION}`).then(r=>r.json()),
+  fetch(`import_queue.geojson?v=${DATA_VERSION}`).then(r=>r.ok?r.json():{type:'FeatureCollection',features:[]}).catch(()=>({type:'FeatureCollection',features:[]})),
+  fetch(`funnel_debug.json?v=${DATA_VERSION}`).then(r=>r.ok?r.json():{items:[],stage_counts:{}}).catch(()=>({items:[],stage_counts:{}}))
 ]).then(([venues,candidates,funnelData])=>{
   venues.features=(venues.features||[]).map(f=>{ f.properties={...(f.properties||{}), _dataset:'venue'}; return f; });
   candidates.features=(candidates.features||[]).map(f=>{ const p=f.properties||{}; f.properties={...p, _dataset:'candidate', name:p.name||p.raw_name||'Candidat sans nom', fit_score:p.fit_beyond_score||p.fit_score||0, price_score:p.actionability_score||p.price_score||0}; return f; });

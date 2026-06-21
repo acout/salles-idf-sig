@@ -54,7 +54,7 @@ def norm(s):
 def find_city(text):
     t = norm(text)
     for key, (city, dept) in KNOWN_CITIES.items():
-        if key in t:
+        if norm(key) in t:
             return city, dept
     return '', ''
 
