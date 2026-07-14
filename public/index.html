@@ -1,175 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prospection salles IDF</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/style.css?v=20260620-ui-actions">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' https://unpkg.com; img-src 'self' data: blob: https://unpkg.com https://*.tile.openstreetmap.org; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.tile.openstreetmap.org; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>Salles IDF — cockpit d’appels</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/cockpit.css?v=20260714-urgent2">
 </head>
 <body>
-<div class="app-shell">
-  <aside class="sidebar" id="sidebar">
-    <header class="brand">
-      <div>
-        <h1>🏫 Salles IDF</h1>
-        <p>Prospection · appels · candidatures · events</p>
+  <div class="app-shell">
+    <header class="topbar">
+      <button id="menu-button" class="icon-button mobile-only" type="button" aria-label="Afficher la liste">☰</button>
+      <div class="brand-block">
+        <span class="brand-mark" aria-hidden="true">◎</span>
+        <div>
+          <h1>Salles IDF</h1>
+          <p id="campaign-label">Cockpit d’appels</p>
+        </div>
       </div>
-      <button class="icon-btn mobile-only" id="toggle-sidebar" aria-label="Masquer le panneau">×</button>
+      <div class="topbar-actions">
+        <span id="sync-badge" class="status-badge neutral">Catalogue public</span>
+        <span id="member-chip" class="member-chip hidden"></span>
+        <button id="signout-button" class="text-button hidden" type="button">Se déconnecter</button>
+      </div>
     </header>
 
-    <section class="toolbar">
-      <div class="view-tabs" role="tablist">
-        <button class="active" id="map-tab" data-view="map">Carte</button>
-        <button id="list-tab" data-view="list">Liste</button>
-        <button id="pipeline-tab" data-view="pipeline">Pipeline</button>
-        <button id="funnel-tab" data-view="funnel">Vérif Import</button>
-      </div>
-      <div class="metrics" id="metrics">—</div>
-    </section>
+    <div id="app-banner" class="banner info" role="status" aria-live="polite">
+      Chargement du catalogue…
+    </div>
 
-    <section class="filters">
-      <label class="field-label">Recherche</label>
-      <input type="search" id="search" placeholder="Nom, ville, contact, notes…" class="input">
-
-      <label class="field-label">Source de données</label>
-      <select id="dataset-filter" class="input">
-        <option value="all">Tout : salles + candidats Beyond</option>
-        <option value="venues">Salles qualifiées uniquement</option>
-        <option value="candidates">Candidats sourcing Beyond uniquement</option>
-      </select>
-
-      <div class="grid-2">
-        <div>
-          <label class="field-label">Département</label>
-          <select id="dept-filter" class="input">
-            <option value="all">Tous</option>
-            <option value="75">75 Paris</option>
-            <option value="92">92</option>
-            <option value="93">93</option>
-            <option value="94">94</option>
-            <option value="77">77</option>
-            <option value="78">78</option>
-            <option value="91">91</option>
-            <option value="95">95</option>
-          </select>
+    <aside id="sidebar" class="sidebar" aria-label="Recherche de salles">
+      <section id="auth-panel" class="panel auth-panel">
+        <div id="auth-copy">
+          <p class="eyebrow">Espace partagé</p>
+          <h2>Connexion équipe</h2>
+          <p>Connectez-vous pour voir les contacts, prendre des salles et partager les résultats.</p>
         </div>
-        <div>
-          <label class="field-label">Statut</label>
-          <select id="status-filter" class="input">
-            <option value="all">Tous</option>
-            <option value="new">À qualifier</option>
-            <option value="shortlist">Shortlist</option>
-            <option value="contacted">Contactée</option>
-            <option value="applied">Candidature envoyée</option>
-            <option value="accepted">OK / utilisable</option>
-            <option value="rejected">Refus / pas adaptée</option>
-            <option value="used">Déjà utilisée</option>
-          </select>
+        <form id="login-form" class="login-form">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" autocomplete="username" required>
+          <label for="login-password">Mot de passe</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+          <button class="primary-button" type="submit">Se connecter</button>
+          <p id="login-error" class="form-error" role="alert"></p>
+        </form>
+      </section>
+
+      <section class="panel filters-panel">
+        <div class="section-heading">
+          <div>
+            <p id="catalog-count" class="eyebrow">Pistes qualifiées</p>
+            <h2>Trouver la prochaine salle</h2>
+          </div>
+          <button id="close-sidebar" class="icon-button mobile-only" type="button" aria-label="Masquer la liste">×</button>
         </div>
-      </div>
-
-      <div class="grid-2">
-        <div>
-          <label class="field-label">Capacité max <span id="cap-val">≤100</span></label>
-          <input type="range" id="cap-max" min="5" max="200" value="100" class="slider">
+        <label class="sr-only" for="search-input">Rechercher</label>
+        <input id="search-input" class="search-input" type="search" placeholder="Nom, ville, adresse…">
+        <div class="filter-grid">
+          <label>Département
+            <select id="department-filter">
+              <option value="all">Tous</option>
+              <option value="75">75 · Paris</option>
+              <option value="92">92</option>
+              <option value="93">93</option>
+              <option value="94">94</option>
+              <option value="77">77</option>
+              <option value="78">78</option>
+              <option value="91">91</option>
+              <option value="95">95</option>
+            </select>
+          </label>
+          <label>Suivi
+            <select id="status-filter">
+              <option value="all">Tous</option>
+              <option value="to_call">À appeler</option>
+              <option value="callback">À rappeler</option>
+              <option value="available">Disponible</option>
+              <option value="needs_confirmation">À confirmer</option>
+              <option value="unavailable">Indisponible</option>
+              <option value="shortlisted">Shortlist</option>
+            </select>
+          </label>
         </div>
-        <div>
-          <label class="field-label">Tri</label>
-          <select id="sort-by" class="input">
-            <option value="fit">Meilleur fit</option>
-            <option value="quality">Qualité données</option>
-            <option value="status">Statut</option>
-            <option value="nextAction">Prochaine action</option>
-            <option value="city">Ville</option>
-            <option value="capacity">Capacité</option>
-          </select>
+        <div id="filter-summary" class="filter-summary">Chargement…</div>
+      </section>
+
+      <div id="venue-list" class="venue-list" aria-live="polite"></div>
+    </aside>
+
+    <main class="workspace">
+      <nav class="view-tabs" aria-label="Vues du cockpit">
+        <button class="view-tab active" type="button" data-view="map">Carte</button>
+        <button class="view-tab" type="button" data-view="queue">À appeler <span id="queue-count">0</span></button>
+        <button class="view-tab" type="button" data-view="team">Point d’équipe <span id="team-count">0</span></button>
+      </nav>
+
+      <section id="map-view" class="view active" aria-label="Carte des salles">
+        <div id="map" class="map"></div>
+        <div class="map-legend" aria-label="Légende">
+          <span><i class="dot to-call"></i> À appeler</span>
+          <span><i class="dot callback"></i> Rappel</span>
+          <span><i class="dot available"></i> Disponible</span>
+          <span><i class="dot unavailable"></i> Indisponible</span>
         </div>
-      </div>
+      </section>
 
-      <label class="field-label">Qualité données</label>
-      <select id="quality-filter" class="input">
-        <option value="all">Toutes</option>
-        <option value="any">À vérifier</option>
-        <option value="contact_missing">Contact manquant</option>
-        <option value="price_missing">Prix manquant</option>
-        <option value="capacity_uncertain">Capacité à vérifier</option>
-        <option value="duplicate_suspect">Doublon probable</option>
-        <option value="geocode_suspect">Géocodage douteux</option>
-        <option value="aggregator_listing">Agrégateur / listing</option>
-        <option value="formal_missing">Infos formelles à demander</option>
-        <option value="scrape_failed">Scraping échoué</option>
-        <option value="rental_possible">Location possible</option>
-        <option value="rental_unclear">Location à vérifier</option>
-        <option value="rental_unlikely">Probablement non louable</option>
-        <option value="favorites">⭐ Favoris uniquement</option>
-      </select>
-
-      <label class="field-label">Tags cumulables</label>
-      <div class="tag-filter-grid" id="tag-filter-grid" aria-label="Filtres tags cumulables">
-        <button type="button" class="tag-filter" data-tag-filter="candidate">Candidat Beyond</button>
-        <button type="button" class="tag-filter" data-tag-filter="venue">Salle qualifiée</button>
-        <button type="button" class="tag-filter" data-tag-filter="aggregator_listing">Agrégateur</button>
-        <button type="button" class="tag-filter" data-tag-filter="formal_missing">À demander</button>
-        <button type="button" class="tag-filter" data-tag-filter="scrape_failed">Scrape KO</button>
-        <button type="button" class="tag-filter" data-tag-filter="rental_possible">Location OK</button>
-        <button type="button" class="tag-filter" data-tag-filter="rental_unclear">Location ?</button>
-        <button type="button" class="tag-filter" data-tag-filter="rental_unlikely">Pas louable ?</button>
-        <button type="button" class="tag-filter" data-tag-filter="favorite">⭐ Favori</button>
-        <button type="button" class="tag-filter" data-tag-filter="contact_missing">Contact ?</button>
-        <button type="button" class="tag-filter" data-tag-filter="price_missing">Prix ?</button>
-        <button type="button" class="tag-filter" data-tag-filter="capacity_uncertain">Capacité ?</button>
-        <button type="button" class="tag-filter" data-tag-filter="geocode_suspect">Géocode ?</button>
-      </div>
-      <button type="button" class="clear-tags-btn" id="clear-tag-filters">Réinitialiser les tags</button>
-    </section>
-
-    <section class="quick-actions">
-      <button id="export-json" class="secondary-btn">Exporter suivi</button>
-      <label class="secondary-btn file-label">Importer<input type="file" id="import-json" accept="application/json" hidden></label>
-    </section>
-
-    <section class="list-panel" id="list-panel" aria-live="polite"></section>
-  </aside>
-
-  <main class="main">
-    <button class="floating-menu mobile-only" id="open-sidebar">☰ Filtres</button>
-    <div id="map" class="map-view"></div>
-    <section id="table-view" class="table-view hidden">
-      <div class="table-header">
-        <h2>Vue liste des salles</h2>
-        <p>Classement opérationnel pour prospecter, relancer et documenter.</p>
-      </div>
-      <div id="venue-table" class="venue-table"></div>
-    </section>
-    <section id="pipeline-view" class="pipeline-view hidden">
-      <div class="table-header">
-        <h2>Pipeline de prospection</h2>
-        <p>Avance les salles par statut, puis ouvre la fiche pour notes, relances, appels et events.</p>
-      </div>
-      <div id="pipeline-board" class="pipeline-board"></div>
-    </section>
-    <section id="funnel-view" class="funnel-view hidden">
-      <div class="table-header">
-        <h2>🔍 Vérif Import</h2>
-        <p>Parcourir le pipeline : où chaque item s'est arrêté. Cliquez sur une étape ci-dessous pour filtrer.</p>
-        <div id="funnel-summary" class="funnel-summary"></div>
-        <div class="grid-2" style="margin-top:12px">
-          <div><label class="field-label">Filtre étape</label><select id="funnel-stage-filter" class="input"><option value="all">Toutes les étapes</option><option value="L0_aggregator">📥 Agrégateur / annuaire</option><option value="L2_filtered_geo">🌍 Filtré géo</option><option value="L2_filtered_reliability">⚠️ Filtré fiabilité S0-S2</option><option value="L3_not_venue">❌ Non-venue : PDF, listing, planning…</option><option value="L3_valid_but_missing">⚠️ Salle valide non importée</option><option value="L4_import_queue">✅ Importé dans la carte/liste</option></select></div>
-          <div><label class="field-label">Filtre fiabilité</label><select id="funnel-source-filter" class="input"><option value="all">Toutes</option><option value="S4">S4 — Page location officielle</option><option value="S3">S3 — Site officiel</option><option value="S2">S2 — Co-working / PDF</option><option value="S1">S1 — Agrégateur / annuaire</option><option value="S0">S0 — Inconnu</option></select></div>
+      <section id="queue-view" class="view content-view" aria-labelledby="queue-title">
+        <div class="content-heading">
+          <div>
+            <p class="eyebrow">Répartition rapide</p>
+            <h2 id="queue-title">Salles à appeler</h2>
+          </div>
+          <p>Prendre une salle la verrouille pour les autres membres pendant l’appel.</p>
         </div>
+        <div id="queue-grid" class="card-grid"></div>
+      </section>
+
+      <section id="team-view" class="view content-view" aria-labelledby="team-title">
+        <div class="content-heading team-heading">
+          <div>
+            <p class="eyebrow">Décision collective</p>
+            <h2 id="team-title">Point d’équipe</h2>
+          </div>
+          <button id="copy-summary" class="secondary-button" type="button">Copier le résumé</button>
+        </div>
+        <div id="team-counters" class="counter-grid"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Salle</th>
+                <th>État</th>
+                <th>Disponibilité</th>
+                <th>Prix confirmé</th>
+                <th>Responsable</th>
+                <th>Prochaine action</th>
+              </tr>
+            </thead>
+            <tbody id="team-table-body"></tbody>
+          </table>
+        </div>
+        <p id="team-empty" class="empty-state hidden">Aucun résultat exploitable pour le moment.</p>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="detail-dialog" class="detail-dialog">
+    <div class="dialog-header">
+      <div>
+        <p id="detail-eyebrow" class="eyebrow"></p>
+        <h2 id="detail-title">Salle</h2>
       </div>
-      <div id="funnel-items" class="funnel-items"></div>
-    </section>
-  </main>
+      <button id="detail-close" class="icon-button" type="button" aria-label="Fermer">×</button>
+    </div>
+    <div id="detail-content" class="dialog-content"></div>
+  </dialog>
 
-  <aside class="detail-panel hidden" id="detail-panel">
-    <button class="icon-btn close-detail" id="close-detail" aria-label="Fermer la fiche">×</button>
-    <div id="detail-content"></div>
-  </aside>
-</div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/app.js?v=20260621-ai-field-interpretation"></script>
+  <script src="runtime-config.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.5/dist/umd/supabase.js" integrity="sha384-fTq5g8tD1IgcQKSKKNu5HdZncuhKN6e5MmGdzPNCK4jk3lh0tfnPZAtrUvyvgt4i" crossorigin="anonymous"></script>
+  <script src="js/cockpit.js?v=20260714-urgent2" defer></script>
 </body>
 </html>

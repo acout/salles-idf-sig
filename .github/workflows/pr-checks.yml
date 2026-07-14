@@ -2,7 +2,9 @@ name: PR Checks
 
 on:
   pull_request:
-    branches: [staging, master]
+    branches: [dev, staging, master]
+  push:
+    branches: [dev]
 
 jobs:
   validate:
@@ -10,65 +12,39 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validate GeoJSON
-        run: |
-          if [ -f public/salles_small_idf.geojson ]; then
-            python3 -c "
-          import json, sys
-          with open('public/salles_small_idf.geojson') as f:
-              data = json.load(f)
-          assert data.get('type') == 'FeatureCollection', 'Not a FeatureCollection'
-          assert len(data.get('features', [])) > 0, 'No features found'
-          for feat in data['features']:
-              assert feat.get('type') == 'Feature', f'Bad feature type: {feat}'
-              assert 'geometry' in feat, f'Missing geometry in {feat.get(\"properties\",{}).get(\"name\",\"?\")}'
-              assert 'properties' in feat, f'Missing properties in feature'
-              props = feat['properties']
-              for key in ['name', 'department', 'lat', 'lon', 'fit_score']:
-                  assert key in props, f'Missing {key} in {props.get(\"name\",\"?\")}'
-          print(f'✅ GeoJSON valid: {len(data[\"features\"])} features')
-          "
-          else
-            echo "⚠️ No GeoJSON file found"
-          fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Validate CSV
-        run: |
-          if [ -f data/salles_small_idf.csv ]; then
-            python3 -c "
-          import csv
-          with open('data/salles_small_idf.csv', encoding='utf-8') as f:
-              reader = csv.DictReader(f)
-              rows = list(reader)
-          assert len(rows) > 0, 'CSV is empty'
-          required = ['id', 'name', 'department', 'lat', 'lon', 'fit_score']
-          for key in required:
-              assert key in rows[0], f'Missing column: {key}'
-          print(f'✅ CSV valid: {len(rows)} rows')
-          "
-          else
-            echo "⚠️ No CSV file found"
-          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
 
-      - name: Lint HTML
-        run: |
-          if [ -f public/index.html ]; then
-            # Basic HTML validation: check closing tags
-            open=$(grep -c '<html' public/index.html)
-            close=$(grep -c '</html>' public/index.html)
-            if [ "$open" -ne "$close" ]; then
-              echo "❌ HTML tag mismatch"
-              exit 1
-            fi
-            echo "✅ HTML basic structure OK"
-          fi
+      - name: Build sanitized release
+        run: python scripts/build_public_private_release.py
 
-      - name: Check key files exist
+      - name: Validate release contracts
+        run: python scripts/validate_release.py
+
+      - name: Check browser JavaScript
+        run: node --check public/js/cockpit.js
+
+      - name: Build deployment allowlist
         run: |
-          for f in CLAUDE.md PROJECT_STATUS.md public/index.html public/salles_small_idf.geojson; do
-            if [ ! -f "$f" ]; then
-              echo "❌ Missing: $f"
-              exit 1
-            fi
-          done
-          echo "✅ All key files present"
+          python scripts/write_runtime_config.py --mode read_only --app-release "${GITHUB_SHA}"
+          python scripts/prepare_public_deploy.py
+          python scripts/validate_static_site.py
+
+      - name: Reject private deployment artifacts
+        run: |
+          test ! -e .deploy-dist/salles_all_idf.geojson
+          test ! -e .deploy-dist/import_queue.geojson
+          test ! -e .deploy-dist/funnel_debug.json
+          test ! -e .deploy-dist/venue_private_details.json
+          test "$(find .deploy-dist -type f | wc -l)" -eq 6
+
+      - name: Check key files
+        run: |
+          test -f public/index.html
+          test -f supabase/migrations/20260714_venue_cockpit.sql
+          test -f scripts/admin_bootstrap_supabase.py

@@ -5,9 +5,18 @@
 | Item | Status |
 |------|--------|
 | Project | salles-idf-sig |
-| Type | Static prospecting CRM + map (Leaflet + GeoJSON + localStorage) |
+| Type | Shared calling cockpit + public map (Leaflet + Supabase) |
 | Repo | `acout/salles-idf-sig` on GitHub |
-| Last updated | 2026-06-20 |
+| Last updated | 2026-07-14 |
+
+## Urgent delivery status — 2026-07-14
+
+- **Local product:** ready and browser-tested in public/read-only mode.
+- **Public release:** 209 small-room prospects, deterministic release `dataset-8e58b6aba80910a8`.
+- **Collaboration backend:** migration, RLS, RPC contracts, private Storage and bootstrap script implemented; cloud project not configured yet.
+- **Deployment safety:** staging and production now deploy a six-file allowlist instead of the whole `public/` directory.
+- **External blockers:** repository still public; active GitHub account `anthco` has read-only access; Supabase and Scaleway credentials/configuration are absent.
+- **Operational runbook:** see `docs/URGENT_HANDOFF.md`.
 
 ## Deployments
 
@@ -27,7 +36,7 @@
 
 ## Data Status
 
-- **Venues**: 275 collected venues, 143 visible by default after IDF bbox + capacity ≤20 filters
+- **Venues**: 275 collected source venues; 209 included in the current public/private release after IDF coordinate and capacity ≤20 checks
 - **Departments covered**: 75, 77, 78, 91, 92, 93, 94, 95
 - **Geocoding**: GeoJSON coordinates via BAN + scraped coordinates; frontend excludes out-of-IDF false geocodes
 - **Last data refresh**: 2026-06-19
