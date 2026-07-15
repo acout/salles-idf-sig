@@ -60,6 +60,15 @@ def main() -> None:
     assert "https://*.supabase.co" in parser.csp
     assert "service_role" not in index.lower()
     assert "service_role" not in (PUBLIC / "runtime-config.js").read_text(encoding="utf-8").lower()
+    assert "detectSessionInUrl: true" in javascript, (
+        "Les liens d'invitation et de récupération Supabase doivent créer la session navigateur"
+    )
+    assert "resetPasswordForEmail" in javascript, (
+        "Le formulaire doit permettre de redemander un lien si l'invitation a expiré"
+    )
+    assert "auth.updateUser({ password })" in javascript, (
+        "Un membre invité doit pouvoir définir son mot de passe"
+    )
 
     deployed = {
         path.relative_to(DEPLOY).as_posix()

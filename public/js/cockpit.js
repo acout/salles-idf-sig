@@ -1,6 +1,9 @@
 (() => {
   'use strict';
 
+  const AUTH_FRAGMENT = new URLSearchParams(window.location.hash.slice(1));
+  const AUTH_CALLBACK_TYPE = AUTH_FRAGMENT.get('type');
+  const AUTH_CALLBACK_ERROR = AUTH_FRAGMENT.get('error_code');
   const CONFIG = window.SALLES_CONFIG || {};
   const STATUS = Object.freeze({
     to_call: 'À appeler',
@@ -38,7 +41,9 @@
     markersById: new Map(),
     pendingPhoneVenueId: null,
     toastTimer: null,
-    bootingShared: false
+    bootingShared: false,
+    passwordSetupRequired: !AUTH_CALLBACK_ERROR && ['invite', 'recovery'].includes(AUTH_CALLBACK_TYPE),
+    authCallbackError: AUTH_CALLBACK_ERROR
   };
 
   const byId = (id) => document.getElementById(id);
@@ -401,21 +406,39 @@
   function renderAuth() {
     const panel = byId('auth-panel');
     const form = byId('login-form');
+    const passwordForm = byId('password-setup-form');
     const memberChip = byId('member-chip');
     const signout = byId('signout-button');
     const sharedConfigured = CONFIG.mode === 'shared' && CONFIG.supabaseUrl && CONFIG.supabaseAnonKey && window.supabase?.createClient;
-    if (state.user) {
+    const authTitle = byId('auth-title');
+    const authDescription = byId('auth-description');
+    if (state.passwordSetupRequired) {
+      panel.classList.remove('hidden');
+      form.classList.add('hidden');
+      passwordForm.classList.remove('hidden');
+      memberChip.classList.add('hidden');
+      signout.classList.add('hidden');
+      authTitle.textContent = 'Créer votre mot de passe';
+      authDescription.textContent = 'Choisissez un mot de passe d’au moins 12 caractères pour terminer l’activation de votre compte.';
+    } else if (state.user) {
       panel.classList.add('hidden');
+      passwordForm.classList.add('hidden');
       memberChip.textContent = state.member?.display_name || state.user.email || 'Membre';
       memberChip.classList.remove('hidden');
       signout.classList.remove('hidden');
     } else {
       panel.classList.remove('hidden');
+      passwordForm.classList.add('hidden');
       memberChip.classList.add('hidden');
       signout.classList.add('hidden');
       form.classList.toggle('hidden', !sharedConfigured);
+      authTitle.textContent = 'Connexion équipe';
       if (!sharedConfigured) {
-        byId('auth-copy').querySelector('p:last-child').textContent = 'Le catalogue public est disponible. La collaboration sera activée dès que Supabase sera configuré.';
+        authDescription.textContent = 'Le catalogue public est disponible. La collaboration sera activée dès que Supabase sera configuré.';
+      } else if (state.authCallbackError) {
+        authDescription.textContent = 'Le lien a expiré. Saisissez votre email puis demandez un nouveau lien d’accès.';
+      } else {
+        authDescription.textContent = 'Connectez-vous pour voir les contacts, prendre des salles et partager les résultats.';
       }
     }
     byId('campaign-label').textContent = state.campaign?.name || 'Cockpit d’appels';
@@ -977,10 +1000,11 @@
         storage: window.sessionStorage,
         persistSession: true,
         autoRefreshToken: true,
-        detectSessionInUrl: false
+        detectSessionInUrl: true
       }
     });
     state.client.auth.onAuthStateChange((event, session) => {
+      if (event === 'PASSWORD_RECOVERY') state.passwordSetupRequired = true;
       if (event === 'SIGNED_OUT' || !session) {
         clearSharedState();
         return;
@@ -1037,6 +1061,66 @@
       } finally {
         submit.disabled = false;
         submit.textContent = 'Se connecter';
+      }
+    });
+    byId('reset-password-button').addEventListener('click', async (event) => {
+      const email = text(byId('login-email').value);
+      const errorNode = byId('login-error');
+      errorNode.textContent = '';
+      if (!email) {
+        errorNode.textContent = 'Saisissez votre email pour recevoir un lien d’accès.';
+        byId('login-email').focus();
+        return;
+      }
+      const button = event.currentTarget;
+      button.disabled = true;
+      button.textContent = 'Envoi…';
+      try {
+        if (!state.client) throw new Error('AUTH_NOT_READY');
+        const redirectTo = new URL(window.location.pathname, window.location.origin).href;
+        const { error } = await state.client.auth.resetPasswordForEmail(email, { redirectTo });
+        if (error) throw error;
+        errorNode.textContent = 'Lien envoyé. Ouvrez l’email reçu pour créer votre mot de passe.';
+      } catch {
+        errorNode.textContent = 'Le lien ne peut pas être envoyé pour le moment. Réessayez dans quelques minutes.';
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Première connexion ou mot de passe oublié';
+      }
+    });
+    byId('password-setup-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const password = byId('new-password').value;
+      const confirmation = byId('new-password-confirmation').value;
+      const errorNode = byId('password-setup-error');
+      const submit = event.submitter;
+      errorNode.textContent = '';
+      if (password.length < 12) {
+        errorNode.textContent = 'Utilisez au moins 12 caractères.';
+        return;
+      }
+      if (password !== confirmation) {
+        errorNode.textContent = 'Les deux mots de passe ne correspondent pas.';
+        return;
+      }
+      submit.disabled = true;
+      submit.textContent = 'Activation…';
+      try {
+        const { error } = await state.client.auth.updateUser({ password });
+        if (error) throw error;
+        state.passwordSetupRequired = false;
+        state.authCallbackError = null;
+        byId('new-password').value = '';
+        byId('new-password-confirmation').value = '';
+        window.history.replaceState({}, document.title, `${window.location.pathname}${window.location.search}`);
+        if (!state.campaign) await bootstrapShared();
+        renderAuth();
+        toast('Compte activé. Vous pouvez maintenant collaborer.');
+      } catch {
+        errorNode.textContent = 'Le mot de passe ne peut pas être enregistré. Demandez un nouveau lien d’accès.';
+      } finally {
+        submit.disabled = false;
+        submit.textContent = 'Activer mon compte';
       }
     });
     byId('signout-button').addEventListener('click', async () => {
