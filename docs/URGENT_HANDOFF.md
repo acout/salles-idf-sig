@@ -1,74 +1,94 @@
-# Reprise urgente — cockpit d’appels salles IDF
+# Reprise urgente — trouver une salle à plusieurs
 
-Mise à jour : 14 juillet 2026.
+Mise à jour : 15 juillet 2026.
+
+## Résultat produit attendu
+
+Le produit n’est pas d’abord une carte ni un CRM. Il doit permettre à Anthony et à ses partenaires de trouver rapidement une salle disponible sans appeler deux fois le même lieu.
+
+La boucle utile est courte :
+
+1. voir toutes les pistes sans perte silencieuse ;
+2. commencer par les petites salles les plus plausibles ;
+3. mettre 20 pistes en shortlist et répartir les appels ;
+4. prendre une salle avant d’afficher son contact ;
+5. consigner disponibilité, prix, rappel et note ;
+6. faire le point ensemble depuis la même vue.
 
 ## Ce qui est prêt
 
-- Carte et liste publiques de 209 pistes exploitables : coordonnées plausibles en Île-de-France et capacité maximale connue ≤20 personnes.
+- Catalogue public de **275 salles sur 275 sources**.
+- Filtre par défaut sur **209 salles prioritaires** : coordonnées plausibles en Île-de-France et capacité maximale connue inférieure ou égale à 20 personnes, ou capacité inconnue.
+- Accès volontaire aux **43 lieux de plus grande capacité** qui peuvent contenir une petite sous-salle.
+- Accès en liste aux **23 lieux dont le géocodage est incohérent** ; ils ne sont pas placés sur la carte et aucun itinéraire trompeur n’est proposé.
+- Les informations absentes sont signalées par `À compléter` au lieu d’être masquées derrière un tiret.
 - Contacts, sources, scores et notes séparés dans une release privée hors du dossier statique.
-- Connexion équipe Supabase, shortlist partagée, attribution, verrou d’appel de 7 minutes, compte rendu, corrections, notes et point d’équipe.
+- Connexion équipe Supabase, shortlist partagée, attribution, verrou d’appel, compte rendu, corrections, notes et point d’équipe.
 - Repli automatique du temps réel vers une synchronisation toutes les 10 secondes.
-- Déploiement limité à six fichiers publics. Les anciens GeoJSON de sourcing ne sont jamais copiés dans le site publié.
-- Contrôles automatiques : contrat de données, JavaScript, fuite d’artefacts privés et fichiers critiques.
+- Déploiement public limité à six fichiers ; les GeoJSON de sourcing ne sont jamais copiés dans le site publié.
 
-## Contrats de release actuels
+## Contrat de release courant
 
-- Release : `dataset-8e58b6aba80910a8`
-- Salles publiées : 209 sur 275 sources
-- Exclusions : géocodages hors Île-de-France et salles explicitement supérieures à 20 personnes
+- Release : `dataset-4f757b07859f17eb`
+- Catalogue : 275 salles
+- Répartition : 209 `priority`, 43 `capacity_over_20`, 23 `geocode_review`
+- Exclusions silencieuses : 0
 - Manifeste public : `public/dataset-manifest.json`
-- Manifeste privé local : `.private-dist/dataset-8e58b6aba80910a8/private-manifest.json`
+- Manifeste privé local : `.private-dist/dataset-4f757b07859f17eb/private-manifest.json`
 
-## Activation Supabase
+## Plan d’urgence
 
-1. Créer un projet Supabase dédié.
-2. Appliquer `supabase/migrations/20260714_venue_cockpit.sql` dans le SQL Editor.
-3. Renseigner localement `SUPABASE_URL` et `SUPABASE_SERVICE_ROLE_KEY` sans les committer.
-4. Initialiser les membres et charger la release privée :
+### Jalon U1 — rendre les 275 pistes utilisables
 
-```powershell
-python scripts/admin_bootstrap_supabase.py `
-  --private-manifest .private-dist/dataset-8e58b6aba80910a8/private-manifest.json `
-  --owner "Anthony=adresse-owner@example.com" `
-  --member "Partenaire 1=partenaire1@example.com" `
-  --member "Partenaire 2=partenaire2@example.com" `
-  --campaign-name "Recherche urgente de salle" `
-  --invite-missing
-```
+- [x] Conserver toutes les salles dans le catalogue.
+- [x] Appliquer le filtre `Prioritaires` par défaut.
+- [x] Expliquer les deux groupes à vérifier et neutraliser les mauvaises positions cartographiques.
+- [x] Valider le catalogue public et le paquet statique.
+- [ ] Charger la nouvelle release privée dans Supabase et rattacher les 275 salles à la campagne active sans perdre un éventuel suivi existant.
+- [ ] Déployer sur le staging GitHub Pages et vérifier le filtre dans un navigateur.
 
-Le script invite les comptes absents, charge les fichiers dans le bucket privé et initialise les 209 suivis. Il n’affiche aucun mot de passe ni clé.
+### Jalon U2 — lancer les appels à deux ou trois
 
-## Activation GitHub / Scaleway
+- [ ] Finaliser l’activation du compte d’Anthony.
+- [ ] Inviter les partenaires et vérifier une connexion réelle pour chacune.
+- [ ] Constituer une shortlist initiale de 20 salles disposant d’un contact exploitable.
+- [ ] Répartir dix appels par partenaire et tester une prise simultanée sur une même salle.
+- [ ] Réaliser les appels et produire le point final uniquement depuis la vue `Point d’équipe`.
 
-Variables de l’environnement GitHub `staging` :
+Critère de réussite : zéro double appel, chaque appel possède un résultat, et aucune consolidation parallèle dans un tableur ou un fil de messages n’est nécessaire.
 
-- `APP_MODE=shared`
-- `SUPABASE_URL`
-- `SUPABASE_ANON_KEY`
-- `SCALEWAY_REGION=fr-par`
-- `SCALEWAY_BUCKET_STAGING=salles-idf-staging`
+### Jalon U3 — fiabiliser le corpus après la première session
 
-Secrets :
+- Corriger en priorité les 23 géocodages incohérents.
+- Requalifier les 43 lieux de grande capacité au niveau de leurs sous-salles réelles.
+- Enrichir d’abord la shortlist et les meilleures pistes : téléphone/contact, capacité de la petite salle, prix, adresse et date de vérification.
+- Utiliser les notes de terrain pour corriger la source via les scripts ; ne jamais éditer les GeoJSON générés à la main.
+- Ne reprendre le sourcing de nouveaux lieux qu’après mesure des trous réellement bloquants dans les 275 pistes existantes.
 
-- `SCALEWAY_ACCESS_KEY`
-- `SCALEWAY_SECRET_KEY`
+## Ordre des améliorations produit
 
-Une fusion vers `staging` déclenche ensuite le déploiement. Le workflow publie `.deploy-dist/`, jamais le dossier `public/` complet.
+1. **Appelables maintenant** : filtre combinant contact direct, shortlist et statut `À appeler`.
+2. **Qualité visible** : compteur des champs manquants et file de correction issue des appels.
+3. **Sous-salles** : distinguer un établissement de ses salles quand la capacité globale dépasse 20 personnes.
+4. **Prochaine action** : rendre les rappels dus visibles dans la file d’appel.
+5. **Historique de campagnes** : créer et archiver une nouvelle recherche sans écraser les résultats précédents.
 
-## Blocages externes constatés
+Les notifications, le MFA, un CRM générique, une refonte cartographique et un nouveau pipeline de sourcing ne bloquent pas la recherche urgente.
 
-- Le dépôt GitHub est encore public : les anciens contacts déjà versionnés restent accessibles dans l’historique. Il faut le rendre privé avant d’ajouter de nouvelles données sensibles.
-- Le compte GitHub actuellement connecté, `anthco`, n’a que le droit de lecture sur `acout/salles-idf-sig`. Il ne peut ni pousser, ni modifier la visibilité, ni configurer les secrets.
-- Aucune configuration Supabase ou Scaleway utilisable n’est disponible dans l’environnement local actuel.
+## Déploiement et vérification
 
-## Vérification locale
+- Staging : <https://acout.github.io/salles-idf-sig/>
+- Projet Supabase : `zluhmjoimpnhpuhynrwg`
+- Campagne actuelle avant synchronisation de la release : `027f3ac7-22ba-421f-bf65-761edb4cf3d8`
+
+Vérification locale :
 
 ```powershell
 python scripts/build_public_private_release.py
 python scripts/validate_release.py
-python scripts/write_runtime_config.py --mode read_only --app-release local
 python scripts/prepare_public_deploy.py
+python scripts/validate_static_site.py
 node --check public/js/cockpit.js
 ```
 
-Servir ensuite `public/` sur `http://127.0.0.1:8765/` pour la consultation locale.
+Une fusion vers `staging` déclenche le déploiement GitHub Pages. Aucun changement n’est poussé directement vers `master`.

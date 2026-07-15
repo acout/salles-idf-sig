@@ -34,6 +34,7 @@ PUBLIC_FIELDS = (
     "capacity_text",
     "capacity_max_detected",
     "price_text",
+    "catalog_scope",
 )
 
 PRIVATE_FIELDS = (
@@ -96,33 +97,33 @@ def validate_feature_collection(value: Any, label: str) -> list[dict[str, Any]]:
     return features
 
 
-def eligible_for_cockpit(feature: dict[str, Any]) -> tuple[bool, str | None]:
-    """Keep only plausible Île-de-France points and explicitly small rooms."""
+def catalog_scope(feature: dict[str, Any]) -> str:
+    """Classify every source venue without silently removing usable leads."""
     geometry = feature.get("geometry")
     if not isinstance(geometry, dict) or geometry.get("type") != "Point":
-        return False, "invalid_geometry"
+        raise ValueError("invalid_geometry")
     coordinates = geometry.get("coordinates")
     if (
         not isinstance(coordinates, list)
         or len(coordinates) < 2
         or not all(isinstance(value, (int, float)) for value in coordinates[:2])
     ):
-        return False, "invalid_geometry"
+        raise ValueError("invalid_geometry")
     lon, lat = coordinates[:2]
     if not (
         IDF_BOUNDS["min_lon"] <= lon <= IDF_BOUNDS["max_lon"]
         and IDF_BOUNDS["min_lat"] <= lat <= IDF_BOUNDS["max_lat"]
     ):
-        return False, "outside_idf"
+        return "geocode_review"
 
     raw_capacity = (feature.get("properties") or {}).get("capacity_max_detected")
     if raw_capacity not in (None, ""):
         try:
             if float(raw_capacity) > MAX_CAPACITY:
-                return False, "capacity_over_20"
+                return "capacity_over_20"
         except (TypeError, ValueError):
             pass
-    return True, None
+    return "priority"
 
 
 def artifact(path: Path, relative_path: str, required: bool, count: int) -> dict[str, Any]:
@@ -145,10 +146,10 @@ def build_release(args: argparse.Namespace) -> dict[str, Any]:
     public_features: list[dict[str, Any]] = []
     private_venues: list[dict[str, Any]] = []
     fingerprints: list[tuple[str, str]] = []
-    excluded_counts = {
-        "invalid_geometry": 0,
-        "outside_idf": 0,
+    scope_counts = {
+        "priority": 0,
         "capacity_over_20": 0,
+        "geocode_review": 0,
     }
 
     for index, feature in enumerate(source_features):
@@ -157,10 +158,11 @@ def build_release(args: argparse.Namespace) -> dict[str, Any]:
         properties = feature.get("properties")
         if not isinstance(properties, dict):
             raise ValueError(f"feature {index}: properties absentes")
-        eligible, exclusion_reason = eligible_for_cockpit(feature)
-        if not eligible:
-            excluded_counts[exclusion_reason or "invalid_geometry"] += 1
-            continue
+        try:
+            scope = catalog_scope(feature)
+        except ValueError as exc:
+            raise ValueError(f"feature {index}: géométrie invalide") from exc
+        scope_counts[scope] += 1
         venue_id = str(properties.get("id") or "").strip()
         if not venue_id:
             raise ValueError(f"feature {index}: id absent")
@@ -175,6 +177,7 @@ def build_release(args: argparse.Namespace) -> dict[str, Any]:
         fingerprints.append((venue_id, fingerprint))
 
         public_properties = {key: properties.get(key) for key in PUBLIC_FIELDS}
+        public_properties["catalog_scope"] = scope
         public_features.append(
             {
                 "type": "Feature",
@@ -261,7 +264,8 @@ def build_release(args: argparse.Namespace) -> dict[str, Any]:
         "generated_at": generated_at,
         "venue_count": len(public_features),
         "source_venue_count": len(source_features),
-        "excluded_counts": excluded_counts,
+        "scope_counts": scope_counts,
+        "excluded_counts": {"invalid_geometry": 0},
         "dataset_checksum": dataset_checksum,
         "artifacts": private_artifacts,
     }
@@ -274,11 +278,18 @@ def build_release(args: argparse.Namespace) -> dict[str, Any]:
         "generated_at": generated_at,
         "venue_count": len(public_features),
         "source_venue_count": len(source_features),
-        "excluded_counts": excluded_counts,
+        "scope_counts": scope_counts,
+        "excluded_counts": {"invalid_geometry": 0},
         "selection_contract": {
             "region": "Île-de-France",
+            "default_scope": "priority",
             "max_capacity": MAX_CAPACITY,
             "idf_bounds": IDF_BOUNDS,
+            "scope_definitions": {
+                "priority": "coordonnées IDF et capacité maximale connue <= 20, ou capacité inconnue",
+                "capacity_over_20": "coordonnées IDF et capacité maximale connue > 20",
+                "geocode_review": "ville ou département IDF mais coordonnées hors de la zone attendue",
+            },
         },
         "dataset_checksum": dataset_checksum,
         "public_fields": list(PUBLIC_FIELDS),

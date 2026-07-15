@@ -68,6 +68,14 @@
         <label class="sr-only" for="search-input">Rechercher</label>
         <input id="search-input" class="search-input" type="search" placeholder="Nom, ville, adresse…">
         <div class="filter-grid">
+          <label class="span-2">Catalogue
+            <select id="catalog-scope-filter">
+              <option value="priority" selected>Prioritaires · petites salles</option>
+              <option value="all">Toutes les salles</option>
+              <option value="capacity_over_20">Grandes ou multi-salles à vérifier</option>
+              <option value="geocode_review">Localisation à corriger</option>
+            </select>
+          </label>
           <label>Département
             <select id="department-filter">
               <option value="all">Tous</option>
@@ -172,6 +180,6 @@
   <script src="runtime-config.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.5/dist/umd/supabase.js" integrity="sha384-fTq5g8tD1IgcQKSKKNu5HdZncuhKN6e5MmGdzPNCK4jk3lh0tfnPZAtrUvyvgt4i" crossorigin="anonymous"></script>
-  <script src="js/cockpit.js?v=20260714-urgent2" defer></script>
+  <script src="js/cockpit.js?v=20260715-all-venues" defer></script>
 </body>
 </html>
