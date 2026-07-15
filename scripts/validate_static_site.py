@@ -76,14 +76,17 @@ def main() -> None:
         if path.is_file()
     }
     deployed_index = (DEPLOY / "index.html").read_text(encoding="utf-8")
-    runtime_digest = hashlib.sha256((DEPLOY / "runtime-config.js").read_bytes()).hexdigest()[:16]
-    expected_runtime_src = f'src="runtime-config.js?v={runtime_digest}"'
-    assert expected_runtime_src in deployed_index, (
-        "La configuration runtime doit être référencée avec son empreinte de contenu"
-    )
-    assert 'src="runtime-config.js"' not in deployed_index, (
-        "La référence runtime non versionnée réutilise une configuration en cache"
-    )
+    versioned_assets = {
+        "runtime-config.js": "src",
+        "js/cockpit.js": "src",
+        "css/cockpit.css": "href",
+    }
+    for relative, attribute in versioned_assets.items():
+        digest = hashlib.sha256((DEPLOY / relative).read_bytes()).hexdigest()[:16]
+        expected_reference = f'{attribute}="{relative}?v={digest}"'
+        assert expected_reference in deployed_index, (
+            f"{relative} doit être référencé avec son empreinte de contenu"
+        )
     assert deployed == EXPECTED_DEPLOY_FILES, (
         f"Allowlist de déploiement inattendue: {sorted(deployed)}"
     )

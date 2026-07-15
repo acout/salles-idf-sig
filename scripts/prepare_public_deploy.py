@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import re
 import shutil
 from pathlib import Path
 
@@ -57,15 +58,22 @@ def main() -> None:
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
 
-    runtime_path = output / "runtime-config.js"
-    runtime_digest = hashlib.sha256(runtime_path.read_bytes()).hexdigest()[:16]
     index_path = output / "index.html"
     index = index_path.read_text(encoding="utf-8")
-    runtime_src = 'src="runtime-config.js"'
-    if index.count(runtime_src) != 1:
-        raise SystemExit("Référence runtime-config.js unique absente de index.html")
+    versioned_assets = {
+        "runtime-config.js": "src",
+        "js/cockpit.js": "src",
+        "css/cockpit.css": "href",
+    }
+    for relative, attribute in versioned_assets.items():
+        digest = hashlib.sha256((output / relative).read_bytes()).hexdigest()[:16]
+        pattern = rf'{attribute}="{re.escape(relative)}(?:\?v=[^"]*)?"'
+        replacement = f'{attribute}="{relative}?v={digest}"'
+        index, count = re.subn(pattern, replacement, index)
+        if count != 1:
+            raise SystemExit(f"Référence {relative} unique absente de index.html")
     index_path.write_text(
-        index.replace(runtime_src, f'src="runtime-config.js?v={runtime_digest}"'),
+        index,
         encoding="utf-8",
         newline="\n",
     )
