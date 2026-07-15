@@ -1,0 +1,380 @@
+[
+ {
+  "id": "venue_venue_ymcafrance.fr_les ymca de france_",
+  "name": "Les YMCA de France",
+  "url": "https://ymcafrance.fr/les-associations-membres-de-ymca-france/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_ymca-avignon.com_consulter les tarifs_",
+  "name": "Consulter les tarifs",
+  "url": "http://www.ymca-avignon.com/fr/services/nos-salles/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_ymca-paris.fr_consulter les tarifs_",
+  "name": "Consulter les tarifs",
+  "url": "http://ymca-paris.fr/le-centre/location-de-salles/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_larivieredoree.com_location salle_",
+  "name": "Location salle",
+  "url": "https://www.larivieredoree.com/fr/location-salle/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_larivieredoree.com_disponibilites tarifs reservation en ligne_",
+  "name": "Disponibilités & Tarifs Réservation en ligne",
+  "url": "https://www.larivieredoree.com/fr/location-salle",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_larivieredoree.com_le camping_",
+  "name": "Le camping",
+  "url": "https://www.larivieredoree.com/fr/location-salle",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_larivieredoree.com_fontainebleau_",
+  "name": "Fontainebleau",
+  "url": "https://www.larivieredoree.com/fr/location-salle",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_larivieredoree.com_alentours_",
+  "name": "Alentours",
+  "url": "https://www.larivieredoree.com/fr/location-salle",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_larivieredoree.com_hebergements_",
+  "name": "Hébergements",
+  "url": "https://www.larivieredoree.com/fr/location-salle",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_app.bcoworker.com_je reserve ma salle de reunion_",
+  "name": "JE RÉSERVE MA SALLE DE RÉUNION",
+  "url": "https://app.bcoworker.com/home/search",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_app.bcoworker.com_reserver mon espace_",
+  "name": "Réserver mon espace",
+  "url": "https://app.bcoworker.com/home/search",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_lesmolieres.fr_location de salles_",
+  "name": "Location de salles",
+  "url": "https://www.lesmolieres.fr/location-de-salles/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_lesmolieres.fr_reglement_",
+  "name": "Règlement",
+  "url": "https://www.lesmolieres.fr/wp-content/uploads/2025/10/Reglement-de-la-salle-du-Paradou-Version-8-septembre-2025.pdf",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_lesmolieres.fr_lespace culturel associatif_",
+  "name": "L’Espace culturel & associatif",
+  "url": "https://www.lesmolieres.fr/lespace-culturel-associatif-guy-jean-baptiste-target/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_lesmolieres.fr_page load link_",
+  "name": "Page load link",
+  "url": "https://www.lesmolieres.fr/location-de-salles",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_lesmolieres.fr_aller en haut_",
+  "name": "Aller en haut",
+  "url": "https://www.lesmolieres.fr/location-de-salles",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_lesmolieres.fr_associations des molieres_",
+  "name": "Associations des Molières",
+  "url": "https://www.lesmolieres.fr/associations-des-molieres/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_guide dacces_",
+  "name": "Guide d’accès",
+  "url": "https://espace-jules-cesar.fr/wp-content/uploads/2026/03/Guide-pratique-Ou-trouver-lEspace-Jules-Cesar.pdf",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_blog_",
+  "name": "Blog",
+  "url": "https://espace-jules-cesar.fr/blog/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_options et services complementaires_",
+  "name": "Options et services complémentaires",
+  "url": "https://espace-jules-cesar.fr/options-services-location-salle-osny/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_reservation_",
+  "name": "Réservation",
+  "url": "https://espace-jules-cesar.fr/reservation/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_ou manger autour despace jules cesar_",
+  "name": "Où manger autour d’Espace Jules César ?",
+  "url": "https://espace-jules-cesar.fr/ou-manger-autour-despace-jules-cesar-osny/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_bureau individuel_",
+  "name": "Bureau individuel",
+  "url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_salle 28 personnes_",
+  "name": "Salle 2-8 personnes",
+  "url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_infos pratiques_",
+  "name": "Infos pratiques",
+  "url": "https://espace-jules-cesar.fr/location-salle-reunion-val-doise-95-guide-checklist",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_espace-jules-cesar.fr_nos salles a louer_",
+  "name": "Nos salles à louer",
+  "url": "https://espace-jules-cesar.fr/location-salle-reunion-val-doise-95-guide-checklist",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bagneux92.fr_les espaces publics_bagneux",
+  "name": "Les espaces publics",
+  "url": "https://www.bagneux92.fr/351/ma-mairie/les-dossiers-de-bm/les-espaces-publics.htm",
+  "city": "Bagneux",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bagneux92.fr_espace seniors_bagneux",
+  "name": "Espace seniors",
+  "url": "https://www.bagneux92.fr/140/a-tout-age/senior/espace-seniors.htm",
+  "city": "Bagneux",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_location_montrouge",
+  "name": "location",
+  "url": "https://www.studiolenvol.com/location-salle-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_le studio_montrouge",
+  "name": "le studio",
+  "url": "https://www.studiolenvol.com/studio-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_accueil_montrouge",
+  "name": "accueil",
+  "url": "https://www.studiolenvol.com/index.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_caracteristiques et photos des studios ici_montrouge",
+  "name": "Caractéristiques et photos des studios ici",
+  "url": "https://www.studiolenvol.com/studio-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_cours_montrouge",
+  "name": "cours",
+  "url": "https://www.studiolenvol.com/cours-danse.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_evjfh danse_montrouge",
+  "name": "evjf/h dansé",
+  "url": "https://www.studiolenvol.com/evjf-danse-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_stages_montrouge",
+  "name": "stages",
+  "url": "https://www.studiolenvol.com/stages-danse-classique-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_06 63 70 30 15_montrouge",
+  "name": "06 63 70 30 15",
+  "url": "https://www.studiolenvol.com/img/ballons-coeur.jpg",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_cours de gym respiratoire_montrouge",
+  "name": "Cours de gym respiratoire",
+  "url": "https://www.studiolenvol.com/cours-gymnastique-respiratoire-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_cours de kpop_montrouge",
+  "name": "Cours de K-Pop",
+  "url": "https://www.studiolenvol.com/cours-kpop-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_studiolenvol.com_cours de danse classique_montrouge",
+  "name": "Cours de danse classique",
+  "url": "https://www.studiolenvol.com/cours-danse-classique-paris.html",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_forms.gle_utilisez notre formulaire google pour faire une demande de reservation de studio_montrouge",
+  "name": "Utilisez notre formulaire Google pour faire une demande de réservation de studio",
+  "url": "https://forms.gle/DPHZkEb1M4uo5Xb48",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_inscription_montrouge",
+  "name": "INSCRIPTION",
+  "url": "https://www.association-rds.com/inscriptions.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_contact_montrouge",
+  "name": "CONTACT",
+  "url": "https://www.association-rds.com/contact.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ }
+]

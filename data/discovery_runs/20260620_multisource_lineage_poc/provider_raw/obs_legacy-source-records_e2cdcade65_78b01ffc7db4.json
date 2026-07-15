@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:95",
+  "source_url": "https://yoga-nogent.fr/location.html?twtheme=no",
+  "collected_at": "2026-06-19T22:46:51+00:00",
+  "raw_name": "LOCATION DU STUDIO",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "TARIFS · cours ou atelier ponctuels le WE · cours hebdomadaires en semaine 25€ TTC/ 1h payants mensuellement · Pas de location pour des évènements privés.",
+  "raw_html_excerpt": "LOCATION DU STUDIO. TARIFS · cours ou atelier ponctuels le WE · cours hebdomadaires en semaine 25€ TTC/ 1h payants mensuellement · Pas de location pour des évènements privés.",
+  "raw_json": {
+    "title": "LOCATION DU STUDIO",
+    "url": "https://yoga-nogent.fr/location.html?twtheme=no",
+    "description": "TARIFS · cours ou atelier ponctuels le WE · cours hebdomadaires en semaine 25€ TTC/ 1h payants mensuellement · Pas de location pour des évènements privés.",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "LOCATION DU STUDIO. TARIFS · cours ou atelier ponctuels le WE · cours hebdomadaires en semaine 25€ TTC/ 1h payants mensuellement · Pas de location pour des évènements privés.",
+  "source_confidence": "medium"
+}

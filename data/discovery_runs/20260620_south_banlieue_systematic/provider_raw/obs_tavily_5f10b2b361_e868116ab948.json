@@ -1,0 +1,19 @@
+{
+  "name": "Location de salle à Châtenay-Malabry (92290) - 1001 Salles",
+  "title": "Location de salle à Châtenay-Malabry (92290) - 1001 Salles",
+  "website": "https://www.1001salles.com/location-de-salle-2-chatenay-malabry-v.html",
+  "source_url": "https://www.1001salles.com/location-de-salle-2-chatenay-malabry-v.html",
+  "source_domain": "1001salles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.67140645,
+  "provider_rank": 2,
+  "discovery_prompt_id": "fr_chatenay malabry_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Châtenay-Malabry (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Location de salle : L'Espace 7 est une salle de réception dédiée aux événements privés et professionnels, concert, Gala, séminaire, mariage, fiançailles,",
+  "evidence_text": "Location de salle : L'Espace 7 est une salle de réception dédiée aux événements privés et professionnels, concert, Gala, séminaire, mariage, fiançailles,",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:56+00:00"
+}

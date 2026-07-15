@@ -1,0 +1,19 @@
+{
+  "name": "[PDF] Commune de de Bagneux – Délibération du Conseil municipal n ...",
+  "title": "[PDF] Commune de de Bagneux – Délibération du Conseil municipal n ...",
+  "website": "https://www.bagneux92.fr/Statics/mairie/actes_dematerialises/cm_25/Deliberations_CM_du_17_juin_2025_PARTIE_3.pdf",
+  "source_url": "https://www.bagneux92.fr/Statics/mairie/actes_dematerialises/cm_25/Deliberations_CM_du_17_juin_2025_PARTIE_3.pdf",
+  "source_domain": "bagneux92.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.16906294,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_sud_paris_salles_officielles",
+  "discovery_prompt": "Trouver des pages officielles en France pour louer une petite salle près de Cachan, Châtillon, Montrouge, Bagneux, Arcueil, Malakoff. Salle 10-20 personnes, atelier, yoga, danse, dojo, association. Exclure hôtels, USA, annuaires, mariage, coworking.",
+  "description": "à 20h00, le Conseil municipal, la salle des mariages personnes simultanément présentes dans le local à 100 personnes,",
+  "evidence_text": "à 20h00, le Conseil municipal, la salle des mariages personnes simultanément présentes dans le local à 100 personnes,",
+  "raw_content": "",
+  "target_run": "20260620_tavily_prompt_south_fr",
+  "discovered_at": "2026-06-20T08:17:04+00:00"
+}

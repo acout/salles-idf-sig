@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:91",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Dojo,_espace_sportif_Maurice_Baquet,_Essonne,_France.jpg",
+  "collected_at": "2026-06-19T22:47:00+00:00",
+  "raw_name": "File:Dojo, espace sportif Maurice Baquet, Essonne, France.jpg",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo, espace sportif Maurice Baquet, Essonne, France Date 20 November 2021, 12:21:21 Source Own work Author Florent Pécassou",
+  "raw_html_excerpt": "File:Dojo, espace sportif Maurice Baquet, Essonne, France.jpg. Dojo, espace sportif Maurice Baquet, Essonne, France Date 20 November 2021, 12:21:21 Source Own work Author Florent Pécassou",
+  "raw_json": {
+    "title": "File:Dojo, espace sportif Maurice Baquet, Essonne, France.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Dojo,_espace_sportif_Maurice_Baquet,_Essonne,_France.jpg",
+    "description": "Dojo, espace sportif Maurice Baquet, Essonne, France Date 20 November 2021, 12:21:21 Source Own work Author Florent Pécassou",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "File:Dojo, espace sportif Maurice Baquet, Essonne, France.jpg. Dojo, espace sportif Maurice Baquet, Essonne, France Date 20 November 2021, 12:21:21 Source Own work Author Florent Pécassou",
+  "source_confidence": "low"
+}

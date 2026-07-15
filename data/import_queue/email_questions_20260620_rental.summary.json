@@ -1,0 +1,9 @@
+{
+  "rows_needing_email_or_rental_check": 707,
+  "rental_unclear_or_unlikely": 497,
+  "rental_status": {
+    "unclear": 469,
+    "unlikely": 28,
+    "possible": 210
+  }
+}

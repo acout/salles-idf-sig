@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:93",
+  "source_url": "https://www.facebook.com/groups/coloc974/posts/2783606065158228",
+  "collected_at": "2026-06-19T22:47:14+00:00",
+  "raw_name": "Espace Bien-Être à Louer – Saint-Denis (La Réunion) Le centre OM ...",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Locaux disponibles à la location dans une construction neuve aux normes PMR : 1 salle de 16 m² ,1 salle de 15 m² ,2 salles de 14 m² Chaque salle",
+  "raw_html_excerpt": "Espace Bien-Être à Louer – Saint-Denis (La Réunion) Le centre OM .... Locaux disponibles à la location dans une construction neuve aux normes PMR : 1 salle de 16 m² ,1 salle de 15 m² ,2 salles de 14 m² Chaque salle",
+  "raw_json": {
+    "title": "Espace Bien-Être à Louer – Saint-Denis (La Réunion) Le centre OM ...",
+    "url": "https://www.facebook.com/groups/coloc974/posts/2783606065158228",
+    "description": "Locaux disponibles à la location dans une construction neuve aux normes PMR : 1 salle de 16 m² ,1 salle de 15 m² ,2 salles de 14 m² Chaque salle",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Espace Bien-Être à Louer – Saint-Denis (La Réunion) Le centre OM .... Locaux disponibles à la location dans une construction neuve aux normes PMR : 1 salle de 16 m² ,1 salle de 15 m² ,2 salles de 14 m² Chaque salle",
+  "source_confidence": "low"
+}

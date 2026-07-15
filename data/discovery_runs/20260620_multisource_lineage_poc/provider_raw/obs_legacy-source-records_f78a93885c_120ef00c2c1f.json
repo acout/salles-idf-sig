@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:75",
+  "source_url": "https://www.facebook.com/groups/257289725206307",
+  "collected_at": "2026-06-19T22:47:02+00:00",
+  "raw_name": "Location de salles de répétition à Paris (danse, théâtre...) | Facebook",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "lacasa19@gmail.com studiolacasa.fr ☎️01 40 40 73 60 Au plaisir de vous y accueillir Frédérique - at Studio La Casa - Paris 19e.",
+  "raw_html_excerpt": "Location de salles de répétition à Paris (danse, théâtre...) | Facebook. lacasa19@gmail.com studiolacasa.fr ☎️01 40 40 73 60 Au plaisir de vous y accueillir Frédérique - at Studio La Casa - Paris 19e.",
+  "raw_json": {
+    "title": "Location de salles de répétition à Paris (danse, théâtre...) | Facebook",
+    "url": "https://www.facebook.com/groups/257289725206307",
+    "description": "lacasa19@gmail.com studiolacasa.fr ☎️01 40 40 73 60 Au plaisir de vous y accueillir Frédérique - at Studio La Casa - Paris 19e.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Location de salles de répétition à Paris (danse, théâtre...) | Facebook. lacasa19@gmail.com studiolacasa.fr ☎️01 40 40 73 60 Au plaisir de vous y accueillir Frédérique - at Studio La Casa - Paris 19e.",
+  "source_confidence": "low"
+}

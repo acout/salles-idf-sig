@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fr_sud_paris_salles_officielles",
+    "prompt": "Trouver des pages officielles en France pour louer une petite salle près de Cachan, Châtillon, Montrouge, Bagneux, Arcueil, Malakoff. Salle 10-20 personnes, atelier, yoga, danse, dojo, association. Exclure hôtels, USA, annuaires, mariage, coworking."
+  },
+  {
+    "id": "fr_studios_yoga_danse_location",
+    "prompt": "Trouver sites officiels de studios yoga ou danse près de Cachan et Châtillon qui mentionnent location de salle, location studio, privatisation, mise à disposition ou atelier externe. Exclure cours seuls, abonnement, fitness, annuaires."
+  },
+  {
+    "id": "fr_mairies_associations_salles",
+    "prompt": "Trouver pages mairie, maison des associations, MJC, centre social ou centre culturel à Cachan, Châtillon, Montrouge, Bagneux, Arcueil, Malakoff pour réserver ou louer une salle. Chercher tarifs, capacité, contact, formulaire."
+  },
+  {
+    "id": "fr_salles_mouvement_parquet_dojo",
+    "prompt": "Trouver salles à louer près de Cachan ou Châtillon adaptées mouvement, danse, yoga, voix, atelier collectif. Chercher parquet, tatami, miroirs, dojo, salle de danse, salle polyvalente. Pages françaises officielles uniquement."
+  },
+  {
+    "id": "fr_prix_capacite_contact",
+    "prompt": "Trouver pages françaises officielles de location de salle près de Cachan ou Châtillon avec prix, tarif horaire, capacité, adresse exacte, email, téléphone, formulaire, conditions de réservation ou assurance."
+  }
+]

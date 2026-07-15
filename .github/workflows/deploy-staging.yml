@@ -8,39 +8,46 @@ jobs:
   deploy-staging:
     runs-on: ubuntu-latest
     environment: staging
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy to Scaleway Object Storage (staging)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify deployment credentials
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCALEWAY_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCALEWAY_SECRET_KEY }}
+        run: |
+          test -n "$AWS_ACCESS_KEY_ID" || (echo "SCALEWAY_ACCESS_KEY manquante" && exit 1)
+          test -n "$AWS_SECRET_ACCESS_KEY" || (echo "SCALEWAY_SECRET_KEY manquante" && exit 1)
+
+      - name: Build sanitized shared site
+        env:
+          APP_MODE: ${{ vars.APP_MODE || 'read_only' }}
+          APP_RELEASE: staging-${{ github.sha }}
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+        run: |
+          python scripts/build_public_private_release.py
+          python scripts/validate_release.py
+          python scripts/write_runtime_config.py
+          python scripts/prepare_public_deploy.py
+
+      - name: Deploy public allowlist to Scaleway
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.SCALEWAY_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SCALEWAY_SECRET_KEY }}
           AWS_DEFAULT_REGION: ${{ vars.SCALEWAY_REGION || 'fr-par' }}
           BUCKET: ${{ vars.SCALEWAY_BUCKET_STAGING || 'salles-idf-staging' }}
         run: |
-          # Install AWS CLI
-          pip3 install awscli
-
-          # Sync public/ to Scaleway Object Storage
-          aws s3 sync public/ s3://${BUCKET}/ \
-            --endpoint-url https://s3.${AWS_DEFAULT_REGION}.scw.cloud \
+          pip install awscli
+          aws s3 sync .deploy-dist/ "s3://${BUCKET}/" \
+            --endpoint-url "https://s3.${AWS_DEFAULT_REGION}.scw.cloud" \
             --delete \
             --cache-control "public,max-age=300"
-
-          # Set website configuration
-          aws s3 website s3://${BUCKET}/ \
-            --endpoint-url https://s3.${AWS_DEFAULT_REGION}.scw.cloud \
+          aws s3 website "s3://${BUCKET}/" \
+            --endpoint-url "https://s3.${AWS_DEFAULT_REGION}.scw.cloud" \
             --index-document index.html
-
-          echo "✅ Deployed to staging: https://${BUCKET}.s3-website.${AWS_DEFAULT_REGION}.scw.cloud"
-
-      - name: Invalidate CDN cache (if configured)
-        if: ${{ vars.SCALEWAY_CDN_STAGING_ID != '' }}
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.SCALEWAY_ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCALEWAY_SECRET_KEY }}
-          AWS_DEFAULT_REGION: ${{ vars.SCALEWAY_REGION || 'fr-par' }}
-        run: |
-          echo "CDN invalidation would go here using Scaleway API"
-          echo "CDN ID: ${{ vars.SCALEWAY_CDN_STAGING_ID }}"
+          echo "Staging: https://${BUCKET}.s3-website.${AWS_DEFAULT_REGION}.scw.cloud"

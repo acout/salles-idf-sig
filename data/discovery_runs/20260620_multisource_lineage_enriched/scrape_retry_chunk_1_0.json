@@ -1,0 +1,191 @@
+[
+ {
+  "id": "venue_venue_themuselab.fr_informations_",
+  "name": "INFORMATIONS",
+  "url": "https://themuselab.fr/location-de-salles",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_themuselab.fr_salle montigny 78_",
+  "name": "SALLE MONTIGNY (78)",
+  "url": "https://themuselab.fr/location-de-salles/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_themuselab.fr_salle boulogne 92_",
+  "name": "SALLE BOULOGNE (92)",
+  "url": "https://themuselab.fr/le-planning-92/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_themuselab.fr_le planning_",
+  "name": "LE PLANNING",
+  "url": "https://themuselab.fr/location-de-salles",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_themuselab.fr_location de salle_",
+  "name": "LOCATION DE SALLE",
+  "url": "https://themuselab.fr/location-de-salles",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_myoasso.com_yoga clamart_clamart",
+  "name": "yoga Clamart",
+  "url": "https://www.myoasso.com",
+  "city": "Clamart",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_themuselab.fr_telecharger lapplication_",
+  "name": "TÉLÉCHARGER L'APPLICATION",
+  "url": "https://themuselab.fr/location-de-salles",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_estellegouyer.wixsite.com_studio de danse association projet danse paris 20 et sceaux_sceaux",
+  "name": "studio de danse association projet danse Paris 20 et Sceaux",
+  "url": "https://estellegouyer.wixsite.com/projetdanse/notre-salle-de-danse",
+  "city": "Sceaux",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_rock4you.dance_studios rental_sceaux",
+  "name": "Studios Rental",
+  "url": "https://www.rock4you.dance/en/salles",
+  "city": "Sceaux",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_namasteom.com_location salle yoga_",
+  "name": "Location salle yoga",
+  "url": "https://www.namasteom.com/location-salle",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 1
+ },
+ {
+  "id": "venue_venue_namasteom.com_infos et demande location de la salle_",
+  "name": "infos et demande location de la salle",
+  "url": "https://www.namasteom.com/contact",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_0ed3152acc",
+  "name": "S'inscrire comme Studio/Enseignant(e)",
+  "url": "https://www.yogmee.fr/referencement-studioenseignante",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_6795e718fe",
+  "name": "METTA VILLA",
+  "url": "https://www.yogmee.fr/salles/metta-villa",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_6c420dd07c",
+  "name": "Salle pour stage en pleine nature au centre Finistère",
+  "url": "https://www.yogmee.fr/salles/salle-pour-stage-en-pleine-nature-au-centre-finistere",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_3f211b056a",
+  "name": "Les profs de yoga",
+  "url": "https://www.yogmee.fr/enseignants",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_56823f985b",
+  "name": "Centre de Yoga de 85 m2 - une salle d'accueil et une salle d'enseignement",
+  "url": "https://www.yogmee.fr/salles/centre-de-yoga-de-85-m2-une-salle-daccueil-et-une-salle-denseignement",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_9b1a76276c",
+  "name": "A'mare Corsica, un havre de paix en Corse pour des retraites de yoga inoubliable",
+  "url": "https://www.yogmee.fr/salles/amare-corsica-un-havre-de-paix-en-corse-pour-des-retraites-de-yoga-inoubliables",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_dc6828ad5e",
+  "name": "DOMAINE DU PAS DE L ANE",
+  "url": "https://www.yogmee.fr/salles/domaine-du-pas-de-l-ane",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_a3298b1e88",
+  "name": "Ecolodge la Belle Verte - lieu de retraite yoga et bien-être",
+  "url": "https://www.yogmee.fr/salles/ecolodge-la-belle-verte-lieu-de-retraite-yoga-et-bien-etre",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_ac6b694019",
+  "name": "Domaine Mas Del Lum",
+  "url": "https://www.yogmee.fr/salles/domaine-mas-del-lum-0",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ },
+ {
+  "id": "obs_legacy-source-records_392a9a4bd4",
+  "name": "Havre de paix pour un bien-être inoubliable au bord d'une rivière privée",
+  "url": "https://www.yogmee.fr/salles/havre-de-paix-pour-un-bien-etre-inoubliable-au-bord-dune-riviere-privee",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 1
+ }
+]

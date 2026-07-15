@@ -1,0 +1,767 @@
+[
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_guide dacces__x0_0e3114967a",
+    "name": "Espace Jules César",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "01 84 24 42 18",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/reservation/",
+      "source_url": "https://espace-jules-cesar.fr/wp-content/uploads/2026/03/Guide-pratique-Ou-trouver-lEspace-Jules-Cesar.pdf"
+    },
+    "url": "https://espace-jules-cesar.fr/reservation/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "price"
+    ],
+    "page_type": "access_guide_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_bureau individuel_",
+    "name": "Espace Jules César - bureau privatif 25m²",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
+      "source_url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/"
+    },
+    "url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "exact_address_in_summary",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_single_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_salle 28 personnes_",
+    "name": "Espace Jules César - salle de réunion 2 à 8 personnes",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
+      "source_url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/"
+    },
+    "url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_single_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_espace-jules-cesar.fr_options et services complementaires__x0_a19b03a4bd",
+    "name": "Espace Jules César - salles de réunion",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://espace-jules-cesar.fr/reservation/",
+      "source_url": "https://espace-jules-cesar.fr/options-services-location-salle-osny/"
+    },
+    "url": "https://espace-jules-cesar.fr/reservation/",
+    "url_domain": "espace-jules-cesar.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "rental_services_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_fr.mappy.com_cours de yoga a bourg_bourg-la-reine_x1_b7b6a73489",
+    "name": "Acharya Shree Shankar IF",
+    "city": "Bourg-la-Reine",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "92340 Bourg-la-Reine",
+      "city": "Bourg-la-Reine",
+      "postal_code": null,
+      "specific_rental_page_url": "https://fr.mappy.com/poi/5a0e4cd20351d170bd224853",
+      "source_url": "https://fr.mappy.com/activite/yoga-cours/92340-bourg-la-reine"
+    },
+    "url": "https://fr.mappy.com/poi/5a0e4cd20351d170bd224853",
+    "url_domain": "fr.mappy.com",
+    "missing_fields": [
+      "capacity",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_fr.mappy.com_cours de yoga a bourg_bourg-la-reine_x0_e695e24ce1",
+    "name": "Déborah Rouzel",
+    "city": "Bourg-la-Reine",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "92340 Bourg-la-Reine",
+      "city": "Bourg-la-Reine",
+      "postal_code": null,
+      "specific_rental_page_url": "https://fr.mappy.com/poi/5a0e4cd20351d170bd224851",
+      "source_url": "https://fr.mappy.com/activite/yoga-cours/92340-bourg-la-reine"
+    },
+    "url": "https://fr.mappy.com/poi/5a0e4cd20351d170bd224851",
+    "url_domain": "fr.mappy.com",
+    "missing_fields": [
+      "capacity",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_fr.mappy.com_espace formations parisvillejuif_villejuif",
+    "name": "Espace Formations Paris-Villejuif",
+    "city": "Villejuif",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Villejuif",
+      "city": "Villejuif",
+      "postal_code": null,
+      "specific_rental_page_url": "https://fr.mappy.com/poi/63e0c848692e9b6d11b7334e",
+      "source_url": "https://fr.mappy.com/poi/63e0c848692e9b6d11b7334e"
+    },
+    "url": "https://fr.mappy.com/poi/63e0c848692e9b6d11b7334e",
+    "url_domain": "fr.mappy.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_fr.mappy.com_location de salles a villejuif 94800 france_villejuif_x1_efa49f9f46",
+    "name": "Les Esselières",
+    "city": "Villejuif",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "94800 Villejuif",
+      "city": "Villejuif",
+      "postal_code": null,
+      "specific_rental_page_url": "https://fr.mappy.com/poi/58112d6d0351d122439f93c9",
+      "source_url": "https://fr.mappy.com/activite/location-de-salles/94800-villejuif"
+    },
+    "url": "https://fr.mappy.com/poi/58112d6d0351d122439f93c9",
+    "url_domain": "fr.mappy.com",
+    "missing_fields": [
+      "capacity",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x1_3fe6fe0216",
+    "name": "L'Atelier",
+    "city": "Meudon",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Meudon",
+      "city": "Meudon",
+      "postal_code": null,
+      "specific_rental_page_url": "https://hangar-y.com/privatisation",
+      "source_url": "https://hangar-y.com/privatisation"
+    },
+    "url": "https://hangar-y.com/privatisation",
+    "url_domain": "hangar-y.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x3_d3e64248ab",
+    "name": "La Guinguette",
+    "city": "Meudon",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Meudon",
+      "city": "Meudon",
+      "postal_code": null,
+      "specific_rental_page_url": "https://hangar-y.com/privatisation",
+      "source_url": "https://hangar-y.com/privatisation"
+    },
+    "url": "https://hangar-y.com/privatisation",
+    "url_domain": "hangar-y.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x0_1449b1b957",
+    "name": "La Nef",
+    "city": "Meudon",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Meudon",
+      "city": "Meudon",
+      "postal_code": null,
+      "specific_rental_page_url": "https://hangar-y.com/privatisation",
+      "source_url": "https://hangar-y.com/privatisation"
+    },
+    "url": "https://hangar-y.com/privatisation",
+    "url_domain": "hangar-y.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x2_77225311d4",
+    "name": "Restaurant Les Roseaux",
+    "city": "Meudon",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Meudon",
+      "city": "Meudon",
+      "postal_code": null,
+      "specific_rental_page_url": "https://hangar-y.com/privatisation",
+      "source_url": "https://hangar-y.com/privatisation"
+    },
+    "url": "https://hangar-y.com/privatisation",
+    "url_domain": "hangar-y.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_le8petion.com_activites de bienetre_",
+    "name": "Le 8 Pétion",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://le8petion.com/reserver/",
+      "source_url": "https://le8petion.com/location-salle-loisir-paris/"
+    },
+    "url": "https://le8petion.com/reserver/",
+    "url_domain": "le8petion.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x2_40688e6499",
+    "name": "L’Étang Présent - Cuisine commune",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "jusqu'à 10 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+      "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+    "url_domain": "letangpresent.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x0_060c31c215",
+    "name": "L’Étang Présent - Grande Salle",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "jusqu'à 9 personnes sur tapis; 12 personnes en cercle",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+      "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+    "url_domain": "letangpresent.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x3_13e031869b",
+    "name": "L’Étang Présent - Salle Zen",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "consultations individuelles",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+      "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+    "url_domain": "letangpresent.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x1_2e4d20ff03",
+    "name": "L’Étang Présent - Yourte traditionnelle",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "jusqu'à 9 personnes sur tapis; nuitée possible pour 4 personnes en complément du gîte",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+      "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+    "url_domain": "letangpresent.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x4_a90b0db933",
+    "name": "L’Étang Présent - Éco-gîte",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "jusqu'à 6 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+      "source_url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/",
+    "url_domain": "letangpresent.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x1_14e678cf4f",
+    "name": "Cinéma Gérard Philipe",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x5_92716aead0",
+    "name": "La Placette",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x4_5829534729",
+    "name": "Les Terrasses",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x7_08c11ee399",
+    "name": "Musiques Actuelles (studios)",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x6_d529a4c41b",
+    "name": "Salle de Conférence",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x2_86417da821",
+    "name": "Salon Andrea Palladio",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x3_96bfb0ec23",
+    "name": "Salon Canaletto",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  }
+]

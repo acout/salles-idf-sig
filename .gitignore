@@ -15,5 +15,12 @@ Thumbs.db
 .vscode/
 *.swp
 
+# Local credentials and generated private release artifacts
+.env
+.env.*
+!.env.example
+.private-dist/
+.deploy-dist/
+
 # Node (not used but just in case)
 node_modules/

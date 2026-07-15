@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:93",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/seine-saint-denis-93/danse-salles-et-lecons",
+  "collected_at": "2026-06-19T22:46:34+00:00",
+  "raw_name": "Danse salles et leçons en Seine-saint-denis - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Feeling Dance est un centre de danse pour les amateurs et professionnels. Il propose des cours collectif, de danse et stages, locations de studios,",
+  "raw_html_excerpt": "Danse salles et leçons en Seine-saint-denis - Pages Jaunes. Le Feeling Dance est un centre de danse pour les amateurs et professionnels. Il propose des cours collectif, de danse et stages, locations de studios,",
+  "raw_json": {
+    "title": "Danse salles et leçons en Seine-saint-denis - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/seine-saint-denis-93/danse-salles-et-lecons",
+    "description": "Le Feeling Dance est un centre de danse pour les amateurs et professionnels. Il propose des cours collectif, de danse et stages, locations de studios,",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Danse salles et leçons en Seine-saint-denis - Pages Jaunes. Le Feeling Dance est un centre de danse pour les amateurs et professionnels. Il propose des cours collectif, de danse et stages, locations de studios,",
+  "source_confidence": "medium"
+}

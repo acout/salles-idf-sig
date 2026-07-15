@@ -1,0 +1,66 @@
+{
+  "rows_needing_email": 586,
+  "aggregators_needing_email": 315,
+  "top_missing": [
+    [
+      "adresse précise, contact, prix, capacité",
+      152
+    ],
+    [
+      "prix, capacité",
+      108
+    ],
+    [
+      "prix",
+      68
+    ],
+    [
+      "adresse précise, prix, capacité",
+      56
+    ],
+    [
+      "adresse précise",
+      55
+    ],
+    [
+      "contact, prix, capacité",
+      39
+    ],
+    [
+      "capacité",
+      30
+    ],
+    [
+      "adresse précise, prix",
+      30
+    ],
+    [
+      "adresse précise, contact",
+      11
+    ],
+    [
+      "adresse précise, contact, prix",
+      9
+    ],
+    [
+      "adresse précise, capacité",
+      9
+    ],
+    [
+      "contact, prix",
+      9
+    ],
+    [
+      "adresse précise, contact, capacité",
+      5
+    ],
+    [
+      "contact",
+      3
+    ],
+    [
+      "contact, capacité",
+      2
+    ]
+  ]
+}

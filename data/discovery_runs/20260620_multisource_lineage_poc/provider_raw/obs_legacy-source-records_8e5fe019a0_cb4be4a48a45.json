@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:95",
+  "source_url": "https://www.privateaser.com/location-salle/top-salles-val-d-oise-95000",
+  "collected_at": "2026-06-19T22:47:21+00:00",
+  "raw_name": "Les meilleures salles à louer - Val-d'Oise",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Trouvez une salle à louer pour votre évènement, privé ou professionnel. Demandez un devis ou réservez directement en ligne. Sans frais ni commission.",
+  "raw_html_excerpt": "Les meilleures salles à louer - Val-d'Oise. Trouvez une salle à louer pour votre évènement, privé ou professionnel. Demandez un devis ou réservez directement en ligne. Sans frais ni commission.",
+  "raw_json": {
+    "title": "Les meilleures salles à louer - Val-d'Oise",
+    "url": "https://www.privateaser.com/location-salle/top-salles-val-d-oise-95000",
+    "description": "Trouvez une salle à louer pour votre évènement, privé ou professionnel. Demandez un devis ou réservez directement en ligne. Sans frais ni commission.",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Les meilleures salles à louer - Val-d'Oise. Trouvez une salle à louer pour votre évènement, privé ou professionnel. Demandez un devis ou réservez directement en ligne. Sans frais ni commission.",
+  "source_confidence": "low"
+}

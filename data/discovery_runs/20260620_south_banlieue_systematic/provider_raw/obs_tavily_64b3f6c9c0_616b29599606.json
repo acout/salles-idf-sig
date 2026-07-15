@@ -1,0 +1,19 @@
+{
+  "name": "Spacious Centrally Located Yoga & Dance Studio - Peerspace",
+  "title": "Spacious Centrally Located Yoga & Dance Studio - Peerspace",
+  "website": "https://www.peerspace.com/pages/listings/5d49d4892d4fcb000e469bdc",
+  "source_url": "https://www.peerspace.com/pages/listings/5d49d4892d4fcb000e469bdc",
+  "source_domain": "peerspace.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.2313193,
+  "provider_rank": 4,
+  "discovery_prompt_id": "fr_vanves_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Vanves (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Located 3 min walk from train station, near major highways. Easy street parking. Two bathrooms, a reception with water filter and mini fridge. Fits about 50",
+  "evidence_text": "Located 3 min walk from train station, near major highways. Easy street parking. Two bathrooms, a reception with water filter and mini fridge. Fits about 50",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:58+00:00"
+}

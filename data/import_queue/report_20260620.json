@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-06-20T06:51:48+00:00",
+  "input_records": 359,
+  "normalized_candidates": 359,
+  "deduped_candidates": 334,
+  "intra_duplicates": 25,
+  "existing_matches": 0,
+  "import_queue": 334,
+  "mapped_import_queue": 83,
+  "unmapped_import_queue": 251,
+  "by_department_mapped": {
+    "92": 45,
+    "94": 38
+  },
+  "by_city_mapped_top20": {
+    "Le Kremlin-Bicêtre": 12,
+    "Clamart": 11,
+    "Villejuif": 10,
+    "Bourg-la-Reine": 9,
+    "Malakoff": 7,
+    "Châtillon": 6,
+    "Bagneux": 6,
+    "Gentilly": 6,
+    "Cachan": 5,
+    "Montrouge": 5,
+    "Arcueil": 5,
+    "Sceaux": 1
+  },
+  "high_fit_80_plus": 64,
+  "medium_fit_60_plus": 283,
+  "with_contact": 0,
+  "with_price": 0,
+  "with_capacity": 0,
+  "outputs": {
+    "candidates_json": "/home/antho/salles-idf-sig/data/candidates/candidates_20260620.json",
+    "candidates_csv": "/home/antho/salles-idf-sig/data/candidates/candidates_20260620.csv",
+    "import_queue_csv": "/home/antho/salles-idf-sig/data/import_queue/import_queue.csv",
+    "import_queue_geojson": "/home/antho/salles-idf-sig/public/import_queue.geojson",
+    "duplicates_json": "/home/antho/salles-idf-sig/data/import_queue/duplicates_20260620.json"
+  }
+}

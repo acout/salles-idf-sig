@@ -1,0 +1,78 @@
+# Beyond-compatible venue sourcing taxonomy.
+# YAML is intentionally simple so scripts can read it with stdlib fallback.
+activity_tags:
+  dance: 18
+  yoga: 18
+  dojo: 18
+  movement: 16
+  theatre: 14
+  circle: 12
+  meditation: 10
+  bodywork: 14
+  music_allowed: 10
+  voice_allowed: 8
+  group_interaction: 10
+space_tags:
+  empty_room: 20
+  open_floor: 18
+  wood_floor: 12
+  tatami: 12
+  mirrors: 7
+  modular: 10
+  chairs_available: 4
+  tables_optional: 8
+  natural_light: 4
+  private: 8
+  quiet: 5
+constraints_tags:
+  no_noise: -16
+  no_music: -12
+  tables_fixed: -22
+  association_only: -4
+  requires_insurance: -2
+  limited_evening_access: -6
+  premium_price: -20
+  unclear_booking: -10
+  coworking_corporate: -28
+categories:
+  studio_danse: 22
+  studio_yoga: 22
+  dojo: 22
+  salle_mouvement: 20
+  salle_theatre: 18
+  centre_bien_etre: 16
+  mjc: 12
+  maison_associations: 10
+  salle_municipale: 10
+  centre_social: 10
+  tiers_lieu_associatif: 12
+  coworking: -24
+source_types:
+  official: high
+  studio_website: high
+  municipal: high
+  aggregator: medium
+  osm: low
+  blog: low
+  manual: medium
+scoring:
+  beyond_fit:
+    base: 30
+    max: 100
+  confidence_score:
+    high: 90
+    medium: 60
+    low: 35
+    unknown: 25
+  actionability:
+    contact: 25
+    price: 15
+    capacity: 15
+    address: 20
+    website: 10
+    official_source: 15
+rules:
+  demote_categories: [coworking]
+  hard_negative_constraints: [tables_fixed, coworking_corporate]
+  evidence_keywords_positive: [danse, yoga, dojo, mouvement, méditation, meditation, théâtre, theatre, répétition, repetition, parquet, tatami, cercle, atelier corporel, salle vide]
+  evidence_keywords_negative: [salle de réunion, coworking, bureau équipé, table fixe, séminaire premium, mariage, réception]

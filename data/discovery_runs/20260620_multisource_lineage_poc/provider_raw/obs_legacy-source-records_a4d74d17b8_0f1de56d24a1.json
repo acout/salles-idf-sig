@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:95",
+  "source_url": "https://www.safran-group.com/news/portrait-office-dojo-dual-life-benjamin-lelu-2023-09-19",
+  "collected_at": "2026-06-19T22:47:01+00:00",
+  "raw_name": "the dual life of Benjamin Lelu",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "It was at the Eaubonne club in Val d'Oise, led by a former champion, that young Benjamin, aged 5, discovered judo. It didn't take him long",
+  "raw_html_excerpt": "the dual life of Benjamin Lelu. It was at the Eaubonne club in Val d'Oise, led by a former champion, that young Benjamin, aged 5, discovered judo. It didn't take him long",
+  "raw_json": {
+    "title": "the dual life of Benjamin Lelu",
+    "url": "https://www.safran-group.com/news/portrait-office-dojo-dual-life-benjamin-lelu-2023-09-19",
+    "description": "It was at the Eaubonne club in Val d'Oise, led by a former champion, that young Benjamin, aged 5, discovered judo. It didn't take him long",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "the dual life of Benjamin Lelu. It was at the Eaubonne club in Val d'Oise, led by a former champion, that young Benjamin, aged 5, discovered judo. It didn't take him long",
+  "source_confidence": "low"
+}

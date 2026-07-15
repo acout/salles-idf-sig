@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:92",
+  "source_url": "https://www.ouest2paris.com/annonce/fitness-sante-beaute-medecine-douce-ouest-de-paris/rueil-malmaison/maison-du-mieux-etre-rueil-malmaison",
+  "collected_at": "2026-06-19T22:46:42+00:00",
+  "raw_name": "Maison du Mieux-Etre, Rueil-Malmaison à l'Ouest de Paris",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Salle Yoga / Méditation : à partir de 3 € HT/pers/heure ou 5 € HT/pers/heure en soirée; Atelier / Expo : tarifs à la demande en fonction du nombre de",
+  "raw_html_excerpt": "Maison du Mieux-Etre, Rueil-Malmaison à l'Ouest de Paris. Salle Yoga / Méditation : à partir de 3 € HT/pers/heure ou 5 € HT/pers/heure en soirée; Atelier / Expo : tarifs à la demande en fonction du nombre de",
+  "raw_json": {
+    "title": "Maison du Mieux-Etre, Rueil-Malmaison à l'Ouest de Paris",
+    "url": "https://www.ouest2paris.com/annonce/fitness-sante-beaute-medecine-douce-ouest-de-paris/rueil-malmaison/maison-du-mieux-etre-rueil-malmaison",
+    "description": "Salle Yoga / Méditation : à partir de 3 € HT/pers/heure ou 5 € HT/pers/heure en soirée; Atelier / Expo : tarifs à la demande en fonction du nombre de",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Maison du Mieux-Etre, Rueil-Malmaison à l'Ouest de Paris. Salle Yoga / Méditation : à partir de 3 € HT/pers/heure ou 5 € HT/pers/heure en soirée; Atelier / Expo : tarifs à la demande en fonction du nombre de",
+  "source_confidence": "low"
+}

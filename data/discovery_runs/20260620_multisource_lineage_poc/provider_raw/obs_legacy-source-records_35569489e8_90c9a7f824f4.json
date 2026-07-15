@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_mouvement:78",
+  "source_url": "https://bcoworker.com/coworking-bureaux-elancourt/location-salle-de-reunion-yvelines-24h-7j-bcoworker",
+  "collected_at": "2026-06-19T22:47:28+00:00",
+  "raw_name": "Location Salle de réunion Yvelines 24h/7J - B'CoWorker",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Situées au cœur des Yvelines, nos salles sont entièrement équipées et peuvent accueillir jusqu'à 16 personnes dans un cadre professionnel et confortable. Je",
+  "raw_html_excerpt": "Location Salle de réunion Yvelines 24h/7J - B'CoWorker. Situées au cœur des Yvelines, nos salles sont entièrement équipées et peuvent accueillir jusqu'à 16 personnes dans un cadre professionnel et confortable. Je",
+  "raw_json": {
+    "title": "Location Salle de réunion Yvelines 24h/7J - B'CoWorker",
+    "url": "https://bcoworker.com/coworking-bureaux-elancourt/location-salle-de-reunion-yvelines-24h-7j-bcoworker",
+    "description": "Situées au cœur des Yvelines, nos salles sont entièrement équipées et peuvent accueillir jusqu'à 16 personnes dans un cadre professionnel et confortable. Je",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_mouvement",
+  "evidence_text": "Location Salle de réunion Yvelines 24h/7J - B'CoWorker. Situées au cœur des Yvelines, nos salles sont entièrement équipées et peuvent accueillir jusqu'à 16 personnes dans un cadre professionnel et confortable. Je",
+  "source_confidence": "low"
+}

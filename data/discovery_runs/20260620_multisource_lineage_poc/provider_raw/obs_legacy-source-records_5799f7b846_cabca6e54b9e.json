@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:93",
+  "source_url": "https://www.gites.fr/love-room_seine-saint-denis_d93.html",
+  "collected_at": "2026-06-19T22:47:14+00:00",
+  "raw_name": "Locations de vacances Love Room en Seine Saint-Denis - Gites.fr",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Bioty Chill & Spa. Le Blanc Mesnil Love room, 50 m² ; L'1Timiste. Neuilly Plaisance Love room, 40 m² ; Spa de la Lune - Private love room suite avec terrasse et",
+  "raw_html_excerpt": "Locations de vacances Love Room en Seine Saint-Denis - Gites.fr. Bioty Chill & Spa. Le Blanc Mesnil Love room, 50 m² ; L'1Timiste. Neuilly Plaisance Love room, 40 m² ; Spa de la Lune - Private love room suite avec terrasse et",
+  "raw_json": {
+    "title": "Locations de vacances Love Room en Seine Saint-Denis - Gites.fr",
+    "url": "https://www.gites.fr/love-room_seine-saint-denis_d93.html",
+    "description": "Bioty Chill & Spa. Le Blanc Mesnil Love room, 50 m² ; L'1Timiste. Neuilly Plaisance Love room, 40 m² ; Spa de la Lune - Private love room suite avec terrasse et",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Locations de vacances Love Room en Seine Saint-Denis - Gites.fr. Bioty Chill & Spa. Le Blanc Mesnil Love room, 50 m² ; L'1Timiste. Neuilly Plaisance Love room, 40 m² ; Spa de la Lune - Private love room suite avec terrasse et",
+  "source_confidence": "medium"
+}

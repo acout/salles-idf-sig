@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-20T08:15:42+00:00",
+  "run_id": "20260620_multisource_lineage_poc",
+  "input_files": [
+    "data/source_records/tavily_south_banlieue_prompt_discovery_fr_20260620.json",
+    "data/source_records/systematic_beyond_idf_20260619.json"
+  ],
+  "observations": 245,
+  "field_evidence": 199,
+  "malformed": 0,
+  "malformed_examples": [],
+  "observations_by_provider": {
+    "tavily": 35,
+    "legacy_source_records": 210
+  },
+  "observations_with_url": 245,
+  "observations_with_query": 245,
+  "observations_with_content_hash": 245,
+  "field_evidence_by_field": {
+    "website": 35,
+    "specific_rental_page": 164
+  },
+  "duplicate_url_groups_preserved": 9,
+  "duplicate_observations_preserved": 18,
+  "outputs": {
+    "run_dir": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_poc",
+    "observations": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_poc/observations.json",
+    "field_evidence": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_poc/field_evidence.json",
+    "report": "/home/antho/salles-idf-sig/data/discovery_runs/20260620_multisource_lineage_poc/report.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Salle des fêtes à L'Haÿ-les-Roses (94240)",
+  "title": "Salle des fêtes à L'Haÿ-les-Roses (94240)",
+  "website": "https://www.1001salles.com/salle-des-fetes-2-l-hay-les-roses-v.html",
+  "source_url": "https://www.1001salles.com/salle-des-fetes-2-l-hay-les-roses-v.html",
+  "source_domain": "1001salles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.66464967,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_haÿ les roses_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à L'Haÿ-les-Roses (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Salle des fêtes : Suivant la disposition, nous pouvons accueillir de 10 à 70 personnes maximum. 10-70. Location dès 550 €. Contacter.",
+  "evidence_text": "Salle des fêtes : Suivant la disposition, nous pouvons accueillir de 10 à 70 personnes maximum. 10-70. Location dès 550 €. Contacter.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:36+00:00"
+}

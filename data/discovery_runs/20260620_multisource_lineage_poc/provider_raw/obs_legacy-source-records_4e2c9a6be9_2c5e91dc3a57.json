@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:75",
+  "source_url": "https://www.ashtangayogaparis.fr/location-salle",
+  "collected_at": "2026-06-19T22:46:41+00:00",
+  "raw_name": "Location de salle - Ashtanga Yoga Paris",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Nous louons nos magnifiques salles de yoga ! Si vous recherchez un endroit spécial pour organiser un atelier, une formation, un cours ou un événement,",
+  "raw_html_excerpt": "Location de salle - Ashtanga Yoga Paris. Nous louons nos magnifiques salles de yoga ! Si vous recherchez un endroit spécial pour organiser un atelier, une formation, un cours ou un événement,",
+  "raw_json": {
+    "title": "Location de salle - Ashtanga Yoga Paris",
+    "url": "https://www.ashtangayogaparis.fr/location-salle",
+    "description": "Nous louons nos magnifiques salles de yoga ! Si vous recherchez un endroit spécial pour organiser un atelier, une formation, un cours ou un événement,",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location de salle - Ashtanga Yoga Paris. Nous louons nos magnifiques salles de yoga ! Si vous recherchez un endroit spécial pour organiser un atelier, une formation, un cours ou un événement,",
+  "source_confidence": "medium"
+}

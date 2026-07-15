@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:95",
+  "source_url": "https://lestudioprive.com",
+  "collected_at": "2026-06-19T22:46:40+00:00",
+  "raw_name": "ÉCOLE DE POLE DANCE À DOMONT, CHAUMONTEL ET CHAMBLY",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "LA PLUS GRANDE ÉCOLE D'ARTS AÉRIENS DU VAL-D'OISE ! Avec ses trois studios spacieux de 145m², 150m² et 180m², le Studio Privé est la référence incontournable de",
+  "raw_html_excerpt": "ÉCOLE DE POLE DANCE À DOMONT, CHAUMONTEL ET CHAMBLY. LA PLUS GRANDE ÉCOLE D'ARTS AÉRIENS DU VAL-D'OISE ! Avec ses trois studios spacieux de 145m², 150m² et 180m², le Studio Privé est la référence incontournable de",
+  "raw_json": {
+    "title": "ÉCOLE DE POLE DANCE À DOMONT, CHAUMONTEL ET CHAMBLY",
+    "url": "https://lestudioprive.com",
+    "description": "LA PLUS GRANDE ÉCOLE D'ARTS AÉRIENS DU VAL-D'OISE ! Avec ses trois studios spacieux de 145m², 150m² et 180m², le Studio Privé est la référence incontournable de",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "ÉCOLE DE POLE DANCE À DOMONT, CHAUMONTEL ET CHAMBLY. LA PLUS GRANDE ÉCOLE D'ARTS AÉRIENS DU VAL-D'OISE ! Avec ses trois studios spacieux de 145m², 150m² et 180m², le Studio Privé est la référence incontournable de",
+  "source_confidence": "low"
+}

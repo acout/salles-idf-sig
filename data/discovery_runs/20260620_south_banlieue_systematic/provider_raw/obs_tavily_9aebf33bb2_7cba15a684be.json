@@ -1,0 +1,19 @@
+{
+  "name": "La Villa Châtenay : dispo et tarif pour événement pro",
+  "title": "La Villa Châtenay : dispo et tarif pour événement pro",
+  "website": "https://www.snapevent.fr/location-de-salle/paris/villa-chatenay-435",
+  "source_url": "https://www.snapevent.fr/location-de-salle/paris/villa-chatenay-435",
+  "source_domain": "snapevent.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.24178061,
+  "provider_rank": 3,
+  "discovery_prompt_id": "fr_chatenay malabry_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Châtenay-Malabry (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Grande maison située à l’orée du Bois de Verrières contenant un studio d’enregistrement professionnel. Pas de vis à vis et personne à déranger autour : vous n'aurez qu'à profiter de votre évènement.  \n  \nIdéal pour des évènements jusqu'à 80 personnes, en comptant l'exploitation du jardin.  \n- Rez-de-chaussée dans un style lounge avec un salon, un bar / salle à manger, une cuisine et un studio d’enregistrement professionnel (disponible en option).  \n- Rez-de-jardin dans un style underground avec une grande pièce (idéal pour une piste de danse), un petit salon et une grande entrée.  \n- Grand Jardin (1500m2) avec 2 grandes terrasses couvertes et meublées. [...] 01 76 42 02 10\n\n# La Villa Châtenay\n\n## La Villa Châtenay en bref\n\n## Description pour La Villa Châtenay [...] ## Ces lieux pourraient également vous intéresser\n\nà partir de 2 750 € HT\n\nà partir de 8 350 € HT\n\nà partir de 900 € HT",
+  "evidence_text": "Grande maison située à l’orée du Bois de Verrières contenant un studio d’enregistrement professionnel. Pas de vis à vis et personne à déranger autour : vous n'aurez qu'à profiter de votre évènement.  \n  \nIdéal pour des évènements jusqu'à 80 personnes, en comptant l'exploitation du jardin.  \n- Rez-de-chaussée dans un style lounge avec un salon, un bar / salle à manger, une cuisine et un studio d’enregistrement professionnel (disponible en option).  \n- Rez-de-jardin dans un style underground avec une grande pièce (idéal pour une piste de danse), un petit salon et une grande entrée.  \n- Grand Jardin (1500m2) avec 2 grandes terrasses couvertes et meublées. [...] 01 76 42 02 10\n\n# La Villa Châtenay\n\n## La Villa Châtenay en bref\n\n## Description pour La Villa Châtenay [...] ## Ces lieux pourraient également vous intéresser\n\nà partir de 2 750 € HT\n\nà partir de 8 350 € HT\n\nà partir de 900 € HT",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:56+00:00"
+}

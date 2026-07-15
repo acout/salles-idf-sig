@@ -1,0 +1,380 @@
+[
+ {
+  "id": "venue_venue_association-rds.com_actualites_montrouge",
+  "name": "Actualités",
+  "url": "https://www.association-rds.com/actualites.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_presentation_montrouge",
+  "name": "Présentation",
+  "url": "https://www.association-rds.com/presentation.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_eveil danse_montrouge",
+  "name": "Eveil danse",
+  "url": "https://www.association-rds.com/eveil-danse.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_cours enfants_montrouge",
+  "name": "Cours enfants",
+  "url": "https://www.association-rds.com/cours-enfants.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_planning_montrouge",
+  "name": "Planning",
+  "url": "https://www.association-rds.com/planning-des-cours.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_eveil artistique_montrouge",
+  "name": "Eveil artistique",
+  "url": "https://www.association-rds.com/eveil-artistique.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_danse moderne contemporaine_montrouge",
+  "name": "Danse moderne contemporaine",
+  "url": "https://www.association-rds.com/danse-contemporaine.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_danse orientale_montrouge",
+  "name": "Danse orientale",
+  "url": "https://www.association-rds.com/danse-orientale.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_accueil_montrouge",
+  "name": "Accueil",
+  "url": "https://www.association-rds.com/index.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_association-rds.com_plan dacces_montrouge",
+  "name": "PLAN D'ACCES",
+  "url": "https://www.association-rds.com/plan-d-acces.php",
+  "city": "Montrouge",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_centres de sante_arcueil",
+  "name": "Centres de santé",
+  "url": "https://www.arcueil.fr/la-ville/nos-politiques-publiques/solidarite/sante/centres-de-sante/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_associations sportives_arcueil",
+  "name": "Associations sportives",
+  "url": "https://www.arcueil.fr/demarches-et-services/associations/annuaire-des-associations/?f=1&categorie=associations&sous-categorie=sports-et-loisirs&sous-categorie-2=&recherche=",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_espace 1013_arcueil",
+  "name": "Espace 10-13",
+  "url": "https://www.arcueil.fr/demarches-et-services/familles-et-education/enfance-et-scolarite/espace-10-13/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bastide95.com_salle le mas_",
+  "name": "Salle Le Mas",
+  "url": "https://www.bastide95.com/location-salle-le-mas/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bastide95.com_salle la villa_",
+  "name": "Salle La Villa",
+  "url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bastide95.com_mariage_",
+  "name": "MARIAGE",
+  "url": "https://www.bastide95.com/salle-de-mariage-95/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bastide95.com_louer une salle pour votre mariage_",
+  "name": "louer une salle pour votre mariage",
+  "url": "https://www.bastide95.com/salle-de-mariage-95/",
+  "city": "",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bastide95.com_decouvrir le mas_",
+  "name": "Découvrir \"le mas\"",
+  "url": "https://www.bastide95.com/location-salle-le-mas/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_bastide95.com_decouvrir la villa_",
+  "name": "Découvrir \"LA villa\"",
+  "url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/",
+  "city": "",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_centre mai politzer_arcueil",
+  "name": "Centre Maï Politzer",
+  "url": "https://www.arcueil.fr/demarches-et-services/solidarite-et-sante/sante/centre-mai-politzer/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_centresudest_villejuif",
+  "name": "Centre-Sud-Est",
+  "url": "https://www.villejuif.fr/decouvrir-villejuif/vie-de-quartier/centre-sud-est",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_associations_villejuif",
+  "name": "Associations",
+  "url": "https://www.villejuif.fr/associations",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_centres de protection maternelle et infantile_arcueil",
+  "name": "Centres de protection maternelle et infantile",
+  "url": "https://www.arcueil.fr/demarches-et-services/solidarite-et-sante/sante/centres-de-protection-maternelle-et-infantile/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_maitrise de la population animale sur lespace public_arcueil",
+  "name": "Maîtrise de la population animale sur l’espace public",
+  "url": "https://www.arcueil.fr/demarches-et-services/solidarite-et-sante/hygiene/maitrise-de-la-population-animale-sur-lespace-public/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_la page dedie au benevolat associatif a villejuif_villejuif",
+  "name": "La page dédié au bénévolat associatif à Villejuif",
+  "url": "https://www.villejuif.fr/associations/recherche-de-benevoles",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_nous contacter_villejuif",
+  "name": "Nous contacter",
+  "url": "https://www.villejuif.fr/associations",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_la redaction_villejuif",
+  "name": "la rédaction",
+  "url": "https://www.villejuif.fr/associations",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_formulaire de reservation de salles ponctuelle pour les associations pdf 144 ko_villejuif",
+  "name": "Formulaire de reservation de salles ponctuelle pour les associations (PDF, 144 k",
+  "url": "https://www.villejuif.fr/fileadmin/mediatheque/villejuif/Surheader/Associations/Demande-salle-associations-2026.pdf",
+  "city": "Villejuif",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_la page dediee au benevolat_villejuif",
+  "name": "La page dédiée au bénévolat",
+  "url": "https://www.villejuif.fr/associations/recherche-de-benevoles",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_formulaire de reservation de salles ponctuelle pour les partis politiques pdf 143 ko_villejuif",
+  "name": "Formulaire de reservation de salles ponctuelle pour les partis politiques (PDF, ",
+  "url": "https://www.villejuif.fr/fileadmin/mediatheque/villejuif/Surheader/Associations/Demande-salle-parti-politique-2026.pdf",
+  "city": "Villejuif",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_annuaire des associations_villejuif",
+  "name": "Annuaire des associations",
+  "url": "https://www.villejuif.fr/toutes-les-associations",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_webmaster_villejuif",
+  "name": "webmaster",
+  "url": "https://www.villejuif.fr/associations",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_centre de sante marcel trigon_arcueil",
+  "name": "Centre de santé Marcel Trigon",
+  "url": "https://www.arcueil.fr/demarches-et-services/solidarite-et-sante/sante/centre-municipal-et-universitaire-de-sante-marcel-trigon/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_service des associations_villejuif",
+  "name": "service des associations",
+  "url": "https://www.villejuif.fr/tous-les-services/service-de-la-vie-associative",
+  "city": "Villejuif",
+  "page_type": "official_venue_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_fr.mappy.com_location de salles villejuif_villejuif",
+  "name": "Location de salles Villejuif",
+  "url": "https://fr.mappy.com/activite/location-de-salles/94800-villejuif",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_fr.mappy.com_espace formations parisvillejuif_villejuif",
+  "name": "Espace Formations Paris-Villejuif",
+  "url": "https://fr.mappy.com/poi/63e0c848692e9b6d11b7334e",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_2026bilandesubventionaideauprojet2025pdf pdf 881 ko_villejuif",
+  "name": "2026_-_BILAN_DE_SUBVENTION_-_AIDE_AU_PROJET_2025.pdf (PDF, 881 ko)",
+  "url": "https://www.villejuif.fr/fileadmin/mediatheque/villejuif/Surheader/Associations/2026_-_BILAN_DE_SUBVENTION_-_AIDE_AU_PROJET_2025.pdf",
+  "city": "Villejuif",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_fr.mappy.com_location de salles a villejuif 94800_villejuif",
+  "name": "Location de salles à Villejuif 94800",
+  "url": "https://fr.mappy.com/activite/location-de-salles/94800-villejuif",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_reclamation intervention espaces verts_arcueil",
+  "name": "Réclamation, intervention espaces verts",
+  "url": "https://www.arcueil.fr/demarches-et-services/espaces-verts-et-nature-en-ville/reclamation-intervention/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_villejuif.fr_2026demandedesubventionaideauxprojetspdf pdf 104 mo_villejuif",
+  "name": "2026_-_DEMANDE_DE_SUBVENTION_-_AIDE_AUX_PROJETS.pdf (PDF, 1,04 mo)",
+  "url": "https://www.villejuif.fr/fileadmin/mediatheque/villejuif/Surheader/Associations/2026_-_DEMANDE_DE_SUBVENTION_-_AIDE_AUX_PROJETS.pdf",
+  "city": "Villejuif",
+  "page_type": "municipal_facility_page",
+  "reliability": "S3",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_arcueil.fr_espaces verts_arcueil",
+  "name": "Espaces verts",
+  "url": "https://www.arcueil.fr/demarches-et-services/espaces-verts-et-nature-en-ville/parcs-et-jardins/",
+  "city": "Arcueil",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ },
+ {
+  "id": "venue_venue_fr.mappy.com_location de salles autour de moi_villejuif",
+  "name": "Location de salles autour de moi",
+  "url": "https://fr.mappy.com/activite/location-de-salles",
+  "city": "Villejuif",
+  "page_type": "official_rental_page",
+  "reliability": "S4",
+  "_source_batch": 2
+ }
+]

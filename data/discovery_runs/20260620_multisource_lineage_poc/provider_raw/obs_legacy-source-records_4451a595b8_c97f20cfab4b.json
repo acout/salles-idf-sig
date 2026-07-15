@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:91",
+  "source_url": "https://ville-data.com/salle-de-combat-dojo/essonne-91-91D",
+  "collected_at": "2026-06-19T22:47:00+00:00",
+  "raw_name": "Arts Martiaux, Boxe, MMA en Essonne - Ville-Data.com",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "HALLE DES SPORTS HAUTERIVE. DOJO. Equipement : Dojo / Salle d'arts martiaux. Sur place : Judo / Jujitsu / Taïso, Karaté/Karaté jutsu/Goshin",
+  "raw_html_excerpt": "Arts Martiaux, Boxe, MMA en Essonne - Ville-Data.com. HALLE DES SPORTS HAUTERIVE. DOJO. Equipement : Dojo / Salle d'arts martiaux. Sur place : Judo / Jujitsu / Taïso, Karaté/Karaté jutsu/Goshin",
+  "raw_json": {
+    "title": "Arts Martiaux, Boxe, MMA en Essonne - Ville-Data.com",
+    "url": "https://ville-data.com/salle-de-combat-dojo/essonne-91-91D",
+    "description": "HALLE DES SPORTS HAUTERIVE. DOJO. Equipement : Dojo / Salle d'arts martiaux. Sur place : Judo / Jujitsu / Taïso, Karaté/Karaté jutsu/Goshin",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Arts Martiaux, Boxe, MMA en Essonne - Ville-Data.com. HALLE DES SPORTS HAUTERIVE. DOJO. Equipement : Dojo / Salle d'arts martiaux. Sur place : Judo / Jujitsu / Taïso, Karaté/Karaté jutsu/Goshin",
+  "source_confidence": "medium"
+}

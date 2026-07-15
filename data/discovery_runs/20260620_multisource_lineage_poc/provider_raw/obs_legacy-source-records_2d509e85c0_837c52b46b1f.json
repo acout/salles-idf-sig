@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:77",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/seine-et-marne-77/dojo",
+  "collected_at": "2026-06-19T22:46:58+00:00",
+  "raw_name": "Dojo en Seine-et-marne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "KUNPUKAN DOJO · 173 rue St Merry 77300 Fontainebleau ; Dojo Sud 77 · 39 rue Royale 77300 Fontainebleau ; SEIRYUKAN DOJO · 11 rue Caillets 77120 Coulommiers ; Self",
+  "raw_html_excerpt": "Dojo en Seine-et-marne - Pages Jaunes. KUNPUKAN DOJO · 173 rue St Merry 77300 Fontainebleau ; Dojo Sud 77 · 39 rue Royale 77300 Fontainebleau ; SEIRYUKAN DOJO · 11 rue Caillets 77120 Coulommiers ; Self",
+  "raw_json": {
+    "title": "Dojo en Seine-et-marne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/seine-et-marne-77/dojo",
+    "description": "KUNPUKAN DOJO · 173 rue St Merry 77300 Fontainebleau ; Dojo Sud 77 · 39 rue Royale 77300 Fontainebleau ; SEIRYUKAN DOJO · 11 rue Caillets 77120 Coulommiers ; Self",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo en Seine-et-marne - Pages Jaunes. KUNPUKAN DOJO · 173 rue St Merry 77300 Fontainebleau ; Dojo Sud 77 · 39 rue Royale 77300 Fontainebleau ; SEIRYUKAN DOJO · 11 rue Caillets 77120 Coulommiers ; Self",
+  "source_confidence": "medium"
+}

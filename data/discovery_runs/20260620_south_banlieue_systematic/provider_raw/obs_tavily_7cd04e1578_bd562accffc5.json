@@ -1,0 +1,19 @@
+{
+  "name": "Location salle de formation à Chevilly-Larue (94550) - 1001 Salles",
+  "title": "Location salle de formation à Chevilly-Larue (94550) - 1001 Salles",
+  "website": "https://www.1001salles.com/salle-de-formation-3-chevilly-larue-v.html",
+  "source_url": "https://www.1001salles.com/salle-de-formation-3-chevilly-larue-v.html",
+  "source_domain": "1001salles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.58237284,
+  "provider_rank": 3,
+  "discovery_prompt_id": "fr_chevilly larue_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Chevilly-Larue (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Location salle de formation : Déjeuner et diner possibles Réunion d'entreprises (séminaire, kick off, formation ...) 3 espaces à utiliser pour une capacité",
+  "evidence_text": "Location salle de formation : Déjeuner et diner possibles Réunion d'entreprises (séminaire, kick off, formation ...) 3 espaces à utiliser pour une capacité",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:50+00:00"
+}

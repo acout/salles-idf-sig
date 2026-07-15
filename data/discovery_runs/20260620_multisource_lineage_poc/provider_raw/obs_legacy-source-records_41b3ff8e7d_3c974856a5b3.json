@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:78",
+  "source_url": "https://www.yogamania.fr/location-de-salle",
+  "collected_at": "2026-06-19T22:46:48+00:00",
+  "raw_name": "Location de salle - Versailles - Yogamania",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "QUARTIER RIVE-DROITE “47 Foch” : Salle Prema, 47 rue du Maréchal Foch, 78000 Versailles : salle collective de 90m² avec espace vestiaire dans la salle. TARIFS :.",
+  "raw_html_excerpt": "Location de salle - Versailles - Yogamania. QUARTIER RIVE-DROITE “47 Foch” : Salle Prema, 47 rue du Maréchal Foch, 78000 Versailles : salle collective de 90m² avec espace vestiaire dans la salle. TARIFS :.",
+  "raw_json": {
+    "title": "Location de salle - Versailles - Yogamania",
+    "url": "https://www.yogamania.fr/location-de-salle",
+    "description": "QUARTIER RIVE-DROITE “47 Foch” : Salle Prema, 47 rue du Maréchal Foch, 78000 Versailles : salle collective de 90m² avec espace vestiaire dans la salle. TARIFS :.",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location de salle - Versailles - Yogamania. QUARTIER RIVE-DROITE “47 Foch” : Salle Prema, 47 rue du Maréchal Foch, 78000 Versailles : salle collective de 90m² avec espace vestiaire dans la salle. TARIFS :.",
+  "source_confidence": "medium"
+}

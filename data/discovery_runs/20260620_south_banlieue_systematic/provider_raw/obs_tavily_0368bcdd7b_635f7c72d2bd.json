@@ -1,0 +1,19 @@
+{
+  "name": "Location de salle à Meudon (92190) - 1001 Salles",
+  "title": "Location de salle à Meudon (92190) - 1001 Salles",
+  "website": "https://www.1001salles.com/location-de-salle-2-meudon-v.html",
+  "source_url": "https://www.1001salles.com/location-de-salle-2-meudon-v.html",
+  "source_domain": "1001salles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.63452125,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_meudon_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Meudon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Location de salle : À Meudon, notre hôtel vous accueille pour vos événements privés, qu'il s'agisse de réceptions, anniversaires, mariages ou fêtes de famille.",
+  "evidence_text": "Location de salle : À Meudon, notre hôtel vous accueille pour vos événements privés, qu'il s'agisse de réceptions, anniversaires, mariages ou fêtes de famille.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:12+00:00"
+}

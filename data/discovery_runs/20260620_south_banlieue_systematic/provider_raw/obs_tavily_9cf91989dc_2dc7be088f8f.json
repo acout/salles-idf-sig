@@ -1,0 +1,19 @@
+{
+  "name": "Yoga Studios in New York City - CorePower Yoga",
+  "title": "Yoga Studios in New York City - CorePower Yoga",
+  "website": "https://www.corepoweryoga.com/yoga-studio/all-locations/new-york-city",
+  "source_url": "https://www.corepoweryoga.com/yoga-studio/all-locations/new-york-city",
+  "source_domain": "corepoweryoga.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.025782676,
+  "provider_rank": 6,
+  "discovery_prompt_id": "fr_plessis robinson_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Le Plessis-Robinson (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "CorePower Yoga logo\nCorePower Yoga logo\nCorePower Yoga logo\nProfile Icon\nMenu Toggle\nClose\nProfile Icon\nProfile Icon\nHelp Icon\nShopping Bag Icon\nLive Your Power Logo",
+  "evidence_text": "CorePower Yoga logo\nCorePower Yoga logo\nCorePower Yoga logo\nProfile Icon\nMenu Toggle\nClose\nProfile Icon\nProfile Icon\nHelp Icon\nShopping Bag Icon\nLive Your Power Logo",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:41+00:00"
+}

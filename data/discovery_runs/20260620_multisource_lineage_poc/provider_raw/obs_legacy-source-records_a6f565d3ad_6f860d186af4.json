@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:94",
+  "source_url": "https://www.jemepropose.com/annonces/location-de-salle/st-maur-des-fosses-94",
+  "collected_at": "2026-06-19T22:46:45+00:00",
+  "raw_name": "Location de salle à Saint-Maur-des-Fossés (94100) - Jemepropose",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Centre forme et santé propose deux salles à louer pour des activités telles que le yoga, le pilate, les arts martiaux, le théàtre... Une salle",
+  "raw_html_excerpt": "Location de salle à Saint-Maur-des-Fossés (94100) - Jemepropose. Le Centre forme et santé propose deux salles à louer pour des activités telles que le yoga, le pilate, les arts martiaux, le théàtre... Une salle",
+  "raw_json": {
+    "title": "Location de salle à Saint-Maur-des-Fossés (94100) - Jemepropose",
+    "url": "https://www.jemepropose.com/annonces/location-de-salle/st-maur-des-fosses-94",
+    "description": "Le Centre forme et santé propose deux salles à louer pour des activités telles que le yoga, le pilate, les arts martiaux, le théàtre... Une salle",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location de salle à Saint-Maur-des-Fossés (94100) - Jemepropose. Le Centre forme et santé propose deux salles à louer pour des activités telles que le yoga, le pilate, les arts martiaux, le théàtre... Une salle",
+  "source_confidence": "low"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:91",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/essonne-91/danse-salles-et-lecons",
+  "collected_at": "2026-06-19T22:46:39+00:00",
+  "raw_name": "Danse salles et leçons en Essonne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Belle Fée Danse vous invite à explorer la danse au cœur d'un espace convivial et chaleureux en Essonne (91). Sur 600 m² avec trois salles en parquet, cet",
+  "raw_html_excerpt": "Danse salles et leçons en Essonne - Pages Jaunes. Belle Fée Danse vous invite à explorer la danse au cœur d'un espace convivial et chaleureux en Essonne (91). Sur 600 m² avec trois salles en parquet, cet",
+  "raw_json": {
+    "title": "Danse salles et leçons en Essonne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/essonne-91/danse-salles-et-lecons",
+    "description": "Belle Fée Danse vous invite à explorer la danse au cœur d'un espace convivial et chaleureux en Essonne (91). Sur 600 m² avec trois salles en parquet, cet",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Danse salles et leçons en Essonne - Pages Jaunes. Belle Fée Danse vous invite à explorer la danse au cœur d'un espace convivial et chaleureux en Essonne (91). Sur 600 m² avec trois salles en parquet, cet",
+  "source_confidence": "medium"
+}

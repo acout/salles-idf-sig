@@ -1,0 +1,181 @@
+![Senacs](/build/logotypes/senacs-black-200.png)
+![illustration sidebar](/build/logotypes/logo_fed.png)
+![illustration sidebar](/build/logotypes/logo_caf.png)
+
+##### Partenaires
+
+![CAF](/build/logotypes/allocations-familiales.png)
+![Fédération des Centres sociaux et Socioculturels de France](/build/logotypes/centres-sociaux.png)
+
+#### Validation de la Charte d'utilisation de SENACS
+
+## CHARTE D’UTILISATION DE SENACS
+
+### ***1. Cadre général***
+
+#### **1.1. Définition**
+
+La présente charte définit les règles d’usage qui s’imposent à tout utilisateur des données et
+outils issus de la base SENACS.
+
+#### **1.2. Temporalité**
+
+Cette charte donne des points de repères utilisables dans les différentes phases d’un cycle SENACS : saisies des données, contrôle de cohérence, analyses et publications/communication.
+
+#### **1.3. Acteurs concernés**
+
+Chaque territoire mandate des correspondants SENACS reconnus par le réseau des Caf et le mouvement fédéral des centres sociaux. Ces correspondants SENACS sont habilités par leurs institutions respectives pour effectuer le suivi des saisies et la construction des analyses : seuls ces correspondants reçoivent les « identifiants administrateur » permettant l’accès aux données et aux outils disponibles sur le site www.senacs.fr, selon les éléments décrits dans le Guide d’Utilisation de la base senacs.fr. Ces identifiants ne doivent pas être partagés, si d’autres personnes que les référents ont besoin d’un accès en consultation, il est possible au cas par cas d’en faire la demande au comité technique national.
+
+### ***2. Une collecte loyale des données***
+
+#### **2.1. Honnêteté de la saisie des données**
+
+La saisie des données est effectuée par les centres sociaux (CSX) et les espaces de vie sociale (EVS) sur la base de la transparence et de l’honnêteté : les structures AVS répondent au questionnaire en fonction de leur compréhension et de leur interprétation des questions, qui sont explicitées dans le Guide d’Utilisation.
+
+Si un problème de compréhension demeure, les structures peuvent en faire part à leur Caf ou à leur représentation fédérale locale[1](#sdfootnote1sym) qui alertera le Comité Technique National.
+
+#### **2.2. Transparence de la saisie des données**
+
+Au moment du contrôle de cohérence, le(s) correspondant(s) SENACS peut interpeller au cas par cas les structures de son territoire si des données lui paraissent diverger de la réalité : les données reposant sur du déclaratif, l’objectif est de s’accorder de façon transparente pour éviter tout biais dans l’analyse globale.
+
+Dans le cas où la Caf ou bien la représentation fédérale locale des centres sociaux saisit une partie des données pour le centre social, celui-ci a le droit de regard et peut questionner ses interlocuteurs en cas de divergence.
+
+#### **2.3. Anonymat et objectif de neutralité**
+
+Afin d’en garantir la neutralité, le traitement des réponses des centres sociaux est réalisée de manière anonyme, globale et agrégée à l’échelle du département, de la région et du territoire national.
+
+Chaque structure peut avoir accès aux tableaux automatisés issus des données s’il en exprime la demande auprès du correspondant Caf ou représentant fédéral départemental.
+
+### ***3. Une analyse co-construite à partir des données***
+
+#### **3.1. Finalités de la base SENACS**
+
+L’utilisation des données issues de la base SENACS permet de nourrir des analyses et des enquêtes à différents niveaux.   
+La méthodologie d’exploitation des données doit permettre de toujours conserver les principes d’anonymat évoqués en 2.3.  
+Les finalités de SENACS sont les suivantes :
+
+*Une utilisation des données à différentes échelles*
+
+La base SENACS se construit à partir de grands ensembles régionaux.   
+L’outil est conçu pour « donner à voir » ce qu’est un centre social et pour le situer dans un ensemble territorial et partenarial plus vaste.  
+Les données peuvent donc également servir à des analyses départementales et infra-départementales en fonction des besoins et des objectifs stratégiques poursuivis localement.
+
+* *Une exploitation thématique des données*
+
+Les données issues de la base senacs.fr permettent de réaliser des analyses plus approfondies et thématiques, au-delà de la réalisation de la plaquette de communication annuelle.
+
+#### **3.2. Des membres du Comité de Pilotage**
+
+Chaque territoire se constitue en Comité de Pilotage pour effectuer des analyses partagées à partir des données SENACS.  
+A minima, les membres du Comité de Pilotage d’un département sont les suivants : une personne issue de la Caf et une personne issue de la représentation locale des centres sociaux reconnue par le mouvement fédéral.  
+A l’échelle d’une région, chaque département mandate une double représentation Caf et Centres Sociaux.  
+Les membres du Comité de Pilotage désignent collégialement une personne en charge de la préparation des documents de travail (tableaux de réponses agrégés par question) : seule cette personne a accès à l’ensemble des données pour préparer les bases et l’animation de la phase d’analyse.  
+Chaque territoire est libre d’associer ou non des centres sociaux et d’autres partenaires aux rencontres du Comité de Pilotage, mais sans leur donner l’accès aux données brutes de la base SENACS.
+
+#### **3.3. Des engagements du Comité de Pilotage**
+
+Les membres du Comité de Pilotage s’engagent à co-construire des analyses territoriales partagées entre le réseau des Caf et des représentations locales des centres sociaux reconnues par le mouvement fédéral: ces analyses, portant sur des tendances, sont réalisées avec intégrité et rigueur méthodologique, en lien avec la démarche nationale.
+
+### ***4. La communication des données***
+
+#### **4.1 Citer la source des données**
+
+Pour toute utilisation des données SENACS, il convient de citer la source (logo, lien vers site SENACS…)
+
+#### **4.2 Une plaquette de communication :**
+
+Les plaquettes locales SENACS suivent une trame commune en lien avec la démarche nationale et font l’objet de validation préalable par les membres du Comité de Pilotage.
+
+#### **4.3 Une identité nationale de SENACS**
+
+Les livrables de communication SENACS (plaquettes ou autres supports issus de la boite à outil) suivent une trame commune en lien avec la démarche nationale et font l’objet de validation. Chaque référent s’engage à respecter ou faire respecter le cadre graphique national en cas d’utilisation par des tiers associés (chargés de communication, prestataire graphistes…). Le respect de la charte graphique contribue à garantir la légitimité et la qualité du projet SENACS.
+
+[1](#sdfootnote1anc) NB : Lorsqu’on parle de représentation fédérale locale, il s’agit de la représentation des centres sociaux reconnue par le mouvement fédéral national des centres sociaux, quelle que soit sa forme juridique (fédération, union, association, collectif…)
+
+J'ai lu et j'accepte la charte d'utilisation de Senacs 
+
+*Une exploitation thématique des données*
+
+Les données issues de la base senacs.fr permettent de réaliser des analyses plus approfondies et thématiques, au-delà de la réalisation de la plaquette de communication annuelle.
+
+#### **3.2. Des membres du Comité de Pilotage**
+
+Chaque territoire se constitue en Comité de Pilotage pour effectuer des analyses partagées à partir des données SENACS.  
+A minima, les membres du Comité de Pilotage d’un département sont les suivants : une personne issue de la Caf et une personne issue de la représentation locale des centres sociaux reconnue par le mouvement fédéral.  
+A l’échelle d’une région, chaque département mandate une double représentation Caf et Centres Sociaux.  
+Les membres du Comité de Pilotage désignent collégialement une personne en charge de la préparation des documents de travail (tableaux de réponses agrégés par question) : seule cette personne a accès à l’ensemble des données pour préparer les bases et l’animation de la phase d’analyse.  
+Chaque territoire est libre d’associer ou non des centres sociaux et d’autres partenaires aux rencontres du Comité de Pilotage, mais sans leur donner l’accès aux données brutes de la base SENACS.
+
+#### **3.3. Des engagements du Comité de Pilotage**
+
+Les membres du Comité de Pilotage s’engagent à co-construire des analyses territoriales partagées entre le réseau des Caf et des représentations locales des centres sociaux reconnues par le mouvement fédéral: ces analyses, portant sur des tendances, sont réalisées avec intégrité et rigueur méthodologique, en lien avec la démarche nationale.
+
+### ***4. La communication des données***
+
+#### **4.1 Citer la source des données**
+
+Pour toute utilisation des données SENACS, il convient de citer la source (logo, lien vers site SENACS…)
+
+#### **4.2 Une plaquette de communication :**
+
+Les plaquettes locales SENACS suivent une trame commune en lien avec la démarche nationale et font l’objet de validation préalable par les membres du Comité de Pilotage.
+
+#### **4.3 Une identité nationale de SENACS**
+
+Les livrables de communication SENACS (plaquettes ou autres supports issus de la boite à outil) suivent une trame commune en lien avec la démarche nationale et font l’objet de validation. Chaque référent s’engage à respecter ou faire respecter le cadre graphique national en cas d’utilisation par des tiers associés (chargés de communication, prestataire graphistes…). Le respect de la charte graphique contribue à garantir la légitimité et la qualité du projet SENACS.
+
+[1](#sdfootnote1anc) NB : Lorsqu’on parle de représentation fédérale locale, il s’agit de la représentation des centres sociaux reconnue par le mouvement fédéral national des centres sociaux, quelle que soit sa forme juridique (fédération, union, association, collectif…)
+
+# Liste des centres sociaux
+
+| [Nom](/structure/csx?page=1&sort=e.nom&direction=asc "Nom") | [Ville](/structure/csx?page=1&sort=c.nom&direction=asc "Ville") |
+| --- | --- |
+| [LE CARROUSEL](#) | 33110Le Bouscat |
+| [MJC CENTRE VILLE DE MERIGNAC](#) | 33700Mérignac |
+| [Ricochet](#) | 33110Le Bouscat |
+| [PONT D'OUILLY LOISIRS](#) | 14690Pont-d'Ouilly |
+| [ESPACE CENTRE](#) | 62100Calais |
+| [CSC - MAISON POUR TOUS DE CHATILLON SUR THOUET](#) | 79200Châtillon-sur-Thouet |
+| [Centre Social La Maioun](#) | 06390Coaraze |
+| [Lou Mercat /Centre Social mosaïque](#) | 81600Gaillac |
+| [CS LA LOCOLLECTIVE](#) | 46160Cajarc |
+| [ASSOCIATION LA MARGELLE](#) | 68850Staffelfelden |
+| [CENTRE SOCIAL LA FORGE](#) | 68500Berrwiller |
+| [Aquarelle, Centre social](#) | 13130Berre-l'Étang |
+| [MAISON DES MARMANDAIS](#) | 47200Marmande |
+| [BULLE DE VIE](#) | 71570La Chapelle-de-Guinchay |
+| [ASS VILLAGES SOLIDAIRES entre Charolais et Mâconnais](#) | 71520Matour |
+| [CENTRE SOCIOCULTUREL PRIMEVERE LESSON](#) | 17300Rochefort |
+| [COMITÉ DE QUARTIER LA VOINAIE](#) | 90100Delle |
+| [L'ARCHE DE NOE - FONDATION DE L'ARMEE DU SALUT](#) | 69007Lyon 7e Arrondissement |
+| [CENTRE SOCIAL DOU BOUCAOU](#) | 64340Boucau |
+| [CSF AGF WASSELONNE](#) | 67310Wasselonne |
+| [KERMARRON MAISON SOLIDAIRE](#) | 29100Douarnenez |
+| [Les Rendez-Vous des Monts d'Arrée](#) | 29530Loqueffret |
+| [Centre social Mazette](#) | 35240Retiers |
+| [CS Arc en Ciel](#) | 54170Colombey-les-Belles |
+| [Centre Social La Renardière](#) | 54360Mont-sur-Meurthe |
+
+# Informations sur la structure
+
+## LE CARROUSEL
+
+Fiche identité
+
+![](/uploads/structure/logos/LOGO-LeCarrouselRVB.jpg)
+
+Adresse
+
+Adresse mail contact : contact@lecarrouselasso.fr
+  
+Site internet : http://www.lecarrouselasso.fr
+  
+Numéro SIRET : 45084019400036
+
+Historique
+
+Date du 1er agrément : 01/01/2019  
+Population de la zone de compétence : 13000  
+
+Le Carrousel est une association d’animation locale, de service et de projets implantée sur deux sites dans la partie ouest de la ville du Bouscat. Crée le 13 décembre 2017, elle est en réalité le résultat de la fusion de deux associations historiques du Bouscat : JLN (Jeunes Loisirs et Nature) et LABCDEFG.  
+Ces deux associations ont relevé le défi de fusionner et de faire évoluer leur projet avec

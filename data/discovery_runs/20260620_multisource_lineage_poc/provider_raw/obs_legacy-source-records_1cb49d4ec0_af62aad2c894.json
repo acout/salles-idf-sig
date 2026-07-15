@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:94",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/dojo",
+  "collected_at": "2026-06-19T22:46:56+00:00",
+  "raw_name": "Dojo en Val-de-marne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Notre club met à votre disposition un stade avec piste, aire de saut et de lancer, ainsi qu'une salle de musculation pour progresser à votre rythme, que vous",
+  "raw_html_excerpt": "Dojo en Val-de-marne - Pages Jaunes. Notre club met à votre disposition un stade avec piste, aire de saut et de lancer, ainsi qu'une salle de musculation pour progresser à votre rythme, que vous",
+  "raw_json": {
+    "title": "Dojo en Val-de-marne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/dojo",
+    "description": "Notre club met à votre disposition un stade avec piste, aire de saut et de lancer, ainsi qu'une salle de musculation pour progresser à votre rythme, que vous",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo en Val-de-marne - Pages Jaunes. Notre club met à votre disposition un stade avec piste, aire de saut et de lancer, ainsi qu'une salle de musculation pour progresser à votre rythme, que vous",
+  "source_confidence": "medium"
+}

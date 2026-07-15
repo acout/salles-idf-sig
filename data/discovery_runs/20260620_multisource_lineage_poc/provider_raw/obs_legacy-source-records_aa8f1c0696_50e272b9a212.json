@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:94",
+  "source_url": "https://www.yelp.com/search?cflt=dancestudio&find_loc=Saint-Maur-des-Foss%C3%A9s%2C+Val-de-Marne",
+  "collected_at": "2026-06-19T22:46:35+00:00",
+  "raw_name": "THE BEST 10 Dance Studios in SAINT-MAUR-DES-FOSSÉS, VAL ...",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Complexe sportif, art du déplacement, tricking, école de danse, stages internationaux, locations de salles, etc. See all reviews. Salsa Caraibes - Dance Studios",
+  "raw_html_excerpt": "THE BEST 10 Dance Studios in SAINT-MAUR-DES-FOSSÉS, VAL .... Complexe sportif, art du déplacement, tricking, école de danse, stages internationaux, locations de salles, etc. See all reviews. Salsa Caraibes - Dance Studios",
+  "raw_json": {
+    "title": "THE BEST 10 Dance Studios in SAINT-MAUR-DES-FOSSÉS, VAL ...",
+    "url": "https://www.yelp.com/search?cflt=dancestudio&find_loc=Saint-Maur-des-Foss%C3%A9s%2C+Val-de-Marne",
+    "description": "Complexe sportif, art du déplacement, tricking, école de danse, stages internationaux, locations de salles, etc. See all reviews. Salsa Caraibes - Dance Studios",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "THE BEST 10 Dance Studios in SAINT-MAUR-DES-FOSSÉS, VAL .... Complexe sportif, art du déplacement, tricking, école de danse, stages internationaux, locations de salles, etc. See all reviews. Salsa Caraibes - Dance Studios",
+  "source_confidence": "low"
+}

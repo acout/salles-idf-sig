@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:75",
+  "source_url": "https://www.methode-taranto.com/location-de-salle-paris",
+  "collected_at": "2026-06-19T22:46:41+00:00",
+  "raw_name": "Location Salle Yoga Paris | Studio dès 35€ / h - Méthode Taranto",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "La location de la salle de yoga comprend : · 40 tapis · 28 briques · 20 sangles · 20 bolsters · 20 paires de lestes de 1kg · 20 elastiband · 24 couvertures.",
+  "raw_html_excerpt": "Location Salle Yoga Paris | Studio dès 35€ / h - Méthode Taranto. La location de la salle de yoga comprend : · 40 tapis · 28 briques · 20 sangles · 20 bolsters · 20 paires de lestes de 1kg · 20 elastiband · 24 couvertures.",
+  "raw_json": {
+    "title": "Location Salle Yoga Paris | Studio dès 35€ / h - Méthode Taranto",
+    "url": "https://www.methode-taranto.com/location-de-salle-paris",
+    "description": "La location de la salle de yoga comprend : · 40 tapis · 28 briques · 20 sangles · 20 bolsters · 20 paires de lestes de 1kg · 20 elastiband · 24 couvertures.",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location Salle Yoga Paris | Studio dès 35€ / h - Méthode Taranto. La location de la salle de yoga comprend : · 40 tapis · 28 briques · 20 sangles · 20 bolsters · 20 paires de lestes de 1kg · 20 elastiband · 24 couvertures.",
+  "source_confidence": "low"
+}

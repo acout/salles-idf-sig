@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:94",
+  "source_url": "https://judo94.net/la-ligue/dojos-et-districts",
+  "collected_at": "2026-06-19T22:46:56+00:00",
+  "raw_name": "Les DOJO et Districts – Comité de Judo du Val de Marne - judo94.net",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Les DOJO : DOJO Val de Marnais accueillant les animations et compétitions de la ligue: THIAIS : Dojo du Palais Omnisports – Place Vincent Van Gogh Tél. : 01",
+  "raw_html_excerpt": "Les DOJO et Districts – Comité de Judo du Val de Marne - judo94.net. Les DOJO : DOJO Val de Marnais accueillant les animations et compétitions de la ligue: THIAIS : Dojo du Palais Omnisports – Place Vincent Van Gogh Tél. : 01",
+  "raw_json": {
+    "title": "Les DOJO et Districts – Comité de Judo du Val de Marne - judo94.net",
+    "url": "https://judo94.net/la-ligue/dojos-et-districts",
+    "description": "Les DOJO : DOJO Val de Marnais accueillant les animations et compétitions de la ligue: THIAIS : Dojo du Palais Omnisports – Place Vincent Van Gogh Tél. : 01",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Les DOJO et Districts – Comité de Judo du Val de Marne - judo94.net. Les DOJO : DOJO Val de Marnais accueillant les animations et compétitions de la ligue: THIAIS : Dojo du Palais Omnisports – Place Vincent Van Gogh Tél. : 01",
+  "source_confidence": "low"
+}

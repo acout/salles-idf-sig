@@ -1,0 +1,8 @@
+{
+  "total_entities": 379,
+  "prompts_generated": 379,
+  "no_content": 0,
+  "no_content_samples": [],
+  "output_file": "data/discovery_runs/20260620_multisource_lineage_enriched/ai_extraction/extraction_prompts.json",
+  "avg_prompt_chars": 3658
+}

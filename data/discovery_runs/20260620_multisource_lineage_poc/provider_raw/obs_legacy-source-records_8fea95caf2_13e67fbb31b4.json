@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:75",
+  "source_url": "https://pariswushu.wixsite.com/asso/location-de-dojo",
+  "collected_at": "2026-06-19T22:46:52+00:00",
+  "raw_name": "Location de dojo | asso - Wix.com",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Location du dojo: 130 m² dont 90 m² de surface recouverts de tatamis. Miroir, barres au mur et sacs de frappe installés. Vestiaires hommes et femmes,",
+  "raw_html_excerpt": "Location de dojo | asso - Wix.com. Location du dojo: 130 m² dont 90 m² de surface recouverts de tatamis. Miroir, barres au mur et sacs de frappe installés. Vestiaires hommes et femmes,",
+  "raw_json": {
+    "title": "Location de dojo | asso - Wix.com",
+    "url": "https://pariswushu.wixsite.com/asso/location-de-dojo",
+    "description": "Location du dojo: 130 m² dont 90 m² de surface recouverts de tatamis. Miroir, barres au mur et sacs de frappe installés. Vestiaires hommes et femmes,",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Location de dojo | asso - Wix.com. Location du dojo: 130 m² dont 90 m² de surface recouverts de tatamis. Miroir, barres au mur et sacs de frappe installés. Vestiaires hommes et femmes,",
+  "source_confidence": "medium"
+}

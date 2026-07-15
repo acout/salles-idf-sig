@@ -1,0 +1,19 @@
+{
+  "name": "[PDF] tarifs 2023 salle annexe de la mairie - Châtillon-en-Vendelais",
+  "title": "[PDF] tarifs 2023 salle annexe de la mairie - Châtillon-en-Vendelais",
+  "website": "https://www.chatillon-en-vendelais.fr/wp-content/uploads/2022/02/Salle-annexe-Mairie-tarifs-2023.pdf",
+  "source_url": "https://www.chatillon-en-vendelais.fr/wp-content/uploads/2022/02/Salle-annexe-Mairie-tarifs-2023.pdf",
+  "source_domain": "chatillon-en-vendelais.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.36127794,
+  "provider_rank": 6,
+  "discovery_prompt_id": "fr_prix_capacite_contact",
+  "discovery_prompt": "Trouver pages françaises officielles de location de salle près de Cachan ou Châtillon avec prix, tarif horaire, capacité, adresse exacte, email, téléphone, formulaire, conditions de réservation ou assurance.",
+  "description": "TARIFS 2023 SALLE ANNEXE DE LA MAIRIE Location avec verres et tasses pour 80 personnes Châtillon Hors Châtillon Rencontre après obsèques 23 € 46 € Mise à disposition gratuite pour toutes les associations de Châtillon en diverses institutions CAUTION 1 000 € 1 000 €",
+  "evidence_text": "TARIFS 2023 SALLE ANNEXE DE LA MAIRIE Location avec verres et tasses pour 80 personnes Châtillon Hors Châtillon Rencontre après obsèques 23 € 46 € Mise à disposition gratuite pour toutes les associations de Châtillon en diverses institutions CAUTION 1 000 € 1 000 €",
+  "raw_content": "TARIFS 2023 SALLE ANNEXE DE LA MAIRIE Location avec verres et tasses pour 80 personnes Châtillon Hors Châtillon Rencontre après obsèques 23 € 46 € Mise à disposition gratuite pour toutes les associations de Châtillon en diverses institutions CAUTION 1 000 € 1 000 €",
+  "target_run": "20260620_tavily_prompt_south_fr",
+  "discovered_at": "2026-06-20T07:47:31+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Bay Area Event Rentals | Standard Event Rentals",
+  "title": "Bay Area Event Rentals | Standard Event Rentals",
+  "website": "https://www.standardeventrentals.com",
+  "source_url": "https://www.standardeventrentals.com",
+  "source_domain": "standardeventrentals.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.040529426,
+  "provider_rank": 8,
+  "discovery_prompt_id": "fr_vanves_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Vanves (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Standard Event Rentals\nKelliAvilaPhoto-632\nmeganwelker-mh2020-68\nRachel_Jed_Details_Jen_Rodriguez_Photography_058\n_WBP2578 (1)\n_WBP4294 (2)\noutdoor dance floor covered by canopy with dining tables\n\n## Design Your Next Event\n\nWe’re passionate about events and bringing your vision to life. Since 1984, our family-owned and operated company has had the privilege to collaborate and partner with talented clients to create events ranging from high-end weddings to corporate galas throughout Northern California. We set our standards high, and offer an extensive selection, exemplary products,andexceptional service.\n\n## Visit Our Showroom [...] ## Visit Our Showroom\n\nWith our locations in the San Francisco/Bay Areaand Central Valley/Sacramento, and we service clients throughout all of Northern California – from the South Bay, to our city by the bay, inland to the Central Valley, and up to beautiful Wine Country.\n\nmodern seating tables couches and accessories\nStandard Event Rentals\n\nChoose a design center:\n\nSAN FRANCISCO / BAY AREA  \nHayward, CA  \n510.232.5030\n\nCENTRAL VALLEY / SACRAMENTO  \nModesto, CA  \n209.524.1966\n\n© 2026 All Rights Reserved.",
+  "evidence_text": "Standard Event Rentals\nKelliAvilaPhoto-632\nmeganwelker-mh2020-68\nRachel_Jed_Details_Jen_Rodriguez_Photography_058\n_WBP2578 (1)\n_WBP4294 (2)\noutdoor dance floor covered by canopy with dining tables\n\n## Design Your Next Event\n\nWe’re passionate about events and bringing your vision to life. Since 1984, our family-owned and operated company has had the privilege to collaborate and partner with talented clients to create events ranging from high-end weddings to corporate galas throughout Northern California. We set our standards high, and offer an extensive selection, exemplary products,andexceptional service.\n\n## Visit Our Showroom [...] ## Visit Our Showroom\n\nWith our locations in the San Francisco/Bay Areaand Central Valley/Sacramento, and we service clients throughout all of Northern California – from the South Bay, to our city by the bay, inland to the Central Valley, and up to beautiful Wine Country.\n\nmodern seating tables couches and accessories\nStandard Event Rentals\n\nChoose a design center:\n\nSAN FRANCISCO / BAY AREA  \nHayward, CA  \n510.232.5030\n\nCENTRAL VALLEY / SACRAMENTO  \nModesto, CA  \n209.524.1966\n\n© 2026 All Rights Reserved.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:58+00:00"
+}

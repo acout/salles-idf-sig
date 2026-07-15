@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:78",
+  "source_url": "https://www.destination-yvelines.fr/weekend-spa-yvelines",
+  "collected_at": "2026-06-19T22:47:18+00:00",
+  "raw_name": "Weekend spa : voyage au Pays du bien-être - Destination Yvelines",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "La Minotte à Montfort l'Amaury est un lieu exclusif, un lieu intime : quatre chambres et quatre lofts, une parenthèse de charme avec en outre massage, hammam,",
+  "raw_html_excerpt": "Weekend spa : voyage au Pays du bien-être - Destination Yvelines. La Minotte à Montfort l'Amaury est un lieu exclusif, un lieu intime : quatre chambres et quatre lofts, une parenthèse de charme avec en outre massage, hammam,",
+  "raw_json": {
+    "title": "Weekend spa : voyage au Pays du bien-être - Destination Yvelines",
+    "url": "https://www.destination-yvelines.fr/weekend-spa-yvelines",
+    "description": "La Minotte à Montfort l'Amaury est un lieu exclusif, un lieu intime : quatre chambres et quatre lofts, une parenthèse de charme avec en outre massage, hammam,",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Weekend spa : voyage au Pays du bien-être - Destination Yvelines. La Minotte à Montfort l'Amaury est un lieu exclusif, un lieu intime : quatre chambres et quatre lofts, une parenthèse de charme avec en outre massage, hammam,",
+  "source_confidence": "medium"
+}

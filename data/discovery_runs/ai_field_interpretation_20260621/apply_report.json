@@ -1,0 +1,455 @@
+{
+  "results": 253,
+  "updated_features": 152,
+  "updates": {
+    "capacity_text": 83,
+    "price_text": 23,
+    "contact": 22,
+    "postal_code": 82
+  },
+  "skipped": {},
+  "audit_samples": [
+    {
+      "candidate_id": "venue_venue_espace-jules-cesar.fr_guide dacces__x0_0e3114967a",
+      "name": "Espace Jules César",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://espace-jules-cesar.fr/reservation/"
+    },
+    {
+      "candidate_id": "venue_venue_espace-jules-cesar.fr_bureau individuel_",
+      "name": "Espace Jules César - bureau privatif 25m²",
+      "updated": [
+        "capacity_text",
+        "price_text",
+        "contact"
+      ],
+      "url": "https://espace-jules-cesar.fr/location-bureau-privatif-25m2-cergy-pontoise/"
+    },
+    {
+      "candidate_id": "venue_venue_espace-jules-cesar.fr_salle 28 personnes_",
+      "name": "Espace Jules César - salle de réunion 2 à 8 personnes",
+      "updated": [
+        "capacity_text",
+        "price_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://espace-jules-cesar.fr/location-salle-reunion-2-8-personnes-cergy-pontoise/"
+    },
+    {
+      "candidate_id": "venue_venue_espace-jules-cesar.fr_options et services complementaires__x0_a19b03a4bd",
+      "name": "Espace Jules César - salles de réunion",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://espace-jules-cesar.fr/reservation/"
+    },
+    {
+      "candidate_id": "venue_venue_fr.mappy.com_espace formations parisvillejuif_villejuif",
+      "name": "Espace Formations Paris-Villejuif",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://fr.mappy.com/poi/63e0c848692e9b6d11b7334e"
+    },
+    {
+      "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x1_3fe6fe0216",
+      "name": "L'Atelier",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://hangar-y.com/privatisation"
+    },
+    {
+      "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x3_d3e64248ab",
+      "name": "La Guinguette",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://hangar-y.com/privatisation"
+    },
+    {
+      "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x0_1449b1b957",
+      "name": "La Nef",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://hangar-y.com/privatisation"
+    },
+    {
+      "candidate_id": "venue_venue_hangar-y.com_privatisations hangar y__x2_77225311d4",
+      "name": "Restaurant Les Roseaux",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://hangar-y.com/privatisation"
+    },
+    {
+      "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x2_40688e6499",
+      "name": "L’Étang Présent - Cuisine commune",
+      "updated": [
+        "capacity_text",
+        "contact"
+      ],
+      "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    {
+      "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x0_060c31c215",
+      "name": "L’Étang Présent - Grande Salle",
+      "updated": [
+        "capacity_text",
+        "contact"
+      ],
+      "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    {
+      "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x3_13e031869b",
+      "name": "L’Étang Présent - Salle Zen",
+      "updated": [
+        "capacity_text",
+        "contact"
+      ],
+      "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    {
+      "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x1_2e4d20ff03",
+      "name": "L’Étang Présent - Yourte traditionnelle",
+      "updated": [
+        "capacity_text",
+        "contact"
+      ],
+      "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    {
+      "candidate_id": "venue_venue_letangpresent.fr_location pour ateliers et stages__x4_a90b0db933",
+      "name": "L’Étang Présent - Éco-gîte",
+      "updated": [
+        "capacity_text",
+        "contact"
+      ],
+      "url": "https://letangpresent.fr/location-salle-bien-etre-hauts-de-france/"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x1_14e678cf4f",
+      "name": "Cinéma Gérard Philipe",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x5_92716aead0",
+      "name": "La Placette",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x4_5829534729",
+      "name": "Les Terrasses",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x7_08c11ee399",
+      "name": "Musiques Actuelles (studios)",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x6_d529a4c41b",
+      "name": "Salle de Conférence",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x2_86417da821",
+      "name": "Salon Andrea Palladio",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x3_96bfb0ec23",
+      "name": "Salon Canaletto",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x0_bd380709a4",
+      "name": "Théâtre de l'Allegria",
+      "updated": [
+        "capacity_text",
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    {
+      "candidate_id": "venue_venue_themuselab.fr_le studio_",
+      "name": "The Muse Lab",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://themuselab.fr/location-de-salles/"
+    },
+    {
+      "candidate_id": "venue_venue_themuselab.fr_informations__x1_153fa68f41",
+      "name": "The Muse Lab Boulogne-Billancourt",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://themuselab.fr/location-de-salles"
+    },
+    {
+      "candidate_id": "venue_venue_themuselab.fr_informations_",
+      "name": "The Muse Lab Montigny-le-Bretonneux",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://themuselab.fr/location-de-salles"
+    },
+    {
+      "candidate_id": "venue_venue_bastide95.com_salle la villa__x0_aa261d4595",
+      "name": "Salle La Villa - Domaine La Bastide",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/"
+    },
+    {
+      "candidate_id": "venue_venue_bastide95.com_salle le mas__x0_c54f43d815",
+      "name": "Salle Le Mas - Domaine La Bastide",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.bastide95.com/location-salle-le-mas/"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x0_79311b6edf",
+      "name": "Espace Toffoli - Salle n°1",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x1_359d5ebf23",
+      "name": "Espace Toffoli - Salle n°2",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x2_9b2d4b38f4",
+      "name": "Espace Toffoli - Salle n°3",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x3_0853d708e8",
+      "name": "Salle du tribunal de proximité",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    {
+      "candidate_id": "venue_venue_consistoire.org_location de salles_le kremlin-bicêtre",
+      "name": "Centre communautaire Rina et Chammaï WENIGER",
+      "updated": [
+        "contact",
+        "postal_code"
+      ],
+      "url": "https://www.consistoire.org/kremlinbicetre/salle"
+    },
+    {
+      "candidate_id": "venue_venue_dojo5.fr_selfdefense_montrouge",
+      "name": "DOJO 5",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.dojo5.fr/location-de-salle/"
+    },
+    {
+      "candidate_id": "venue_venue_dojodeparis.com_dojo de paris_gentilly",
+      "name": "Dojo de Paris",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.dojodeparis.com"
+    },
+    {
+      "candidate_id": "venue_venue_larivieredoree.com_location salle_",
+      "name": "Camping La Rivière Dorée",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.larivieredoree.com/fr/location-salle/"
+    },
+    {
+      "candidate_id": "venue_venue_larivieredoree.com_location salle__x0_85de64ec34",
+      "name": "La Rivière Dorée - chapiteau de réception",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.larivieredoree.com/fr/location-salle/"
+    },
+    {
+      "candidate_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france__x2_b24a9fed61",
+      "name": "Salle de Réunion",
+      "updated": [
+        "capacity_text",
+        "postal_code"
+      ],
+      "url": "https://www.le-rooftop.com"
+    },
+    {
+      "candidate_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france__x0_8e65bbed75",
+      "name": "Salon EastSide",
+      "updated": [
+        "capacity_text",
+        "postal_code"
+      ],
+      "url": "https://www.le-rooftop.com"
+    },
+    {
+      "candidate_id": "venue_venue_le-rooftop.com_le rooftop espaces de location evenementielle situe a champignysurmarne 94 location de salle 309 avenue du general de gaulle champignysurmarne france__x1_2bd3ee1566",
+      "name": "Salon WestView",
+      "updated": [
+        "capacity_text",
+        "postal_code"
+      ],
+      "url": "https://www.le-rooftop.com"
+    },
+    {
+      "candidate_id": "venue_venue_leboncoin.fr_location salle malakoff_malakoff",
+      "name": "Location salle Malakoff",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.leboncoin.fr/ad/locations/3010019425"
+    },
+    {
+      "candidate_id": "venue_venue_rock4you.dance_studios rental_sceaux",
+      "name": "Rock 4 You Studios Rental",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.rock4you.dance/en/salles"
+    },
+    {
+      "candidate_id": "venue_venue_spacebase.com_rent dojo 5 salle 2 paris_gentilly",
+      "name": "DOJO 5 - SALLE 2",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.spacebase.com/en/venue/salle-2-1056508"
+    },
+    {
+      "candidate_id": "venue_venue_studiodiabolo.fr_studiodiabolo cours de danse location de salle le kremlin_le kremlin-bicêtre",
+      "name": "StudioDiabolo",
+      "updated": [
+        "postal_code"
+      ],
+      "url": "https://www.studiodiabolo.fr"
+    },
+    {
+      "candidate_id": "venue_venue_studiolenvol.com_location_montrouge",
+      "name": "Studio l'Envol",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.studiolenvol.com/location-salle-paris.html"
+    },
+    {
+      "candidate_id": "venue_venue_studiolenvol.com_accueil_montrouge_x0_0678c52757",
+      "name": "Studio l'Envol - salle 35 m²",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.studiolenvol.com/location-salle-paris.html"
+    },
+    {
+      "candidate_id": "venue_venue_studiolenvol.com_accueil_montrouge_x1_69adff9bec",
+      "name": "Studio l'Envol - salle 65 m²",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.studiolenvol.com/location-salle-paris.html"
+    },
+    {
+      "candidate_id": "venue_venue_studiomrg.fr_location_sceaux",
+      "name": "Studio MRG",
+      "updated": [
+        "capacity_text",
+        "price_text"
+      ],
+      "url": "https://www.studiomrg.fr/location"
+    },
+    {
+      "candidate_id": "obs_legacy-source-records_9b1a76276c",
+      "name": "A’mare Corsica Seaside Small Resort",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.yogmee.fr/salles/amare-corsica-un-havre-de-paix-en-corse-pour-des-retraites-de-yoga-inoubliables"
+    },
+    {
+      "candidate_id": "obs_legacy-source-records_dc6828ad5e",
+      "name": "Domaine du Pas de l'Ane",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.yogmee.fr/salles/domaine-du-pas-de-l-ane"
+    },
+    {
+      "candidate_id": "obs_legacy-source-records_a3298b1e88",
+      "name": "Ecolodge la Belle Verte",
+      "updated": [
+        "capacity_text"
+      ],
+      "url": "https://www.yogmee.fr/salles/ecolodge-la-belle-verte-lieu-de-retraite-yoga-et-bien-etre"
+    }
+  ]
+}

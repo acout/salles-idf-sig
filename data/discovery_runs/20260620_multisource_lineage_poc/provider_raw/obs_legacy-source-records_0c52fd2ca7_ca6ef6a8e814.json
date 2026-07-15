@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:77",
+  "source_url": "https://www.spectable.com/seine-et-marne/petites-annonces/local-de-repetition/n_2648-l_119.php",
+  "collected_at": "2026-06-19T22:46:36+00:00",
+  "raw_name": "Local de répétition / Location, recherche en Seine et Marne",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Salle de danse à louer pour intervenants souhaitant développer des activités artistiques et culturelles. Aujourd'hui, des cours de danse, yoga, bachata, salsa,",
+  "raw_html_excerpt": "Local de répétition / Location, recherche en Seine et Marne. Salle de danse à louer pour intervenants souhaitant développer des activités artistiques et culturelles. Aujourd'hui, des cours de danse, yoga, bachata, salsa,",
+  "raw_json": {
+    "title": "Local de répétition / Location, recherche en Seine et Marne",
+    "url": "https://www.spectable.com/seine-et-marne/petites-annonces/local-de-repetition/n_2648-l_119.php",
+    "description": "Salle de danse à louer pour intervenants souhaitant développer des activités artistiques et culturelles. Aujourd'hui, des cours de danse, yoga, bachata, salsa,",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Local de répétition / Location, recherche en Seine et Marne. Salle de danse à louer pour intervenants souhaitant développer des activités artistiques et culturelles. Aujourd'hui, des cours de danse, yoga, bachata, salsa,",
+  "source_confidence": "low"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:78",
+  "source_url": "https://www.ffjudo.com/club-le-perray-st-leger-jj-da",
+  "collected_at": "2026-06-19T22:46:59+00:00",
+  "raw_name": "le perray-st leger jjda - France Judo",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo A. DOJO DU PERRAY RUE DES LAURIERS, 78610 LE PERRAY EN YVELINES ; Dojo B · DOJO ST LEGER PLACE DU GROS BILLOT, 78610 ST LEGER EN YVELINES ; Dojo Z · DOJO",
+  "raw_html_excerpt": "le perray-st leger jjda - France Judo. Dojo A. DOJO DU PERRAY RUE DES LAURIERS, 78610 LE PERRAY EN YVELINES ; Dojo B · DOJO ST LEGER PLACE DU GROS BILLOT, 78610 ST LEGER EN YVELINES ; Dojo Z · DOJO",
+  "raw_json": {
+    "title": "le perray-st leger jjda - France Judo",
+    "url": "https://www.ffjudo.com/club-le-perray-st-leger-jj-da",
+    "description": "Dojo A. DOJO DU PERRAY RUE DES LAURIERS, 78610 LE PERRAY EN YVELINES ; Dojo B · DOJO ST LEGER PLACE DU GROS BILLOT, 78610 ST LEGER EN YVELINES ; Dojo Z · DOJO",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "le perray-st leger jjda - France Judo. Dojo A. DOJO DU PERRAY RUE DES LAURIERS, 78610 LE PERRAY EN YVELINES ; Dojo B · DOJO ST LEGER PLACE DU GROS BILLOT, 78610 ST LEGER EN YVELINES ; Dojo Z · DOJO",
+  "source_confidence": "low"
+}

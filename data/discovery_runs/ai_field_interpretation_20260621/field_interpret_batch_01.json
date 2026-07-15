@@ -1,0 +1,772 @@
+[
+  {
+    "candidate_id": "venue_venue_maisondesarts.plessis-robinson.com_privatisation maison des arts de plessis robinson privatisation maison des arts de plessis robinson__x0_bd380709a4",
+    "name": "Théâtre de l'Allegria",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://maisondesarts.plessis-robinson.com/privatisations",
+      "source_url": "https://maisondesarts.plessis-robinson.com/privatisations"
+    },
+    "url": "https://maisondesarts.plessis-robinson.com/privatisations",
+    "url_domain": "maisondesarts.plessis-robinson.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "single_venue",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_mjcslachatre.jimdofree.com_locations salles_clamart",
+    "name": "MJCS La Châtre - salles à louer",
+    "city": "Clamart",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Clamart",
+      "city": "Clamart",
+      "postal_code": null,
+      "specific_rental_page_url": "https://mjcslachatre.jimdofree.com/locations/location-salles",
+      "source_url": "https://mjcslachatre.jimdofree.com/locations/location-salles"
+    },
+    "url": "https://mjcslachatre.jimdofree.com/locations/location-salles",
+    "url_domain": "mjcslachatre.jimdofree.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_themuselab.fr_le studio_",
+    "name": "The Muse Lab",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://themuselab.fr/location-de-salles/",
+      "source_url": "https://themuselab.fr/le-studio/"
+    },
+    "url": "https://themuselab.fr/location-de-salles/",
+    "url_domain": "themuselab.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "venue_rental_mentioned",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_themuselab.fr_informations__x1_153fa68f41",
+    "name": "The Muse Lab Boulogne-Billancourt",
+    "city": "Boulogne-Billancourt",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Boulogne-Billancourt",
+      "city": "Boulogne-Billancourt",
+      "postal_code": null,
+      "specific_rental_page_url": "https://themuselab.fr/location-de-salles",
+      "source_url": "https://themuselab.fr/location-de-salles"
+    },
+    "url": "https://themuselab.fr/location-de-salles",
+    "url_domain": "themuselab.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "official_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_themuselab.fr_informations_",
+    "name": "The Muse Lab Montigny-le-Bretonneux",
+    "city": "",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://themuselab.fr/location-de-salles",
+      "source_url": "https://themuselab.fr/location-de-salles"
+    },
+    "url": "https://themuselab.fr/location-de-salles",
+    "url_domain": "themuselab.fr",
+    "missing_fields": [
+      "address",
+      "adresse complète du studio de Montigny",
+      "capacity",
+      "capacité maximale",
+      "city",
+      "email",
+      "email/téléphone direct",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price",
+      "tarifs détaillés"
+    ],
+    "page_type": "official_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_bastide95.com_mariage_",
+    "name": "Domaine La Bastide",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.bastide95.com/salle-de-mariage-95/",
+      "source_url": "https://www.bastide95.com/salle-de-mariage-95/"
+    },
+    "url": "https://www.bastide95.com/salle-de-mariage-95/",
+    "url_domain": "www.bastide95.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_bastide95.com_mariage__x1_75c71c181c",
+    "name": "La Villa - Domaine La Bastide",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "50 à 120 personnes en repas assis",
+      "capacity_max_detected": 0,
+      "price_text": "Devis gratuit, prix de location non indiqué",
+      "contact": "01 39 32 70 99",
+      "address": "95",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/",
+      "source_url": "https://www.bastide95.com/salle-de-mariage-95/"
+    },
+    "url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/",
+    "url_domain": "www.bastide95.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "price"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_bastide95.com_mariage__x0_be73fcbbcc",
+    "name": "Le Mas - Domaine La Bastide",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "80 à 200 personnes en dîner assis ; jusqu'à 300 en cocktail",
+      "capacity_max_detected": 0,
+      "price_text": "Devis gratuit, prix de location non indiqué",
+      "contact": "01 39 32 70 99",
+      "address": "95",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.bastide95.com/location-salle-le-mas/",
+      "source_url": "https://www.bastide95.com/salle-de-mariage-95/"
+    },
+    "url": "https://www.bastide95.com/location-salle-le-mas/",
+    "url_domain": "www.bastide95.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "price"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_bastide95.com_salle la villa__x0_aa261d4595",
+    "name": "Salle La Villa - Domaine La Bastide",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "50 à 100 personnes ; 50 à 80 avec piste de danse",
+      "capacity_max_detected": 0,
+      "price_text": "Devis gratuit, prix non indiqué",
+      "contact": "01 39 32 70 99",
+      "address": "95",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/",
+      "source_url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/"
+    },
+    "url": "https://www.bastide95.com/location-salle-val-d-oise-la-villa/",
+    "url_domain": "www.bastide95.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_bastide95.com_salle le mas__x0_c54f43d815",
+    "name": "Salle Le Mas - Domaine La Bastide",
+    "city": "",
+    "department": "95",
+    "current": {
+      "capacity_text": "100 à 200 personnes en dîner assis ; jusqu'à 220 en cocktail",
+      "capacity_max_detected": 0,
+      "price_text": "Devis gratuit, prix non indiqué",
+      "contact": "01 39 32 70 99",
+      "address": "95",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.bastide95.com/location-salle-le-mas/",
+      "source_url": "https://www.bastide95.com/location-salle-le-mas/"
+    },
+    "url": "https://www.bastide95.com/location-salle-le-mas/",
+    "url_domain": "www.bastide95.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x0_79311b6edf",
+    "name": "Espace Toffoli - Salle n°1",
+    "city": "Charenton-le-Pont",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Charenton-le-Pont",
+      "city": "Charenton-le-Pont",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+      "source_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "url_domain": "www.charenton.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "municipal_hall_listing",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x1_359d5ebf23",
+    "name": "Espace Toffoli - Salle n°2",
+    "city": "Charenton-le-Pont",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Charenton-le-Pont",
+      "city": "Charenton-le-Pont",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+      "source_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "url_domain": "www.charenton.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "municipal_hall_listing",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x2_9b2d4b38f4",
+    "name": "Espace Toffoli - Salle n°3",
+    "city": "Charenton-le-Pont",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Charenton-le-Pont",
+      "city": "Charenton-le-Pont",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+      "source_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "url_domain": "www.charenton.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "municipal_hall_listing",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_charenton.fr_charentonfr locations de salles__x3_0853d708e8",
+    "name": "Salle du tribunal de proximité",
+    "city": "Charenton-le-Pont",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Charenton-le-Pont",
+      "city": "Charenton-le-Pont",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+      "source_url": "https://www.charenton.fr/decouvrir_charenton/locations_salles"
+    },
+    "url": "https://www.charenton.fr/decouvrir_charenton/locations_salles",
+    "url_domain": "www.charenton.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "municipal_hall_listing",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x4_347c544da2",
+    "name": "Centre de Danse du Marais",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x2_50bedd36f3",
+    "name": "Elephant Paname",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x0_bac544360b",
+    "name": "Espace Culturel Bertin Poirée",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x5_709cde5475",
+    "name": "Espace Sport et Danse",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x6_c9d8d4bd28",
+    "name": "Micadanses",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x3_ee410ea61c",
+    "name": "Salsabor Studio",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_cnd.fr_pdf location de studios a paris et proche banlieue__x1_a50de9c24c",
+    "name": "Studio Magenia",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+      "source_url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf"
+    },
+    "url": "https://www.cnd.fr/fr/file/file/96/inline/locstudiojuin2017.pdf",
+    "url_domain": "www.cnd.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "catalog_pdf",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_consistoire.org_location de salles_le kremlin-bicêtre",
+    "name": "Centre communautaire Rina et Chammaï WENIGER",
+    "city": "Le Kremlin-Bicêtre",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Le Kremlin-Bicêtre",
+      "city": "Le Kremlin-Bicêtre",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.consistoire.org/kremlinbicetre/salle",
+      "source_url": "https://www.consistoire.org/kremlinbicetre/salle"
+    },
+    "url": "https://www.consistoire.org/kremlinbicetre/salle",
+    "url_domain": "www.consistoire.org",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_dojo5.fr_selfdefense_montrouge",
+    "name": "DOJO 5",
+    "city": "Montrouge",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Montrouge",
+      "city": "Montrouge",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.dojo5.fr/location-de-salle/",
+      "source_url": "https://www.dojo5.fr/self-defense/"
+    },
+    "url": "https://www.dojo5.fr/location-de-salle/",
+    "url_domain": "www.dojo5.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "venue_rental_mentioned",
+    "source_reliability": "S4",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_dojodeparis.com_dojo de paris_gentilly",
+    "name": "Dojo de Paris",
+    "city": "Gentilly",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Gentilly",
+      "city": "Gentilly",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.dojodeparis.com",
+      "source_url": "https://www.dojodeparis.com"
+    },
+    "url": "https://www.dojodeparis.com",
+    "url_domain": "www.dojodeparis.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "postal_code",
+      "price"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 16
+  },
+  {
+    "candidate_id": "venue_venue_fontenay-aux-roses.fr_louer une salle municipale fontenayauxroses__x7_309b548417",
+    "name": "Espace Rosa Bonheur - salle de réunion",
+    "city": "Fontenay-aux-Roses",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "",
+      "contact": "",
+      "address": "Fontenay-aux-Roses",
+      "city": "Fontenay-aux-Roses",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale",
+      "source_url": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale"
+    },
+    "url": "https://www.fontenay-aux-roses.fr/loisirs/vie-associative/louer-une-salle-municipale",
+    "url_domain": "www.fontenay-aux-roses.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "price"
+    ],
+    "page_type": "municipal_hall_listing",
+    "source_reliability": "S4",
+    "priority": 16
+  }
+]

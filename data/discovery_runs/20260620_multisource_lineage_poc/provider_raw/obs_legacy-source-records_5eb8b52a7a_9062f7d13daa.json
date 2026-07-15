@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:95",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-d-oise-95/yoga-lecons",
+  "collected_at": "2026-06-19T22:46:51+00:00",
+  "raw_name": "Cours de yoga à Val d'Oise",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Situé au 10 rue Baratier à Franconville, les cours sont dirigés par un instructeur qualifié et expérimenté, qui guide chaque participant à travers une séquence",
+  "raw_html_excerpt": "Cours de yoga à Val d'Oise. Situé au 10 rue Baratier à Franconville, les cours sont dirigés par un instructeur qualifié et expérimenté, qui guide chaque participant à travers une séquence",
+  "raw_json": {
+    "title": "Cours de yoga à Val d'Oise",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-d-oise-95/yoga-lecons",
+    "description": "Situé au 10 rue Baratier à Franconville, les cours sont dirigés par un instructeur qualifié et expérimenté, qui guide chaque participant à travers une séquence",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Cours de yoga à Val d'Oise. Situé au 10 rue Baratier à Franconville, les cours sont dirigés par un instructeur qualifié et expérimenté, qui guide chaque participant à travers une séquence",
+  "source_confidence": "medium"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:75",
+  "source_url": "https://www.lemagasin.org/location-de-salles",
+  "collected_at": "2026-06-19T22:47:02+00:00",
+  "raw_name": "Location de Salles à Paris – Répétitions, Théâtre, Tournage",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Les tarifs de location de salle de répétition, théâtre. À partir de 25€/heure. Tarifs dégressifs en fonction du volume horaire. Un devis personnalisé vous sera",
+  "raw_html_excerpt": "Location de Salles à Paris – Répétitions, Théâtre, Tournage. Les tarifs de location de salle de répétition, théâtre. À partir de 25€/heure. Tarifs dégressifs en fonction du volume horaire. Un devis personnalisé vous sera",
+  "raw_json": {
+    "title": "Location de Salles à Paris – Répétitions, Théâtre, Tournage",
+    "url": "https://www.lemagasin.org/location-de-salles",
+    "description": "Les tarifs de location de salle de répétition, théâtre. À partir de 25€/heure. Tarifs dégressifs en fonction du volume horaire. Un devis personnalisé vous sera",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Location de Salles à Paris – Répétitions, Théâtre, Tournage. Les tarifs de location de salle de répétition, théâtre. À partir de 25€/heure. Tarifs dégressifs en fonction du volume horaire. Un devis personnalisé vous sera",
+  "source_confidence": "low"
+}

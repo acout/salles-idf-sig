@@ -1,0 +1,737 @@
+[
+  {
+    "candidate_id": "venue_venue_studiolenvol.com_location_montrouge_x1_26b136ec4e",
+    "name": "Studio l'Envol - Petit studio",
+    "city": "Montrouge",
+    "department": "75",
+    "current": {
+      "capacity_text": "jusqu'à 12 selon activité",
+      "capacity_max_detected": 0,
+      "price_text": "15€ à 30€ TTC/h selon usage et horaire",
+      "contact": "",
+      "address": "Montrouge",
+      "city": "Montrouge",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.studiolenvol.com/location-salle-paris.html",
+      "source_url": "https://www.studiolenvol.com/location-salle-paris.html"
+    },
+    "url": "https://www.studiolenvol.com/location-salle-paris.html",
+    "url_domain": "www.studiolenvol.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone"
+    ],
+    "page_type": "official_rental_page_multi_space",
+    "source_reliability": "S4",
+    "priority": 12
+  },
+  {
+    "candidate_id": "venue_venue_arcueil.fr_centre mai politzer_arcueil_x0_2df3c9e47e",
+    "name": "Centre Maï Politzer",
+    "city": "Arcueil",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Consultation médicale/remboursement, pas location",
+      "contact": "01 46 15 08 09",
+      "address": "94110 Arcueil",
+      "city": "Arcueil",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.arcueil.fr/demarches-et-services/solidarite-et-sante/sante/centre-mai-politzer/"
+    },
+    "url": "https://www.arcueil.fr/demarches-et-services/solidarite-et-sante/sante/centre-mai-politzer/",
+    "url_domain": "www.arcueil.fr",
+    "missing_fields": [
+      "capacity",
+      "email",
+      "rental_page_url"
+    ],
+    "page_type": "generic_location_page",
+    "source_reliability": "S4",
+    "priority": 10
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_692aae21fb",
+    "name": "82 Studio",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/82-studio,301647.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/82-studio,301647.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_afc6798626",
+    "name": "82Studio",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "+33 1.64.33.31.01",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/82studio,385757.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/82studio,385757.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "rental_page_url"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_a121bb189e",
+    "name": "Everest Studio Group",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/everest-studio-group,385109.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/everest-studio-group,385109.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "rental_page_url"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_049b74aeae",
+    "name": "Studio 1 Song",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/studio-1-song,322940.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/studio-1-song,322940.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_4c48afa030",
+    "name": "Studio la voute",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "+33 6.70.24.39.24",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/studio-la-voute,330864.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/studio-la-voute,330864.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "geocode_failed",
+      "rental_page_url"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "obs_legacy-source-records_70ed5172d6",
+    "name": "Studio scotina",
+    "city": "",
+    "department": "77",
+    "current": {
+      "capacity_text": "non indiqué",
+      "capacity_max_detected": 0,
+      "price_text": "non indiqué",
+      "contact": "",
+      "address": "",
+      "city": "",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.easyzic.com/annuaire/etablissements/studio-scotina,307266.html"
+    },
+    "url": "https://www.easyzic.com/annuaire/etablissements/studio-scotina,307266.html",
+    "url_domain": "www.easyzic.com",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "city",
+      "email",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "third_party_directory_profile",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_kremlinbicetre.fr_laccompagnement par la ville_le kremlin-bicêtre_x0_4aabec3fae",
+    "name": "Maison de la Citoyenneté et de la Vie Associative — MCVA",
+    "city": "Le Kremlin-Bicêtre",
+    "department": "94",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "gratuit pour associations locales",
+      "contact": "associations@ville-kremlin-bicetre.fr",
+      "address": "94270 Le Kremlin-Bicêtre",
+      "city": "Le Kremlin-Bicêtre",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.kremlinbicetre.fr/loisirs-sorties/associations/laccompagnement-par-la-ville"
+    },
+    "url": "https://www.kremlinbicetre.fr/loisirs-sorties/associations/laccompagnement-par-la-ville",
+    "url_domain": "www.kremlinbicetre.fr",
+    "missing_fields": [
+      "capacity",
+      "phone",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_malakoff.fr_maisons de quartier_malakoff_x2_6418791a6e",
+    "name": "Espace de vie sociale Pierre-Valette",
+    "city": "Malakoff",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Tarifs selon quotient familial pour les activités",
+      "contact": "",
+      "address": "Malakoff",
+      "city": "Malakoff",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm"
+    },
+    "url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm",
+    "url_domain": "www.malakoff.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "rental_conditions",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_malakoff.fr_maisons de quartier_malakoff_x1_d165e472af",
+    "name": "Maison de quartier Henri-Barbusse",
+    "city": "Malakoff",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Tarifs selon quotient familial pour les activités",
+      "contact": "",
+      "address": "Malakoff",
+      "city": "Malakoff",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm"
+    },
+    "url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm",
+    "url_domain": "www.malakoff.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "rental_conditions",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_malakoff.fr_maisons de quartier_malakoff_x0_5d122de108",
+    "name": "Maison de quartier Jacques-Prévert",
+    "city": "Malakoff",
+    "department": "92",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "Tarifs selon quotient familial pour les activités",
+      "contact": "",
+      "address": "Malakoff",
+      "city": "Malakoff",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm"
+    },
+    "url": "https://www.malakoff.fr/93/cadre-de-vie/les-maisons-de-quartier-et-l-espace-de-vie-sociale.htm",
+    "url_domain": "www.malakoff.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "email",
+      "phone",
+      "rental_conditions",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_paris__x4_98d4152319",
+    "name": "Galerie Kervreizh",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "cours d’essai 15 €; cartes de cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/paris/"
+    },
+    "url": "https://www.yogamania.fr/paris/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "venue_no_rental_info",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_paris__x2_95d420e2a2",
+    "name": "Salle Chateaubriand",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "cours d’essai 15 €; cartes de cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/paris/"
+    },
+    "url": "https://www.yogamania.fr/paris/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "venue_no_rental_info",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_paris__x1_e9366399a7",
+    "name": "Salle Dansomania - Sarrette",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "cours d’essai 15 €; cartes de cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/paris/"
+    },
+    "url": "https://www.yogamania.fr/paris/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "venue_no_rental_info",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_paris__x3_4f1cbeaec3",
+    "name": "Salle Massard",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "cours d’essai 15 €; cartes de cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/paris/"
+    },
+    "url": "https://www.yogamania.fr/paris/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "venue_no_rental_info",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_paris__x0_bd65ec4051",
+    "name": "Salle Modigliani - Mouchotte",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "cours d’essai 15 €; cartes de cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/paris/"
+    },
+    "url": "https://www.yogamania.fr/paris/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "venue_no_rental_info",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_les centres yogamania__x3_678c2b2c7b",
+    "name": "Yogamania Bordeaux",
+    "city": "Bordeaux",
+    "department": "78",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "abonnements cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Bordeaux",
+      "city": "Bordeaux",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/les-centres-yogamania/"
+    },
+    "url": "https://www.yogamania.fr/les-centres-yogamania/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_les centres yogamania__x0_622f24b587",
+    "name": "Yogamania Paris",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "abonnements cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/les-centres-yogamania/"
+    },
+    "url": "https://www.yogamania.fr/les-centres-yogamania/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_les centres yogamania__x2_f94e745d12",
+    "name": "Yogamania Versailles - Studio Ananda",
+    "city": "Versailles",
+    "department": "78",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "abonnements cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Versailles",
+      "city": "Versailles",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/les-centres-yogamania/"
+    },
+    "url": "https://www.yogamania.fr/les-centres-yogamania/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_yogamania.fr_les centres yogamania__x1_feb94759f7",
+    "name": "Yogamania Versailles - Studio Surya",
+    "city": "Versailles",
+    "department": "78",
+    "current": {
+      "capacity_text": "",
+      "capacity_max_detected": 0,
+      "price_text": "abonnements cours",
+      "contact": "contact@yogamania.fr",
+      "address": "Versailles",
+      "city": "Versailles",
+      "postal_code": null,
+      "specific_rental_page_url": "",
+      "source_url": "https://www.yogamania.fr/les-centres-yogamania/"
+    },
+    "url": "https://www.yogamania.fr/les-centres-yogamania/",
+    "url_domain": "www.yogamania.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "phone",
+      "postal_code",
+      "rental_page_url"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S3",
+    "priority": 10
+  },
+  {
+    "candidate_id": "venue_venue_le8petion.com_activites de bienetre__x0_f3d73e02ea",
+    "name": "Le 8 Pétion",
+    "city": "Paris",
+    "department": "75",
+    "current": {
+      "capacity_text": "28 m²; environ 8 à 15 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "voir tarifs/disponibilités; tarifs sur page dédiée",
+      "contact": "06 02 72 85 02 — contact@le8petion.fr",
+      "address": "Paris",
+      "city": "Paris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://le8petion.com/reserver/",
+      "source_url": "https://le8petion.com/location-salle-loisir-paris/"
+    },
+    "url": "https://le8petion.com/reserver/",
+    "url_domain": "le8petion.com",
+    "missing_fields": [
+      "address",
+      "capacity"
+    ],
+    "page_type": "venue_with_rental_page",
+    "source_reliability": "S3",
+    "priority": 9
+  },
+  {
+    "candidate_id": "venue_venue_seineetmarne.cci.fr_telecharger notre brochure__x0_e8838d49c6",
+    "name": "CCI Seine-et-Marne - Amphithéâtre",
+    "city": "Serris",
+    "department": "77",
+    "current": {
+      "capacity_text": "218 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "1 300 € HT demi-journée; 1 950 € HT journée; 1 475 € HT soirée",
+      "contact": "06 59 87 52 30; 06 59 85 82 45 — djemila.gare@seineetmarne.cci.fr; fsabiaux@seineetmarne.cci.fr",
+      "address": "Serris",
+      "city": "Serris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+      "source_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf"
+    },
+    "url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+    "url_domain": "www.seineetmarne.cci.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 9
+  },
+  {
+    "candidate_id": "venue_venue_seineetmarne.cci.fr_telecharger notre brochure__x2_0da57b5165",
+    "name": "CCI Seine-et-Marne - Espace collaboratif",
+    "city": "Serris",
+    "department": "77",
+    "current": {
+      "capacity_text": "12 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "235 € HT demi-journée; 350 € HT journée; 260 € HT soirée",
+      "contact": "06 59 87 52 30; 06 59 85 82 45 — djemila.gare@seineetmarne.cci.fr; fsabiaux@seineetmarne.cci.fr",
+      "address": "Serris",
+      "city": "Serris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+      "source_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf"
+    },
+    "url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+    "url_domain": "www.seineetmarne.cci.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 9
+  },
+  {
+    "candidate_id": "venue_venue_seineetmarne.cci.fr_telecharger notre brochure__x3_de72c41b9c",
+    "name": "CCI Seine-et-Marne - Hall & extérieurs",
+    "city": "Serris",
+    "department": "77",
+    "current": {
+      "capacity_text": "100 personnes",
+      "capacity_max_detected": 0,
+      "price_text": "Hall 1 150 € HT journée; extérieurs 2 € HT/m²/jour",
+      "contact": "06 59 87 52 30; 06 59 85 82 45 — djemila.gare@seineetmarne.cci.fr; fsabiaux@seineetmarne.cci.fr",
+      "address": "Serris",
+      "city": "Serris",
+      "postal_code": null,
+      "specific_rental_page_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+      "source_url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf"
+    },
+    "url": "https://www.seineetmarne.cci.fr/sites/default/files/2026-06/Brochure%20-%20Espace%20Location%20Salles.pdf",
+    "url_domain": "www.seineetmarne.cci.fr",
+    "missing_fields": [
+      "address",
+      "capacity",
+      "geocode_failed",
+      "postal_code"
+    ],
+    "page_type": "multi_venue_listing",
+    "source_reliability": "S4",
+    "priority": 9
+  }
+]

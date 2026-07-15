@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:93",
+  "source_url": "https://m.yelp.com/search?find_desc=Yoga&find_loc=Bobigny%2C+Seine-Saint-Denis",
+  "collected_at": "2026-06-19T22:46:44+00:00",
+  "raw_name": "TOP 10 BEST Yoga near Bobigny, Seine-Saint-Denis, France - Yelp",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Yoga Amis Van Lysebeth. 0.0. Yoga. 4.9 mi. 8 Place Ermitage, 93200 Saint Denis France. 01 48 22 53 17. Big Apple Yoga - Yoga near me - Bobigny, Seine-Saint-",
+  "raw_html_excerpt": "TOP 10 BEST Yoga near Bobigny, Seine-Saint-Denis, France - Yelp. Yoga Amis Van Lysebeth. 0.0. Yoga. 4.9 mi. 8 Place Ermitage, 93200 Saint Denis France. 01 48 22 53 17. Big Apple Yoga - Yoga near me - Bobigny, Seine-Saint-",
+  "raw_json": {
+    "title": "TOP 10 BEST Yoga near Bobigny, Seine-Saint-Denis, France - Yelp",
+    "url": "https://m.yelp.com/search?find_desc=Yoga&find_loc=Bobigny%2C+Seine-Saint-Denis",
+    "description": "Yoga Amis Van Lysebeth. 0.0. Yoga. 4.9 mi. 8 Place Ermitage, 93200 Saint Denis France. 01 48 22 53 17. Big Apple Yoga - Yoga near me - Bobigny, Seine-Saint-",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "TOP 10 BEST Yoga near Bobigny, Seine-Saint-Denis, France - Yelp. Yoga Amis Van Lysebeth. 0.0. Yoga. 4.9 mi. 8 Place Ermitage, 93200 Saint Denis France. 01 48 22 53 17. Big Apple Yoga - Yoga near me - Bobigny, Seine-Saint-",
+  "source_confidence": "low"
+}

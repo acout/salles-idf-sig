@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:91",
+  "source_url": "https://www.essonne.gouv.fr/Jeux-Olympiques-et-Paralympiques-de-Paris-2024/Les-Centres-de-Preparation-aux-Jeux-CPJ/Judo/Dojo-Gerard-Bailo-Sainte-Genevieve-des-Bois",
+  "collected_at": "2026-06-19T22:47:00+00:00",
+  "raw_name": "Dojo Gérard Bailo - Sainte-Geneviève-des-Bois - Essonne.gouv.fr",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Dojo se compose d'un espace accueil, d'une salle de réunion, 2 saunas, une salle de musculation, d'une infirmerie. Parking avec 150 places,",
+  "raw_html_excerpt": "Dojo Gérard Bailo - Sainte-Geneviève-des-Bois - Essonne.gouv.fr. Le Dojo se compose d'un espace accueil, d'une salle de réunion, 2 saunas, une salle de musculation, d'une infirmerie. Parking avec 150 places,",
+  "raw_json": {
+    "title": "Dojo Gérard Bailo - Sainte-Geneviève-des-Bois - Essonne.gouv.fr",
+    "url": "https://www.essonne.gouv.fr/Jeux-Olympiques-et-Paralympiques-de-Paris-2024/Les-Centres-de-Preparation-aux-Jeux-CPJ/Judo/Dojo-Gerard-Bailo-Sainte-Genevieve-des-Bois",
+    "description": "Le Dojo se compose d'un espace accueil, d'une salle de réunion, 2 saunas, une salle de musculation, d'une infirmerie. Parking avec 150 places,",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo Gérard Bailo - Sainte-Geneviève-des-Bois - Essonne.gouv.fr. Le Dojo se compose d'un espace accueil, d'une salle de réunion, 2 saunas, une salle de musculation, d'une infirmerie. Parking avec 150 places,",
+  "source_confidence": "medium"
+}

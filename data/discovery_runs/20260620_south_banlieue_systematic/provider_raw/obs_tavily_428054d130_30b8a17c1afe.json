@@ -1,0 +1,19 @@
+{
+  "name": "[PDF] Votre été 2025 - Igesa",
+  "title": "[PDF] Votre été 2025 - Igesa",
+  "website": "https://www.igesa.fr/fileadmin/user_upload/CATALOGUE_IGESA_VACANCES_ADULTES_ETE_2025.pdf",
+  "source_url": "https://www.igesa.fr/fileadmin/user_upload/CATALOGUE_IGESA_VACANCES_ADULTES_ETE_2025.pdf",
+  "source_domain": "igesa.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.03107619,
+  "provider_rank": 8,
+  "discovery_prompt_id": "fr_chatillon_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Châtillon (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "collectifs, cours de Pilates ou de yoga, et bien d’autres ! [...] Pour votre confort : produits d’accueil Thalgo, laverie, espace bébé, ascenseur, salle de jeux, solarium, pergola, médiathèque, presse numérique, draps et linge de toilette de qualité supérieure inclus. Service hôtelier et location de peignoir de bain et serviette de piscine.\nPOUR VOS LOISIRS Piscine extérieure chauffée, espace de massage, espace fitness outdoor, parcours de santé, tennis, ping-pong, boulodrome éclairé, piano en accès libre et location de vélos électriques sur place. Cours de yoga, d’aquagym, longe-côte et Pilates.\nAux alentours : golf, randonnées, club nautique, plongée, équitation, canyoning, Spa Esterel Forme. [...] Pour votre confort : produits d’accueil Thalgo, laverie, chaises et lits bébé, aire de jeux enfants et en juillet-août : salle de jeux, baby-foot et bibliothèque, presse numérique, draps et linge de toilette inclus. Possibilité d’accès au restaurant (selon disponibilité, sur réservation) et au bar de l’hôtel Les Roches Rouges.\nPOUR VOS LOISIRS Accès aux installations de l’hôtel Les Roches Rouges : tennis, espace fitness outdoor, parcours de santé, boulodrome, possibilité de profiter des cours d’aquagym et yoga ainsi que de l’espace massage de l’hôtel.",
+  "evidence_text": "collectifs, cours de Pilates ou de yoga, et bien d’autres ! [...] Pour votre confort : produits d’accueil Thalgo, laverie, espace bébé, ascenseur, salle de jeux, solarium, pergola, médiathèque, presse numérique, draps et linge de toilette de qualité supérieure inclus. Service hôtelier et location de peignoir de bain et serviette de piscine.\nPOUR VOS LOISIRS Piscine extérieure chauffée, espace de massage, espace fitness outdoor, parcours de santé, tennis, ping-pong, boulodrome éclairé, piano en accès libre et location de vélos électriques sur place. Cours de yoga, d’aquagym, longe-côte et Pilates.\nAux alentours : golf, randonnées, club nautique, plongée, équitation, canyoning, Spa Esterel Forme. [...] Pour votre confort : produits d’accueil Thalgo, laverie, chaises et lits bébé, aire de jeux enfants et en juillet-août : salle de jeux, baby-foot et bibliothèque, presse numérique, draps et linge de toilette inclus. Possibilité d’accès au restaurant (selon disponibilité, sur réservation) et au bar de l’hôtel Les Roches Rouges.\nPOUR VOS LOISIRS Accès aux installations de l’hôtel Les Roches Rouges : tennis, espace fitness outdoor, parcours de santé, boulodrome, possibilité de profiter des cours d’aquagym et yoga ainsi que de l’espace massage de l’hôtel.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:31+00:00"
+}

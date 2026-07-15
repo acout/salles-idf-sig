@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:92",
+  "source_url": "https://m-yoga.fr/le-centre",
+  "collected_at": "2026-06-19T22:46:42+00:00",
+  "raw_name": "Studio de Yoga à Boulogne-Billancourt - M-Yoga",
+  "raw_address": "",
+  "raw_city": "Hauts-de-Seine",
+  "department": "92",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "La salle Vakog est disponible à la location pour vos cours ou évènements les après midi en semaine et le weekend de 13h30 à 17h00 . Matériel sur",
+  "raw_html_excerpt": "Studio de Yoga à Boulogne-Billancourt - M-Yoga. La salle Vakog est disponible à la location pour vos cours ou évènements les après midi en semaine et le weekend de 13h30 à 17h00 . Matériel sur",
+  "raw_json": {
+    "title": "Studio de Yoga à Boulogne-Billancourt - M-Yoga",
+    "url": "https://m-yoga.fr/le-centre",
+    "description": "La salle Vakog est disponible à la location pour vos cours ou évènements les après midi en semaine et le weekend de 13h30 à 17h00 . Matériel sur",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Studio de Yoga à Boulogne-Billancourt - M-Yoga. La salle Vakog est disponible à la location pour vos cours ou évènements les après midi en semaine et le weekend de 13h30 à 17h00 . Matériel sur",
+  "source_confidence": "medium"
+}

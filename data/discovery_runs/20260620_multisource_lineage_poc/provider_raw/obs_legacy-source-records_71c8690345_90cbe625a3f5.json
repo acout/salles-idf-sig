@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:95",
+  "source_url": "https://www.valdoise-tourisme.com/fiches/dojo-regional-dherblay-sur-seine",
+  "collected_at": "2026-06-19T22:47:01+00:00",
+  "raw_name": "Dojo Régional d'Herblay-sur-Seine - Val d'Oise Tourisme ...",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "LABEL : Judo. Le dojo se situe dans un complexe sportif regroupant gymnases, salles d'escalade, terrains multisports et salle de gymnastique. Il accueille",
+  "raw_html_excerpt": "Dojo Régional d'Herblay-sur-Seine - Val d'Oise Tourisme .... LABEL : Judo. Le dojo se situe dans un complexe sportif regroupant gymnases, salles d'escalade, terrains multisports et salle de gymnastique. Il accueille",
+  "raw_json": {
+    "title": "Dojo Régional d'Herblay-sur-Seine - Val d'Oise Tourisme ...",
+    "url": "https://www.valdoise-tourisme.com/fiches/dojo-regional-dherblay-sur-seine",
+    "description": "LABEL : Judo. Le dojo se situe dans un complexe sportif regroupant gymnases, salles d'escalade, terrains multisports et salle de gymnastique. Il accueille",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo Régional d'Herblay-sur-Seine - Val d'Oise Tourisme .... LABEL : Judo. Le dojo se situe dans un complexe sportif regroupant gymnases, salles d'escalade, terrains multisports et salle de gymnastique. Il accueille",
+  "source_confidence": "low"
+}

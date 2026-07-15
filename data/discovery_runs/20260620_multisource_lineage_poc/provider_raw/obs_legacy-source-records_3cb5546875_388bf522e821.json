@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:78",
+  "source_url": "https://sensitivea.fr/location-despaces",
+  "collected_at": "2026-06-19T22:47:18+00:00",
+  "raw_name": "Location d'espaces pour professionnels du bien-être - Sensitivea",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Idéal pour vos rendez-vous individuels de séances de réflexologie plantaire, naturopathie, massages, kinésiologie, hypnothérapie… ... Salle toute équipée et",
+  "raw_html_excerpt": "Location d'espaces pour professionnels du bien-être - Sensitivea. Idéal pour vos rendez-vous individuels de séances de réflexologie plantaire, naturopathie, massages, kinésiologie, hypnothérapie… ... Salle toute équipée et",
+  "raw_json": {
+    "title": "Location d'espaces pour professionnels du bien-être - Sensitivea",
+    "url": "https://sensitivea.fr/location-despaces",
+    "description": "Idéal pour vos rendez-vous individuels de séances de réflexologie plantaire, naturopathie, massages, kinésiologie, hypnothérapie… ... Salle toute équipée et",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Location d'espaces pour professionnels du bien-être - Sensitivea. Idéal pour vos rendez-vous individuels de séances de réflexologie plantaire, naturopathie, massages, kinésiologie, hypnothérapie… ... Salle toute équipée et",
+  "source_confidence": "medium"
+}

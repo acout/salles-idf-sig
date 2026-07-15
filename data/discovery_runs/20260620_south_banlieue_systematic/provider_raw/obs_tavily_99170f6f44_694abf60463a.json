@@ -1,0 +1,19 @@
+{
+  "name": "Bonjour à toutes et tous, Je loue ma salle de yoga de 50m² dans le ...",
+  "title": "Bonjour à toutes et tous, Je loue ma salle de yoga de 50m² dans le ...",
+  "website": "https://www.facebook.com/groups/1091338634760335/posts/1965716447322545",
+  "source_url": "https://www.facebook.com/groups/1091338634760335/posts/1965716447322545",
+  "source_domain": "facebook.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.24653831,
+  "provider_rank": 6,
+  "discovery_prompt_id": "fr_fresnes_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Fresnes (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Je mets en sous location mon studio de yoga Grande salle de cours donnant sur parc de 46m2 Salle accueil / vestiaire de 19m2 Sanitaire Tapis /",
+  "evidence_text": "Je mets en sous location mon studio de yoga Grande salle de cours donnant sur parc de 46m2 Salle accueil / vestiaire de 19m2 Sanitaire Tapis /",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:22+00:00"
+}

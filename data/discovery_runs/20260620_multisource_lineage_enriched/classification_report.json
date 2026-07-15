@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-20T08:31:39+00:00",
+  "input_observations": 1082,
+  "output_observations": 1082,
+  "page_type_distribution": {
+    "aggregator_listing": 629,
+    "official_venue_page": 219,
+    "official_rental_page": 155,
+    "municipal_facility_page": 45,
+    "social": 25,
+    "course_only_page": 3,
+    "unknown_website": 3,
+    "pdf_document": 2,
+    "unknown": 1
+  },
+  "source_reliability_distribution": {
+    "S1": 657,
+    "S3": 264,
+    "S4": 155,
+    "S2": 5,
+    "S0": 1
+  },
+  "geo_status_distribution": {
+    "in_scope": 1021,
+    "out_of_zone": 38,
+    "geo_unknown": 13,
+    "homonym": 10
+  },
+  "page_type_by_provider_top20": {
+    "legacy_source_records:aggregator_listing": 612,
+    "legacy_source_records:official_venue_page": 214,
+    "legacy_source_records:official_rental_page": 146,
+    "legacy_source_records:municipal_facility_page": 40,
+    "legacy_source_records:social": 23,
+    "tavily:aggregator_listing": 17,
+    "tavily:official_rental_page": 9,
+    "tavily:official_venue_page": 5,
+    "tavily:municipal_facility_page": 5,
+    "legacy_source_records:course_only_page": 3,
+    "legacy_source_records:unknown_website": 3,
+    "tavily:social": 2,
+    "tavily:pdf_document": 2,
+    "legacy_source_records:unknown": 1
+  },
+  "in_scope_count": 1021,
+  "in_scope_high_quality_count": 383,
+  "geo_detail_examples": {
+    "homonym": [
+      "official_venue_page | chatillon-en-vendelais.fr | Judo",
+      "official_rental_page | chatillon-en-vendelais.fr | Location de salles",
+      "official_venue_page | chatillon-en-vendelais.fr | Étude d’aménagement du centre-bourg",
+      "official_venue_page | chatillon-en-vendelais.fr | Espace jeunes",
+      "official_venue_page | chatillon-en-vendelais.fr | Associations des écoles",
+      "official_venue_page | chatillon-en-vendelais.fr | Répertoire des associations",
+      "official_venue_page | chatillon-en-vendelais.fr | Associations sportives",
+      "official_venue_page | chatillon-en-vendelais.fr | Associations culturelles, loisirs et autres",
+      "official_venue_page | chatillon-en-vendelais.fr | Associations citoyennes",
+      "official_venue_page | chatillon-en-vendelais.fr | Retour à l'annuaire"
+    ],
+    "out_of_zone": [
+      "aggregator_listing | peerspace.com | 20 meilleur Salles De Reunion à louer à proximité | Peerspac",
+      "aggregator_listing | native-spaces.com | Rent a conference, meeting room or co-working space for your",
+      "aggregator_listing | chateauform.com | Host your next conference in France - Châteauform",
+      "aggregator_listing | peerspace.com | Trouver salles pour cours de yoga près de chez moi - Peerspa",
+      "pdf_document | eaubonne.fr | [PDF] Saison 2025-2026 - Eaubonne",
+      "official_rental_page | rythmeandsoul.com | Louer une salle | Rythme and soul",
+      "official_rental_page | aix-en-tango.com | Location de salles – Aix en Tango",
+      "aggregator_listing | 1001salles.com | 1001 Salles: Location de salle de reception salle de mariage",
+      "official_rental_page | dojoparis.fr | Dojo Paris | Location de Dojo à Paris | 68 Avenue de Versail",
+      "official_venue_page | sportenfrance.fr | Dojo Club 93 à Saint-Denis - sportenfrance.fr guide pratique"
+    ],
+    "geo_unknown": [
+      "social | youtube.com | Vivre du Yoga : Trouver et Louer son propre Studio 🗝️🕯️",
+      "aggregator_listing | eventplanner.net | The 10 bestEvent venues in France",
+      "official_venue_page | centrepompidou.fr | Private events - Centre Pompidou",
+      "aggregator_listing | eventlocations.com | Louer un studio de danse et de yoga - eventlocations.com",
+      "municipal_facility_page | senacs.fr | SENACS | Liste des Centres sociaux",
+      "municipal_facility_page | maisondeshabitants.fr | Maison des Habitants - MJC Centre Social | St-Julien",
+      "municipal_facility_page | mjc-cs-tain.fr | MJC Centre Social de Tain L'Hermitage | Accueil",
+      "aggregator_listing | peerspace.com | Trouver salles pour cours de danse près de chez moi - Peersp",
+      "official_rental_page | clubprovence.fr | Location de salles – Club Provence",
+      "social | instagram.com | LOUE SALLE DE SPORT /SALLE DE DANSE Vous ... - Instagram"
+    ]
+  }
+}

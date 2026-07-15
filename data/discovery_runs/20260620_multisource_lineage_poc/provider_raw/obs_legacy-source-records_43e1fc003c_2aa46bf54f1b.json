@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:77",
+  "source_url": "https://dojo77.fr",
+  "collected_at": "2026-06-19T22:46:58+00:00",
+  "raw_name": "Dojo 77 - Accueil - DOJO 77 : Self-Défense, Boxes, Arts Martiaux",
+  "raw_address": "",
+  "raw_city": "Seine-et-Marne",
+  "department": "77",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo 77 : votre club de self defense et sports de combat en Seine et Marne. Cours de self defense, krav maga, kick boxing, MMA, karaté, tai chi et boxe thaï",
+  "raw_html_excerpt": "Dojo 77 - Accueil - DOJO 77 : Self-Défense, Boxes, Arts Martiaux. Dojo 77 : votre club de self defense et sports de combat en Seine et Marne. Cours de self defense, krav maga, kick boxing, MMA, karaté, tai chi et boxe thaï",
+  "raw_json": {
+    "title": "Dojo 77 - Accueil - DOJO 77 : Self-Défense, Boxes, Arts Martiaux",
+    "url": "https://dojo77.fr",
+    "description": "Dojo 77 : votre club de self defense et sports de combat en Seine et Marne. Cours de self defense, krav maga, kick boxing, MMA, karaté, tai chi et boxe thaï",
+    "position": 3
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo 77 - Accueil - DOJO 77 : Self-Défense, Boxes, Arts Martiaux. Dojo 77 : votre club de self defense et sports de combat en Seine et Marne. Cours de self defense, krav maga, kick boxing, MMA, karaté, tai chi et boxe thaï",
+  "source_confidence": "medium"
+}

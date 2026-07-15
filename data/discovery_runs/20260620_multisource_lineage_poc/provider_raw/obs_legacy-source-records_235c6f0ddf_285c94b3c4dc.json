@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:91",
+  "source_url": "https://www.abcsalles.com/location-de-salle-2_essonne_d.html",
+  "collected_at": "2026-06-19T22:47:20+00:00",
+  "raw_name": "Location de salle Essonne — ABC Salles",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "ABC Salles vous aide pour la location de salle en Essonne (91).",
+  "raw_html_excerpt": "Location de salle Essonne — ABC Salles. ABC Salles vous aide pour la location de salle en Essonne (91).",
+  "raw_json": {
+    "title": "Location de salle Essonne — ABC Salles",
+    "url": "https://www.abcsalles.com/location-de-salle-2_essonne_d.html",
+    "description": "ABC Salles vous aide pour la location de salle en Essonne (91).",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Location de salle Essonne — ABC Salles. ABC Salles vous aide pour la location de salle en Essonne (91).",
+  "source_confidence": "low"
+}

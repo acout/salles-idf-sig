@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-20T06:59:38+00:00",
+  "input_records": 1042,
+  "output_records": 1042,
+  "with_coordinates": 173,
+  "statuses": {
+    "missing_address": 828,
+    "geocoded_ban": 89,
+    "outside_idf": 25,
+    "not_found": 10,
+    "fetch_failed:HTTPError": 1,
+    "low_score": 5,
+    "already_had_coordinates": 84
+  },
+  "duration_seconds": 2.6,
+  "output": "data/source_records/formal_enriched_geocoded_beyond_idf_20260620.json"
+}

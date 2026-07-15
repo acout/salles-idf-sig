@@ -1,0 +1,19 @@
+{
+  "name": "Location de salle à Vanves (92170) - 1001 Salles",
+  "title": "Location de salle à Vanves (92170) - 1001 Salles",
+  "website": "https://www.1001salles.com/location-de-salle-2-vanves-v.html",
+  "source_url": "https://www.1001salles.com/location-de-salle-2-vanves-v.html",
+  "source_domain": "1001salles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.6493346,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_vanves_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Vanves (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Location de salle à Vanves (92170) 10-300 Forfait dès 47 € / pers. Hôtel Wallace Hôtel Wallace Paris 15 - Paris. Le Wallace Hôtel & Bar. Atelier Rimbaud",
+  "evidence_text": "Location de salle à Vanves (92170) 10-300 Forfait dès 47 € / pers. Hôtel Wallace Hôtel Wallace Paris 15 - Paris. Le Wallace Hôtel & Bar. Atelier Rimbaud",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:58+00:00"
+}

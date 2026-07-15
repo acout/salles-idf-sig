@@ -1,0 +1,19 @@
+{
+  "name": "Bonsoir, Voici le planning à jour des cours de Hatha Yoga que je ...",
+  "title": "Bonsoir, Voici le planning à jour des cours de Hatha Yoga que je ...",
+  "website": "https://www.facebook.com/groups/320970333126394/posts/1101428881747198",
+  "source_url": "https://www.facebook.com/groups/320970333126394/posts/1101428881747198",
+  "source_domain": "facebook.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.118273266,
+  "provider_rank": 5,
+  "discovery_prompt_id": "fr_chatenay malabry_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Châtenay-Malabry (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "J'adore ce lieu, il est cocon et c'est un espace qui invite à la convivialité car j'accueille jusqu'à 10 personnes. Je souhaite avoir des",
+  "evidence_text": "J'adore ce lieu, il est cocon et c'est un espace qui invite à la convivialité car j'accueille jusqu'à 10 personnes. Je souhaite avoir des",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:14:56+00:00"
+}

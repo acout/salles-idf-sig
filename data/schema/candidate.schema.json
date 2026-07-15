@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CandidateVenue",
+  "type": "object",
+  "description": "Normalized venue candidate before import into canonical venue catalog.",
+  "required": [
+    "candidate_id",
+    "name",
+    "source_record_id",
+    "source_url",
+    "candidate_status"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "source_record_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "normalized_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "lat": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lon": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "website": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "capacity_min": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "capacity_max": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "capacity_text": {
+      "type": "string"
+    },
+    "price_text": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "activity_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "space_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "category": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "source_confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unknown"
+      ]
+    },
+    "fit_beyond_score": {
+      "type": [
+        "integer",
+        "number"
+      ]
+    },
+    "confidence_score": {
+      "type": [
+        "integer",
+        "number"
+      ]
+    },
+    "actionability_score": {
+      "type": [
+        "integer",
+        "number"
+      ]
+    },
+    "score_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dedupe_key": {
+      "type": "string"
+    },
+    "duplicate_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "candidate_status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "duplicate_suspect",
+        "needs_review",
+        "accepted",
+        "rejected",
+        "merged"
+      ]
+    },
+    "last_seen_at": {
+      "type": "string"
+    },
+    "evidence_text": {
+      "type": "string"
+    }
+  }
+}

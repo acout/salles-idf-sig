@@ -1,0 +1,19 @@
+{
+  "name": "Location de salle Vanves (92170) - ABC Salles",
+  "title": "Location de salle Vanves (92170) - ABC Salles",
+  "website": "https://www.abcsalles.com/location-de-salle-2_vanves_v92.html",
+  "source_url": "https://www.abcsalles.com/location-de-salle-2_vanves_v92.html",
+  "source_domain": "abcsalles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.53269315,
+  "provider_rank": 3,
+  "discovery_prompt_id": "fr_vanves_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Vanves (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "Salle 100 m² - Capacité d'accueil 49 personnes Nous mettons à votre disposition les équipements nécessaires :Internet 100 Mo, Ecran de projection king size,",
+  "evidence_text": "Salle 100 m² - Capacité d'accueil 49 personnes Nous mettons à votre disposition les équipements nécessaires :Internet 100 Mo, Ecran de projection king size,",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:58+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:salle_theatre:94",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/studio-de-repetition",
+  "collected_at": "2026-06-19T22:47:06+00:00",
+  "raw_name": "Studio de répétition en Val-de-marne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Studio de répétition en Val-de-marne ; Solibo Music · 21 rue Bir Hakeim 94550 Chevilly Larue ; Studio Pulsar · 70 rue Paris 94340 Joinville le Pont ; STUDIO",
+  "raw_html_excerpt": "Studio de répétition en Val-de-marne - Pages Jaunes. Studio de répétition en Val-de-marne ; Solibo Music · 21 rue Bir Hakeim 94550 Chevilly Larue ; Studio Pulsar · 70 rue Paris 94340 Joinville le Pont ; STUDIO",
+  "raw_json": {
+    "title": "Studio de répétition en Val-de-marne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/studio-de-repetition",
+    "description": "Studio de répétition en Val-de-marne ; Solibo Music · 21 rue Bir Hakeim 94550 Chevilly Larue ; Studio Pulsar · 70 rue Paris 94340 Joinville le Pont ; STUDIO",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "salle_theatre",
+  "evidence_text": "Studio de répétition en Val-de-marne - Pages Jaunes. Studio de répétition en Val-de-marne ; Solibo Music · 21 rue Bir Hakeim 94550 Chevilly Larue ; Studio Pulsar · 70 rue Paris 94340 Joinville le Pont ; STUDIO",
+  "source_confidence": "medium"
+}

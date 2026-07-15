@@ -1,0 +1,19 @@
+{
+  "name": "Location de salle Fresnes (94260) - ABC Salles",
+  "title": "Location de salle Fresnes (94260) - ABC Salles",
+  "website": "https://www.abcsalles.com/location-de-salle-2_fresnes_v94.html",
+  "source_url": "https://www.abcsalles.com/location-de-salle-2_fresnes_v94.html",
+  "source_domain": "abcsalles.com",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.73459625,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_fresnes_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Fresnes (94). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "ABC Salles vous guide pour la location d'une salle à Fresnes (94260) en Val-de-Marne (94). Trouvez le lieu idéal pour votre événement.",
+  "evidence_text": "ABC Salles vous guide pour la location d'une salle à Fresnes (94260) en Val-de-Marne (94). Trouvez le lieu idéal pour votre événement.",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:15:22+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:78",
+  "source_url": "https://yoga78.fr",
+  "collected_at": "2026-06-19T22:46:48+00:00",
+  "raw_name": "Accueil | Yoga78 | Yoga78 Saint-Germain-en-Laye",
+  "raw_address": "",
+  "raw_city": "Yvelines",
+  "department": "78",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Louer nos salles. Vous souhaitez louer un cabinet de consultation ou une salle pour un atelier, stage ou des cours réguliers en harmonie avec le Yoga ?",
+  "raw_html_excerpt": "Accueil | Yoga78 | Yoga78 Saint-Germain-en-Laye. Louer nos salles. Vous souhaitez louer un cabinet de consultation ou une salle pour un atelier, stage ou des cours réguliers en harmonie avec le Yoga ?",
+  "raw_json": {
+    "title": "Accueil | Yoga78 | Yoga78 Saint-Germain-en-Laye",
+    "url": "https://yoga78.fr",
+    "description": "Louer nos salles. Vous souhaitez louer un cabinet de consultation ou une salle pour un atelier, stage ou des cours réguliers en harmonie avec le Yoga ?",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Accueil | Yoga78 | Yoga78 Saint-Germain-en-Laye. Louer nos salles. Vous souhaitez louer un cabinet de consultation ou une salle pour un atelier, stage ou des cours réguliers en harmonie avec le Yoga ?",
+  "source_confidence": "medium"
+}

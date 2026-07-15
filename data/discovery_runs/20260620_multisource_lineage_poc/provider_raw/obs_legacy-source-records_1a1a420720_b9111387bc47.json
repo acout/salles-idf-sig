@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_danse:91",
+  "source_url": "https://www.spectable.com/corbeil-essonnes-91100/petites-annonces/local-de-repetition/n_2648-l_17548.php",
+  "collected_at": "2026-06-19T22:46:39+00:00",
+  "raw_name": "Local de répétition / Location, recherche à Corbeil Essonnes (91100)",
+  "raw_address": "",
+  "raw_city": "Essonne",
+  "department": "91",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Studio musique équipé + espace lounge — 690€/mois Studio de musique privatif, situé au RDC d'une maison, idéal pour producteur, beatmaker, compositeur ou",
+  "raw_html_excerpt": "Local de répétition / Location, recherche à Corbeil Essonnes (91100). Studio musique équipé + espace lounge — 690€/mois Studio de musique privatif, situé au RDC d'une maison, idéal pour producteur, beatmaker, compositeur ou",
+  "raw_json": {
+    "title": "Local de répétition / Location, recherche à Corbeil Essonnes (91100)",
+    "url": "https://www.spectable.com/corbeil-essonnes-91100/petites-annonces/local-de-repetition/n_2648-l_17548.php",
+    "description": "Studio musique équipé + espace lounge — 690€/mois Studio de musique privatif, situé au RDC d'une maison, idéal pour producteur, beatmaker, compositeur ou",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_danse",
+  "evidence_text": "Local de répétition / Location, recherche à Corbeil Essonnes (91100). Studio musique équipé + espace lounge — 690€/mois Studio de musique privatif, situé au RDC d'une maison, idéal pour producteur, beatmaker, compositeur ou",
+  "source_confidence": "low"
+}

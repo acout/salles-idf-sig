@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:75",
+  "source_url": "https://www.facebook.com/people/Dojo-Paris-Location-despace-sportif-dans-le-16e/61570014873764",
+  "collected_at": "2026-06-19T22:46:52+00:00",
+  "raw_name": "Dojo Paris, Location d'espace sportif dans le 16e - Facebook",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Contactez-nous dès maintenant au 06 46 54 91 13 pour découvrir nos offres spéciales du mois de mars et réserver votre créneau. #DojoParis #artsmartiaux #Dojo #",
+  "raw_html_excerpt": "Dojo Paris, Location d'espace sportif dans le 16e - Facebook. Contactez-nous dès maintenant au 06 46 54 91 13 pour découvrir nos offres spéciales du mois de mars et réserver votre créneau. #DojoParis #artsmartiaux #Dojo #",
+  "raw_json": {
+    "title": "Dojo Paris, Location d'espace sportif dans le 16e - Facebook",
+    "url": "https://www.facebook.com/people/Dojo-Paris-Location-despace-sportif-dans-le-16e/61570014873764",
+    "description": "Contactez-nous dès maintenant au 06 46 54 91 13 pour découvrir nos offres spéciales du mois de mars et réserver votre créneau. #DojoParis #artsmartiaux #Dojo #",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo Paris, Location d'espace sportif dans le 16e - Facebook. Contactez-nous dès maintenant au 06 46 54 91 13 pour découvrir nos offres spéciales du mois de mars et réserver votre créneau. #DojoParis #artsmartiaux #Dojo #",
+  "source_confidence": "low"
+}

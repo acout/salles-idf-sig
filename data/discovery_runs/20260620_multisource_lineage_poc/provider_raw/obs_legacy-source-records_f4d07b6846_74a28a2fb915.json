@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:dojo:75",
+  "source_url": "https://www.instagram.com/dojo.paris",
+  "collected_at": "2026-06-19T22:46:52+00:00",
+  "raw_name": "Dojo Paris - Location d'espace sportif dans le 16e ... - Instagram",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Dojo Paris, un emplacement idéal au cœur du 16e arrondissement. À quelques pas du RER C – Javel, du métro ligne 10 et de plusieurs lignes de bus, le Dojo est",
+  "raw_html_excerpt": "Dojo Paris - Location d'espace sportif dans le 16e ... - Instagram. Dojo Paris, un emplacement idéal au cœur du 16e arrondissement. À quelques pas du RER C – Javel, du métro ligne 10 et de plusieurs lignes de bus, le Dojo est",
+  "raw_json": {
+    "title": "Dojo Paris - Location d'espace sportif dans le 16e ... - Instagram",
+    "url": "https://www.instagram.com/dojo.paris",
+    "description": "Dojo Paris, un emplacement idéal au cœur du 16e arrondissement. À quelques pas du RER C – Javel, du métro ligne 10 et de plusieurs lignes de bus, le Dojo est",
+    "position": 4
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "dojo",
+  "evidence_text": "Dojo Paris - Location d'espace sportif dans le 16e ... - Instagram. Dojo Paris, un emplacement idéal au cœur du 16e arrondissement. À quelques pas du RER C – Javel, du métro ligne 10 et de plusieurs lignes de bus, le Dojo est",
+  "source_confidence": "low"
+}

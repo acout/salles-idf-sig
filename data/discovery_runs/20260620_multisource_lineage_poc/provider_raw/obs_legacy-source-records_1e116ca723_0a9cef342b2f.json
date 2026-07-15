@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:93",
+  "source_url": "https://yoga-institut.fr/location",
+  "collected_at": "2026-06-19T22:46:44+00:00",
+  "raw_name": "Location salle de réception à Saint Denis de la Réunion - Yoga Institut",
+  "raw_address": "",
+  "raw_city": "Seine-Saint-Denis",
+  "department": "93",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Location de salle Saint-Denis de La Réunion. un emplacement stratégique. Yoga Institut vous accueille au 2 rue Ruisseau des Noirs, 97400 Saint-Denis,",
+  "raw_html_excerpt": "Location salle de réception à Saint Denis de la Réunion - Yoga Institut. Location de salle Saint-Denis de La Réunion. un emplacement stratégique. Yoga Institut vous accueille au 2 rue Ruisseau des Noirs, 97400 Saint-Denis,",
+  "raw_json": {
+    "title": "Location salle de réception à Saint Denis de la Réunion - Yoga Institut",
+    "url": "https://yoga-institut.fr/location",
+    "description": "Location de salle Saint-Denis de La Réunion. un emplacement stratégique. Yoga Institut vous accueille au 2 rue Ruisseau des Noirs, 97400 Saint-Denis,",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "Location salle de réception à Saint Denis de la Réunion - Yoga Institut. Location de salle Saint-Denis de La Réunion. un emplacement stratégique. Yoga Institut vous accueille au 2 rue Ruisseau des Noirs, 97400 Saint-Denis,",
+  "source_confidence": "medium"
+}

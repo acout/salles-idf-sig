@@ -1,0 +1,19 @@
+{
+  "name": "Location de salles à Fontenay aux Roses (92)",
+  "title": "Location de salles à Fontenay aux Roses (92)",
+  "website": "https://www.pagesjaunes.fr/annuaire/fontenay-aux-roses-92/location-de-salles",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/fontenay-aux-roses-92/location-de-salles",
+  "source_domain": "pagesjaunes.fr",
+  "source_type": "tavily_prompt_search",
+  "source_confidence": "medium",
+  "provider": "tavily",
+  "provider_score": 0.6836946,
+  "provider_rank": 1,
+  "discovery_prompt_id": "fr_fontenay aux roses_officiel",
+  "discovery_prompt": "Pages officielles pour louer une petite salle à Fontenay-aux-Roses (92). Salle 10-30 personnes, atelier, yoga, danse, dojo. Exclure hôtels, mariage, coworking, annuaires.",
+  "description": "L'espace Rosenwald est un lieu agréable dans un... ... Prestations : location de salle pour anniversaire, location de salle de fête, location de salle de mariage, location de salle de formation, location de salle de séminaire, location de salle de conférence, location de salle de réception,",
+  "evidence_text": "L'espace Rosenwald est un lieu agréable dans un... ... Prestations : location de salle pour anniversaire, location de salle de fête, location de salle de mariage, location de salle de formation, location de salle de séminaire, location de salle de conférence, location de salle de réception,",
+  "raw_content": "",
+  "target_run": "20260620_tavily",
+  "discovered_at": "2026-06-20T15:13:45+00:00"
+}

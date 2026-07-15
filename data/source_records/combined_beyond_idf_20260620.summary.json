@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-20T06:51:45+00:00",
+  "inputs": {
+    "data/source_records/systematic_beyond_idf_20260619.json": 210,
+    "data/source_records/banlieue_sud_targeted_20260620.json": 149
+  },
+  "merged_records": 359,
+  "source_level_duplicates_removed": 0,
+  "geocoded_records": 84,
+  "target_runs": [
+    "banlieue_sud_20260620"
+  ],
+  "output": "data/source_records/combined_beyond_idf_20260620.json"
+}

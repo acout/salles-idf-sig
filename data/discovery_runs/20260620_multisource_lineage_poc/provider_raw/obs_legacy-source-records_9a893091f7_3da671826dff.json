@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:94",
+  "source_url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/salle-de-reception",
+  "collected_at": "2026-06-19T22:47:16+00:00",
+  "raw_name": "Salle de réception en Val-de-marne - Pages Jaunes",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "La Salle des fêtes Georges Duhamel est un lieu de rendez-vous culturel situé au 5 avenue Georges Duhamel à Créteil. Elle propose une grande variété d'activités",
+  "raw_html_excerpt": "Salle de réception en Val-de-marne - Pages Jaunes. La Salle des fêtes Georges Duhamel est un lieu de rendez-vous culturel situé au 5 avenue Georges Duhamel à Créteil. Elle propose une grande variété d'activités",
+  "raw_json": {
+    "title": "Salle de réception en Val-de-marne - Pages Jaunes",
+    "url": "https://www.pagesjaunes.fr/annuaire/departement/val-de-marne-94/salle-de-reception",
+    "description": "La Salle des fêtes Georges Duhamel est un lieu de rendez-vous culturel situé au 5 avenue Georges Duhamel à Créteil. Elle propose une grande variété d'activités",
+    "position": 5
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Salle de réception en Val-de-marne - Pages Jaunes. La Salle des fêtes Georges Duhamel est un lieu de rendez-vous culturel situé au 5 avenue Georges Duhamel à Créteil. Elle propose une grande variété d'activités",
+  "source_confidence": "medium"
+}

@@ -1,0 +1,18 @@
+{
+  "run_dir": "data/discovery_runs/20260620_multisource_lineage_poc",
+  "valid": true,
+  "errors_count": 0,
+  "errors": [],
+  "observations": 245,
+  "field_evidence": 199,
+  "observations_by_provider": {
+    "tavily": 35,
+    "legacy_source_records": 210
+  },
+  "field_evidence_by_field": {
+    "website": 35,
+    "specific_rental_page": 164
+  },
+  "with_specific_rental_page": 164,
+  "with_content_hash": 245
+}

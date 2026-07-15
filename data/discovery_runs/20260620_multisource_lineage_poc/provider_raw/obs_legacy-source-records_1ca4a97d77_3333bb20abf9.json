@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:94",
+  "source_url": "https://www.lesspasduparc.com/fr",
+  "collected_at": "2026-06-19T22:47:16+00:00",
+  "raw_name": "Les Spas du Parc - Spa Hammam Val de Marne",
+  "raw_address": "",
+  "raw_city": "Val-de-Marne",
+  "department": "94",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "la salle tiède, Adresse 13 Rue Pierre et Marie Curie 94200. Téléphone : +33 1 46 72 43 30 Mobile : +33 1 46 72 13 23",
+  "raw_html_excerpt": "Les Spas du Parc - Spa Hammam Val de Marne. la salle tiède, Adresse 13 Rue Pierre et Marie Curie 94200. Téléphone : +33 1 46 72 43 30 Mobile : +33 1 46 72 13 23",
+  "raw_json": {
+    "title": "Les Spas du Parc - Spa Hammam Val de Marne",
+    "url": "https://www.lesspasduparc.com/fr",
+    "description": "la salle tiède, Adresse 13 Rue Pierre et Marie Curie 94200. Téléphone : +33 1 46 72 43 30 Mobile : +33 1 46 72 13 23",
+    "position": 2
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Les Spas du Parc - Spa Hammam Val de Marne. la salle tiède, Adresse 13 Rue Pierre et Marie Curie 94200. Téléphone : +33 1 46 72 43 30 Mobile : +33 1 46 72 13 23",
+  "source_confidence": "low"
+}

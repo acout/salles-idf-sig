@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:studio_yoga:75",
+  "source_url": "https://www.namasteom.com/location-salle",
+  "collected_at": "2026-06-19T22:46:41+00:00",
+  "raw_name": "location salle yoga paris 12 - Namasteom",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le Centre NamastéOm. Adresse : 24 rue des Marguettes, 75012 PARIS. La location comprend la location de la salle de yoga équipée. Matériel yoga et méditation :",
+  "raw_html_excerpt": "location salle yoga paris 12 - Namasteom. Le Centre NamastéOm. Adresse : 24 rue des Marguettes, 75012 PARIS. La location comprend la location de la salle de yoga équipée. Matériel yoga et méditation :",
+  "raw_json": {
+    "title": "location salle yoga paris 12 - Namasteom",
+    "url": "https://www.namasteom.com/location-salle",
+    "description": "Le Centre NamastéOm. Adresse : 24 rue des Marguettes, 75012 PARIS. La location comprend la location de la salle de yoga équipée. Matériel yoga et méditation :",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "studio_yoga",
+  "evidence_text": "location salle yoga paris 12 - Namasteom. Le Centre NamastéOm. Adresse : 24 rue des Marguettes, 75012 PARIS. La location comprend la location de la salle de yoga équipée. Matériel yoga et méditation :",
+  "source_confidence": "low"
+}

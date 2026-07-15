@@ -5,14 +5,24 @@
 | Item | Status |
 |------|--------|
 | Project | salles-idf-sig |
-| Type | Static map site (Leaflet + GeoJSON) |
+| Type | Shared calling cockpit + public map (Leaflet + Supabase) |
 | Repo | `acout/salles-idf-sig` on GitHub |
-| Last updated | 2026-06-19 |
+| Last updated | 2026-07-14 |
+
+## Urgent delivery status — 2026-07-14
+
+- **Local product:** ready and browser-tested in public/read-only mode.
+- **Public release:** 209 small-room prospects, deterministic release `dataset-8e58b6aba80910a8`.
+- **Collaboration backend:** migration, RLS, RPC contracts, private Storage and bootstrap script implemented; cloud project not configured yet.
+- **Deployment safety:** staging and production now deploy a six-file allowlist instead of the whole `public/` directory.
+- **External blockers:** repository still public; active GitHub account `anthco` has read-only access; Supabase and Scaleway credentials/configuration are absent.
+- **Operational runbook:** see `docs/URGENT_HANDOFF.md`.
 
 ## Deployments
 
 | Environment | Branch | URL | Method |
 |-------------|--------|-----|--------|
+| Local | `dev` | `http://127.0.0.1:8123/` | Python static server |
 | Staging | `staging` | `https://salles-idf-staging.s3-website.fr-par.scw.cloud` | GitHub Actions → Scaleway Object Storage |
 | Production | `master` | `https://salles-idf-prod.s3-website.fr-par.scw.cloud` (TBD) | Manual merge from staging → Scaleway |
 
@@ -26,15 +36,54 @@
 
 ## Data Status
 
-- **Venues**: 25 small rooms (≤20 people) across Île-de-France
-- **Departments covered**: 75, 92, 93, 94, 78, 91, 95
-- **Geocoding**: All venues geocoded via BAN (API Adresse)
+- **Venues**: 275 collected source venues; 209 included in the current public/private release after IDF coordinate and capacity ≤20 checks
+- **Departments covered**: 75, 77, 78, 91, 92, 93, 94, 95
+- **Geocoding**: GeoJSON coordinates via BAN + scraped coordinates; frontend excludes out-of-IDF false geocodes
 - **Last data refresh**: 2026-06-19
 
-## Next Steps
+## Product Status
 
-- [ ] Increase venue coverage to 80–120 (add grande couronne departments 77, 91)
-- [ ] Add capacity min/max filter slider
-- [ ] Add category filter (coworking, municipal, associations)
-- [ ] Add CRM status tracking (to_check, shortlist, contacted)
-- [ ] Add CSV/Markdown export for shortlist
+Implemented:
+
+- [x] Map view with jitter for overlapping markers
+- [x] List/table view for operational prospecting
+- [x] Pipeline/Kanban view by prospecting status
+- [x] Quick status progression buttons in pipeline
+- [x] Copyable call script and candidature email templates per venue
+- [x] Data quality filter and badges: contact, price, capacity, duplicate, geocode
+- [x] Local enrichment overrides for contact, price, capacity, address and source reliability
+- [x] Corrected local values displayed across detail, cards, list, pipeline, scripts and export/import
+- [x] Status tracking per venue: à qualifier, shortlist, contactée, candidature envoyée, OK, refus, utilisée
+- [x] Per-venue notes/comments stored in `localStorage`
+- [x] Next action + date for relance workflow
+- [x] Event history per venue to remember which rooms have served before
+- [x] Favorites ⭐
+- [x] Export/import JSON backup of the local follow-up database
+- [x] Sourcing foundation: source/candidate/venue/user-overlay/suggested-update schemas
+- [x] Beyond-compatible venue taxonomy and scoring config
+- [x] Non-destructive merge policy to protect user CRM/enrichment data
+- [x] Demo import queue pipeline (`scripts/sourcing/build_import_queue.py --demo`)
+- [x] Autonomous Beyond sourcing run 2026-06-19: 210 raw source records, 193 deduped import candidates
+- [x] Import queue generated without modifying canonical venue data or user overlay
+- [x] Banlieue sud targeted run 2026-06-20: +149 raw records around Cachan/Châtillon corridor, 334 total import candidates, 83 mapped candidates in 92/94
+- [x] Formal enrichment run 2026-06-20: aggregator detection/expansion, scrape status for every final item, 834 import candidates, 344 mapped, 604 with contact, 363 with price, 433 with capacity
+- [x] Rental qualification run 2026-06-20: `possible/unclear/unlikely` classification, Fitness/gym/class-only detection, 337 possible / 469 unclear / 28 unlikely in final queue
+- [x] Repeatable additive source-record merge script (`scripts/sourcing/merge_source_records.py`)
+- [x] Full re-executable Beyond import pipeline runner (`scripts/sourcing/run_beyond_pipeline.py`)
+- [x] Smart sourcing funnel Lot 1 2026-06-20: common `source_observations` + `field_evidence` lineage, Tavily prompt-search provider, run-scoped `data/discovery_runs/`, 1082 observations / 5022 field evidences validated without touching canonical data
+- [x] Smart sourcing funnel Lot 2 2026-06-20: source/page classifier + strict geo guard — `classify_observations.py` classifies 1082 observations into page_type (aggregator 629, official_rental 155, official_venue 219, municipal 45, social 25, course_only 3, pdf 2, unknown 4) + source_reliability (S1 657, S3 264, S4 155, S2 5, S0 1) + geo_status (in_scope 1021, out_of_zone 38, geo_unknown 13, homonym 10). In-scope high-quality: 383
+- [x] Smart sourcing funnel Lot 3 2026-06-20: entity resolution — `resolve_entities.py` groups 1082 observations into 1075 entities (466 venue entities + 609 aggregator observations), 7 multi-observation merges, 379 curated in-scope high-quality venues; official_website_url and specific_rental_page_url separated
+- [x] Smart sourcing funnel Lot 4 2026-06-20: AI structured extraction on 379 curated entities — 165 identified as actual venues, 110 rental_yes, 35 rental_no, 234 rental_unclear; 49 with address, 25 with phone, 14 with email, 79 with rental page; price/capacity evidence lower due to aggregator content; extraction with evidence quotes and confidence scores
+- [x] Funnel pipeline → app integration: convert_to_import_queue.py produces 165 curated in-scope entities as import_queue.geojson; app JS updated with Source & lineage detail panel (page_type, source_reliability, geo_status, observation_count, specific_rental_page_url, evidence_text); CSS badges for src-type, reliability (S1-S4), geo-status
+
+## Recommended Next Steps
+
+- [ ] Smart funnel Lot 2: source/page classifier + strict geo guard before promotion (`official_rental_page`, `municipal`, `aggregator`, `irrelevant`, reliability S0-S5)
+- [ ] Smart funnel Lot 3: minimal venue entity resolver preserving all observation IDs and separating website vs specific rental page
+- [ ] Smart funnel Lot 4: LLM structured extraction with citations for price/capacity/contact/rental/address
+- [ ] Add a real backend/sync layer if multiple devices/users need the same follow-up state
+- [ ] Add “last contacted at” and “contact channel” fields
+- [ ] Add canned call/email script templates per venue type
+- [ ] Add quality score after event: accessibility, accueil, bruit, prix final, would reuse?
+- [ ] Add CSV export of shortlist + contacted venues
+- [ ] Add data quality queue for bad geocodes / duplicates / source confidence

@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:95",
+  "source_url": "https://www.pavillon-napoleon.fr/location-salle-de-formation-val-d-oise.html",
+  "collected_at": "2026-06-19T22:47:21+00:00",
+  "raw_name": "Location salle de formation dans le Val-d'Oise",
+  "raw_address": "",
+  "raw_city": "Val-d'Oise",
+  "department": "95",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Le PAVILLON NAPOLÉON vous propose une location de salle de formation dans le Val-d'Oise, avec un cadre professionnel et des équipements modernes.",
+  "raw_html_excerpt": "Location salle de formation dans le Val-d'Oise. Le PAVILLON NAPOLÉON vous propose une location de salle de formation dans le Val-d'Oise, avec un cadre professionnel et des équipements modernes.",
+  "raw_json": {
+    "title": "Location salle de formation dans le Val-d'Oise",
+    "url": "https://www.pavillon-napoleon.fr/location-salle-de-formation-val-d-oise.html",
+    "description": "Le PAVILLON NAPOLÉON vous propose une location de salle de formation dans le Val-d'Oise, avec un cadre professionnel et des équipements modernes.",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Location salle de formation dans le Val-d'Oise. Le PAVILLON NAPOLÉON vous propose une location de salle de formation dans le Val-d'Oise, avec un cadre professionnel et des équipements modernes.",
+  "source_confidence": "medium"
+}

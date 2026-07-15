@@ -1,0 +1,26 @@
+{
+  "source_record_id": "",
+  "source_type": "web_search",
+  "source_name": "systematic:centre_bien_etre:75",
+  "source_url": "https://www.omvida.fr/reservation-salles",
+  "collected_at": "2026-06-19T22:47:12+00:00",
+  "raw_name": "Location de salles bien-être Paris 7e | OMVIDA",
+  "raw_address": "",
+  "raw_city": "Paris",
+  "department": "75",
+  "raw_contact": "",
+  "raw_price": "",
+  "raw_capacity": "",
+  "raw_description": "Louez un espace bien-être à Paris 7e : salle collective, cabine de soins, massages, espace de méditation. Réservation flexible 24h/24, 7j/7, à l'heure ou au",
+  "raw_html_excerpt": "Location de salles bien-être Paris 7e | OMVIDA. Louez un espace bien-être à Paris 7e : salle collective, cabine de soins, massages, espace de méditation. Réservation flexible 24h/24, 7j/7, à l'heure ou au",
+  "raw_json": {
+    "title": "Location de salles bien-être Paris 7e | OMVIDA",
+    "url": "https://www.omvida.fr/reservation-salles",
+    "description": "Louez un espace bien-être à Paris 7e : salle collective, cabine de soins, massages, espace de méditation. Réservation flexible 24h/24, 7j/7, à l'heure ou au",
+    "position": 1
+  },
+  "collector_version": "systematic_web_v1",
+  "category_guess": "centre_bien_etre",
+  "evidence_text": "Location de salles bien-être Paris 7e | OMVIDA. Louez un espace bien-être à Paris 7e : salle collective, cabine de soins, massages, espace de méditation. Réservation flexible 24h/24, 7j/7, à l'heure ou au",
+  "source_confidence": "medium"
+}
