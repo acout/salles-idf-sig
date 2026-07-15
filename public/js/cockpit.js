@@ -19,11 +19,19 @@
     capacity_over_20: 'Capacité à vérifier',
     geocode_review: 'Localisation à corriger'
   });
+  const CITY_DEPARTMENT_OVERRIDES = new Map([
+    ['arcueil', '94'], ['bagneux', '92'], ['bourg la reine', '92'], ['cachan', '94'],
+    ['chevilly larue', '94'], ['clamart', '92'], ['fontenay aux roses', '92'],
+    ['gentilly', '94'], ['ivry sur seine', '94'], ['le kremlin bicetre', '94'],
+    ['malakoff', '92'], ['meudon', '92'], ['montrouge', '92'], ['orly', '94'],
+    ['sceaux', '92'], ['villejuif', '94'], ['vitry sur seine', '94']
+  ]);
   const LEASE_MS = 20 * 60 * 1000;
   const POLL_MS = 10_000;
 
   const state = {
     manifest: null,
+    publicFeatures: [],
     features: [],
     featuresById: new Map(),
     privateById: new Map(),
@@ -38,6 +46,7 @@
     pollTimer: null,
     lastSyncAt: 0,
     privateReady: false,
+    candidateCount: 0,
     syncMode: 'public',
     selectedId: null,
     currentView: 'map',
@@ -53,6 +62,109 @@
 
   const byId = (id) => document.getElementById(id);
   const text = (value) => String(value ?? '').trim();
+
+  function normalizedCandidateText(value) {
+    return text(value)
+      .toLocaleLowerCase('fr')
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+  }
+
+  function candidateNumber(value) {
+    const parsed = Number(value || 0);
+    return Number.isFinite(parsed) ? parsed : 0;
+  }
+
+  function correctedCandidateDepartment(properties) {
+    return CITY_DEPARTMENT_OVERRIDES.get(normalizedCandidateText(properties.city)) || text(properties.department);
+  }
+
+  function candidateBatchLabel(properties) {
+    return text(properties.ai_source_file) === 'ai_classify_batch_0.jsonl'
+      ? 'Batch banlieue sud'
+      : 'Batch sourcing IDF';
+  }
+
+  function candidateCatalogScope(feature) {
+    const coordinates = feature?.geometry?.coordinates;
+    if (!Array.isArray(coordinates) || coordinates.length < 2) return 'geocode_review';
+    const lon = Number(coordinates[0]);
+    const lat = Number(coordinates[1]);
+    return Number.isFinite(lon) && Number.isFinite(lat) && lon >= 1.4 && lon <= 3.7 && lat >= 48 && lat <= 49.3
+      ? 'priority'
+      : 'geocode_review';
+  }
+
+  function publicCandidateFeature(feature) {
+    const properties = feature.properties || {};
+    const capacity = candidateNumber(properties.capacity_max_detected);
+    return {
+      type: 'Feature',
+      geometry: feature.geometry || { type: 'Point', coordinates: [0, 0] },
+      properties: {
+        id: text(properties.candidate_id),
+        name: text(properties.name),
+        city: text(properties.city) || 'Localisation à confirmer',
+        department: correctedCandidateDepartment(properties),
+        address: text(properties.address) || text(properties.city),
+        category: `${candidateBatchLabel(properties)} · ${text(properties.category) || 'salle à louer'}`,
+        capacity_text: text(properties.capacity_text),
+        capacity_max_detected: capacity || '',
+        price_text: text(properties.price_text),
+        catalog_scope: candidateCatalogScope(feature),
+        candidate_origin: true,
+        candidate_batch: candidateBatchLabel(properties)
+      }
+    };
+  }
+
+  function privateCandidateDetails(feature) {
+    const properties = feature.properties || {};
+    return {
+      id: text(properties.candidate_id),
+      website: text(properties.website),
+      contact: text(properties.contact),
+      source_url: text(properties.source_url),
+      pros: text(properties.rental_positive_signals) || text(properties.description),
+      cons: [text(properties.rental_possible_status) === 'unclear' ? 'Location à confirmer' : '', text(properties.missing_formal_fields)].filter(Boolean).join(' · '),
+      confidence: text(properties.source_reliability) || text(properties.confidence_score),
+      fit_score: candidateNumber(properties.actionability_score),
+      price_score: candidateNumber(properties.price_score),
+      last_checked: text(properties.formal_scrape_checked_at || properties.last_seen_at)
+    };
+  }
+
+  function restorePublicFeatures() {
+    state.features = [...state.publicFeatures];
+    state.featuresById = new Map(state.features.map((feature) => [feature.properties.id, feature]));
+    state.candidateCount = 0;
+    if (state.selectedId && !state.featuresById.has(state.selectedId)) state.selectedId = null;
+    if (byId('catalog-count')) byId('catalog-count').textContent = `${state.publicFeatures.length} salles au catalogue`;
+  }
+
+  function mergeCandidateBatches(importQueue) {
+    const candidates = importQueue.features || [];
+    const ids = new Set();
+    for (const feature of candidates) {
+      const properties = feature?.properties || {};
+      const venueId = text(properties.candidate_id);
+      if (!venueId || !text(properties.name) || ids.has(venueId)) {
+        throw new Error('PRIVATE_IMPORT_QUEUE_INVALID');
+      }
+      ids.add(venueId);
+    }
+    const candidateFeatures = candidates.map(publicCandidateFeature);
+    for (const feature of candidates) {
+      const details = privateCandidateDetails(feature);
+      state.privateById.set(details.id, details);
+    }
+    state.features = [...state.publicFeatures, ...candidateFeatures];
+    state.featuresById = new Map(state.features.map((feature) => [feature.properties.id, feature]));
+    state.candidateCount = candidateFeatures.length;
+    byId('catalog-count').textContent = `${state.publicFeatures.length} salles + ${state.candidateCount} pistes sourcées`;
+  }
 
   function element(tag, options = {}, children = []) {
     const node = document.createElement(tag);
@@ -236,9 +348,8 @@
       throw new Error('CATALOG_INVALID');
     }
     if (catalog.release_id !== state.manifest.release_id) throw new Error('RELEASE_MISMATCH');
-    state.features = catalog.features;
-    state.featuresById = new Map(catalog.features.map((feature) => [feature.properties.id, feature]));
-    byId('catalog-count').textContent = `${catalog.features.length} salles au catalogue`;
+    state.publicFeatures = catalog.features;
+    restorePublicFeatures();
   }
 
   function initMap() {
@@ -305,6 +416,11 @@
     return element('span', { className: `mini-chip scope-${scope}`, text: CATALOG_SCOPE[scope] || scope });
   }
 
+  function candidateBadge(feature) {
+    if (!feature?.properties?.candidate_origin) return null;
+    return element('span', { className: 'mini-chip candidate', text: feature.properties.candidate_batch || 'Piste sourcée' });
+  }
+
   function renderVenueList() {
     const venues = filteredFeatures();
     const list = byId('venue-list');
@@ -320,6 +436,7 @@
       const location = element('p', { text: [props.city, props.department, props.capacity_text].filter(Boolean).join(' · ') });
       const chips = element('div', { className: 'card-tags' }, [
         badge(followup.status),
+        candidateBadge(feature),
         catalogScopeBadge(feature)
       ]);
       const meta = element('div', { className: 'card-meta' }, [
@@ -756,6 +873,12 @@
 
     const overview = section();
     const scope = catalogScopeOf(feature);
+    if (props.candidate_origin) {
+      overview.append(element('p', {
+        className: 'candidate-notice',
+        text: `${props.candidate_batch || 'Piste sourcée'} : vérifie la capacité, le prix, la possibilité de location et la disponibilité pendant l’appel.`
+      }));
+    }
     if (scope === 'capacity_over_20') {
       overview.append(element('p', {
         className: 'catalog-warning',
@@ -896,24 +1019,35 @@
     if (privateManifest.dataset_checksum !== state.campaign.dataset_manifest_checksum) throw new Error('PRIVATE_CHECKSUM_MISMATCH');
     const requiredArtifacts = (privateManifest.artifacts || []).filter((item) => item.required);
     const overlayArtifact = requiredArtifacts.find((item) => item.path.endsWith('/venue_private_details.json'));
+    const importArtifact = requiredArtifacts.find((item) => item.path.endsWith('/import_queue.geojson'));
     if (!overlayArtifact) throw new Error('PRIVATE_OVERLAY_MISSING');
 
     let overlay = null;
+    let importQueue = null;
     for (const artifact of requiredArtifacts) {
       const { data: blob, error } = await state.client.storage.from(CONFIG.privateBucket || 'venue-datasets').download(artifact.path);
       if (error) throw error;
       const buffer = await blob.arrayBuffer();
       if (await sha256Hex(buffer) !== artifact.sha256) throw new Error(`PRIVATE_ARTIFACT_CHECKSUM:${artifact.path}`);
       if (artifact === overlayArtifact) overlay = JSON.parse(new TextDecoder().decode(buffer));
+      if (artifact === importArtifact) importQueue = JSON.parse(new TextDecoder().decode(buffer));
     }
     if (!overlay || overlay.release_id !== state.campaign.dataset_release_id || overlay.dataset_checksum !== state.campaign.dataset_manifest_checksum) {
       throw new Error('PRIVATE_RELEASE_MISMATCH');
     }
     const map = new Map((overlay.venues || []).map((venue) => [venue.id, venue]));
-    if (map.size !== state.features.length || state.features.some((feature) => !map.has(feature.properties.id))) {
+    if (map.size !== state.publicFeatures.length || state.publicFeatures.some((feature) => !map.has(feature.properties.id))) {
       throw new Error('PRIVATE_ID_MISMATCH');
     }
     state.privateById = map;
+    if (importArtifact) {
+      if (!importQueue || importQueue.type !== 'FeatureCollection' || !Array.isArray(importQueue.features)) {
+        throw new Error('PRIVATE_IMPORT_QUEUE_INVALID');
+      }
+      mergeCandidateBatches(importQueue);
+    } else {
+      restorePublicFeatures();
+    }
     state.privateReady = true;
   }
 
@@ -1063,6 +1197,7 @@
     state.campaign = null;
     state.privateReady = false;
     state.privateById.clear();
+    restorePublicFeatures();
     state.followups.clear();
     state.activities = [];
     state.members.clear();

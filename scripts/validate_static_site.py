@@ -5,8 +5,11 @@ from __future__ import annotations
 
 import hashlib
 import re
+from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
+
+from candidate_batches import batch_label, load_candidate_batch_features
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -75,6 +78,19 @@ def main() -> None:
     assert "clearStoredAuthSession()" in javascript and "sessionStorage.removeItem" in javascript, (
         "Une session invalide doit être nettoyée uniquement dans l'onglet concerné"
     )
+
+    assert "import_queue.geojson" in javascript and "mergeCandidateBatches" in javascript, (
+        "Le cockpit authentifie doit restaurer les batchs candidats complets"
+    )
+    candidates = load_candidate_batch_features(PUBLIC / "import_queue.geojson")
+    candidate_ids = [feature["properties"]["candidate_id"] for feature in candidates]
+    assert len(candidates) == 253, f"Batchs candidats incomplets: {len(candidates)}"
+    assert len(candidate_ids) == len(set(candidate_ids))
+    assert Counter(batch_label(feature) for feature in candidates) == {
+        "sourcing_idf": 212,
+        "banlieue_sud": 41,
+    }
+    assert "venue_venue_i-flow.fr_i_arcueil" in candidate_ids
 
     deployed = {
         path.relative_to(DEPLOY).as_posix()
