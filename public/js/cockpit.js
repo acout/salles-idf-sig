@@ -14,6 +14,11 @@
   });
   const TEAM_STATUSES = new Set(['available', 'needs_confirmation', 'callback']);
   const CALLABLE_STATUSES = new Set(['to_call', 'callback']);
+  const CATALOG_SCOPE = Object.freeze({
+    priority: 'Prioritaire',
+    capacity_over_20: 'Capacité à vérifier',
+    geocode_review: 'Localisation à corriger'
+  });
   const LEASE_MS = 20 * 60 * 1000;
   const POLL_MS = 10_000;
 
@@ -171,6 +176,10 @@
     return state.privateById.get(venueId) || null;
   }
 
+  function catalogScopeOf(feature) {
+    return feature?.properties?.catalog_scope || 'priority';
+  }
+
   function venueSearchText(feature) {
     const props = feature.properties || {};
     const details = privateDetails(props.id) || {};
@@ -183,11 +192,13 @@
 
   function filteredFeatures() {
     const query = text(byId('search-input').value).toLocaleLowerCase('fr');
+    const catalogScope = byId('catalog-scope-filter').value;
     const department = byId('department-filter').value;
     const status = byId('status-filter').value;
     return state.features.filter((feature) => {
       const props = feature.properties || {};
       const followup = followupOf(props.id);
+      if (catalogScope !== 'all' && catalogScopeOf(feature) !== catalogScope) return false;
       if (department !== 'all' && text(props.department) !== department) return false;
       if (status === 'shortlisted' && !followup.is_shortlisted) return false;
       if (status !== 'all' && status !== 'shortlisted' && followup.status !== status) return false;
@@ -227,7 +238,7 @@
     if (catalog.release_id !== state.manifest.release_id) throw new Error('RELEASE_MISMATCH');
     state.features = catalog.features;
     state.featuresById = new Map(catalog.features.map((feature) => [feature.properties.id, feature]));
-    byId('catalog-count').textContent = `${catalog.features.length} pistes qualifiées`;
+    byId('catalog-count').textContent = `${catalog.features.length} salles au catalogue`;
   }
 
   function initMap() {
@@ -260,6 +271,7 @@
     state.markersById.clear();
     const bounds = [];
     for (const feature of filteredFeatures()) {
+      if (catalogScopeOf(feature) === 'geocode_review') continue;
       const coordinates = feature.geometry?.coordinates;
       if (!Array.isArray(coordinates) || coordinates.length < 2) continue;
       const lon = Number(coordinates[0]);
@@ -287,6 +299,12 @@
     return element('span', { className: `mini-chip ${status}`, text: STATUS[status] || status });
   }
 
+  function catalogScopeBadge(feature) {
+    const scope = catalogScopeOf(feature);
+    if (scope === 'priority') return null;
+    return element('span', { className: `mini-chip scope-${scope}`, text: CATALOG_SCOPE[scope] || scope });
+  }
+
   function renderVenueList() {
     const venues = filteredFeatures();
     const list = byId('venue-list');
@@ -300,8 +318,12 @@
       });
       const title = element('h3', { text: props.name });
       const location = element('p', { text: [props.city, props.department, props.capacity_text].filter(Boolean).join(' · ') });
-      const meta = element('div', { className: 'card-meta' }, [
+      const chips = element('div', { className: 'card-tags' }, [
         badge(followup.status),
+        catalogScopeBadge(feature)
+      ]);
+      const meta = element('div', { className: 'card-meta' }, [
+        chips,
         element('span', { className: 'muted', text: followup.claimed_by ? `Pris par ${memberName(followup.claimed_by)}` : props.price_text || 'Prix à confirmer' })
       ]);
       button.append(title, location, meta);
@@ -310,7 +332,10 @@
     }
     if (!venues.length) fragment.append(element('p', { className: 'empty-state', text: 'Aucune salle ne correspond à ces filtres.' }));
     list.replaceChildren(fragment);
-    byId('filter-summary').textContent = `${venues.length} salle${venues.length > 1 ? 's' : ''} affichée${venues.length > 1 ? 's' : ''}`;
+    const unlocatedCount = venues.filter((feature) => catalogScopeOf(feature) === 'geocode_review').length;
+    const totalSuffix = venues.length === state.features.length ? '' : ` sur ${state.features.length}`;
+    const mapSuffix = unlocatedCount ? ` · ${unlocatedCount} sans position fiable` : '';
+    byId('filter-summary').textContent = `${venues.length} salle${venues.length > 1 ? 's' : ''} affichée${venues.length > 1 ? 's' : ''}${totalSuffix}${mapSuffix}`;
   }
 
   function queueFeatures() {
@@ -445,8 +470,9 @@
   }
 
   function dataBlock(label, value) {
-    const dl = element('dl', { className: 'data-block' });
-    dl.append(element('dt', { text: label }), element('dd', { text: value || '—' }));
+    const missing = !text(value);
+    const dl = element('dl', { className: `data-block${missing ? ' missing' : ''}` });
+    dl.append(element('dt', { text: label }), element('dd', { text: missing ? 'À compléter' : value }));
     return dl;
   }
 
@@ -729,6 +755,18 @@
     const fragment = document.createDocumentFragment();
 
     const overview = section();
+    const scope = catalogScopeOf(feature);
+    if (scope === 'capacity_over_20') {
+      overview.append(element('p', {
+        className: 'catalog-warning',
+        text: 'Capacité supérieure à 20 détectée au niveau du lieu. Il peut proposer une petite salle : à vérifier par téléphone.'
+      }));
+    } else if (scope === 'geocode_review') {
+      overview.append(element('p', {
+        className: 'catalog-warning',
+        text: 'Coordonnées incohérentes avec l’Île-de-France. Cette piste reste dans la liste, mais la carte et l’itinéraire sont désactivés jusqu’à correction.'
+      }));
+    }
     const grid = element('div', { className: 'detail-grid' }, [
       dataBlock('Adresse', props.address),
       dataBlock('Capacité', props.capacity_text),
@@ -738,7 +776,7 @@
     overview.append(grid);
     const publicActions = element('div', { className: 'action-row' });
     const coordinates = feature.geometry?.coordinates;
-    if (Array.isArray(coordinates) && coordinates.length >= 2) {
+    if (scope !== 'geocode_review' && Array.isArray(coordinates) && coordinates.length >= 2) {
       publicActions.append(safeExternalLink('Itinéraire', `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${coordinates[1]},${coordinates[0]}`)}`));
     }
     overview.append(publicActions);
@@ -1027,6 +1065,7 @@
 
   function bindEvents() {
     byId('search-input').addEventListener('input', renderAll);
+    byId('catalog-scope-filter').addEventListener('change', renderAll);
     byId('department-filter').addEventListener('change', renderAll);
     byId('status-filter').addEventListener('change', renderAll);
     byId('menu-button').addEventListener('click', () => byId('sidebar').classList.add('open'));
