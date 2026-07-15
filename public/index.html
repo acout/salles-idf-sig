@@ -35,8 +35,8 @@
       <section id="auth-panel" class="panel auth-panel">
         <div id="auth-copy">
           <p class="eyebrow">Espace partagé</p>
-          <h2>Connexion équipe</h2>
-          <p>Connectez-vous pour voir les contacts, prendre des salles et partager les résultats.</p>
+          <h2 id="auth-title">Connexion équipe</h2>
+          <p id="auth-description">Connectez-vous pour voir les contacts, prendre des salles et partager les résultats.</p>
         </div>
         <form id="login-form" class="login-form">
           <label for="login-email">Email</label>
@@ -44,7 +44,16 @@
           <label for="login-password">Mot de passe</label>
           <input id="login-password" name="password" type="password" autocomplete="current-password" required>
           <button class="primary-button" type="submit">Se connecter</button>
+          <button id="reset-password-button" class="secondary-button" type="button">Première connexion ou mot de passe oublié</button>
           <p id="login-error" class="form-error" role="alert"></p>
+        </form>
+        <form id="password-setup-form" class="login-form hidden">
+          <label for="new-password">Nouveau mot de passe</label>
+          <input id="new-password" name="new-password" type="password" autocomplete="new-password" minlength="12" required>
+          <label for="new-password-confirmation">Confirmer le mot de passe</label>
+          <input id="new-password-confirmation" name="new-password-confirmation" type="password" autocomplete="new-password" minlength="12" required>
+          <button class="primary-button" type="submit">Activer mon compte</button>
+          <p id="password-setup-error" class="form-error" role="alert"></p>
         </form>
       </section>
 
