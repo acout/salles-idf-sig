@@ -72,8 +72,8 @@ def main() -> None:
     assert "auth.getUser()" in javascript and "AUTH_SESSION_INVALID" in javascript, (
         "Le bootstrap partagé doit valider la session auprès de Supabase"
     )
-    assert "signOut({ scope: 'local' })" in javascript and "Session expirée" in javascript, (
-        "Une session invalide doit revenir à la connexion sans déconnecter les autres appareils"
+    assert "clearStoredAuthSession()" in javascript and "sessionStorage.removeItem" in javascript, (
+        "Une session invalide doit être nettoyée uniquement dans l'onglet concerné"
     )
 
     deployed = {
