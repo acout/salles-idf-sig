@@ -1000,6 +1000,19 @@
       || message.includes('INVALID JWT');
   }
 
+  function clearStoredAuthSession() {
+    let projectRef = '';
+    try {
+      projectRef = new URL(CONFIG.supabaseUrl).hostname.split('.')[0];
+    } catch {
+      return;
+    }
+    const storagePrefix = `sb-${projectRef}-auth-token`;
+    for (const key of Object.keys(window.sessionStorage)) {
+      if (key.startsWith(storagePrefix)) window.sessionStorage.removeItem(key);
+    }
+  }
+
   async function bootstrapShared() {
     if (!state.client || !state.user || state.bootingShared) return;
     state.bootingShared = true;
@@ -1028,7 +1041,7 @@
     } catch (error) {
       console.error({ code: error?.code || error?.message, release: CONFIG.appRelease });
       if (isAuthSessionFailure(error)) {
-        await state.client.auth.signOut({ scope: 'local' }).catch(() => {});
+        clearStoredAuthSession();
         clearSharedState();
         setSyncMode('public', 'Session expirée — reconnecte-toi pour collaborer.');
         return;
