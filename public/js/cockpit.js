@@ -976,11 +976,36 @@
       });
   }
 
+  async function requireValidAuthSession() {
+    const { data, error } = await state.client.auth.getUser();
+    if (error && !isAuthSessionFailure(error)) throw error;
+    if (error || !data?.user || data.user.id !== state.user?.id) {
+      const invalidSession = new Error('AUTH_SESSION_INVALID');
+      invalidSession.code = 'AUTH_SESSION_INVALID';
+      throw invalidSession;
+    }
+    state.user = data.user;
+  }
+
+  function isAuthSessionFailure(error) {
+    const code = text(error?.code).toUpperCase();
+    const name = text(error?.name).toUpperCase();
+    const message = text(error?.message).toUpperCase();
+    return code === 'AUTH_SESSION_INVALID'
+      || code === 'PGRST301'
+      || code === 'SESSION_NOT_FOUND'
+      || name === 'AUTHSESSIONMISSINGERROR'
+      || Number(error?.status) === 401
+      || message.includes('AUTH SESSION MISSING')
+      || message.includes('INVALID JWT');
+  }
+
   async function bootstrapShared() {
     if (!state.client || !state.user || state.bootingShared) return;
     state.bootingShared = true;
     setSyncMode('connecting', 'Connexion à l’espace partagé…');
     try {
+      await requireValidAuthSession();
       const { data, error } = await state.client.rpc('get_workspace_bootstrap', {
         p_client_contract_version: Number(CONFIG.clientContractVersion || 1)
       });
@@ -1002,6 +1027,12 @@
       renderAll();
     } catch (error) {
       console.error({ code: error?.code || error?.message, release: CONFIG.appRelease });
+      if (isAuthSessionFailure(error)) {
+        await state.client.auth.signOut({ scope: 'local' }).catch(() => {});
+        clearSharedState();
+        setSyncMode('public', 'Session expirée — reconnecte-toi pour collaborer.');
+        return;
+      }
       state.privateReady = false;
       setSyncMode('read_only', error?.code === 'FORBIDDEN' ? 'Ce compte n’est pas autorisé pour cet espace.' : 'Collaboration indisponible — catalogue public uniquement.');
       renderAll();

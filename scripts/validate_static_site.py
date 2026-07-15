@@ -69,6 +69,12 @@ def main() -> None:
     assert "auth.updateUser({ password })" in javascript, (
         "Un membre invité doit pouvoir définir son mot de passe"
     )
+    assert "auth.getUser()" in javascript and "AUTH_SESSION_INVALID" in javascript, (
+        "Le bootstrap partagé doit valider la session auprès de Supabase"
+    )
+    assert "signOut({ scope: 'local' })" in javascript and "Session expirée" in javascript, (
+        "Une session invalide doit revenir à la connexion sans déconnecter les autres appareils"
+    )
 
     deployed = {
         path.relative_to(DEPLOY).as_posix()
