@@ -9,7 +9,7 @@ from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 
-from candidate_batches import batch_label, load_candidate_batch_features
+from candidate_batches import batch_label, capacity_bucket, load_candidate_batch_features
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -82,6 +82,18 @@ def main() -> None:
     assert "import_queue.geojson" in javascript and "mergeCandidateBatches" in javascript, (
         "Le cockpit authentifie doit restaurer les batchs candidats complets"
     )
+    assert {"source-filter", "contact-filter", "qualification-filter"} <= set(parser.ids), (
+        "Les batchs complets doivent rester triables dans le cockpit"
+    )
+    assert "candidateBatchKey" in javascript and "contactModeOf" in javascript, (
+        "Les filtres de provenance et de joignabilite doivent etre actifs"
+    )
+    assert "CAMPAIGN_VENUE_MISMATCH" in javascript, (
+        "Le cockpit doit refuser un espace partage incomplet plutot que perdre des appels"
+    )
+    assert 'value="all" selected>Toutes les salles' in index, (
+        "Le catalogue complet doit etre affiche par defaut"
+    )
     candidates = load_candidate_batch_features(PUBLIC / "import_queue.geojson")
     candidate_ids = [feature["properties"]["candidate_id"] for feature in candidates]
     assert len(candidates) == 253, f"Batchs candidats incomplets: {len(candidates)}"
@@ -90,6 +102,19 @@ def main() -> None:
         "sourcing_idf": 212,
         "banlieue_sud": 41,
     }
+    assert Counter(capacity_bucket(feature) for feature in candidates) == {
+        "unknown": 201,
+        "small": 18,
+        "over_20": 34,
+    }
+    assert Counter(
+        str((feature.get("properties") or {}).get("rental_possible_status") or "")
+        for feature in candidates
+    ) == {"possible": 231, "unclear": 22}
+    assert sum(
+        bool((feature.get("properties") or {}).get("contact"))
+        for feature in candidates
+    ) == 113
     assert "venue_venue_i-flow.fr_i_arcueil" in candidate_ids
 
     deployed = {

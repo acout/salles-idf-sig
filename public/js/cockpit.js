@@ -87,14 +87,20 @@
       : 'Batch sourcing IDF';
   }
 
+  function candidateBatchKey(properties) {
+    return text(properties.ai_source_file) === 'ai_classify_batch_0.jsonl'
+      ? 'banlieue_sud'
+      : 'sourcing_idf';
+  }
+
   function candidateCatalogScope(feature) {
     const coordinates = feature?.geometry?.coordinates;
     if (!Array.isArray(coordinates) || coordinates.length < 2) return 'geocode_review';
     const lon = Number(coordinates[0]);
     const lat = Number(coordinates[1]);
-    return Number.isFinite(lon) && Number.isFinite(lat) && lon >= 1.4 && lon <= 3.7 && lat >= 48 && lat <= 49.3
-      ? 'priority'
-      : 'geocode_review';
+    const mapped = Number.isFinite(lon) && Number.isFinite(lat) && lon >= 1.4 && lon <= 3.7 && lat >= 48 && lat <= 49.3;
+    if (!mapped) return 'geocode_review';
+    return candidateNumber(feature?.properties?.capacity_max_detected) > 20 ? 'capacity_over_20' : 'priority';
   }
 
   function publicCandidateFeature(feature) {
@@ -115,7 +121,9 @@
         price_text: text(properties.price_text),
         catalog_scope: candidateCatalogScope(feature),
         candidate_origin: true,
-        candidate_batch: candidateBatchLabel(properties)
+        candidate_batch: candidateBatchLabel(properties),
+        candidate_batch_key: candidateBatchKey(properties),
+        candidate_rental_status: text(properties.rental_possible_status)
       }
     };
   }
@@ -132,7 +140,11 @@
       confidence: text(properties.source_reliability) || text(properties.confidence_score),
       fit_score: candidateNumber(properties.actionability_score),
       price_score: candidateNumber(properties.price_score),
-      last_checked: text(properties.formal_scrape_checked_at || properties.last_seen_at)
+      last_checked: text(properties.formal_scrape_checked_at || properties.last_seen_at),
+      rental_status: text(properties.rental_possible_status),
+      candidate_status: text(properties.candidate_status),
+      source_reliability: text(properties.source_reliability),
+      page_type: text(properties.page_type)
     };
   }
 
@@ -302,16 +314,47 @@
     ].map(text).join(' ').toLocaleLowerCase('fr');
   }
 
+  function sourceOf(feature) {
+    return feature?.properties?.candidate_origin
+      ? text(feature.properties.candidate_batch_key)
+      : 'catalog';
+  }
+
+  function contactModeOf(feature) {
+    const details = privateDetails(feature?.properties?.id) || {};
+    if (text(details.contact)) return 'direct';
+    if (text(details.website) || text(details.source_url)) return 'website_only';
+    return 'missing';
+  }
+
+  function matchesQualification(feature, qualification) {
+    if (qualification === 'all') return true;
+    const props = feature.properties || {};
+    const capacity = candidateNumber(props.capacity_max_detected);
+    if (qualification === 'rental_possible') return text(props.candidate_rental_status) === 'possible';
+    if (qualification === 'rental_unclear') return text(props.candidate_rental_status) === 'unclear';
+    if (qualification === 'capacity_small') return capacity > 0 && capacity <= 20;
+    if (qualification === 'capacity_unknown') return capacity === 0;
+    if (qualification === 'capacity_over_20') return capacity > 20;
+    return true;
+  }
+
   function filteredFeatures() {
     const query = text(byId('search-input').value).toLocaleLowerCase('fr');
     const catalogScope = byId('catalog-scope-filter').value;
     const department = byId('department-filter').value;
     const status = byId('status-filter').value;
+    const source = byId('source-filter').value;
+    const contact = byId('contact-filter').value;
+    const qualification = byId('qualification-filter').value;
     return state.features.filter((feature) => {
       const props = feature.properties || {};
       const followup = followupOf(props.id);
       if (catalogScope !== 'all' && catalogScopeOf(feature) !== catalogScope) return false;
       if (department !== 'all' && text(props.department) !== department) return false;
+      if (source !== 'all' && sourceOf(feature) !== source) return false;
+      if (contact !== 'all' && contactModeOf(feature) !== contact) return false;
+      if (!matchesQualification(feature, qualification)) return false;
       if (status === 'shortlisted' && !followup.is_shortlisted) return false;
       if (status !== 'all' && status !== 'shortlisted' && followup.status !== status) return false;
       return !query || venueSearchText(feature).includes(query);
@@ -421,6 +464,21 @@
     return element('span', { className: 'mini-chip candidate', text: feature.properties.candidate_batch || 'Piste sourcée' });
   }
 
+  function candidateReadinessBadges(feature) {
+    if (!feature?.properties?.candidate_origin) return [];
+    const badges = [];
+    const contactMode = contactModeOf(feature);
+    if (contactMode === 'direct') {
+      badges.push(element('span', { className: 'mini-chip contact-direct', text: 'Contact direct' }));
+    } else if (contactMode === 'website_only') {
+      badges.push(element('span', { className: 'mini-chip neutral', text: 'Site à ouvrir' }));
+    }
+    if (feature.properties.candidate_rental_status === 'unclear') {
+      badges.push(element('span', { className: 'mini-chip rental-unclear', text: 'Location à confirmer' }));
+    }
+    return badges;
+  }
+
   function renderVenueList() {
     const venues = filteredFeatures();
     const list = byId('venue-list');
@@ -437,6 +495,7 @@
       const chips = element('div', { className: 'card-tags' }, [
         badge(followup.status),
         candidateBadge(feature),
+        ...candidateReadinessBadges(feature),
         catalogScopeBadge(feature)
       ]);
       const meta = element('div', { className: 'card-meta' }, [
@@ -1060,6 +1119,9 @@
     if (followupsResult.error) throw followupsResult.error;
     if (activitiesResult.error) throw activitiesResult.error;
     state.followups = new Map((followupsResult.data || []).map((row) => [row.venue_id, row]));
+    if (state.followups.size !== state.features.length || state.features.some((feature) => !state.followups.has(feature.properties.id))) {
+      throw new Error('CAMPAIGN_VENUE_MISMATCH');
+    }
     state.activities = activitiesResult.data || [];
     state.lastSyncAt = Date.now();
     renderAll();
@@ -1247,6 +1309,9 @@
     byId('catalog-scope-filter').addEventListener('change', renderAll);
     byId('department-filter').addEventListener('change', renderAll);
     byId('status-filter').addEventListener('change', renderAll);
+    byId('source-filter').addEventListener('change', renderAll);
+    byId('contact-filter').addEventListener('change', renderAll);
+    byId('qualification-filter').addEventListener('change', renderAll);
     byId('menu-button').addEventListener('click', () => byId('sidebar').classList.add('open'));
     byId('close-sidebar').addEventListener('click', () => byId('sidebar').classList.remove('open'));
     byId('detail-close').addEventListener('click', () => byId('detail-dialog').close());

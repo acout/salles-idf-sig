@@ -55,12 +55,24 @@ def source_fingerprint(feature: dict[str, Any]) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
+def capacity_bucket(feature: dict[str, Any]) -> str:
+    raw = (feature.get("properties") or {}).get("capacity_max_detected")
+    try:
+        capacity = float(raw or 0)
+    except (TypeError, ValueError):
+        capacity = 0
+    if capacity <= 0:
+        return "unknown"
+    return "small" if capacity <= 20 else "over_20"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Auditer les batchs candidats chargés dans le cockpit")
     parser.add_argument("--import-queue", type=Path, default=Path("public/import_queue.geojson"))
     args = parser.parse_args()
     features = load_candidate_batch_features(args.import_queue)
     batches = Counter(batch_label(feature) for feature in features)
+    capacities = Counter(capacity_bucket(feature) for feature in features)
     statuses = Counter(
         str((feature.get("properties") or {}).get("rental_possible_status") or "")
         for feature in features
@@ -69,6 +81,7 @@ def main() -> None:
         "total": len(features),
         "batches": dict(sorted(batches.items())),
         "rental_statuses": dict(sorted(statuses.items())),
+        "capacity_buckets": dict(sorted(capacities.items())),
         "with_coordinates": sum(
             1 for feature in features
             if (feature.get("geometry") or {}).get("coordinates") not in (None, [0, 0])
@@ -76,6 +89,10 @@ def main() -> None:
         "with_contact": sum(
             1 for feature in features
             if (feature.get("properties") or {}).get("contact")
+        ),
+        "missing_city": sum(
+            1 for feature in features
+            if not str((feature.get("properties") or {}).get("city") or "").strip()
         ),
     }, ensure_ascii=False, indent=2))
 

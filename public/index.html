@@ -70,8 +70,8 @@
         <div class="filter-grid">
           <label class="span-2">Catalogue
             <select id="catalog-scope-filter">
-              <option value="priority" selected>Prioritaires · petites salles</option>
-              <option value="all">Toutes les salles</option>
+              <option value="all" selected>Toutes les salles</option>
+              <option value="priority">Prioritaires · petites salles</option>
               <option value="capacity_over_20">Grandes ou multi-salles à vérifier</option>
               <option value="geocode_review">Localisation à corriger</option>
             </select>
@@ -98,6 +98,32 @@
               <option value="needs_confirmation">À confirmer</option>
               <option value="unavailable">Indisponible</option>
               <option value="shortlisted">Shortlist</option>
+            </select>
+          </label>
+          <label>Origine
+            <select id="source-filter">
+              <option value="all">Toutes</option>
+              <option value="catalog">Catalogue initial</option>
+              <option value="sourcing_idf">Batch sourcing IDF</option>
+              <option value="banlieue_sud">Batch banlieue sud</option>
+            </select>
+          </label>
+          <label>Joignabilité
+            <select id="contact-filter">
+              <option value="all">Toutes</option>
+              <option value="direct">Contact direct</option>
+              <option value="website_only">Site web seulement</option>
+              <option value="missing">Aucun contact exploitable</option>
+            </select>
+          </label>
+          <label class="span-2">Qualification
+            <select id="qualification-filter">
+              <option value="all">Toutes</option>
+              <option value="rental_possible">Location probable</option>
+              <option value="rental_unclear">Location à confirmer</option>
+              <option value="capacity_small">Capacité connue ≤ 20</option>
+              <option value="capacity_unknown">Capacité inconnue</option>
+              <option value="capacity_over_20">Capacité connue &gt; 20</option>
             </select>
           </label>
         </div>

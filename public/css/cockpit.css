@@ -175,6 +175,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--brand); box-shad
 .mini-chip.scope-capacity_over_20 { color: #754508; background: var(--amber-soft); }
 .mini-chip.scope-geocode_review { color: #7c2924; background: var(--red-soft); }
 .mini-chip.candidate { color: #4f3d83; background: #eee9fb; }
+.mini-chip.contact-direct { color: var(--brand-dark); background: var(--brand-soft); }
+.mini-chip.rental-unclear { color: #754508; background: var(--amber-soft); }
 .member-chip { color: #dff7ec; background: rgba(109, 224, 177, .14); }
 
 .workspace { grid-column: 2; min-width: 0; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; }
