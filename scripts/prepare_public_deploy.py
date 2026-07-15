@@ -8,6 +8,7 @@ artifacts kept for reproducibility. This script copies only browser-safe files.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import shutil
 from pathlib import Path
 
@@ -55,6 +56,19 @@ def main() -> None:
         dst = output / relative
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
+
+    runtime_path = output / "runtime-config.js"
+    runtime_digest = hashlib.sha256(runtime_path.read_bytes()).hexdigest()[:16]
+    index_path = output / "index.html"
+    index = index_path.read_text(encoding="utf-8")
+    runtime_src = 'src="runtime-config.js"'
+    if index.count(runtime_src) != 1:
+        raise SystemExit("Référence runtime-config.js unique absente de index.html")
+    index_path.write_text(
+        index.replace(runtime_src, f'src="runtime-config.js?v={runtime_digest}"'),
+        encoding="utf-8",
+        newline="\n",
+    )
 
     deployed = {path.name for path in output.rglob("*") if path.is_file()}
     leaked = sorted(deployed & FORBIDDEN_NAMES)

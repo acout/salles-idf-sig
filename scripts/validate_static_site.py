@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -65,6 +66,15 @@ def main() -> None:
         for path in DEPLOY.rglob("*")
         if path.is_file()
     }
+    deployed_index = (DEPLOY / "index.html").read_text(encoding="utf-8")
+    runtime_digest = hashlib.sha256((DEPLOY / "runtime-config.js").read_bytes()).hexdigest()[:16]
+    expected_runtime_src = f'src="runtime-config.js?v={runtime_digest}"'
+    assert expected_runtime_src in deployed_index, (
+        "La configuration runtime doit être référencée avec son empreinte de contenu"
+    )
+    assert 'src="runtime-config.js"' not in deployed_index, (
+        "La référence runtime non versionnée réutilise une configuration en cache"
+    )
     assert deployed == EXPECTED_DEPLOY_FILES, (
         f"Allowlist de déploiement inattendue: {sorted(deployed)}"
     )
