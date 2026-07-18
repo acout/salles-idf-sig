@@ -1,6 +1,6 @@
 # Reprise urgente — trouver une salle à plusieurs
 
-Mise à jour : 15 juillet 2026.
+Mise à jour : 18 juillet 2026.
 
 ## Résultat produit attendu
 
@@ -25,7 +25,10 @@ La boucle utile est courte :
 - Contacts, sources, scores et notes séparés dans une release privée hors du dossier statique.
 - Connexion équipe Supabase, shortlist partagée, attribution, verrou d’appel, compte rendu, corrections, notes et point d’équipe.
 - Repli automatique du temps réel vers une synchronisation toutes les 10 secondes.
-- Déploiement public limité à six fichiers ; les GeoJSON de sourcing ne sont jamais copiés dans le site publié.
+- Sourcing Inbox partagé : recherche, filtres, prise en charge, correction, validation, rejet, doublon et promotion vers les appels.
+- Import déterministe des **253 candidates** des lots `sourcing_idf` et `banlieue_sud`, sans préfiltre et avec contrôle explicite de la présence d’iFlow Arcueil.
+- Une fois l’import distant réalisé, le catalogue authentifié réunira **528 pistes** : 275 salles et 253 candidates.
+- Déploiement public limité à sept fichiers ; les GeoJSON de sourcing ne sont jamais copiés dans le site publié.
 
 ## Contrat de release courant
 
@@ -45,6 +48,7 @@ La boucle utile est courte :
 - [x] Expliquer les deux groupes à vérifier et neutraliser les mauvaises positions cartographiques.
 - [x] Valider le catalogue public et le paquet statique.
 - [ ] Charger la nouvelle release privée dans Supabase et rattacher les 275 salles à la campagne active sans perdre un éventuel suivi existant.
+- [ ] Appliquer la migration `20260716_sourcing_inbox.sql`, importer les 253 candidates et vérifier la parité distante avant de publier le frontend partagé.
 - [ ] Déployer sur le staging GitHub Pages et vérifier le filtre dans un navigateur.
 
 ### Jalon U2 — lancer les appels à deux ou trois
@@ -52,6 +56,7 @@ La boucle utile est courte :
 - [ ] Finaliser l’activation du compte d’Anthony.
 - [ ] Inviter les partenaires et vérifier une connexion réelle pour chacune.
 - [ ] Constituer une shortlist initiale de 20 salles disposant d’un contact exploitable.
+- [ ] Répartir aussi la qualification des nouvelles pistes depuis l’onglet `Sourcing`, puis promouvoir les candidates validées vers les appels.
 - [ ] Répartir dix appels par partenaire et tester une prise simultanée sur une même salle.
 - [ ] Réaliser les appels et produire le point final uniquement depuis la vue `Point d’équipe`.
 
@@ -84,11 +89,33 @@ Les notifications, le MFA, un CRM générique, une refonte cartographique et un 
 Vérification locale :
 
 ```powershell
-python scripts/build_public_private_release.py
-python scripts/validate_release.py
-python scripts/prepare_public_deploy.py
-python scripts/validate_static_site.py
+$python = "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+& $python scripts/build_public_private_release.py
+& $python scripts/validate_release.py
+& $python scripts/prepare_public_deploy.py
+& $python scripts/validate_static_site.py
 node --check public/js/cockpit.js
+node --check public/js/sourcing-inbox.js
+node --test tests/sourcing-inbox.test.js
+& $python -m unittest tests/test_sourcing_import.py
+supabase db start
+supabase test db
+supabase stop --no-backup
 ```
+
+Mise en service distante, dans cet ordre :
+
+```powershell
+$python = "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+supabase link --project-ref zluhmjoimpnhpuhynrwg
+supabase db push
+& $python scripts/build_public_private_release.py
+# Seulement si la release de 275 salles n'est pas déjà la campagne active :
+& $python scripts/admin_bootstrap_supabase.py --owner "Anthony=<email>" --private-manifest .private-dist/dataset-4f757b07859f17eb/private-manifest.json
+& $python scripts/admin_import_sourcing_candidates.py --private-manifest .private-dist/dataset-4f757b07859f17eb/private-manifest.json --dry-run
+& $python scripts/admin_import_sourcing_candidates.py --private-manifest .private-dist/dataset-4f757b07859f17eb/private-manifest.json
+```
+
+Le bootstrap et l’import réel nécessitent `SUPABASE_URL` et `SUPABASE_SERVICE_ROLE_KEY` dans l’environnement local. Le bootstrap crée une nouvelle campagne active : ne pas le relancer si les 275 salles sont déjà rattachées à la bonne campagne. Ne jamais exposer la clé service role dans GitHub Pages, un ticket ou un message.
 
 Une fusion vers `staging` déclenche le déploiement GitHub Pages. Aucun changement n’est poussé directement vers `master`.

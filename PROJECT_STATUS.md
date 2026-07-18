@@ -7,83 +7,54 @@
 | Project | salles-idf-sig |
 | Type | Shared calling cockpit + public map (Leaflet + Supabase) |
 | Repo | `acout/salles-idf-sig` on GitHub |
-| Last updated | 2026-07-14 |
+| Last updated | 2026-07-18 |
 
-## Urgent delivery status — 2026-07-14
+## Urgent delivery status — 2026-07-18
 
-- **Local product:** ready and browser-tested in public/read-only mode.
-- **Public release:** 209 small-room prospects, deterministic release `dataset-8e58b6aba80910a8`.
-- **Collaboration backend:** migration, RLS, RPC contracts, private Storage and bootstrap script implemented; cloud project not configured yet.
-- **Deployment safety:** staging and production now deploy a six-file allowlist instead of the whole `public/` directory.
-- **External blockers:** repository still public; active GitHub account `anthco` has read-only access; Supabase and Scaleway credentials/configuration are absent.
-- **Operational runbook:** see `docs/URGENT_HANDOFF.md`.
+- **Code:** Sourcing Inbox, contrat Supabase, import déterministe et garde-fous de déploiement sont implémentés et testés localement.
+- **Catalogue public:** 275 salles, release déterministe `dataset-4f757b07859f17eb`, filtre par défaut sur 209 priorités.
+- **Catalogue authentifié attendu:** 275 salles + 253 candidates de sourcing = 528 pistes, sans préfiltre des lots approuvés et avec iFlow Arcueil.
+- **Déploiement public:** allowlist de sept fichiers ; aucun GeoJSON de sourcing ni artefact privé n'est publié.
+- **Blocage opérationnel restant:** appliquer la migration distante, importer et vérifier les 253 candidates, puis seulement déployer le frontend partagé sur `staging`.
+- **Runbook:** voir `docs/URGENT_HANDOFF.md`.
 
 ## Deployments
 
 | Environment | Branch | URL | Method |
 |-------------|--------|-----|--------|
-| Local | `dev` | `http://127.0.0.1:8123/` | Python static server |
-| Staging | `staging` | `https://salles-idf-staging.s3-website.fr-par.scw.cloud` | GitHub Actions → Scaleway Object Storage |
-| Production | `master` | `https://salles-idf-prod.s3-website.fr-par.scw.cloud` (TBD) | Manual merge from staging → Scaleway |
-
-## Branch Model
-
-| Branch | Purpose | Deploy | Protection |
-|--------|---------|--------|------------|
-| `dev` | Feature development | None | None |
-| `staging` | Integration testing | Auto-deploy to Scaleway staging | Require PR review |
-| `master` | Production release | Deploy on merge (manual trigger) | Protected, require approval |
+| Local | branche de travail | `http://127.0.0.1:8123/` | serveur statique Python |
+| Staging | `staging` | `https://acout.github.io/salles-idf-sig/` | GitHub Actions → GitHub Pages |
+| Production | `master` | à confirmer | décision et déploiement manuel d'Anthony |
 
 ## Data Status
 
-- **Venues**: 275 collected source venues; 209 included in the current public/private release after IDF coordinate and capacity ≤20 checks
-- **Departments covered**: 75, 77, 78, 91, 92, 93, 94, 95
-- **Geocoding**: GeoJSON coordinates via BAN + scraped coordinates; frontend excludes out-of-IDF false geocodes
-- **Last data refresh**: 2026-06-19
+- **Catalogue statique:** 275 salles, réparties en 209 `priority`, 43 `capacity_over_20` et 23 `geocode_review`.
+- **Candidates sourcing:** 253 entrées des lots `sourcing_idf` et `banlieue_sud`, avec identité stable et import additif/rejouable.
+- **Départements:** 75, 77, 78, 91, 92, 93, 94, 95.
+- **Traçabilité:** observation, preuves par champ, événements de revue et décisions terminales conservés séparément.
 
 ## Product Status
 
 Implemented:
 
-- [x] Map view with jitter for overlapping markers
-- [x] List/table view for operational prospecting
-- [x] Pipeline/Kanban view by prospecting status
-- [x] Quick status progression buttons in pipeline
-- [x] Copyable call script and candidature email templates per venue
-- [x] Data quality filter and badges: contact, price, capacity, duplicate, geocode
-- [x] Local enrichment overrides for contact, price, capacity, address and source reliability
-- [x] Corrected local values displayed across detail, cards, list, pipeline, scripts and export/import
-- [x] Status tracking per venue: à qualifier, shortlist, contactée, candidature envoyée, OK, refus, utilisée
-- [x] Per-venue notes/comments stored in `localStorage`
-- [x] Next action + date for relance workflow
-- [x] Event history per venue to remember which rooms have served before
-- [x] Favorites ⭐
-- [x] Export/import JSON backup of the local follow-up database
-- [x] Sourcing foundation: source/candidate/venue/user-overlay/suggested-update schemas
-- [x] Beyond-compatible venue taxonomy and scoring config
-- [x] Non-destructive merge policy to protect user CRM/enrichment data
-- [x] Demo import queue pipeline (`scripts/sourcing/build_import_queue.py --demo`)
-- [x] Autonomous Beyond sourcing run 2026-06-19: 210 raw source records, 193 deduped import candidates
-- [x] Import queue generated without modifying canonical venue data or user overlay
-- [x] Banlieue sud targeted run 2026-06-20: +149 raw records around Cachan/Châtillon corridor, 334 total import candidates, 83 mapped candidates in 92/94
-- [x] Formal enrichment run 2026-06-20: aggregator detection/expansion, scrape status for every final item, 834 import candidates, 344 mapped, 604 with contact, 363 with price, 433 with capacity
-- [x] Rental qualification run 2026-06-20: `possible/unclear/unlikely` classification, Fitness/gym/class-only detection, 337 possible / 469 unclear / 28 unlikely in final queue
-- [x] Repeatable additive source-record merge script (`scripts/sourcing/merge_source_records.py`)
-- [x] Full re-executable Beyond import pipeline runner (`scripts/sourcing/run_beyond_pipeline.py`)
-- [x] Smart sourcing funnel Lot 1 2026-06-20: common `source_observations` + `field_evidence` lineage, Tavily prompt-search provider, run-scoped `data/discovery_runs/`, 1082 observations / 5022 field evidences validated without touching canonical data
-- [x] Smart sourcing funnel Lot 2 2026-06-20: source/page classifier + strict geo guard — `classify_observations.py` classifies 1082 observations into page_type (aggregator 629, official_rental 155, official_venue 219, municipal 45, social 25, course_only 3, pdf 2, unknown 4) + source_reliability (S1 657, S3 264, S4 155, S2 5, S0 1) + geo_status (in_scope 1021, out_of_zone 38, geo_unknown 13, homonym 10). In-scope high-quality: 383
-- [x] Smart sourcing funnel Lot 3 2026-06-20: entity resolution — `resolve_entities.py` groups 1082 observations into 1075 entities (466 venue entities + 609 aggregator observations), 7 multi-observation merges, 379 curated in-scope high-quality venues; official_website_url and specific_rental_page_url separated
-- [x] Smart sourcing funnel Lot 4 2026-06-20: AI structured extraction on 379 curated entities — 165 identified as actual venues, 110 rental_yes, 35 rental_no, 234 rental_unclear; 49 with address, 25 with phone, 14 with email, 79 with rental page; price/capacity evidence lower due to aggregator content; extraction with evidence quotes and confidence scores
-- [x] Funnel pipeline → app integration: convert_to_import_queue.py produces 165 curated in-scope entities as import_queue.geojson; app JS updated with Source & lineage detail panel (page_type, source_reliability, geo_status, observation_count, specific_rental_page_url, evidence_text); CSS badges for src-type, reliability (S1-S4), geo-status
+- [x] Carte, liste, file d'appels et point d'équipe partagés
+- [x] Connexion Supabase et contrôle d'accès des membres actifs
+- [x] Shortlist, attribution, verrou d'appel, compte rendu, notes et historique
+- [x] Catalogue public complet avec filtre `Prioritaires` par défaut
+- [x] Sourcing Inbox paginé avec recherche et filtres par statut, département, responsable et données manquantes
+- [x] Création manuelle, prise en charge, correction, validation, rejet, doublon et promotion vers la campagne active
+- [x] Synchronisation Realtime avec repli par polling toutes les 10 secondes
+- [x] Import déterministe des 253 candidates historiques, contrôle de parité distante et présence d'iFlow Arcueil
+- [x] RLS, écritures via RPC, versions optimistes et opérations rejouables
+- [x] Tests navigateur unitaires, import Python et 47 contrats pgTAP sur base isolée
+- [x] Déploiement staging limité à sept fichiers publics
 
-## Recommended Next Steps
+## Next Steps
 
-- [ ] Smart funnel Lot 2: source/page classifier + strict geo guard before promotion (`official_rental_page`, `municipal`, `aggregator`, `irrelevant`, reliability S0-S5)
-- [ ] Smart funnel Lot 3: minimal venue entity resolver preserving all observation IDs and separating website vs specific rental page
-- [ ] Smart funnel Lot 4: LLM structured extraction with citations for price/capacity/contact/rental/address
-- [ ] Add a real backend/sync layer if multiple devices/users need the same follow-up state
-- [ ] Add “last contacted at” and “contact channel” fields
-- [ ] Add canned call/email script templates per venue type
-- [ ] Add quality score after event: accessibility, accueil, bruit, prix final, would reuse?
-- [ ] Add CSV export of shortlist + contacted venues
-- [ ] Add data quality queue for bad geocodes / duplicates / source confidence
+1. Appliquer `20260716_sourcing_inbox.sql` au projet Supabase distant.
+2. Exécuter l'import des 253 candidates et vérifier la parité distante.
+3. Fusionner vers `staging` et vérifier une session authentifiée sur GitHub Pages.
+4. Inviter les partenaires, constituer une shortlist de 20 pistes et tester deux prises simultanées.
+5. Lancer les appels et tenir le point d'équipe uniquement dans l'application.
+
+Les améliorations non urgentes restent dans [TODOS.md](TODOS.md).

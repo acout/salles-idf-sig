@@ -23,6 +23,7 @@ ALLOWLIST = (
     "salles_catalog_public.geojson",
     "css/cockpit.css",
     "js/cockpit.js",
+    "js/sourcing-inbox.js",
 )
 FORBIDDEN_NAMES = {
     "salles_all_idf.geojson",
@@ -63,6 +64,7 @@ def main() -> None:
     versioned_assets = {
         "runtime-config.js": "src",
         "js/cockpit.js": "src",
+        "js/sourcing-inbox.js": "src",
         "css/cockpit.css": "href",
     }
     for relative, attribute in versioned_assets.items():

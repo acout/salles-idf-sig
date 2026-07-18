@@ -230,6 +230,69 @@ th { color: #5c675f; background: #f8faf7; font-size: 11px; text-transform: upper
 tbody tr { cursor: pointer; }
 tbody tr:hover { background: #f3f8f5; }
 
+.sourcing-view { background: #f3f5f0; }
+.sourcing-heading { align-items: center; }
+.sourcing-health {
+  margin: 0;
+  padding: 8px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 750;
+}
+.sourcing-health.connecting, .sourcing-health.polling { color: #754508; background: var(--amber-soft); }
+.sourcing-health.realtime { color: var(--brand-dark); background: var(--brand-soft); }
+.sourcing-health.error { color: #7c2924; background: var(--red-soft); }
+.sourcing-create-card {
+  margin-bottom: 16px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(20,35,25,.05);
+}
+.sourcing-create-title, .sourcing-card-heading, .sourcing-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.sourcing-create-title { margin-bottom: 15px; }
+.sourcing-create-title h3, .sourcing-card h3 { margin: 0; font-size: 16px; }
+.sourcing-create-title p, .sourcing-card p { margin: 4px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.sourcing-create-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.sourcing-toolbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.5fr) repeat(4, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 13px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.sourcing-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.sourcing-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 15px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(20,35,25,.04);
+}
+.sourcing-card-heading { align-items: flex-start; }
+.sourcing-card .action-row { margin-top: auto; }
+.sourcing-pagination { justify-content: center; margin-top: 18px; color: var(--muted); font-size: 12px; }
+.mini-chip.sourcing-unreviewed { color: #4f3d83; background: #eee9fb; }
+.mini-chip.sourcing-in_review { color: #754508; background: var(--amber-soft); }
+.mini-chip.sourcing-validated { color: var(--brand-dark); background: var(--brand-soft); }
+.mini-chip.sourcing-rejected { color: #7c2924; background: var(--red-soft); }
+.mini-chip.sourcing-duplicate { color: #546057; background: #e8ece6; }
+.sourcing-decision-field { margin-top: 12px; }
+.sourcing-decision-field + button { width: 100%; margin-top: 8px; }
+
 .detail-dialog {
   width: min(720px, calc(100vw - 28px));
   max-height: calc(100vh - 28px);
@@ -328,4 +391,10 @@ tbody tr:hover { background: #f3f8f5; }
   .detail-grid, .form-grid { grid-template-columns: 1fr; }
   .span-2 { grid-column: auto; }
   .filter-grid .span-2 { grid-column: 1 / -1; }
+  .sourcing-heading .sourcing-health { display: inline-flex; margin-top: 10px; }
+  .sourcing-create-title { align-items: flex-start; }
+  .sourcing-create-title .primary-button { flex: 0 0 auto; }
+  .sourcing-create-grid, .sourcing-toolbar { grid-template-columns: 1fr; }
+  .sourcing-list { grid-template-columns: 1fr; }
+  .sourcing-pagination { position: sticky; bottom: 0; padding: 10px; background: rgba(243,245,240,.96); }
 }
