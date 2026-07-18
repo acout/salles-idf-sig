@@ -43,9 +43,17 @@
     user: null,
     client: null,
     channel: null,
+    sourcingInbox: null,
     pollTimer: null,
+    renderTimer: null,
     lastSyncAt: 0,
+    lastFollowupUpdatedAt: null,
+    lastActivityCreatedAt: null,
     privateReady: false,
+    collaborationReady: false,
+    sourcingReady: false,
+    legacyImportQueue: null,
+    candidateVenueIds: new Set(),
     candidateCount: 0,
     syncMode: 'public',
     selectedId: null,
@@ -53,6 +61,7 @@
     map: null,
     markerLayer: null,
     markersById: new Map(),
+    mapNeedsFit: true,
     pendingPhoneVenueId: null,
     toastTimer: null,
     bootingShared: false,
@@ -149,11 +158,40 @@
   }
 
   function restorePublicFeatures() {
+    for (const venueId of state.candidateVenueIds) state.privateById.delete(venueId);
+    state.candidateVenueIds.clear();
     state.features = [...state.publicFeatures];
     state.featuresById = new Map(state.features.map((feature) => [feature.properties.id, feature]));
     state.candidateCount = 0;
     if (state.selectedId && !state.featuresById.has(state.selectedId)) state.selectedId = null;
     if (byId('catalog-count')) byId('catalog-count').textContent = `${state.publicFeatures.length} salles au catalogue`;
+  }
+
+  function mergeCandidateFeatures(candidateFeatures, candidateDetails) {
+    for (const venueId of state.candidateVenueIds) state.privateById.delete(venueId);
+    state.candidateVenueIds.clear();
+    const publicIds = new Set(state.publicFeatures.map((feature) => feature.properties.id));
+    const seen = new Set();
+    const merged = [];
+    for (const feature of candidateFeatures) {
+      const venueId = text(feature?.properties?.id);
+      if (!venueId || !text(feature?.properties?.name) || seen.has(venueId)) throw new Error('SOURCING_FEATURE_INVALID');
+      seen.add(venueId);
+      state.candidateVenueIds.add(venueId);
+      if (!publicIds.has(venueId)) merged.push(feature);
+    }
+    for (const details of candidateDetails) {
+      if (details?.id) state.privateById.set(details.id, details);
+    }
+    state.features = [...state.publicFeatures, ...merged];
+    state.featuresById = new Map(state.features.map((feature) => [feature.properties.id, feature]));
+    if (state.selectedId && !state.featuresById.has(state.selectedId)) {
+      state.selectedId = null;
+      if (byId('detail-dialog')?.open) byId('detail-dialog').close();
+    }
+    state.candidateCount = candidateFeatures.length;
+    state.mapNeedsFit = true;
+    byId('catalog-count').textContent = `${state.publicFeatures.length} salles + ${state.candidateCount} pistes sourcées`;
   }
 
   function mergeCandidateBatches(importQueue) {
@@ -167,15 +205,18 @@
       }
       ids.add(venueId);
     }
-    const candidateFeatures = candidates.map(publicCandidateFeature);
-    for (const feature of candidates) {
-      const details = privateCandidateDetails(feature);
-      state.privateById.set(details.id, details);
+    mergeCandidateFeatures(candidates.map(publicCandidateFeature), candidates.map(privateCandidateDetails));
+  }
+
+  function mergeSourcingSnapshot(rows, prepared) {
+    mergeCandidateFeatures(prepared.features || [], prepared.privateDetails || []);
+    if (!state.collaborationReady) return;
+    const missingFollowups = state.features.some((feature) => !state.followups.has(feature.properties.id));
+    if (missingFollowups) {
+      loadSnapshot(false).catch(() => startPolling());
+    } else {
+      scheduleRenderAll();
     }
-    state.features = [...state.publicFeatures, ...candidateFeatures];
-    state.featuresById = new Map(state.features.map((feature) => [feature.properties.id, feature]));
-    state.candidateCount = candidateFeatures.length;
-    byId('catalog-count').textContent = `${state.publicFeatures.length} salles + ${state.candidateCount} pistes sourcées`;
   }
 
   function element(tag, options = {}, children = []) {
@@ -291,7 +332,7 @@
   }
 
   function canMutate() {
-    if (!state.user || !state.campaign || !state.privateReady) return false;
+    if (!state.user || !state.campaign || !state.privateReady || !state.collaborationReady) return false;
     if (state.syncMode === 'realtime') return true;
     return state.syncMode === 'polling' && Date.now() - state.lastSyncAt < 15_000;
   }
@@ -400,7 +441,7 @@
       byId('map').replaceChildren(element('p', { className: 'empty-state', text: 'Carte indisponible. Utilise la liste.' }));
       return;
     }
-    state.map = L.map('map', { zoomControl: true }).setView([48.8566, 2.3522], 10);
+    state.map = L.map('map', { zoomControl: true, preferCanvas: true }).setView([48.8566, 2.3522], 10);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; OpenStreetMap'
@@ -421,8 +462,7 @@
 
   function renderMap() {
     if (!state.map || !state.markerLayer) return;
-    state.markerLayer.clearLayers();
-    state.markersById.clear();
+    const targets = new Map();
     const bounds = [];
     for (const feature of filteredFeatures()) {
       if (catalogScopeOf(feature) === 'geocode_review') continue;
@@ -433,20 +473,40 @@
       if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
       const venueId = feature.properties.id;
       const status = statusOf(venueId);
-      const marker = L.circleMarker([lat, lon], {
-        radius: followupOf(venueId).is_shortlisted ? 8 : 6,
+      targets.set(venueId, { feature, lat, lon, status });
+      bounds.push([lat, lon]);
+    }
+    for (const [venueId, marker] of state.markersById) {
+      if (targets.has(venueId)) continue;
+      state.markerLayer.removeLayer(marker);
+      state.markersById.delete(venueId);
+    }
+    for (const [venueId, target] of targets) {
+      const style = {
         color: '#fff',
         weight: 2,
-        fillColor: markerColor(status),
+        fillColor: markerColor(target.status),
         fillOpacity: .9
-      });
-      marker.bindTooltip(text(feature.properties.name), { direction: 'top' });
+      };
+      const radius = followupOf(venueId).is_shortlisted ? 8 : 6;
+      const existing = state.markersById.get(venueId);
+      if (existing) {
+        existing.setLatLng([target.lat, target.lon]);
+        existing.setStyle(style);
+        existing.setRadius(radius);
+        existing.setTooltipContent(text(target.feature.properties.name));
+        continue;
+      }
+      const marker = L.circleMarker([target.lat, target.lon], { radius, ...style });
+      marker.bindTooltip(text(target.feature.properties.name), { direction: 'top' });
       marker.on('click', () => openDetail(venueId));
       marker.addTo(state.markerLayer);
       state.markersById.set(venueId, marker);
-      bounds.push([lat, lon]);
     }
-    if (bounds.length && !state.selectedId) state.map.fitBounds(bounds, { padding: [24, 24], maxZoom: 12 });
+    if (state.mapNeedsFit && bounds.length && !state.selectedId) {
+      state.map.fitBounds(bounds, { padding: [24, 24], maxZoom: 12 });
+    }
+    state.mapNeedsFit = false;
   }
 
   function badge(status) {
@@ -481,9 +541,10 @@
 
   function renderVenueList() {
     const venues = filteredFeatures();
+    const renderedVenues = venues.slice(0, 100);
     const list = byId('venue-list');
     const fragment = document.createDocumentFragment();
-    for (const feature of venues) {
+    for (const feature of renderedVenues) {
       const props = feature.properties;
       const followup = followupOf(props.id);
       const button = element('button', {
@@ -511,7 +572,8 @@
     const unlocatedCount = venues.filter((feature) => catalogScopeOf(feature) === 'geocode_review').length;
     const totalSuffix = venues.length === state.features.length ? '' : ` sur ${state.features.length}`;
     const mapSuffix = unlocatedCount ? ` · ${unlocatedCount} sans position fiable` : '';
-    byId('filter-summary').textContent = `${venues.length} salle${venues.length > 1 ? 's' : ''} affichée${venues.length > 1 ? 's' : ''}${totalSuffix}${mapSuffix}`;
+    const listSuffix = venues.length > renderedVenues.length ? ` · 100 premières dans la liste` : '';
+    byId('filter-summary').textContent = `${venues.length} salle${venues.length > 1 ? 's' : ''} trouvée${venues.length > 1 ? 's' : ''}${totalSuffix}${mapSuffix}${listSuffix}`;
   }
 
   function queueFeatures() {
@@ -602,6 +664,20 @@
     renderQueue();
     renderTeam();
     if (state.selectedId && byId('detail-dialog').open) renderDetail(state.selectedId);
+  }
+
+  function scheduleRenderAll() {
+    clearTimeout(state.renderTimer);
+    state.renderTimer = setTimeout(renderAll, 100);
+  }
+
+  function activateView(viewName) {
+    const requestedTab = document.querySelector(`.view-tab[data-view="${viewName}"]`);
+    const nextView = requestedTab && !requestedTab.classList.contains('hidden') ? viewName : 'map';
+    state.currentView = nextView;
+    document.querySelectorAll('.view-tab').forEach((item) => item.classList.toggle('active', item.dataset.view === nextView));
+    document.querySelectorAll('.view').forEach((view) => view.classList.toggle('active', view.id === `${nextView}-view`));
+    if (nextView === 'map' && state.map) setTimeout(() => state.map.invalidateSize(), 0);
   }
 
   function renderAuth() {
@@ -1103,28 +1179,132 @@
       if (!importQueue || importQueue.type !== 'FeatureCollection' || !Array.isArray(importQueue.features)) {
         throw new Error('PRIVATE_IMPORT_QUEUE_INVALID');
       }
+      state.legacyImportQueue = importQueue;
       mergeCandidateBatches(importQueue);
     } else {
+      state.legacyImportQueue = null;
       restorePublicFeatures();
     }
     state.privateReady = true;
   }
 
-  async function loadSnapshot() {
+  async function initSourcingInbox() {
+    state.sourcingReady = false;
+    if (state.sourcingInbox) await state.sourcingInbox.destroy().catch(() => {});
+    state.sourcingInbox = null;
+    if (!window.SourcingInbox?.create || !state.legacyImportQueue) return false;
+    const expectedLegacyIds = state.legacyImportQueue.features
+      .map((feature) => text(feature?.properties?.candidate_id))
+      .filter(Boolean);
+    const inbox = window.SourcingInbox.create({
+      client: state.client,
+      userId: state.user.id,
+      members: state.members,
+      expectedLegacyIds,
+      callbacks: {
+        operationId,
+        memberName,
+        toast,
+        onVisibleSnapshot: mergeSourcingSnapshot
+      }
+    });
+    state.sourcingInbox = inbox;
+    try {
+      await inbox.init();
+      state.sourcingReady = true;
+      return true;
+    } catch (error) {
+      console.error({ code: error?.code || error?.message, area: 'sourcing-bootstrap' });
+      await inbox.destroy().catch(() => {});
+      if (state.sourcingInbox === inbox) state.sourcingInbox = null;
+      toast('Le sourcing partagé est temporairement indisponible. Les 253 pistes de secours restent utilisables.');
+      return false;
+    }
+  }
+
+  const CAMPAIGN_VENUE_COLUMNS = [
+    'campaign_id', 'venue_id', 'is_shortlisted', 'assignee_id', 'status', 'availability_text',
+    'confirmed_price_text', 'next_action_at', 'claimed_by', 'claim_expires_at', 'version',
+    'updated_by', 'updated_at'
+  ].join(',');
+  const ACTIVITY_COLUMNS = [
+    'id', 'campaign_id', 'venue_id', 'activity_type', 'field_name', 'old_value', 'new_value',
+    'note', 'created_by', 'created_at'
+  ].join(',');
+
+  async function loadCampaignVenueRows(updatedAfter = null) {
+    const rows = [];
+    for (let from = 0; ; from += 500) {
+      let query = state.client.from('campaign_venues')
+        .select(CAMPAIGN_VENUE_COLUMNS)
+        .eq('campaign_id', state.campaign.id)
+        .order('updated_at', { ascending: true })
+        .order('venue_id', { ascending: true });
+      if (updatedAfter) query = query.gt('updated_at', updatedAfter);
+      const { data, error } = await query.range(from, from + 499);
+      if (error) throw error;
+      rows.push(...(data || []));
+      if (!data || data.length < 500) break;
+    }
+    return rows;
+  }
+
+  async function loadActivityRows(createdAfter = null) {
+    let query = state.client.from('venue_activities')
+      .select(ACTIVITY_COLUMNS)
+      .eq('campaign_id', state.campaign.id)
+      .order('created_at', { ascending: false })
+      .order('id', { ascending: false });
+    if (createdAfter) query = query.gt('created_at', createdAfter);
+    const { data, error } = await query.limit(createdAfter ? 500 : 200);
+    if (error) throw error;
+    return data || [];
+  }
+
+  function serverOverlap(timestamp) {
+    const milliseconds = Date.parse(timestamp || '');
+    return Number.isFinite(milliseconds) ? new Date(Math.max(0, milliseconds - 2_000)).toISOString() : null;
+  }
+
+  function newestTimestamp(rows, field, previous = null) {
+    return (rows || []).reduce((latest, row) => {
+      const value = text(row?.[field]);
+      return value && (!latest || value > latest) ? value : latest;
+    }, previous);
+  }
+
+  async function loadSnapshot(incremental = false) {
     if (!state.client || !state.campaign) return;
-    const [followupsResult, activitiesResult] = await Promise.all([
-      state.client.from('campaign_venues').select('*').eq('campaign_id', state.campaign.id),
-      state.client.from('venue_activities').select('*').eq('campaign_id', state.campaign.id).order('created_at', { ascending: false }).limit(100)
+    const followupOverlap = incremental ? serverOverlap(state.lastFollowupUpdatedAt) : null;
+    const activityOverlap = incremental ? serverOverlap(state.lastActivityCreatedAt) : null;
+    const [followupRows, activityRows] = await Promise.all([
+      loadCampaignVenueRows(followupOverlap),
+      loadActivityRows(activityOverlap)
     ]);
-    if (followupsResult.error) throw followupsResult.error;
-    if (activitiesResult.error) throw activitiesResult.error;
-    state.followups = new Map((followupsResult.data || []).map((row) => [row.venue_id, row]));
-    if (state.followups.size !== state.features.length || state.features.some((feature) => !state.followups.has(feature.properties.id))) {
+    if (incremental) {
+      for (const row of followupRows) applyCampaignVenue(row);
+    } else {
+      state.followups = new Map(followupRows.map((row) => [row.venue_id, row]));
+    }
+    const missingFollowups = state.features
+      .map((feature) => feature.properties.id)
+      .filter((venueId) => !state.followups.has(venueId));
+    if (missingFollowups.length) {
       throw new Error('CAMPAIGN_VENUE_MISMATCH');
     }
-    state.activities = activitiesResult.data || [];
+    if (incremental) {
+      const byId = new Map(state.activities.map((item) => [item.id, item]));
+      for (const row of activityRows) byId.set(row.id, row);
+      state.activities = Array.from(byId.values())
+        .sort((a, b) => text(b.created_at).localeCompare(text(a.created_at)))
+        .slice(0, 200);
+    } else {
+      state.activities = activityRows;
+    }
+    state.lastFollowupUpdatedAt = newestTimestamp(followupRows, 'updated_at', incremental ? state.lastFollowupUpdatedAt : null);
+    state.lastActivityCreatedAt = newestTimestamp(activityRows, 'created_at', incremental ? state.lastActivityCreatedAt : null);
     state.lastSyncAt = Date.now();
-    renderAll();
+    scheduleRenderAll();
   }
 
   function stopPolling() {
@@ -1137,7 +1317,7 @@
     setSyncMode('polling', 'Synchronisation dégradée : actualisation toutes les 10 secondes.');
     state.pollTimer = setInterval(async () => {
       try {
-        await loadSnapshot();
+        await loadSnapshot(true);
       } catch {
         if (Date.now() - state.lastSyncAt > 15_000) setSyncMode('read_only', 'Synchronisation indisponible — consultation uniquement.');
       }
@@ -1150,21 +1330,23 @@
     state.channel = state.client.channel(`campaign-${campaignId}`)
       .on('postgres_changes', { event: '*', schema: 'public', table: 'campaign_venues', filter: `campaign_id=eq.${campaignId}` }, (payload) => {
         if (payload.new?.venue_id) applyCampaignVenue(payload.new);
+        state.lastFollowupUpdatedAt = newestTimestamp([payload.new], 'updated_at', state.lastFollowupUpdatedAt);
         state.lastSyncAt = Date.now();
-        renderAll();
+        scheduleRenderAll();
       })
       .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'venue_activities', filter: `campaign_id=eq.${campaignId}` }, (payload) => {
         if (payload.new?.id && !state.activities.some((item) => item.id === payload.new.id)) {
           state.activities.unshift(payload.new);
           state.activities = state.activities.slice(0, 200);
         }
+        state.lastActivityCreatedAt = newestTimestamp([payload.new], 'created_at', state.lastActivityCreatedAt);
         state.lastSyncAt = Date.now();
-        renderAll();
+        scheduleRenderAll();
       })
       .subscribe(async (status) => {
         if (status === 'SUBSCRIBED') {
           stopPolling();
-          await loadSnapshot().catch(() => {});
+          await loadSnapshot(false).catch(() => {});
           setSyncMode('realtime', 'Cockpit synchronisé avec l’équipe.');
         } else if (['CHANNEL_ERROR', 'TIMED_OUT', 'CLOSED'].includes(status)) {
           startPolling();
@@ -1231,7 +1413,9 @@
         throw new Error('PUBLIC_PRIVATE_RELEASE_MISMATCH');
       }
       await loadPrivateRelease();
-      await loadSnapshot();
+      await initSourcingInbox();
+      await loadSnapshot(false);
+      state.collaborationReady = true;
       await setupRealtime();
       renderAll();
     } catch (error) {
@@ -1242,7 +1426,18 @@
         setSyncMode('public', 'Session expirée — reconnecte-toi pour collaborer.');
         return;
       }
+      stopPolling();
+      if (state.channel && state.client) await state.client.removeChannel(state.channel).catch(() => {});
+      state.channel = null;
+      if (state.sourcingInbox) await state.sourcingInbox.destroy().catch(() => {});
+      state.sourcingInbox = null;
+      state.sourcingReady = false;
       state.privateReady = false;
+      state.collaborationReady = false;
+      state.followups.clear();
+      state.activities = [];
+      state.privateById.clear();
+      restorePublicFeatures();
       setSyncMode('read_only', error?.code === 'FORBIDDEN' ? 'Ce compte n’est pas autorisé pour cet espace.' : 'Collaboration indisponible — catalogue public uniquement.');
       renderAll();
     } finally {
@@ -1252,17 +1447,27 @@
 
   function clearSharedState() {
     stopPolling();
+    clearTimeout(state.renderTimer);
     if (state.channel && state.client) state.client.removeChannel(state.channel).catch(() => {});
     state.channel = null;
+    if (state.sourcingInbox) state.sourcingInbox.destroy().catch(() => {});
+    state.sourcingInbox = null;
+    state.sourcingReady = false;
+    state.legacyImportQueue = null;
     state.user = null;
     state.member = null;
     state.campaign = null;
     state.privateReady = false;
+    state.collaborationReady = false;
     state.privateById.clear();
     restorePublicFeatures();
     state.followups.clear();
     state.activities = [];
     state.members.clear();
+    state.lastSyncAt = 0;
+    state.lastFollowupUpdatedAt = null;
+    state.lastActivityCreatedAt = null;
+    activateView('map');
     setSyncMode('public', 'Catalogue public — connecte-toi pour collaborer.');
     renderAll();
   }
@@ -1305,24 +1510,23 @@
   }
 
   function bindEvents() {
-    byId('search-input').addEventListener('input', renderAll);
-    byId('catalog-scope-filter').addEventListener('change', renderAll);
-    byId('department-filter').addEventListener('change', renderAll);
-    byId('status-filter').addEventListener('change', renderAll);
-    byId('source-filter').addEventListener('change', renderAll);
-    byId('contact-filter').addEventListener('change', renderAll);
-    byId('qualification-filter').addEventListener('change', renderAll);
+    const applyFilters = () => {
+      state.mapNeedsFit = true;
+      scheduleRenderAll();
+    };
+    byId('search-input').addEventListener('input', applyFilters);
+    byId('catalog-scope-filter').addEventListener('change', applyFilters);
+    byId('department-filter').addEventListener('change', applyFilters);
+    byId('status-filter').addEventListener('change', applyFilters);
+    byId('source-filter').addEventListener('change', applyFilters);
+    byId('contact-filter').addEventListener('change', applyFilters);
+    byId('qualification-filter').addEventListener('change', applyFilters);
     byId('menu-button').addEventListener('click', () => byId('sidebar').classList.add('open'));
     byId('close-sidebar').addEventListener('click', () => byId('sidebar').classList.remove('open'));
     byId('detail-close').addEventListener('click', () => byId('detail-dialog').close());
     byId('copy-summary').addEventListener('click', copyTeamSummary);
     for (const tab of document.querySelectorAll('.view-tab')) {
-      tab.addEventListener('click', () => {
-        state.currentView = tab.dataset.view;
-        document.querySelectorAll('.view-tab').forEach((item) => item.classList.toggle('active', item === tab));
-        document.querySelectorAll('.view').forEach((view) => view.classList.toggle('active', view.id === `${state.currentView}-view`));
-        if (state.currentView === 'map' && state.map) setTimeout(() => state.map.invalidateSize(), 0);
-      });
+      tab.addEventListener('click', () => activateView(tab.dataset.view));
     }
     byId('login-form').addEventListener('submit', async (event) => {
       event.preventDefault();
@@ -1419,7 +1623,7 @@
       const venueId = state.pendingPhoneVenueId;
       state.pendingPhoneVenueId = null;
       try {
-        await loadSnapshot();
+        await loadSnapshot(true);
         const followup = followupOf(venueId);
         if (isOwnLease(followup)) {
           await callRpc('renew_claim', {
