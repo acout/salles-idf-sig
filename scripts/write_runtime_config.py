@@ -36,7 +36,7 @@ def main() -> None:
     config = {
         "mode": args.mode,
         "appRelease": args.app_release,
-        "clientContractVersion": 1,
+        "clientContractVersion": 2,
         "supabaseUrl": args.supabase_url.strip(),
         "supabaseAnonKey": args.supabase_anon_key.strip(),
         "privateBucket": args.private_bucket.strip(),

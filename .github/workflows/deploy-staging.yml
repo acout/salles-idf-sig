@@ -43,7 +43,7 @@ jobs:
           test ! -e .deploy-dist/import_queue.geojson
           test ! -e .deploy-dist/funnel_debug.json
           test ! -e .deploy-dist/venue_private_details.json
-          test "$(find .deploy-dist -type f | wc -l)" -eq 6
+          test "$(find .deploy-dist -type f | wc -l)" -eq 7
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

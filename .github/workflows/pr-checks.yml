@@ -27,7 +27,13 @@ jobs:
         run: python scripts/validate_release.py
 
       - name: Check browser JavaScript
-        run: node --check public/js/cockpit.js
+        run: |
+          node --check public/js/cockpit.js
+          node --check public/js/sourcing-inbox.js
+          node --test tests/sourcing-inbox.test.js
+
+      - name: Check deterministic sourcing import
+        run: python -m unittest tests/test_sourcing_import.py
 
       - name: Build deployment allowlist
         run: |
@@ -41,10 +47,30 @@ jobs:
           test ! -e .deploy-dist/import_queue.geojson
           test ! -e .deploy-dist/funnel_debug.json
           test ! -e .deploy-dist/venue_private_details.json
-          test "$(find .deploy-dist -type f | wc -l)" -eq 6
+          test "$(find .deploy-dist -type f | wc -l)" -eq 7
 
       - name: Check key files
         run: |
           test -f public/index.html
           test -f supabase/migrations/20260714_venue_cockpit.sql
+          test -f supabase/migrations/20260716_sourcing_inbox.sql
           test -f scripts/admin_bootstrap_supabase.py
+
+  database-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v2
+        with:
+          version: 2.84.2
+
+      - name: Start isolated database
+        run: supabase db start
+
+      - name: Run database contracts
+        run: supabase test db
+
+      - name: Stop isolated database
+        if: always()
+        run: supabase stop --no-backup

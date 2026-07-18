@@ -22,6 +22,7 @@ EXPECTED_DEPLOY_FILES = {
     "salles_catalog_public.geojson",
     "css/cockpit.css",
     "js/cockpit.js",
+    "js/sourcing-inbox.js",
 }
 FORBIDDEN_DEPLOY_NAMES = {
     "salles_all_idf.geojson",
@@ -51,12 +52,16 @@ class ShellParser(HTMLParser):
 def main() -> None:
     index = (PUBLIC / "index.html").read_text(encoding="utf-8")
     javascript = (PUBLIC / "js" / "cockpit.js").read_text(encoding="utf-8")
+    sourcing_javascript = (PUBLIC / "js" / "sourcing-inbox.js").read_text(encoding="utf-8")
     parser = ShellParser()
     parser.feed(index)
 
     duplicates = sorted({item for item in parser.ids if parser.ids.count(item) > 1})
     assert not duplicates, f"IDs HTML dupliqués: {duplicates}"
-    required_ids = set(re.findall(r"byId\(['\"]([^'\"]+)['\"]\)", javascript))
+    required_ids = set(re.findall(
+        r"byId\(['\"]([^'\"]+)['\"]\)",
+        javascript + "\n" + sourcing_javascript,
+    ))
     missing = sorted(required_ids - set(parser.ids))
     assert not missing, f"IDs utilisés par JS mais absents du HTML: {missing}"
     assert "object-src 'none'" in parser.csp
@@ -90,6 +95,12 @@ def main() -> None:
     )
     assert "CAMPAIGN_VENUE_MISMATCH" in javascript, (
         "Le cockpit doit refuser un espace partage incomplet plutot que perdre des appels"
+    )
+    assert "missingFollowups" in javascript and "SOURCING_PARITY_" in sourcing_javascript, (
+        "La bascule Supabase doit conserver toutes les salles historiques visibles"
+    )
+    assert "root.SourcingInbox = api" in sourcing_javascript and "PAGE_SIZE = 100" in sourcing_javascript, (
+        "La Sourcing Inbox doit etre chargeable et paginee cote serveur"
     )
     assert 'value="all" selected>Toutes les salles' in index, (
         "Le catalogue complet doit etre affiche par defaut"
@@ -126,6 +137,7 @@ def main() -> None:
     versioned_assets = {
         "runtime-config.js": "src",
         "js/cockpit.js": "src",
+        "js/sourcing-inbox.js": "src",
         "css/cockpit.css": "href",
     }
     for relative, attribute in versioned_assets.items():
