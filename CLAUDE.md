@@ -2,14 +2,15 @@
 
 ## Project Context
 
-Static map site displaying small venue rooms (≤20 people, budget-friendly) in Île-de-France. Serves as a prospecting tool for finding affordable meeting/event spaces across Paris and surrounding departments.
+Static map and authenticated collaboration cockpit for finding, qualifying and calling affordable venue rooms in Île-de-France.
 
 ## Stack
 
-- **Data**: CSV source (`data/salles_small_idf.csv`) → GeoJSON (`public/salles_small_idf.geojson`)
+- **Data**: source datasets → public catalogue (`public/salles_catalog_public.geojson`) + private sourcing import
 - **Frontend**: Vanilla HTML/CSS/JS, Leaflet 1.9.4, OpenStreetMap tiles
-- **Build**: Python script (`scripts/build_small_dataset.py`) for geocoding + CSV→GeoJSON
-- **Deploy**: Scaleway Object Storage + CDN (static hosting)
+- **Backend**: Supabase Auth/Postgres/RLS/RPC/Realtime for shared work
+- **Build**: Python release, import and validation scripts
+- **Deploy**: GitHub Pages for staging; production remains an explicit Anthony decision
 - **CI/CD**: GitHub Actions
 
 ## Conventions
@@ -27,7 +28,7 @@ Static map site displaying small venue rooms (≤20 people, budget-friendly) in 
 2. **Mobile-first**: Responsive map UI, touch-friendly filters
 3. **Accessibility**: Semantic HTML, ARIA labels, color-blind-safe markers
 4. **Performance**: No build step, no framework, CDN-hosted Leaflet only
-5. **Deploy automation**: Push to staging → auto-deploy to Scaleway
+5. **Deploy automation**: Push to staging → auto-deploy to GitHub Pages
 6. **Separation of concerns**: Data layer (scripts/) vs presentation (public/)
 
 ## Branch Model
@@ -35,8 +36,8 @@ Static map site displaying small venue rooms (≤20 people, budget-friendly) in 
 | Branch | Purpose | Deploy |
 |--------|---------|--------|
 | `dev` | Feature work, vibe coding | None |
-| `staging` | Integration & QA | Auto → Scaleway staging bucket + CDN |
-| `master` | Production | Manual merge from staging → Scaleway prod |
+| `staging` | Integration & QA | Auto → GitHub Pages |
+| `master` | Production | Manual merge from staging; Anthony approval required |
 
 - Never push directly to `master`
 - Merge `staging → master` is Anthony's decision (requires approval)
@@ -44,9 +45,11 @@ Static map site displaying small venue rooms (≤20 people, budget-friendly) in 
 ## Key Files
 
 - `public/index.html` — Main map page (Leaflet + GeoJSON)
-- `public/salles_small_idf.geojson` — Venue data for the map
-- `data/salles_small_idf.csv` — Source of truth for venue data
-- `scripts/build_small_dataset.py` — Geocode + generate GeoJSON + HTML
+- `public/salles_catalog_public.geojson` — 275 public venue records
+- `public/js/sourcing-inbox.js` — Shared sourcing workflow
+- `scripts/build_public_private_release.py` — Deterministic public/private release
+- `scripts/admin_import_sourcing_candidates.py` — Additive import of the 253 approved candidates
+- `supabase/migrations/20260716_sourcing_inbox.sql` — Sourcing data contract and RPCs
 - `.github/workflows/pr-checks.yml` — Lint & validate on PRs
 - `.github/workflows/deploy-staging.yml` — Auto-deploy staging on push to staging
 - `.github/workflows/deploy-prod.yml` — Deploy prod on merge to master (with approval gate)
@@ -56,12 +59,16 @@ Static map site displaying small venue rooms (≤20 people, budget-friendly) in 
 ```
 SCALEWAY_ACCESS_KEY    — Scaleway API access key
 SCALEWAY_SECRET_KEY    — Scaleway API secret key
-SCALEWAY_BUCKET_STAGING — Staging bucket name (e.g., salles-idf-staging)
 SCALEWAY_BUCKET_PROD    — Prod bucket name (e.g., salles-idf-prod)
-SCALEWAY_REGION         — Scaleway region (e.g., fr-par)
+SCALEWAY_REGION         — Production Scaleway region (e.g., fr-par)
+APP_MODE                — `read_only` or `shared`
+APP_RELEASE             — Release identifier injected into runtime config
+SUPABASE_URL            — public project URL
+SUPABASE_ANON_KEY       — public browser key
 ```
+
+`SUPABASE_PRIVATE_BUCKET` is a local/admin setting for bootstrap scripts; it is not injected by the current CI workflows.
 
 ## Data Schema
 
-See `data/salles_small_idf.csv` headers:
-`id, name, city, department, address, lat, lon, geocode_score, geocode_label, category, capacity_text, capacity_max_detected, price_text, price_score, website, contact, source_url, pros, cons, confidence, fit_score, last_checked`
+See `public/dataset-manifest.json` for the public release contract and `supabase/migrations/20260716_sourcing_inbox.sql` for the private candidate, observation, evidence and event schema.
